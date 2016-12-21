@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ./partials/head %>
+</head>
+
+
+<body>
+  <!-- Aside Start-->
+  <aside class="left-panel">
+
+    <!-- brand -->
+    <div class="logo">
+      <a href="/index" class="logo-expanded">
+        <i class="ion-social-buffer"></i>
+        <span class="nav-label">Pltaforma MEC</span>
+      </a>
+    </div>
+    <!-- / brand -->
+
+    <!-- Navbar Start -->
+    <nav class="navigation">
+      <ul class="list-unstyled">
+        <li class="active"><a href="/index"><i class="zmdi zmdi-view-dashboard"></i> <span class="nav-label">Inicio</span></a></li>
+        <li class=""><a href="/network"><i class="fa fa-sitemap"></i> <span class="nav-label">Redes</span></a></li>
+        <li class=""><a href="/sensor"><i class="fa fa-bullseye"></i> <span class="nav-label">Sensores</span></a></li>
+        <li class=""><a href="/alert"><i class="zmdi zmdi-alarm"></i> <span class="nav-label">Alertas</span></a></li>
+        <li class=""><a href="/historical"><i class="zmdi zmdi-format-list-bulleted"></i> <span class="nav-label">Histórico</span></a></li>
+        <li class=""><a href="/settings"><i class="fa fa-cogs"></i> <span class="nav-label">Configuración</span></a></li>
+      </ul>
+    </nav>
+
+  </aside>
+  <!-- Aside Ends-->
+
+
+<!--Main Content Start -->
+<section class="content">
+
+  <% include ./partials/header %>
+
+  <!-- Page Content Start -->
+  <!-- ================== -->
+  <div class="wraper container-fluid">
+    <div class="page-title">
+      <h3 class="title">Inicio</h3>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="widget-panel widget-style-1 bg-inverse">
+          <i class="fa fa-sitemap"></i>
+          <h2 class="m-0 counter text-white">50</h2>
+          <div class="text-white"><a href="/network" style="color: #fff;">Redes</a></div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="widget-panel widget-style-1 bg-inverse">
+          <i class="fa fa-bullseye"></i>
+          <h2 class="m-0 counter text-white">10</h2>
+          <div class="text-white"><a href="/sensor" style="color: #fff;">Sensores</a></div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="widget-panel widget-style-1 bg-inverse">
+          <i class="zmdi zmdi-alarm"></i>
+          <h2 class="m-0 counter text-white">12</h2>
+          <div class="text-white"><a href="/alert" style="color: #fff;">Alertas</a></div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="widget-panel widget-style-1 bg-inverse">
+          <i class="fa fa-warning"></i>
+          <h2 class="m-0 counter text-white">0</h2>
+          <div class="text-white"><a href="" style="color: #fff;">Errores</a></div>
+        </div>
+      </div>
+    </div> <!-- End row -->
+    <div class="row">
+      <div class="col-md-12">
+        <div id="map" class="gmaps"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Content Ends -->
+  <!-- ================== -->
+  <!-- Footer Start -->
+  <footer class="footer">
+    2016 © Plataforma MEC.
+  </footer>
+  <!-- Footer Ends -->
+</section>
+<!-- Main Content Ends -->
+
+<% include ./partials/scripts %>
+  <!-- google maps api -->
+  <script src="http://maps.google.com/maps/api/js?key=AIzaSyBVnSiwx9InYdvET3_M4yU2qTyvUSOmVI0&callback=initMap"></script>
+
+</body>
+</html>
