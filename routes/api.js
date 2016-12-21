@@ -36,7 +36,7 @@ router.post('/login', function(req, res, next) {
 
                 res.status(200).send(JSON.parse(response.msg("001", "Created token", sres)));
             } else {
-                res.status(404).send(JSON.parse(response.msg("002", "Not found user", "null")));
+                res.status(204).send(JSON.parse(response.msg("002", "Not found user", "null")));
             }
         }
         //res.send("resultado query " + result.rowCount);
