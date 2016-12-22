@@ -14,6 +14,7 @@ var functions = require('../functions');
 
 
 
+
 /* GET home page. */
 router.post('/login', function(req, res, next) {
     var email = req.body.email;
@@ -45,6 +46,7 @@ router.post('/login', function(req, res, next) {
 
 //middleware check token
 router.use(function (req, res, next) {
+    //var token = req.get("authorization");
     var token = req.headers.authorization;
 
     if (token){

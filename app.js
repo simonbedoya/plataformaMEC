@@ -17,6 +17,7 @@ var settings = require('./routes/settings');
 var profile = require('./routes/profile');
 var log_out = require('./routes/log-out');
 var api = require('./routes/api');
+var cors = require('cors');
 
 var app = express();
 
@@ -32,12 +33,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(function(req, res, next) {
+/*app.use(function(req, res, next) {
     res.header('Access-Control-Allow-Origin', "*");
     res.header('Access-Control-Allow-Methods',"GET,PUT,POST,DELETE");
-    res.header('Access-Control-Allow-Headers', "*");
+    res.header('Access-Control-Allow-Headers', "Authorization");
     next();
-});
+});*/
+
+app.use(cors());
 
 app.use(session({secret: 'abcd1234', cookie: { maxAge: 60000 }, resave: true, saveUninitialized: true}));
 
