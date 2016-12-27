@@ -5,6 +5,7 @@
 
 exports.datetime = function datetime() {
   var date = new Date();
+  console.log(date);
 
   var day = date.getDate();
   var month = date.getMonth();
