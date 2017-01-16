@@ -26,7 +26,7 @@
         <div class="logo">
             <a href="/index" class="logo-expanded">
                 <i class="ion-social-buffer"></i>
-                <span class="nav-label">Pltaforma MEC</span>
+                <span class="nav-label">Plataforma MEC</span>
             </a>
         </div>
         <!-- / brand -->
@@ -96,8 +96,8 @@
                                 <td>2016/12/05</td>
                                 <td>2016/12/09</td>
                                 <td class="actions">
-                                    <a href="#" class="" style="color: #DBA901; margin-right: 5px;"><i class="fa fa-pencil"></i></a>
-                                    <a href="#" class="" style="color: #B40404"><i class="fa fa-trash-o"></i></a>
+                                    <a data-toggle="modal" data-target="#edit-network" class="" style="color: #DBA901; margin-right: 5px;"><i class="fa fa-pencil"></i></a>
+                                    <a onclick="delete_netowrk()" class="" style="color: #B40404"><i class="fa fa-trash-o"></i></a>
                                 </td>
                             </tr>
                             </tbody>
@@ -109,88 +109,8 @@
 
         </div> <!-- End Row -->
     </div>
-    <div id="add-network" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">Registrar nueva red</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="field-1" class="control-label">Nombre</label>
-                                <input type="text" class="form-control" id="add-name-network" placeholder="">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="field-2" class="control-label">Dirección</label>
-                                <input type="text" class="form-control" id="add-address-network" placeholder="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label" style="margin-top: 10px">Estado</label>
-                                <div class="col-sm-10">
-                                    <select id="add-status-network" class="form-control">
-                                        <option value="active">Activa</option>
-                                        <option value="inactive">Inactiva</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-white" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-inverse">Guardar</button>
-                </div>
-            </div>
-        </div>
-    </div><!-- /.modal -->
-    <div id="edit-network" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">Modificar red</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="field-1" class="control-label">Nombre</label>
-                                <input type="text" class="form-control" id="edit-name-network" placeholder="">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="field-2" class="control-label">Dirección</label>
-                                <input type="text" class="form-control" id="edit-address-network" placeholder="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label" style="margin-top: 10px">Estado</label>
-                                <div class="col-sm-10">
-                                    <select id="edit-status-netowrk" class="form-control">
-                                        <option value="active">Activa</option>
-                                        <option value="inactive">Inactiva</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-white" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-inverse">Guardar</button>
-                </div>
-            </div>
-        </div>
-    </div><!-- /.modal -->
+    <% include ./add_network %>
+    <% include ./edit_network %>
 
     <!-- Page Content Ends -->
     <!-- ================== -->
@@ -224,7 +144,7 @@
     <script src="js/datatables.init.js"></script>
 
     <script src="assets/sweet-alert/sweet-alert.min.js"></script>
-
+    <script src="js/functions/network.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {

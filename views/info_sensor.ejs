@@ -1,0 +1,103 @@
+<!--  info sensor -->
+<div id="info_sensor" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="info_sensor" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Información sensor</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4>Parametros sensor:</h4>
+                        <div class="col-lg-5">
+                            <ul class="list-unstyled w-list">
+                                <li><b>Serial</b> :</li>
+                                <li><b>Nombre</b> : </li>
+                                <li><b>Estado</b> : </li>
+                                <li><b>Fecha registro</b> : </li>
+                                <li><b>Fecha actualización</b> : </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-7">
+                            <ul class="list-unstyled w-list">
+                                <li id="pts_serial">2W3DFGTR45 </li>
+                                <li id="pts_name">Base norte </li>
+                                <li id="pts_status">Activo </li>
+                                <li id="pts_register">2016/12/24 12:30</li>
+                                <li id="pts_update">2016/12/25 12:45</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4>Parametros ubicación:</h4>
+                        <div class="col-lg-3">
+                            <ul class="list-unstyled w-list">
+                                <li><b>Latitud</b> : </li>
+                                <li><b>Longitud</b> : </li>
+                                <li><b>Altitud</b> : </li>
+                                <li><b>Dirección</b> : </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-9">
+                            <ul class="list-unstyled w-list">
+                                <li id="ptl_lat">2.756775 </li>
+                                <li id="ptl_lng">-75.36432 </li>
+                                <li id="ptl_alt">1500 m </li>
+                                <li id="ptl_addr">Carrera 2 # 22BN - 115</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--row-->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4>Parametros de la red:</h4>
+                        <div class="col-lg-3">
+                            <ul class="list-unstyled w-list">
+                                <li><b>Nombre</b> : </li>
+                                <li><b>Dirección</b> : </li>
+                                <li><b>Estado</b> : </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-9" style="margin-bottom: 20px;">
+                            <ul class="list-unstyled w-list">
+                                <li id="ptn_name">2.756775 </li>
+                                <li id="ptn_addr">-75.36432 </li>
+                                <li id="ptn_status">1500 m </li>
+                            </ul>
+                        </div>
+                        <h4>Alertas:</h4>
+                        <ul class="list-unstyled w-list">
+                            <li id="pta_alert">Alerta LTA - STA</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4>Componentes:</h4>
+                        <div class="col-lg-4">
+                            <ul class="list-unstyled w-list">
+                                <li><b>CPU</b> : </li>
+                                <li><b>GPS</b> : </li>
+                                <li><b>ADC</b> : </li>
+                                <li><b>Acelerómetro</b> : </li>
+                                <li><b>WIFI</b> : </li>
+                                <li><b>RTC</b> : </li>
+                                <li><b>Bateria</b> : </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-8">
+                            <ul class="list-unstyled w-list">
+                                <li id="ptc_cpu"><span style="color: #0B610B">OK!</span></li>
+                                <li id="ptc_gps"><span style="color: #0B610B">OK!</span></li>
+                                <li id="ptc_adc"><span style="color: #ac2925">ERROR!</span></li>
+                                <li id="ptc_accelo"><span style="color: #0B610B">OK!</span></li>
+                                <li id="ptc_wifi"><span style="color: #0B610B">OK!</span></li>
+                                <li id="ptc_rtc"><span style="color: #0B610B">OK!</span></li>
+                                <li id="ptc_batt"><span style="color: #0B610B">OK!</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

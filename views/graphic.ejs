@@ -4,10 +4,11 @@
     <% include ./partials/head %>
 
     <link rel="stylesheet" href="assets/rickshaw-chart/rickshaw.min.css">
+
 </head>
 
 
-<body>
+<body onload="load()">
 <!-- Aside Start-->
 <aside class="left-panel">
 
@@ -26,7 +27,7 @@
             <li class=""><a href="/index"><i class="zmdi zmdi-view-dashboard"></i> <span class="nav-label">Inicio</span></a></li>
             <li class=""><a href="/network"><i class="fa fa-sitemap"></i> <span class="nav-label">Redes</span></a></li>
             <li class=""><a href="/sensor"><i class="fa fa-bullseye"></i> <span class="nav-label">Sensores</span></a></li>
-            <li class="active"><a href="/alert"><i class="zmdi zmdi-alarm"></i> <span class="nav-label">Alertas</span></a></li>
+            <li class=""><a href="/alert"><i class="zmdi zmdi-alarm"></i> <span class="nav-label">Alertas</span></a></li>
             <li class=""><a href="/historical"><i class="zmdi zmdi-format-list-bulleted"></i> <span class="nav-label">Histórico</span></a></li>
             <li class=""><a href="/settings"><i class="fa fa-cogs"></i> <span class="nav-label">Configuración</span></a></li>
         </ul>
@@ -45,14 +46,14 @@
     <!-- ================== -->
     <div class="wraper container-fluid">
         <div class="page-title">
-            <h3 class="title">Alertas</h3>
+            <h3 class="title">Sensor #SERIAL</h3>
         </div>
         <div class="row">
             <div class="col-lg-5">
                 <div class="portlet">
                     <div class="portlet-heading">
                         <h3 class="portlet-title text-dark">
-                            Listado de alertas
+                            Listado de fechas
                         </h3>
                         <div class="portlet-widgets">
                             <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
@@ -84,6 +85,28 @@
                 </div> <!-- /Portlet -->
             </div>
         </div><!--row-->
+        <button id="btndrt" type="button" class="btn btn-inverse" onclick="displayGrphicRT()">Grafica en tiempo real</button>
+        <div class="row" id="graphicRT">
+            <div class="col-lg-12" >
+                <div  class="portlet">
+                    <div class="portlet-heading">
+                        <h3 class="portlet-title text-dark">
+                            Grafica en tiempo real
+                        </h3>
+                        <div class="portlet-widgets">
+                            <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                            <span class="divider"></span>
+                            <a href="#" id="close_grt"><i class="ion-close-round"></i></a>
+                            <span class="divider"></span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="portlet-body">
+                        <div id="linetoggle2"></div>
+                    </div>
+                </div>
+            </div>
+        </div><!--row-->
     </div>
 
     <!-- Page Content Ends -->
@@ -104,6 +127,7 @@
 <script src="assets/rickshaw-chart/rickshaw.min.js"></script>
 <script src="assets/rickshaw-chart/rickshaw.chart.init.js"></script>
 
+<script src="js/functions/graphic.js"></script>
 
 </body>
 </html>

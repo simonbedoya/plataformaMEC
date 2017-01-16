@@ -52,7 +52,7 @@ router.post('/', function(req, res, next) {
             sess.user = email;
             res.redirect('index')
         }
-    })
+    });
 
     //res.redirect('index');
 });

@@ -26,7 +26,7 @@
     <div class="logo">
         <a href="/index" class="logo-expanded">
             <i class="ion-social-buffer"></i>
-            <span class="nav-label">Pltaforma MEC</span>
+            <span class="nav-label">Plataforma MEC</span>
         </a>
     </div>
     <!-- / brand -->
@@ -96,11 +96,12 @@
                                 <td>Universidad del Cauca</td>
                                 <td>2016/12/01</td>
                                 <td class="actions">
-                                    <a data-toggle="modal" data-target="#edit-network" class="" style="color: #DBA901; margin-right: 5px;"><i class="ion-information-circled"></i></a>
-                                    <a data-toggle="modal" data-target="#edit-network" class="" style="color: #DBA901; margin-right: 5px;"><i class="ion-ios7-location"></i></a>
-                                    <a data-toggle="modal" data-target="#edit-network" class="" style="color: #DBA901; margin-right: 5px;"><i class="fa fa-pencil"></i></a>
-                                    <a data-toggle="modal" data-target="#edit-network" class="" style="color: #DBA901; margin-right: 5px;"><i class="fa fa-pencil"></i></a>
-                                    <a onclick="delete_netowrk()" class="" style="color: #B40404"><i class="fa fa-trash-o"></i></a>
+                                    <a onclick="showInfo_sensor()" class="" style="color: #0101DF; margin-right: 10px;"><i class="zmdi zmdi-loupe"></i></a>
+                                    <a onclick="showLocation_sensor()" class="" style="color: #424242; margin-right: 10px;"><i class="ion-ios7-location"></i></a>
+                                    <a href="/graphic?id=WEDRFEDDR" class="" style="color: #0B610B; margin-right: 10px;"><i class="fa fa-pie-chart"></i></a>
+                                    <a onclick="showEdit_sensor()" class="" style="color: #DBA901; margin-right: 10px;"><i class="fa fa-pencil"></i></a>
+                                    <a onclick="showConfig_sensor()" class="" style="color: #DF7401; margin-right: 10px;"><i class="fa fa-wrench"></i></a>
+                                    <a onclick="delete_sensor()" class="" style="color: #B40404"><i class="fa fa-trash-o"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -110,21 +111,26 @@
                                 <td>Puente peatonal liceo</td>
                                 <td>2016/12/05</td>
                                 <td class="actions">
-                                    <a data-toggle="modal" data-target="#edit-network" class="" style="color: #DBA901; margin-right: 5px;"><i class="fa fa-pencil"></i></a>
-                                    <a data-toggle="modal" data-target="#edit-network" class="" style="color: #DBA901; margin-right: 5px;"><i class="fa fa-pencil"></i></a>
-                                    <a data-toggle="modal" data-target="#edit-network" class="" style="color: #DBA901; margin-right: 5px;"><i class="fa fa-pencil"></i></a>
-                                    <a data-toggle="modal" data-target="#edit-network" class="" style="color: #DBA901; margin-right: 5px;"><i class="fa fa-pencil"></i></a>
-                                    <a onclick="delete_netowrk()" class="" style="color: #B40404"><i class="fa fa-trash-o"></i></a>
+                                    <a onclick="showInfo_sensor()" class="" style="color: #0101DF; margin-right: 10px;"><i class="zmdi zmdi-loupe"></i></a>
+                                    <a onclick="showLocation_sensor()" class="" style="color: #424242; margin-right: 10px;"><i class="ion-ios7-location"></i></a>
+                                    <a href="/graphic?id=WEDRFEDDR" class="" style="color: #0B610B; margin-right: 10px;"><i class="fa fa-pie-chart"></i></a>
+                                    <a onclick="showEdit_sensor()" class="" style="color: #DBA901; margin-right: 10px;"><i class="fa fa-pencil"></i></a>
+                                    <a onclick="showConfig_sensor()" class="" style="color: #DF7401; margin-right: 10px;"><i class="fa fa-wrench"></i></a>
+                                    <a onclick="delete_sensor()" class="" style="color: #B40404"><i class="fa fa-trash-o"></i></a>
                                 </td>
                             </tr>
                             </tbody>
                         </table>
-                        <button class="btn btn-inverse" data-toggle="modal" data-target="#add-network">Agregar red</button>
+                        <!--<button class="btn btn-inverse" data-toggle="modal" data-target="#add-network">Agregar sensor</button>-->
                     </div>
                 </div>
             </div>
         </div> <!-- End Row -->
     </div>
+    <% include ./info_sensor %>
+    <% include ./location_sensor %>
+    <% include ./edit_sensor %>
+    <% include ./config_sensor %>
 
     <!-- Page Content Ends -->
     <!-- ================== -->
@@ -159,6 +165,8 @@
 
 <script src="assets/sweet-alert/sweet-alert.min.js"></script>
 
+<script src="js/functions/sensor.js"></script>
+
 
 <script type="text/javascript">
     $(document).ready(function() {
@@ -171,6 +179,7 @@
     TableManageButtons.init();
 </script>
 
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyBVnSiwx9InYdvET3_M4yU2qTyvUSOmVI0"></script>
 
 </body>
 </html>

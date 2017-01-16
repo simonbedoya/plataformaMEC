@@ -6,7 +6,7 @@
 var varGlobals = {
     email_user: '',
     token_user: '',
-    secret: "rinodevgroupdevelopercompany"
+    secret: "a4f8071f-c873-4447-8ee2"
 
 };
 

@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <% include ./partials/head %>
+
+    <link rel="stylesheet" href="assets/rickshaw-chart/rickshaw.min.css">
+    <link href="assets/timepicker/bootstrap-datepicker.min.css" rel="stylesheet" />
 </head>
 
 
@@ -13,7 +16,7 @@
     <div class="logo">
         <a href="/index" class="logo-expanded">
             <i class="ion-social-buffer"></i>
-            <span class="nav-label">Pltaforma MEC</span>
+            <span class="nav-label">Plataforma MEC</span>
         </a>
     </div>
     <!-- / brand -->
@@ -41,8 +44,96 @@
 
     <!-- Page Content Start -->
     <!-- ================== -->
+    <div class="wraper container-fluid">
+        <div class="page-title">
+            <h3 class="title">Histórico</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" style="margin-top: 10px">Seleccione un sensor:</label>
+                        <div class="col-md-7">
+                            <select id="edit-status-netowrk" class="form-control">
+                                <option value="active">-</option>
+                                <option value="active">Universidad del Cauca</option>
+                                <option value="inactive">Puente peatonal liceo</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="portlet">
+                            <div class="portlet-heading">
+                                <h3 class="portlet-title text-dark">
+                                    Detalles
+                                </h3>
+                                <div class="portlet-widgets">
+                                    <a data-toggle="reload"><i class="ion-refresh"></i></a>
+                                    <span class="divider"></span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="portlet-body">
+                                <p>Seleccione un sensor para visualizar los detalles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label class="control-label" for="datepicker">Fecha de registros:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="datepicker">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                            </div><!-- input-group -->
+                            <p style="margin-top: 10px;">Selecciona una fecha para ver los archivos de ese día.</p>
+                        </div>
 
-
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="portlet">
+                            <div class="portlet-heading">
+                                <h3 class="portlet-title text-dark">
+                                    Listado de archivos
+                                </h3>
+                                <div class="portlet-widgets">
+                                    <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                                    <span class="divider"></span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="portlet-body">
+                                <p>Seleccione un sensor para listar archivos asociados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Grafica -->
+            <div class="col-lg-7">
+                <div class="portlet"><!-- /primary heading -->
+                    <div class="portlet-heading">
+                        <h3 class="portlet-title text-dark">
+                            Grafica
+                        </h3>
+                        <div class="portlet-widgets">
+                            <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                            <span class="divider"></span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="portlet-body">
+                        <div id="linetoggle"></div>
+                    </div>
+                </div> <!-- /Portlet -->
+            </div>
+        </div><!--row-->
+    </div>
     <!-- Page Content Ends -->
     <!-- ================== -->
     <!-- Footer Start -->
@@ -55,6 +146,19 @@
 
 <% include ./partials/scripts %>
 
+<!-- jQuery Flot Chart-->
+<script src="assets/rickshaw-chart/vendor/d3.min.js"></script>
+<script src="assets/rickshaw-chart/vendor/d3.layout.min.js"></script>
+<script src="assets/rickshaw-chart/rickshaw.min.js"></script>
+<script src="assets/rickshaw-chart/rickshaw.chart.init.js"></script>
 
+<script src="assets/timepicker/bootstrap-datepicker.js"></script>
+
+<script>
+    jQuery(document).ready(function() {
+        // Date Picker
+        jQuery('#datepicker').datepicker();
+    });
+</script>
 </body>
 </html>
