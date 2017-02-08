@@ -18,7 +18,7 @@
 </head>
 
 
-<body>
+<body  onload="loadData('<%= user%>')">
 <!-- Aside Start-->
 <aside class="left-panel">
 
@@ -62,10 +62,8 @@
             <div class="form-group">
                 <label class="col-md-5 control-label" style="margin-top: 10px">Seleccione una red para visualizar los sensores asociados:</label>
                 <div class="col-md-6">
-                    <select id="edit-status-netowrk" class="form-control">
+                    <select id="edit_status_netowrk" class="form-control">
                         <option value="active">-</option>
-                        <option value="active">Universidad del Cauca</option>
-                        <option value="inactive">Puente peatonal liceo</option>
                     </select>
                 </div>
             </div>
@@ -77,19 +75,19 @@
                         <h3 class="panel-title">Listado general de sensores:</h3>
                     </div>
                     <div class="panel-body">
-                        <table id="datatable-buttons" class="table table-striped table-bordered">
+                        <table id="table_sensors" class="table table-striped table-bordered">
                             <thead>
                             <tr>
                                 <th class="col-md-2" style="vertical-align: middle">Serial</th>
-                                <th class="col-md-3" style="vertical-align: middle">Nombre</th>
+                                <th class="col-md-2" style="vertical-align: middle">Nombre</th>
                                 <th class="col-md-1" style="vertical-align: middle">Estado</th>
                                 <th class="col-md-3" style="vertical-align: middle">Red asociada</th>
-                                <th class="col-md-1" style="vertical-align: middle">Fecha registro</th>
+                                <th class="col-md-2" style="vertical-align: middle">Fecha registro</th>
                                 <th class="col-md-2" style="vertical-align: middle">Opciones</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
+                            <!--<tr>
                                 <td>AWSDERFGTY</td>
                                 <td>Palomera</td>
                                 <td>Activo</td>
@@ -118,7 +116,7 @@
                                     <a onclick="showConfig_sensor()" class="" style="color: #DF7401; margin-right: 10px;"><i class="fa fa-wrench"></i></a>
                                     <a onclick="delete_sensor()" class="" style="color: #B40404"><i class="fa fa-trash-o"></i></a>
                                 </td>
-                            </tr>
+                            </tr>-->
                             </tbody>
                         </table>
                         <!--<button class="btn btn-inverse" data-toggle="modal" data-target="#add-network">Agregar sensor</button>-->
@@ -168,16 +166,7 @@
 <script src="js/functions/sensor.js"></script>
 
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#datatable').dataTable();
-        $('#datatable-keytable').DataTable( { keys: true } );
-        $('#datatable-responsive').DataTable();
-        $('#datatable-scroller').DataTable( { ajax: "assets/datatables/json/scroller-demo.json", deferRender: true, scrollY: 380, scrollCollapse: true, scroller: true } );
-        var table = $('#datatable-fixed-header').DataTable( { fixedHeader: true } );
-    } );
-    TableManageButtons.init();
-</script>
+
 
 <script src="http://maps.google.com/maps/api/js?key=AIzaSyBVnSiwx9InYdvET3_M4yU2qTyvUSOmVI0"></script>
 

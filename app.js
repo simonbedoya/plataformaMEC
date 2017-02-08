@@ -20,6 +20,7 @@ var profile = require('./routes/profile');
 var log_out = require('./routes/log-out');
 var api = require('./routes/api');
 var graphic = require('./routes/graphic');
+var data = require('./routes/data');
 
 
 var app = express();
@@ -62,6 +63,7 @@ app.use('/profile', profile);
 app.use('/log-out', log_out);
 app.use('/api', api);
 app.use('/graphic', graphic);
+app.use('/data', data);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

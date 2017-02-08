@@ -5,7 +5,7 @@
 </head>
 
 
-<body>
+<body onload="getLocations('<%= user %>')">
   <!-- Aside Start-->
   <aside class="left-panel">
 
@@ -65,7 +65,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="widget-panel widget-style-1 bg-inverse">
           <i class="zmdi zmdi-alarm"></i>
-          <h2 class="m-0 counter text-white">12</h2>
+          <h2 class="m-0 counter text-white"><%= alerts %></h2>
           <div class="text-white"><a href="/alert" style="color: #fff;">Alertas</a></div>
         </div>
       </div>
@@ -73,7 +73,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="widget-panel widget-style-1 bg-inverse">
           <i class="fa fa-warning"></i>
-          <h2 class="m-0 counter text-white">0</h2>
+          <h2 class="m-0 counter text-white"><%= errors %></h2>
           <div class="text-white"><a href="" style="color: #fff;">Errores</a></div>
         </div>
       </div>

@@ -13,6 +13,7 @@ router.get('/', function(req, res, next) {
             res.redirect('admin');
         }else{
             //session iniciada
+
             res.render('sensor', { user: sess.user });
         }
     }else{

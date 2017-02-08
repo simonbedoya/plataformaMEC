@@ -29,11 +29,22 @@ router.get('/', function(req, res, next) {
                   }
                   if(result.length != 0){
                       sensors = result[0].SENSORS;
-                      /*sql = "SELECT count(*) AS SENSORS FROM TBL_SENSOR INNER JOIN TBL_NETWORK ON TBL_SENSOR.PK_NETWORK = TBL_NETWORK.PK_NETWORK WHERE EMAIL_USER = '"+sess.user+"'";
+                      sql = "SELECT count(*) AS ALERTS FROM TBL_EVENTS INNER JOIN TBL_SENSOR ON TBL_EVENTS.PK_SENSOR = TBL_SENSOR.PK_SENSOR INNER JOIN TBL_NETWORK ON TBL_SENSOR.PK_NETWORK = TBL_NETWORK.PK_NETWORK WHERE EMAIL_USER = '"+sess.user+"' AND STATUS_SENSOR = 'Activo'";
                       db.query(sql, function (err, result) {
+                          if (err){
+                              console.log("Error consulta numero de sensores");
+                          }
+                          if(result.length != 0){
+                              alerts = result[0].ALERTS;
+                              /*sql = "SELECT count(*) AS ALERTS FROM TBL_EVENTS INNER JOIN TBL_SENSOR ON TBL_EVENTS.PK_SENSOR = TBL_SENSOR.PK_SENSOR INNER JOIN TBL_NETWORK ON TBL_SENSOR.PK_NETWORK = TBL_NETWORK.PK_NETWORK WHERE EMAIL_USER = '"+sess.user+"' AND STATUS_SENSOR = 'Activo'";
+                              db.query(sql, function (err, result) {
 
-                      })*/
-                      res.render('index', { user: sess.user, networks: nets, sensors: sensors });
+                              });*/
+                              res.render('index', { user: sess.user, networks: nets, sensors: sensors, alerts: alerts, errors: errors });
+                          }else{
+                              console.log("Error retorno vacion");
+                          }
+                      });
                   }else{
                       console.log("Error retorno vacion");
                   }

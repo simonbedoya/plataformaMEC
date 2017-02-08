@@ -17,6 +17,97 @@ function initMap() {
     });
 }
 
+
+function loadData(email) {
+    loadDataNetworks(email);
+    loadDataSensors(email);
+}
+
+function loadDataNetworks(email) {
+    $.ajax({
+        type: "post",
+        url: "http://localhost:3000/data/networks",
+        data: {email: email},
+        success: function (result) {
+            //alert(result.msg);
+            if (result.code == "001"){
+                loadSelectorNetwork(result.data);
+            }else if(result.code == "002"){
+                //alert("no llego info");
+
+            }
+        },
+        error: function (e) {
+            //document.getElementById('spinnerLogin').classList.add("hidden");
+            alert("Error en el servidor");
+        }
+    });
+}
+
+function loadDataSensors(email) {
+    $.ajax({
+        type: "post",
+        url: "http://localhost:3000/data/sensors",
+        data: {email: email},
+        success: function (result) {
+            //alert(result.msg);
+            if (result.code == "001"){
+                loadListSensors(result.data);
+            }else if(result.code == "002"){
+                //alert("no llego info");
+
+            }
+        },
+        error: function (e) {
+            //document.getElementById('spinnerLogin').classList.add("hidden");
+            alert("Error en el servidor");
+        }
+    });
+}
+
+function loadListSensors(data) {
+
+    for(var i=0; i < data.length; i++){
+
+        var date = data[i].REGISTERDATE_SENSOR.toString();
+        var dateArrayC = date.split("T");
+
+        $('#table_sensors > tbody').append("<tr><td>"+data[i].SERIAL_SENSOR+"</td>"+
+            "<td>"+data[i].NAME_SENSOR+"</td>"+
+            "<td>"+data[i].STATUS_SENSOR+"</td>"+
+            "<td>"+data[i].NAME_NETWORK+"</td>"+
+            "<td>"+dateArrayC[0]+"</td>"+
+            "<td class='actions'>"+
+                "<a onclick='showInfo_sensor()' class='' style='color: #0101DF; margin-right: 10px;'><i class='zmdi zmdi-loupe'></i></a>"+
+                "<a onclick='showLocation_sensor()' class='' style='color: #424242; margin-right: 10px;'><i class='ion-ios7-location'></i></a>"+
+                "<a href='/graphic?id=WEDRFEDDR' class='' style='color: #0B610B; margin-right: 10px;'><i class='fa fa-pie-chart'></i></a>"+
+                "<a onclick='showEdit_sensor()' class='' style='color: #DBA901; margin-right: 10px;'><i class='fa fa-pencil'></i></a>"+
+                "<a onclick='showConfig_sensor()' class='' style='color: #DF7401; margin-right: 10px;'><i class='fa fa-wrench'></i></a>"+
+                "<a onclick='delete_sensor()' class='' style='color: #B40404'><i class='fa fa-trash-o'></i></a>"+
+            "</td></tr>");
+    }
+    loadDataTable();
+}
+
+function loadSelectorNetwork(data) {
+    for(var i=0; i < data.length; i++){
+        $('#edit_status_netowrk').append("<option value='"+data[i].PK_NETWORK+"'>"+data[i].NAME_NETWORK+"</option>");
+    }
+}
+
+function loadDataTable() {
+    $(document).ready(function() {
+        $('#datatable').dataTable();
+        $('#datatable-keytable').DataTable( { keys: true } );
+        $('#datatable-responsive').DataTable();
+        $('#datatable-scroller').DataTable( { ajax: "assets/datatables/json/scroller-demo.json", deferRender: true, scrollY: 380, scrollCollapse: true, scroller: true } );
+        var table = $('#datatable-fixed-header').DataTable( { fixedHeader: true } );
+    } );
+    TableManageButtons.init();
+}
+
+
+
 function delete_sensor() {
     swal({
         title: "Estás seguro?",

@@ -18,7 +18,7 @@
 </head>
 
 
-<body>
+<body onload="loadNetwork('<%= user%>')">
     <!-- Aside Start-->
     <aside class="left-panel">
 
@@ -63,7 +63,7 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
 
-                        <table id="datatable-buttons" class="table table-striped table-bordered">
+                        <table id="table_networks" class="table table-striped table-bordered">
                             <thead>
                             <tr>
                                 <th class="col-md-3" style="vertical-align: middle">Nombre</th>
@@ -76,13 +76,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>Universidad del Cauca</td>
-                                <td>Carrera 2 # 12N-69 Edificio ingenierias</td>
-                                <td>2</td>
+                            <!--<tr>
+                                <td>Puente peatonal liceo</td>
+                                <td>Carrera 2 # 25N-69</td>
+                                <td>5</td>
                                 <td>Activa</td>
-                                <td>2016/12/01</td>
-                                <td>2016/12/02</td>
+                                <td>2016/12/05</td>
+                                <td>2016/12/09</td>
                                 <td class="actions">
                                     <a data-toggle="modal" data-target="#edit-network" class="" style="color: #DBA901; margin-right: 5px;"><i class="fa fa-pencil"></i></a>
                                     <a onclick="delete_netowrk()" class="" style="color: #B40404"><i class="fa fa-trash-o"></i></a>
@@ -99,10 +99,10 @@
                                     <a data-toggle="modal" data-target="#edit-network" class="" style="color: #DBA901; margin-right: 5px;"><i class="fa fa-pencil"></i></a>
                                     <a onclick="delete_netowrk()" class="" style="color: #B40404"><i class="fa fa-trash-o"></i></a>
                                 </td>
-                            </tr>
+                            </tr>-->
                             </tbody>
                         </table>
-                        <button class="btn btn-inverse" data-toggle="modal" data-target="#add-network">Agregar red</button>
+                        <button class="btn btn-inverse" onclick="addNetworkModal()">Agregar red</button>
                     </div>
                 </div>
             </div>
@@ -147,14 +147,7 @@
     <script src="js/functions/network.js"></script>
 
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('#datatable').dataTable();
-            $('#datatable-keytable').DataTable( { keys: true } );
-            $('#datatable-responsive').DataTable();
-            $('#datatable-scroller').DataTable( { ajax: "assets/datatables/json/scroller-demo.json", deferRender: true, scrollY: 380, scrollCollapse: true, scroller: true } );
-            var table = $('#datatable-fixed-header').DataTable( { fixedHeader: true } );
-        } );
-        TableManageButtons.init();
+
     </script>
 
 
