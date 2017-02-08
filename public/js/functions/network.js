@@ -7,7 +7,7 @@ var pk_user = 0;
 function dele_network(network) {
     $.ajax({
         type: "post",
-        url: "http://localhost:3000/data/delete_network",
+        url: "http://52.34.55.59:3000/data/delete_network",
         data: {network: network},
         success: function (result) {
             //alert(result.msg);
@@ -63,7 +63,7 @@ function delete_network(network) {
 function loadNetwork(email) {
     $.ajax({
         type: "post",
-        url: "http://localhost:3000/data/networks",
+        url: "http://52.34.55.59:3000/data/networks",
         data: {email: email},
         success: function (result) {
             //alert(result.msg);
@@ -127,7 +127,7 @@ function loadSensorsByNetowrk(network, i) {
     $.ajax({
         type: "post",
         async: true,
-        url: "http://localhost:3000/data/sensors_networks",
+        url: "http://52.34.55.59:3000/data/sensors_networks",
         data: {network: network},
         success: function (result) {
             //alert(result.msg);
@@ -182,7 +182,7 @@ function saveEditNetwork(network){
 function saveNetwork(network, name, address, status) {
     $.ajax({
         type: "post",
-        url: "http://localhost:3000/data/update_network",
+        url: "http://52.34.55.59:3000/data/update_network",
         data: {network: network, name: name, address: address, status: status},
         success: function (result) {
             //alert(result.msg);
@@ -238,7 +238,7 @@ function saveAddNetwork() {
 function saveNewNetwork(name, address, status) {
     $.ajax({
         type: "post",
-        url: "http://localhost:3000/data/create_network",
+        url: "http://52.34.55.59:3000/data/create_network",
         data: {user: pk_user,name: name, address: address, status: status},
         success: function (result) {
             //alert(result.msg);
