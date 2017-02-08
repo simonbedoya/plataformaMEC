@@ -17,7 +17,7 @@ function getLocations(email) {
     var marker;
    $.ajax({
         type: "post",
-        url: "http://localhost:3000/data/location",
+        url: "http://52.34.55.59:3000/data/location",
         data: {email: email},
         success: function (result) {
             //alert(result.msg);

@@ -26,7 +26,7 @@ function loadData(email) {
 function loadDataNetworks(email) {
     $.ajax({
         type: "post",
-        url: "http://localhost:3000/data/networks",
+        url: "http://52.34.55.59:3000/data/networks",
         data: {email: email},
         success: function (result) {
             //alert(result.msg);
@@ -47,7 +47,7 @@ function loadDataNetworks(email) {
 function loadDataSensors(email) {
     $.ajax({
         type: "post",
-        url: "http://localhost:3000/data/sensors",
+        url: "http://52.34.55.59:3000/data/sensors",
         data: {email: email},
         success: function (result) {
             //alert(result.msg);
