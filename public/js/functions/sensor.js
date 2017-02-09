@@ -3,7 +3,8 @@
  */
 var map;
 var locationn = {lat: 2.4503137, lng: -76.6164085};
-
+var dataNetworksSensor;
+var pk_sensor = 0;
 
 $("#location_sensor").on('shown.bs.modal', function () {
         initMap();
@@ -52,7 +53,7 @@ function loadDataSensors(email) {
         success: function (result) {
             //alert(result.msg);
             if (result.code == "001"){
-                loadListSensors(result.data);
+                loadListSensors(result.data, true);
             }else if(result.code == "002"){
                 //alert("no llego info");
 
@@ -65,10 +66,15 @@ function loadDataSensors(email) {
     });
 }
 
-function loadListSensors(data) {
+function loadListSensors(data, load) {
+
+    $('#table_sensors > tbody').empty();
+
+    dataNetworksSensor = new Array();
 
     for(var i=0; i < data.length; i++){
 
+        dataNetworksSensor[data[i].PK_SENSOR] = data[i];
         var date = data[i].REGISTERDATE_SENSOR.toString();
         var dateArrayC = date.split("T");
 
@@ -78,20 +84,22 @@ function loadListSensors(data) {
             "<td>"+data[i].NAME_NETWORK+"</td>"+
             "<td>"+dateArrayC[0]+"</td>"+
             "<td class='actions'>"+
-                "<a onclick='showInfo_sensor()' class='' style='color: #0101DF; margin-right: 10px;'><i class='zmdi zmdi-loupe'></i></a>"+
-                "<a onclick='showLocation_sensor()' class='' style='color: #424242; margin-right: 10px;'><i class='ion-ios7-location'></i></a>"+
-                "<a href='/graphic?id=WEDRFEDDR' class='' style='color: #0B610B; margin-right: 10px;'><i class='fa fa-pie-chart'></i></a>"+
-                "<a onclick='showEdit_sensor()' class='' style='color: #DBA901; margin-right: 10px;'><i class='fa fa-pencil'></i></a>"+
-                "<a onclick='showConfig_sensor()' class='' style='color: #DF7401; margin-right: 10px;'><i class='fa fa-wrench'></i></a>"+
-                "<a onclick='delete_sensor()' class='' style='color: #B40404'><i class='fa fa-trash-o'></i></a>"+
+                "<a onclick='showInfo_sensor("+data[i].PK_SENSOR+")' class='' style='color: #0101DF; margin-right: 10px;'><i class='zmdi zmdi-loupe'></i></a>"+
+                "<a onclick='showLocation_sensor("+data[i].PK_SENSOR+")' class='' style='color: #424242; margin-right: 10px;'><i class='ion-ios7-location'></i></a>"+
+                "<a href='/graphic?id="+data[i].SERIAL_SENSOR+"' class='' style='color: #0B610B; margin-right: 10px;'><i class='fa fa-pie-chart'></i></a>"+
+                "<a onclick='showEdit_sensor("+data[i].PK_SENSOR+")' class='' style='color: #DBA901; margin-right: 10px;'><i class='fa fa-pencil'></i></a>"+
+                "<a onclick='showConfig_sensor("+data[i].PK_SENSOR+")' class='' style='color: #DF7401; margin-right: 10px;'><i class='fa fa-wrench'></i></a>"+
+                "<a onclick='delete_sensor("+data[i].PK_SENSOR+")' class='' style='color: #B40404'><i class='fa fa-trash-o'></i></a>"+
             "</td></tr>");
     }
-    loadDataTable();
+    if(load) {
+        loadDataTable();
+    }
 }
 
 function loadSelectorNetwork(data) {
     for(var i=0; i < data.length; i++){
-        $('#edit_status_netowrk').append("<option value='"+data[i].PK_NETWORK+"'>"+data[i].NAME_NETWORK+"</option>");
+        $('#select_network').append("<option value='"+data[i].PK_NETWORK+"'>"+data[i].NAME_NETWORK+"</option>");
     }
 }
 
@@ -106,6 +114,28 @@ function loadDataTable() {
     TableManageButtons.init();
 }
 
+function filterSensorByNetwork() {
+    //alert("change");
+    var pk_network = $('#select_network').val();
+    $.ajax({
+        type: "post",
+        url: "http://52.34.55.59:3000/data/sensorsByNetwork",
+        data: {pk_network: pk_network},
+        success: function (result) {
+            //alert(result.msg);
+            if (result.code == "001"){
+                loadListSensors(result.data, false);
+            }else if(result.code == "002"){
+                //alert("no llego info");
+
+            }
+        },
+        error: function (e) {
+            //document.getElementById('spinnerLogin').classList.add("hidden");
+            alert("Error en el servidor");
+        }
+    });
+}
 
 
 function delete_sensor() {
@@ -128,18 +158,47 @@ function delete_sensor() {
     });
 }
 
-function showInfo_sensor() {
+function showInfo_sensor(pk_sensor) {
     $("#info_sensor").modal();
+
 }
 
-function showLocation_sensor() {
+function showLocation_sensor(pk_sensor) {
     $("#location_sensor").modal();
 }
 
-function showEdit_sensor() {
+function showEdit_sensor(sensor) {
     $("#edit_sensor").modal();
+    document.getElementById("edit_name_sensor").value = dataNetworksSensor[sensor].NAME_SENSOR;
+    pk_sensor = sensor;
 }
 
-function showConfig_sensor() {
+function showConfig_sensor(pk_sensor) {
     $("#config_sensor").modal();
+}
+
+function save_edit_sensor() {
+    var name = document.getElementById("edit_name_sensor").value;
+    if(name != dataNetworksSensor[pk_sensor].NAME_SENSOR){
+        $.ajax({
+            type: "post",
+            url: "http://52.34.55.59:3000/data/updateNameSensor",
+            data: {pk_sensor: pk_sensor, name: name},
+            success: function (result) {
+                //alert(result.msg);
+                if (result.code == "001"){
+                    document.location = "/sensor";
+                }else if(result.code == "002"){
+                    //alert("no llego info");
+
+                }
+            },
+            error: function (e) {
+                //document.getElementById('spinnerLogin').classList.add("hidden");
+                alert("Error en el servidor");
+            }
+        });
+    }else{
+        $("#edit_sensor").modal('hide');
+    }
 }

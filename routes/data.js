@@ -145,4 +145,44 @@ router.post('/sensors', function(req, res){
     });
 });
 
+router.post('/sensorsByNetwork', function(req, res){
+    var sess = req.session;
+    var pk_network = req.body.pk_network;
+    if(pk_network != 0) {
+        var sql = "SELECT * FROM TBL_NETWORK INNER JOIN TBL_SENSOR ON TBL_NETWORK.PK_NETWORK = TBL_SENSOR.PK_NETWORK WHERE TBL_NETWORK.PK_NETWORK = " + pk_network + " AND STATUS_SENSOR = 'Activo'";
+    }else{
+        var sql = "SELECT * FROM TBL_NETWORK INNER JOIN TBL_SENSOR ON TBL_NETWORK.PK_NETWORK = TBL_SENSOR.PK_NETWORK WHERE EMAIL_USER = '" + sess.user + "' AND STATUS_SENSOR = 'Activo'";
+    }
+    db.query(sql, function (err, result) {
+        if (err){
+            return res.status(202).send(JSON.parse(response.msg("002","Error", "null")));
+        }
+        if(result.length != 0){
+            //console.log("llego");
+            res.status(200).send(JSON.parse(response.msg("001","Sensors", JSON.stringify(result))));
+        }else{
+            return res.status(202).send(JSON.parse(response.msg("002","Error", "null")));
+        }
+        //res.status(202).send(JSON.parse(response.msg("001", "Not found user", "null")));
+    });
+});
+
+router.post('/updateNameSensor', function(req, res){
+    var pk_sensor = req.body.pk_sensor;
+    var name = req.body.name;
+    var sql = "UPDATE TBL_SENSOR SET NAME_SENSOR = '"+name+"' WHERE PK_SENSOR='"+pk_sensor+"'";
+    db.query(sql, function (err, result) {
+        if (err){
+            return res.status(202).send(JSON.parse(response.msg("002","Error", "null")));
+        }
+        if(result.changedRows != 0){
+            //console.log("llego");
+            res.status(200).send(JSON.parse(response.msg("001","Update name sensor", JSON.stringify(result))));
+        }else{
+            return res.status(202).send(JSON.parse(response.msg("002","Error", "null")));
+        }
+        //res.status(202).send(JSON.parse(response.msg("001", "Not found user", "null")));
+    });
+});
+
 module.exports = router;
