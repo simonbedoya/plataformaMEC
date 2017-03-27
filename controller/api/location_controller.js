@@ -33,7 +33,7 @@ module.exports = {
                     if(err) return fullfill({hcode: 202, code: "002", msg: "Error", data: null});
 
                     if(result[0].counter === 0){
-                        let pathComplete = uploadPathNetwork + "\\" + uploadPath;
+                        let pathComplete = uploadPathNetwork + "/" + uploadPath;
                         let pathC = path.join(uploadPathNetwork,uploadPath);
                         let new_path = path.join(config.dir_files_data, pathComplete);
                         mkdirp(new_path,function (err) {
