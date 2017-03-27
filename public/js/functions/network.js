@@ -1,63 +1,62 @@
 /**
  * Created by sbv23 on 27/12/2016.
  */
-var dataNetworks = new Array();
-var pk_user = 0;
+'use strict';
+let dataNetworks = [];
+let pk_user = 0;
 
-function dele_network(network) {
-    $.ajax({
-        type: "post",
-        url: "http://52.34.55.59:3000/data/delete_network",
-        data: {network: network},
-        success: function (result) {
-            //alert(result.msg);
-            if (result.code == "001"){
-                swal({
-                    title: "Alerta",
-                    text: "Se ha eliminado satisfactoriamente la red!",
-                    type: "success",
-                    showCancelButton: false,
-                    confirmButtonColor: "#444a53",
-                    confirmButtonText: "OK",
-                    closeOnConfirm: true
-                }, function(){
-                    document.location = "/network";
-                });
-            }else if(result.code == "002"){
-                alert("no se elimino la red");
-            }else{
-                swal({
-                    title: "Alerta",
-                    text: "La red tiene asociados sensores por esto no se puede eliminar!",
-                    type: "error",
-                    showCancelButton: false,
-                    confirmButtonColor: "#444a53",
-                    confirmButtonText: "OK",
-                    closeOnConfirm: true
-                });
-            }
-        },
-        error: function (e) {
-            //document.getElementById('spinnerLogin').classList.add("hidden");
-            alert("Error en el servidor");
+function delet_network(network) {
+    return new Promise(
+        function (resolve, reject) {
+            $.ajax({
+                type: "post",
+                url: "http://localhost:3000/data/delete_network",
+                data: {network: network},
+                success: function (result) {
+                    //alert(result.msg);
+                    if (result.code === "001"){
+                        resolve({code: "001"});
+                    }else if(result.code === "002"){
+                        reject("No se puede eliminar por que tiene sensores asociados a esta red");
+                    }
+                },
+                error: function (e) {
+                    console.log(e);
+                    reject("Problema interno, intenta nuevamente");
+                }
+            });
         }
-    });
+    )
 }
 
 function delete_network(network) {
     swal({
         title: "Alerta!",
-        text: "Esta seguro de eliminar esta red?",
+        text: "Esta seguro de eliminar esta red?, se eliminaran todos los registros asociados a ella.",
         type: "warning",
-        showCancelButton: true,
+        showCloseButton: true,
         confirmButtonColor: "#444a53",
         confirmButtonText: "Si",
-        cancelButtonText: "No",
-        closeOnConfirm: false,
-        closeOnCancel: true
-    }, function(){
-        dele_network(network);
-    });
+        showLoaderOnConfirm: true,
+        preConfirm: function () {
+            return delet_network(network);
+        }
+    }).then(function(data){
+        if(data.code === "001"){
+            swal({
+                title: "Alerta",
+                text: "Se ha eliminado satisfactoriamente la red!",
+                type: "success",
+                showCancelButton: false,
+                confirmButtonColor: "#444a53",
+                confirmButtonText: "OK"
+            }).then(function () {
+                document.location = "/network";
+            })
+        }
+    }, function (dismiss) {
+        
+    })
 }
 
 function loadNetwork(email) {
@@ -66,61 +65,60 @@ function loadNetwork(email) {
         url: "http://52.34.55.59:3000/data/networks",
         data: {email: email},
         success: function (result) {
-            //alert(result.msg);
-            if (result.code == "001"){
-                loadtable(result.data);
-            }else if(result.code == "002"){
-                //alert("no llego info");
+            if (result.code === "001"){
+                loadTable(result.data);
+            }else if(result.code === "002"){
                 loadDataTable();
             }
         },
         error: function (e) {
-            //document.getElementById('spinnerLogin').classList.add("hidden");
-            alert("Error en el servidor");
+            console.log(e);
+            swal({
+                title: "Información",
+                text: "Ha ocurrido un error intenta de nuevo!",
+                type: "info",
+                showCancelButton: false,
+                confirmButtonColor: "#444a53",
+                confirmButtonText: "OK"
+            }).then(function () {
+                loadNetwork(email);
+            });
         }
     });
 }
 
-function loadtable(data) {
-
-    for( var i = 0; i < data.length; i++) {
+function loadTable(data) {
+    for (let i = 0; i < data.length; i++) {
 
         dataNetworks[data[i].PK_NETWORK] = data[i];
 
-        var date = data[i].CREATEDDATE_NETWORK.toString();
-        var dateArrayC = date.split("T");
+        let date = data[i].CREATEDDATE_NETWORK.toString();
+        let dateArrayC = date.split("T");
         date = data[i].UPDATEDATE_NETWORK.toString();
-        var dateArrayU = date.split("T");
+        let dateArrayU = date.split("T");
 
         pk_user = data[i].PK_USER;
 
-        $('#table_networks > tbody').append("<tr>" +
-            "<td>"+data[i].NAME_NETWORK+"</td>" +
-            "<td>"+data[i].ADDRESS_NETWORK+"</td>" +
-            "<td id='number_sensor_"+i+"'></td>" +
-            "<td>"+data[i].STATUS_NETWORK+"</td>" +
-            "<td>"+dateArrayC[0]+"</td>" +
-            "<td>"+dateArrayU[0]+"</td>" +
-            "<td class='actions'>" +
-                "<a onclick='edit_network("+data[i].PK_NETWORK+")' class='' style='color: #DBA901; margin-right: 5px;'><i class='fa fa-pencil'></i></a>"+
-                "<a onclick='delete_network("+data[i].PK_NETWORK+")' class='' style='color: #B40404'><i class='fa fa-trash-o'></i></a>"+
-            "</td>" +
-            "</tr>");
+        //language=HTML
+        $('#table_networks').find('> tbody').append(`<tr>` +
+            `<td>${data[i].NAME_NETWORK}</td>` +
+            `<td>${data[i].ADDRESS_NETWORK}</td>` +
+            `<td id='number_sensor_${i}'></td>` +
+            `<td>${data[i].STATUS_NETWORK}</td>` +
+            `<td>${dateArrayC[0]}</td>` +
+            `<td>${dateArrayU[0]}</td>` +
+            `<td class='actions'>` +
+            `<a onclick='edit_network(${data[i].PK_NETWORK})' class='' style='color: #DBA901; margin-right:5px;'><i class='fa fa-pencil'></i></a>` +
+            `<a onclick='delete_network(${data[i].PK_NETWORK})' class='' style='color: #B40404'><i class='fa fa-trash-o'></i></a>` +
+            `</td>` +
+            `</tr>`);
         loadSensorsByNetowrk(data[i].PK_NETWORK, i);
     }
-    //console.log(dataNetworks[1].NAME_NETWORK);
     loadDataTable();
 }
 
 function loadDataTable() {
-    $(document).ready(function() {
-        $('#datatable').dataTable();
-        $('#datatable-keytable').DataTable( { keys: true } );
-        $('#datatable-responsive').DataTable();
-        $('#datatable-scroller').DataTable( { ajax: "assets/datatables/json/scroller-demo.json", deferRender: true, scrollY: 380, scrollCollapse: true, scroller: true } );
-        var table = $('#datatable-fixed-header').DataTable( { fixedHeader: true } );
-    } );
-    TableManageButtons.init();
+    TableManageButtons.table_network();
 }
 
 function loadSensorsByNetowrk(network, i) {
@@ -130,49 +128,80 @@ function loadSensorsByNetowrk(network, i) {
         url: "http://52.34.55.59:3000/data/sensors_networks",
         data: {network: network},
         success: function (result) {
-            //alert(result.msg);
-            if (result.code == "001"){
+            if (result.code === "001"){
                 document.getElementById("number_sensor_"+i).innerHTML = result.data[0].SENSORS;
-            }else if(result.code == "002"){
-                alert("no llego info");
+            }else if(result.code === "002"){
+                swal({
+                    title: "Información",
+                    text: "Ha ocurrido un error intenta de nuevo!",
+                    type: "info",
+                    showCancelButton: false,
+                    confirmButtonColor: "#444a53",
+                    confirmButtonText: "OK"
+                }).then(function () {
+                    loadSensorsByNetowrk(network, i);
+                });
             }
         },
         error: function (e) {
-            //document.getElementById('spinnerLogin').classList.add("hidden");
-            alert("Error en el servidor");
+            console.log(e);
+            swal({
+                title: "Información",
+                text: "Ha ocurrido un error intenta de nuevo!",
+                type: "info",
+                showCancelButton: false,
+                confirmButtonColor: "#444a53",
+                confirmButtonText: "OK"
+            }).then(function () {
+                loadSensorsByNetowrk(network, i);
+            });
         }
     });
 }
 
 function edit_network(network) {
+    //language=JQuery-CSS
     $("#edit_network").modal();
     document.getElementById("edit_name_network").value = dataNetworks[network].NAME_NETWORK;
     document.getElementById("edit_address_network").value = dataNetworks[network].ADDRESS_NETWORK;
-    $('#edit_status_netowrk').val(dataNetworks[network].STATUS_NETWORK);
-    document.getElementById("saveEditNetwork").setAttribute('onclick', 'saveEditNetwork('+network+')');
+    //language=JQuery-CSS
+    $("#edit_status_network").val(dataNetworks[network].STATUS_NETWORK);
+    document.getElementById("saveEditNetwork").setAttribute('onclick', `saveEditNetwork(${network})`);
 }
 
 function saveEditNetwork(network){
-    var name_network = document.getElementById("edit_name_network").value;
-    var address_network = document.getElementById("edit_address_network").value;
-    var status_network = $('#edit_status_netowrk').val();
+    let name_network = document.getElementById("edit_name_network").value;
+    let address_network = document.getElementById("edit_address_network").value;
+    let status_network = $('#edit_status_network').val();
 
-    if ((name_network != dataNetworks[network].NAME_NETWORK) || (address_network != dataNetworks[network].ADDRESS_NETWORK) || (status_network != dataNetworks[network].STATUS_NETWORK) ){
+    if ((name_network !== dataNetworks[network].NAME_NETWORK) || (address_network !== dataNetworks[network].ADDRESS_NETWORK) || (status_network !== dataNetworks[network].STATUS_NETWORK) ){
         swal({
             title: "Alerta!",
             text: "Desea guardar los cambios?",
             type: "warning",
-            showCancelButton: true,
+            showCloseButton: true,
             confirmButtonColor: "#444a53",
             confirmButtonText: "Si",
-            cancelButtonText: "No",
-            closeOnConfirm: false,
-            closeOnCancel: true
-        }, function(isConfirm){
-            if (isConfirm) {
-                saveNetwork(network, name_network, address_network, status_network);
-                //swal("Eliminado!", "Se ha eliminado corectamente.", "success");
+            showLoaderOnConfirm: true,
+            preConfirm: function () {
+                return saveNetwork(network, name_network, address_network, status_network);
             }
+        }).then(function(data){
+            if(data.code === "001"){
+                swal({
+                    title: "Alerta",
+                    text: "Se ha actualizado satisfactoriamente la información!",
+                    type: "success",
+                    showCancelButton: false,
+                    confirmButtonColor: "#444a53",
+                    confirmButtonText: "OK"
+                }).then(function () {
+                    $('#edit_network').modal('hide');
+                    document.location = "/network";
+                })
+            }
+        }, function (dismiss) {
+
         });
     }else{
         $('#edit_network').modal('hide');
@@ -180,34 +209,25 @@ function saveEditNetwork(network){
 }
 
 function saveNetwork(network, name, address, status) {
-    $.ajax({
-        type: "post",
-        url: "http://52.34.55.59:3000/data/update_network",
-        data: {network: network, name: name, address: address, status: status},
-        success: function (result) {
-            //alert(result.msg);
-            if (result.code == "001"){
-                swal({
-                    title: "Alerta",
-                    text: "Se ha actualizado satisfactoriamente la información!",
-                    type: "success",
-                    showCancelButton: false,
-                    confirmButtonColor: "#444a53",
-                    confirmButtonText: "OK",
-                    closeOnConfirm: true
-                }, function(){
-                    $('#edit_network').modal('hide');
-                    document.location = "/network";
-                });
-            }else if(result.code == "002"){
-                alert("no se actualizo la red");
-            }
-        },
-        error: function (e) {
-            //document.getElementById('spinnerLogin').classList.add("hidden");
-            alert("Error en el servidor");
-        }
-    });
+    return new Promise(
+        function (resolve, reject) {
+            $.ajax({
+                type: "post",
+                url: "http://52.34.55.59:3000/data/update_network",
+                data: {network: network, name: name, address: address, status: status},
+                success: function (result) {
+                    if (result.code === "001"){
+                        resolve({code: "001"});
+                    }else if(result.code === "002"){
+                        reject("No se pudo actualizar la red");
+                    }
+                },
+                error: function (e) {
+                    console.log(e);
+                    reject("Problema interno, intenta nuevamente");
+                }
+            });
+        });
 }
 
 function addNetworkModal() {
@@ -216,52 +236,74 @@ function addNetworkModal() {
 }
 
 function saveAddNetwork() {
-    var name = document.getElementById("add_name_network").value;
-    var address = document.getElementById("add_address_network").value;
-    var status = $('#add_status_network').val();
+    let name = document.getElementById("add_name_network").value;
+    let address = document.getElementById("add_address_network").value;
+    //language=JQuery-CSS
+    let status = $('#add_status_network').val();
 
-    if (name != "" || address != ""){
-        saveNewNetwork(name, address, status);
-    }else{
+    if (name !== "" || address !== "") {
+
+        swal({
+            title: "Información!",
+            text: "Desea guardar la informacion?",
+            type: "info",
+            showCloseButton: true,
+            confirmButtonColor: "#444a53",
+            confirmButtonText: "Si",
+            showLoaderOnConfirm: true,
+            preConfirm: function () {
+                return saveNewNetwork(name, address, status);
+            }
+        }).then(function (data) {
+            if (data.code === "001") {
+                swal({
+                    title: "Alerta",
+                    text: `Se ha creado la nueva red ${name}!`,
+                    type: "success",
+                    showCancelButton: false,
+                    confirmButtonColor: "#444a53",
+                    confirmButtonText: "OK"
+                }).then(function () {
+                    //language=JQuery-CSS
+                    $('#edit_network').modal('hide');
+                    document.location = "/network";
+                })
+            }
+        }, function (dismiss) {
+
+        });
+    } else {
         swal({
             title: "Alerta",
             text: "Por favor complete todo los campos!",
             type: "warning",
             showCancelButton: false,
             confirmButtonColor: "#444A53",
-            confirmButtonText: "OK",
-            closeOnConfirm: true
+            confirmButtonText: "OK"
         });
     }
 }
 
 function saveNewNetwork(name, address, status) {
-    $.ajax({
-        type: "post",
-        url: "http://52.34.55.59:3000/data/create_network",
-        data: {user: pk_user,name: name, address: address, status: status},
-        success: function (result) {
-            //alert(result.msg);
-            if (result.code == "001"){
-                swal({
-                    title: "Alerta",
-                    text: "Se ha creado la nueva red "+name+"!",
-                    type: "success",
-                    showCancelButton: false,
-                    confirmButtonColor: "#444a53",
-                    confirmButtonText: "OK",
-                    closeOnConfirm: true
-                }, function(){
-                    $('#edit_network').modal('hide');
-                    document.location = "/network";
-                });
-            }else if(result.code == "002"){
-                alert("no se actualizo la red");
-            }
-        },
-        error: function (e) {
-            //document.getElementById('spinnerLogin').classList.add("hidden");
-            alert("Error en el servidor");
-        }
-    });
+    return new Promise(
+        function (resolve, reject) {
+            $.ajax({
+                type: "post",
+                url: "http://localhost:3000/data/create_network",
+                data: {user: pk_user,name: name, address: address, status: status},
+                success: function (result) {
+                    if (result.code === "001"){
+                        resolve({code: "001"});
+                    }else if(result.code === "002"){
+                        reject("No se pudo crear la nueva red, intentalo de nuevo");
+                    }else if(result.code === "003"){
+                        return saveNewNetwork(name,address,status);
+                    }
+                },
+                error: function (e) {
+                    console.log(e);
+                    reject("Problema interno, intenta nuevamente");
+                }
+            });
+        });
 }

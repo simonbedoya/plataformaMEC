@@ -1,11 +1,11 @@
 /**
  * Created by sbv23 on 11/12/2016.
  */
-var map;
-var locationn = {lat: 3.8994815, lng: -72.7441639};
+let map;
+const locationn = {lat: 3.8994815, lng: -72.7441639};
 
 function initMap() {
-    var mapDiv = document.getElementById('map');
+    let mapDiv = document.getElementById('map');
     map = new google.maps.Map(mapDiv, {
         center: locationn,
         zoom: 6
@@ -13,19 +13,18 @@ function initMap() {
 }
 
 function getLocations(email) {
-   var image = "img/sensor.png";
-    var marker;
+   let image = "img/sensor.png";
+   let marker;
    $.ajax({
         type: "post",
-        url: "http://52.34.55.59:3000/data/location",
+        url: "http://localhost:3000/data/location",
         data: {email: email},
         success: function (result) {
-            //alert(result.msg);
-            if (result.code == "001"){
-                for(var i = 0; i < result.data.length; i++){
-                    var lat = parseFloat(result.data[i].LAT_LOCATION);
-                    var lng = parseFloat(result.data[i].LNG_LOCATION);
-                    var locationSensor = {lat: lat, lng: lng};
+            if (result.code === "001"){
+                for(let i = 0; i < result.data.length; i++){
+                    let lat = parseFloat(result.data[i].LAT_LOCATION);
+                    let lng = parseFloat(result.data[i].LNG_LOCATION);
+                    let locationSensor = {lat: lat, lng: lng};
                     marker = new google.maps.Marker({
                        position: locationSensor,
                        icon: image,
@@ -38,21 +37,41 @@ function getLocations(email) {
                         }
                     })(marker,i));
                 }
-                //alert(result.data[0]);
-
-            }else if(result.code == "002"){
-                //alert("not registered");
+            }else if(result.code === "002"){
+                swal({
+                    title: "Información",
+                    text: "Ha ocurrido un error intenta de nuevo!",
+                    type: "info",
+                    showCancelButton: false,
+                    confirmButtonColor: "#444a53",
+                    confirmButtonText: "OK"
+                }).then(function () {
+                    getLocations(email);
+                });
             }
         },
         error: function (e) {
-            //document.getElementById('spinnerLogin').classList.add("hidden");
-            alert("Error en el servidor");
+            console.log(e);
+            swal({
+                title: "Información",
+                text: "Ha ocurrido un error intenta de nuevo!",
+                type: "info",
+                showCancelButton: false,
+                confirmButtonColor: "#444a53",
+                confirmButtonText: "OK"
+            }).then(function () {
+
+            });
         }
     });
 }
 
-
 function loadGraphicSensor(serial) {
-    //alert(serial);
     document.location = "/graphic?id="+serial
+}
+
+function reloadMap(email) {
+    initMap();
+
+    getLocations(email);
 }

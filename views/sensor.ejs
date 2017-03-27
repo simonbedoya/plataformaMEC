@@ -12,9 +12,6 @@
 
     <!-- DataTables -->
     <link href="assets/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
-
-    <link href="assets/sweet-alert/sweet-alert.min.css" rel="stylesheet">
-
 </head>
 
 
@@ -34,12 +31,12 @@
     <!-- Navbar Start -->
     <nav class="navigation">
         <ul class="list-unstyled">
-            <li class=""><a href="/index"><i class="zmdi zmdi-view-dashboard"></i> <span class="nav-label">Inicio</span></a></li>
-            <li class=""><a href="/network"><i class="fa fa-sitemap"></i> <span class="nav-label">Redes</span></a></li>
-            <li class="active"><a href="/sensor"><i class="fa fa-bullseye"></i> <span class="nav-label">Sensores</span></a></li>
-            <li class=""><a href="/alert"><i class="zmdi zmdi-alarm"></i> <span class="nav-label">Alertas</span></a></li>
-            <li class=""><a href="/historical"><i class="zmdi zmdi-format-list-bulleted"></i> <span class="nav-label">Histórico</span></a></li>
-            <li class=""><a href="/settings"><i class="fa fa-cogs"></i> <span class="nav-label">Configuración</span></a></li>
+            <li class=""><a href="/index"><i class="ion-home"></i> <span class="nav-label">Inicio</span></a></li>
+            <li class=""><a href="/network"><i class="ion-network"></i> <span class="nav-label">Redes</span></a></li>
+            <li class="active"><a href="/sensor"><i class="ion-disc"></i> <span class="nav-label">Sensores</span></a></li>
+            <li class=""><a href="/alert"><i class="ion-android-alarm"></i> <span class="nav-label">Alertas</span></a></li>
+            <li class=""><a href="/historical"><i class="ion-document-text"></i> <span class="nav-label">Histórico</span></a></li>
+            <li class=""><a href="/settings"><i class="ion-settings"></i> <span class="nav-label">Configuración</span></a></li>
         </ul>
     </nav>
 
@@ -59,67 +56,62 @@
             <h3 class="title">Sensores</h3>
         </div>
         <div class="row">
-            <div class="form-group">
-                <label class="col-md-5 control-label" style="margin-top: 10px">Seleccione una red para visualizar los sensores asociados:</label>
-                <div class="col-md-6">
-                    <select id="select_network" class="form-control" onchange="filterSensorByNetwork()">
-                        <option value="0">-</option>
-                    </select>
+            <div class="col-lg-12">
+                <div class="portlet">
+                    <div class="portlet-heading">
+                        <h3 class="portlet-title text-dark">
+                            Filtrar
+                        </h3>
+                        <div class="portlet-widgets">
+                            <a href="javascript:reloadMap('<%= user %>');" data-toggle="reload"><i class="ion-refresh"></i></a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="bg-filterNetwork" class="panel-collapse collapse in">
+                        <div class="portlet-body">
+                            <div class="panel-body" style="margin-top: -35px;">
+                                <label class="col-lg-5 control-label" style="margin-top: 10px">Seleccione una red para visualizar los sensores asociados:</label>
+                                <div class="col-lg-7">
+                                    <select id="select_network" class="form-control" onchange="filterSensorByNetwork('<%= user%>')">
+                                        <option value="0">-</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row" style="margin-top: 30px;">
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Listado general de sensores:</h3>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="portlet">
+                    <div class="portlet-heading">
+                        <h3 class="portlet-title text-dark">
+                            Listado de sensores:
+                        </h3>
+                        <div class="portlet-widgets">
+                            <a href="javascript:reloadMap('<%= user %>');" data-toggle="reload"><i class="ion-refresh"></i></a>
+                        </div>
+                        <div class="clearfix"></div>
                     </div>
-                    <div class="panel-body">
-                        <table id="table_sensors" class="table table-striped table-bordered">
-                            <thead>
-                            <tr>
-                                <th class="col-md-2" style="vertical-align: middle">Serial</th>
-                                <th class="col-md-2" style="vertical-align: middle">Nombre</th>
-                                <th class="col-md-1" style="vertical-align: middle">Estado</th>
-                                <th class="col-md-3" style="vertical-align: middle">Red asociada</th>
-                                <th class="col-md-2" style="vertical-align: middle">Fecha registro</th>
-                                <th class="col-md-2" style="vertical-align: middle">Opciones</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <!--<tr>
-                                <td>AWSDERFGTY</td>
-                                <td>Palomera</td>
-                                <td>Activo</td>
-                                <td>Universidad del Cauca</td>
-                                <td>2016/12/01</td>
-                                <td class="actions">
-                                    <a onclick="showInfo_sensor()" class="" style="color: #0101DF; margin-right: 10px;"><i class="zmdi zmdi-loupe"></i></a>
-                                    <a onclick="showLocation_sensor()" class="" style="color: #424242; margin-right: 10px;"><i class="ion-ios7-location"></i></a>
-                                    <a href="/graphic?id=WEDRFEDDR" class="" style="color: #0B610B; margin-right: 10px;"><i class="fa fa-pie-chart"></i></a>
-                                    <a onclick="showEdit_sensor()" class="" style="color: #DBA901; margin-right: 10px;"><i class="fa fa-pencil"></i></a>
-                                    <a onclick="showConfig_sensor()" class="" style="color: #DF7401; margin-right: 10px;"><i class="fa fa-wrench"></i></a>
-                                    <a onclick="delete_sensor()" class="" style="color: #B40404"><i class="fa fa-trash-o"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>SD21312GTY</td>
-                                <td>Norte</td>
-                                <td>Activo</td>
-                                <td>Puente peatonal liceo</td>
-                                <td>2016/12/05</td>
-                                <td class="actions">
-                                    <a onclick="showInfo_sensor()" class="" style="color: #0101DF; margin-right: 10px;"><i class="zmdi zmdi-loupe"></i></a>
-                                    <a onclick="showLocation_sensor()" class="" style="color: #424242; margin-right: 10px;"><i class="ion-ios7-location"></i></a>
-                                    <a href="/graphic?id=WEDRFEDDR" class="" style="color: #0B610B; margin-right: 10px;"><i class="fa fa-pie-chart"></i></a>
-                                    <a onclick="showEdit_sensor()" class="" style="color: #DBA901; margin-right: 10px;"><i class="fa fa-pencil"></i></a>
-                                    <a onclick="showConfig_sensor()" class="" style="color: #DF7401; margin-right: 10px;"><i class="fa fa-wrench"></i></a>
-                                    <a onclick="delete_sensor()" class="" style="color: #B40404"><i class="fa fa-trash-o"></i></a>
-                                </td>
-                            </tr>-->
-                            </tbody>
-                        </table>
-                        <!--<button class="btn btn-inverse" data-toggle="modal" data-target="#add-network">Agregar sensor</button>-->
+                    <div id="bg-tableSensor" class="panel-collapse collapse in">
+                        <div class="portlet-body">
+                            <table id="table_sensors" class="table table-striped table-bordered">
+                                <thead>
+                                <tr>
+                                    <th class="col-md-1" style="vertical-align: middle">Serial</th>
+                                    <th class="col-md-3" style="vertical-align: middle">Nombre</th>
+                                    <th class="col-md-1" style="vertical-align: middle">Estado</th>
+                                    <th class="col-md-3" style="vertical-align: middle">Red asociada</th>
+                                    <th class="col-md-2" style="vertical-align: middle">Fecha registro</th>
+                                    <th class="col-md-2" style="vertical-align: middle">Opciones</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -160,8 +152,6 @@
 
 <!-- Datatable init js -->
 <script src="js/datatables.init.js"></script>
-
-<script src="assets/sweet-alert/sweet-alert.min.js"></script>
 
 <script src="js/functions/sensor.js"></script>
 

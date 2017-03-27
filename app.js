@@ -6,8 +6,12 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var cors = require('cors');
-var config = require('./config');
+var fs = require('fs');
+var formidable = require('formidable');
 
+
+
+var config = require('./config');
 var index = require('./routes/index');
 var login = require('./routes/login');
 var log_in = require('./routes/log-in');
@@ -37,6 +41,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+
 /*app.use(function(req, res, next) {
     res.header('Access-Control-Allow-Origin', "*");
     res.header('Access-Control-Allow-Methods',"GET,PUT,POST,DELETE");
@@ -54,7 +60,7 @@ app.get('/',function (req, res) {
 app.use('/admin', login);
 app.use('/index', index);
 app.use('/log-in', log_in);
-app.use('/network', net);
+app.use('/functions', net);
 app.use('/sensor', sensor);
 app.use('/alert', alert);
 app.use('/historical', historical);
@@ -64,6 +70,7 @@ app.use('/log-out', log_out);
 app.use('/api', api);
 app.use('/graphic', graphic);
 app.use('/data', data);
+app.use('/network',net);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

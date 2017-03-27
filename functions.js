@@ -44,8 +44,11 @@ exports.datetime = function datetime() {
   }else{
       finalhour = hour;
   }
-
-
   return year.toString() + "/" + finalmonth + "/" + finalday + " " + finalhour + ":" + finalminute + ":" + finalsecond;
-
 };
+
+exports.random = function random(length, chars) {
+    let path = '';
+    for (let i = length; i > 0; --i) path += chars[Math.floor(Math.random() * chars.length)];
+    return path;
+}

@@ -12,7 +12,7 @@
     };
 
     RickshawChart.prototype.createLinetoggleGraph = function(selector, height, colors, names) {
-      // set up our data series with 50 random data points
+      // set up our controller series with 50 random controller points
 
       var seriesData = [ [], [] ];
       var random = new Rickshaw.Fixtures.RandomData(150);

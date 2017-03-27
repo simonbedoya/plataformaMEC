@@ -8,92 +8,179 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <h4>Parametros sensor:</h4>
-                        <div class="col-lg-5">
-                            <ul class="list-unstyled w-list">
-                                <li><b>Serial</b> :</li>
-                                <li><b>Nombre</b> : </li>
-                                <li><b>Estado</b> : </li>
-                                <li><b>Fecha registro</b> : </li>
-                                <li><b>Fecha actualización</b> : </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-7">
-                            <ul class="list-unstyled w-list">
-                                <li id="pts_serial">2W3DFGTR45 </li>
-                                <li id="pts_name">Base norte </li>
-                                <li id="pts_status">Activo </li>
-                                <li id="pts_register">2016/12/24 12:30</li>
-                                <li id="pts_update">2016/12/25 12:45</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h4>Parametros ubicación:</h4>
-                        <div class="col-lg-3">
-                            <ul class="list-unstyled w-list">
-                                <li><b>Latitud</b> : </li>
-                                <li><b>Longitud</b> : </li>
-                                <li><b>Altitud</b> : </li>
-                                <li><b>Dirección</b> : </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-9">
-                            <ul class="list-unstyled w-list">
-                                <li id="ptl_lat">2.756775 </li>
-                                <li id="ptl_lng">-75.36432 </li>
-                                <li id="ptl_alt">1500 m </li>
-                                <li id="ptl_addr">Carrera 2 # 22BN - 115</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!--row-->
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h4>Parametros de la red:</h4>
-                        <div class="col-lg-3">
-                            <ul class="list-unstyled w-list">
-                                <li><b>Nombre</b> : </li>
-                                <li><b>Dirección</b> : </li>
-                                <li><b>Estado</b> : </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-9" style="margin-bottom: 20px;">
-                            <ul class="list-unstyled w-list">
-                                <li id="ptn_name">2.756775 </li>
-                                <li id="ptn_addr">-75.36432 </li>
-                                <li id="ptn_status">1500 m </li>
-                            </ul>
-                        </div>
-                        <h4>Alertas:</h4>
-                        <ul class="list-unstyled w-list">
-                            <li id="pta_alert">Alerta LTA - STA</li>
+                    <div class="col-lg-12">
+                        <ul class="nav nav-tabs">
+                            <li class="active" id="tabGeneral">
+                                <a href="#general" data-toggle="tab" aria-expanded="false">
+                                    <span class="visible-xs"><i class="fa fa-home"></i></span>
+                                    <span class="hidden-xs">General</span>
+                                </a>
+                            </li>
+                            <li class="" id="tabLocation">
+                                <a href="#location" data-toggle="tab" aria-expanded="true">
+                                    <span class="visible-xs"><i class="fa fa-user"></i></span>
+                                    <span class="hidden-xs">Ubicación</span>
+                                </a>
+                            </li>
+                            <li class="" id="tabNetwork">
+                                <a href="#network" data-toggle="tab" aria-expanded="false">
+                                    <span class="visible-xs"><i class="fa fa-envelope-o"></i></span>
+                                    <span class="hidden-xs">Red</span>
+                                </a>
+                            </li>
+                            <li class="" id="tabAlert">
+                                <a href="#alerts" data-toggle="tab" aria-expanded="false">
+                                    <span class="visible-xs"><i class="fa fa-cog"></i></span>
+                                    <span class="hidden-xs">Alertas</span>
+                                </a>
+                            </li>
+                            <li class="" id="tabComponent">
+                                <a href="#component" data-toggle="tab" aria-expanded="false">
+                                    <span class="visible-xs"><i class="fa fa-cog"></i></span>
+                                    <span class="hidden-xs">Componentes</span>
+                                </a>
+                            </li>
                         </ul>
-                    </div>
-                    <div class="col-lg-6">
-                        <h4>Componentes:</h4>
-                        <div class="col-lg-4">
-                            <ul class="list-unstyled w-list">
-                                <li><b>CPU</b> : </li>
-                                <li><b>GPS</b> : </li>
-                                <li><b>ADC</b> : </li>
-                                <li><b>Acelerómetro</b> : </li>
-                                <li><b>WIFI</b> : </li>
-                                <li><b>RTC</b> : </li>
-                                <li><b>Bateria</b> : </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-8">
-                            <ul class="list-unstyled w-list">
-                                <li id="ptc_cpu"><span style="color: #0B610B">OK!</span></li>
-                                <li id="ptc_gps"><span style="color: #0B610B">OK!</span></li>
-                                <li id="ptc_adc"><span style="color: #ac2925">ERROR!</span></li>
-                                <li id="ptc_accelo"><span style="color: #0B610B">OK!</span></li>
-                                <li id="ptc_wifi"><span style="color: #0B610B">OK!</span></li>
-                                <li id="ptc_rtc"><span style="color: #0B610B">OK!</span></li>
-                                <li id="ptc_batt"><span style="color: #0B610B">OK!</span></li>
-                            </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="general">
+                                <div class="row">
+                                    <table id="tableInfoSensorGeneral" class="col-lg-12" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <th class="col-lg-4">Serial:</th>
+                                                <td id="tisgSerial" class="col-lg-8"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="col-lg-4">Nombre:</th>
+                                                <td id="tisgName" class="col-lg-8"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="col-lg-4">Estado:</th>
+                                                <td id="tisgStatus" class="col-lg-8"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="col-lg-4">Fecha registro:</th>
+                                                <td id="tisgRegDate" class="col-lg-8"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="col-lg-4">Fecha actualización:</th>
+                                                <td id="tisgUpDate" class="col-lg-8"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center"><i id="loadGeneral" style="margin-top: 10px; display: none" class="ion-loading-a"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="location">
+                                <div class="row">
+                                    <table id="tableInfoSensorLocation" class="col-lg-12" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <th class="col-lg-4">Latitud:</th>
+                                            <td id="tislLat" class="col-lg-8"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-lg-4">Longitud:</th>
+                                            <td id="tislLng" class="col-lg-8"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-lg-4">Altitud:</th>
+                                            <td id="tislAlt" class="col-lg-8"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-lg-4">Dirección:</th>
+                                            <td id="tislAddress" class="col-lg-8"></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center"><i id="loadLocation" style="margin-top: 10px; display: none" class="ion-loading-a"></i></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="network">
+                                <div class="row">
+                                    <table id="tableInfoSensorNetwork" class="col-lg-12" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <th class="col-lg-4">Dirección IP:</th>
+                                            <td id="tisnIP" class="col-lg-8"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-lg-4">MAC:</th>
+                                            <td id="tisnMAC" class="col-lg-8"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-lg-4">SSID:</th>
+                                            <td id="tisnSSID" class="col-lg-8"></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center"><i id="loadNetwork" style="margin-top: 10px; display: none" class="ion-loading-a"></i></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="alerts">
+                                <div class="row">
+                                    <table id="tableInfoSensorAlerts" class="col-lg-12" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <th class="col-lg-4"># Eventos LTA:</th>
+                                            <td id="tisaLTA" class="col-lg-8"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-lg-4"># Eventos STA:</th>
+                                            <td id="tisaSTA" class="col-lg-8"></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center"><i id="loadAlert" style="margin-top: 10px; display: none" class="ion-loading-a"></i></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="component">
+                                <div class="row">
+                                    <table id="tableInfoSensorComponent" class="col-lg-12" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <th class="col-lg-4">CPU:</th>
+                                            <td id="tiscCPU" class="col-lg-8"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-lg-4">GPS:</th>
+                                            <td id="tiscGPS" class="col-lg-8"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-lg-4">ADC:</th>
+                                            <td id="tiscADC" class="col-lg-8"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-lg-4">Acelerómetro:</th>
+                                            <td id="tiscACC" class="col-lg-8"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-lg-4">WIFI:</th>
+                                            <td id="tiscWIFI" class="col-lg-8"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-lg-4">RTC:</th>
+                                            <td id="tiscRTC" class="col-lg-8"></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-lg-4">Bateria:</th>
+                                            <td id="tiscBATT" class="col-lg-8"></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center"><i id="loadComponent" style="margin-top: 10px; display: none" class="ion-loading-a"></i></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

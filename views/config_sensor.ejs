@@ -8,26 +8,253 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-lg-4">
-                        <h4>CPU:</h4>
-                    </div>
-                    <div class="col-lg-4">
-                        <h4>GPS:</h4>
-                    </div>
-                    <div class="col-lg-4">
-                        <h4>ADC:</h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <h4>Acelerometro:</h4>
-                    </div>
-                    <div class="col-lg-4">
-                        <h4>WIFI:</h4>
-                    </div>
-                    <div class="col-lg-4">
-                        <h4>RTC:</h4>
-                        <h4>Bateria:</h4>
+                    <div class="col-lg-12">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#cpu" data-toggle="tab" aria-expanded="false">
+                                    <span class="visible-xs"><i class="fa fa-home"></i></span>
+                                    <span class="hidden-xs">CPU</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#gps" data-toggle="tab" aria-expanded="true">
+                                    <span class="visible-xs"><i class="fa fa-user"></i></span>
+                                    <span class="hidden-xs">GPS</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#adc" data-toggle="tab" aria-expanded="false">
+                                    <span class="visible-xs"><i class="fa fa-envelope-o"></i></span>
+                                    <span class="hidden-xs">ADC</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#acelerometro" data-toggle="tab" aria-expanded="false">
+                                    <span class="visible-xs"><i class="fa fa-cog"></i></span>
+                                    <span class="hidden-xs">Acelerometro</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#wifi" data-toggle="tab" aria-expanded="false">
+                                    <span class="visible-xs"><i class="fa fa-cog"></i></span>
+                                    <span class="hidden-xs">WIFI</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#rtc" data-toggle="tab" aria-expanded="false">
+                                    <span class="visible-xs"><i class="fa fa-cog"></i></span>
+                                    <span class="hidden-xs">RTC</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#bateria" data-toggle="tab" aria-expanded="false">
+                                    <span class="visible-xs"><i class="fa fa-cog"></i></span>
+                                    <span class="hidden-xs">Bateria</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="cpu">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="descripCPU" class="col-lg-2 control-label">Descripción:</label>
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control" id="descripCPU" maxlength="80">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-inverse pull-right" id="btnSaveConfigCPU">Guardar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="gps">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="descripGPS" class="col-lg-2 control-label">Descripción:</label>
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control" id="descripGPS" maxlength="80">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="baudrateGPS" class="col-lg-2 control-label">Tasa baudios:</label>
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control" id="baudrateGPS" maxlength="7">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="msjnmeaGPS" class="col-lg-2 control-label">Mensajes NMEA:</label>
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control" id="msjnmeaGPS" maxlength="80">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-inverse pull-right" id="btnSaveConfigGPS">Guardar</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                       <div style="margin-bottom: 10px;">
+                                           <button class="btn btn-inverse" id="btnTestConfigGPS">Test</button>
+                                       </div>
+                                       <div class="row">
+                                           <div class="col-lg-10 col-lg-offset-1" align="center" style="background-color: #888888; height: 50px;">
+                                               <p style="color: #FFFFFF">Resultado funcionamiento y recepcion del gps</p>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="adc">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="descripADC" class="col-lg-2 control-label">Descripción:</label>
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control" id="descripADC" maxlength="80">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="samplesADC" class="col-lg-2 control-label">Muestras por segundo:</label>
+                                                <div class="col-lg-2" style="margin-top: 10px;">
+                                                    <select class="form-control" id="samplesADC">
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                        <option value="150">150</option>
+                                                        <option value="200">200</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-inverse pull-right" id="btnSaveConfigADC">Guardar</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div style="margin-bottom: 10px;">
+                                            <button class="btn btn-inverse" id="btnTestConfigADC">Test</button>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-10 col-lg-offset-1" align="center" style="background-color: #888888; height: 50px;">
+                                                <p style="color: #FFFFFF">Resultado prueba de captura y conversion de datos</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="acelerometro">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="descripACC" class="col-lg-2 control-label">Descripción:</label>
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control" id="descripACC" maxlength="80">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-inverse pull-right" id="btnSaveConfigACC">Guardar</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div style="margin-bottom: 10px;">
+                                            <button class="btn btn-inverse" id="btnTestConfigACC">Test</button>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-10 col-lg-offset-1" align="center" style="background-color: #888888; height: 50px;">
+                                                <p style="color: #FFFFFF">Resultado prueba de calibracion y funcionamiento de los 3 ejes</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="wifi">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="descripWIFI" class="col-lg-2 control-label">Descripción:</label>
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control" id="descripWIFI" maxlength="80">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-inverse pull-right" id="btnSaveConfigWIFI">Guardar</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div style="margin-bottom: 10px;">
+                                            <button class="btn btn-inverse" id="btnTestConfigWIFI">Test</button>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-10 col-lg-offset-1" align="center" style="background-color: #888888; height: 50px;">
+                                                <p style="color: #FFFFFF">Resultado test de conectividad con el sensor</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="rtc">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="descripRTC" class="col-lg-2 control-label">Descripción:</label>
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control" id="descripRTC" maxlength="80">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-inverse pull-right" id="btnSaveConfigRTC">Guardar</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div style="margin-bottom: 10px;">
+                                            <button class="btn btn-inverse" id="btnTestConfigRTC">Test</button>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-10 col-lg-offset-1" align="center" style="background-color: #888888; height: 50px;">
+                                                <p style="color: #FFFFFF">Resultado verificción de estado RTC</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bateria">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="descripBATT" class="col-lg-2 control-label">Descripción:</label>
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control" id="descripBATT" maxlength="80">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-inverse pull-right" id="btnSaveConfigBATT">Guardar</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div style="margin-bottom: 10px;">
+                                            <button class="btn btn-inverse" id="btnTestConfigBATT">Test</button>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-10 col-lg-offset-1" align="center" style="background-color: #888888; height: 50px;">
+                                                <p style="color: #FFFFFF">Resultado prueba salud bateria</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

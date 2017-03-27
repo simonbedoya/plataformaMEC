@@ -4,16 +4,24 @@
 /**
  * Created by sbv23 on 09/12/2016.
  */
-var express = require('express');
-var router = express.Router();
-var db = require('../db/connection');
-var response = require('../message');
-var jwt = require('jsonwebtoken');
-var config = require('../config');
-var functions = require('../functions');
+let express = require('express');
+let router = express.Router();
+let db = require('../db/connection');
+let response = require('../message');
+let jwt = require('jsonwebtoken');
+let config = require('../config');
+let functions = require('../functions');
 
-
-
+let battery = require('./api/battery');
+let adc = require('./api/adc');
+let rtc = require('./api/rtc');
+let gps = require('./api/gps');
+let cpu = require('./api/cpu');
+let accelerometer = require('./api/accelerometer');
+let wifi = require('./api/wifi');
+let location = require('./api/location');
+let upload = require('./api/upload');
+let sensorController = require('../controller/api/sensor_controller');
 
 /* GET home page. */
 router.post('/login', function(req, res, next) {
@@ -44,6 +52,33 @@ router.post('/login', function(req, res, next) {
     });
 });
 
+router.post("/auth", function (req,res) {
+   var serial = req.body.serial;
+
+   var sql = "SELECT pk_sensor FROM TBL_SENSOR WHERE serial_sensor = '"+serial+"' AND status_sensor = 'Activo'";
+   db.query(sql, function(err, result){
+       if(err){
+           res.status(500).send(JSON.parse(response.msg("005","Internal error", "null")));
+       }else {
+           if(result.length == 1){
+               //existe el sensor
+               var sensor = {
+                   serialSensor: serial,
+                   pkSensor: result[0].pk_sensor
+               };
+               var token = jwt.sign(sensor, config.secret, {
+                   expiresIn: 604800
+               });
+               var sres = '{"token": "' + token + '"}';
+               res.status(200).send(JSON.parse(response.msg("001", "Auth token", sres)));
+           }else{
+               //no existe el sensor o no esta asociado a una red
+               res.status(202).send(JSON.parse(response.msg("002", "Not found sensor", "null")));
+           }
+       }
+   });
+});
+
 //middleware check token
 router.use(function (req, res, next) {
     //var token = req.get("authorization");
@@ -67,7 +102,7 @@ router.get('/', function(req, res) {
     res.json({ message: 'Tienes acceso!' });
 });
 
-router.post('/network', function (req, res) {
+router.post('/functions', function (req, res) {
    var email = req.body.email;
 
    var sql = "SELECT * FROM TBL_NETWORK WHERE email_user = '" + email +"'";
@@ -86,62 +121,42 @@ router.post('/network', function (req, res) {
            }
        }
    });
-
 });
 
 router.post('/sensor_register', function (req,res) {
-   var serial = req.body.serial;
-   var network = req.body.network;
-   var name = req.body.name;
-
-
-   var sql = "SELECT PK_SENSOR FROM TBL_SENSOR WHERE SERIAL_SENSOR = '"+serial+"' AND STATUS_SENSOR = 'Activo'";
-   db.query(sql, function (err, result) {
-      if (err){
-          res.status(500).send(JSON.parse(response.msg("005","Internal error", "null")));
-      } else{
-          if (result.length == 0){
-              //no existe registro
-              insertSensor(serial, network, name, res);
-          }else{
-              //existe registro
-              var sql = "UPDATE TBL_SENSOR SET STATUS_SENSOR = 'Inactivo' WHERE PK_SENSOR = "+result[0].PK_SENSOR;
-              db.query(sql, function (err, result) {
-                 if (err){
-                     res.status(500).send(JSON.parse(response.msg("005","Internal error", "null")));
-                 } else{
-                     if (result.affectedRows != 0){
-                         //atualizo
-                         insertSensor(serial, network, name, res);
-                     }else{
-                         //no actualizo
-                         res.status(500).send(JSON.parse(response.msg("003","not update data", "null")));
-                     }
-                 }
-              });
-          }
+    sensorController.sensorRegister(req.body.serial).then(function (data) {
+      if(data.code === "001"){
+          //no existe registro
+            sensorController.insertSensor(req.body.serial, req.body.network, req.body.name).then(function (data) {
+                res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
+            })
+      } else if(data.code === "002"){
+          //existe registro
+            sensorController.updateSensor(data.data.PK_SENSOR).then(function (data) {
+                if(data.code === "001"){
+                    //insertar sensor
+                    sensorController.insertSensor(req.body.serial, req.body.network, req.body.name).then(function (data) {
+                        res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
+                    })
+                }else{
+                    res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
+                }
+            })
+      }else {
+          res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
       }
    });
-
-
-
 });
 
-function insertSensor(serial, network, name, res) {
-    var date = functions.datetime();
-    console.log(date);
-    var sql = "INSERT INTO TBL_SENSOR (SERIAL_SENSOR, PK_NETWORK, NAME_SENSOR, STATUS_SENSOR, REGISTERDATE_SENSOR, UPDATEDATE_SENSOR) VALUES ('"+ serial +"', "+ network +", '"+name+"', 'Activo', '"+date+"', '"+date+"')";
-    db.query(sql, function (err, result) {
-        console.log("consulta");
-        if (result.affectedRows != 0){
-            //insertado correctamente
-            res.status(200).send(JSON.parse(response.msg("001", "Sensor registered", null)));
-        }else{
-            res.status(200).send(JSON.parse(response.msg("002", "Not sensor registered", null)));
-            //error insertando
-        }
-    });
-}
+router.use('/battery',battery);
+router.use('/adc',adc);
+router.use('/rtc',rtc);
+router.use('/gps',gps);
+router.use('/cpu',cpu);
+router.use('/accelerometer',accelerometer);
+router.use('/wifi',wifi);
+router.use('/location',location);
+router.use('/upload',upload);
 
 module.exports = router;
 

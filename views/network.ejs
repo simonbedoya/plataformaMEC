@@ -13,7 +13,7 @@
     <!-- DataTables -->
     <link href="assets/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
 
-    <link href="assets/sweet-alert/sweet-alert.min.css" rel="stylesheet">
+
 
 </head>
 
@@ -34,12 +34,12 @@
         <!-- Navbar Start -->
         <nav class="navigation">
             <ul class="list-unstyled">
-                <li class=""><a href="/index"><i class="zmdi zmdi-view-dashboard"></i> <span class="nav-label">Inicio</span></a></li>
-                <li class="active"><a href="/network"><i class="fa fa-sitemap"></i> <span class="nav-label">Redes</span></a></li>
-                <li class=""><a href="/sensor"><i class="fa fa-bullseye"></i> <span class="nav-label">Sensores</span></a></li>
-                <li class=""><a href="/alert"><i class="zmdi zmdi-alarm"></i> <span class="nav-label">Alertas</span></a></li>
-                <li class=""><a href="/historical"><i class="zmdi zmdi-format-list-bulleted"></i> <span class="nav-label">Histórico</span></a></li>
-                <li class=""><a href="/settings"><i class="fa fa-cogs"></i> <span class="nav-label">Configuración</span></a></li>
+                <li class=""><a href="/index"><i class="ion-home"></i> <span class="nav-label">Inicio</span></a></li>
+                <li class="active"><a href="/network"><i class="ion-network"></i> <span class="nav-label">Redes</span></a></li>
+                <li class=""><a href="/sensor"><i class="ion-disc"></i> <span class="nav-label">Sensores</span></a></li>
+                <li class=""><a href="/alert"><i class="ion-android-alarm"></i> <span class="nav-label">Alertas</span></a></li>
+                <li class=""><a href="/historical"><i class="ion-document-text"></i> <span class="nav-label">Histórico</span></a></li>
+                <li class=""><a href="/settings"><i class="ion-settings"></i> <span class="nav-label">Configuración</span></a></li>
             </ul>
         </nav>
 
@@ -60,49 +60,36 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-body">
+                <div class="portlet">
+                    <div class="portlet-heading">
+                        <h3 class="portlet-title text-dark">
+                            Listado de redes
+                        </h3>
+                        <div class="portlet-widgets">
+                            <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="bg-tableNetwork" class="panel-collapse collapse in">
+                        <div class="portlet-body">
+                            <table id="table_networks" class="table table-striped table-bordered">
+                                <thead>
+                                <tr>
+                                    <th class="col-md-3" style="vertical-align: middle">Nombre</th>
+                                    <th class="col-md-4" style="vertical-align: middle">Dirección</th>
+                                    <th class="col-md-1" style="vertical-align: middle"># Sensores</th>
+                                    <th class="col-md-1" style="vertical-align: middle">Estado</th>
+                                    <th class="col-md-1" style="vertical-align: middle">Fecha creación</th>
+                                    <th class="col-md-1" style="vertical-align: middle">Fecha actualización</th>
+                                    <th class="col-md-1" style="vertical-align: middle">Opciones</th>
+                                </tr>
+                                </thead>
+                                <tbody>
 
-                        <table id="table_networks" class="table table-striped table-bordered">
-                            <thead>
-                            <tr>
-                                <th class="col-md-3" style="vertical-align: middle">Nombre</th>
-                                <th class="col-md-4" style="vertical-align: middle">Dirección</th>
-                                <th class="col-md-1" style="vertical-align: middle"># Sensores</th>
-                                <th class="col-md-1" style="vertical-align: middle">Estado</th>
-                                <th class="col-md-1" style="vertical-align: middle">Fecha creación</th>
-                                <th class="col-md-1" style="vertical-align: middle">Fecha actualización</th>
-                                <th class="col-md-1" style="vertical-align: middle">Opciones</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <!--<tr>
-                                <td>Puente peatonal liceo</td>
-                                <td>Carrera 2 # 25N-69</td>
-                                <td>5</td>
-                                <td>Activa</td>
-                                <td>2016/12/05</td>
-                                <td>2016/12/09</td>
-                                <td class="actions">
-                                    <a data-toggle="modal" data-target="#edit-network" class="" style="color: #DBA901; margin-right: 5px;"><i class="fa fa-pencil"></i></a>
-                                    <a onclick="delete_netowrk()" class="" style="color: #B40404"><i class="fa fa-trash-o"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Puente peatonal liceo</td>
-                                <td>Carrera 2 # 25N-69</td>
-                                <td>5</td>
-                                <td>Activa</td>
-                                <td>2016/12/05</td>
-                                <td>2016/12/09</td>
-                                <td class="actions">
-                                    <a data-toggle="modal" data-target="#edit-network" class="" style="color: #DBA901; margin-right: 5px;"><i class="fa fa-pencil"></i></a>
-                                    <a onclick="delete_netowrk()" class="" style="color: #B40404"><i class="fa fa-trash-o"></i></a>
-                                </td>
-                            </tr>-->
-                            </tbody>
-                        </table>
-                        <button class="btn btn-inverse" onclick="addNetworkModal()">Agregar red</button>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-inverse" onclick="addNetworkModal()">Agregar red</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -143,7 +130,7 @@
     <!-- Datatable init js -->
     <script src="js/datatables.init.js"></script>
 
-    <script src="assets/sweet-alert/sweet-alert.min.js"></script>
+
     <script src="js/functions/network.js"></script>
 
     <script type="text/javascript">

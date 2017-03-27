@@ -27,7 +27,7 @@
 
         //on menu item clicking
         this.$navbarItem.click(function () {
-            if ($this.$sideBar.hasClass('collapsed') == false || $(window).width() < 769) {
+            if ($this.$sideBar.hasClass('collapsed') == false || $(window).width() < 768) {
                 $("aside.left-panel nav.navigation > ul > li > ul").slideUp(300);
                 $("aside.left-panel nav.navigation > ul > li").removeClass('active');
                 if (!$(this).next().is(":visible")) {
