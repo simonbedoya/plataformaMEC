@@ -10,7 +10,7 @@ function delet_network(network) {
         function (resolve, reject) {
             $.ajax({
                 type: "post",
-                url: "http://localhost:3000/data/delete_network",
+                url: "http://52.34.55.59:3000/data/delete_network",
                 data: {network: network},
                 success: function (result) {
                     //alert(result.msg);
@@ -289,7 +289,7 @@ function saveNewNetwork(name, address, status) {
         function (resolve, reject) {
             $.ajax({
                 type: "post",
-                url: "http://localhost:3000/data/create_network",
+                url: "http://52.34.55.59:3000/data/create_network",
                 data: {user: pk_user,name: name, address: address, status: status},
                 success: function (result) {
                     if (result.code === "001"){

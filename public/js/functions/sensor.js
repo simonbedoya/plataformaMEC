@@ -232,7 +232,7 @@ $("#location_sensor").on('shown.bs.modal', function () {
     let image = "img/sensor.png";
     $.ajax({
         type: "post",
-        url: "http://localhost:3000/data/getLocationByPkSensor",
+        url: "http://52.34.55.59:3000/data/getLocationByPkSensor",
         data: {pk_sensor: pk_sensor},
         success: function (result) {
             if (result.code === "001"){
@@ -300,7 +300,7 @@ function showConfig_sensor(pkSensor) {
 function loadInfoGeneral() {
     $.ajax({
         type: "post",
-        url: "http://localhost:3000/data/getInfoSensor",
+        url: "http://52.34.55.59:3000/data/getInfoSensor",
         data: {pk_sensor: pk_sensor},
         success: function (result) {
             if (result.code === "001") {
@@ -450,7 +450,7 @@ $("#tabLocation").click(function () {
 function loadInfoLocation() {
     $.ajax({
         type: "post",
-        url: "http://localhost:3000/data/getLocationSensor",
+        url: "http://52.34.55.59:3000/data/getLocationSensor",
         data: {pk_sensor: pk_sensor},
         success: function (result) {
             if (result.code === "001") {
@@ -531,7 +531,7 @@ $("#tabNetwork").click(function () {
 function loadInfoNetwork() {
     $.ajax({
         type: "post",
-        url: "http://localhost:3000/data/getNetworkSensor",
+        url: "http://52.34.55.59:3000/data/getNetworkSensor",
         data: {pk_sensor: pk_sensor},
         success: function (result) {
             if (result.code === "001") {
@@ -595,7 +595,7 @@ $("#tabAlert").click(function () {
 function loadInfoAlert() {
     $.ajax({
         type: "post",
-        url: "http://localhost:3000/data/getCountEvents",
+        url: "http://52.34.55.59:3000/data/getCountEvents",
         data: {pk_sensor: pk_sensor},
         success: function (result) {
             if (result.code === "001") {
@@ -657,7 +657,7 @@ $("#tabComponent").click(function () {
 function loadInfoComponent() {
     $.ajax({
         type: "post",
-        url: "http://localhost:3000/data/getStatusComponentSensor",
+        url: "http://52.34.55.59:3000/data/getStatusComponentSensor",
         data: {pk_sensor: pk_sensor},
         success: function (result) {
             if (result.code === "001") {

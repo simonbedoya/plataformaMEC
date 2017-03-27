@@ -1,9 +1,9 @@
 /**
  * Created by sbv23 on 07/12/2016.
  */
-var path = require('path');
+let path = require('path');
 
-var varGlobals = {
+let varGlobals = {
     email_user: '',
     token_user: '',
     secret: "a4f8071f-c873-4447-8ee2",
