@@ -11,33 +11,47 @@ let functions = require('../../functions');
 let locationController = require('../../controller/api/location_controller');
 
 router.post('/', function(req,res){
-    locationController.verifyRegisterLocation(req.decoded.pkSensor).then(function (data) {
-       if(data.code === "002"){
-           //inserta informacion
-           locationController.getUploadPathNetwork(req.decoded.pkSensor).then(function (data) {
-              if(data.code === "001") {
-                  let uploadPathNetwork = data.data.UPLOADPATH_NETWORK;
-                  let uploadPath = functions.random(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
-                  locationController.verifyUploadPath(uploadPathNetwork,uploadPath).then(function (data) {
-                      if(data.code === "001"){
-                          //inserte la localizacion
-                          let date = functions.datetime();
-                          locationController.insertLocation(req.decoded.pkSensor,req.body.latitude,req.body.longitude,req.body.altitude,req.body.address,date, uploadPath).then(function (data) {
-                              res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
-                          })
-                      }else{
-                          //error
-                          res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
-                      }
-                  })
-              }else{
-                  res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
-              }
-           });
-       } else{
-           //existe el resgistro
-           //o error
-           res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
+    locationController.getUploadPathNetwork(req.decoded.pkSensor).then(function (data) {
+       if(data.code === "001") {
+          let uploadPathNetwork = data.data.UPLOADPATH_NETWORK;
+          let uploadPath = functions.random(5, '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+
+          locationController.verifyUploadPath(uploadPathNetwork,uploadPath).then(function (data) {
+             if(data.code === "001"){
+                 let new_path = data.data;
+                 locationController.verifyRegisterLocation(req.decoded.pkSensor).then(function (data) {
+                    if (data.code === "002") {
+                        //inserta informacion
+                        // inserte la localizacion
+                        let date = functions.datetime();
+                        locationController.insertLocation(req.decoded.pkSensor,req.body.latitude,req.body.longitude,req.body.altitude,req.body.address,date, new_path).then(function (data) {
+                            res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
+                        })
+                    } else if(data.code === "003"){
+                        //inactiva ubicacion anterior y inserta nueva ubicacion
+                        let date = functions.datetime();
+                        locationController.updateLocations(req.decoded.pkSensor,date).then(function (data) {
+                            if(data.code === "001"){
+                                locationController.insertLocation(req.decoded.pkSensor,req.body.latitude,req.body.longitude,req.body.altitude,req.body.address,date, new_path).then(function (data) {
+                                    res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
+                                })
+                            }else{
+                                res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
+                            }
+                        })
+                    }else{
+                      //existe el resgistro
+                      //o error
+                      res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
+                    }
+                });
+             }else{
+                //error
+                res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
+             }
+          })
+       }else{
+          res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
        }
     });
 });
@@ -49,7 +63,7 @@ router.put('/',function (req,res) {
     let address = req.body.address;
     let date = functions.datetime();
 
-    let sql = "UPDATE TBL_LOCATION SET LAT_LOCATION = '" + lat_loc + "', LNG_LOCATION = '" + lng_loc + "', ALT_LOCATION = '" + alt_loc + "', ADDRESS_LOCATION = '" + address + "', UPDATEDATE_LOCATION = '" + date + "' WHERE PK_SENSOR = "+req.decoded.pkSensor;
+    let sql = "UPDATE TBL_LOCATION SET LAT_LOCATION = '" + lat_loc + "', LNG_LOCATION = '" + lng_loc + "', ALT_LOCATION = '" + alt_loc + "', ADDRESS_LOCATION = '" + address + "', UPDATEDATE_LOCATION = '" + date + "' WHERE PK_SENSOR = "+req.decoded.pkSensor+" AND STATUS_LOCATION = 'Activa'";
     db.query(sql, function (err, result) {
         if (err) {
             res.status(500).send(JSON.parse(response.msg("005", "Internal error", "null")));
@@ -64,7 +78,7 @@ router.put('/',function (req,res) {
 });
 
 router.get('/', function (req,res) {
-    let sql = "SELECT LAT_LOCATION, LNG_LOCATION, ALT_LOCATION, ADDRESS_LOCATION FROM TBL_LOCATION WHERE PK_SENSOR = "+req.decoded.pkSensor;
+    let sql = "SELECT LAT_LOCATION, LNG_LOCATION, ALT_LOCATION, ADDRESS_LOCATION FROM TBL_LOCATION WHERE PK_SENSOR = "+req.decoded.pkSensor+" AND STATUS_LOCATION = 'Activa'";
     db.query(sql, function (err, result) {
         if(err){
             res.status(500).send(JSON.parse(response.msg("005","Internal error", "null")));

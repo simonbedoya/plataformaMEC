@@ -1,0 +1,16 @@
+-Product test backlog
+
+Tereas simon
+- app Configuracion beagle
+- app plataforma
+- redactar arquitectura
+- documentacion, manuales de apps
+
+
+Revistas
+- Revista sistemas y telematica universidad icesi
+- Revista tecnura universidad distrital 
+- Revista ingenierias universidad de medellin 
+
+
+<secured attributes="ROLE_CONSULA_FRACCIONAMIENTO_TITULO_VALOR_C" />

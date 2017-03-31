@@ -2,86 +2,91 @@
  * Created by sbv23 on 16/03/2017.
  */
 
-var express = require('express');
-var router = express.Router();
-var db = require('../../db/connection');
-var response = require('../../message');
-var jwt = require('jsonwebtoken');
-var config = require('../../config');
-var functions = require('../../functions');
-var formidable = require('formidable');
-var path = require('path');
-var fs = require('fs');
-
-// Upload route.
-router.use(function(req, res, next) {
-    var form = new formidable.IncomingForm();
-    form.parse(req, function(err, fields, files) {
-
-        // `file` is the name of the <input> field of type `file`
-        if(files.file.type == "text/plain" || files.file.type == "application/octet-stream") {
-            var old_path = files.file.path,
-                file_size = files.file.size,
-                file_ext = files.file.name.split('.').pop(),
-                index = old_path.lastIndexOf('\\') + 1,
-                file_name = old_path.substr(index),
-                new_path = path.join(config.dir_files_data, files.file.name);
-            if(file_ext == "txt" || file_ext == "json") {
-                fileExists(new_path,function (err,exists) {
-                   if(err){
-                       res.status(500).send(JSON.parse(response.msg("004", "Internal Error ", "null")));
-                   }else{
-                        if(exists){
-                            //existe el archivo
-                            fs.unlink(old_path, function (err) {
-                                if (err) {
-                                    res.status(500).send(JSON.parse(response.msg("004", "Internal Error ", "null")));
-                                } else {
-                                    res.status(202).send(JSON.parse(response.msg("004", "Already file exists", "null")));
-                                }
-                            });
-                        }else{
-                            //no existe el archivo
-                            fs.readFile(old_path, function (err, data) {
-                                fs.writeFile(new_path, data, function (err) {
-                                    fs.unlink(old_path, function (err) {
-                                        if (err) {
-                                            res.status(200).send(JSON.parse(response.msg("002", "Not file upload correct", "null")));
-                                        } else {
-                                            req.filePath = new_path;
-                                            next();
-                                        }
-                                    });
-                                });
-                            });
-                        }
-                   }
-                });
-            }else{
-                res.status(202).send(JSON.parse(response.msg("003", "Incorrect data type", "null")));
-            }
-        }else{
-            res.status(202).send(JSON.parse(response.msg("003", "Incorrect data type", "null")));
-        }
-    });
-});
-
-function fileExists(file, cb) {
-    fs.stat(file, function(err, stats){
-        if (err) {
-            if (err.code === 'ENOENT') {
-                return cb(null, false);
-            } else { // en caso de otro error
-                return cb(err);
-            }
-        }
-        // devolvemos el resultado de `isFile`.
-        return cb(null, stats.isFile());
-    });
-}
+const express = require('express');
+const router = express.Router();
+const db = require('../../db/connection');
+const response = require('../../message');
+const config = require('../../config');
+const functions = require('../../functions');
+const formidable = require('formidable');
+const path = require('path');
+const fs = require('fs');
+const uploadController = require('../../controller/api/upload_controller');
+const async = require('async');
 
 router.post('/file', function (req,res) {
-   res.send(req.filePath);
+    let form = new formidable.IncomingForm();
+    form.parse(req, function(err, fields, files) {
+        console.log(JSON.stringify(files));
+        if(err) return res.status(500).send(JSON.parse(response.msg("005", "Internal error", null)));
+        let arrOut=[];
+        async.filter(files, function(file, callback) {
+            let file_name_o = file.name.split('.');
+
+            uploadController.verifyExistFile(file_name_o[0], req.decoded.pkSensor).then(function (data) {
+                if (data.code === "001") {
+                    //no existe archivo insertar registro y subir archivo
+                    uploadController.uploadFiles(file, data.data).then(function (data) {
+                        if(data.code === "001"){
+                            //actualizar registro
+                            uploadController.insertFile(req.decoded.pkSensor,data.data.filePath,file_name_o[0]).then(function (data) {
+                                if(data.code === "001"){
+                                    arrOut.push(data);
+                                    callback(null,null);
+                                }else{
+                                    arrOut.push(data);
+                                    callback("error",null);
+                                }
+                            })
+                        }else{
+                            arrOut.push(data);
+                            callback("error",null);
+                        }
+                    })
+                } else if (data.code === "002") {
+                    //existe archivo actualizar registro y reemplazar archivo
+                    uploadController.uploadFiles(file).then(function (data) {
+                        if(data.code === "001"){
+                            //actualizar registro
+                            uploadController.updateFile(req.decoded.pkSensor,data.data.filePath,file_name_o[0]).then(function (data) {
+                                if(data.code === "001"){
+                                    arrOut.push(data);
+                                    callback(null,null);
+                                }else{
+                                    arrOut.push(data);
+                                    callback("error",null);
+                                }
+                            })
+                        }else{
+                            arrOut.push(data);
+                            callback("error",null);
+                        }
+                    })
+                } else {
+                    //error
+                    arrOut.push(data);
+                    callback("error",null);
+                }
+            });
+        }, function(err,results) {
+            // results now equals an array of the existing files
+            console.log("termino", arrOut);
+            if (err) return res.status(arrOut[0].hcode).send(JSON.parse(response.msg(arrOut[0].code, arrOut[0].msg, arrOut[0].data)));
+
+            let i;
+            let correct = 0;
+            for(i in arrOut){
+                if(arrOut[i].code === "001"){
+                    correct++;
+                }
+            }
+            if(correct === arrOut.length){
+                res.status(200).send(JSON.parse(response.msg("001", "Files inserted correctly", null)));
+            }else{
+                res.status(202).send(JSON.parse(response.msg("002", "No Files inserted correctly", null)));
+            }
+        });
+    });
 });
 
 module.exports = router;
