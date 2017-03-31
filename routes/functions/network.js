@@ -7,7 +7,7 @@ var config = require('../../config');
 exports.remove_folder = function remove_folder(uploadPath) {
          return new Promise( function( fullfill, reject) {
 
-            child = exec(config.remove_w + ' "' + config.dir_files_data + '\\' + uploadPath + '"', function (err, stdout, stderr) {
+            child = exec(config.remove_l + ' "' + config.dir_files_data + '\\' + uploadPath + '"', function (err, stdout, stderr) {
                 if(err === null){
                     fullfill({result: true});
                 }else{

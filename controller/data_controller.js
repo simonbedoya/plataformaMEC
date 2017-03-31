@@ -171,7 +171,7 @@ module.exports = {
     removeFolder: function (uploadPath) {
         return new Promise(
             function (fullfill) {
-                exec(config.remove_w + ' "' + config.dir_files_data + '/' + uploadPath + '"', function (err) {
+                exec(config.remove_l + ' "' + config.dir_files_data + '/' + uploadPath + '"', function (err) {
                     if(err === null){
                         fullfill({hcode: 200, code: "001", msg: "Delete uploadPath", data: null});
                     }else{
