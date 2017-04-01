@@ -64,7 +64,7 @@ module.exports = {
                         fullfill({hcode: 200 ,code: "001", msg:"No exist file", data: result[0].UPLOADPATH})
                     }else{
                         //existe archivo
-                        fullfill({hcode: 200 ,code: "002", msg:"Exist file", data: null})
+                        fullfill({hcode: 200 ,code: "002", msg:"Exist file", data: result[0].UPLOADPATH})
                     }
                 })
             }
