@@ -81,11 +81,11 @@ module.exports = {
                         //no existe el archivo
                         fs.readFile(old_path, function (err, data) {
                            fs.writeFile(path_file, data, function (err) {
-                               if(err) return fullfill({hcode: 200, code: "002", msg: "Not file upload correct", data: null});
+                               if(err) return fullfill({hcode: 500, code: "002", msg: "Not file upload correct", data: null});
 
                                fs.unlink(old_path, function (err) {
                                    if (err) {
-                                       fullfill({hcode: 200, code: "002", msg: "Not file upload correct", data: null});
+                                       fullfill({hcode: 202, code: "002", msg: "Not file upload correct", data: null});
                                    } else {
                                        fullfill({hcode: 200, code: "001", msg: "Upload File Correct", data: {filePath: new_path}});
                                    }
