@@ -80,7 +80,7 @@ module.exports = {
                     if(file_ext === "txt" || file_ext === "json" || file_ext === "sac") {
                         //no existe el archivo
                         fs.readFile(old_path, function (err, data) {
-                           fs.writeFile(path_file, data, function (err) {
+                           fs.writeFile(path_file+"/"+file.name, data, function (err) {
                                console.log(err);
                                if(err) return fullfill({hcode: 500, code: "002", msg: "Not file upload correct", data: null});
 
