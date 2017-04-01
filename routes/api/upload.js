@@ -25,11 +25,13 @@ router.post('/file', function (req,res) {
 
             uploadController.verifyExistFile(file_name_o[0], req.decoded.pkSensor).then(function (data) {
                 if (data.code === "001") {
+                    let path_file = data.data.UPLOADPATH;
+                    let pk_location = data.data.PK_LOCATION;
                     //no existe archivo insertar registro y subir archivo
-                    uploadController.uploadFiles(file, data.data).then(function (data) {
+                    uploadController.uploadFiles(file, path_file).then(function (data) {
                         if(data.code === "001"){
                             //actualizar registro
-                            uploadController.insertFile(req.decoded.pkSensor,data.data.filePath,file_name_o[0]).then(function (data) {
+                            uploadController.insertFile(req.decoded.pkSensor,data.data.filePath,file_name_o[0],pk_location).then(function (data) {
                                 if(data.code === "001"){
                                     arrOut.push(data);
                                     callback(null,null);
@@ -45,7 +47,7 @@ router.post('/file', function (req,res) {
                     })
                 } else if (data.code === "002") {
                     //existe archivo actualizar registro y reemplazar archivo
-                    uploadController.uploadFiles(file, data.data).then(function (data) {
+                    uploadController.uploadFiles(file, path_file).then(function (data) {
                         if(data.code === "001"){
                             //actualizar registro
                             uploadController.updateFile(req.decoded.pkSensor,data.data.filePath,file_name_o[0]).then(function (data) {
