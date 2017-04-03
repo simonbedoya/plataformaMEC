@@ -332,16 +332,12 @@ module.exports = {
     getDataFilePath: function (path_file) {
         return new Promise(
             function (fullfill) {
-                exec("cd /opt/serverMEC/plataformaMEC/ReadFileSAC/" ,function (err, stdout, stderr) {
-                    console.log(err);
-                    if(err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
-
-                    exec(`/opt/serverMEC/plataformaMEC/ReadFileSAC/readsac ${path_file}`, function (err, stdout, stderr) {
-                        console.log(err);
+                exec(`/opt/serverMEC/plataformaMEC/ReadFileSAC/readsac ${path_file}`, function (err, stdout, stderr) {
+                        //console.log(err);
                         if(err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
 
-                        console.log(stdout);
-                    })
+                        //console.log(stdout);
+                        fullfill({hcode: 202, code: "001", msg: "ReadComplete", data: stdout})
                 })
             }
         )
