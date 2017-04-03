@@ -91,7 +91,7 @@ function getDateList(date,serial,row) {
     $.ajax({
         type: "post",
         async: false,
-        url: "http://localhost:3000/data/getDateList",
+        url: "http://52.34.55.59:3000/data/getDateList",
         data: {serial: serial, date: date},
         success: function (result) {
             if (result.code === "001"){
@@ -119,7 +119,7 @@ function readFile(pk_file) {
     $.ajax({
         type: "post",
         async: false,
-        url: "http://localhost:3000/data/getDataFileByPk",
+        url: "http://52.34.55.59:3000/data/getDataFileByPk",
         data: {pk_file: pk_file},
         success: function (result) {
             if (result.code === "001"){
@@ -146,7 +146,7 @@ function readFile(pk_file) {
 function reloadDataTable(serial) {
     $.ajax({
         type: "post",
-        url: "http://localhost:3000/data/getDates",
+        url: "http://52.34.55.59:3000/data/getDates",
         data: {serial: serial},
         success: function (result) {
             if (result.code === "001"){
