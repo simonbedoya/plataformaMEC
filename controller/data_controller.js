@@ -333,9 +333,11 @@ module.exports = {
         return new Promise(
             function (fullfill) {
                 exec("cd /opt/serverMEC/plataformaMEC/ReadFileSAC/" ,function (err, stdout, stderr) {
+                    console.log(err);
                     if(err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
 
                     exec(`./readsac ${path_file}`, function (err, stdout, stderr) {
+                        console.log(err);
                         if(err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
 
                         console.log(stdout);
