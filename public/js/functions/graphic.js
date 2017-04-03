@@ -122,10 +122,8 @@ function readFile(pk_file) {
         url: "http://52.34.55.59:3000/data/getDataFileByPk",
         data: {pk_file: pk_file},
         success: function (result) {
-            if (result.code === "001"){
-                //hay datos
-
-            }
+            let resultArray = result.split("\n");
+            console.log(resultArray);
         },
         error: function (e) {
             console.log(e);
