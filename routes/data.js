@@ -135,7 +135,7 @@ router.post('/getDataFileByPk', function (req,res) {
         if(data.code === "001"){
             let path_file = data.data;
             data_controller.getDataFilePath(path_file).then(function (data) {
-                res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
+                res.status(data.hcode).send(data.data);
             })
         }
 
