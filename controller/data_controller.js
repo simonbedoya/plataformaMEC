@@ -283,6 +283,66 @@ module.exports = {
                 });
             }
         )
+    },
+    getDateList: function (serial,date) {
+        return new Promise(
+            function (fullfill) {
+                db.query(template(sqlQuery.query_dateList,{serial: serial,date: date}), function (err, result) {
+                    if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
+
+                    if (result.length !== 0) {
+                        fullfill({hcode: 200, code: "001", msg: "Date List", data: JSON.stringify(result)});
+                    } else {
+                        fullfill({hcode: 202, code: "002", msg: "Error", data: null});
+                    }
+                });
+            }
+        )
+    },
+    getDates: function (serial) {
+        return new Promise(
+            function (fullfill) {
+                db.query(template(sqlQuery.query_dates,{serial: serial}), function (err, result) {
+                    if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
+
+                    if (result.length !== 0) {
+                        fullfill({hcode: 200, code: "001", msg: "Date List", data: JSON.stringify(result)});
+                    } else {
+                        fullfill({hcode: 202, code: "002", msg: "Error", data: null});
+                    }
+                });
+            }
+        )
+    },
+    getDataFileByPk: function (pk_file) {
+        return new Promise(
+            function (fullfill) {
+                db.query(template(sqlQuery.query_getDataFileByPk,{pk_file: pk_file}), function (err, result) {
+                    if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
+
+                    if (result.length !== 0) {
+                        fullfill({hcode: 200, code: "001", msg: "Date List", data: result[0].PATH_FILE});
+                    } else {
+                        fullfill({hcode: 202, code: "002", msg: "Error", data: null});
+                    }
+                });
+            }
+        )
+    },
+    getDataFilePath: function (path_file) {
+        return new Promise(
+            function (fullfill) {
+                exec("cd /opt/serverMEC/plataformaMEC/ReadFileSAC/" ,function (err, stdout, stderr) {
+                    if(err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
+
+                    exec(`./readsac ${path_file}`, function (err, stdout, stderr) {
+                        if(err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
+
+                        console.log(stdout);
+                    })
+                })
+            }
+        )
     }
 };
 

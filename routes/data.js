@@ -118,4 +118,28 @@ router.post('/getStatusComponentSensor', function (req,res) {
     })
 });
 
+router.post('/getDateList', function (req,res) {
+    data_controller.getDateList(req.body.serial,req.body.date).then(function (data) {
+        res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
+    })
+});
+
+router.post('/getDates', function (req,res) {
+    data_controller.getDates(req.body.serial).then(function (data) {
+        res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
+    })
+});
+
+router.post('/getDataFileByPk', function (req,res) {
+    data_controller.getDataFileByPk(req.body.pk_file).then(function (data) {
+        if(data.code === "001"){
+            let path_file = data.data;
+            data_controller.getDataFilePath(path_file).then(function (data) {
+                console.log("termino");
+            })
+        }
+        res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
+    })
+});
+
 module.exports = router;

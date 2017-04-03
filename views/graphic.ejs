@@ -5,10 +5,19 @@
 
     <link rel="stylesheet" href="assets/rickshaw-chart/rickshaw.min.css">
 
+    <!-- DataTables -->
+    <link href="assets/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/datatables/fixedHeader.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/datatables/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/datatables/scroller.bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- DataTables -->
+    <link href="assets/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 
-<body onload="load()">
+<body onload="load(<%= dateList %>, '<%=serial%>')">
 <!-- Aside Start-->
 <aside class="left-panel">
 
@@ -49,25 +58,36 @@
             <h3 class="title">Sensor #SERIAL</h3>
         </div>
         <div class="row">
-            <div class="col-lg-5">
-                <div class="portlet">
+            <div class="col-lg-6" >
+                <div class="portlet" style="height: 400px;">
                     <div class="portlet-heading">
                         <h3 class="portlet-title text-dark">
                             Listado de fechas
                         </h3>
                         <div class="portlet-widgets">
-                            <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                            <a onclick="reloadDataTable('<%=serial%>');" data-toggle="reload"><i class="ion-refresh"></i></a>
                             <span class="divider"></span>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                     <div class="portlet-body">
+                        <table id="tableDateList" class="table table-responsive">
+                            <thead>
+                                <tr>
+                                    <th class="col-lg-1"></th>
+                                    <th class="col-lg-8">Fecha</th>
+                                    <th class="col-lg-3"># archivos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
 
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
             <!--  Grafica -->
-            <div class="col-lg-7">
+            <div class="col-lg-6">
                 <div class="portlet"><!-- /primary heading -->
                     <div class="portlet-heading">
                         <h3 class="portlet-title text-dark">
@@ -126,6 +146,21 @@
 <script src="assets/rickshaw-chart/vendor/d3.layout.min.js"></script>
 <script src="assets/rickshaw-chart/rickshaw.min.js"></script>
 <script src="assets/rickshaw-chart/rickshaw.chart.init.js"></script>
+<!-- Datatables-->
+<script src="assets/datatables/jquery.dataTables.min.js"></script>
+<script src="assets/datatables/dataTables.bootstrap.js"></script>
+<script src="assets/datatables/dataTables.buttons.min.js"></script>
+<script src="assets/datatables/buttons.bootstrap.min.js"></script>
+<script src="assets/datatables/jszip.min.js"></script>
+<script src="assets/datatables/pdfmake.min.js"></script>
+<script src="assets/datatables/vfs_fonts.js"></script>
+<script src="assets/datatables/buttons.html5.min.js"></script>
+<script src="assets/datatables/buttons.print.min.js"></script>
+<script src="assets/datatables/dataTables.fixedHeader.min.js"></script>
+<script src="assets/datatables/dataTables.keyTable.min.js"></script>
+<script src="assets/datatables/dataTables.responsive.min.js"></script>
+<script src="assets/datatables/responsive.bootstrap.min.js"></script>
+<script src="assets/datatables/dataTables.scroller.min.js"></script>
 
 <script src="js/functions/graphic.js"></script>
 

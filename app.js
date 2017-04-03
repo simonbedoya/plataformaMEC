@@ -57,45 +57,64 @@ app.use(session({secret: config.secret, cookie: { maxAge: 2628000000 }, resave: 
 app.get('/',function (req, res) {
     res.redirect('/admin');
 });
+
 app.use('/admin', login);
-app.use('/index', index);
 app.use('/log-in', log_in);
-app.use('/functions', net);
-app.use('/sensor', sensor);
-app.use('/alert', alert);
-app.use('/historical', historical);
-app.use('/settings', settings);
-app.use('/profile', profile);
-app.use('/log-out', log_out);
 app.use('/api', api);
-app.use('/graphic', graphic);
-app.use('/data', data);
-app.use('/network',net);
+
 
 app.get('/recoverpw', function (req,res) {
     res.render('recoverpw');
 });
 
 app.get('/register', function (req,res) {
-   res.render('register');
+    res.render('register');
 });
+
+//verificar session iniciada
+app.use(function (req,res,next) {
+    const session = req.session;
+    if (session.remember){
+        if (session.remember === false){
+            //sesion cerrada
+            res.redirect('admin');
+        }else{
+            //session iniciada
+            next();
+        }
+    }else{
+        res.redirect('admin');
+    }
+});
+
+
+app.use('/index', index);
+app.use('/sensor', sensor);
+app.use('/alert', alert);
+app.use('/historical', historical);
+app.use('/settings', settings);
+app.use('/profile', profile);
+app.use('/log-out', log_out);
+app.use('/graphic', graphic);
+app.use('/data', data);
+app.use('/network',net);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  let err = new Error('Not Found');
-  err.status = 404;
-  next(err);
+    let err = new Error('Not Found');
+    err.status = 404;
+    next(err);
 });
 
 // error handler
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+    // set locals, only providing error in development
+    res.locals.message = err.message;
+    res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
+    // render the error page
+    res.status(err.status || 500);
+    res.render('error');
 });
 
 module.exports = app;
