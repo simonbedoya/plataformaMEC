@@ -132,29 +132,34 @@ function readFile(pk_file) {
                 data.push(arrCom);
             }
             //console.log(data);
-            let graph = new Rickshaw.Graph( {
-                element: document.querySelector("#chartPcpal"),
-                height: 250,
-                renderer: 'line',
-                series: [ {
-                    color: 'steelblue',
-                    data: data,
+            if(graph === undefined) {
+                graph = new Rickshaw.Graph({
+                    element: document.querySelector("#chartPcpal"),
+                    height: 250,
+                    renderer: 'line',
+                    series: [{
+                        color: 'steelblue',
+                        data: data,
 
-                } ]
-            } );
+                    }]
+                });
 
-            let x_axis = new Rickshaw.Graph.Axis.Time( { graph: graph } );
+                let x_axis = new Rickshaw.Graph.Axis.Time({graph: graph});
 
-            let y_axis = new Rickshaw.Graph.Axis.Y( {
-                graph: graph,
-                orientation: 'left',
-                tickFormat: Rickshaw.Fixtures.Number.formatKMBT,
-                element: document.getElementById('y_axis'),
-            } );
+                let y_axis = new Rickshaw.Graph.Axis.Y({
+                    graph: graph,
+                    orientation: 'left',
+                    tickFormat: Rickshaw.Fixtures.Number.formatKMBT,
+                    element: document.getElementById('y_axis'),
+                });
 
-            graph.render();
+                graph.render();
 
-            document.getElementById("y_axis").setAttribute("style","margin-left: -40px;");
+                document.getElementById("y_axis").setAttribute("style", "margin-left: -40px;");
+            }else{
+                graph.series[0].data = data;
+                graph.render();
+            }
 
 
         },
