@@ -125,7 +125,8 @@ function readFile(pk_file) {
             let resultArray = result.split("\n");
             let data = [];
             for(let i = 4; i < resultArray.length; i++){
-                data.push(resultArray[i].split("= "));
+                let arrAux = resultArray[i].split(" = ");
+                data.push(arrAux[1]);
             }
             console.log(data);
         },
