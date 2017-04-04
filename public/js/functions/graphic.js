@@ -131,7 +131,8 @@ function readFile(pk_file) {
                 data.push(arrCom);
             }
             //console.log(data);
-            var scatterChart = new Chart($("#lineChart"), {
+            let ctx = document.getElementById("lineChart").getContext("2d");
+            let scatterChart = new Chart(ctx, {
                 type: 'line',
                 data: {
                     datasets: [{
