@@ -152,7 +152,7 @@ function readFile(pk_file) {
 
             graph.render();
 
-            document.getElementById("y_axis").setAttribute("margin-left","-40px;");
+            document.getElementById("y_axis").setAttribute("style","margin-left: -40px;");
 
 
         },
