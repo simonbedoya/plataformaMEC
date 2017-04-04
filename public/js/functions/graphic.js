@@ -132,44 +132,41 @@ function readFile(pk_file) {
                 data.push(arrCom);
             }
             //console.log(data);
-            var ctx = document.getElementById("myChart");
-            var myChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-                    datasets: [{
-                        label: '# of Votes',
-                        data: [12, 19, 3, 5, 2, 3],
-                        backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)'
-                        ],
-                        borderColor: [
-                            'rgba(255,99,132,1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)'
-                        ],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero:true
-                            }
-                        }]
-                    }
-                }
-            });
+            var ctx = $('#lineChart').get(0).getContext("2d");
+            var container = $('#lineChart').parent();
+            $(window).resize( generateChart );
+            var ww = selector.attr('width', $(container).width() );
 
+
+            var data = {
+                labels : ["January","February","March","April","May","June","July"],
+                datasets : [
+                    {
+                        fillColor : "rgba(220,220,220,0.4)",
+                        strokeColor : "rgba(220,220,220,0.4)",
+                        pointColor : "rgba(220,220,220,1)",
+                        pointStrokeColor : "#fff",
+                        data : [33,52,63,92,50,53,46]
+                    },
+                    {
+                        fillColor : "rgba(59,192,195,0.4)",
+                        strokeColor : "rgba(59,192,195,0.4)",
+                        pointColor : "rgba(59,192,195,1)",
+                        pointStrokeColor : "#fff",
+                        data : [22,20,30,60,29,25,12]
+                    },
+                    {
+                        fillColor : "rgba(97, 92, 168, 0.4)",
+                        strokeColor : "rgba(97, 92, 168, 0.4)",
+                        pointColor : "rgba(97, 92, 168, 0.4)",
+                        pointStrokeColor : "#fff",
+                        data : [14,16,12,5,32,9,33]
+                    }
+
+                ]
+            };
+
+            new Chart(ctx).Line(data);
         },
         error: function (e) {
             console.log(e);
