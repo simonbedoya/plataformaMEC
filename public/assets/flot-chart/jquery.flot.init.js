@@ -296,7 +296,7 @@
           var pcolors = ['#3bc0c3', '#1a2942'];
           var borderColor = '#efefef';
           var bgColor = '#fff';
-          this.createPlotGraph("#website-stats", uploads, downloads, plabels, pcolors, borderColor, bgColor);
+          //this.createPlotGraph("#website-stats", uploads, downloads, plabels, pcolors, borderColor, bgColor);
 
           //Pie graph data
           var pielabels = ["Series 1","Series 2","Series 3"];
