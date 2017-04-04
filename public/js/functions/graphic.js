@@ -2,7 +2,7 @@
  * Created by sbv23 on 28/12/2016.
  */
 let tableDateList;
-
+let graph;
 
 function displayGrphicRT() {
     document.getElementById('btndrt').style.display = 'none';
@@ -132,7 +132,7 @@ function readFile(pk_file) {
             }
             //console.log(data);
 
-            let graph = new Rickshaw.Graph( {
+            graph = new Rickshaw.Graph( {
                 element: document.getElementById("linetoggle"),
                 height: [250],
                 renderer: 'line',
