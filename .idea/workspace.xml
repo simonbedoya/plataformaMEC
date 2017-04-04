@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/graphic.js" afterPath="$PROJECT_DIR$/public/js/functions/graphic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/rickshaw.chart.init.js" afterPath="$PROJECT_DIR$/public/assets/rickshaw-chart/rickshaw.chart.init.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,19 +38,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rickshaw.chart.init.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rickshaw.chart.init.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/rickshaw.chart.init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="60" column="47" lean-forward="true" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
+            <state relative-caret-position="466">
+              <caret line="71" column="8" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
               <folding>
-                <marker date="1490581362104" expanded="true" signature="1291:1313" ph="..." />
+                <marker date="1491265353610" expanded="true" signature="1291:1313" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="graphic.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="graphic.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
@@ -174,7 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/assets/datatables/responsive.bootstrap.min.js" />
         <option value="$PROJECT_DIR$/public/js/bootstrap.min.js" />
         <option value="$PROJECT_DIR$/public/js/jquery-ui-1.10.1.custom.min.js" />
         <option value="$PROJECT_DIR$/public/js/jquery-1.8.3.min.js" />
@@ -225,6 +224,7 @@
         <option value="$PROJECT_DIR$/controller/data_controller.js" />
         <option value="$PROJECT_DIR$/routes/data.js" />
         <option value="$PROJECT_DIR$/public/js/functions/graphic.js" />
+        <option value="$PROJECT_DIR$/public/assets/rickshaw-chart/rickshaw.chart.init.js" />
       </list>
     </option>
   </component>
@@ -598,12 +598,12 @@
       <workItem from="1491072229313" duration="10732000" />
       <workItem from="1491192276452" duration="11223000" />
       <workItem from="1491253665966" duration="2967000" />
-      <workItem from="1491254014814" duration="9816000" />
+      <workItem from="1491254014814" duration="9938000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="414713000" />
+    <option name="totallyTimeSpent" value="414835000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1219,16 +1219,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/rickshaw.chart.init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="60" column="47" lean-forward="true" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
-          <folding>
-            <marker date="1490581362104" expanded="true" signature="1291:1313" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -1246,6 +1236,16 @@
           <folding>
             <marker date="1491265231890" expanded="true" signature="1991:2008" ph="..." />
             <marker date="1491265231890" expanded="true" signature="1997:2008" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/rickshaw.chart.init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="71" column="8" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+          <folding>
+            <marker date="1491265353610" expanded="true" signature="1291:1313" ph="..." />
           </folding>
         </state>
       </provider>

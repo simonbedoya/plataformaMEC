@@ -69,7 +69,7 @@
       var height = [250];
       var LineTcolors = ['#34c73b', '#3960d1'];
       var names = ['New York', 'London'];
-      this.createLinetoggleGraph("linetoggle", height, LineTcolors, names);
+      //this.createLinetoggleGraph("linetoggle", height, LineTcolors, names);
       this.createLinetoggleGraph("linetoggle2", height, LineTcolors, names);
     },
 
