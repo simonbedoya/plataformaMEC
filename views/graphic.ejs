@@ -49,27 +49,6 @@
 <section class="content">
 
     <% include ./partials/header %>
-    <canvas id="myChart"></canvas>
-    <script>
-        var data = {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
-            datasets: [
-                {
-                    label: "My First dataset",
-                    fillColor: "rgba(220,220,220,0.2)",
-                    strokeColor: "rgba(220,220,220,1)",
-                    pointColor: "rgba(220,220,220,1)",
-                    pointStrokeColor: "#fff",
-                    pointHighlightFill: "#fff",
-                    pointHighlightStroke: "rgba(220,220,220,1)",
-                    data: {{chartData}}
-        }
-        ]
-        };
-
-        var ctx = document.getElementById("myChart").getContext("2d");
-        var myNewChart = new Chart(ctx).Line(data);
-    </script>
 
     <!-- Page Content Start -->
     <!-- ================== -->
@@ -120,7 +99,7 @@
                         <div class="clearfix"></div>
                     </div>
                     <div class="portlet-body chartJS">
-                        <canvas id="myChart" width="400" height="400"></canvas>
+                        <canvas id="lineChart" data-type="Line" width="520" height="250"></canvas>
                     </div>
                 </div> <!-- /Portlet -->
             </div>
@@ -177,6 +156,9 @@
 <script src="assets/datatables/responsive.bootstrap.min.js"></script>
 <script src="assets/datatables/dataTables.scroller.min.js"></script>
 
+<!-- Chart JS -->
+<script src="assets/chartjs/chart.min.js"></script>
+<script src="assets/chartjs/chartjs.init.js"></script>
 
 
 <script src="js/functions/graphic.js"></script>
