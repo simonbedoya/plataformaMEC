@@ -135,10 +135,11 @@ function readFile(pk_file) {
             let graph = new Rickshaw.Graph( {
                 element: document.querySelector("#chartPcpal"),
                 height: 250,
+                renderer: 'line',
                 series: [ {
                     color: 'steelblue',
                     data: data,
-                    renderer: 'line',
+
                 } ]
             } );
 
