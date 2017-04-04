@@ -49,6 +49,27 @@
 <section class="content">
 
     <% include ./partials/header %>
+    <canvas id="myChart"></canvas>
+    <script>
+        var data = {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [
+                {
+                    label: "My First dataset",
+                    fillColor: "rgba(220,220,220,0.2)",
+                    strokeColor: "rgba(220,220,220,1)",
+                    pointColor: "rgba(220,220,220,1)",
+                    pointStrokeColor: "#fff",
+                    pointHighlightFill: "#fff",
+                    pointHighlightStroke: "rgba(220,220,220,1)",
+                    data: {{chartData}}
+        }
+        ]
+        };
+
+        var ctx = document.getElementById("myChart").getContext("2d");
+        var myNewChart = new Chart(ctx).Line(data);
+    </script>
 
     <!-- Page Content Start -->
     <!-- ================== -->
@@ -139,8 +160,6 @@
 <!-- Main Content Ends -->
 
 <% include ./partials/scripts %>
-<script src="Chart.js"></script>
-<script src="/node_modules/chart.js/src/chart.js"></script>
 
 <!-- Datatables-->
 <script src="assets/datatables/jquery.dataTables.min.js"></script>
