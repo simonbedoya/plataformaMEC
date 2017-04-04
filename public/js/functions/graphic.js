@@ -3,7 +3,7 @@
  */
 let tableDateList;
 let graph;
-var Chart = require('chart.js');
+
 
 function displayGrphicRT() {
     document.getElementById('btndrt').style.display = 'none';
