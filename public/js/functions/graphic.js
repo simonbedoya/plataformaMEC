@@ -124,11 +124,28 @@ function readFile(pk_file) {
         success: function (result) {
             let resultArray = result.split("\n");
             let data = [];
-            for(let i = 4; i < resultArray.length; i++){
+            for(let i = 4; i < resultArray.length-1; i++){
                 let arrAux = resultArray[i].split(" = ");
-                data.push(arrAux[1]);
+                let time = 1 / 100;
+                let arrCom = {x: time*(i-4), y: arrAux[1]};
+                data.push(arrCom);
             }
-            console.log(data);
+            //console.log(data);
+
+            let graph = new Rickshaw.Graph( {
+                element: document.getElementById("linetoggle"),
+                height: [250],
+                renderer: 'line',
+                series: [
+                    {
+                        color: '#34c73b',
+                        data: data,
+                        name: 'x'
+                    }
+                ]
+            } );
+
+            graph.render();
         },
         error: function (e) {
             console.log(e);
