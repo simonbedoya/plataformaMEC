@@ -127,12 +127,27 @@ function readFile(pk_file) {
             for(let i = 4; i < resultArray.length-1; i++){
                 let arrAux = resultArray[i].split(" = ");
                 let time = 1 / 100;
-                let arrCom = [time*(i-4), parseInt(arrAux[1])];
+                let arrCom = {x:time*(i-4), y:parseInt(arrAux[1])};
                 data.push(arrCom);
             }
             //console.log(data);
-            var ctx = $("#lineChart").get(0).getContext("2d");
-            new Chart(ctx).Line(data);
+            var scatterChart = new Chart($("#lineChart"), {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: 'Scatter Dataset',
+                        data: data
+                    }]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            type: 'linear',
+                            position: 'bottom'
+                        }]
+                    }
+                }
+            });
 
         },
         error: function (e) {
