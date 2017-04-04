@@ -123,7 +123,11 @@ function readFile(pk_file) {
         data: {pk_file: pk_file},
         success: function (result) {
             let resultArray = result.split("\n");
-            console.log(resultArray);
+            let data = [];
+            for(let i = 4; i < resultArray.length; i++){
+                data.push(resultArray[i].split("= "));
+            }
+            console.log(data);
         },
         error: function (e) {
             console.log(e);
