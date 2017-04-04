@@ -152,6 +152,8 @@ function readFile(pk_file) {
 
             graph.render();
 
+            document.getElementById("y_axis").setAttribute("margin-left","-40px;");
+
 
         },
         error: function (e) {
