@@ -142,7 +142,11 @@ function readFile(pk_file) {
                 } ]
             } );
 
+            let axes = new Rickshaw.Graph.Axis.Time( { graph: graph } );
+
             graph.render();
+
+
         },
         error: function (e) {
             console.log(e);
