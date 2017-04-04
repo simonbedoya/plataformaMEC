@@ -132,20 +132,57 @@ function readFile(pk_file) {
             }
             //console.log(data);
 
-            graph = new Rickshaw.Graph( {
-                element: document.getElementById("linetoggle"),
-                height: [250],
-                renderer: 'line',
-                series: [
-                    {
-                        color: '#34c73b',
-                        data: data,
-                        name: 'x'
+            $.plot($("linePlot"),
+                [ { data: data,
+                    label: "x",
+                    color: '#3bc0c3'
+                }],
+                {
+                    series: {
+                        lines: {
+                            show: true,
+                            fill: true,
+                            lineWidth: 1,
+                            fillColor: {
+                                colors: [ { opacity: 0.5 },
+                                    { opacity: 0.5 }
+                                ]
+                            }
+                        },
+                        points: {
+                            show: true
+                        },
+                        shadowSize: 0
+                    },
+                    legend: {
+                        position: 'nw'
+                    },
+                    grid: {
+                        hoverable: true,
+                        clickable: true,
+                        borderColor: '#efefef',
+                        borderWidth: 1,
+                        labelMargin: 10,
+                        backgroundColor: '#fff'
+                    },
+                    yaxis: {
+                        min: 0,
+                        max: 15,
+                        color: 'rgba(0,0,0,0.1)'
+                    },
+                    xaxis: {
+                        color: 'rgba(0,0,0,0.1)'
+                    },
+                    tooltip: true,
+                    tooltipOpts: {
+                        content: '%s: Value of %x is %y',
+                        shifts: {
+                            x: -60,
+                            y: 25
+                        },
+                        defaultTheme: false
                     }
-                ]
-            } );
-
-            graph.render();
+                });
         },
         error: function (e) {
             console.log(e);
