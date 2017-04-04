@@ -31,7 +31,7 @@ function load(dateList,serial) {
         "info": false,
         "searching": true,
         "pageLength": true,
-        "scrollY":        "250px",
+        "scrollY":        "220px",
         "scrollCollapse": true,
         "paging":         false,
         "pagingType": "numbers",
@@ -137,10 +137,12 @@ function readFile(pk_file) {
                     element: document.querySelector("#chartPcpal"),
                     height: 250,
                     renderer: 'line',
+                    stroke: true,
+                    preserve: true,
                     series: [{
                         color: 'steelblue',
                         data: data,
-
+                        name: 'x'
                     }]
                 });
 
@@ -153,14 +155,25 @@ function readFile(pk_file) {
                     element: document.getElementById('y_axis'),
                 });
 
+
+
+                graph.render();
+
                 let preview = new Rickshaw.Graph.RangeSlider( {
                     graph: graph,
                     element: document.getElementById('preview'),
                 } );
 
-                graph.render();
-
                 document.getElementById("y_axis").setAttribute("style", "margin-left: -40px;");
+
+                var previewXAxis = new Rickshaw.Graph.Axis.Time({
+                    graph: preview.previews[0],
+                    timeFixture: new Rickshaw.Fixtures.Time.Local(),
+                    ticksTreatment: ticksTreatment
+                });
+
+                previewXAxis.render();
+
             }else{
                 graph.series[0].data = data;
                 graph.render();
