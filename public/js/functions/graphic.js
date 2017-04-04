@@ -131,28 +131,9 @@ function readFile(pk_file) {
                 data.push(arrCom);
             }
             //console.log(data);
+            var ctx = $("#lineChart").get(0).getContext("2d");
+            new Chart(ctx).Line(data);
 
-            let options = {
-                legend: {
-                    show: false
-                },
-                series: {
-                    lines: {
-                        show: true
-                    },
-                    points: {
-                        show: true
-                    }
-                },
-                yaxis: {
-                    ticks: 10
-                },
-                selection: {
-                    mode: "xy"
-                }
-            };
-
-            let plot = $.plot("#linePlot", data, options);
         },
         error: function (e) {
             console.log(e);

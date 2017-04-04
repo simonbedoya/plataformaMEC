@@ -3,8 +3,6 @@
 <head>
     <% include ./partials/head %>
 
-    <link rel="stylesheet" href="assets/rickshaw-chart/rickshaw.min.css">
-
     <!-- DataTables -->
     <link href="assets/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -15,8 +13,6 @@
     <!-- DataTables -->
     <link href="assets/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
 
-    <script language="javascript" type="text/javascript" src="assets/flot-chart/jquery.flot.js"></script>
-    <script language="javascript" type="text/javascript" src="assets/flot-chart/jquery.flot.selection.js"></script>
 </head>
 
 
@@ -102,8 +98,8 @@
                         </div>
                         <div class="clearfix"></div>
                     </div>
-                    <div class="portlet-body">
-                        <div id="linePlot" style="height: 320px;" class="flot-chart"></div>
+                    <div class="portlet-body chartJS">
+                        <canvas id="lineChart" data-type="Line" width="520" height="250"></canvas>
                     </div>
                 </div> <!-- /Portlet -->
             </div>
@@ -144,11 +140,7 @@
 
 <% include ./partials/scripts %>
 
-<!-- jQuery Flot Chart-->
-<script src="assets/rickshaw-chart/vendor/d3.min.js"></script>
-<script src="assets/rickshaw-chart/vendor/d3.layout.min.js"></script>
-<script src="assets/rickshaw-chart/rickshaw.min.js"></script>
-<script src="assets/rickshaw-chart/rickshaw.chart.init.js"></script>
+
 <!-- Datatables-->
 <script src="assets/datatables/jquery.dataTables.min.js"></script>
 <script src="assets/datatables/dataTables.bootstrap.js"></script>
@@ -165,15 +157,8 @@
 <script src="assets/datatables/responsive.bootstrap.min.js"></script>
 <script src="assets/datatables/dataTables.scroller.min.js"></script>
 
-<script src="assets/flot-chart/jquery.flot.js"></script>
-<script src="assets/flot-chart/jquery.flot.time.js"></script>
-<script src="assets/flot-chart/jquery.flot.tooltip.min.js"></script>
-<script src="assets/flot-chart/jquery.flot.resize.js"></script>
-<script src="assets/flot-chart/jquery.flot.pie.js"></script>
-<script src="assets/flot-chart/jquery.flot.selection.js"></script>
-<script src="assets/flot-chart/jquery.flot.stack.js"></script>
-<script src="assets/flot-chart/jquery.flot.crosshair.js"></script>
-
+<!-- Chart JS -->
+<script src="assets/chartjs/chart.min.js"></script>
 
 <script src="js/functions/graphic.js"></script>
 
