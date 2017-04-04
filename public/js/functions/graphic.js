@@ -127,7 +127,7 @@ function readFile(pk_file) {
             for(let i = 4; i < resultArray.length-1; i++){
                 let arrAux = resultArray[i].split(" = ");
                 let time = 1 / 100;
-                let arrCom = {x: time*(i-4), y: arrAux[1]};
+                let arrCom = {x: time*(i-4), y: parseInt(arrAux[1])};
                 data.push(arrCom);
             }
             //console.log(data);
