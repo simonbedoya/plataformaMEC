@@ -132,25 +132,17 @@ function readFile(pk_file) {
                 data.push(arrCom);
             }
             //console.log(data);
-            var ctx = document.getElementById("lineChart");
-            var myChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ['Item 1', 'Item 2', 'Item 3'],
-                    datasets: [
-                        {
-                            type: 'bar',
-                            label: 'Bar Component',
-                            data: [10, 20, 30],
-                        },
-                        {
-                            type: 'line',
-                            label: 'Line Component',
-                            data: [30, 20, 10],
-                        }
-                    ]
-                }
-            });
+            let graph = new Rickshaw.Graph( {
+                element: document.querySelector("#chartPcpal"),
+                width: 580,
+                height: 250,
+                series: [ {
+                    color: 'steelblue',
+                    data: data
+                } ]
+            } );
+
+            graph.render();
         },
         error: function (e) {
             console.log(e);
