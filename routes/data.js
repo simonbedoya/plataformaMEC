@@ -8,6 +8,22 @@ const response = require('../message');
 const functions = require('../functions');
 const data_controller = require('../controller/data_controller');
 
+//verificar session iniciada
+router.use(function (req,res,next) {
+    const session = req.session;
+    if (session.remember){
+        if (session.remember === false){
+            //sesion cerrada
+            res.redirect('admin');
+        }else{
+            //session iniciada
+            next();
+        }
+    }else{
+        res.redirect('admin');
+    }
+});
+
 router.post('/location', function (req, res) {
     data_controller.getLocations(req.body.email).then(function(data){
         res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));

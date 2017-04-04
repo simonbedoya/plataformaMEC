@@ -3,6 +3,22 @@ const router = express.Router();
 const db = require('../db/connection');
 
 /* GET home page. */
+//verificar session iniciada
+router.use(function (req,res,next) {
+    const session = req.session;
+    if (session.remember){
+        if (session.remember === false){
+            //sesion cerrada
+            res.redirect('admin');
+        }else{
+            //session iniciada
+            next();
+        }
+    }else{
+        res.redirect('admin');
+    }
+});
+
 router.get('/', function(req, res, next) {
   const sess = req.session;
   let nets = 0;

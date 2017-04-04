@@ -71,21 +71,7 @@ app.get('/register', function (req,res) {
     res.render('register');
 });
 
-//verificar session iniciada
-app.use(function (req,res,next) {
-    const session = req.session;
-    if (session.remember){
-        if (session.remember === false){
-            //sesion cerrada
-            res.redirect('admin');
-        }else{
-            //session iniciada
-            next();
-        }
-    }else{
-        res.redirect('admin');
-    }
-});
+
 
 
 app.use('/index', index);

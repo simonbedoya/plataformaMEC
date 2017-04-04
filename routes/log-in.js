@@ -29,6 +29,8 @@ pool.getConnection(function (err, connection) {
 
 });*/
 
+
+
 /* GET home page. */
 router.post('/', function(req, res, next) {
     var sess = req.session;

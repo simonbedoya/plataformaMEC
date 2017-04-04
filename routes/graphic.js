@@ -5,6 +5,22 @@ const express = require('express');
 const router = express.Router();
 const graphicController = require('../controller/graphic_controller');
 
+//verificar session iniciada
+router.use(function (req,res,next) {
+    const session = req.session;
+    if (session.remember){
+        if (session.remember === false){
+            //sesion cerrada
+            res.redirect('admin');
+        }else{
+            //session iniciada
+            next();
+        }
+    }else{
+        res.redirect('admin');
+    }
+});
+
 /* GET home page. */
 router.get('/', function(req, res) {
     const sess = req.session;
