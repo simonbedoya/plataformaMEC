@@ -5,6 +5,506 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/.eslintignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/.eslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/MAINTAINING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/config.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/Chart.bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/Chart.bundle.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/Chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/Chart.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/00-Getting-Started.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/01-Chart-Configuration.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/02-Scales.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/03-Line-Chart.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/04-Bar-Chart.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/05-Radar-Chart.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/06-Polar-Area-Chart.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/07-Pie-Doughnut-Chart.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/08-Bubble-Chart.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/09-Advanced.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/10-Notes.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/gulpfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/karma.conf.ci.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/karma.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/karma.coverage.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/animation/progress-bar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/bar/bar-horizontal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/bar/bar-multi-axis.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/bar/bar-stacked-group.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/bar/bar-stacked.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/bar/bar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/bubble.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/combo-bar-line.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/data_labelling.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/doughnut.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/legend/pointstyle.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/legend/positions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/line/different-point-sizes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/line/interpolation-modes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/line/line-multi-axis.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/line/line-skip-points.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/line/line-stacked-area.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/line/line-stepped.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/line/line-styles.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/line/line.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/line/point-styles.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/pie.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/polar-area.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/radar/radar-skip-points.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/radar/radar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/display-settings.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/filtering-labels.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/gridlines.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/line-non-numeric-y.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/linear/min-max-settings.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/linear/step-size.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/linear/suggested-min-max-settings.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/logarithmic/line-logarithmic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/logarithmic/scatter-logX.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/multiline-labels.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/time/combo-time-scale.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/time/line-time-point-data.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/time/line-time-scale.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scatter/scatter-multi-axis.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scatter/scatter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/tooltips/dataPoints-customTooltips.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/tooltips/interaction-modes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/tooltips/line-customTooltips.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/tooltips/pie-customTooltips.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/tooltips/position-modes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/tooltips/tooltip-callbacks.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/scripts/release.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/charts/Chart.Bar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/charts/Chart.Bubble.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/charts/Chart.Doughnut.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/charts/Chart.Line.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/charts/Chart.PolarArea.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/charts/Chart.Radar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/charts/Chart.Scatter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/controllers/controller.bar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/controllers/controller.bubble.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/controllers/controller.doughnut.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/controllers/controller.line.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/controllers/controller.polarArea.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/controllers/controller.radar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.animation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.canvasHelpers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.controller.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.datasetController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.element.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.helpers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.interaction.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.layoutService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.legend.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.scale.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.scaleService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.ticks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.title.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/elements/element.arc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/elements/element.line.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/elements/element.point.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/elements/element.rectangle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/platforms/platform.dom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/platforms/platform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/scales/scale.category.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/scales/scale.linear.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/scales/scale.linearbase.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/scales/scale.logarithmic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/scales/scale.radialLinear.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/src/scales/scale.time.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/controller.bar.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/controller.bubble.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/controller.doughnut.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/controller.line.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/controller.polarArea.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/controller.radar.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/core.controller.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/core.datasetController.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/core.element.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/core.helpers.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/core.interaction.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/core.layoutService.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/core.legend.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/core.plugin.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/core.scaleService.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/core.title.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/core.tooltip.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/defaultConfig.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/element.arc.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/element.line.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/element.point.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/element.rectangle.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/mockContext.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/platform.dom.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/scale.category.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/scale.linear.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/scale.logarithmic.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/scale.radialLinear.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/test/scale.time.tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chart.js/thankyou.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/ender.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/af.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ar-dz.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ar-kw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ar-ly.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ar-ma.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ar-sa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ar-tn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/az.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/bg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/bn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/bo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/bs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/cs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/cv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/cy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/de-at.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/de-ch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/dv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/el.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/en-au.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/en-ie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/en-nz.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/eo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/es-do.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/et.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/eu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/fa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/fi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/fo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/fr-ch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/fy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/gd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/gl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/gom-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/he.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/hi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/hr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/hu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/hy-am.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/is.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ja.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/jv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ka.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/kk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/km.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/kn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ko.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ky.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/lb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/lo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/lt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/lv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/me.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/mi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/mk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/mr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ms-my.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ms.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/my.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/nb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ne.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/nl-be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/nn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/pa-in.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/pt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/sd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/se.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/si.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/sk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/sl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/sq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/sr-cyrl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/sr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/sv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/sw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ta.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/te.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/tet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/th.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/tl-ph.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/tlh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/tzl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/tzm-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/tzm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/uk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ur.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/uz-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/uz.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/vi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/x-pseudo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/yo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/zh-hk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/zh-tw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/min/locales.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/min/locales.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/min/moment-with-locales.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/min/moment-with-locales.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/min/moment.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/moment.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/moment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/package.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/check-overflow.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/date-from-array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/from-anything.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/from-array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/from-object.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/from-string-and-array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/from-string-and-format.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/from-string.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/local.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/parsing-flags.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/utc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/valid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/abs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/add-subtract.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/as.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/bubble.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/constructor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/create.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/duration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/get.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/humanize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/iso-string.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/prototype.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/valid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/format/format.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/base-config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/calendar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/constructor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/en.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/formats.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/invalid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/lists.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/locale.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/locales.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/ordinal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/pre-post-format.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/prototype.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/relative.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/set.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/add-subtract.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/calendar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/clone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/compare.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/constructor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/creation-data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/diff.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/format.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/from.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/get-set.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/locale.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/min-max.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/moment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/now.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/prototype.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/start-end-of.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/to-type.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/to.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/valid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/parse/regex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/parse/token.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/aliases.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/day-of-month.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/day-of-week.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/day-of-year.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/hour.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/millisecond.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/minute.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/month.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/offset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/priorities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/quarter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/second.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/timestamp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/timezone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/units.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/week-calendar-utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/week-year.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/week.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/year.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/abs-ceil.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/abs-floor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/abs-round.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/compare-arrays.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/defaults.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/deprecate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/extend.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/has-own-prop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/hooks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/index-of.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/is-array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/is-date.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/is-function.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/is-number.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/is-object-empty.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/is-object.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/is-undefined.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/keys.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/some.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/to-int.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/zero-fill.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/af.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ar-dz.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ar-kw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ar-ly.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ar-ma.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ar-sa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ar-tn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/az.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/bg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/bn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/bo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/bs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/cs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/cv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/cy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/de-at.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/de-ch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/dv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/el.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/en-au.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/en-ie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/en-nz.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/eo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/es-do.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/et.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/eu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/fa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/fi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/fo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/fr-ch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/fy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/gd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/gl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/gom-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/he.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/hi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/hr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/hu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/hy-am.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/is.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ja.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/jv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ka.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/kk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/km.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/kn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ko.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ky.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/lb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/lo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/lt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/lv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/me.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/mi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/mk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/mr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ms-my.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ms.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/my.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/nb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ne.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/nl-be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/nn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/pa-in.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/pt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/sd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/se.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/si.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/sk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/sl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/sq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/sr-cyrl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/sr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/sv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/sw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ta.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/te.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/tet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/th.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/tl-ph.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/tlh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/tzl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/tzm-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/tzm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/uk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ur.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/uz-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/uz.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/vi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/x-pseudo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/yo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/zh-hk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/zh-tw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/moment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/chartjs/chart.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/chartjs/chartjs.init.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/graphic.ejs" afterPath="$PROJECT_DIR$/views/graphic.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,8 +529,8 @@
       <file leaf-file-name="graphic.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="142" column="40" lean-forward="false" selection-start-line="142" selection-start-column="40" selection-end-line="142" selection-end-column="40" />
+            <state relative-caret-position="166">
+              <caret line="141" column="32" lean-forward="false" selection-start-line="141" selection-start-column="32" selection-end-line="141" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -346,33 +846,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rickshaw-chart" />
+              <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -606,12 +1080,12 @@
       <workItem from="1491072229313" duration="10732000" />
       <workItem from="1491192276452" duration="11223000" />
       <workItem from="1491253665966" duration="2967000" />
-      <workItem from="1491254014814" duration="15151000" />
+      <workItem from="1491254014814" duration="16214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="420048000" />
+    <option name="totallyTimeSpent" value="421111000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1262,8 +1736,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="142" column="40" lean-forward="false" selection-start-line="142" selection-start-column="40" selection-end-line="142" selection-end-column="40" />
+        <state relative-caret-position="166">
+          <caret line="141" column="32" lean-forward="false" selection-start-line="141" selection-start-column="32" selection-end-line="141" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
