@@ -137,13 +137,14 @@ function readFile(pk_file) {
                 height: 250,
                 series: [ {
                     color: 'steelblue',
-                    data: data
+                    data: data,
+                    renderer: 'line',
                 } ]
             } );
 
-            var x_axis = new Rickshaw.Graph.Axis.Time( { graph: graph } );
+            let x_axis = new Rickshaw.Graph.Axis.Time( { graph: graph } );
 
-            var y_axis = new Rickshaw.Graph.Axis.Y( {
+            let y_axis = new Rickshaw.Graph.Axis.Y( {
                 graph: graph,
                 orientation: 'left',
                 tickFormat: Rickshaw.Fixtures.Number.formatKMBT,
