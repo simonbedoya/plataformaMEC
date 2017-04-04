@@ -153,6 +153,11 @@ function readFile(pk_file) {
                     element: document.getElementById('y_axis'),
                 });
 
+                let preview = new Rickshaw.Graph.RangeSlider( {
+                    graph: graph,
+                    element: document.getElementById('preview'),
+                } );
+
                 graph.render();
 
                 document.getElementById("y_axis").setAttribute("style", "margin-left: -40px;");
