@@ -49,11 +49,11 @@
       <file leaf-file-name="graphic.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="175" column="0" lean-forward="true" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="153" column="19" lean-forward="false" selection-start-line="153" selection-start-column="19" selection-end-line="153" selection-end-column="19" />
               <folding>
-                <marker date="1491285046837" expanded="true" signature="2002:2019" ph="..." />
-                <marker date="1491285046837" expanded="true" signature="2008:2019" ph="..." />
+                <marker date="1491285328064" expanded="true" signature="2002:2019" ph="..." />
+                <marker date="1491285328064" expanded="true" signature="2008:2019" ph="..." />
               </folding>
             </state>
           </provider>
@@ -62,8 +62,8 @@
       <file leaf-file-name="extensions.html" pinned="false" current-in-tab="false">
         <entry file="file://D:/Descargas/rickshaw-master/rickshaw-master/examples/extensions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="269" column="0" lean-forward="false" selection-start-line="269" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
+            <state relative-caret-position="1870">
+              <caret line="272" column="34" lean-forward="false" selection-start-line="272" selection-start-column="20" selection-end-line="272" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -621,12 +621,12 @@
       <workItem from="1491192276452" duration="11223000" />
       <workItem from="1491253665966" duration="2967000" />
       <workItem from="1491254014814" duration="19443000" />
-      <workItem from="1491280529413" duration="4506000" />
+      <workItem from="1491280529413" duration="4787000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="428846000" />
+    <option name="totallyTimeSpent" value="429127000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1266,19 +1266,19 @@
     </entry>
     <entry file="file://D:/Descargas/rickshaw-master/rickshaw-master/examples/extensions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="269" column="0" lean-forward="false" selection-start-line="269" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
+        <state relative-caret-position="1870">
+          <caret line="272" column="34" lean-forward="false" selection-start-line="272" selection-start-column="20" selection-end-line="272" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="175" column="0" lean-forward="true" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="153" column="19" lean-forward="false" selection-start-line="153" selection-start-column="19" selection-end-line="153" selection-end-column="19" />
           <folding>
-            <marker date="1491285046837" expanded="true" signature="2002:2019" ph="..." />
-            <marker date="1491285046837" expanded="true" signature="2008:2019" ph="..." />
+            <marker date="1491285328064" expanded="true" signature="2002:2019" ph="..." />
+            <marker date="1491285328064" expanded="true" signature="2008:2019" ph="..." />
           </folding>
         </state>
       </provider>
