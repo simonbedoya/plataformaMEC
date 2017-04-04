@@ -1355,6 +1355,21 @@ tr.shown td.details-control {
 
 
 /************* 13.Chart **********/
+#chart_container {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#chart {
+  position: relative;
+  left: 40px;
+}
+#y_axis {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+}
+
 /* Sparkline-Chart */
 .jqstooltip {
   -webkit-box-sizing: content-box;
