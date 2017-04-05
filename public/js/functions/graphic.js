@@ -118,8 +118,8 @@ function getDateList(date,serial,row) {
 }
 
 function readFile(pk_file) {
-    socket.emit('sendPkFile', pk_file);
-    /*$.ajax({
+    //socket.emit('sendPkFile', pk_file);
+    $.ajax({
         type: "post",
         async: false,
         url: "http://52.34.55.59:3000/data/getDataFileByPk",
@@ -185,12 +185,12 @@ function readFile(pk_file) {
                 readFile(pk_file);
             });
         }
-    });*/
+    });
 }
 
 socket.on('connect', function(){
 
-})
+});
 
 function reloadDataTable(serial) {
     $.ajax({

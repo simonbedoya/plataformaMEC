@@ -332,7 +332,7 @@ module.exports = {
     getDataFilePath: function (path_file) {
         return new Promise(
             function (fullfill) {
-                exec(`/opt/serverMEC/plataformaMEC/ReadFileSAC/readsac ${path_file}`, function (err, stdout, stderr) {
+                exec(`/opt/serverMEC/plataformaMEC/ReadFileSAC/readsac ${path_file}`,{maxBuffer: 1024 * 500}, function (err, stdout, stderr) {
                         //console.log(err);
                         if(err) return fullfill({hcode: 202, code: "003", msg: "Error", data: err});
 
