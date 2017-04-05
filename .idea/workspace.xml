@@ -29,8 +29,8 @@
       <file leaf-file-name="graphic.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="67" column="55" lean-forward="false" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
+            <state relative-caret-position="192">
+              <caret line="64" column="35" lean-forward="false" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -102,7 +102,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>\</find>
       <find>\\</find>
       <find>remove_w</find>
       <find>pagin</find>
@@ -132,6 +131,7 @@
       <find>http://localhost:3000/sensor</find>
       <find>preview</find>
       <find>getDateList</find>
+      <find>portlet-widgets</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -532,12 +532,12 @@
       <workItem from="1491280529413" duration="4921000" />
       <workItem from="1491318554814" duration="591000" />
       <workItem from="1491363380891" duration="5931000" />
-      <workItem from="1491420092632" duration="2277000" />
+      <workItem from="1491420092632" duration="2402000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="438060000" />
+    <option name="totallyTimeSpent" value="438185000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1060,14 +1060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23290">
-          <caret line="1370" column="1" lean-forward="false" selection-start-line="1370" selection-start-column="1" selection-end-line="1370" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Descargas/rickshaw-master/rickshaw-master/src/css/graph.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1182,10 +1174,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="595" column="42" lean-forward="false" selection-start-line="595" selection-start-column="27" selection-end-line="595" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="67" column="55" lean-forward="false" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
+        <state relative-caret-position="192">
+          <caret line="64" column="35" lean-forward="false" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
           <folding />
         </state>
       </provider>
