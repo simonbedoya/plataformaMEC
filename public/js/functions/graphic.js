@@ -126,12 +126,12 @@ function readFile(pk_file) {
             let resultArray = result.split("\n");
             let data = [];
             let delta = resultArray[0].split(" = ");
-            let time = delta[1];
+            let time = parseFloat(delta[1]);
             let ymax = resultArray[1].split(" = ");
             let ymin = resultArray[2].split(" = ");
             for(let i = 4; i < resultArray.length-1; i++){
                 let arrAux = resultArray[i].split(" = ");
-                let arrCom = {x:time*(i-4), y:parseInt(arrAux[1])};
+                let arrCom = {x:time*(i-4), y:parseFloat(arrAux[1])};
                 data.push(arrCom);
             }
             //console.log(data);
@@ -163,8 +163,8 @@ function readFile(pk_file) {
                 graph.series[0].data = data;
 
             }
-            graph.max = ymax[1];
-            graph.min = ymin[1];
+            graph.max = parseFloat(ymax[1]);
+            graph.min = parseFloat(ymin[1]);
             graph.render();
 
         },
