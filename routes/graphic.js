@@ -5,6 +5,7 @@ const express = require('express');
 const router = express.Router();
 const graphicController = require('../controller/graphic_controller');
 
+
 //verificar session iniciada
 router.use(function (req,res,next) {
     const session = req.session;
@@ -39,3 +40,4 @@ router.get('/', function(req, res) {
 });
 
 module.exports = router;
+

@@ -163,8 +163,10 @@ function readFile(pk_file) {
                 graph.series[0].data = data;
 
             }
-            graph.max = parseFloat(ymax[1]);
-            graph.min = parseFloat(ymin[1]);
+            let max = parseFloat(ymax[1]);
+            let min = parseFloat(ymin[1]);
+            graph.max = max + (max * 0.05);
+            graph.min = min + (min * 0.05);
             graph.render();
 
         },

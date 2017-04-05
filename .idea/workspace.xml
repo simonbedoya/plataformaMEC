@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/www" afterPath="$PROJECT_DIR$/bin/www" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/graphic.js" afterPath="$PROJECT_DIR$/public/js/functions/graphic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/graphic.js" afterPath="$PROJECT_DIR$/routes/graphic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/graphic.ejs" afterPath="$PROJECT_DIR$/views/graphic.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,61 +34,51 @@
       <file leaf-file-name="graphic.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2856">
-              <caret line="168" column="9" lean-forward="false" selection-start-line="168" selection-start-column="9" selection-end-line="168" selection-end-column="9" />
+            <state relative-caret-position="353">
+              <caret line="202" column="38" lean-forward="false" selection-start-line="202" selection-start-column="38" selection-end-line="202" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23290">
-              <caret line="1370" column="1" lean-forward="false" selection-start-line="1370" selection-start-column="1" selection-end-line="1370" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="graphic.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="graphic.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="127" column="48" lean-forward="false" selection-start-line="127" selection-start-column="48" selection-end-line="127" selection-end-column="48" />
+            <state relative-caret-position="1037">
+              <caret line="168" column="43" lean-forward="false" selection-start-line="168" selection-start-column="43" selection-end-line="168" selection-end-column="43" />
               <folding>
-                <marker date="1491364426301" expanded="true" signature="2002:2019" ph="..." />
-                <marker date="1491364426301" expanded="true" signature="2008:2019" ph="..." />
+                <marker date="1491364925824" expanded="true" signature="2002:2019" ph="..." />
+                <marker date="1491364925824" expanded="true" signature="2008:2019" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extensions.html" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Descargas/rickshaw-master/rickshaw-master/examples/extensions.html">
+      <file leaf-file-name="graphic.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/graphic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4624">
-              <caret line="272" column="34" lean-forward="false" selection-start-line="272" selection-start-column="20" selection-end-line="272" selection-end-column="34" />
+            <state relative-caret-position="102">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extensions.css" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Descargas/rickshaw-master/rickshaw-master/examples/css/extensions.css">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="107">
+              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="graph.css" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Descargas/rickshaw-master/rickshaw-master/src/css/graph.css">
+      <file leaf-file-name="www" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bin/www">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="37" column="3" lean-forward="false" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -138,7 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/assets/datatables/pdfmake.min.js" />
         <option value="$PROJECT_DIR$/public/assets/datatables/buttons.html5.min.js" />
         <option value="$PROJECT_DIR$/public/js/jquery.app.js" />
         <option value="$PROJECT_DIR$/public/assets/timepicker/bootstrap-datepicker.js" />
@@ -176,7 +170,6 @@
         <option value="$PROJECT_DIR$/public/assets/chartjs/chartjs.init.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/routes/alert.js" />
-        <option value="$PROJECT_DIR$/routes/graphic.js" />
         <option value="$PROJECT_DIR$/routes/historical.js" />
         <option value="$PROJECT_DIR$/routes/log-in.js" />
         <option value="$PROJECT_DIR$/routes/log-out.js" />
@@ -187,8 +180,10 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/data.js" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
-        <option value="$PROJECT_DIR$/views/graphic.ejs" />
         <option value="$PROJECT_DIR$/public/js/functions/graphic.js" />
+        <option value="$PROJECT_DIR$/views/graphic.ejs" />
+        <option value="$PROJECT_DIR$/routes/graphic.js" />
+        <option value="$PROJECT_DIR$/bin/www" />
       </list>
     </option>
   </component>
@@ -246,34 +241,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -288,137 +255,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="functions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rickshaw-chart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
+              <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -433,7 +270,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="javascript.nodejs.core.library.configured.version" value="4.6.1" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Templates HTML/velonic-admin-dashboard-frontend/admin" />
+    <property name="last_opened_file_path" value="D:/Escritorio/socket trabajo de grado/socket_send" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -623,12 +460,12 @@
       <workItem from="1491254014814" duration="19443000" />
       <workItem from="1491280529413" duration="4921000" />
       <workItem from="1491318554814" duration="591000" />
-      <workItem from="1491363380891" duration="1037000" />
+      <workItem from="1491363380891" duration="3530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="430889000" />
+    <option name="totallyTimeSpent" value="433382000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -646,7 +483,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19717261" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3715221" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3715221" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -900,13 +737,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/async/applyEach.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/4.6.1/core-modules/module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
@@ -1185,25 +1015,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/graphic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1239,14 +1054,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2856">
-          <caret line="168" column="9" lean-forward="false" selection-start-line="168" selection-start-column="9" selection-end-line="168" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Descargas/rickshaw-master/rickshaw-master/examples/extensions.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4624">
@@ -1255,14 +1062,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="127" column="48" lean-forward="false" selection-start-line="127" selection-start-column="48" selection-end-line="127" selection-end-column="48" />
+        <state relative-caret-position="1037">
+          <caret line="168" column="43" lean-forward="false" selection-start-line="168" selection-start-column="43" selection-end-line="168" selection-end-column="43" />
           <folding>
-            <marker date="1491364426301" expanded="true" signature="2002:2019" ph="..." />
-            <marker date="1491364426301" expanded="true" signature="2008:2019" ph="..." />
+            <marker date="1491364925824" expanded="true" signature="2002:2019" ph="..." />
+            <marker date="1491364925824" expanded="true" signature="2008:2019" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="202" column="38" lean-forward="false" selection-start-line="202" selection-start-column="38" selection-end-line="202" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/graphic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="37" column="3" lean-forward="false" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
