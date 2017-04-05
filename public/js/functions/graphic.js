@@ -168,7 +168,7 @@ function readFile(pk_file) {
             let max = parseFloat(ymax[1]);
             let min = parseFloat(ymin[1]);
             graph.max = max + (max * 0.05);
-            graph.min = min + (min * 0.05);
+            graph.min = min - (min * 0.05);
             graph.render();
 
         },
