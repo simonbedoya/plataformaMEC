@@ -141,9 +141,16 @@ router.post('/getDateList', function (req,res) {
 });
 
 router.post('/getDates', function (req,res) {
-    data_controller.getDates(req.body.serial).then(function (data) {
-        res.status(data.hcode).send(JSON.parse(response.msg(data.code,data.msg, data.data)));
-    })
+    let axis = req.body.axis;
+    if(axis !== undefined) {
+        data_controller.getDates(req.body.serial).then(function (data) {
+            res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, data.data)));
+        })
+    }else{
+        data_controller.getDatesFilter(req.body.serial,axis).then(function (data) {
+            res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, data.data)));
+        })
+    }
 });
 
 router.post('/getDataFileByPk', function (req,res) {

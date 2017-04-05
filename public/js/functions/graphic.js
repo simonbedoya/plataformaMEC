@@ -194,10 +194,11 @@ socket.on('connect', function(){
 });
 
 function reloadDataTable(serial) {
+    let axis = $('#filterAxis').val();
     $.ajax({
         type: "post",
         url: "http://52.34.55.59:3000/data/getDates",
-        data: {serial: serial},
+        data: {serial: serial, axis: axis},
         success: function (result) {
             if (result.code === "001"){
                 //hay datos
