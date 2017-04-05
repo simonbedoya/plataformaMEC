@@ -288,6 +288,7 @@ module.exports = {
         return new Promise(
             function (fullfill) {
                 let sql;
+                console.log(axis);
                 if(axis === undefined){
                     sql = template(sqlQuery.query_dateList,{serial: serial,date: date});
                 }else{
@@ -309,6 +310,7 @@ module.exports = {
         return new Promise(
             function (fullfill) {
                 let sql;
+                console.log(axis);
                 if(axis === undefined){
                     sql = template(sqlQuery.query_dates,{serial: serial});
                 }else{
