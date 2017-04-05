@@ -284,10 +284,16 @@ module.exports = {
             }
         )
     },
-    getDateList: function (serial,date) {
+    getDateList: function (serial,date,axis) {
         return new Promise(
             function (fullfill) {
-                db.query(template(sqlQuery.query_dateList,{serial: serial,date: date}), function (err, result) {
+                let sql;
+                if(axis === undefined){
+                    sql = template(sqlQuery.query_dateList,{serial: serial,date: date});
+                }else{
+                    sql = template(sqlQuery.query_dateListFilter,{serial: serial,date: date, axis: axis});
+                }
+                db.query(sql, function (err, result) {
                     if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
 
                     if (result.length !== 0) {
@@ -320,16 +326,10 @@ module.exports = {
             }
         )
     },
-    getDataFileByPk: function (pk_file,axis) {
+    getDataFileByPk: function (pk_file) {
         return new Promise(
             function (fullfill) {
-                let sql;
-                if(axis === undefined){
-                    sql = template(sqlQuery.query_getDataFileByPk,{pk_file: pk_file});
-                }else{
-                    sql = template(sqlQuery.query_getDataFileByPkFilter,{pk_file: pk_file, axis: axis})
-                }
-                db.query(sql, function (err, result) {
+                db.query(template(sqlQuery.query_getDataFileByPk,{pk_file: pk_file}), function (err, result) {
                     if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
 
                     if (result.length !== 0) {

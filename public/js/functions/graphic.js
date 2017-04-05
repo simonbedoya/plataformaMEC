@@ -91,11 +91,18 @@ function format (data) {
 
 
 function getDateList(date,serial,row) {
+    let axis = $('#filterAxis').val();
+    let data;
+    if(axis === "BH1, BH2, BHZ"){
+        data = {serial: serial, date: date};
+    }else{
+        data = {serial: serial, date: date, axis: axis};
+    }
     $.ajax({
         type: "post",
         async: false,
         url: "http://52.34.55.59:3000/data/getDateList",
-        data: {serial: serial, date: date},
+        data: data,
         success: function (result) {
             if (result.code === "001"){
                 //hay datos
@@ -120,18 +127,11 @@ function getDateList(date,serial,row) {
 
 function readFile(pk_file) {
     //socket.emit('sendPkFile', pk_file);
-    let axis = $('#filterAxis').val();
-    let data;
-    if(axis === "BH1, BH2, BHZ"){
-        data = {pk_file: pk_file};
-    }else{
-        data = {pk_file: pk_file, axis: axis};
-    }
     $.ajax({
         type: "post",
         async: false,
         url: "http://52.34.55.59:3000/data/getDataFileByPk",
-        data: data,
+        data: {pk_file: pk_file},
         success: function (result) {
             let resultArray = result.split("\n");
             let data = [];
