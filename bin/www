@@ -41,7 +41,8 @@ io.sockets.on('connection', function (socket) {
           if(data.code === "001"){
               let path_file = data.data;
               data_controller.getDataFilePath(path_file).then(function (data) {
-                  console.log(data.dta);
+
+                  console.log(data.data);
                   //res.status(data.hcode).send(data.data);
               })
           }

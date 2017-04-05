@@ -334,7 +334,7 @@ module.exports = {
             function (fullfill) {
                 exec(`/opt/serverMEC/plataformaMEC/ReadFileSAC/readsac ${path_file}`, function (err, stdout, stderr) {
                         //console.log(err);
-                        if(err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
+                        if(err) return fullfill({hcode: 202, code: "003", msg: "Error", data: err});
 
                         //console.log(stdout);
                         fullfill({hcode: 202, code: "001", msg: "ReadComplete", data: stdout})
