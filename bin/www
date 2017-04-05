@@ -34,7 +34,9 @@ let io = require("socket.io").listen(server);
 io.sockets.on('connection', function (socket) {
     console.log('se ha establecido una nueva Conexion');
 
-
+    socket.on('sendPkFile',function(pk_file){
+      console.log(pk_file);
+    })
 });
 
 /**

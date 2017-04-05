@@ -118,9 +118,7 @@ function getDateList(date,serial,row) {
 }
 
 function readFile(pk_file) {
-    socket.on('connect', function(){
-        
-    })
+    socket.emit('sendPkFile', pk_file);
     /*$.ajax({
         type: "post",
         async: false,
@@ -189,6 +187,10 @@ function readFile(pk_file) {
         }
     });*/
 }
+
+socket.on('connect', function(){
+
+})
 
 function reloadDataTable(serial) {
     $.ajax({
