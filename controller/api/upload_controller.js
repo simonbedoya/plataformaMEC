@@ -77,7 +77,7 @@ module.exports = {
                 let file_ext = file.name.split('.').pop();
                 let old_path = file.path;
                 if(file.type === "text/plain" || file.type === "application/octet-stream") {
-                    if(file_ext === "txt" || file_ext === "json" || file_ext === "sac") {
+                    if(file_ext === "txt" || file_ext === "json" || file_ext === "sac" || file_ext === "SAC") {
                         //no existe el archivo
                         fs.readFile(old_path, function (err, data) {
                            fs.writeFile(`${path_file}/${file.name}`, data, function (err) {
