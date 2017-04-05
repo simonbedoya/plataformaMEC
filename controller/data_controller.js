@@ -299,10 +299,16 @@ module.exports = {
             }
         )
     },
-    getDates: function (serial) {
+    getDates: function (serial,axis) {
         return new Promise(
             function (fullfill) {
-                db.query(template(sqlQuery.query_dates,{serial: serial}), function (err, result) {
+                let sql;
+                if(axis === undefined){
+                    sql = template(sqlQuery.query_dates,{serial: serial});
+                }else{
+                    sql = template(sqlQuery.query_datesfilter,{serial: serial, axis: axis})
+                }
+                db.query(sql, function (err, result) {
                     if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
 
                     if (result.length !== 0) {
@@ -314,25 +320,16 @@ module.exports = {
             }
         )
     },
-    getDatesFilter: function (serial, axis) {
+    getDataFileByPk: function (pk_file,axis) {
         return new Promise(
             function (fullfill) {
-                db.query(template(sqlQuery.query_datesfilter,{serial: serial, axis: axis}), function (err, result) {
-                    if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
-
-                    if (result.length !== 0) {
-                        fullfill({hcode: 200, code: "001", msg: "Date List", data: JSON.stringify(result)});
-                    } else {
-                        fullfill({hcode: 202, code: "002", msg: "Error", data: null});
-                    }
-                });
-            }
-        )
-    },
-    getDataFileByPk: function (pk_file) {
-        return new Promise(
-            function (fullfill) {
-                db.query(template(sqlQuery.query_getDataFileByPk,{pk_file: pk_file}), function (err, result) {
+                let sql;
+                if(axis === undefined){
+                    sql = template(sqlQuery.query_getDataFileByPk,{pk_file: pk_file});
+                }else{
+                    sql = template(sqlQuery.query_getDataFileByPkFilter,{pk_file: pk_file, axis: axis})
+                }
+                db.query(sql, function (err, result) {
                     if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
 
                     if (result.length !== 0) {

@@ -141,29 +141,20 @@ router.post('/getDateList', function (req,res) {
 });
 
 router.post('/getDates', function (req,res) {
-    let axis = req.body.axis;
-    console.log(axis);
-    if(axis === undefined) {
-        data_controller.getDates(req.body.serial).then(function (data) {
-            res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, data.data)));
-        })
-    }else{
-        data_controller.getDatesFilter(req.body.serial,axis).then(function (data) {
-            res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, data.data)));
-        })
-    }
+   data_controller.getDates(req.body.serial,req.body.axis).then(function (data) {
+       res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, data.data)));
+   })
 });
 
 router.post('/getDataFileByPk', function (req,res) {
-    data_controller.getDataFileByPk(req.body.pk_file).then(function (data) {
-        if(data.code === "001"){
-            let path_file = data.data;
-            data_controller.getDataFilePath(path_file).then(function (data) {
-                res.status(data.hcode).send(data.data);
-            })
-        }
-
-    })
+   data_controller.getDataFileByPk(req.body.pk_file,req.body.axis).then(function (data) {
+       if (data.code === "001") {
+           let path_file = data.data;
+           data_controller.getDataFilePath(path_file).then(function (data) {
+               res.status(data.hcode).send(data.data);
+           })
+       }
+   })
 });
 
 module.exports = router;
