@@ -89,8 +89,15 @@ function format (data) {
     return fila;
 }
 
+function showPanelLoad() {
+    let portlet = $('#portListDates');
+    portlet.append('<div class="panel-disabled"><div class="loader-1"></div></div>');
+
+}
+
 
 function getDateList(date,serial,row) {
+    showPanelLoad();
     let axis = $('#filterAxis').val();
     let data;
     if(axis === "BH1, BH2, BHZ"){
