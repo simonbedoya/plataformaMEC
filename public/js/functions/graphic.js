@@ -89,15 +89,22 @@ function format (data) {
     return fila;
 }
 
-function showPanelLoad() {
+function showPanelLoad(show) {
     let portlet = $('#portListDates');
-    portlet.append('<div class="panel-disabled"><div class="loader-1"></div></div>');
+    if(show) {
+        portlet.append('<div class="panel-disabled"><div class="loader-1"></div></div>');
+    }else{
+        let pd = portlet.find('.panel-disabled');
+        pd.fadeOut('fast', function () {
+            pd.remove();
+        });
+    }
 
 }
 
 
 function getDateList(date,serial,row) {
-    showPanelLoad();
+    showPanelLoad(true);
     let axis = $('#filterAxis').val();
     let data;
     if(axis === "BH1, BH2, BHZ"){
@@ -111,6 +118,7 @@ function getDateList(date,serial,row) {
         url: "http://52.34.55.59:3000/data/getDateList",
         data: data,
         success: function (result) {
+            showPanelLoad(false);
             if (result.code === "001"){
                 //hay datos
                 row.child(format(result.data)).show();
@@ -208,6 +216,7 @@ socket.on('connect', function(){
 });
 
 function reloadDataTable(serial) {
+    showPanelLoad(true);
     let axis = $('#filterAxis').val();
     let data;
     if(axis === "BH1, BH2, BHZ"){
@@ -220,6 +229,7 @@ function reloadDataTable(serial) {
         url: "http://52.34.55.59:3000/data/getDates",
         data: data,
         success: function (result) {
+            showPanelLoad(false);
             if (result.code === "001"){
                 //hay datos
                 let dateListFull = [];
