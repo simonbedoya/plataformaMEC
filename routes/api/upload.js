@@ -46,6 +46,7 @@ router.post('/file', function (req,res) {
                         }
                     })
                 } else if (data.code === "002") {
+                    let path_file = data.data.UPLOADPATH;
                     //existe archivo actualizar registro y reemplazar archivo
                     uploadController.uploadFiles(file, path_file).then(function (data) {
                         if(data.code === "001"){
