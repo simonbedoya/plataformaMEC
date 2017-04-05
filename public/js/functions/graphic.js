@@ -125,10 +125,10 @@ function readFile(pk_file) {
         success: function (result) {
             let resultArray = result.split("\n");
             let data = [];
-            let delta = resultArray[0].split(" = ");
+            let delta = resultArray[0].split(" : ");
             let time = parseFloat(delta[1]);
-            let ymax = resultArray[1].split(" = ");
-            let ymin = resultArray[2].split(" = ");
+            let ymax = resultArray[1].split(" : ");
+            let ymin = resultArray[2].split(" : ");
             for(let i = 4; i < resultArray.length-1; i++){
                 let arrAux = resultArray[i].split(" = ");
                 let arrCom = {x:time*(i-4), y:parseFloat(arrAux[1])};
