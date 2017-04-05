@@ -62,8 +62,14 @@
                             Listado de fechas
                         </h3>
                         <div class="portlet-widgets">
-                            <a onclick="reloadDataTable('<%=serial%>');" data-toggle="reload"><i class="ion-refresh"></i></a>
+                            <select class="form-control">
+                                <option value="BH1, BH2, BHZ">Todos</option>
+                                <option value="BH1">BH1</option>
+                                <option value="BH2">BH2</option>
+                                <option value="BHZ">BHZ</option>
+                            </select>
                             <span class="divider"></span>
+                            <a onclick="reloadDataTable('<%=serial%>');" data-toggle="reload"><i class="ion-refresh"></i></a>
                         </div>
                         <div class="clearfix"></div>
                     </div>
