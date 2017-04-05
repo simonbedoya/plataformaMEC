@@ -125,9 +125,12 @@ function readFile(pk_file) {
         success: function (result) {
             let resultArray = result.split("\n");
             let data = [];
+            let delta = resultArray[0].split(" = ");
+            let time = delta[1];
+            let ymax = resultArray[1].split(" = ");
+            let ymin = resultArray[2].split(" = ");
             for(let i = 4; i < resultArray.length-1; i++){
                 let arrAux = resultArray[i].split(" = ");
-                let time = 1 / 100;
                 let arrCom = {x:time*(i-4), y:parseInt(arrAux[1])};
                 data.push(arrCom);
             }
@@ -153,14 +156,16 @@ function readFile(pk_file) {
                     element: document.getElementById('y_axis'),
                 });
 
-                graph.render();
+
 
                 document.getElementById("y_axis").setAttribute("style", "margin-left: -40px;");
             }else{
                 graph.series[0].data = data;
-                graph.render();
-            }
 
+            }
+            graph.max = ymax[1];
+            graph.min = ymin[1];
+            graph.render();
 
         },
         error: function (e) {
