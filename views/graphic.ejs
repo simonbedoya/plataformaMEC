@@ -66,7 +66,7 @@
                                 <h5 style="color: #797979; margin-right: 10px;">Filtrar por ejes:</h5>
                             </div>
                             <div style="float:left; margin-top: -10px; margin-right: 50px;">
-                                <select class="form-control" id="filterAxis">
+                                <select class="form-control" id="filterAxis" onchange="reloadDataTable(<%=serial%>)">
                                     <option value="BH1, BH2, BHZ">Todos</option>
                                     <option value="BH1">BH1 (X)</option>
                                     <option value="BH2">BH2 (Y)</option>
