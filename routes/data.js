@@ -146,7 +146,7 @@ router.post('/getDates', function (req,res) {
     })
 });
 
-router.post('/getDataFileByPk', function (req,res) {
+/*router.post('/getDataFileByPk', function (req,res) {
     data_controller.getDataFileByPk(req.body.pk_file).then(function (data) {
         if(data.code === "001"){
             let path_file = data.data;
@@ -156,6 +156,6 @@ router.post('/getDataFileByPk', function (req,res) {
         }
 
     })
-});
+});*/
 
 module.exports = router;
