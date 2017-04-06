@@ -29,8 +29,8 @@
       <file leaf-file-name="graphic.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="242" column="59" lean-forward="false" selection-start-line="242" selection-start-column="59" selection-end-line="242" selection-end-column="59" />
+            <state relative-caret-position="268">
+              <caret line="243" column="37" lean-forward="false" selection-start-line="243" selection-start-column="37" selection-end-line="243" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -599,12 +599,12 @@
       <workItem from="1491363380891" duration="5931000" />
       <workItem from="1491420092632" duration="12357000" />
       <workItem from="1491450136868" duration="2000" />
-      <workItem from="1491450243879" duration="1386000" />
+      <workItem from="1491450243879" duration="1512000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="449528000" />
+    <option name="totallyTimeSpent" value="449654000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1226,8 +1226,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="242" column="59" lean-forward="false" selection-start-line="242" selection-start-column="59" selection-end-line="242" selection-end-column="59" />
+        <state relative-caret-position="268">
+          <caret line="243" column="37" lean-forward="false" selection-start-line="243" selection-start-column="37" selection-end-line="243" selection-end-column="37" />
           <folding />
         </state>
       </provider>
