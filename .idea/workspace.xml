@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/graphic.js" afterPath="$PROJECT_DIR$/public/js/functions/graphic.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/graphic.ejs" afterPath="$PROJECT_DIR$/views/graphic.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="graphic.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="129" column="50" lean-forward="false" selection-start-line="129" selection-start-column="50" selection-end-line="129" selection-end-column="50" />
+            <state relative-caret-position="404">
+              <caret line="136" column="48" lean-forward="false" selection-start-line="136" selection-start-column="48" selection-end-line="136" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -548,12 +547,12 @@
       <workItem from="1491280529413" duration="4921000" />
       <workItem from="1491318554814" duration="591000" />
       <workItem from="1491363380891" duration="5931000" />
-      <workItem from="1491420092632" duration="9246000" />
+      <workItem from="1491420092632" duration="10234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="445029000" />
+    <option name="totallyTimeSpent" value="446017000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1202,8 +1201,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="129" column="50" lean-forward="false" selection-start-line="129" selection-start-column="50" selection-end-line="129" selection-end-column="50" />
+        <state relative-caret-position="404">
+          <caret line="136" column="48" lean-forward="false" selection-start-line="136" selection-start-column="48" selection-end-line="136" selection-end-column="48" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
