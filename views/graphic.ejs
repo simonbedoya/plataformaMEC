@@ -11,6 +11,10 @@
     <link href="assets/datatables/scroller.bootstrap.min.css" rel="stylesheet" type="text/css" />
 
     <link rel="stylesheet" href="assets/rickshaw-chart/rickshaw.min.css">
+
+    <!-- ION Slider -->
+    <link href="assets/ion-rangeslider/ion.rangeSlider.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/ion-rangeslider/ion.rangeSlider.skinFlat.css" rel="stylesheet" type="text/css"/>
 </head>
 
 
@@ -112,7 +116,7 @@
                             <div class="col-lg-12">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Detalles archivo</h3>
+                                        <h4 class="panel-title">Detalles archivo</h4>
                                     </div>
                                     <div class="panel-body">
                                         <table border="0" cellspacing="0">
@@ -147,7 +151,23 @@
                                 </div>
                             </div>-->
                         </div>
-
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">Generar grafico</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-group">
+                                            <label for="range_05" class="col-sm-2 control-label"><b>Step</b><span class="text-muted clearfix font-normal small">Using step 250</span></label>
+                                            <div class="col-sm-10">
+                                                <input type="text" id="range_05">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div> <!-- /Portlet -->
             </div>
@@ -242,6 +262,9 @@
 <script src="assets/rickshaw-chart/Rickshaw.Graph.Axis.Y.js"></script>
 
 <script src="/socket.io/socket.io.js"></script>
+
+<script src="assets/ion-rangeslider/ion.rangeSlider.min.js"></script>
+<script src="assets/ion-rangeslider/ui-sliders.js"></script>
 
 
 <script src="js/functions/graphic.js"></script>
