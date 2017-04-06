@@ -17,7 +17,7 @@ $('#close_grt').click(function () {
 });
 
 function load(dateList,serial) {
-    $('#spinner3').spinner({value:0, min: 0, max: 10});
+
     let dateListFull = [];
     let i;
     for(i in dateList){
