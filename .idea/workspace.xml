@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/graphic.js" afterPath="$PROJECT_DIR$/public/js/functions/graphic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/graphic.ejs" afterPath="$PROJECT_DIR$/views/graphic.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="graphic.ejs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="graphic.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3009">
-              <caret line="177" column="46" lean-forward="false" selection-start-line="177" selection-start-column="46" selection-end-line="177" selection-end-column="46" />
+            <state relative-caret-position="387">
+              <caret line="277" column="76" lean-forward="false" selection-start-line="277" selection-start-column="76" selection-end-line="277" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -46,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="graphic.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="graphic.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -200,8 +200,8 @@
         <option value="$PROJECT_DIR$/sql/sql_data.js" />
         <option value="$PROJECT_DIR$/controller/data_controller.js" />
         <option value="$PROJECT_DIR$/public/assets/ion-rangeslider/ui-sliders.js" />
-        <option value="$PROJECT_DIR$/views/graphic.ejs" />
         <option value="$PROJECT_DIR$/public/js/functions/graphic.js" />
+        <option value="$PROJECT_DIR$/views/graphic.ejs" />
       </list>
     </option>
   </component>
@@ -577,12 +577,12 @@
       <workItem from="1491363380891" duration="5931000" />
       <workItem from="1491420092632" duration="12357000" />
       <workItem from="1491450136868" duration="2000" />
-      <workItem from="1491450243879" duration="735000" />
+      <workItem from="1491450243879" duration="992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="448877000" />
+    <option name="totallyTimeSpent" value="449134000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1190,14 +1190,6 @@
     <entry file="file://$PROJECT_DIR$/public/assets/ion-rangeslider/ui-sliders.js" />
     <entry file="file://$PROJECT_DIR$/public/assets/ion-rangeslider/ion.rangeSlider.min.js" />
     <entry file="file://$PROJECT_DIR$/public/assets/ion-rangeslider/ion.rangeSlider.css" />
-    <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3009">
-          <caret line="177" column="46" lean-forward="false" selection-start-line="177" selection-start-column="46" selection-end-line="177" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1207,6 +1199,14 @@
             <marker date="1491454427033" expanded="true" signature="2108:2119" ph="..." />
             <marker date="1491454427033" expanded="true" signature="2530:2937" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="277" column="76" lean-forward="false" selection-start-line="277" selection-start-column="76" selection-end-line="277" selection-end-column="76" />
+          <folding />
         </state>
       </provider>
     </entry>
