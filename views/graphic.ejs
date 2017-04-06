@@ -52,14 +52,14 @@
     <!-- ================== -->
     <div class="wraper container-fluid">
         <div class="page-title">
-            <h3 class="title">Sensor #SERIAL</h3>
+            <h3 class="title">Sensor <%= serial %></h3>
         </div>
         <div class="row">
             <div class="col-lg-6" >
                 <div class="portlet" style="height: 400px;" id="portListDates">
                     <div class="portlet-heading">
                         <h3 class="portlet-title text-dark">
-                            Listado de fechas
+                            Listado de archivos
                         </h3>
                         <div class="portlet-widgets">
                             <div style="float:left; margin-top: -10px;">
@@ -98,24 +98,46 @@
             <div class="col-lg-6">
                 <div class="portlet"><!-- /primary heading -->
                     <div class="portlet-heading">
-                        <h3 class="portlet-title text-dark">
-                            Grafica
+                        <h3 class="portlet-title text-dark" id="titleGraphicDetail">
+                            Detalles grafica
                         </h3>
                         <div class="portlet-widgets">
-                            <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                            <a data-toggle="reload"><i class="ion-refresh"></i></a>
                             <span class="divider"></span>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                     <div class="portlet-body">
                         <div class="row">
-                            <div class="col-lg-11 col-lg-offset-1">
+                            <div class="col-lg-10 col-lg-offset-1">
+                                <table border="0" cellspacing="0">
+                                    <tr>
+                                        <th>Fecha:</th>
+                                        <td>2017-03-30</td>
+                                        <th>Hora:</th>
+                                        <td>01:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Eje:</th>
+                                        <td>BH1 (X)</td>
+                                        <th>Tasa de muestreo:</th>
+                                        <td>200 sps</td>
+                                    </tr>
+                                    <tr>
+                                        <th># Muestras archivo:</th>
+                                        <td>720.000 m</td>
+                                        <th>Duración:</th>
+                                        <td>1 Hora</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--<div class="col-lg-11 col-lg-offset-1">
                                 <div id="chart_container">
                                     <div id="y_axis"></div>
                                     <div id="chartPcpal"></div>
                                     <div id="preview"></div>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
 
                     </div>

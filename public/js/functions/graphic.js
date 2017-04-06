@@ -82,7 +82,14 @@ function format (data) {
     for(i in data){
         let reg_date = data[i].REGISTERDATE_FILE.split("T");
         let reg_hour = reg_date[1].split(".");
-        fila += `<tr><td>${data[i].HOUR_FILE}</td><td>${data[i].AXIS_FILE}</td><td>${reg_date[0]} - ${reg_hour[0]}</td><td><a onclick="readFile(${data[i].PK_FILE})" data-toggle='tooltip' data-placement='bottom' title='Ver'><i class="ion-eye"></i></a></td></tr>`;
+        fila += `<tr>`+
+                    `<td>${data[i].HOUR_FILE}</td>`+
+                    `<td>${data[i].AXIS_FILE}</td>`+
+                    `<td>${reg_date[0]} - ${reg_hour[0]}</td>`+
+                    `<td>`+
+                        `<a onclick="readFile(${data[i].PK_FILE})" data-toggle='tooltip' data-placement='bottom' title='Ver'><i class="ion-eye"></i></a>`+
+                    `</td>`+
+                `</tr>`;
     }
     fila += "</tbody></table>";
 
