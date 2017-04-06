@@ -12,9 +12,6 @@
 
     <link rel="stylesheet" href="assets/rickshaw-chart/rickshaw.min.css">
 
-    <!-- ION Slider -->
-    <link href="assets/ion-rangeslider/ion.rangeSlider.css" rel="stylesheet" type="text/css"/>
-    <link href="assets/ion-rangeslider/ion.rangeSlider.skinFlat.css" rel="stylesheet" type="text/css"/>
 </head>
 
 
@@ -159,9 +156,24 @@
                                     </div>
                                     <div class="panel-body">
                                         <div class="form-group">
-                                            <label for="range_05" class="col-sm-2 control-label"><b>Step</b><span class="text-muted clearfix font-normal small">Using step 250</span></label>
-                                            <div class="col-sm-10">
-                                                <input type="text" id="range_05">
+                                            <label class="control-label col-md-3">Spinner 3</label>
+                                            <div class="col-md-9">
+                                                <div id="spinner3">
+                                                    <div class="input-group" style="width:150px;">
+                                                        <input type="text" class="spinner-input form-control" maxlength="3" readonly>
+                                                        <div class="spinner-buttons input-group-btn">
+                                                            <button type="button" class="btn btn-default spinner-up">
+                                                                <i class="fa fa-angle-up"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-default spinner-down">
+                                                                <i class="fa fa-angle-down"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="help-block">
+                                                     with max value: 10
+                                                     </span>
                                             </div>
                                         </div>
                                     </div>
@@ -262,9 +274,6 @@
 <script src="assets/rickshaw-chart/Rickshaw.Graph.Axis.Y.js"></script>
 
 <script src="/socket.io/socket.io.js"></script>
-
-<script src="assets/ion-rangeslider/ion.rangeSlider.min.js"></script>
-<script src="assets/ion-rangeslider/ui-sliders.js"></script>
 
 
 <script src="js/functions/graphic.js"></script>
