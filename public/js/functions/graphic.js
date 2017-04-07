@@ -271,18 +271,19 @@ function reloadDataTable(serial) {
     });
 }
 
-function count(move, id){
+function count(move, id, step){
     let input = $(`#${id}`);
+    let step = parseInt($(`#${step}`).val());
     let field = parseInt(input.val());
     if(move === "u"){
-        field = field + 1;
+        field = field + step;
         if (field > 60){
-            field =  field - 1;
+            field =  60;
         }
     }else{
-        field = field - 1;
+        field = field - step;
         if(field < 0){
-            field = field + 1;
+            field = 0;
         }
     }
     input.val(field.toString());
