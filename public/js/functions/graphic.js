@@ -250,13 +250,17 @@ function clearDataFile() {
 }
 
 function clearDataGenerateGraphic() {
-    document.getElementById("samInp").innerHTML = "0";
+    document.getElementById("samInp").value = "0";
     $('#stepsam').val(1);
     document.getElementById("timeGraphic").innerHTML = "0 min";
-    document.getElementById("minIT").innerHTML = "0";
+    document.getElementById("minIT").value = "0";
     $('#stepminIT').val(1);
-    document.getElementById("secIT").innerHTML = "0";
+    document.getElementById("secIT").value = "0";
     $('#stepsecIT').val(1);
+    document.getElementById("minTF").value = "0";
+    $('#stepminTF').val(1);
+    document.getElementById("secTF").value = "0";
+    $('#stepsecTF').val(1);
 }
 
 /*socket.on('connect', function(){
