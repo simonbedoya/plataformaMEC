@@ -57,7 +57,7 @@
         </div>
         <div class="row">
             <div class="col-lg-6" >
-                <div class="portlet" style="height: 400px;" id="portListDates">
+                <div class="portlet" style="height: 755px;" id="portListDates">
                     <div class="portlet-heading">
                         <h3 class="portlet-title text-dark">
                             Listado de archivos
@@ -120,21 +120,21 @@
                                         <table border="0" cellspacing="0">
                                             <tr>
                                                 <th class="col-lg-4">Fecha:</th>
-                                                <td class="col-lg-3">2017-03-30</td>
+                                                <td class="col-lg-3" id="dfDate">2017-03-30</td>
                                                 <th class="col-lg-3">Hora:</th>
-                                                <td class="col-lg-2">01:00:00</td>
+                                                <td class="col-lg-2" id="dfHour">01:00:00</td>
                                             </tr>
                                             <tr>
                                                 <th class="col-lg-4">Eje:</th>
-                                                <td class="col-lg-3">BH1 (X)</td>
+                                                <td class="col-lg-3" id="dfAxis">BH1 (X)</td>
                                                 <th class="col-lg-3">Tasa muestreo:</th>
-                                                <td class="col-lg-2">200 sps</td>
+                                                <td class="col-lg-2" id="dfSamSec">200 sps</td>
                                             </tr>
                                             <tr>
                                                 <th class="col-lg-4"># Muestras archivo:</th>
-                                                <td class="col-lg-3">720.000 m</td>
+                                                <td class="col-lg-3" id="dfSam">720.000 m</td>
                                                 <th class="col-lg-3">Duración:</th>
-                                                <td class="col-lg-2">1 Hora</td>
+                                                <td class="col-lg-2" id="dfDuration">1 Hora</td>
                                             </tr>
                                         </table>
                                     </div>
@@ -148,7 +148,7 @@
                                     <div id="preview"></div>
                                 </div>
                             </div>-->
-                            <button id="btnShowParamGraphic" type="button" class="btn btn-inverse pull-right" onclick="loadParamGraphic()"><i class="ion-stats-bars"></i><span class="m-l-5">Generar gráfica</span></button>
+                            <button id="btnShowParamGraphic" type="button" class="btn btn-inverse pull-right m-r-10" onclick="loadParamGraphic()"><i class="ion-stats-bars m-r-10"></i><span>Generar gráfica</span></button>
                         </div>
 
                         <div class="row hidden" id="panelGraphic">
@@ -330,8 +330,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <button id="btnCloseParamGraphic" type="button" class="btn btn-inverse pull-right" onclick="closePanelGraphic()"><i class="ion-stats-bars"></i><span class="m-l-5">Cerrar</span></button>
-                            <button id="btnGenerateGraphic" type="button" class="btn btn-inverse pull-right" onclick=""><i class="ion-stats-bars"></i><span class="m-l-5">Generar</span></button>
+                            <button id="btnCloseParamGraphic" type="button" class="btn btn-inverse pull-right m-r-15" onclick="closePanelGraphic()"><i class="ion-close-round m-r-10"></i><span>Cerrar</span></button>
+                            <button id="btnGenerateGraphic" type="button" class="btn btn-inverse pull-right m-r-10" onclick=""><i class="ion-checkmark-round m-r-10"></i><span>Generar</span></button>
                         </div>
                     </div>
                 </div> <!-- /Portlet -->

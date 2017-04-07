@@ -33,7 +33,7 @@ function load(dateList,serial) {
         "info": false,
         "searching": true,
         "pageLength": true,
-        "scrollY":        "220px",
+        "scrollY":        "575px",
         "scrollCollapse": true,
         "paging":         false,
         "pagingType": "numbers",
@@ -88,7 +88,7 @@ function format (data) {
                     `<td>${data[i].AXIS_FILE}</td>`+
                     `<td>${reg_date[0]} - ${reg_hour[0]}</td>`+
                     `<td>`+
-                        `<a onclick="readFile(${data[i].PK_FILE})" data-toggle='tooltip' data-placement='bottom' title='Ver'><i class="ion-eye"></i></a>`+
+                        `<a onclick="readFile(${data[i].PK_FILE},'${data[i].HOUR_FILE}','${data[i].AXIS_FILE}')" data-toggle='tooltip' data-placement='bottom' title='Ver'><i class="ion-eye"></i></a>`+
                     `</td>`+
                 `</tr>`;
     }
@@ -148,7 +148,7 @@ function getDateList(date,serial,row) {
     });
 }
 
-function readFile(pk_file) {
+function readFile(pk_file,hour,axis) {
     //socket.emit('sendPkFile', pk_file);
     showPanelLoad(true);
     $.ajax({
@@ -169,6 +169,8 @@ function readFile(pk_file) {
                 let arrCom = {x:time*(i-4), y:parseFloat(arrAux[1])};
                 data.push(arrCom);
             }
+            clearDataFile();
+            setDataFile();
             //console.log(data);
             /*if(graph === undefined) {
                 graph = new Rickshaw.Graph({
@@ -219,6 +221,24 @@ function readFile(pk_file) {
             });
         }
     });
+}
+
+function setDataFile(date,hour,axis,samplessec,sample,duration) {
+    $('#dfDate').val(date);
+    $('#dfHour').val(hour);
+    $('#dfAxis').val(axis);
+    $('#dfSamSec').val(samplessec);
+    $('#dfSam').val(sample);
+    $('#dfDuration').val(duration);
+}
+
+function clearDataFile() {
+    $('#dfDate').val('');
+    $('#dfHour').val('');
+    $('#dfAxis').val('');
+    $('#dfSamSec').val('');
+    $('#dfSam').val('');
+    $('#dfDuration').val('');
 }
 
 /*socket.on('connect', function(){
