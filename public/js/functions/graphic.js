@@ -158,53 +158,57 @@ function readFile(pk_file,hour,axis) {
         success: function (result) {
             showPanelLoad(false);
             showPanel('panelFile',true);
-            let resultArray = result.split("\n");
-            let data = [];
-            let delta = resultArray[0].split(" : ");
-            let time = parseFloat(delta[1]);
-            let ymax = resultArray[1].split(" : ");
-            let ymin = resultArray[2].split(" : ");
-            for(let i = 4; i < resultArray.length-1; i++){
-                let arrAux = resultArray[i].split(" = ");
-                let arrCom = {x:time*(i-4), y:parseFloat(arrAux[1])};
-                data.push(arrCom);
+            if(result.code === "001") {
+                let date_file = result.msg.split("T");
+                let resultArray = result.data.split("\n");
+                let data = [];
+                let delta = resultArray[0].split(" : ");
+                let time = parseFloat(delta[1]);
+                let samplesec = parseInt(1/time);
+                let ymax = resultArray[1].split(" : ");
+                let ymin = resultArray[2].split(" : ");
+                for (let i = 4; i < resultArray.length - 1; i++) {
+                    let arrAux = resultArray[i].split(" = ");
+                    let arrCom = {x: time * (i - 4), y: parseFloat(arrAux[1])};
+                    data.push(arrCom);
+                }
+                clearDataFile();
+                setDataFile(date_file[0],hour,axis,samplesec);
+                //console.log(data);
+                /*if(graph === undefined) {
+                 graph = new Rickshaw.Graph({
+                 element: document.querySelector("#chartPcpal"),
+                 height: 250,
+                 renderer: 'line',
+                 series: [{
+                 color: 'steelblue',
+                 data: data,
+
+                 }]
+                 });
+
+                 let x_axis = new Rickshaw.Graph.Axis.Time({graph: graph});
+
+                 let y_axis = new Rickshaw.Graph.Axis.Y({
+                 graph: graph,
+                 orientation: 'left',
+                 tickFormat: Rickshaw.Fixtures.Number.formatKMBT,
+                 element: document.getElementById('y_axis'),
+                 });
+
+
+
+                 document.getElementById("y_axis").setAttribute("style", "margin-left: -40px;");
+                 }else{
+                 graph.series[0].data = data;
+
+                 }
+                 let max = parseFloat(ymax[1]);
+                 let min = parseFloat(ymin[1]);
+                 graph.max = max + (max * 0.05);
+                 graph.min = min - (min * 0.05);
+                 graph.render();*/
             }
-            clearDataFile();
-            setDataFile();
-            //console.log(data);
-            /*if(graph === undefined) {
-                graph = new Rickshaw.Graph({
-                    element: document.querySelector("#chartPcpal"),
-                    height: 250,
-                    renderer: 'line',
-                    series: [{
-                        color: 'steelblue',
-                        data: data,
-
-                    }]
-                });
-
-                let x_axis = new Rickshaw.Graph.Axis.Time({graph: graph});
-
-                let y_axis = new Rickshaw.Graph.Axis.Y({
-                    graph: graph,
-                    orientation: 'left',
-                    tickFormat: Rickshaw.Fixtures.Number.formatKMBT,
-                    element: document.getElementById('y_axis'),
-                });
-
-
-
-                document.getElementById("y_axis").setAttribute("style", "margin-left: -40px;");
-            }else{
-                graph.series[0].data = data;
-
-            }
-            let max = parseFloat(ymax[1]);
-            let min = parseFloat(ymin[1]);
-            graph.max = max + (max * 0.05);
-            graph.min = min - (min * 0.05);
-            graph.render();*/
 
         },
         error: function (e) {
