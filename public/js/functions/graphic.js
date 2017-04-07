@@ -157,7 +157,7 @@ function readFile(pk_file,hour,axis) {
         data: {pk_file: pk_file},
         success: function (result) {
             showPanelLoad(false);
-            showPanel('panelFile',true);
+
             if(result.code === "001") {
                 let date_file = result.msg.split("T");
                 let resultArray = result.data.split("\n");
@@ -165,6 +165,8 @@ function readFile(pk_file,hour,axis) {
                 let delta = resultArray[0].split(" : ");
                 let time = parseFloat(delta[1]);
                 let samplesec = parseInt(1/time);
+                let samples = resultArray[3].split(" : ");
+                let duration = samplesec * parseInt(samples[1]);
                 let ymax = resultArray[1].split(" : ");
                 let ymin = resultArray[2].split(" : ");
                 for (let i = 4; i < resultArray.length - 1; i++) {
@@ -173,7 +175,7 @@ function readFile(pk_file,hour,axis) {
                     data.push(arrCom);
                 }
                 clearDataFile();
-                setDataFile(date_file[0],hour,axis,samplesec);
+                setDataFile(date_file[0],hour,axis,samplesec,parseInt(samples[1]),duration);
                 //console.log(data);
                 /*if(graph === undefined) {
                  graph = new Rickshaw.Graph({
@@ -234,6 +236,7 @@ function setDataFile(date,hour,axis,samplessec,sample,duration) {
     $('#dfSamSec').val(samplessec);
     $('#dfSam').val(sample);
     $('#dfDuration').val(duration);
+    showPanel('panelFile',true);
 }
 
 function clearDataFile() {
