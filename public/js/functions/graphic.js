@@ -150,12 +150,15 @@ function getDateList(date,serial,row) {
 
 function readFile(pk_file) {
     //socket.emit('sendPkFile', pk_file);
+    showPanelLoad(true);
     $.ajax({
         type: "post",
         async: false,
         url: "http://52.34.55.59:3000/data/getDataFileByPk",
         data: {pk_file: pk_file},
         success: function (result) {
+            showPanelLoad(false);
+            showPanel('panelFile',true);
             let resultArray = result.split("\n");
             let data = [];
             let delta = resultArray[0].split(" : ");
@@ -168,7 +171,7 @@ function readFile(pk_file) {
                 data.push(arrCom);
             }
             //console.log(data);
-            if(graph === undefined) {
+            /*if(graph === undefined) {
                 graph = new Rickshaw.Graph({
                     element: document.querySelector("#chartPcpal"),
                     height: 250,
@@ -200,7 +203,7 @@ function readFile(pk_file) {
             let min = parseFloat(ymin[1]);
             graph.max = max + (max * 0.05);
             graph.min = min - (min * 0.05);
-            graph.render();
+            graph.render();*/
 
         },
         error: function (e) {
@@ -287,4 +290,31 @@ function count(move, id, step){
         }
     }
     input.val(field.toString());
+}
+
+function samples(move, id, step){
+    let input = $(`#${id}`);
+    let stepval = parseInt($(`#${step}`).val());
+    let field = parseInt(input.val());
+    if(move === "u"){
+        field = field + stepval;
+        if (field > 60){
+            field =  60;
+        }
+    }else if(move === "d"){
+        field = field - stepval;
+        if(field < 0){
+            field = 0;
+        }
+    }
+    input.val(field.toString());
+
+}
+
+function showPanel(id,show) {
+    if(show){
+        $(`#${id}`).removeClass("hidden");
+    }else{
+        $(`#${id}`).addClass("hidden");
+    }
 }
