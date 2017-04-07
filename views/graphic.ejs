@@ -159,6 +159,49 @@
                                             <div class="col-lg-12">
                                                 <table border="0" cellspacing="0">
                                                     <tr>
+                                                        <th colspan="4" class="col-lg-12" style="text-align: center">Tasa de muestreo:</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="col-lg-6" colspan="2">Muestras:</th>
+                                                        <th class="col-lg-6">Tiempo maximo grafica:</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2" style="vertical-align: middle;" class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" onclick="samples('u','samInp','stepsam');" class="btn btn-effect-ripple btn-reverse">
+                                                                        <i class="ion-arrow-up-b"></i>
+                                                                    </button>
+                                                                </span>
+                                                                <input id="samInp" type="text" class="form-control" value="0" style="width: 40px;" disabled/>
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" onclick="count('d','samInp','stepsam');" class="btn btn-effect-ripple btn-reverse">
+                                                                        <i class="ion-arrow-down-b"></i>
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="col-lg-3">
+                                                            <select class="form-control" id="stepsam">
+                                                                <option value="1">1</option>
+                                                                <option value="5">5</option>
+                                                                <option value="10">10</option>
+                                                                <option value="20">20</option>
+                                                                <option value="50">50</option>
+                                                            </select>
+                                                        </td>
+                                                        <td colspan="2" rowspan="2" style="text-align: center; vertical-align: middle">5 min</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-lg-3" style="text-align: center">pasos</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <table border="0" cellspacing="0">
+                                                    <tr>
                                                         <th colspan="4" class="col-lg-12" style="text-align: center">Tiempo inicial:</th>
                                                     </tr>
                                                     <tr>
@@ -195,7 +238,7 @@
                                                                         <i class="ion-arrow-up-b"></i>
                                                                     </button>
                                                                 </span>
-                                                                <input id="secIT" type="text" class="form-control" value="00" style="width: 40px;"  disabled/>
+                                                                <input id="secIT" type="text" class="form-control" value="0" style="width: 40px;"  disabled/>
                                                                 <span class="input-group-btn">
                                                                     <button type="button" onclick="count('d','secIT','stepsecIT');" class="btn btn-effect-ripple btn-reverse">
                                                                         <i class="ion-arrow-down-b"></i>
@@ -218,11 +261,11 @@
                                                 </table>
                                             </div>
                                         </div>
-                                        <div class="row">
+                                        <div class="row m-t-10">
                                             <div class="col-lg-12">
                                                 <table border="0" cellspacing="0">
                                                     <tr>
-                                                        <th colspan="4" class="col-lg-12" style="text-align: center">Tiempo inicial:</th>
+                                                        <th colspan="4" class="col-lg-12" style="text-align: center">Tiempo final:</th>
                                                     </tr>
                                                     <tr>
                                                         <th class="col-lg-6" colspan="2">Minutos:</th>
@@ -258,7 +301,7 @@
                                                                         <i class="ion-arrow-up-b"></i>
                                                                     </button>
                                                                 </span>
-                                                                <input id="secTF" type="text" class="form-control" value="00" style="width: 40px;"  disabled/>
+                                                                <input id="secTF" type="text" class="form-control" value="0" style="width: 40px;"  disabled/>
                                                                 <span class="input-group-btn">
                                                                     <button type="button" onclick="count('d','secTF','stepsecTF');" class="btn btn-effect-ripple btn-reverse">
                                                                         <i class="ion-arrow-down-b"></i>
