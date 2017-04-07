@@ -3,7 +3,7 @@
  */
 let tableDateList;
 let graph;
-let socket = io('http://52.34.55.59:3000');
+//let socket = io('http://52.34.55.59:3000');
 
 
 function displayGrphicRT() {
@@ -153,7 +153,6 @@ function readFile(pk_file) {
     showPanelLoad(true);
     $.ajax({
         type: "post",
-        async: false,
         url: "http://52.34.55.59:3000/data/getDataFileByPk",
         data: {pk_file: pk_file},
         success: function (result) {
@@ -222,9 +221,9 @@ function readFile(pk_file) {
     });
 }
 
-socket.on('connect', function(){
+/*socket.on('connect', function(){
 
-});
+});*/
 
 function reloadDataTable(serial) {
     showPanelLoad(true);
