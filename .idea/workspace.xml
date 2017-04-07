@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/graphic.js" afterPath="$PROJECT_DIR$/public/js/functions/graphic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/graphic.ejs" afterPath="$PROJECT_DIR$/views/graphic.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -61,12 +60,12 @@
       <file leaf-file-name="graphic.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="178" column="43" lean-forward="false" selection-start-line="178" selection-start-column="43" selection-end-line="178" selection-end-column="43" />
+            <state relative-caret-position="484">
+              <caret line="367" column="31" lean-forward="false" selection-start-line="367" selection-start-column="31" selection-end-line="367" selection-end-column="31" />
               <folding>
-                <marker date="1491543129937" expanded="true" signature="2049:2066" ph="..." />
-                <marker date="1491543129937" expanded="true" signature="2055:2066" ph="..." />
-                <marker date="1491543129937" expanded="true" signature="2477:2930" ph="..." />
+                <marker date="1491543439384" expanded="true" signature="2049:2066" ph="..." />
+                <marker date="1491543439384" expanded="true" signature="2055:2066" ph="..." />
+                <marker date="1491543439384" expanded="true" signature="2477:2930" ph="..." />
               </folding>
             </state>
           </provider>
@@ -612,12 +611,12 @@
       <workItem from="1491420092632" duration="12357000" />
       <workItem from="1491450136868" duration="2000" />
       <workItem from="1491450243879" duration="2027000" />
-      <workItem from="1491508815513" duration="17195000" />
+      <workItem from="1491508815513" duration="17504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="467364000" />
+    <option name="totallyTimeSpent" value="467673000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1256,12 +1255,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="178" column="43" lean-forward="false" selection-start-line="178" selection-start-column="43" selection-end-line="178" selection-end-column="43" />
+        <state relative-caret-position="484">
+          <caret line="367" column="31" lean-forward="false" selection-start-line="367" selection-start-column="31" selection-end-line="367" selection-end-column="31" />
           <folding>
-            <marker date="1491543129937" expanded="true" signature="2049:2066" ph="..." />
-            <marker date="1491543129937" expanded="true" signature="2055:2066" ph="..." />
-            <marker date="1491543129937" expanded="true" signature="2477:2930" ph="..." />
+            <marker date="1491543439384" expanded="true" signature="2049:2066" ph="..." />
+            <marker date="1491543439384" expanded="true" signature="2055:2066" ph="..." />
+            <marker date="1491543439384" expanded="true" signature="2477:2930" ph="..." />
           </folding>
         </state>
       </provider>

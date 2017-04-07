@@ -359,9 +359,11 @@ function showPanel(id,show) {
 function loadParamGraphic(){
     showPanel('panelGraphic',true);
     showPanel('btnShowParamGraphic',false);
+    clearDataGenerateGraphic();
 }
 
 function closePanelGraphic(){
     showPanel('panelGraphic',false);
     showPanel('btnShowParamGraphic',true);
+    clearDataGenerateGraphic();
 }
