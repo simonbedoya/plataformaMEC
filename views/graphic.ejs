@@ -331,7 +331,7 @@
                                 </div>
                             </div>
                             <button id="btnCloseParamGraphic" type="button" class="btn btn-inverse pull-right m-r-15" onclick="closePanelGraphic()"><i class="ion-close-round m-r-10"></i><span>Cerrar</span></button>
-                            <button id="btnGenerateGraphic" type="button" class="btn btn-inverse pull-right m-r-10" onclick=""><i class="ion-checkmark-round m-r-10"></i><span>Generar</span></button>
+                            <button id="btnGenerateGraphic" type="button" class="btn btn-inverse pull-right m-r-10" onclick="generateGraphic()"><i class="ion-checkmark-round m-r-10"></i><span>Generar</span></button>
                         </div>
                     </div>
                 </div> <!-- /Portlet -->
@@ -354,7 +354,13 @@
                         <div class="clearfix"></div>
                     </div>
                     <div class="portlet-body">
-                        <div id="linetoggle2"></div>
+                        <div class="col-lg-11 col-lg-offset-1">
+                            <div id="chart_container">
+                                <div id="y_axis"></div>
+                                <div id="chartPcpal"></div>
+                                <div id="preview"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
