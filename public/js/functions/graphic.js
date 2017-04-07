@@ -280,7 +280,7 @@ function count(move, id, step){
         if (field > 60){
             field =  60;
         }
-    }else{
+    }else if(move === "d"){
         field = field - stepval;
         if(field < 0){
             field = 0;
