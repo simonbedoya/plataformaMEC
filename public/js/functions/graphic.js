@@ -176,6 +176,7 @@ function readFile(pk_file,hour,axis) {
                 }
                 clearDataFile();
                 setDataFile(date_file[0],hour,axis,samplesec,parseInt(samples[1]),duration);
+                clearDataGenerateGraphic();
                 //console.log(data);
                 /*if(graph === undefined) {
                  graph = new Rickshaw.Graph({
@@ -233,19 +234,29 @@ function setDataFile(date,hour,axis,samplessec,sample,duration) {
     document.getElementById("dfDate").innerHTML = date;
     document.getElementById("dfHour").innerHTML = hour;
     document.getElementById("dfAxis").innerHTML = axis;
-    document.getElementById("dfSamSec").innerHTML = samplessec;
-    document.getElementById("dfSam").innerHTML = sample;
-    document.getElementById("dfDuration").innerHTML = duration;
+    document.getElementById("dfSamSec").innerHTML = `${samplessec} sam`;
+    document.getElementById("dfSam").innerHTML = `${sample} sps`;
+    document.getElementById("dfDuration").innerHTML = `${duration} min` ;
     showPanel('panelFile',true);
 }
 
 function clearDataFile() {
-    $('#dfDate').val('');
-    $('#dfHour').val('');
-    $('#dfAxis').val('');
-    $('#dfSamSec').val('');
-    $('#dfSam').val('');
-    $('#dfDuration').val('');
+    document.getElementById("dfDate").innerHTML = "";
+    document.getElementById("dfHour").innerHTML = "";
+    document.getElementById("dfAxis").innerHTML = "";
+    document.getElementById("dfSamSec").innerHTML = "";
+    document.getElementById("dfSam").innerHTML = "";
+    document.getElementById("dfDuration").innerHTML = "";
+}
+
+function clearDataGenerateGraphic() {
+    document.getElementById("samInp").innerHTML = "0";
+    $('#stepsam').val(1);
+    document.getElementById("timeGraphic").innerHTML = "0 min";
+    document.getElementById("minIT").innerHTML = "0";
+    $('#stepminIT').val(1);
+    document.getElementById("secIT").innerHTML = "0";
+    $('#stepsecIT').val(1);
 }
 
 /*socket.on('connect', function(){
