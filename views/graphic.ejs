@@ -169,20 +169,20 @@
                                                         <td rowspan="2" style="vertical-align: middle;" class="col-lg-3">
                                                             <div class="input-group">
                                                                 <span class="input-group-btn">
-                                                                    <button type="button" onclick="count('u','minFI','stepminFI');" class="btn btn-effect-ripple btn-reverse">
+                                                                    <button type="button" onclick="count('u','minIT','stepminIT');" class="btn btn-effect-ripple btn-reverse">
                                                                         <i class="ion-arrow-up-b"></i>
                                                                     </button>
                                                                 </span>
-                                                                <input id="minFI" type="text" class="form-control" value="0" style="width: 40px;" disabled/>
+                                                                <input id="minIT" type="text" class="form-control" value="0" style="width: 40px;" disabled/>
                                                                 <span class="input-group-btn">
-                                                                    <button type="button" onclick="count('d','minFI','stepminFI');" class="btn btn-effect-ripple btn-reverse">
+                                                                    <button type="button" onclick="count('d','minIT','stepminIT');" class="btn btn-effect-ripple btn-reverse">
                                                                         <i class="ion-arrow-down-b"></i>
                                                                     </button>
                                                                 </span>
                                                             </div>
                                                         </td>
                                                         <td class="col-lg-3">
-                                                            <select class="form-control" id="stepminFI">
+                                                            <select class="form-control" id="stepminIT">
                                                                 <option value="1">1</option>
                                                                 <option value="5">5</option>
                                                                 <option value="10">10</option>
@@ -191,20 +191,20 @@
                                                         <td class="col-lg-3" rowspan="2" style="vertical-align: middle;">
                                                             <div class="input-group">
                                                                 <span class="input-group-btn">
-                                                                    <button type="button" onclick="count('u','secFI','stepsecFI');" class="btn btn-effect-ripple btn-reverse">
+                                                                    <button type="button" onclick="count('u','secIT','stepsecIT');" class="btn btn-effect-ripple btn-reverse">
                                                                         <i class="ion-arrow-up-b"></i>
                                                                     </button>
                                                                 </span>
-                                                                <input type="text" class="form-control" value="00" style="width: 40px;"  disabled/>
+                                                                <input id="secIT" type="text" class="form-control" value="00" style="width: 40px;"  disabled/>
                                                                 <span class="input-group-btn">
-                                                                    <button type="button" onclick="count('d','secFI','stepsecFI');" class="btn btn-effect-ripple btn-reverse">
+                                                                    <button type="button" onclick="count('d','secIT','stepsecIT');" class="btn btn-effect-ripple btn-reverse">
                                                                         <i class="ion-arrow-down-b"></i>
                                                                     </button>
                                                                 </span>
                                                             </div>
                                                         </td>
                                                         <td class="col-lg-3">
-                                                            <select class="form-control" id="stepsecFI">
+                                                            <select class="form-control" id="stepsecIT">
                                                                 <option value="1">1</option>
                                                                 <option value="5">5</option>
                                                                 <option value="10">10</option>
@@ -217,8 +217,68 @@
                                                     </tr>
                                                 </table>
                                             </div>
-                                            <div class="col-lg-6">
-
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <table border="0" cellspacing="0">
+                                                    <tr>
+                                                        <th colspan="4" class="col-lg-12" style="text-align: center">Tiempo inicial:</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="col-lg-6" colspan="2">Minutos:</th>
+                                                        <th class="col-lg-6" colspan="2">Segundos:</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2" style="vertical-align: middle;" class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" onclick="count('u','minTF','stepminTF');" class="btn btn-effect-ripple btn-reverse">
+                                                                        <i class="ion-arrow-up-b"></i>
+                                                                    </button>
+                                                                </span>
+                                                                <input id="minTF" type="text" class="form-control" value="0" style="width: 40px;" disabled/>
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" onclick="count('d','minTF','stepminTF');" class="btn btn-effect-ripple btn-reverse">
+                                                                        <i class="ion-arrow-down-b"></i>
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="col-lg-3">
+                                                            <select class="form-control" id="stepminTF">
+                                                                <option value="1">1</option>
+                                                                <option value="5">5</option>
+                                                                <option value="10">10</option>
+                                                            </select>
+                                                        </td>
+                                                        <td class="col-lg-3" rowspan="2" style="vertical-align: middle;">
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" onclick="count('u','secTF','stepsecTF');" class="btn btn-effect-ripple btn-reverse">
+                                                                        <i class="ion-arrow-up-b"></i>
+                                                                    </button>
+                                                                </span>
+                                                                <input id="secTF" type="text" class="form-control" value="00" style="width: 40px;"  disabled/>
+                                                                <span class="input-group-btn">
+                                                                    <button type="button" onclick="count('d','secTF','stepsecTF');" class="btn btn-effect-ripple btn-reverse">
+                                                                        <i class="ion-arrow-down-b"></i>
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="col-lg-3">
+                                                            <select class="form-control" id="stepsecTF">
+                                                                <option value="1">1</option>
+                                                                <option value="5">5</option>
+                                                                <option value="10">10</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-lg-3" style="text-align: center">pasos</td>
+                                                        <td class="col-lg-3" style="text-align: center">pasos</td>
+                                                    </tr>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
