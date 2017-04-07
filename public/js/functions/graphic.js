@@ -273,15 +273,15 @@ function reloadDataTable(serial) {
 
 function count(move, id, step){
     let input = $(`#${id}`);
-    let step = parseInt($(`#${step}`).val());
+    let stepval = parseInt($(`#${step}`).val());
     let field = parseInt(input.val());
     if(move === "u"){
-        field = field + step;
+        field = field + stepval;
         if (field > 60){
             field =  60;
         }
     }else{
-        field = field - step;
+        field = field - stepval;
         if(field < 0){
             field = 0;
         }
