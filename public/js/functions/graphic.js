@@ -376,6 +376,10 @@ function closePanelGraphic(){
 }
 
 function generateGraphic() {
+    let dataNew = [];
+    for(let i=0; i< 100000; i++){
+        dataNew.push(data[i]);
+    }
     if(graph === undefined) {
         graph = new Rickshaw.Graph({
             element: document.querySelector("#chartPcpal"),
@@ -383,7 +387,7 @@ function generateGraphic() {
             renderer: 'line',
             series: [{
                 color: 'steelblue',
-                data: data,
+                data: dataNew,
 
             }]
         });
@@ -401,7 +405,7 @@ function generateGraphic() {
 
         document.getElementById("y_axis").setAttribute("style", "margin-left: -40px;");
     }else{
-        graph.series[0].data = data;
+        graph.series[0].data = dataNew;
 
     }
     let max = parseFloat(ymax[1]);
