@@ -149,8 +149,9 @@ router.post('/getDates', function (req,res) {
 router.post('/getDataFileByPk', function (req,res) {
    data_controller.getDataFileByPk(req.body.pk_file).then(function (data) {
        if (data.code === "001") {
-           let path_file = data.data;
-           data_controller.getDataFilePath(path_file).then(function (data) {
+           let path_file = data.data.PATH_FILE;
+           let date_file = data.data.DATE_FILE;
+           data_controller.getDataFilePath(path_file,date_file).then(function (data) {
                res.status(data.hcode).send(data);
            })
        }

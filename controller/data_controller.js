@@ -335,7 +335,7 @@ module.exports = {
                     if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
 
                     if (result.length !== 0) {
-                        fullfill({hcode: 200, code: "001", msg: "Date List", data: result[0].PATH_FILE});
+                        fullfill({hcode: 200, code: "001", msg: "Date List", data: result[0]});
                     } else {
                         fullfill({hcode: 202, code: "002", msg: "Error", data: null});
                     }
@@ -343,7 +343,7 @@ module.exports = {
             }
         )
     },
-    getDataFilePath: function (path_file) {
+    getDataFilePath: function (path_file,date_file) {
         return new Promise(
             function (fullfill) {
                 exec(`/opt/serverMEC/plataformaMEC/ReadFileSAC/readsac ${path_file}`,{maxBuffer: 1024 * 50000}, function (err, stdout, stderr) {
@@ -351,7 +351,7 @@ module.exports = {
                         if(err) return fullfill({hcode: 202, code: "003", msg: "Error", data: err});
 
                         //console.log(stdout);
-                        fullfill({hcode: 202, code: "001", msg: "ReadComplete", data: stdout})
+                        fullfill({hcode: 202, code: "001", msg: date_file, data: stdout})
                 })
             }
         )
