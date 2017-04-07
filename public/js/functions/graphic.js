@@ -270,3 +270,18 @@ function reloadDataTable(serial) {
         }
     });
 }
+
+function count(move, id){
+    let input = $(`#${id}`);
+    let field = parseInt(input.val());
+    if(move === "u"){
+        if (field !== 60){
+            field = field + 1;
+        }
+    }else{
+        if(field !== 0){
+            field = field - 1;
+        }
+    }
+    input.val(input.toString());
+}

@@ -169,13 +169,13 @@
                                                         <td rowspan="2" style="vertical-align: middle;" class="col-lg-3">
                                                             <div class="input-group">
                                                                 <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-effect-ripple btn-reverse">
+                                                                    <button type="button" onclick="count('u','minFI');" class="btn btn-effect-ripple btn-reverse">
                                                                         <i class="ion-arrow-up-b"></i>
                                                                     </button>
                                                                 </span>
-                                                                <input type="text" class="form-control" value="0" style="width: 40px;"/>
+                                                                <input id="minFI" type="text" class="form-control" value="00" style="width: 40px;" disabled/>
                                                                 <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-effect-ripple btn-reverse">
+                                                                    <button type="button" onclick="count('d','minFI');" class="btn btn-effect-ripple btn-reverse">
                                                                         <i class="ion-arrow-down-b"></i>
                                                                     </button>
                                                                 </span>
@@ -191,13 +191,13 @@
                                                         <td class="col-lg-3" rowspan="2" style="vertical-align: middle;">
                                                             <div class="input-group">
                                                                 <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-effect-ripple btn-reverse">
+                                                                    <button type="button" onclick="count('u','secFI');" class="btn btn-effect-ripple btn-reverse">
                                                                         <i class="ion-arrow-up-b"></i>
                                                                     </button>
                                                                 </span>
-                                                                <input type="text" class="form-control" value="0" style="width: 40px;"/>
+                                                                <input type="text" class="form-control" value="00" style="width: 40px;"  disabled/>
                                                                 <span class="input-group-btn">
-                                                                    <button type="button" class="btn btn-effect-ripple btn-reverse">
+                                                                    <button type="button" onclick="count('d','secFI');" class="btn btn-effect-ripple btn-reverse">
                                                                         <i class="ion-arrow-down-b"></i>
                                                                     </button>
                                                                 </span>
@@ -212,8 +212,8 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="col-lg-3">Pasos</td>
-                                                        <td class="col-lg-3">Pasos</td>
+                                                        <td class="col-lg-3" style="text-align: center">pasos</td>
+                                                        <td class="col-lg-3" style="text-align: center">pasos</td>
                                                     </tr>
                                                 </table>
                                             </div>
