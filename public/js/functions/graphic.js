@@ -283,5 +283,5 @@ function count(move, id){
             field = field - 1;
         }
     }
-    input.val(input.toString());
+    input.val(field.toString());
 }
