@@ -377,7 +377,7 @@ function closePanelGraphic(){
 
 function generateGraphic() {
     let dataNew = [];
-    for(let i=0; i< 100000; i++){
+    for(let i=0; i< 200000; i++){
         dataNew.push(data[i]);
     }
     if(graph === undefined) {
