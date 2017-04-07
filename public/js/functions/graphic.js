@@ -230,12 +230,12 @@ function readFile(pk_file,hour,axis) {
 }
 
 function setDataFile(date,hour,axis,samplessec,sample,duration) {
-    $('#dfDate').val(date);
-    $('#dfHour').val(hour);
-    $('#dfAxis').val(axis);
-    $('#dfSamSec').val(samplessec);
-    $('#dfSam').val(sample);
-    $('#dfDuration').val(duration);
+    document.getElementById("dfDate").innerHTML = date;
+    document.getElementById("dfHour").innerHTML = hour;
+    document.getElementById("dfAxis").innerHTML = axis;
+    document.getElementById("dfSamSec").innerHTML = samplessec;
+    document.getElementById("dfSam").innerHTML = sample;
+    document.getElementById("dfDuration").innerHTML = duration;
     showPanel('panelFile',true);
 }
 
