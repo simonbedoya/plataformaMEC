@@ -317,3 +317,13 @@ function showPanel(id,show) {
         $(`#${id}`).addClass("hidden");
     }
 }
+
+function loadParamGraphic(){
+    showPanel('panelGraphic',true);
+    showPanel('btnShowParamGraphic',false);
+}
+
+function closePanelGraphic(){
+    showPanel('panelGraphic',false);
+    showPanel('btnShowParamGraphic',true);
+}

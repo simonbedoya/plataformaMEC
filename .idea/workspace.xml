@@ -27,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="graphic.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="graphic.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="151" column="65" lean-forward="false" selection-start-line="151" selection-start-column="65" selection-end-line="151" selection-end-column="65" />
+            <state relative-caret-position="132">
+              <caret line="332" column="120" lean-forward="true" selection-start-line="332" selection-start-column="120" selection-end-line="332" selection-end-column="139" />
               <folding>
                 <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -57,15 +57,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="graphic.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="graphic.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1896">
-              <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            <state relative-caret-position="467">
+              <caret line="327" column="34" lean-forward="false" selection-start-line="327" selection-start-column="34" selection-end-line="327" selection-end-column="34" />
               <folding>
-                <marker date="1491538458802" expanded="true" signature="2049:2066" ph="..." />
-                <marker date="1491538458802" expanded="true" signature="2055:2066" ph="..." />
-                <marker date="1491538458802" expanded="true" signature="2477:2884" ph="..." />
+                <marker date="1491539165594" expanded="true" signature="2049:2066" ph="..." />
+                <marker date="1491539165594" expanded="true" signature="2055:2066" ph="..." />
+                <marker date="1491539165594" expanded="true" signature="2477:2884" ph="..." />
               </folding>
             </state>
           </provider>
@@ -211,8 +211,8 @@
         <option value="$PROJECT_DIR$/sql/sql_data.js" />
         <option value="$PROJECT_DIR$/controller/data_controller.js" />
         <option value="$PROJECT_DIR$/public/assets/ion-rangeslider/ui-sliders.js" />
-        <option value="$PROJECT_DIR$/public/js/functions/graphic.js" />
         <option value="$PROJECT_DIR$/views/graphic.ejs" />
+        <option value="$PROJECT_DIR$/public/js/functions/graphic.js" />
       </list>
     </option>
   </component>
@@ -611,12 +611,12 @@
       <workItem from="1491420092632" duration="12357000" />
       <workItem from="1491450136868" duration="2000" />
       <workItem from="1491450243879" duration="2027000" />
-      <workItem from="1491508815513" duration="12811000" />
+      <workItem from="1491508815513" duration="13235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="462980000" />
+    <option name="totallyTimeSpent" value="463404000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1224,22 +1224,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1896">
-          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding>
-            <marker date="1491538458802" expanded="true" signature="2049:2066" ph="..." />
-            <marker date="1491538458802" expanded="true" signature="2055:2066" ph="..." />
-            <marker date="1491538458802" expanded="true" signature="2477:2884" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="151" column="65" lean-forward="false" selection-start-line="151" selection-start-column="65" selection-end-line="151" selection-end-column="65" />
+        <state relative-caret-position="132">
+          <caret line="332" column="120" lean-forward="true" selection-start-line="332" selection-start-column="120" selection-end-line="332" selection-end-column="139" />
           <folding>
             <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1260,6 +1248,18 @@
             <element signature="n#style#0;n#input#0;n#div#0;n#td#2;n#tr#2;n#table#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#1;n#tr#3;n#table#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="327" column="34" lean-forward="false" selection-start-line="327" selection-start-column="34" selection-end-line="327" selection-end-column="34" />
+          <folding>
+            <marker date="1491539165594" expanded="true" signature="2049:2066" ph="..." />
+            <marker date="1491539165594" expanded="true" signature="2055:2066" ph="..." />
+            <marker date="1491539165594" expanded="true" signature="2477:2884" ph="..." />
           </folding>
         </state>
       </provider>
