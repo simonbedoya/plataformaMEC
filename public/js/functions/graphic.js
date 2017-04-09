@@ -265,7 +265,7 @@ function clearDataFile() {
 function clearDataGenerateGraphic() {
     document.getElementById("samInp").value = "1";
     $('#stepsam').val(1);
-    document.getElementById("timeGraphic").innerHTML = `${duration} min`;
+    document.getElementById("timeGraphic").innerHTML = `${durationFile} min`;
     document.getElementById("minIT").value = "0";
     $('#stepminIT').val(1);
     document.getElementById("secIT").value = "0";
@@ -371,8 +371,8 @@ function difTime() {
     let secIT = parseInt($('#secIT').val());
     let minFT = parseInt($('#minTF').val());
     let secFT = parseInt($('#secTF').val());
-    let minutes = minIT - minFT;
-    let seconds = secIT - secFT;
+    let minutes = minFT - minIT;
+    let seconds = secFT - secIT;
     return minutes + (seconds / 60);
 
 }
