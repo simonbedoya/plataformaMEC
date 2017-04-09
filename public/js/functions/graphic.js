@@ -159,6 +159,7 @@ function readFile(pk_file,hour,axis) {
     //socket.emit('sendPkFile', pk_file);
     showPanelLoad(true);
     showPanel('panelFile',false);
+    showPanel('btnShowParamGraphic',false);
     showPanel('panelGraphic',false);
     $.ajax({
         type: "post",
