@@ -159,7 +159,7 @@ function readFile(pk_file,hour,axis) {
     //socket.emit('sendPkFile', pk_file);
     showPanelLoad(true);
     showPanel('panelFile',false);
-    showPanel('btnShowParamGraphic',false);
+    showPanel('btnShowParamGraphic',true);
     showPanel('panelGraphic',false);
     $.ajax({
         type: "post",
@@ -367,7 +367,7 @@ function samples(move, id, step){
 function calculateTimeMax(field) {
     let samplesGraphic = parseInt($('#samInp').val());
 
-    let timeGraphic = (maxTotalSamples / samplesGraphic) / 60;
+    let timeGraphic = parseInt((maxTotalSamples / samplesGraphic) / 60);
     if(field !== 0) {
         if (timeGraphic > durationFile) {
             document.getElementById("timeGraphic").innerHTML = `${durationFile} min`;
