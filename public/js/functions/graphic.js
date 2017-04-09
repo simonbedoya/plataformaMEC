@@ -158,8 +158,8 @@ function getDateList(date,serial,row) {
 function readFile(pk_file,hour,axis) {
     //socket.emit('sendPkFile', pk_file);
     showPanelLoad(true);
-    showPanel('portListDates',false);
     showPanel('panelFile',false);
+    showPanel('panelGraphic',false);
     $.ajax({
         type: "post",
         url: "http://52.34.55.59:3000/data/getDataFileByPk",

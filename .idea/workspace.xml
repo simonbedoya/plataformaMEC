@@ -29,8 +29,8 @@
       <file leaf-file-name="graphic.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="59" column="77" lean-forward="false" selection-start-line="59" selection-start-column="64" selection-end-line="59" selection-end-column="77" />
+            <state relative-caret-position="238">
+              <caret line="153" column="64" lean-forward="false" selection-start-line="153" selection-start-column="52" selection-end-line="153" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -39,12 +39,12 @@
       <file leaf-file-name="graphic.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="160" column="28" lean-forward="false" selection-start-line="160" selection-start-column="28" selection-end-line="160" selection-end-column="28" />
+            <state relative-caret-position="442">
+              <caret line="161" column="36" lean-forward="false" selection-start-line="161" selection-start-column="36" selection-end-line="161" selection-end-column="36" />
               <folding>
-                <marker date="1491712943096" expanded="true" signature="2179:2196" ph="..." />
-                <marker date="1491712943096" expanded="true" signature="2185:2196" ph="..." />
-                <marker date="1491712943096" expanded="true" signature="2607:3060" ph="..." />
+                <marker date="1491713091486" expanded="true" signature="2179:2196" ph="..." />
+                <marker date="1491713091486" expanded="true" signature="2185:2196" ph="..." />
+                <marker date="1491713091486" expanded="true" signature="2607:3060" ph="..." />
               </folding>
             </state>
           </provider>
@@ -592,12 +592,12 @@
       <workItem from="1491450243879" duration="2027000" />
       <workItem from="1491508815513" duration="19633000" />
       <workItem from="1491627124770" duration="401000" />
-      <workItem from="1491703075667" duration="5363000" />
+      <workItem from="1491703075667" duration="5512000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="475566000" />
+    <option name="totallyTimeSpent" value="475715000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1225,20 +1225,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="59" column="77" lean-forward="false" selection-start-line="59" selection-start-column="64" selection-end-line="59" selection-end-column="77" />
+        <state relative-caret-position="238">
+          <caret line="153" column="64" lean-forward="false" selection-start-line="153" selection-start-column="52" selection-end-line="153" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="160" column="28" lean-forward="false" selection-start-line="160" selection-start-column="28" selection-end-line="160" selection-end-column="28" />
+        <state relative-caret-position="442">
+          <caret line="161" column="36" lean-forward="false" selection-start-line="161" selection-start-column="36" selection-end-line="161" selection-end-column="36" />
           <folding>
-            <marker date="1491712943096" expanded="true" signature="2179:2196" ph="..." />
-            <marker date="1491712943096" expanded="true" signature="2185:2196" ph="..." />
-            <marker date="1491712943096" expanded="true" signature="2607:3060" ph="..." />
+            <marker date="1491713091486" expanded="true" signature="2179:2196" ph="..." />
+            <marker date="1491713091486" expanded="true" signature="2185:2196" ph="..." />
+            <marker date="1491713091486" expanded="true" signature="2607:3060" ph="..." />
           </folding>
         </state>
       </provider>
