@@ -6,6 +6,9 @@ let graph;
 let data = [];
 let ymax;
 let ymin;
+const maxTotalSamples = 200000;
+let maxSamples;
+const timeGraphicMax = 3600;
 //let socket = io('http://52.34.55.59:3000');
 
 
@@ -234,11 +237,12 @@ function readFile(pk_file,hour,axis) {
 }
 
 function setDataFile(date,hour,axis,samplessec,sample,duration) {
+    maxSamples = samplessec;
     document.getElementById("dfDate").innerHTML = date;
     document.getElementById("dfHour").innerHTML = hour;
     document.getElementById("dfAxis").innerHTML = axis;
-    document.getElementById("dfSamSec").innerHTML = `${samplessec} sam`;
-    document.getElementById("dfSam").innerHTML = `${sample} sps`;
+    document.getElementById("dfSamSec").innerHTML = `${samplessec} sps`;
+    document.getElementById("dfSam").innerHTML = `${sample} sam`;
     document.getElementById("dfDuration").innerHTML = `${duration} min` ;
     showPanel('panelFile',true);
 }
@@ -342,8 +346,8 @@ function samples(move, id, step){
     let field = parseInt(input.val());
     if(move === "u"){
         field = field + stepval;
-        if (field > 60){
-            field =  60;
+        if (field > maxSamples){
+            field =  maxSamples;
         }
     }else if(move === "d"){
         field = field - stepval;
@@ -352,6 +356,17 @@ function samples(move, id, step){
         }
     }
     input.val(field.toString());
+    calculateTimeMax();
+}
+
+function calculateTimeMax() {
+    let samplesGraphic = parseInt($('#samInp').val());
+    let timeGraphic = maxTotalSamples / samplesGraphic;
+    if(timeGraphic > timeGraphicMax){
+        document.getElementById("timeGraphic").innerHTML = "60 min";
+    }else{
+        document.getElementById("timeGraphic").innerHTML = `${timeGraphic} min`;
+    }
 
 }
 
