@@ -52,12 +52,12 @@
       <file leaf-file-name="graphic.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="73" column="4" lean-forward="false" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+            <state relative-caret-position="100">
+              <caret line="408" column="31" lean-forward="true" selection-start-line="408" selection-start-column="31" selection-end-line="408" selection-end-column="31" />
               <folding>
-                <marker date="1491715955326" expanded="true" signature="2135:2152" ph="..." />
-                <marker date="1491715955326" expanded="true" signature="2141:2152" ph="..." />
-                <marker date="1491715955326" expanded="true" signature="2563:3016" ph="..." />
+                <marker date="1491716327918" expanded="true" signature="2131:2148" ph="..." />
+                <marker date="1491716327918" expanded="true" signature="2137:2148" ph="..." />
+                <marker date="1491716327918" expanded="true" signature="2559:3012" ph="..." />
               </folding>
             </state>
           </provider>
@@ -136,7 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>data/ad</find>
       <find>data/a</find>
       <find>data/</find>
       <find>l</find>
@@ -146,7 +145,6 @@
       <find>localhos</find>
       <find>ad</find>
       <find>d</find>
-      <find>data</find>
       <find>dat</find>
       <find>a</find>
       <find>admi</find>
@@ -166,6 +164,8 @@
       <find>.bs.</find>
       <find>modal</find>
       <find>load</find>
+      <find>data</find>
+      <find>Data</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -625,12 +625,12 @@
       <workItem from="1491450243879" duration="2027000" />
       <workItem from="1491508815513" duration="19633000" />
       <workItem from="1491627124770" duration="401000" />
-      <workItem from="1491703075667" duration="8369000" />
+      <workItem from="1491703075667" duration="8741000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="478572000" />
+    <option name="totallyTimeSpent" value="478944000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1272,12 +1272,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="73" column="4" lean-forward="false" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+        <state relative-caret-position="100">
+          <caret line="408" column="31" lean-forward="true" selection-start-line="408" selection-start-column="31" selection-end-line="408" selection-end-column="31" />
           <folding>
-            <marker date="1491715955326" expanded="true" signature="2135:2152" ph="..." />
-            <marker date="1491715955326" expanded="true" signature="2141:2152" ph="..." />
-            <marker date="1491715955326" expanded="true" signature="2563:3016" ph="..." />
+            <marker date="1491716327918" expanded="true" signature="2131:2148" ph="..." />
+            <marker date="1491716327918" expanded="true" signature="2137:2148" ph="..." />
+            <marker date="1491716327918" expanded="true" signature="2559:3012" ph="..." />
           </folding>
         </state>
       </provider>

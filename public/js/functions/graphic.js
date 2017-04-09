@@ -71,7 +71,7 @@ function load(dateList,serial) {
         }
     } );
 
-    
+
 }
 
 function format (data) {
@@ -406,7 +406,7 @@ function generateGraphic() {
 
 }
 
-$("#full-width-modal").on('shown.bs.modal', function () {
+$("#full-width-modal").on('show.bs.modal', function () {
     let dataNew = [];
     for(let i=0; i< 200000; i++){
         dataNew.push(data[i]);
