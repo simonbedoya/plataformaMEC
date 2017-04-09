@@ -346,6 +346,29 @@ function count(move, id, step){
     input.val(field.toString());
 }
 
+function finalTime(move, id, step) {
+    let input = $(`#${id}`);
+    let stepval = parseInt($(`#${step}`).val());
+    let field = parseInt(input.val());
+    if(move === "u"){
+        field = field + stepval;
+        if (field > 60){
+            field =  60;
+        }
+    }else if(move === "d"){
+        field = field - stepval;
+        if(field < 0){
+            field = 0;
+        }
+    }
+    input.val(field.toString());
+    verifyTimeGraphic();
+}
+
+function verifyTimeGraphic() {
+
+}
+
 function samples(move, id, step){
     let input = $(`#${id}`);
     let stepval = parseInt($(`#${step}`).val());
@@ -390,6 +413,7 @@ function showPanel(id,show) {
 }
 
 function loadParamGraphic(){
+    $("#ex16b").slider({ min: 0, max: 10, value: [0, 10], focus: true });
     showPanel('panelGraphic',true);
     showPanel('btnShowParamGraphic',false);
     clearDataGenerateGraphic();
@@ -404,7 +428,7 @@ function closePanelGraphic(){
 function generateGraphic() {
     showPanel('graphicGenerateFile',true);
     let dataNew = [];
-    for(let i=0; i< 170000; i++){
+    for(let i=0; i< maxTotalSamples; i++){
         dataNew.push(data[i]);
     }
     if(graph === undefined) {
