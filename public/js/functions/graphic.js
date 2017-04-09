@@ -350,6 +350,7 @@ function finalTime(move, id, step) {
     let input = $(`#${id}`);
     let stepval = parseInt($(`#${step}`).val());
     let field = parseInt(input.val());
+
     if(move === "u"){
         field = field + stepval;
         if (field > 60){
@@ -362,7 +363,7 @@ function finalTime(move, id, step) {
         }
     }
     input.val(field.toString());
-    verifyTimeGraphic();
+
 }
 
 function verifyTimeGraphic() {
@@ -380,8 +381,8 @@ function samples(move, id, step){
         }
     }else if(move === "d"){
         field = field - stepval;
-        if(field < 0){
-            field = 0;
+        if(field < 1){
+            field = 1;
         }
     }
     input.val(field.toString());
@@ -392,14 +393,14 @@ function calculateTimeMax(field) {
     let samplesGraphic = parseInt($('#samInp').val());
 
     timeGraphic = parseInt((maxTotalSamples / samplesGraphic) / 60);
-    if(field !== 0) {
+    if(field !== 1) {
         if (timeGraphic > durationFile) {
             document.getElementById("timeGraphic").innerHTML = `${durationFile} min`;
         } else {
             document.getElementById("timeGraphic").innerHTML = `${timeGraphic} min`;
         }
     }else{
-        document.getElementById("timeGraphic").innerHTML = `0 min`;
+        document.getElementById("timeGraphic").innerHTML = `${timeGraphic} min`;
     }
 
 }
