@@ -403,7 +403,11 @@ function closePanelGraphic(){
 
 function generateGraphic() {
     $("#full-width-modal").modal();
-    /*let dataNew = [];
+
+}
+
+$("#full-width-modal").on('shown.bs.modal', function () {
+    let dataNew = [];
     for(let i=0; i< 200000; i++){
         dataNew.push(data[i]);
     }
@@ -439,9 +443,5 @@ function generateGraphic() {
     let min = parseFloat(ymin[1]);
     graph.max = max + (max * 0.05);
     graph.min = min - (min * 0.05);
-    graph.render();*/
-}
-
-$("#full-width-modal").on('shown.bs.modal', function () {
-
+    graph.render();
 });
