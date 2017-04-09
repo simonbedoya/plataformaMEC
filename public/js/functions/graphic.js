@@ -71,7 +71,7 @@ function load(dateList,serial) {
         }
     } );
 
-    document.getElementById('graphicRT').classList.add('hidden');
+    
 }
 
 function format (data) {
