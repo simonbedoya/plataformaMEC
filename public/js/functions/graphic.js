@@ -374,8 +374,8 @@ function finalTime(move, id, step) {
             confirmButtonColor: "#444a53",
             confirmButtonText: "OK"
         }).then(function () {
-            document.getElementById("minTF").innerHTML = "0";
-            document.getElementById("secTF").innerHTML = "0";
+            document.getElementById("minTF").value = 0;
+            document.getElementById("secTF").value = 0;
         });
     }
 
