@@ -353,7 +353,7 @@ function finalTime(move, id, step) {
     let differTime = differTime();
     if(move === "u"){
         field = field + stepval;
-        if (differTime > duration){
+        if (differTime > durationFile){
             field =  field - stepval;
         }
     }else if(move === "d"){
