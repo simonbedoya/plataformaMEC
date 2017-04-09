@@ -402,11 +402,7 @@ function closePanelGraphic(){
 }
 
 function generateGraphic() {
-    $("#full-width-modal").modal();
-
-}
-
-$("#full-width-modal").on('show.bs.modal', function () {
+    showPanel('graphicGenerateFile',true);
     let dataNew = [];
     for(let i=0; i< 200000; i++){
         dataNew.push(data[i]);
@@ -444,4 +440,5 @@ $("#full-width-modal").on('show.bs.modal', function () {
     graph.max = max + (max * 0.05);
     graph.min = min - (min * 0.05);
     graph.render();
-});
+
+}
