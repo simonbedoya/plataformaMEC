@@ -9,6 +9,7 @@ let ymin;
 const maxTotalSamples = 200000;
 let maxSamples;
 const timeGraphicMax = 3600;
+let durationFile;
 //let socket = io('http://52.34.55.59:3000');
 
 
@@ -238,6 +239,7 @@ function readFile(pk_file,hour,axis) {
 
 function setDataFile(date,hour,axis,samplessec,sample,duration) {
     maxSamples = samplessec;
+    durationFile = duration;
     document.getElementById("dfDate").innerHTML = date;
     document.getElementById("dfHour").innerHTML = hour;
     document.getElementById("dfAxis").innerHTML = axis;
@@ -361,9 +363,10 @@ function samples(move, id, step){
 
 function calculateTimeMax() {
     let samplesGraphic = parseInt($('#samInp').val());
-    let timeGraphic = maxTotalSamples / samplesGraphic;
-    if(timeGraphic > timeGraphicMax){
-        document.getElementById("timeGraphic").innerHTML = "60 min";
+    let timeFile = parseInt($('#samInp').val());
+    let timeGraphic = (maxTotalSamples / samplesGraphic) / 60;
+    if(timeGraphic > durationFile){
+        document.getElementById("timeGraphic").innerHTML = `${timeFile} min`;
     }else{
         document.getElementById("timeGraphic").innerHTML = `${timeGraphic} min`;
     }
