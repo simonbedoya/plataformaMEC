@@ -413,7 +413,6 @@ function showPanel(id,show) {
 }
 
 function loadParamGraphic(){
-    $("#ex16b").slider({ min: 0, max: 10, value: [0, 10], focus: true });
     showPanel('panelGraphic',true);
     showPanel('btnShowParamGraphic',false);
     clearDataGenerateGraphic();
