@@ -414,6 +414,7 @@ function showPanel(id,show) {
 }
 
 function loadParamGraphic(){
+    document.getElementById("timeGraphic").innerHTML = `${durationFile} min`;
     showPanel('panelGraphic',true);
     showPanel('btnShowParamGraphic',false);
     clearDataGenerateGraphic();
