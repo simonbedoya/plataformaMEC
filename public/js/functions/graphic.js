@@ -265,7 +265,7 @@ function clearDataFile() {
 function clearDataGenerateGraphic() {
     document.getElementById("samInp").value = "1";
     $('#stepsam').val(1);
-    document.getElementById("timeGraphic").innerHTML = `${durationFile} min`;
+    document.getElementById("timeGraphic").innerHTML = `${duration} min`;
     document.getElementById("minIT").value = "0";
     $('#stepminIT').val(1);
     document.getElementById("secIT").value = "0";
@@ -400,7 +400,7 @@ function calculateTimeMax(field) {
             document.getElementById("timeGraphic").innerHTML = `${timeGraphic} min`;
         }
     }else{
-        document.getElementById("timeGraphic").innerHTML = `${timeGraphic} min`;
+        document.getElementById("timeGraphic").innerHTML = `${durationFile} min`;
     }
 
 }
