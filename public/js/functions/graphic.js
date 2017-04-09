@@ -350,11 +350,11 @@ function finalTime(move, id, step) {
     let input = $(`#${id}`);
     let stepval = parseInt($(`#${step}`).val());
     let field = parseInt(input.val());
-
+    let differTime = differTime();
     if(move === "u"){
         field = field + stepval;
-        if (field > 60){
-            field =  60;
+        if (differTime > duration){
+            field =  field - stepval;
         }
     }else if(move === "d"){
         field = field - stepval;
@@ -366,7 +366,14 @@ function finalTime(move, id, step) {
 
 }
 
-function verifyTimeGraphic() {
+function differTime() {
+    let minIT = parseInt($('#minIT').val());
+    let secIT = parseInt($('#secIT').val());
+    let minFT = parseInt($('#minTF').val());
+    let secFT = parseInt($('#secTF').val());
+    let minutes = minIT - minFT;
+    let seconds = secIT - secFT;
+    return minutes + (seconds / 60);
 
 }
 
