@@ -404,7 +404,7 @@ function closePanelGraphic(){
 function generateGraphic() {
     showPanel('graphicGenerateFile',true);
     let dataNew = [];
-    for(let i=0; i< 200000; i++){
+    for(let i=0; i< 170000; i++){
         dataNew.push(data[i]);
     }
     if(graph === undefined) {
