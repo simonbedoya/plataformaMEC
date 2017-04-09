@@ -263,7 +263,7 @@ function clearDataFile() {
 }
 
 function clearDataGenerateGraphic() {
-    document.getElementById("samInp").value = "0";
+    document.getElementById("samInp").value = "1";
     $('#stepsam').val(1);
     document.getElementById("timeGraphic").innerHTML = "0 min";
     document.getElementById("minIT").value = "0";
