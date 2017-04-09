@@ -365,7 +365,13 @@ function finalTime(move, id, step) {
     }
     input.val(field.toString());
     let differTime = difTime();
-    if(differTime > timeGraphic){
+    let timeComparate;
+    if(timeGraphic > durationFile){
+        timeComparate = durationFile;
+    }else{
+        timeComparate = timeGraphic;
+    }
+    if(differTime > timeComparate){
         swal({
             title: "Información",
             text: "El tiempo maximo para generar grafica es el que se muestra en tiempo maximo grafica en la parte tasa de muestreo!",

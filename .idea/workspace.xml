@@ -39,12 +39,12 @@
       <file leaf-file-name="graphic.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="367" column="31" lean-forward="false" selection-start-line="367" selection-start-column="31" selection-end-line="367" selection-end-column="31" />
+            <state relative-caret-position="321">
+              <caret line="373" column="33" lean-forward="false" selection-start-line="373" selection-start-column="33" selection-end-line="373" selection-end-column="33" />
               <folding>
-                <marker date="1491766746703" expanded="true" signature="2131:2148" ph="..." />
-                <marker date="1491766746703" expanded="true" signature="2137:2148" ph="..." />
-                <marker date="1491766746703" expanded="true" signature="2559:3012" ph="..." />
+                <marker date="1491767049953" expanded="true" signature="2131:2148" ph="..." />
+                <marker date="1491767049953" expanded="true" signature="2137:2148" ph="..." />
+                <marker date="1491767049953" expanded="true" signature="2559:3012" ph="..." />
               </folding>
             </state>
           </provider>
@@ -151,8 +151,8 @@
       <find>load</find>
       <find>data</find>
       <find>Data</find>
-      <find>timeGraphic</find>
       <find>swal</find>
+      <find>timeGraphic</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -613,12 +613,12 @@
       <workItem from="1491508815513" duration="19633000" />
       <workItem from="1491627124770" duration="401000" />
       <workItem from="1491703075667" duration="11891000" />
-      <workItem from="1491752972426" duration="11542000" />
+      <workItem from="1491752972426" duration="11843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="493636000" />
+    <option name="totallyTimeSpent" value="493937000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1251,12 +1251,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="367" column="31" lean-forward="false" selection-start-line="367" selection-start-column="31" selection-end-line="367" selection-end-column="31" />
+        <state relative-caret-position="321">
+          <caret line="373" column="33" lean-forward="false" selection-start-line="373" selection-start-column="33" selection-end-line="373" selection-end-column="33" />
           <folding>
-            <marker date="1491766746703" expanded="true" signature="2131:2148" ph="..." />
-            <marker date="1491766746703" expanded="true" signature="2137:2148" ph="..." />
-            <marker date="1491766746703" expanded="true" signature="2559:3012" ph="..." />
+            <marker date="1491767049953" expanded="true" signature="2131:2148" ph="..." />
+            <marker date="1491767049953" expanded="true" signature="2137:2148" ph="..." />
+            <marker date="1491767049953" expanded="true" signature="2559:3012" ph="..." />
           </folding>
         </state>
       </provider>
