@@ -350,7 +350,7 @@ function finalTime(move, id, step) {
     let input = $(`#${id}`);
     let stepval = parseInt($(`#${step}`).val());
     let field = parseInt(input.val());
-    let differTime = differTime();
+    let differTime = difTime();
     if(move === "u"){
         field = field + stepval;
         if (differTime > durationFile){
@@ -366,7 +366,7 @@ function finalTime(move, id, step) {
 
 }
 
-function differTime() {
+function difTime() {
     let minIT = parseInt($('#minIT').val());
     let secIT = parseInt($('#secIT').val());
     let minFT = parseInt($('#minTF').val());
