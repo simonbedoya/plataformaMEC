@@ -350,11 +350,12 @@ function finalTime(move, id, step) {
     let input = $(`#${id}`);
     let stepval = parseInt($(`#${step}`).val());
     let field = parseInt(input.val());
-    let differTime = difTime();
+
     if(move === "u"){
         field = field + stepval;
-        if (differTime > durationFile){
-            field =  field - stepval;
+
+        if (field > 60){
+            field =  60;
         }
     }else if(move === "d"){
         field = field - stepval;
@@ -363,6 +364,10 @@ function finalTime(move, id, step) {
         }
     }
     input.val(field.toString());
+    let differTime = difTime();
+    if(differTime > durationFile){
+        alert("error");
+    }
 
 }
 
