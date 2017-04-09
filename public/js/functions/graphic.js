@@ -10,6 +10,7 @@ const maxTotalSamples = 200000;
 let maxSamples;
 const timeGraphicMax = 3600;
 let durationFile;
+let timeGraphic;
 //let socket = io('http://52.34.55.59:3000');
 
 
@@ -367,7 +368,7 @@ function samples(move, id, step){
 function calculateTimeMax(field) {
     let samplesGraphic = parseInt($('#samInp').val());
 
-    let timeGraphic = parseInt((maxTotalSamples / samplesGraphic) / 60);
+    timeGraphic = parseInt((maxTotalSamples / samplesGraphic) / 60);
     if(field !== 0) {
         if (timeGraphic > durationFile) {
             document.getElementById("timeGraphic").innerHTML = `${durationFile} min`;
@@ -401,7 +402,8 @@ function closePanelGraphic(){
 }
 
 function generateGraphic() {
-    let dataNew = [];
+    $("#full-width-modal").modal();
+    /*let dataNew = [];
     for(let i=0; i< 200000; i++){
         dataNew.push(data[i]);
     }
@@ -437,5 +439,9 @@ function generateGraphic() {
     let min = parseFloat(ymin[1]);
     graph.max = max + (max * 0.05);
     graph.min = min - (min * 0.05);
-    graph.render();
+    graph.render();*/
 }
+
+$("#full-width-modal").on('shown.bs.modal', function () {
+
+});
