@@ -6,7 +6,7 @@ let graph;
 let data = [];
 let ymax;
 let ymin;
-const maxTotalSamples = 200000;
+const maxTotalSamples = 170000;
 let maxSamples;
 const timeGraphicMax = 3600;
 let durationFile;
