@@ -363,10 +363,10 @@ function samples(move, id, step){
 
 function calculateTimeMax() {
     let samplesGraphic = parseInt($('#samInp').val());
-    let timeFile = parseInt($('#samInp').val());
+    
     let timeGraphic = (maxTotalSamples / samplesGraphic) / 60;
     if(timeGraphic > durationFile){
-        document.getElementById("timeGraphic").innerHTML = `${timeFile} min`;
+        document.getElementById("timeGraphic").innerHTML = `${durationFile} min`;
     }else{
         document.getElementById("timeGraphic").innerHTML = `${timeGraphic} min`;
     }
