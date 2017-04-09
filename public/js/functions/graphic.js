@@ -158,6 +158,8 @@ function getDateList(date,serial,row) {
 function readFile(pk_file,hour,axis) {
     //socket.emit('sendPkFile', pk_file);
     showPanelLoad(true);
+    showPanel('portListDates',false);
+    showPanel('panelFile',false);
     $.ajax({
         type: "post",
         url: "http://52.34.55.59:3000/data/getDataFileByPk",
@@ -358,17 +360,21 @@ function samples(move, id, step){
         }
     }
     input.val(field.toString());
-    calculateTimeMax();
+    calculateTimeMax(field);
 }
 
-function calculateTimeMax() {
+function calculateTimeMax(field) {
     let samplesGraphic = parseInt($('#samInp').val());
-    
+
     let timeGraphic = (maxTotalSamples / samplesGraphic) / 60;
-    if(timeGraphic > durationFile){
-        document.getElementById("timeGraphic").innerHTML = `${durationFile} min`;
+    if(field !== 0) {
+        if (timeGraphic > durationFile) {
+            document.getElementById("timeGraphic").innerHTML = `${durationFile} min`;
+        } else {
+            document.getElementById("timeGraphic").innerHTML = `${timeGraphic} min`;
+        }
     }else{
-        document.getElementById("timeGraphic").innerHTML = `${timeGraphic} min`;
+        document.getElementById("timeGraphic").innerHTML = `0 min`;
     }
 
 }
