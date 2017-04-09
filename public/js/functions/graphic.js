@@ -366,7 +366,17 @@ function finalTime(move, id, step) {
     input.val(field.toString());
     let differTime = difTime();
     if(differTime > durationFile){
-        alert("error");
+        swal({
+            title: "Información",
+            text: "El tiempo maximo para generar grafica es el que se muestra en tiempo maximo grafica en la parte tasa de muestreo!",
+            type: "info",
+            showCancelButton: false,
+            confirmButtonColor: "#444a53",
+            confirmButtonText: "OK"
+        }).then(function () {
+            document.getElementById("minTF").innerHTML = "0";
+            document.getElementById("secTF").innerHTML = "0";
+        });
     }
 
 }
