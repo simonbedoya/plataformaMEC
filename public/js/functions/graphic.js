@@ -265,7 +265,7 @@ function clearDataFile() {
 function clearDataGenerateGraphic() {
     document.getElementById("samInp").value = "1";
     $('#stepsam').val(1);
-    document.getElementById("timeGraphic").innerHTML = "0 min";
+    document.getElementById("timeGraphic").innerHTML = `${durationFile} min`;
     document.getElementById("minIT").value = "0";
     $('#stepminIT').val(1);
     document.getElementById("secIT").value = "0";
