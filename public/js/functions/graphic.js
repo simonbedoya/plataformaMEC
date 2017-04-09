@@ -366,6 +366,9 @@ function finalTime(move, id, step) {
     input.val(field.toString());
     let differTime = difTime();
     let timeComparate;
+    if(timeGraphic === undefined){
+        timeGraphic = durationFile;
+    }
     if(timeGraphic > durationFile){
         timeComparate = durationFile;
     }else{
