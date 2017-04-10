@@ -492,10 +492,14 @@ function generateGraphic() {
                      console.log("Muestras diferentes");
                      //let timeX = 1 / samples;
                      //let j = 0;
+                     let dataN = [];
                      for(let i=0; i< data.length ; i = i + interJump){
                          //let dataN = {x: (timeX * j), y:data[i].y};
-                         dataNew.push(data[i]);
+                         dataN.push(data[i]);
                          //j++;
+                     }
+                     for(let i=0; i < maxTotalSamples; i++){
+                         dataNew.push(dataN[i]);
                      }
                  }
              }else{
@@ -530,6 +534,7 @@ function generateGraphic() {
 }
 
 function drawGraphic(dataNew) {
+
     console.log(dataNew.length);
     if(graph === undefined) {
         graph = new Rickshaw.Graph({
