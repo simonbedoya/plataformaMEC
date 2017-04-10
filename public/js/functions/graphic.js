@@ -488,8 +488,12 @@ function generateGraphic() {
                          dataNew.push(data[i]);
                      }
                  }else{
+                     let timeX = 1 / maxSamples;
+                     let j = 0;
                      for(let i=0; i< maxTotalSamples; i = i + interJump){
-                         dataNew.push(data[i]);
+                         let dataN = {x: (timeX * j), y:data[i].y};
+                         dataNew.push(dataN);
+                         j++;
                      }
                  }
              }else{
