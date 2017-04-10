@@ -484,10 +484,12 @@ function generateGraphic() {
              if((minFT === 0) && (secFT === 0)){
                  //si ambos tiempos son igual a cero se grafica total de tiempo desde 0 como inicial
                  if(samples === maxSamples){
+                     console.log("Muestras iguales");
                      for(let i=0; i< maxTotalSamples; i = i + interJump){
                          dataNew.push(data[i]);
                      }
                  }else{
+                     console.log("Muestras diferentes");
                      //let timeX = 1 / samples;
                      //let j = 0;
                      for(let i=0; i< data.length ; i = i + interJump){
@@ -528,6 +530,7 @@ function generateGraphic() {
 }
 
 function drawGraphic(dataNew) {
+    console.log(dataNew.length);
     if(graph === undefined) {
         graph = new Rickshaw.Graph({
             element: document.querySelector("#chartPcpal"),
