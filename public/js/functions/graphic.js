@@ -510,8 +510,14 @@ function generateGraphic() {
                          dataN.push(data[i]);
                          //j++;
                      }
-                     for(let i=0; i < maxTotalSamples; i++){
-                         dataNew.push(dataN[i]);
+                     if(dataN.length > maxTotalSamples) {
+                         for (let i = 0; i < maxTotalSamples; i++) {
+                             dataNew.push(dataN[i]);
+                         }
+                     }else{
+                         for (let i = 0; i < dataN.length; i++) {
+                             dataNew.push(dataN[i]);
+                         }
                      }
                  }
              }else{
