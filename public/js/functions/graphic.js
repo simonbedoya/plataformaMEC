@@ -459,10 +459,73 @@ function closePanelGraphic(){
 
 function generateGraphic() {
     showPanel('graphicGenerateFile',true);
+    let timeTotalGraphic;
+    if(timeGraphic === undefined){
+        timeGraphic = durationFile;
+    }
+    if(timeGraphic > durationFile){
+        timeTotalGraphic = durationFile;
+    }else{
+        timeTotalGraphic = timeGraphic;
+    }
+
+    let minIT = parseInt($('#minIT').val());
+    let secIT = parseInt($('#secIT').val());
+    let minFT = parseInt($('#minTF').val());
+    let secFT = parseInt($('#secTF').val());
+
     let dataNew = [];
     for(let i=0; i< maxTotalSamples; i++){
         dataNew.push(data[i]);
     }
+    let samples = parseInt($('#samInp').val());
+    let interJump = parseInt(maxSamples / samples);
+    if((maxSamples % samples) === 0){
+         if((minIT === 0) && (secIT === 0)){
+             //si tiempo incial igual a cero
+             if((minFT === 0) && (secFT === 0)){
+                 //si ambos tiempos son igual a cero se grafica total de tiempo desde 0 como inicial
+                 if(samples === maxSamples){
+                     for(let i=0; i< maxTotalSamples; i++){
+                         dataNew.push(data[i]);
+                     }
+                 }else{
+                     for(let i=0; i< maxTotalSamples; i + interJump){
+                         dataNew.push(data[i]);
+                     }
+                 }
+             }else{
+                 //graficar desde tiempo inicial 0 a  tiempo final establecido
+
+             }
+         }else{
+             //si tiempo incial diferente de cero
+             if((minFT === 0) && (secFT === 0)){
+                 //si tiempo inciial diferente a 0 y tiempo final igual a 0 graficar desde 0 hasta tiempo posible
+
+             }else{
+                 //si ambos son diferentes de 0 graficar el rango de valores
+
+             }
+         }
+    }else{
+        swal({
+            title: "Información",
+            text: `El numero de muestras no es exacto, se realizara la grafica con un muestreo igual a ${maxTotalSamples / interJump} sps!`,
+            type: "info",
+            showCancelButton: false,
+            confirmButtonColor: "#444a53",
+            confirmButtonText: "OK"
+        }).then(function () {
+
+        });
+    }
+
+
+    drawGraphic(dataNew);
+}
+
+function drawGraphic(dataNew) {
     if(graph === undefined) {
         graph = new Rickshaw.Graph({
             element: document.querySelector("#chartPcpal"),
@@ -496,5 +559,4 @@ function generateGraphic() {
     graph.max = max + (max * 0.05);
     graph.min = min - (min * 0.05);
     graph.render();
-
 }
