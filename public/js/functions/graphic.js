@@ -475,7 +475,7 @@ function generateGraphic() {
     let secFT = parseInt($('#secTF').val());
 
     let dataNew = [];
-    
+
     let samples = parseInt($('#samInp').val());
     let interJump = parseInt(maxSamples / samples);
     if((maxSamples % samples) === 0){
@@ -484,11 +484,11 @@ function generateGraphic() {
              if((minFT === 0) && (secFT === 0)){
                  //si ambos tiempos son igual a cero se grafica total de tiempo desde 0 como inicial
                  if(samples === maxSamples){
-                     for(let i=0; i< maxTotalSamples; i++){
+                     for(let i=0; i< maxTotalSamples; i = i + interJump){
                          dataNew.push(data[i]);
                      }
                  }else{
-                     for(let i=0; i< maxTotalSamples; i + interJump){
+                     for(let i=0; i< maxTotalSamples; i = i + interJump){
                          dataNew.push(data[i]);
                      }
                  }
