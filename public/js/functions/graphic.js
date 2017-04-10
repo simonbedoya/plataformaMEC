@@ -475,9 +475,7 @@ function generateGraphic() {
     let secFT = parseInt($('#secTF').val());
 
     let dataNew = [];
-    for(let i=0; i< maxTotalSamples; i++){
-        dataNew.push(data[i]);
-    }
+    
     let samples = parseInt($('#samInp').val());
     let interJump = parseInt(maxSamples / samples);
     if((maxSamples % samples) === 0){
