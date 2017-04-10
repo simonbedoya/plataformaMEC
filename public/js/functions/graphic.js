@@ -478,8 +478,20 @@ function generateGraphic() {
 
     let samples = parseInt($('#samInp').val());
     let interJump = parseInt(maxSamples / samples);
-    if((maxSamples % samples) === 0){
-         if((minIT === 0) && (secIT === 0)){
+    if((maxSamples % samples) !== 0){
+        swal({
+            title: "Información",
+            text: `El numero de muestras no es exacto, se realizara la grafica con un muestreo igual a ${maxTotalSamples / parseInt(maxTotalSamples / samples)} sps!`,
+            type: "info",
+            showCancelButton: false,
+            confirmButtonColor: "#444a53",
+            confirmButtonText: "OK"
+        }).then(function () {
+
+        });
+    }
+
+    if((minIT === 0) && (secIT === 0)){
              //si tiempo incial igual a cero
              if((minFT === 0) && (secFT === 0)){
                  //si ambos tiempos son igual a cero se grafica total de tiempo desde 0 como inicial
@@ -516,18 +528,6 @@ function generateGraphic() {
 
              }
          }
-    }else{
-        swal({
-            title: "Información",
-            text: `El numero de muestras no es exacto, se realizara la grafica con un muestreo igual a ${maxTotalSamples / interJump} sps!`,
-            type: "info",
-            showCancelButton: false,
-            confirmButtonColor: "#444a53",
-            confirmButtonText: "OK"
-        }).then(function () {
-
-        });
-    }
 
 
     drawGraphic(dataNew);
