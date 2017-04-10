@@ -490,7 +490,7 @@ function generateGraphic() {
                  }else{
                      let timeX = 1 / samples;
                      let j = 0;
-                     for(let i=0; i< maxTotalSamples; i = i + interJump){
+                     for(let i=0; i< dataNew.length ; i = i + interJump){
                          let dataN = {x: (timeX * j), y:data[i].y};
                          dataNew.push(dataN);
                          j++;
