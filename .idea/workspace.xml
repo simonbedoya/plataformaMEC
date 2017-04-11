@@ -39,12 +39,12 @@
       <file leaf-file-name="graphic.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="568" column="60" lean-forward="false" selection-start-line="568" selection-start-column="60" selection-end-line="568" selection-end-column="60" />
+            <state relative-caret-position="481">
+              <caret line="584" column="63" lean-forward="false" selection-start-line="584" selection-start-column="63" selection-end-line="584" selection-end-column="63" />
               <folding>
-                <marker date="1491887735236" expanded="true" signature="2154:2171" ph="..." />
-                <marker date="1491887735236" expanded="true" signature="2160:2171" ph="..." />
-                <marker date="1491887735236" expanded="true" signature="2582:3035" ph="..." />
+                <marker date="1491888050825" expanded="true" signature="2154:2171" ph="..." />
+                <marker date="1491888050825" expanded="true" signature="2160:2171" ph="..." />
+                <marker date="1491888050825" expanded="true" signature="2582:3035" ph="..." />
               </folding>
             </state>
           </provider>
@@ -614,12 +614,12 @@
       <workItem from="1491627124770" duration="401000" />
       <workItem from="1491703075667" duration="11891000" />
       <workItem from="1491752972426" duration="23797000" />
-      <workItem from="1491882510020" duration="4763000" />
+      <workItem from="1491882510020" duration="5078000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="510654000" />
+    <option name="totallyTimeSpent" value="510969000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1251,12 +1251,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="568" column="60" lean-forward="false" selection-start-line="568" selection-start-column="60" selection-end-line="568" selection-end-column="60" />
+        <state relative-caret-position="481">
+          <caret line="584" column="63" lean-forward="false" selection-start-line="584" selection-start-column="63" selection-end-line="584" selection-end-column="63" />
           <folding>
-            <marker date="1491887735236" expanded="true" signature="2154:2171" ph="..." />
-            <marker date="1491887735236" expanded="true" signature="2160:2171" ph="..." />
-            <marker date="1491887735236" expanded="true" signature="2582:3035" ph="..." />
+            <marker date="1491888050825" expanded="true" signature="2154:2171" ph="..." />
+            <marker date="1491888050825" expanded="true" signature="2160:2171" ph="..." />
+            <marker date="1491888050825" expanded="true" signature="2582:3035" ph="..." />
           </folding>
         </state>
       </provider>

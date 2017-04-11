@@ -573,7 +573,20 @@ function generateGraphic() {
                  }
              }else{
                  //si ambos son diferentes de 0 graficar el rango de valores
-
+                 let dataN = [];
+                 for(let i=0; i< data.length ; i = i + interJump){
+                     //let dataN = {x: (timeX * j), y:data[i].y};
+                     dataN.push(data[i]);
+                     //j++;
+                 }
+                 for(let i=0; i<dataN.length; i++){
+                     if(dataN[i].x >= ((minIT * 60)+secIT)){
+                         dataNew.push(dataN[i]);
+                         if(dataN[i].x >= ((minFT * 60) + secFT)){
+                             break;
+                         }
+                     }
+                 }
              }
          }
 
