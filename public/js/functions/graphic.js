@@ -8,10 +8,10 @@ let ymax;
 let ymin;
 const maxTotalSamples = 170000;
 let maxSamples;
-const timeGraphicMax = 3600;
 let durationFile;
 let timeGraphic;
 let durationFileFinal;
+let totalSamplesFile;
 //let socket = io('http://52.34.55.59:3000');
 
 
@@ -245,6 +245,7 @@ function readFile(pk_file,hour,axis) {
 function setDataFile(date,hour,axis,samplessec,sample,duration) {
     maxSamples = samplessec;
     durationFile = duration;
+    totalSamplesFile = sample;
     document.getElementById("dfDate").innerHTML = date;
     document.getElementById("dfHour").innerHTML = hour;
     document.getElementById("dfAxis").innerHTML = axis;
@@ -502,8 +503,14 @@ function generateGraphic() {
                  //si ambos tiempos son igual a cero se grafica total de tiempo desde 0 como inicial
                  if(samples === maxSamples){
                      console.log("Muestras iguales");
-                     for(let i=0; i< maxTotalSamples; i = i + interJump){
-                         dataNew.push(data[i]);
+                     if(totalSamplesFile > maxTotalSamples) {
+                         for (let i = 0; i < maxTotalSamples; i = i + interJump) {
+                             dataNew.push(data[i]);
+                         }
+                     }else{
+                         for (let i = 0; i < totalSamplesFile; i = i + interJump) {
+                             dataNew.push(data[i]);
+                         }
                      }
                  }else{
                      console.log("Muestras diferentes");
