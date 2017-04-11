@@ -542,7 +542,7 @@ function generateGraphic() {
                          //j++;
                      }
                      for(let i=0; i<dataN.length; i++){
-                         dataNew.push(dataN);
+                         dataNew.push(dataN[i]);
                          if(dataN[i].x > totalTime * 60){
                              break;
                          }
