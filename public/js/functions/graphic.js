@@ -566,7 +566,7 @@ function generateGraphic() {
                  for(let i=0; i<dataN.length; i++){
                      if(dataN[i].x >= ((minIT * 60)+secIT)){
                          dataNew.push(dataN[i]);
-                         if(dataN[i].x >= (durationFile*60 + ((minIT*60)+secIT))){
+                         if(dataN[i].x >= (durationFileFinal*60 + ((minIT*60)+secIT))){
                              break;
                          }
                      }
