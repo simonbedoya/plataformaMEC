@@ -522,7 +522,32 @@ function generateGraphic() {
                  }
              }else{
                  //graficar desde tiempo inicial 0 a  tiempo final establecido
+                 let totalTime = minFT + ( secFT / 60);
+                 if(totalTime > durationFile){
+                     swal({
+                         title: "Información",
+                         text: `El tiempo maximo para generar la grafica es ${durationFile} minutos!`,
+                         type: "info",
+                         showCancelButton: false,
+                         confirmButtonColor: "#444a53",
+                         confirmButtonText: "OK"
+                     }).then(function () {
 
+                     });
+                 }else{
+                     let dataN = [];
+                     for(let i=0; i< data.length ; i = i + interJump){
+                         //let dataN = {x: (timeX * j), y:data[i].y};
+                         dataN.push(data[i]);
+                         //j++;
+                     }
+                     for(let i=0; i<dataN.length; i++){
+                         dataNew.push(dataN);
+                         if(dataN[i].x > totalTime * 60){
+                             break;
+                         }
+                     }
+                 }
              }
          }else{
              //si tiempo incial diferente de cero
