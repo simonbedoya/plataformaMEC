@@ -428,6 +428,7 @@ function calculateTimeMax(field) {
         if (timeGraphic > durationFile) {
             document.getElementById("timeGraphic").innerHTML = `${durationFile} min`;
         } else {
+            durationFile = timeGraphic;
             document.getElementById("timeGraphic").innerHTML = `${timeGraphic} min`;
         }
     }else{
