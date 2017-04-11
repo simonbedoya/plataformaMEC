@@ -18,7 +18,7 @@ router.post('/', function(req, res, next) {
     var pass = req.body.password;
     if(!functions.validatePass(pass)){
         let string = encodeURIComponent('Email o contraseñas incorrectos');
-        res.redirect('admin?error=' + string);
+        return res.redirect('admin?error=' + string);
     }
 
     db.query(template(sqlQuery.query_login,{email: email, pass:pass}),function (err,result) {
