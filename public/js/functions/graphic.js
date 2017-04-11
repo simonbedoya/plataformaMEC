@@ -378,7 +378,7 @@ function finalTime(move, id, step) {
     if(differTime > timeComparate){
         swal({
             title: "Información",
-            text: "El tiempo maximo para generar grafica es el que se muestra en tiempo maximo grafica en la parte tasa de muestreo!",
+            text: `El tiempo maximo para generar grafica es de ${durationFileFinal}!`,
             type: "info",
             showCancelButton: false,
             confirmButtonColor: "#444a53",
@@ -576,11 +576,11 @@ function generateGraphic() {
                  let diferencia = (minFT + (secFT / 60)) - (minIT + (secIT / 60));
                  let timeInicial = (minIT + (secIT / 60));
                  let timeFinal =  (minFT + (secFT / 60));
-                 if((timeInicial > timeFinal)||(timeInicial === timeFinal)||(diferencia > durationFileFinal)){
+                 if((timeInicial > timeFinal)||(timeInicial === timeFinal)){
                      //error mensaje
                      swal({
                          title: "Información",
-                         text: `Recuerde que el tiempo inicial no debe ser mayor que el tiempo final, tiempo inicial no debe ser igual a tiempo final y la diferencia entre tiempo inciial y final no debe superar ${durationFileFinal} minutos!`,
+                         text: `Recuerde que el tiempo inicial no debe ser mayor que el tiempo final y el tiempo inicial no debe ser igual a tiempo final!`,
                          type: "info",
                          showCancelButton: false,
                          confirmButtonColor: "#444a53",
