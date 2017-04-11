@@ -54,11 +54,11 @@ app.use(cors());
 
 app.use(session({secret: config.secret, cookie: { maxAge: 2628000000 }, resave: true, saveUninitialized: true}));
 
-/*app.get('/',function (req, res) {
+app.get('/',function (req, res) {
     res.redirect('/admin');
-});*/
+});
 
-app.use('/', login);
+app.use('/admin', login);
 app.use('/log-in', log_in);
 app.use('/api', api);
 
