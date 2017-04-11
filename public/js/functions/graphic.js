@@ -378,7 +378,7 @@ function finalTime(move, id, step) {
     if(differTime > timeComparate){
         swal({
             title: "Información",
-            text: `El tiempo maximo para generar grafica es de ${durationFileFinal}!`,
+            text: `El tiempo maximo para generar grafica es de ${durationFileFinal} minutos!`,
             type: "info",
             showCancelButton: false,
             confirmButtonColor: "#444a53",
@@ -462,7 +462,7 @@ function closePanelGraphic(){
 }
 
 function generateGraphic() {
-    showPanel('graphicGenerateFile',true);
+    showPanel('graphicGenerateFile',false);
     let timeTotalGraphic;
     if(timeGraphic === undefined){
         timeGraphic = durationFile;
@@ -647,4 +647,5 @@ function drawGraphic(dataNew) {
     graph.max = max + (max * 0.05);
     graph.min = min - (min * 0.05);
     graph.render();
+    showPanel('graphicGenerateFile',true);
 }
