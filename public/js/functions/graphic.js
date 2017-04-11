@@ -486,7 +486,7 @@ function generateGraphic() {
     if((maxSamples % samples) !== 0){
         swal({
             title: "Información",
-            text: `El numero de muestras no es exacto, se realizara la grafica con un muestreo igual a ${maxSamples / interJump} sps!`,
+            text: `El numero de muestras no es exacto, se realizara la grafica con un muestreo igual a ${parseInt(maxSamples / interJump)} sps!`,
             type: "info",
             showCancelButton: false,
             confirmButtonColor: "#444a53",
