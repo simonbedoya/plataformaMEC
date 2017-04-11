@@ -106,8 +106,8 @@ function format (data) {
     return fila;
 }
 
-function showPanelLoad(show) {
-    let portlet = $('#portListDates');
+function showPanelLoad(id,show) {
+    let portlet = $(`#${id}`);
     if(show) {
         portlet.append('<div class="panel-disabled"><div class="loader-1"></div></div>');
     }else{
@@ -121,7 +121,7 @@ function showPanelLoad(show) {
 
 
 function getDateList(date,serial,row) {
-    showPanelLoad(true);
+    showPanelLoad('portListDates',true);
     let axis = $('#filterAxis').val();
     let data;
     if(axis === "BH1, BH2, BHZ"){
@@ -135,7 +135,7 @@ function getDateList(date,serial,row) {
         url: "http://52.34.55.59:3000/data/getDateList",
         data: data,
         success: function (result) {
-            showPanelLoad(false);
+            showPanelLoad('portListDates',false);
             if (result.code === "001"){
                 //hay datos
                 row.child(format(result.data)).show();
@@ -159,7 +159,7 @@ function getDateList(date,serial,row) {
 
 function readFile(pk_file,hour,axis) {
     //socket.emit('sendPkFile', pk_file);
-    showPanelLoad(true);
+    showPanelLoad('portListDates',true);
     showPanel('panelFile',false);
     showPanel('btnShowParamGraphic',true);
     showPanel('panelGraphic',false);
@@ -168,7 +168,7 @@ function readFile(pk_file,hour,axis) {
         url: "http://52.34.55.59:3000/data/getDataFileByPk",
         data: {pk_file: pk_file},
         success: function (result) {
-            showPanelLoad(false);
+            showPanelLoad('portListDates',false);
 
             if(result.code === "001") {
                 let date_file = result.msg.split("T");
@@ -282,7 +282,7 @@ function clearDataGenerateGraphic() {
 });*/
 
 function reloadDataTable(serial) {
-    showPanelLoad(true);
+    showPanelLoad('portListDates',true);
     let axis = $('#filterAxis').val();
     let data;
     if(axis === "BH1, BH2, BHZ"){
@@ -295,7 +295,7 @@ function reloadDataTable(serial) {
         url: "http://52.34.55.59:3000/data/getDates",
         data: data,
         success: function (result) {
-            showPanelLoad(false);
+            showPanelLoad('portListDates',false);
             if (result.code === "001"){
                 //hay datos
                 let dateListFull = [];
@@ -462,7 +462,8 @@ function closePanelGraphic(){
 }
 
 function generateGraphic() {
-    showPanel('graphicGenerateFile',false);
+    showPanel('graphicGenerateFile',true);
+    showPanelLoad('portletGraphic',true);
     let timeTotalGraphic;
     if(timeGraphic === undefined){
         timeGraphic = durationFile;
@@ -647,5 +648,5 @@ function drawGraphic(dataNew) {
     graph.max = max + (max * 0.05);
     graph.min = min - (min * 0.05);
     graph.render();
-    showPanel('graphicGenerateFile',true);
+    showPanelLoad('portletGraphic',false);
 }
