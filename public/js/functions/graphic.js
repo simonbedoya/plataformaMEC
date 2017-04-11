@@ -543,7 +543,7 @@ function generateGraphic() {
                      }
                      for(let i=0; i<dataN.length; i++){
                          dataNew.push(dataN[i]);
-                         if(dataN[i].x > totalTime * 60){
+                         if(dataN[i].x >= totalTime * 60){
                              break;
                          }
                      }
@@ -552,8 +552,21 @@ function generateGraphic() {
          }else{
              //si tiempo incial diferente de cero
              if((minFT === 0) && (secFT === 0)){
-                 //si tiempo inciial diferente a 0 y tiempo final igual a 0 graficar desde 0 hasta tiempo posible
-
+                 //si tiempo inciial diferente a 0 y tiempo final igual a 0 graficar desde tiempo establecido hasta tiempo posible
+                 let dataN = [];
+                 for(let i=0; i< data.length ; i = i + interJump){
+                     //let dataN = {x: (timeX * j), y:data[i].y};
+                     dataN.push(data[i]);
+                     //j++;
+                 }
+                 for(let i=0; i<dataN.length; i++){
+                     if(dataN[i].x >= ((minIT * 60)+secIT)){
+                         dataNew.push(dataN[i]);
+                         if(dataN[i].x > (((minIT*60)+secIT)+ durationFile*60)){
+                             break;
+                         }
+                     }
+                 }
              }else{
                  //si ambos son diferentes de 0 graficar el rango de valores
 
