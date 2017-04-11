@@ -11,6 +11,7 @@ let maxSamples;
 const timeGraphicMax = 3600;
 let durationFile;
 let timeGraphic;
+let durationFileFinal;
 //let socket = io('http://52.34.55.59:3000');
 
 
@@ -426,12 +427,14 @@ function calculateTimeMax(field) {
     timeGraphic = parseInt((maxTotalSamples / samplesGraphic) / 60);
     if(field !== 1) {
         if (timeGraphic > durationFile) {
+            durationFileFinal = durationFile;
             document.getElementById("timeGraphic").innerHTML = `${durationFile} min`;
         } else {
-            durationFile = timeGraphic;
+            durationFileFinal = timeGraphic;
             document.getElementById("timeGraphic").innerHTML = `${timeGraphic} min`;
         }
     }else{
+        durationFileFinal = durationFile;
         document.getElementById("timeGraphic").innerHTML = `${durationFile} min`;
     }
 
