@@ -573,17 +573,34 @@ function generateGraphic() {
                  }
              }else{
                  //si ambos son diferentes de 0 graficar el rango de valores
-                 let dataN = [];
-                 for(let i=0; i< data.length ; i = i + interJump){
-                     //let dataN = {x: (timeX * j), y:data[i].y};
-                     dataN.push(data[i]);
-                     //j++;
-                 }
-                 for(let i=0; i<dataN.length; i++){
-                     if(dataN[i].x >= ((minIT * 60)+secIT)){
-                         dataNew.push(dataN[i]);
-                         if(dataN[i].x >= ((minFT * 60) + secFT)){
-                             break;
+                 let diferencia = (minFT + (secFT / 60)) - (minIT + (secIT / 60));
+                 let timeInicial = (minIT + (secIT / 60));
+                 let timeFinal =  (minFT + (secFT / 60));
+                 if((timeInicial > timeFinal)||(timeInicial === timeFinal)||(diferencia > durationFileFinal)){
+                     //error mensaje
+                     swal({
+                         title: "Información",
+                         text: `Recuerde que el tiempo inicial no debe ser mayor que el tiempo final, tiempo inicial no debe ser igual a tiempo final y la diferencia entre tiempo inciial y final no debe superar ${durationFileFinal} minutos!`,
+                         type: "info",
+                         showCancelButton: false,
+                         confirmButtonColor: "#444a53",
+                         confirmButtonText: "OK"
+                     }).then(function () {
+
+                     });
+                 }else{
+                     let dataN = [];
+                     for(let i=0; i< data.length ; i = i + interJump){
+                         //let dataN = {x: (timeX * j), y:data[i].y};
+                         dataN.push(data[i]);
+                         //j++;
+                     }
+                     for(let i=0; i<dataN.length; i++){
+                         if(dataN[i].x >= ((minIT * 60)+secIT)){
+                             dataNew.push(dataN[i]);
+                             if(dataN[i].x >= ((minFT * 60) + secFT)){
+                                 break;
+                             }
                          }
                      }
                  }
