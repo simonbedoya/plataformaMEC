@@ -25,7 +25,7 @@ function loadData(email) {
 function loadDataNetworks(email) {
     $.ajax({
         type: "post",
-        url: "http://52.34.55.59:3000/data/networks",
+        url: "https://plataformamec.com/data/networks",
         data: {email: email},
         success: function (result) {
             if (result.code === "001") {
@@ -62,7 +62,7 @@ function loadDataNetworks(email) {
 function loadDataSensors(email) {
     $.ajax({
         type: "post",
-        url: "http://52.34.55.59:3000/data/sensors",
+        url: "https://plataformamec.com/data/sensors",
         data: {email: email},
         success: function (result) {
             //alert(result.msg);
@@ -161,7 +161,7 @@ function filterSensorByNetwork(email) {
     if(pk_network !== "0") {
         $.ajax({
             type: "post",
-            url: "http://52.34.55.59:3000/data/sensorsByNetwork",
+            url: "https://plataformamec.com/data/sensorsByNetwork",
             data: {pk_network: pk_network},
             success: function (result) {
                 //alert(result.msg);
@@ -232,7 +232,7 @@ $("#location_sensor").on('shown.bs.modal', function () {
     let image = "img/sensor.png";
     $.ajax({
         type: "post",
-        url: "http://52.34.55.59:3000/data/getLocationByPkSensor",
+        url: "https://plataformamec.com/data/getLocationByPkSensor",
         data: {pk_sensor: pk_sensor},
         success: function (result) {
             if (result.code === "001"){
@@ -300,7 +300,7 @@ function showConfig_sensor(pkSensor) {
 function loadInfoGeneral() {
     $.ajax({
         type: "post",
-        url: "http://52.34.55.59:3000/data/getInfoSensor",
+        url: "https://plataformamec.com/data/getInfoSensor",
         data: {pk_sensor: pk_sensor},
         success: function (result) {
             if (result.code === "001") {
@@ -408,7 +408,7 @@ function saveEditSensor(pk_sensor, name) {
         function (resolve, reject) {
             $.ajax({
                 type: "post",
-                url: "http://52.34.55.59:3000/data/updateNameSensor",
+                url: "https://plataformamec.com/data/updateNameSensor",
                 data: {pk_sensor: pk_sensor, name: name},
                 success: function (result) {
                     //alert(result.msg);
@@ -450,7 +450,7 @@ $("#tabLocation").click(function () {
 function loadInfoLocation() {
     $.ajax({
         type: "post",
-        url: "http://52.34.55.59:3000/data/getLocationSensor",
+        url: "https://plataformamec.com/data/getLocationSensor",
         data: {pk_sensor: pk_sensor},
         success: function (result) {
             if (result.code === "001") {
@@ -531,7 +531,7 @@ $("#tabNetwork").click(function () {
 function loadInfoNetwork() {
     $.ajax({
         type: "post",
-        url: "http://52.34.55.59:3000/data/getNetworkSensor",
+        url: "https://plataformamec.com/data/getNetworkSensor",
         data: {pk_sensor: pk_sensor},
         success: function (result) {
             if (result.code === "001") {
@@ -595,7 +595,7 @@ $("#tabAlert").click(function () {
 function loadInfoAlert() {
     $.ajax({
         type: "post",
-        url: "http://52.34.55.59:3000/data/getCountEvents",
+        url: "https://plataformamec.com/data/getCountEvents",
         data: {pk_sensor: pk_sensor},
         success: function (result) {
             if (result.code === "001") {
@@ -657,7 +657,7 @@ $("#tabComponent").click(function () {
 function loadInfoComponent() {
     $.ajax({
         type: "post",
-        url: "http://52.34.55.59:3000/data/getStatusComponentSensor",
+        url: "https://plataformamec.com/data/getStatusComponentSensor",
         data: {pk_sensor: pk_sensor},
         success: function (result) {
             if (result.code === "001") {

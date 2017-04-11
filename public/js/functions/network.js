@@ -10,7 +10,7 @@ function delet_network(network) {
         function (resolve, reject) {
             $.ajax({
                 type: "post",
-                url: "http://52.34.55.59:3000/data/delete_network",
+                url: "https://plataformamec.com/data/delete_network",
                 data: {network: network},
                 success: function (result) {
                     //alert(result.msg);
@@ -62,7 +62,7 @@ function delete_network(network) {
 function loadNetwork(email) {
     $.ajax({
         type: "post",
-        url: "http://52.34.55.59:3000/data/networks",
+        url: "https://plataformamec.com/data/networks",
         data: {email: email},
         success: function (result) {
             if (result.code === "001"){
@@ -125,7 +125,7 @@ function loadSensorsByNetowrk(network, i) {
     $.ajax({
         type: "post",
         async: true,
-        url: "http://52.34.55.59:3000/data/sensors_networks",
+        url: "https://plataformamec.com/data/sensors_networks",
         data: {network: network},
         success: function (result) {
             if (result.code === "001"){
@@ -213,7 +213,7 @@ function saveNetwork(network, name, address, status) {
         function (resolve, reject) {
             $.ajax({
                 type: "post",
-                url: "http://52.34.55.59:3000/data/update_network",
+                url: "https://plataformamec.com/data/update_network",
                 data: {network: network, name: name, address: address, status: status},
                 success: function (result) {
                     if (result.code === "001"){
@@ -289,7 +289,7 @@ function saveNewNetwork(name, address, status) {
         function (resolve, reject) {
             $.ajax({
                 type: "post",
-                url: "http://52.34.55.59:3000/data/create_network",
+                url: "https://plataformamec.com/data/create_network",
                 data: {user: pk_user,name: name, address: address, status: status},
                 success: function (result) {
                     if (result.code === "001"){

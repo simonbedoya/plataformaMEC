@@ -17,7 +17,7 @@ function getLocations(email) {
    let marker;
    $.ajax({
         type: "post",
-        url: "http://52.34.55.59:3000/data/location",
+        url: "https://plataformamec.com/data/location",
         data: {email: email},
         success: function (result) {
             if (result.code === "001"){

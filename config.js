@@ -9,7 +9,8 @@ let varGlobals = {
     secret: "a4f8071f-c873-4447-8ee2",
     dir_files_data: path.join(__dirname, 'uploads'),
     remove_w: "rd /S /Q",
-    remove_l: "rm -r"
+    remove_l: "rm -r",
+    url_server: "https://plataformamec.com"
 
 };
 

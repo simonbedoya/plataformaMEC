@@ -132,7 +132,7 @@ function getDateList(date,serial,row) {
     $.ajax({
         type: "post",
         async: false,
-        url: "http://52.34.55.59:3000/data/getDateList",
+        url: "https://plataformamec.com/data/getDateList",
         data: data,
         success: function (result) {
             showPanelLoad('portListDates',false);
@@ -165,7 +165,7 @@ function readFile(pk_file,hour,axis) {
     showPanel('panelGraphic',false);
     $.ajax({
         type: "post",
-        url: "http://52.34.55.59:3000/data/getDataFileByPk",
+        url: "https://plataformamec.com/data/getDataFileByPk",
         data: {pk_file: pk_file},
         success: function (result) {
             showPanelLoad('portListDates',false);
@@ -293,7 +293,7 @@ function reloadDataTable(serial) {
     }
     $.ajax({
         type: "post",
-        url: "http://52.34.55.59:3000/data/getDates",
+        url: "https://plataformamec.com/data/getDates",
         data: data,
         success: function (result) {
             showPanelLoad('portListDates',false);
