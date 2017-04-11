@@ -581,7 +581,7 @@ function generateGraphic() {
                  }
              }else{
                  //si ambos son diferentes de 0 graficar el rango de valores
-                 let diferencia = (minFT + (secFT / 60)) - (minIT + (secIT / 60));
+
                  let timeInicial = (minIT + (secIT / 60));
                  let timeFinal =  (minFT + (secFT / 60));
                  if((timeInicial > timeFinal)||(timeInicial === timeFinal)){
@@ -620,7 +620,18 @@ function generateGraphic() {
 }
 
 function drawGraphic(dataNew) {
+    if(dataNew.length === 0){
+        swal({
+            title: "Información",
+            text: `Ha seleccionado un rango de tiempo fuera del los datos del archivo!`,
+            type: "info",
+            showCancelButton: false,
+            confirmButtonColor: "#444a53",
+            confirmButtonText: "OK"
+        }).then(function () {
 
+        });
+    }
     console.log(dataNew.length);
     if(graph === undefined) {
         graph = new Rickshaw.Graph({
