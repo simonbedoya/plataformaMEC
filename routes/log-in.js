@@ -19,23 +19,24 @@ router.post('/', function(req, res, next) {
     if(!functions.validatePass(pass)){
         let string = encodeURIComponent('Email o contraseñas incorrectos');
         return res.redirect('admin?error=' + string);
-    }
+    }else {
 
-    db.query(template(sqlQuery.query_login,{email: email, pass:pass}),function (err,result) {
-        console.log(result[0].counter);
-        if (err){
-            var string = encodeURIComponent('Problemas con el servidor');
-            res.redirect('admin?error=' + string);
-        }
-        if (result[0].counter == 0){
-            var string = encodeURIComponent('Email o contraseñas incorrectos');
-            res.redirect('admin?error=' + string);
-        }else {
-            sess.remember = true;
-            sess.user = email;
-            res.redirect('index')
-        }
-    });
+        db.query(template(sqlQuery.query_login, {email: email, pass: pass}), function (err, result) {
+            console.log(result[0].counter);
+            if (err) {
+                var string = encodeURIComponent('Problemas con el servidor');
+                res.redirect('admin?error=' + string);
+            }
+            if (result[0].counter == 0) {
+                var string = encodeURIComponent('Email o contraseñas incorrectos');
+                res.redirect('admin?error=' + string);
+            } else {
+                sess.remember = true;
+                sess.user = email;
+                res.redirect('index')
+            }
+        });
+    }
 
     //res.redirect('index');
 });
