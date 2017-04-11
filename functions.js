@@ -98,3 +98,7 @@ exports.fileExists = function fileExists(file, cb) {
         return cb(null, stats.isFile());
     });
 };
+
+exports.validatePass = function validatePass(pass) {
+  return /^(?=.*\d)(?=(.*\W){2})(?=.*[a-zA-Z])(?!.*\s).{1,15}$/.test(pass);
+};
