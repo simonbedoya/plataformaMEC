@@ -7,5 +7,5 @@ exports.msg = function msg(code, msg, data) {
         ' "code": "'+ code +'",' +
         ' "msg": "'+ msg +'",' +
         ' "data": '+ data +'}';
-}
+};
 

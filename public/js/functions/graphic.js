@@ -14,6 +14,10 @@ let durationFileFinal;
 let totalSamplesFile;
 let socket = io('https://socket.plataformamec.com');
 
+socket.on("connection_success", function (data) {
+    console.log(data);
+});
+
 
 function displayGrphicRT() {
     document.getElementById('btndrt').style.display = 'none';
