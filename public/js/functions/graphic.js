@@ -18,7 +18,7 @@ socket.on("connection_success", function (data) {
     console.log(data);
 });
 
-socket.emit('register','{simon: "hola"}');
+socket.emit('register','{"simon": "hola"}');
 
 
 function displayGrphicRT() {
