@@ -1,17 +1,17 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var session = require('express-session');
-var cors = require('cors');
-var fs = require('fs');
-var formidable = require('formidable');
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const session = require('express-session');
+const cors = require('cors');
+const fs = require('fs');
+const formidable = require('formidable');
 
 
 
-var config = require('./config');
+const config = require('./config');
 var index = require('./routes/index');
 var login = require('./routes/login');
 var log_in = require('./routes/log-in');

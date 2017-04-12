@@ -12,7 +12,7 @@ let durationFile;
 let timeGraphic;
 let durationFileFinal;
 let totalSamplesFile;
-//let socket = io('http://52.34.55.59:3000');
+let socket = io('https://socket.plataformamec.com');
 
 
 function displayGrphicRT() {
