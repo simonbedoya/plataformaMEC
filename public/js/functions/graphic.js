@@ -18,7 +18,7 @@ socket.on("connection_success", function (data) {
     console.log(data);
 });
 
-socket.emit('register','{"simon": "hola"}');
+
 
 
 function displayGrphicRT() {
@@ -164,6 +164,7 @@ function getDateList(date,serial,row) {
 }
 
 function readFile(pk_file,hour,axis) {
+    socket.emit('register','{"simon": "hola"}');
     //socket.emit('sendPkFile', pk_file);
     showPanelLoad('portListDates',true);
     showPanel('panelFile',false);
