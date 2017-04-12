@@ -18,6 +18,8 @@ socket.on("connection_success", function (data) {
     console.log(data);
 });
 
+socket.emit('register','hola');
+
 
 function displayGrphicRT() {
     document.getElementById('btndrt').style.display = 'none';
