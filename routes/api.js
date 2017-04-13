@@ -102,7 +102,7 @@ router.get('/', function(req, res) {
     res.json({ message: 'Tienes acceso!' });
 });
 
-router.post('/functions', function (req, res) {
+router.post('/network', function (req, res) {
    var email = req.body.email;
 
    var sql = "SELECT * FROM TBL_NETWORK WHERE email_user = '" + email +"'";

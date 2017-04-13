@@ -12,10 +12,11 @@ let durationFile;
 let timeGraphic;
 let durationFileFinal;
 let totalSamplesFile;
-let socket = io('https://socket.plataformamec.com');
+let socket = io('http://localhost:4000');
 
 socket.on("connection_success", function (data) {
     console.log(data);
+
 });
 
 socket.on("register_success", function (data) {
@@ -36,6 +37,7 @@ $('#close_grt').click(function () {
 });
 
 function load(dateList,serial) {
+    socket.emit('register','{"serial": "'+serial+'"}');
 
     let dateListFull = [];
     let i;
@@ -168,7 +170,7 @@ function getDateList(date,serial,row) {
 }
 
 function readFile(pk_file,hour,axis) {
-    socket.emit('register','{"serial": "WDEFRGTHYJ"}');
+
     //socket.emit('sendPkFile', pk_file);
     showPanelLoad('portListDates',true);
     showPanel('panelFile',false);
