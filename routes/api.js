@@ -87,14 +87,14 @@ router.use(function (req, res, next) {
     if (token){
         jwt.verify(token, config.secret, function (err, decoded) {
             if (err){
-                return res.status(401).send(JSON.parse(response.msg("002","Unauthorized", "null")));
+                return res.status(401).send(JSON.parse(response.msg("007","Unauthorized", "null")));
             }else{
                 req.decoded = decoded;
                 next();
             }
         });
     }else{
-        return res.status(403).send(JSON.parse(response.msg("003","Access denied","null")));
+        return res.status(403).send(JSON.parse(response.msg("007","Access denied","null")));
     }
 });
 
