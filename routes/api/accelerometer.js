@@ -15,7 +15,7 @@ router.post("/", function (req,res) {
     var descript = req.body.descript;
     var error = req.body.error;
     var date = functions.datetime();
-
+    console.log(req.decoded.pkSensor);
     var sql = "SELECT count(*) AS counter FROM TBL_ACCELEROMETER WHERE PK_SENSOR = "+req.decoded.pkSensor;
     db.query(sql, function (err, result) {
         if(err){
