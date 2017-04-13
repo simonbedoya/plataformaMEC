@@ -16,6 +16,7 @@ module.exports = {
         return new Promise(
             function (fullfill) {
                 db.query(template(sqlQuery.query_validateRegister,{serial: serial}), function (err, result) {
+                    console.log(err);
                     if (err) return fullfill({hcode: 500, code: "005", msg: "Internal error", data: null});
 
                     if(result.length === 0){
@@ -31,6 +32,7 @@ module.exports = {
             function (fullfill) {
                 let date = functions.datetime();
                 db.query(template(sqlQuery.query_insertSensor,{serial: serial,network: network, name: name, date1: date, date2: date}), function (err, result) {
+                    console.log(err);
                     if (err) return fullfill({hcode: 500, code: "005", msg: "Internal error", data: null});
 
                     if (result.affectedRows !== 0){
@@ -49,6 +51,7 @@ module.exports = {
             function (fullfill) {
                 let date = functions.datetime();
                 db.query(template(sqlQuery.query_updateSensor,{date: date, pk_sensor: pk_sensor}), function (err, result) {
+                    console.log(err);
                     if (err) return fullfill({hcode: 500, code: "005", msg: "Internal error", data: null});
 
                     if (result.affectedRows !== 0){
