@@ -20,9 +20,9 @@ module.exports = {
                     if (err) return fullfill({hcode: 500, code: "005", msg: "Internal error", data: null});
 
                     if(result.length === 0){
-                        fullfill({hcode: 0 ,code: "001", msg:"No existe registro", data: JSON.stringify(result[0])});
+                        fullfill({hcode: 0 ,code: "001", msg:"No existe registro", data: result[0]});
                     }else{
-                        fullfill({hcode: 0 ,code: "002", msg: "Existe registro", data: JSON.stringify(result[0])});
+                        fullfill({hcode: 0 ,code: "002", msg: "Existe registro", data: result[0]});
                     }
                 });
             })
