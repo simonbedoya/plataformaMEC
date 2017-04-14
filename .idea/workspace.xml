@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/head.ejs" afterPath="$PROJECT_DIR$/views/partials/head.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/scripts.ejs" afterPath="$PROJECT_DIR$/views/partials/scripts.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/views/partials/scripts.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -673,7 +671,7 @@
       <workItem from="1492010068690" duration="12746000" />
       <workItem from="1492044968278" duration="2961000" />
       <workItem from="1492090457128" duration="13348000" />
-      <workItem from="1492186272516" duration="7996000" />
+      <workItem from="1492186272516" duration="8081000" />
     </task>
     <task id="LOCAL-00001" summary="13/04/2017 5">
       <created>1492120975874</created>
@@ -773,11 +771,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492199829918</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="14/04/2017 4">
+      <created>1492200016620</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1492200016620</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="566286000" />
+    <option name="totallyTimeSpent" value="566371000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -841,7 +846,8 @@
     <MESSAGE value="14/04/2017 1" />
     <MESSAGE value="14/04/2017 2" />
     <MESSAGE value="14/04/2017 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="14/04/2017 3" />
+    <MESSAGE value="14/04/2017 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="14/04/2017 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1479,7 +1485,7 @@
     <entry file="file://$PROJECT_DIR$/views/partials/scripts.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
