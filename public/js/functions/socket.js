@@ -8,12 +8,11 @@ let socket = io('https://socket.plataformamec.com');
 socket.on("connect", function (data) {
     console.log(data);
     let user = document.getElementById("email_user").innerHTML;
-    alert(user);
     socket.emit('register_web',`{"email": "${user}"}`, function (confirm) {
         if(confirm){
-            alert("registro exitoso");
+            $.Notification.autoHideNotify('black', 'top right', 'Alerta...','Estas conectado con tus sensores para recibir alertas en tiempo real.');
         }else{
-            alert("error");
+            $.Notification.autoHideNotify('black', 'top right', 'Alerta...','No se ha podido establecer conexion con tus sensores.');
         }
     });
 });
