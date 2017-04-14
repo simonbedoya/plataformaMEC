@@ -7,7 +7,6 @@
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/socket.js" afterPath="$PROJECT_DIR$/public/js/functions/socket.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/header.ejs" afterPath="$PROJECT_DIR$/views/partials/header.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -63,8 +62,8 @@
       <file leaf-file-name="socket.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="17">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -673,7 +672,7 @@
       <workItem from="1492010068690" duration="12746000" />
       <workItem from="1492044968278" duration="2961000" />
       <workItem from="1492090457128" duration="13348000" />
-      <workItem from="1492186272516" duration="6929000" />
+      <workItem from="1492186272516" duration="6975000" />
     </task>
     <task id="LOCAL-00001" summary="13/04/2017 5">
       <created>1492120975874</created>
@@ -752,11 +751,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492190172141</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="14/04/2017 2">
+      <created>1492198829212</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1492198829212</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="565219000" />
+    <option name="totallyTimeSpent" value="565265000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -818,7 +824,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="13/04/2017 5" />
     <MESSAGE value="14/04/2017 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="14/04/2017 1" />
+    <MESSAGE value="14/04/2017 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="14/04/2017 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1452,8 +1459,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        <state relative-caret-position="17">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
