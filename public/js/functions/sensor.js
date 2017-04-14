@@ -360,8 +360,8 @@ function setInfoGeneral(data) {
     }
 }
 
-function datetime(date) {
-    let date = new Date(date);
+function datetime(dates) {
+    let date = new Date(dates.toString());
     console.log(date);
 
     let day = date.getDate();
