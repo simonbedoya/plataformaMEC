@@ -339,17 +339,18 @@ function loadInfoGeneral() {
 function setInfoGeneral(data) {
     aciveLoader("loadGeneral",false);
     if(data !== null) {
-        let date = data.REGISTERDATE_SENSOR.toString();
-        let dateReg = date.split("T");
-        let hourReg = dateReg[1].split(".");
-        date = data.UPDATEDATE_SENSOR.toString();
-        let dateUp = date.split("T");
-        let hourUp = dateUp[1].split(".");
+        let dateReg = datetime(data.REGISTERDATE_SENSOR);
+        //let date = data.REGISTERDATE_SENSOR.toString();
+        //let dateReg = date.split("T");
+        //let hourReg = dateReg[1].split(".");
+        let dateUp = datetime(data.UPDATEDATE_SENSOR);
+        //let dateUp = date.split("T");
+        //let hourUp = dateUp[1].split(".");
         document.getElementById("tisgSerial").innerHTML = data.SERIAL_SENSOR;
         document.getElementById("tisgName").innerHTML = data.NAME_SENSOR;
         document.getElementById("tisgStatus").innerHTML = data.STATUS_SENSOR;
-        document.getElementById("tisgRegDate").innerHTML = dateReg[0] + '&nbsp&nbsp&nbsp&nbsp' + hourReg[0];
-        document.getElementById("tisgUpDate").innerHTML = dateUp[0] + '&nbsp&nbsp&nbsp&nbsp' + hourUp[0];
+        document.getElementById("tisgRegDate").innerHTML = dateReg;
+        document.getElementById("tisgUpDate").innerHTML = dateUp;
     }else{
         document.getElementById("tisgSerial").innerHTML = "No hay registro";
         document.getElementById("tisgName").innerHTML = "No hay registro";
@@ -358,6 +359,50 @@ function setInfoGeneral(data) {
         document.getElementById("tisgUpDate").innerHTML = "No hay registro";
     }
 }
+
+function datetime(date) {
+    let date = new Date(date);
+    console.log(date);
+
+    let day = date.getDate();
+    let month = date.getMonth();
+    let year = date.getFullYear();
+    let second = date.getSeconds();
+    let minute = date.getMinutes();
+    let hour = date.getHours();
+    let finalsecond = "";
+    let finalminute = "";
+    let finalhour = "";
+    let finalday = "";
+    let finalmonth = "";
+
+    if (day >= 1 && day <= 9){
+        finalday = "0" + day.toString();
+    }else{
+        finalday = day.toString();
+    }
+    if(month >= 0 && month <=9){
+        finalmonth = "0" + (month + 1).toString();
+    }else{
+        finalmonth = month.toString();
+    }
+    if (second >= 0 && second <= 9){
+        finalsecond = "0" + second.toString();
+    }else{
+        finalsecond = second;
+    }
+    if (minute >= 0 && minute <= 9){
+        finalminute = "0" + minute.toString();
+    }else{
+        finalminute = minute;
+    }
+    if (hour >= 0 && hour <= 9){
+        finalhour = "0" + hour.toString();
+    }else{
+        finalhour = hour;
+    }
+    return year.toString() + "/" + finalmonth + "/" + finalday + " " + finalhour + ":" + finalminute + ":" + finalsecond;
+};
 
 function clearInfoGeneral() {
     document.getElementById("tisgSerial").innerHTML = "";
