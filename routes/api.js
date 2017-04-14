@@ -66,6 +66,7 @@ router.post("/auth", function (req,res) {
                    serialSensor: serial,
                    pkSensor: result[0].pk_sensor
                };
+               console.log("sensor: "+ result[0].pk_sensor);
                var token = jwt.sign(sensor, config.secret, {
                    expiresIn: 604800
                });
