@@ -1,7 +1,7 @@
 /**
  * Created by sbv23 on 14/04/2017.
  */
-let socket = io('http://localhost:4000');
+let socket = io('http://socket.plataformamec.com');
 
 
 socket.on("connection_success", function (data) {
