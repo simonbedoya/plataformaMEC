@@ -12,16 +12,6 @@ let durationFile;
 let timeGraphic;
 let durationFileFinal;
 let totalSamplesFile;
-let socket = io('http://localhost:4000');
-
-socket.on("connection_success", function (data) {
-    console.log(data);
-
-});
-
-socket.on("register_success", function (data) {
-    console.log(data);
-});
 
 
 
@@ -37,7 +27,7 @@ $('#close_grt').click(function () {
 });
 
 function load(dateList,serial) {
-    socket.emit('register','{"serial": "'+serial+'"}');
+
 
     let dateListFull = [];
     let i;
