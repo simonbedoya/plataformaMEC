@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/functions/socket.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/graphic.js" afterPath="$PROJECT_DIR$/public/js/functions/graphic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/header.ejs" afterPath="$PROJECT_DIR$/views/partials/header.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/graphic.ejs" afterPath="$PROJECT_DIR$/views/graphic.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/scripts.ejs" afterPath="$PROJECT_DIR$/views/partials/scripts.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -42,7 +40,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="socket.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="graphic.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="433" column="0" lean-forward="false" selection-start-line="433" selection-start-column="0" selection-end-line="433" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scripts.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/partials/scripts.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="socket.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -187,7 +205,6 @@
         <option value="$PROJECT_DIR$/functions.js" />
         <option value="$PROJECT_DIR$/sql/sql_data.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/views/graphic.ejs" />
         <option value="$PROJECT_DIR$/message.js" />
         <option value="$PROJECT_DIR$/controller/api/sensor_controller.js" />
         <option value="$PROJECT_DIR$/sql/sql_api.js" />
@@ -198,6 +215,7 @@
         <option value="$PROJECT_DIR$/public/js/functions/graphic.js" />
         <option value="$PROJECT_DIR$/views/partials/header.ejs" />
         <option value="$PROJECT_DIR$/public/js/functions/socket.js" />
+        <option value="$PROJECT_DIR$/views/graphic.ejs" />
         <option value="$PROJECT_DIR$/views/partials/scripts.ejs" />
       </list>
     </option>
@@ -635,7 +653,7 @@
       <workItem from="1492010068690" duration="12746000" />
       <workItem from="1492044968278" duration="2961000" />
       <workItem from="1492090457128" duration="13348000" />
-      <workItem from="1492186272516" duration="926000" />
+      <workItem from="1492186272516" duration="1052000" />
     </task>
     <task id="LOCAL-00001" summary="13/04/2017 5">
       <created>1492120975874</created>
@@ -679,11 +697,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492131911212</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="13/04/2017 5">
+      <created>1492187217028</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1492187217028</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="559216000" />
+    <option name="totallyTimeSpent" value="559342000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1153,14 +1178,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7361">
-          <caret line="433" column="0" lean-forward="false" selection-start-line="433" selection-start-column="0" selection-end-line="433" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1334,16 +1351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="163" column="12" lean-forward="false" selection-start-line="163" selection-start-column="6" selection-end-line="163" selection-end-column="12" />
-          <folding>
-            <marker date="1492186438115" expanded="true" signature="2104:2121" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/recoverpw.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-684">
@@ -1368,14 +1375,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/scripts.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="28" column="69" lean-forward="true" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1383,6 +1382,32 @@
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="163" column="12" lean-forward="false" selection-start-line="163" selection-start-column="6" selection-end-line="163" selection-end-column="12" />
+          <folding>
+            <marker date="1492186438115" expanded="true" signature="2104:2121" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="433" column="0" lean-forward="false" selection-start-line="433" selection-start-column="0" selection-end-line="433" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/scripts.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
