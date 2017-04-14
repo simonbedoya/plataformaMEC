@@ -51,9 +51,11 @@
             icon = "fa fa-check";
         }else if(style == "info"){
             icon = "fa fa-question";
+        }else if(style === "black"){
+            icon = "fa fa-warning";
         }else{
             icon = "fa fa-adjust";
-        }   
+        }
         $.notify({
             title: title,
             text: text,
