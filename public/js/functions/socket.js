@@ -1,12 +1,15 @@
 /**
  * Created by sbv23 on 14/04/2017.
  */
-let socket = io('https://socket.plataformamec.com');
+//let socket = io('https://socket.plataformamec.com');
+let socket = io('http://localhost:4000');
 
 
-socket.on("connection_success", function (data) {
+socket.on("connect", function (data) {
     console.log(data);
-    socket.emit('register_web','{"email": "admin@admin.com"}', function (confirm) {
+    let user = document.getElementById("email_user").innerHTML;
+    alert(user);
+    socket.emit('register_web',`{"email": "${user}"}`, function (confirm) {
         if(confirm){
             alert("registro exitoso");
         }else{
