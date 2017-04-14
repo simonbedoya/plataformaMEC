@@ -71,6 +71,7 @@ router.post("/auth", function (req,res) {
                    expiresIn: 604800
                });
                var sres = '{"token": "' + token + '"}';
+               console.log("token "+  token);
                res.status(200).send(JSON.parse(response.msg("001", "Auth token", sres)));
            }else{
                //no existe el sensor o no esta asociado a una red
