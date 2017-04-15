@@ -688,7 +688,7 @@
       <workItem from="1492044968278" duration="2961000" />
       <workItem from="1492090457128" duration="13348000" />
       <workItem from="1492186272516" duration="14323000" />
-      <workItem from="1492284822516" duration="7170000" />
+      <workItem from="1492284822516" duration="7185000" />
     </task>
     <task id="LOCAL-00001" summary="13/04/2017 5">
       <created>1492120975874</created>
@@ -911,7 +911,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="579783000" />
+    <option name="totallyTimeSpent" value="579798000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -985,7 +985,8 @@
     <MESSAGE value="15/04/2017 6" />
     <MESSAGE value="15/04/2017 7" />
     <MESSAGE value="15/04/2017 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="15/04/2017 8" />
+    <MESSAGE value="15/04/2017 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="15/04/2017 9" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
