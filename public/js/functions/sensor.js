@@ -294,6 +294,7 @@ function showEdit_sensor(sensor) {
 }
 
 function showConfig_sensor(pkSensor) {
+    pk_sensor = pkSensor;
     $("#config_sensor").modal();
 }
 
