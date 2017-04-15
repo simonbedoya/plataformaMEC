@@ -24,7 +24,7 @@ socket.on("testResponse", function (data) {
    switch (dataIn.type){
        case "GPS":
            document.getElementById("resultTestGPS").innerHTML += dataIn.data;
-           document.getElementById("resultTestGPS").innerHTML += "\\n";
+           document.getElementById("resultTestGPS").innerHTML += "\n";
            break;
 
    }
