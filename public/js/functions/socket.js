@@ -1,8 +1,8 @@
 /**
  * Created by sbv23 on 14/04/2017.
  */
-let socket = io('https://socket.plataformamec.com');
-//let socket = io('http://localhost:4000');
+//let socket = io('https://socket.plataformamec.com');
+let socket = io('http://localhost:4000');
 
 
 socket.on("connect", function (data) {
@@ -17,9 +17,18 @@ socket.on("connect", function (data) {
     });
 });
 
-socket.on("register_success", function (data) {
-    console.log(data);
+
+socket.on("testResponse", function (data) {
+   let dataIn = JSON.parse(data);
+   switch (dataIn.type){
+       case "GPS":
+           document.getElementById("resultTestGPS").innerHTML += data.data;
+           break;
+
+   }
 });
+
+
 
 
 
