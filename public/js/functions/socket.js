@@ -19,6 +19,7 @@ socket.on("connect", function (data) {
 
 
 socket.on("testResponse", function (data) {
+   console.log(data);
    let dataIn = JSON.parse(data);
    switch (dataIn.type){
        case "GPS":
