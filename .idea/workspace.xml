@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/socket.js" afterPath="$PROJECT_DIR$/public/js/functions/socket.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -672,7 +671,7 @@
       <workItem from="1492044968278" duration="2961000" />
       <workItem from="1492090457128" duration="13348000" />
       <workItem from="1492186272516" duration="14323000" />
-      <workItem from="1492284822516" duration="2448000" />
+      <workItem from="1492284822516" duration="2526000" />
     </task>
     <task id="LOCAL-00001" summary="13/04/2017 5">
       <created>1492120975874</created>
@@ -807,11 +806,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492287602056</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="15/04/2017 3">
+      <created>1492293512218</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1492293512218</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="575061000" />
+    <option name="totallyTimeSpent" value="575139000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -879,7 +885,8 @@
     <MESSAGE value="14/04/2017 5" />
     <MESSAGE value="15/04/2017" />
     <MESSAGE value="15/04/2017 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="15/04/2017 2" />
+    <MESSAGE value="15/04/2017 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="15/04/2017 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
