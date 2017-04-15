@@ -774,7 +774,8 @@ function clearInfoComponent() {
 }
 
 function requestTestGPS() {
-    socket.emit('requestTestGPS',`{"pk_sensor": "${pk_sensor}", "type" : "GPS" }`,function (data) {
+    let type = $('#typeTestGPS').val();
+    socket.emit('requestTest',`{"pk_sensor": "${pk_sensor}", "component" : "GPS", "type" : "${type}" }`,function (data) {
         if(data.code === "001"){
             document.getElementById("resultTestGPS").innerHTML = "Ha comanzado el test al GPS. \n";
         }else if(data.code === "004"){

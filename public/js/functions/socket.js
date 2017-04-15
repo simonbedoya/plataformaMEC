@@ -21,7 +21,7 @@ socket.on("connect", function (data) {
 socket.on("testResponse", function (data) {
    console.log(data);
    let dataIn = JSON.parse(data);
-   switch (dataIn.type){
+   switch (dataIn.component){
        case "GPS":
            document.getElementById("resultTestGPS").innerHTML += dataIn.data;
            document.getElementById("resultTestGPS").innerHTML += "\n";
@@ -29,19 +29,19 @@ socket.on("testResponse", function (data) {
 
    }
    if(dataIn.last){
-       terminateTest(dataIn.type);
+       terminateTest(dataIn.component);
    }
 });
 
 
-function terminateTest(type) {
+function terminateTest(component) {
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/terminateTest",
-        data: {pk_sensor: pk_sensor, type: type},
+        data: {pk_sensor: pk_sensor, type: component},
         success: function (result) {
             if(result.code === "001"){
-                switch (type){
+                switch (component){
                     case "GPS":
                         document.getElementById("resultTestGPS").innerHTML += "Ha terminado test...";
                         break;
