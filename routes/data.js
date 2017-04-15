@@ -158,4 +158,10 @@ router.post('/getDataFileByPk', function (req,res) {
    })
 });
 
+router.post('/terminateTest', function (req,res) {
+    data_controller.terminateTest(req.body.pk_sensor,req.body.type).then(function (data) {
+        res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, data.data)));
+    })
+});
+
 module.exports = router;

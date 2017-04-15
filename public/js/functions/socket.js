@@ -28,7 +28,31 @@ socket.on("testResponse", function (data) {
            break;
 
    }
+   if(dataIn.last){
+       terminateTest(dataIn.type);
+   }
 });
+
+
+function terminateTest(type) {
+    $.ajax({
+        type: "post",
+        url: "https://plataformamec.com/data/terminateTest",
+        data: {pk_sensor: pk_sensor, type: type},
+        success: function (result) {
+            if(result.code === "001"){
+                switch (type){
+                    case "GPS":
+                        document.getElementById("resultTestGPS").innerHTML += "Ha terminado test...";
+                        break;
+                }
+            }
+        },
+        error: function (e) {
+            console.log(e);
+        }
+    });
+}
 
 
 

@@ -27,5 +27,6 @@ module.exports = {
     query_dates: "SELECT tbf.DATE_FILE, count(tbf.PATH_FILE) AS N_FILES FROM TBL_SENSOR tbs INNER JOIN TBL_LOCATION tbl ON tbl.PK_SENSOR = tbs.PK_SENSOR AND tbl.STATUS_LOCATION = 'Activa' INNER JOIN TBL_FILE tbf ON tbl.PK_LOCATION = tbf.PK_LOCATION WHERE tbs.SERIAL_SENSOR = '${serial}' GROUP BY tbf.DATE_FILE",
     query_datesfilter: "SELECT tbf.DATE_FILE, count(tbf.PATH_FILE) AS N_FILES FROM TBL_SENSOR tbs INNER JOIN TBL_LOCATION tbl ON tbl.PK_SENSOR = tbs.PK_SENSOR AND tbl.STATUS_LOCATION = 'Activa' INNER JOIN TBL_FILE tbf ON tbl.PK_LOCATION = tbf.PK_LOCATION WHERE tbs.SERIAL_SENSOR = '${serial}' AND tbf.AXIS_FILE = '${axis}' GROUP BY tbf.DATE_FILE",
     query_getDataFileByPk: "SELECT PATH_FILE, DATE_FILE FROM TBL_FILE WHERE PK_FILE = ${pk_file}",
-    query_login: "SELECT count(*) AS counter FROM TBL_USER WHERE EMAIL_USER = '${email}' AND PASSWORD_USER = '${pass}'"
+    query_login: "SELECT count(*) AS counter FROM TBL_USER WHERE EMAIL_USER = '${email}' AND PASSWORD_USER = '${pass}'",
+    query_terminateTest: "UPDATE TBL_TEST SET STATUS_TEST = 'Inactive' WHERE PK_SENSOR = ${pk_sensor} AND TYPE_TEST = '${type}'"
 };
