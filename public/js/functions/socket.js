@@ -23,7 +23,7 @@ socket.on("testResponse", function (data) {
    let dataIn = JSON.parse(data);
    switch (dataIn.type){
        case "GPS":
-           document.getElementById("resultTestGPS").innerHTML += data.data;
+           document.getElementById("resultTestGPS").innerHTML += dataIn.data;
            break;
 
    }
