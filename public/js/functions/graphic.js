@@ -92,12 +92,13 @@ function format (data) {
         "<tbody>";
     let i;
     for(i in data){
-        let reg_date = data[i].REGISTERDATE_FILE.split("T");
-        let reg_hour = reg_date[1].split(".");
+        let regDate = datetime(data[i].REGISTERDATE_FILE);
+        //let reg_date = data[i].REGISTERDATE_FILE.split("T");
+        //let reg_hour = reg_date[1].split(".");
         fila += `<tr>`+
                     `<td>${data[i].HOUR_FILE}</td>`+
                     `<td>${data[i].AXIS_FILE}</td>`+
-                    `<td>${reg_date[0]} - ${reg_hour[0]}</td>`+
+                    `<td>${regDate}</td>`+
                     `<td>`+
                         `<a onclick="readFile(${data[i].PK_FILE},'${data[i].HOUR_FILE}','${data[i].AXIS_FILE}')" data-toggle='tooltip' data-placement='bottom' title='Ver'><i class="ion-eye"></i></a>`+
                     `</td>`+
@@ -107,6 +108,50 @@ function format (data) {
 
     return fila;
 }
+
+function datetime(dates) {
+    let date = new Date(dates.toString());
+    console.log(date);
+
+    let day = date.getDate();
+    let month = date.getMonth();
+    let year = date.getFullYear();
+    let second = date.getSeconds();
+    let minute = date.getMinutes();
+    let hour = date.getHours();
+    let finalsecond = "";
+    let finalminute = "";
+    let finalhour = "";
+    let finalday = "";
+    let finalmonth = "";
+
+    if (day >= 1 && day <= 9){
+        finalday = "0" + day.toString();
+    }else{
+        finalday = day.toString();
+    }
+    if(month >= 0 && month <=9){
+        finalmonth = "0" + (month + 1).toString();
+    }else{
+        finalmonth = month.toString();
+    }
+    if (second >= 0 && second <= 9){
+        finalsecond = "0" + second.toString();
+    }else{
+        finalsecond = second;
+    }
+    if (minute >= 0 && minute <= 9){
+        finalminute = "0" + minute.toString();
+    }else{
+        finalminute = minute;
+    }
+    if (hour >= 0 && hour <= 9){
+        finalhour = "0" + hour.toString();
+    }else{
+        finalhour = hour;
+    }
+    return year.toString() + "/" + finalmonth + "/" + finalday + " " + finalhour + ":" + finalminute + ":" + finalsecond;
+};
 
 function showPanelLoad(id,show) {
     let portlet = $(`#${id}`);
