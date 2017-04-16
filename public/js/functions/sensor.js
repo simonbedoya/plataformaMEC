@@ -801,10 +801,11 @@ function requestTest(component) {
             document.getElementById(`resultTest${component}`).innerHTML = `Ha comanzado el test al ${component}. \n`;
         }else if(data.code === "004"){
             document.getElementById(`resultTest${component}`).innerHTML = "Ya se encuentra un test corriendo para este sensor.";
+        }else if(data.code === "003"){
+            document.getElementById(`resultTest${component}`).innerHTML = "El sensor no se encuentra conectado, intenta nuevamente.";
         }else{
             document.getElementById(`resultTest${component}`).innerHTML = "Ha ocurrido un error intenta nuevamente.";
         }
-
     })
 }
 
