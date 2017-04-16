@@ -818,3 +818,7 @@ function showRealTime(pkSensor) {
     pk_sensor = pkSensor;
     $('#real_time_graphic').modal();
 }
+
+$("#real_time_graphic").on('shown.bs.modal', function () {
+    alert("carga");
+});
