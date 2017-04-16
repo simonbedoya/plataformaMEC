@@ -151,7 +151,7 @@ function datetime(dates) {
         finalhour = hour;
     }
     return year.toString() + "/" + finalmonth + "/" + finalday + " " + finalhour + ":" + finalminute + ":" + finalsecond;
-};
+}
 
 function showPanelLoad(id,show) {
     let portlet = $(`#${id}`);
