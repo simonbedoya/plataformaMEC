@@ -7,7 +7,6 @@
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/sensor.js" afterPath="$PROJECT_DIR$/public/js/functions/sensor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/socket.js" afterPath="$PROJECT_DIR$/public/js/functions/socket.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/config_sensor.ejs" afterPath="$PROJECT_DIR$/views/config_sensor.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -44,17 +43,17 @@
       <file leaf-file-name="sensor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="777" column="101" lean-forward="true" selection-start-line="777" selection-start-column="101" selection-end-line="777" selection-end-column="101" />
+            <state relative-caret-position="144">
+              <caret line="778" column="19" lean-forward="true" selection-start-line="778" selection-start-column="19" selection-end-line="778" selection-end-column="19" />
               <folding>
-                <marker date="1492298876012" expanded="true" signature="3555:3590" ph="..." />
-                <marker date="1492298876012" expanded="true" signature="3773:3808" ph="..." />
-                <marker date="1492298876012" expanded="true" signature="3981:4016" ph="..." />
-                <marker date="1492298876012" expanded="true" signature="4193:4228" ph="..." />
-                <marker date="1492298876012" expanded="true" signature="4405:4440" ph="..." />
-                <marker date="1492298876012" expanded="true" signature="4613:4627" ph="..." />
-                <marker date="1492298876012" expanded="true" signature="25431:25445" ph="..." />
-                <marker date="1492298876012" expanded="true" signature="25567:25581" ph="..." />
+                <marker date="1492300760077" expanded="true" signature="3555:3590" ph="..." />
+                <marker date="1492300760077" expanded="true" signature="3773:3808" ph="..." />
+                <marker date="1492300760077" expanded="true" signature="3981:4016" ph="..." />
+                <marker date="1492300760077" expanded="true" signature="4193:4228" ph="..." />
+                <marker date="1492300760077" expanded="true" signature="4405:4440" ph="..." />
+                <marker date="1492300760077" expanded="true" signature="4613:4627" ph="..." />
+                <marker date="1492300760077" expanded="true" signature="25431:25445" ph="..." />
+                <marker date="1492300760077" expanded="true" signature="25567:25581" ph="..." />
               </folding>
             </state>
           </provider>
@@ -70,17 +69,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config_sensor.ejs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config_sensor.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/config_sensor.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="102" column="90" lean-forward="false" selection-start-line="102" selection-start-column="79" selection-end-line="102" selection-end-column="90" />
+            <state relative-caret-position="829">
+              <caret line="157" column="80" lean-forward="false" selection-start-line="157" selection-start-column="80" selection-end-line="157" selection-end-column="80" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="socket.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="socket.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
@@ -246,9 +245,9 @@
         <option value="$PROJECT_DIR$/controller/data_controller.js" />
         <option value="$PROJECT_DIR$/routes/data.js" />
         <option value="$PROJECT_DIR$/sql/sql_data.js" />
-        <option value="$PROJECT_DIR$/views/config_sensor.ejs" />
-        <option value="$PROJECT_DIR$/public/js/functions/sensor.js" />
         <option value="$PROJECT_DIR$/public/js/functions/socket.js" />
+        <option value="$PROJECT_DIR$/public/js/functions/sensor.js" />
+        <option value="$PROJECT_DIR$/views/config_sensor.ejs" />
       </list>
     </option>
   </component>
@@ -688,7 +687,7 @@
       <workItem from="1492186272516" duration="14323000" />
       <workItem from="1492284822516" duration="7197000" />
       <workItem from="1492298363625" duration="114000" />
-      <workItem from="1492298492996" duration="760000" />
+      <workItem from="1492298492996" duration="2470000" />
     </task>
     <task id="LOCAL-00001" summary="13/04/2017 5">
       <created>1492120975874</created>
@@ -914,11 +913,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492298521749</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="15/04/2017 12">
+      <created>1492299265688</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1492299265688</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="580684000" />
+    <option name="totallyTimeSpent" value="582394000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -995,7 +1001,8 @@
     <MESSAGE value="15/04/2017 9" />
     <MESSAGE value="15/04/2017 10" />
     <MESSAGE value="15/04/2017 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="15/04/2017 11" />
+    <MESSAGE value="15/04/2017 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="15/04/2017 12" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1595,31 +1602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/config_sensor.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="102" column="90" lean-forward="false" selection-start-line="102" selection-start-column="79" selection-end-line="102" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="777" column="101" lean-forward="true" selection-start-line="777" selection-start-column="101" selection-end-line="777" selection-end-column="101" />
-          <folding>
-            <marker date="1492298876012" expanded="true" signature="3555:3590" ph="..." />
-            <marker date="1492298876012" expanded="true" signature="3773:3808" ph="..." />
-            <marker date="1492298876012" expanded="true" signature="3981:4016" ph="..." />
-            <marker date="1492298876012" expanded="true" signature="4193:4228" ph="..." />
-            <marker date="1492298876012" expanded="true" signature="4405:4440" ph="..." />
-            <marker date="1492298876012" expanded="true" signature="4613:4627" ph="..." />
-            <marker date="1492298876012" expanded="true" signature="25431:25445" ph="..." />
-            <marker date="1492298876012" expanded="true" signature="25567:25581" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1627,6 +1609,31 @@
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="778" column="19" lean-forward="true" selection-start-line="778" selection-start-column="19" selection-end-line="778" selection-end-column="19" />
+          <folding>
+            <marker date="1492300760077" expanded="true" signature="3555:3590" ph="..." />
+            <marker date="1492300760077" expanded="true" signature="3773:3808" ph="..." />
+            <marker date="1492300760077" expanded="true" signature="3981:4016" ph="..." />
+            <marker date="1492300760077" expanded="true" signature="4193:4228" ph="..." />
+            <marker date="1492300760077" expanded="true" signature="4405:4440" ph="..." />
+            <marker date="1492300760077" expanded="true" signature="4613:4627" ph="..." />
+            <marker date="1492300760077" expanded="true" signature="25431:25445" ph="..." />
+            <marker date="1492300760077" expanded="true" signature="25567:25581" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/config_sensor.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="829">
+          <caret line="157" column="80" lean-forward="false" selection-start-line="157" selection-start-column="80" selection-end-line="157" selection-end-column="80" />
+          <folding />
         </state>
       </provider>
     </entry>

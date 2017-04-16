@@ -54,6 +54,7 @@
                             </li>
                         </ul>
                         <div class="tab-content">
+                            <!---------------------------------------- CPU --------------------------------------------------------->
                             <div class="tab-pane active" id="cpu">
                                 <div class="row">
                                     <div class="col-lg-12">
@@ -69,6 +70,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!---------------------------------------- GPS --------------------------------------------------------->
                             <div class="tab-pane" id="gps">
                                 <div class="row">
                                     <div class="col-lg-12">
@@ -95,10 +97,11 @@
                                         <button class="btn btn-inverse pull-right" id="btnSaveConfigGPS">Guardar</button>
                                     </div>
                                 </div>
+                                <!---------------------------------------- GPS TEST --------------------------------------------------------->
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <div class="row m-b-10">
-                                           <div class="col-lg-3 m-t-5">Seleccione el tipo de test:</div>
+                                        <div class="row m-b-10 m-t-20">
+                                           <div class="col-lg-4 m-t-5 col-lg-offset-1">Seleccione el tipo de test:</div>
                                            <div class="col-lg-4">
                                               <select class="form-control" id="typeTestGPS">
                                                    <option value="GPS">GPS</option>
@@ -106,20 +109,23 @@
                                               </select>
                                            </div>
                                            <div class="col-lg-2">
-                                              <button class="btn btn-inverse" id="btnTestConfigGPS" onclick="requestTestGPS()">Test</button>
+                                              <button class="btn btn-inverse" id="btnTestConfigGPS" onclick="requestTest('GPS')">Test</button>
                                            </div>
+                                            <div class="col-lg-2">
+                                                <button class="btn btn-inverse" id="btnClearConfigGPS" onclick="clearTextAreaTest('resultTestGPS')">Limpiar</button>
+                                            </div>
                                         </div>
                                        <div class="row">
                                            <div class="col-lg-10 col-lg-offset-1" align="center">
                                                <textarea rows="8" cols="105" id="resultTestGPS">
                                                    Resultado funcionamiento y recepcion del gps
                                                </textarea>
-
                                            </div>
                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <!---------------------------------------- ADC --------------------------------------------------------->
                             <div class="tab-pane" id="adc">
                                 <div class="row">
                                     <div class="col-lg-12">
@@ -145,19 +151,28 @@
                                         <button class="btn btn-inverse pull-right" id="btnSaveConfigADC">Guardar</button>
                                     </div>
                                 </div>
+                                <!---------------------------------------- ADC TEST --------------------------------------------------------->
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <div style="margin-bottom: 10px;">
-                                            <button class="btn btn-inverse" id="btnTestConfigADC">Test</button>
+                                        <div class="row m-b-10 m-t-20">
+                                            <div class="col-lg-2 col-lg-offset-1">
+                                                <button class="btn btn-inverse" id="btnTestConfigADC" onclick="requestTest('ADC')">Test</button>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <button class="btn btn-inverse" id="btnClearConfigADC" onclick="clearTextAreaTest('resultTestADC')">Limpiar</button>
+                                            </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-10 col-lg-offset-1" align="center" style="background-color: #888888; height: 50px;">
-                                                <p style="color: #FFFFFF">Resultado prueba de captura y conversion de datos</p>
+                                            <div class="col-lg-10 col-lg-offset-1" align="center">
+                                               <textarea rows="8" cols="105" id="resultTestADC">
+                                                   Resultado funcionamiento y recepcion del gps
+                                               </textarea>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!---------------------------------------- ACC --------------------------------------------------------->
                             <div class="tab-pane" id="acelerometro">
                                 <div class="row">
                                     <div class="col-lg-12">
@@ -172,19 +187,28 @@
                                         <button class="btn btn-inverse pull-right" id="btnSaveConfigACC">Guardar</button>
                                     </div>
                                 </div>
+                                <!---------------------------------------- ACC TEST --------------------------------------------------------->
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <div style="margin-bottom: 10px;">
-                                            <button class="btn btn-inverse" id="btnTestConfigACC">Test</button>
+                                        <div class="row m-b-10 m-t-20">
+                                            <div class="col-lg-2 col-lg-offset-1">
+                                                <button class="btn btn-inverse" id="btnTestConfigACC" onclick="requestTest('ACC')">Test</button>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <button class="btn btn-inverse" id="btnClearConfigACC" onclick="clearTextAreaTest('resultTestACC')">Limpiar</button>
+                                            </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-10 col-lg-offset-1" align="center" style="background-color: #888888; height: 50px;">
-                                                <p style="color: #FFFFFF">Resultado prueba de calibracion y funcionamiento de los 3 ejes</p>
+                                            <div class="col-lg-10 col-lg-offset-1" align="center">
+                                               <textarea rows="8" cols="105" id="resultTestACC">
+                                                   Resultado funcionamiento y recepcion del gps
+                                               </textarea>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!---------------------------------------- WIFI --------------------------------------------------------->
                             <div class="tab-pane" id="wifi">
                                 <div class="row">
                                     <div class="col-lg-12">
@@ -199,19 +223,28 @@
                                         <button class="btn btn-inverse pull-right" id="btnSaveConfigWIFI">Guardar</button>
                                     </div>
                                 </div>
+                                <!---------------------------------------- WIFI TEST --------------------------------------------------------->
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <div style="margin-bottom: 10px;">
-                                            <button class="btn btn-inverse" id="btnTestConfigWIFI">Test</button>
+                                        <div class="row m-b-10 m-t-20">
+                                            <div class="col-lg-2 col-lg-offset-1">
+                                                <button class="btn btn-inverse" id="btnTestConfigWIFI" onclick="requestTest('WIFI')">Test</button>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <button class="btn btn-inverse" id="btnClearConfigWIFI" onclick="clearTextAreaTest('resultTestWIFI')">Limpiar</button>
+                                            </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-10 col-lg-offset-1" align="center" style="background-color: #888888; height: 50px;">
-                                                <p style="color: #FFFFFF">Resultado test de conectividad con el sensor</p>
+                                            <div class="col-lg-10 col-lg-offset-1" align="center">
+                                               <textarea rows="8" cols="105" id="resultTestWIFI">
+                                                   Resultado funcionamiento y recepcion del gps
+                                               </textarea>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!---------------------------------------- RTC --------------------------------------------------------->
                             <div class="tab-pane" id="rtc">
                                 <div class="row">
                                     <div class="col-lg-12">
@@ -226,19 +259,35 @@
                                         <button class="btn btn-inverse pull-right" id="btnSaveConfigRTC">Guardar</button>
                                     </div>
                                 </div>
+                                <!---------------------------------------- RTC TEST --------------------------------------------------------->
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <div style="margin-bottom: 10px;">
-                                            <button class="btn btn-inverse" id="btnTestConfigRTC">Test</button>
+                                        <div class="row m-b-10 m-t-20">
+                                            <div class="col-lg-4 m-t-5 col-lg-offset-1">Seleccione el tipo de test:</div>
+                                            <div class="col-lg-4">
+                                                <select class="form-control" id="typeTestRTC">
+                                                    <option value="RTC">RTC</option>
+                                                    <option value="SYNC">SYNC</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <button class="btn btn-inverse" id="btnTestConfigGPS" onclick="requestTest('RTC')">Test</button>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <button class="btn btn-inverse" id="btnClearConfigGPS" onclick="clearTextAreaTest('resultTestRTC')">Limpiar</button>
+                                            </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-10 col-lg-offset-1" align="center" style="background-color: #888888; height: 50px;">
-                                                <p style="color: #FFFFFF">Resultado verificción de estado RTC</p>
+                                            <div class="col-lg-10 col-lg-offset-1" align="center">
+                                               <textarea rows="8" cols="105" id="resultTestRTC">
+                                                   Resultado funcionamiento y recepcion del RTC
+                                               </textarea>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!---------------------------------------- BAT --------------------------------------------------------->
                             <div class="tab-pane" id="bateria">
                                 <div class="row">
                                     <div class="col-lg-12">
@@ -253,14 +302,22 @@
                                         <button class="btn btn-inverse pull-right" id="btnSaveConfigBATT">Guardar</button>
                                     </div>
                                 </div>
+                                <!---------------------------------------- BAT TEST --------------------------------------------------------->
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <div style="margin-bottom: 10px;">
-                                            <button class="btn btn-inverse" id="btnTestConfigBATT">Test</button>
+                                        <div class="row m-b-10 m-t-20">
+                                            <div class="col-lg-2 col-lg-offset-1">
+                                                <button class="btn btn-inverse" id="btnTestConfigBAT" onclick="requestTest('BAT')">Test</button>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <button class="btn btn-inverse" id="btnClearConfigBAT" onclick="clearTextAreaTest('resultTestBAT')">Limpiar</button>
+                                            </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-10 col-lg-offset-1" align="center" style="background-color: #888888; height: 50px;">
-                                                <p style="color: #FFFFFF">Resultado prueba salud bateria</p>
+                                            <div class="col-lg-10 col-lg-offset-1" align="center">
+                                               <textarea rows="8" cols="105" id="resultTestBAT">
+                                                   Resultado funcionamiento y recepcion del gps
+                                               </textarea>
                                             </div>
                                         </div>
                                     </div>

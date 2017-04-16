@@ -773,16 +773,41 @@ function clearInfoComponent() {
     document.getElementById("tiscBATT").innerHTML = "";
 }
 
-function requestTestGPS() {
-    let type = $('#typeTestGPS').val();
-    socket.emit('requestTest',`{"pk_sensor": "${pk_sensor}", "component" : "GPS", "type" : "${type}" }`,function (data) {
+function requestTest(component) {
+    let type = "";
+    switch (component){
+        case "GPS":
+            type = $(`#typeTest${component}`).val();
+            break;
+        case "ADC":
+            type = "";
+            break;
+        case "ACC":
+            type = "";
+            break;
+        case "WIFI":
+            type = "";
+            break;
+        case "RTC":
+            type = $(`#typeTest${component}`).val();
+            break;
+        case "BAT":
+            type = "";
+            break;
+    }
+
+    socket.emit('requestTest',`{"pk_sensor": "${pk_sensor}", "component" : "${component}", "type" : "${type}" }`,function (data) {
         if(data.code === "001"){
-            document.getElementById("resultTestGPS").innerHTML = "Ha comanzado el test al GPS. \n";
+            document.getElementById(`resultTest${component}`).innerHTML = "Ha comanzado el test al GPS. \n";
         }else if(data.code === "004"){
-            document.getElementById("resultTestGPS").innerHTML = "Ya se encuentra un test corriendo para este sensor.";
+            document.getElementById(`resultTest${component}`).innerHTML = "Ya se encuentra un test corriendo para este sensor.";
         }else{
-            document.getElementById("resultTestGPS").innerHTML = "Ha ocurrido un error intenta nuevamente.";
+            document.getElementById(`resultTest${component}`).innerHTML = "Ha ocurrido un error intenta nuevamente.";
         }
 
     })
+}
+
+function clearTextAreaTest(id) {
+    document.getElementById(id).innerHTML = "";
 }
