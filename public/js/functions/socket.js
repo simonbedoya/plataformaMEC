@@ -21,13 +21,12 @@ socket.on("connect", function (data) {
 socket.on("testResponse", function (data) {
    console.log(data);
    let dataIn = JSON.parse(data);
-   switch (dataIn.component){
-       case "GPS":
-           document.getElementById("resultTestGPS").innerHTML += dataIn.data;
-           document.getElementById("resultTestGPS").innerHTML += "\n";
-           break;
 
-   }
+   document.getElementById(`resultTest${dataIn.component}`).innerHTML += dataIn.data;
+   document.getElementById(`resultTest${dataIn.component}`).innerHTML += "\n";
+
+
+
    if(dataIn.last){
        terminateTest(dataIn.component);
    }
@@ -41,11 +40,7 @@ function terminateTest(component) {
         data: {pk_sensor: pk_sensor, type: component},
         success: function (result) {
             if(result.code === "001"){
-                switch (component){
-                    case "GPS":
-                        document.getElementById("resultTestGPS").innerHTML += "Ha terminado test...";
-                        break;
-                }
+                document.getElementById(`resultTest${component}`).innerHTML += "Ha terminado test...";
             }
         },
         error: function (e) {

@@ -798,7 +798,7 @@ function requestTest(component) {
 
     socket.emit('requestTest',`{"pk_sensor": "${pk_sensor}", "component" : "${component}", "type" : "${type}" }`,function (data) {
         if(data.code === "001"){
-            document.getElementById(`resultTest${component}`).innerHTML = "Ha comanzado el test al GPS. \n";
+            document.getElementById(`resultTest${component}`).innerHTML = `Ha comanzado el test al ${component}. \n`;
         }else if(data.code === "004"){
             document.getElementById(`resultTest${component}`).innerHTML = "Ya se encuentra un test corriendo para este sensor.";
         }else{
