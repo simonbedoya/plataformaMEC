@@ -101,7 +101,7 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="row m-b-10 m-t-20">
-                                           <div class="col-lg-4 m-t-5 col-lg-offset-1">Seleccione el tipo de test:</div>
+                                           <div class="col-lg-3 m-t-5 col-lg-offset-1">Seleccione el tipo de test:</div>
                                            <div class="col-lg-4">
                                               <select class="form-control" id="typeTestGPS">
                                                    <option value="GPS">GPS</option>
@@ -112,7 +112,7 @@
                                               <button class="btn btn-inverse" id="btnTestConfigGPS" onclick="requestTest('GPS')">Test</button>
                                            </div>
                                             <div class="col-lg-1">
-                                                <button class="btn btn-inverse" id="btnClearConfigGPS" onclick="clearTextAreaTest('resultTestGPS')">Limpiar</button>
+                                                <button class="btn btn-inverse" id="btnClearConfigGPS" onclick="clearTextAreaTest('resultTestGPS','GPS')">Limpiar</button>
                                             </div>
                                         </div>
                                        <div class="row">
@@ -159,7 +159,7 @@
                                                 <button class="btn btn-inverse" id="btnTestConfigADC" onclick="requestTest('ADC')">Test</button>
                                             </div>
                                             <div class="col-lg-1">
-                                                <button class="btn btn-inverse" id="btnClearConfigADC" onclick="clearTextAreaTest('resultTestADC')">Limpiar</button>
+                                                <button class="btn btn-inverse" id="btnClearConfigADC" onclick="clearTextAreaTest('resultTestADC','ADC')">Limpiar</button>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -195,7 +195,7 @@
                                                 <button class="btn btn-inverse" id="btnTestConfigACC" onclick="requestTest('ACC')">Test</button>
                                             </div>
                                             <div class="col-lg-1">
-                                                <button class="btn btn-inverse" id="btnClearConfigACC" onclick="clearTextAreaTest('resultTestACC')">Limpiar</button>
+                                                <button class="btn btn-inverse" id="btnClearConfigACC" onclick="clearTextAreaTest('resultTestACC','ACC')">Limpiar</button>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -231,7 +231,7 @@
                                                 <button class="btn btn-inverse" id="btnTestConfigWIFI" onclick="requestTest('WIFI')">Test</button>
                                             </div>
                                             <div class="col-lg-1">
-                                                <button class="btn btn-inverse" id="btnClearConfigWIFI" onclick="clearTextAreaTest('resultTestWIFI')">Limpiar</button>
+                                                <button class="btn btn-inverse" id="btnClearConfigWIFI" onclick="clearTextAreaTest('resultTestWIFI','WIFI')">Limpiar</button>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -263,7 +263,7 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="row m-b-10 m-t-20">
-                                            <div class="col-lg-4 m-t-5 col-lg-offset-1">Seleccione el tipo de test:</div>
+                                            <div class="col-lg-3 m-t-5 col-lg-offset-1">Seleccione el tipo de test:</div>
                                             <div class="col-lg-4">
                                                 <select class="form-control" id="typeTestRTC">
                                                     <option value="RTC">RTC</option>
@@ -274,7 +274,7 @@
                                                 <button class="btn btn-inverse" id="btnTestConfigGPS" onclick="requestTest('RTC')">Test</button>
                                             </div>
                                             <div class="col-lg-1">
-                                                <button class="btn btn-inverse" id="btnClearConfigGPS" onclick="clearTextAreaTest('resultTestRTC')">Limpiar</button>
+                                                <button class="btn btn-inverse" id="btnClearConfigGPS" onclick="clearTextAreaTest('resultTestRTC','RTC')">Limpiar</button>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -310,7 +310,7 @@
                                                 <button class="btn btn-inverse" id="btnTestConfigBAT" onclick="requestTest('BAT')">Test</button>
                                             </div>
                                             <div class="col-lg-1">
-                                                <button class="btn btn-inverse" id="btnClearConfigBAT" onclick="clearTextAreaTest('resultTestBAT')">Limpiar</button>
+                                                <button class="btn btn-inverse" id="btnClearConfigBAT" onclick="clearTextAreaTest('resultTestBAT','BAT')">Limpiar</button>
                                             </div>
                                         </div>
                                         <div class="row">

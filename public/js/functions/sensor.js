@@ -808,6 +808,6 @@ function requestTest(component) {
     })
 }
 
-function clearTextAreaTest(id) {
-    document.getElementById(id).innerHTML = "";
+function clearTextAreaTest(id, component) {
+    document.getElementById(id).innerHTML = `Resultado funcionamiento y recepcion del ${component}`;
 }
