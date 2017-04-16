@@ -62,7 +62,7 @@
             image: "<i class='"+icon+"'></i>"
         }, {
             style: 'metro',
-            className: style,
+            className: 'black',
             globalPosition:position,
             showAnimation: "show",
             showDuration: 0,

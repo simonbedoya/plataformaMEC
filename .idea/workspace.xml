@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/notifications/notifications.js" afterPath="$PROJECT_DIR$/public/assets/notifications/notifications.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/socket.js" afterPath="$PROJECT_DIR$/public/js/functions/socket.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -52,8 +53,8 @@
       <file leaf-file-name="socket.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-136">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="52" />
+            <state relative-caret-position="187">
+              <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -66,6 +67,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
               <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notifications.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/notifications/notifications.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -165,7 +176,6 @@
         <option value="$PROJECT_DIR$/views/partials/header.ejs" />
         <option value="$PROJECT_DIR$/views/partials/head.ejs" />
         <option value="$PROJECT_DIR$/views/partials/scripts.ejs" />
-        <option value="$PROJECT_DIR$/public/assets/notifications/notifications.js" />
         <option value="$PROJECT_DIR$/controller/data_controller.js" />
         <option value="$PROJECT_DIR$/routes/data.js" />
         <option value="$PROJECT_DIR$/public/js/functions/sensor.js" />
@@ -173,6 +183,7 @@
         <option value="$PROJECT_DIR$/sql/sql_graphic.js" />
         <option value="$PROJECT_DIR$/public/js/functions/graphic.js" />
         <option value="$PROJECT_DIR$/sql/sql_data.js" />
+        <option value="$PROJECT_DIR$/public/assets/notifications/notifications.js" />
         <option value="$PROJECT_DIR$/public/js/functions/socket.js" />
       </list>
     </option>
@@ -628,7 +639,7 @@
       <workItem from="1492284822516" duration="7197000" />
       <workItem from="1492298363625" duration="114000" />
       <workItem from="1492298492996" duration="5439000" />
-      <workItem from="1492350569914" duration="6564000" />
+      <workItem from="1492350569914" duration="7452000" />
     </task>
     <task id="LOCAL-00001" summary="13/04/2017 5">
       <created>1492120975874</created>
@@ -924,11 +935,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492369239681</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="16/04/2017 5">
+      <created>1492374782982</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1492374782982</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="591927000" />
+    <option name="totallyTimeSpent" value="592815000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1408,14 +1426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/notifications/notifications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="35" lean-forward="false" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/sensor.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
@@ -1663,10 +1673,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/notifications/notifications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="52" />
+        <state relative-caret-position="187">
+          <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>

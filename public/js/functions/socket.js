@@ -18,7 +18,9 @@ socket.on("connect", function (data) {
 });
 
 socket.on("showError", function (data) {
-    $.Notification.autoHideNotify('black', 'top right', 'Alerta...','Error en tiempo real.');
+    console.log(data);
+    let dataIn = JSON.parse(data);
+    $.Notification.autoHideNotify('error', 'top right', `Error con ${dataIn.component}`, dataIn.msg);
 });
 
 
