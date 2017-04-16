@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/sensor.js" afterPath="$PROJECT_DIR$/public/js/functions/sensor.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/config_sensor.ejs" afterPath="$PROJECT_DIR$/views/config_sensor.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -72,8 +71,8 @@
       <file leaf-file-name="config_sensor.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/config_sensor.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="312" column="146" lean-forward="true" selection-start-line="312" selection-start-column="146" selection-end-line="312" selection-end-column="146" />
+            <state relative-caret-position="1468">
+              <caret line="120" column="95" lean-forward="false" selection-start-line="120" selection-start-column="95" selection-end-line="120" selection-end-column="95" />
               <folding />
             </state>
           </provider>
@@ -687,7 +686,7 @@
       <workItem from="1492186272516" duration="14323000" />
       <workItem from="1492284822516" duration="7197000" />
       <workItem from="1492298363625" duration="114000" />
-      <workItem from="1492298492996" duration="2854000" />
+      <workItem from="1492298492996" duration="3001000" />
     </task>
     <task id="LOCAL-00001" summary="13/04/2017 5">
       <created>1492120975874</created>
@@ -934,11 +933,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492301161306</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="15/04/2017 15">
+      <created>1492301360670</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1492301360670</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="582778000" />
+    <option name="totallyTimeSpent" value="582925000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1018,7 +1024,8 @@
     <MESSAGE value="15/04/2017 12" />
     <MESSAGE value="15/04/2017 13" />
     <MESSAGE value="15/04/2017 14" />
-    <option name="LAST_COMMIT_MESSAGE" value="15/04/2017 14" />
+    <MESSAGE value="15/04/2017 15" />
+    <option name="LAST_COMMIT_MESSAGE" value="15/04/2017 15" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1647,8 +1654,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/config_sensor.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="312" column="146" lean-forward="true" selection-start-line="312" selection-start-column="146" selection-end-line="312" selection-end-column="146" />
+        <state relative-caret-position="1468">
+          <caret line="120" column="95" lean-forward="false" selection-start-line="120" selection-start-column="95" selection-end-line="120" selection-end-column="95" />
           <folding />
         </state>
       </provider>
