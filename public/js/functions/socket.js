@@ -17,6 +17,10 @@ socket.on("connect", function (data) {
     });
 });
 
+socket.on("showError", function (data) {
+    $.Notification.autoHideNotify('black', 'top right', 'Alerta...','Error en tiempo real.');
+});
+
 
 socket.on("testResponse", function (data) {
    console.log(data);
