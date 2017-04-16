@@ -23,6 +23,20 @@ socket.on("showError", function (data) {
     $.Notification.autoHideNotify('error', 'top right', `Error con ${dataIn.component}`, dataIn.msg);
 });
 
+socket.on("uploadFile",function (data) {
+    console.log(data);
+    let dataIn = JSON.parse(data);
+    let msg, title;
+    if(dataIn.type === "FILE"){
+        title = "Carga de archivos!";
+        msg = `Se han subido nuevos archivos relacionados con el sensor ${dataIn.name_sensor}`;
+    }else{
+        title = "Notificación eventos!";
+        msg = `Se ha registrado un nuevo evento relacionado con el sensor ${dataIn.name_sensor}`;
+    }
+    $.Notification.autoHideNotify('info', 'top right', title, msg);
+});
+
 
 socket.on("testResponse", function (data) {
    console.log(data);
