@@ -822,7 +822,7 @@ function showRealTime(pkSensor) {
 
 $("#real_time_graphic").on('show.bs.modal', function () {
     graph = new Rickshaw.Graph({
-        element: document.querySelector("#chartPcpal"),
+        element: document.querySelector("#realTimeGraphic"),
         height: 250,
         renderer: 'line',
         series: new Rickshaw.Series.FixedDuration([{ name: 'Breaking Bad' }], undefined, {
