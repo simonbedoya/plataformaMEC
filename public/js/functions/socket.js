@@ -47,6 +47,7 @@ socket.on("dataGraph", function (data) {
     if (chartData.length > 50) {
         chartData.splice(0, chartData.length - 50);
     }
+    chart.validateData();
 });
 
 socket.on("testResponse", function (data) {
