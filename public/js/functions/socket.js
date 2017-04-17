@@ -39,10 +39,14 @@ socket.on("uploadFile",function (data) {
 
 socket.on("dataGraph", function (data) {
     console.log(data);
-   let gData = { BHZ: 10};
+   /*let gData = { BHZ: 10};
 
     graph.series.addData(gData);
-    graph.update();
+    graph.update();*/
+   chartData.push.apply(chartData, {"date":"2017-05-31T16:12:51.442Z","value":48});
+    if (chartData.length > 50) {
+        chartData.splice(0, chartData.length - 50);
+    }
 });
 
 socket.on("testResponse", function (data) {

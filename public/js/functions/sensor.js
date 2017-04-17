@@ -872,13 +872,14 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
         type: "serial",
 
         // setting language to German
-        language: "de",
+        language: "es",
 
         dataProvider: chartData,
         categoryField: "date",
         categoryAxis: {
             parseDates: true,
-            gridAlpha: 0.15,
+            equalSpacing: true,
+            dashLength: 1,
             minorGridEnabled: true,
             axisColor: "#DADADA"
         },
@@ -903,16 +904,11 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
         chartCursor: {
             fullWidth:true,
             cursorAlpha:0.1
-        },
-        chartScrollbar: {
-            scrollbarHeight: 40,
-            color: "#FFFFFF",
-            autoGridCount: true,
-            graph: "g1"
         }
+
     });
 
-    chart.addListener("dataUpdated", zoomChart);
+    //chart.addListener("dataUpdated", zoomChart);
 
 
 

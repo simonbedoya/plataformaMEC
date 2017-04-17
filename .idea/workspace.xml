@@ -5,317 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIcon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconBlack.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconH.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconHBlack.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRectBig.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRectBigBlack.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRectBigBlackH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRectBigH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRectSmall.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRectSmallBlack.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRectSmallBlackH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRectSmallH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRoundBig.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRoundBigBlack.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRoundBigBlackH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRoundBigH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRoundSmall.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRoundSmallBlack.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRoundSmallBlackH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRoundSmallH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/export.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/exportWhite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/lens.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/lensWhite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/lensWhite_old.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/lens_old.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/black/pattern9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/chalk/pattern1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/chalk/pattern1r.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/chalk/pattern2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/chalk/pattern3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/chalk/pattern4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/chalk/pattern5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/chalk/pattern6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/patterns/white/pattern9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/images/bicycle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/images/car.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/images/motorcycle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/examples/images/bicycle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/examples/images/car.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/examples/images/motorcycle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/amcharts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/funnel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/gantt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/gauge.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRectBig.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRectBigBlack.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRectBigBlackH.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRectBigH.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRectSmall.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRectSmallBlack.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRectSmallBlackH.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRectSmallH.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRoundBig.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRoundBigBlack.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRoundBigBlackH.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRoundBigH.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRoundSmall.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRoundSmallBlack.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRoundSmallBlackH.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/dragIconRoundSmallH.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/eraserIcon.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/eraserIconH.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/lens.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/lensWhite.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/pencilIcon.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/pencilIconH.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/xIcon.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/images/xIconH.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/az.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/fo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/mk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/mn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/mt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/no.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/rw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/so.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/lang/zh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/pie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/animate/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/animate/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/animate/animate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/animate/animate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/animate/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/animate/examples/funnel.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/animate/examples/pie.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/animate/examples/radar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/animate/examples/serial_column.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/animate/examples/serial_line.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/animate/examples/xy.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/animate/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/animate/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/dataloader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/dataloader.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/data/MSFT.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/data/MSFT_events.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/data/TXN.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/data/gantt.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/data/gauge.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/data/map.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/data/map_areas.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/data/pie.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/data/pie.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/data/serial.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/data/serial.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/data/serial2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/gantt_json.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/gauge_json.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/map_json.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/map_json_external_function.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/pie_csv.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/pie_json.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/serial2_json.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/serial_csv.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/serial_json.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/serial_with_dynamic_graphs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/stock_csv_data_and_events.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/examples/stock_csv_progressbar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/lang/cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/lang/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/lang/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/lang/lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/dataloader/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/advanced.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/export.config.advanced.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/export.config.default.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/funnel.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/gantt.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/gauge.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/pie1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/pie2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/pie3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/pie4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/radar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/serial1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/serial2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/serial3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/stock.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/examples/xy.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/export.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/export.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/export.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/lang/cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/lang/de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/lang/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/lang/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/lang/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/lang/hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/lang/it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/lang/ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/lang/lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/lang/pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/lang/pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/lang/tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/lang/zh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/libs/FileSaver.js/FileSaver.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/libs/FileSaver.js/FileSaver.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/libs/blob.js/blob.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/libs/fabric.js/fabric.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/libs/fabric.js/fabric.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/libs/jszip/jszip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/libs/jszip/jszip.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/libs/pdfmake/pdfmake.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/libs/pdfmake/pdfmake.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/libs/pdfmake/pdfmake.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/libs/pdfmake/vfs_fonts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/libs/xlsx/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/libs/xlsx/xlsx.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/libs/xlsx/xlsx.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/libs/xlsx/xlsx.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/1.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/10.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/11.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/12.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/13.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/14.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/15.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/16.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/17.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/18.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/19.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/2.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/20.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/21.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/22.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/23.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/24.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/25.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/26.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/27.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/28.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/29.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/3.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/30.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/31.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/4.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/5.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/6.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/7.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/8.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/export/shapes/9.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/examples/funnel.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/examples/gantt.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/examples/gauge.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/examples/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/examples/map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/examples/pie1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/examples/pie2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/examples/pie3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/examples/radar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/examples/serial1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/examples/serial2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/examples/serial3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/examples/stock.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/examples/xy.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/responsive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/responsive.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/plugins/responsive/responsive.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/radar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/serial.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/themes/black.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/themes/chalk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/themes/dark.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/themes/light.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/themes/patterns.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/amcharts/xy.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/sensor.js" afterPath="$PROJECT_DIR$/public/js/functions/sensor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/real_time_graphic.ejs" afterPath="$PROJECT_DIR$/views/real_time_graphic.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/sensor.ejs" afterPath="$PROJECT_DIR$/views/sensor.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/socket.js" afterPath="$PROJECT_DIR$/public/js/functions/socket.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -348,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sensor.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sensor.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/sensor.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="167" column="19" lean-forward="false" selection-start-line="167" selection-start-column="19" selection-end-line="167" selection-end-column="19" />
+            <state relative-caret-position="288">
+              <caret line="163" column="44" lean-forward="true" selection-start-line="163" selection-start-column="44" selection-end-line="163" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -361,20 +53,20 @@
       <file leaf-file-name="sensor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-862">
-              <caret line="870" column="4" lean-forward="false" selection-start-line="870" selection-start-column="4" selection-end-line="870" selection-end-column="4" />
+            <state relative-caret-position="1654">
+              <caret line="910" column="6" lean-forward="false" selection-start-line="910" selection-start-column="6" selection-end-line="910" selection-end-column="6" />
               <folding>
-                <marker date="1492439365561" expanded="true" signature="3566:3601" ph="..." />
-                <marker date="1492439365561" expanded="true" signature="3784:3819" ph="..." />
-                <marker date="1492439365561" expanded="true" signature="3992:4027" ph="..." />
-                <marker date="1492439365561" expanded="true" signature="4229:4264" ph="..." />
-                <marker date="1492439365561" expanded="true" signature="4449:4484" ph="..." />
-                <marker date="1492439365561" expanded="true" signature="4661:4696" ph="..." />
-                <marker date="1492439365561" expanded="true" signature="4869:4883" ph="..." />
-                <marker date="1492439365561" expanded="true" signature="25687:25701" ph="..." />
-                <marker date="1492439365561" expanded="true" signature="25823:25837" ph="..." />
-                <marker date="1492439365561" expanded="true" signature="30704:30719" ph="..." />
-                <marker date="1492439365561" expanded="true" signature="32742:32773" ph="..." />
+                <marker date="1492457433189" expanded="true" signature="3566:3601" ph="..." />
+                <marker date="1492457433189" expanded="true" signature="3784:3819" ph="..." />
+                <marker date="1492457433189" expanded="true" signature="3992:4027" ph="..." />
+                <marker date="1492457433189" expanded="true" signature="4229:4264" ph="..." />
+                <marker date="1492457433189" expanded="true" signature="4449:4484" ph="..." />
+                <marker date="1492457433189" expanded="true" signature="4661:4696" ph="..." />
+                <marker date="1492457433189" expanded="true" signature="4869:4883" ph="..." />
+                <marker date="1492457433189" expanded="true" signature="25687:25701" ph="..." />
+                <marker date="1492457433189" expanded="true" signature="25823:25837" ph="..." />
+                <marker date="1492457433189" expanded="true" signature="30734:30749" ph="..." />
+                <marker date="1492457433189" expanded="true" signature="32618:32649" ph="..." />
               </folding>
             </state>
           </provider>
@@ -394,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="socket.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="socket.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="41" column="26" lean-forward="false" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+            <state relative-caret-position="289">
+              <caret line="45" column="83" lean-forward="false" selection-start-line="45" selection-start-column="83" selection-end-line="45" selection-end-column="83" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -515,10 +207,10 @@
         <option value="$PROJECT_DIR$/views/graphic.ejs" />
         <option value="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.js" />
         <option value="$PROJECT_DIR$/public/assets/rickshaw-chart/vendor/Rickshaw.js" />
-        <option value="$PROJECT_DIR$/public/js/functions/socket.js" />
         <option value="$PROJECT_DIR$/views/real_time_graphic.ejs" />
-        <option value="$PROJECT_DIR$/public/js/functions/sensor.js" />
         <option value="$PROJECT_DIR$/views/sensor.ejs" />
+        <option value="$PROJECT_DIR$/public/js/functions/sensor.js" />
+        <option value="$PROJECT_DIR$/public/js/functions/socket.js" />
       </list>
     </option>
   </component>
@@ -1014,14 +706,7 @@
       <workItem from="1492298363625" duration="114000" />
       <workItem from="1492298492996" duration="5439000" />
       <workItem from="1492350569914" duration="25654000" />
-      <workItem from="1492439166390" duration="2253000" />
-    </task>
-    <task id="LOCAL-00053" summary="16/04/2017 15">
-      <created>1492387148676</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1492387148676</updated>
+      <workItem from="1492439166390" duration="4811000" />
     </task>
     <task id="LOCAL-00054" summary="16/04/2017 16">
       <created>1492387376000</created>
@@ -1359,11 +1044,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492405442217</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="17/04/2017">
+      <created>1492442099484</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1492442099485</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="613270000" />
+    <option name="totallyTimeSpent" value="615828000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1376,8 +1068,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19717261" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19717261" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1422,7 +1115,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="16/04/2017 40" />
     <MESSAGE value="16/04/2017 41" />
     <MESSAGE value="16/04/2017 42" />
     <MESSAGE value="16/04/2017 43" />
@@ -1447,7 +1139,8 @@
     <MESSAGE value="16/04/2017 62" />
     <MESSAGE value="16/04/2017 63" />
     <MESSAGE value="17/04/2017" />
-    <option name="LAST_COMMIT_MESSAGE" value="17/04/2017" />
+    <MESSAGE value="17/04/2017 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="17/04/2017 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2006,6 +1699,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="423" column="2" lean-forward="false" selection-start-line="423" selection-start-column="2" selection-end-line="423" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2026,16 +1720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="41" column="26" lean-forward="false" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/real_time_graphic.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
@@ -2048,31 +1732,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/sensor.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="163" column="44" lean-forward="true" selection-start-line="163" selection-start-column="44" selection-end-line="163" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-862">
-          <caret line="870" column="4" lean-forward="false" selection-start-line="870" selection-start-column="4" selection-end-line="870" selection-end-column="4" />
+        <state relative-caret-position="1654">
+          <caret line="910" column="6" lean-forward="false" selection-start-line="910" selection-start-column="6" selection-end-line="910" selection-end-column="6" />
           <folding>
-            <marker date="1492439365561" expanded="true" signature="3566:3601" ph="..." />
-            <marker date="1492439365561" expanded="true" signature="3784:3819" ph="..." />
-            <marker date="1492439365561" expanded="true" signature="3992:4027" ph="..." />
-            <marker date="1492439365561" expanded="true" signature="4229:4264" ph="..." />
-            <marker date="1492439365561" expanded="true" signature="4449:4484" ph="..." />
-            <marker date="1492439365561" expanded="true" signature="4661:4696" ph="..." />
-            <marker date="1492439365561" expanded="true" signature="4869:4883" ph="..." />
-            <marker date="1492439365561" expanded="true" signature="25687:25701" ph="..." />
-            <marker date="1492439365561" expanded="true" signature="25823:25837" ph="..." />
-            <marker date="1492439365561" expanded="true" signature="30704:30719" ph="..." />
-            <marker date="1492439365561" expanded="true" signature="32742:32773" ph="..." />
+            <marker date="1492457433189" expanded="true" signature="3566:3601" ph="..." />
+            <marker date="1492457433189" expanded="true" signature="3784:3819" ph="..." />
+            <marker date="1492457433189" expanded="true" signature="3992:4027" ph="..." />
+            <marker date="1492457433189" expanded="true" signature="4229:4264" ph="..." />
+            <marker date="1492457433189" expanded="true" signature="4449:4484" ph="..." />
+            <marker date="1492457433189" expanded="true" signature="4661:4696" ph="..." />
+            <marker date="1492457433189" expanded="true" signature="4869:4883" ph="..." />
+            <marker date="1492457433189" expanded="true" signature="25687:25701" ph="..." />
+            <marker date="1492457433189" expanded="true" signature="25823:25837" ph="..." />
+            <marker date="1492457433189" expanded="true" signature="30734:30749" ph="..." />
+            <marker date="1492457433189" expanded="true" signature="32618:32649" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/sensor.ejs">
+    <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="167" column="19" lean-forward="false" selection-start-line="167" selection-start-column="19" selection-end-line="167" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="289">
+          <caret line="45" column="83" lean-forward="false" selection-start-line="45" selection-start-column="83" selection-end-line="45" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
