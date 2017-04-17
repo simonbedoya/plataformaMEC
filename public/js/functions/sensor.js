@@ -834,3 +834,4 @@ $("#real_time_graphic").on('show.bs.modal', function () {
 
     graph.render();
 });
+

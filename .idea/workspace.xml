@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/rickshaw-chart/vendor/Rickshaw.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.js" afterPath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/sensor.ejs" afterPath="$PROJECT_DIR$/views/sensor.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/sensor.js" afterPath="$PROJECT_DIR$/public/js/functions/sensor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/socket.js" afterPath="$PROJECT_DIR$/public/js/functions/socket.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,74 +50,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rickshaw.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/vendor/Rickshaw.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="2834" column="34" lean-forward="false" selection-start-line="2834" selection-start-column="31" selection-end-line="2834" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#42#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="sensor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="823" column="27" lean-forward="false" selection-start-line="823" selection-start-column="27" selection-end-line="823" selection-end-column="27" />
+            <state relative-caret-position="474">
+              <caret line="837" column="0" lean-forward="false" selection-start-line="837" selection-start-column="0" selection-end-line="837" selection-end-column="0" />
               <folding>
-                <marker date="1492388682487" expanded="true" signature="3566:3601" ph="..." />
-                <marker date="1492388682487" expanded="true" signature="3784:3819" ph="..." />
-                <marker date="1492388682487" expanded="true" signature="3992:4027" ph="..." />
-                <marker date="1492388682487" expanded="true" signature="4204:4239" ph="..." />
-                <marker date="1492388682487" expanded="true" signature="4424:4459" ph="..." />
-                <marker date="1492388682487" expanded="true" signature="4636:4671" ph="..." />
-                <marker date="1492388682487" expanded="true" signature="4844:4858" ph="..." />
-                <marker date="1492388682487" expanded="true" signature="25662:25676" ph="..." />
-                <marker date="1492388682487" expanded="true" signature="25798:25812" ph="..." />
+                <marker date="1492389348966" expanded="true" signature="3566:3601" ph="..." />
+                <marker date="1492389348966" expanded="true" signature="3784:3819" ph="..." />
+                <marker date="1492389348966" expanded="true" signature="3992:4027" ph="..." />
+                <marker date="1492389348966" expanded="true" signature="4204:4239" ph="..." />
+                <marker date="1492389348966" expanded="true" signature="4424:4459" ph="..." />
+                <marker date="1492389348966" expanded="true" signature="4636:4671" ph="..." />
+                <marker date="1492389348966" expanded="true" signature="4844:4858" ph="..." />
+                <marker date="1492389348966" expanded="true" signature="25662:25676" ph="..." />
+                <marker date="1492389348966" expanded="true" signature="25798:25812" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rickshaw.Graph.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rickshaw.Series.FixedDuration.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Series.FixedDuration.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rickshaw.Series.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Series.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="80" column="4" lean-forward="false" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rickshaw.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -129,6 +76,18 @@
             <state relative-caret-position="221">
               <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="52" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="socket.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#42#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,9 +140,9 @@
       <find>rick</find>
       <find>shown</find>
       <find>d3.scale.linear</find>
-      <find>modal</find>
-      <find>show</find>
       <find>svg</find>
+      <find>show</find>
+      <find>modal</find>
     </findStrings>
     <dirStrings>
       <dir>D:\Documentos\Info\Trabajo de grado\Apps\AppAdminMEC\public\js</dir>
@@ -239,13 +198,13 @@
         <option value="$PROJECT_DIR$/public/js/functions/graphic.js" />
         <option value="$PROJECT_DIR$/sql/sql_data.js" />
         <option value="$PROJECT_DIR$/public/assets/notifications/notifications.js" />
-        <option value="$PROJECT_DIR$/public/js/functions/socket.js" />
         <option value="$PROJECT_DIR$/views/graphic.ejs" />
         <option value="$PROJECT_DIR$/views/real_time_graphic.ejs" />
-        <option value="$PROJECT_DIR$/public/js/functions/sensor.js" />
         <option value="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.js" />
         <option value="$PROJECT_DIR$/views/sensor.ejs" />
         <option value="$PROJECT_DIR$/public/assets/rickshaw-chart/vendor/Rickshaw.js" />
+        <option value="$PROJECT_DIR$/public/js/functions/sensor.js" />
+        <option value="$PROJECT_DIR$/public/js/functions/socket.js" />
       </list>
     </option>
   </component>
@@ -438,54 +397,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rickshaw-chart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdminMEC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rickshaw-chart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -766,14 +677,7 @@
       <workItem from="1492284822516" duration="7197000" />
       <workItem from="1492298363625" duration="114000" />
       <workItem from="1492298492996" duration="5439000" />
-      <workItem from="1492350569914" duration="15138000" />
-    </task>
-    <task id="LOCAL-00015" summary="14/04/2017 4">
-      <created>1492200016620</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1492200016620</updated>
+      <workItem from="1492350569914" duration="15614000" />
     </task>
     <task id="LOCAL-00016" summary="14/04/2017 5">
       <created>1492200117962</created>
@@ -1111,11 +1015,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492388700709</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="16/04/2017 26">
+      <created>1492389133704</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1492389133704</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="600501000" />
+    <option name="totallyTimeSpent" value="600977000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1175,7 +1086,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="16/04/2017 1" />
     <MESSAGE value="16/04/2017 2" />
     <MESSAGE value="16/04/2017 3" />
     <MESSAGE value="16/04/2017 4" />
@@ -1200,7 +1110,8 @@
     <MESSAGE value="16/04/2017 23" />
     <MESSAGE value="16/04/2017 24" />
     <MESSAGE value="16/04/2017 25" />
-    <option name="LAST_COMMIT_MESSAGE" value="16/04/2017 25" />
+    <MESSAGE value="16/04/2017 26" />
+    <option name="LAST_COMMIT_MESSAGE" value="16/04/2017 26" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1751,16 +1662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="36" column="67" lean-forward="false" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/info_sensor.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="523">
@@ -1827,29 +1728,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="823" column="27" lean-forward="false" selection-start-line="823" selection-start-column="27" selection-end-line="823" selection-end-column="27" />
-          <folding>
-            <marker date="1492388682487" expanded="true" signature="3566:3601" ph="..." />
-            <marker date="1492388682487" expanded="true" signature="3784:3819" ph="..." />
-            <marker date="1492388682487" expanded="true" signature="3992:4027" ph="..." />
-            <marker date="1492388682487" expanded="true" signature="4204:4239" ph="..." />
-            <marker date="1492388682487" expanded="true" signature="4424:4459" ph="..." />
-            <marker date="1492388682487" expanded="true" signature="4636:4671" ph="..." />
-            <marker date="1492388682487" expanded="true" signature="4844:4858" ph="..." />
-            <marker date="1492388682487" expanded="true" signature="25662:25676" ph="..." />
-            <marker date="1492388682487" expanded="true" signature="25798:25812" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/vendor/Rickshaw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="2834" column="34" lean-forward="false" selection-start-line="2834" selection-start-column="31" selection-end-line="2834" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1861,10 +1754,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/vendor/Rickshaw.js">
+    <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="2834" column="34" lean-forward="false" selection-start-line="2834" selection-start-column="31" selection-end-line="2834" selection-end-column="34" />
+        <state relative-caret-position="474">
+          <caret line="837" column="0" lean-forward="false" selection-start-line="837" selection-start-column="0" selection-end-line="837" selection-end-column="0" />
+          <folding>
+            <marker date="1492389348966" expanded="true" signature="3566:3601" ph="..." />
+            <marker date="1492389348966" expanded="true" signature="3784:3819" ph="..." />
+            <marker date="1492389348966" expanded="true" signature="3992:4027" ph="..." />
+            <marker date="1492389348966" expanded="true" signature="4204:4239" ph="..." />
+            <marker date="1492389348966" expanded="true" signature="4424:4459" ph="..." />
+            <marker date="1492389348966" expanded="true" signature="4636:4671" ph="..." />
+            <marker date="1492389348966" expanded="true" signature="4844:4858" ph="..." />
+            <marker date="1492389348966" expanded="true" signature="25662:25676" ph="..." />
+            <marker date="1492389348966" expanded="true" signature="25798:25812" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="20" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
