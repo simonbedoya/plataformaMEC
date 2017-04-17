@@ -883,7 +883,10 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
             "minPeriod": "fff",
             "dashLength": 1,
             "gridAlpha": 0.15,
-            "axisColor": "#DADADA"
+            "axisColor": "#DADADA",
+            "dateFormats": [{
+                "period":"fff","format":"JJ:NN:SS"
+            }]
         },
         "graphs": [ {
             "id": "g1",
