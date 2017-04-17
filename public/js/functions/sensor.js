@@ -8,6 +8,7 @@ let locationns = {lat: 2.4503137, lng: -76.6164085};
 let dataNetworksSensor;
 let pk_sensor = 0;
 let firstLoad = 0;
+let graph;
 
 function initMap() {
     let mapDiv = document.getElementById('map_location_sensor');
@@ -820,5 +821,16 @@ function showRealTime(pkSensor) {
 }
 
 $("#real_time_graphic").on('show.bs.modal', function () {
-    alert("carga");
+    graph = new Rickshaw.Graph({
+        element: document.querySelector("#chartPcpal"),
+        height: 250,
+        renderer: 'line',
+        series: new Rickshaw.Series.FixedDuration([{ name: 'Breaking Bad' }], undefined, {
+            timeInterval: 100,
+            maxDataPoints: 100,
+            timeBase: new Date().getTime() / 1000
+        })
+    });
+
+    graph.render();
 });
