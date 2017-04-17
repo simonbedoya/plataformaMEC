@@ -821,32 +821,37 @@ function showRealTime(pkSensor) {
 }
 
 $("#real_time_graphic").on('shown.bs.modal', function () {
+    if(graph === undefined) {
+        graph = new Rickshaw.Graph({
+            element: document.querySelector("#realTimeGraphic"),
+            height: 250,
+            width: document.getElementById("divcontainer").offsetWidth - 20,
+            renderer: 'line',
+            series: new Rickshaw.Series.FixedDuration([{color: 'steelblue', name: 'Breaking Bad'}], undefined, {
+                timeInterval: 1000,
+                maxDataPoints: 10,
+                timeBase: new Date().getTime() / 1000
+            })
+        });
 
-    graph = new Rickshaw.Graph({
-        element: document.querySelector("#realTimeGraphic"),
-        height: 250,
-        width: document.getElementById("divcontainer").offsetWidth - 80,
-        renderer: 'line',
-        series: new Rickshaw.Series.FixedDuration([{ color: 'steelblue', name: 'Breaking Bad' }], undefined, {
-            timeInterval: 1000,
-            maxDataPoints: 10,
-            timeBase: new Date().getTime() / 1000
-        })
-    });
+        let x_axis = new Rickshaw.Graph.Axis.Time({graph: graph});
 
-    let x_axis = new Rickshaw.Graph.Axis.Time({graph: graph});
+        let y_axis = new Rickshaw.Graph.Axis.Y({
+            graph: graph,
+            orientation: 'left',
+            tickFormat: Rickshaw.Fixtures.Number.formatKMBT,
+            element: document.getElementById('y_axis'),
+        });
 
-    let y_axis = new Rickshaw.Graph.Axis.Y({
-        graph: graph,
-        orientation: 'left',
-        tickFormat: Rickshaw.Fixtures.Number.formatKMBT,
-        element: document.getElementById('y_axis'),
-    });
 
+
+        document.getElementById("y_axis").setAttribute("style", "margin-left: -40px;");
+
+
+    }
+    
     graph.max = 30;
     graph.min = 0;
-
-    document.getElementById("y_axis").setAttribute("style", "margin-left: -40px;");
 
     graph.render();
 });
