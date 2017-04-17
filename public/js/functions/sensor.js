@@ -821,6 +821,7 @@ function showRealTime(pkSensor) {
 }
 
 $("#real_time_graphic").on('shown.bs.modal', function () {
+    clearGraphic();
     if(graph === undefined) {
         graph = new Rickshaw.Graph({
             element: document.querySelector("#realTimeGraphic"),
@@ -849,10 +850,20 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
 
 
     }
-    
+
     graph.max = 30;
     graph.min = 0;
 
     graph.render();
 });
+
+function clearGraphic(){
+    document.getElementById("divcontainer").innerHTML = "";
+    graph = null;
+    document.getElementById("divcontainer").innerHTML = "<div id='chart_container'>"+
+                                                            "<div id='y_axis'></div>"+
+                                                            "<div id='realTimeGraphic' style='width: 100%;'></div>"+
+                                                            "<div id='preview'></div>"+
+                                                        "</div>";
+}
 
