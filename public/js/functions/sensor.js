@@ -865,46 +865,28 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
 
     graph.render();
 */
-    chartData = [];
-
     chart = AmCharts.makeChart("chartdiv", {
         type: "serial",
-
-        // setting language to German
-        language: "es",
-
-        dataProvider: chartData,
+        theme: "light",
         dataDateFormat: "YYYY-MM-DD",
+        valueAxes: [{
+            id: "v1",
+            position: "left"
+        }],
+        graphs: [{
+            id: "g1",
+            bullet: "round",
+            valueField: "value",
+            balloonText: "[[category]]: [[value]]"
+        }],
+        categoryField: "date",
         categoryAxis: {
             parseDates: true,
             equalSpacing: true,
             dashLength: 1,
-            minorGridEnabled: true,
-            axisColor: "#DADADA"
+            minorGridEnabled: true
         },
-        valueAxes: [{
-            axisAlpha: 0.2,
-            id: "v1"
-        }],
-        graphs: [{
-            title: "red line",
-            id: "g1",
-            valueAxis: "v1",
-            valueField: "visits",
-            bullet: "round",
-            bulletBorderColor: "#FFFFFF",
-            bulletBorderAlpha: 1,
-            lineThickness: 2,
-            lineColor: "#b5030d",
-            negativeLineColor: "#0352b5",
-            hideBulletsCount:30,
-            balloonText: "[[category]]<br><b><span style='font-size:14px;'>value: [[value]]</span></b>"
-        }],
-        chartCursor: {
-            fullWidth:true,
-            cursorAlpha:0.1
-        }
-
+        dataProvider: chartData
     });
 
     //chart.addListener("dataUpdated", zoomChart);
