@@ -825,7 +825,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
     graph = new Rickshaw.Graph({
         element: document.querySelector("#realTimeGraphic"),
         height: 250,
-        width: document.getElementById("chart_container").offsetWidth,
+        width: document.getElementById("divcontainer").offsetWidth - 80,
         renderer: 'line',
         series: new Rickshaw.Series.FixedDuration([{ color: 'steelblue', name: 'Breaking Bad' }], undefined, {
             timeInterval: 1000,
