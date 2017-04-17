@@ -868,7 +868,12 @@ function clearGraphic(){
     graph = null;
     document.getElementById("divcontainer").innerHTML = "<div id='chart_container'>"+
                                                             "<div id='y_axis'></div>"+
-                                                            "<div id='realTimeGraphic' style='width: 100%;'></div>"+
+                                                                "<div id='realTimeGraphic' style='width: 100%; margin-left: 20px;'></div>"+
+                                                                "<div id='legend_container'>"+
+                                                                "<div id='smoother' title='Smoothing'></div>"+
+                                                                "<div id='legend'></div>"+
+                                                                "</div>"+
+                                                                "<div id='slider'></div>"+
                                                         "</div>";
 }
 
