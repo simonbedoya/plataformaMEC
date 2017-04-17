@@ -826,7 +826,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
         graph = new Rickshaw.Graph({
             element: document.querySelector("#realTimeGraphic"),
             height: 250,
-            width: document.getElementById("divcontainer").offsetWidth - 20,
+            width: document.getElementById("divcontainer").offsetWidth - 40,
             renderer: 'line',
             series: new Rickshaw.Series.FixedDuration([{color: 'steelblue', name: 'BHZ'}], undefined, {
                 timeInterval: 100,
