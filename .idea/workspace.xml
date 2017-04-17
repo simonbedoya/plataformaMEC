@@ -42,8 +42,8 @@
       <file leaf-file-name="sensor.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/sensor.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="185" column="67" lean-forward="false" selection-start-line="185" selection-start-column="67" selection-end-line="185" selection-end-column="67" />
+            <state relative-caret-position="423">
+              <caret line="186" column="50" lean-forward="false" selection-start-line="186" selection-start-column="50" selection-end-line="186" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="338">
-              <caret line="827" column="42" lean-forward="false" selection-start-line="827" selection-start-column="42" selection-end-line="827" selection-end-column="42" />
+              <caret line="827" column="40" lean-forward="false" selection-start-line="827" selection-start-column="40" selection-end-line="827" selection-end-column="40" />
               <folding>
                 <marker date="1492387470662" expanded="true" signature="3566:3601" ph="..." />
                 <marker date="1492387470662" expanded="true" signature="3784:3819" ph="..." />
@@ -72,8 +72,18 @@
       <file leaf-file-name="Rickshaw.Series.FixedDuration.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Series.FixedDuration.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+            <state relative-caret-position="204">
+              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rickshaw.Series.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Series.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="80" column="4" lean-forward="false" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -728,14 +738,7 @@
       <workItem from="1492284822516" duration="7197000" />
       <workItem from="1492298363625" duration="114000" />
       <workItem from="1492298492996" duration="5439000" />
-      <workItem from="1492350569914" duration="13809000" />
-    </task>
-    <task id="LOCAL-00008" summary="13/04/2017 5">
-      <created>1492187343988</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1492187343988</updated>
+      <workItem from="1492350569914" duration="14004000" />
     </task>
     <task id="LOCAL-00009" summary="13/04/2017 5">
       <created>1492187426148</created>
@@ -1073,11 +1076,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492387607342</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="16/04/2017 19">
+      <created>1492387789906</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1492387789907</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="599172000" />
+    <option name="totallyTimeSpent" value="599367000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1137,7 +1147,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="15/04/2017 11" />
     <MESSAGE value="15/04/2017 12" />
     <MESSAGE value="15/04/2017 13" />
     <MESSAGE value="15/04/2017 14" />
@@ -1162,7 +1171,8 @@
     <MESSAGE value="16/04/2017 16" />
     <MESSAGE value="16/04/2017 17" />
     <MESSAGE value="16/04/2017 18" />
-    <option name="LAST_COMMIT_MESSAGE" value="16/04/2017 18" />
+    <MESSAGE value="16/04/2017 19" />
+    <option name="LAST_COMMIT_MESSAGE" value="16/04/2017 19" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1786,18 +1796,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Series.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
-          <caret line="827" column="42" lean-forward="false" selection-start-line="827" selection-start-column="42" selection-end-line="827" selection-end-column="42" />
+          <caret line="827" column="40" lean-forward="false" selection-start-line="827" selection-start-column="40" selection-end-line="827" selection-end-column="40" />
           <folding>
             <marker date="1492387470662" expanded="true" signature="3566:3601" ph="..." />
             <marker date="1492387470662" expanded="true" signature="3784:3819" ph="..." />
@@ -1814,16 +1816,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Series.FixedDuration.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+        <state relative-caret-position="204">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Series.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="80" column="4" lean-forward="false" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/sensor.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="185" column="67" lean-forward="false" selection-start-line="185" selection-start-column="67" selection-end-line="185" selection-end-column="67" />
+        <state relative-caret-position="423">
+          <caret line="186" column="50" lean-forward="false" selection-start-line="186" selection-start-column="50" selection-end-line="186" selection-end-column="50" />
           <folding />
         </state>
       </provider>
