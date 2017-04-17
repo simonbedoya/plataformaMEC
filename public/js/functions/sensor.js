@@ -823,7 +823,7 @@ function showRealTime(pkSensor) {
 $("#real_time_graphic").on('show.bs.modal', function () {
     let dataNew = [];
     for(let i = 0; i < 10000; i++){
-        dataNew.push({x:((10000/1000)*i), y: 0});
+        dataNew.push({x: 0});
     }
     graph = new Rickshaw.Graph({
         element: document.querySelector("#realTimeGraphic"),
