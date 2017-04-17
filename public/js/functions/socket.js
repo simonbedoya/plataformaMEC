@@ -48,7 +48,7 @@ socket.on("dataGraph", function (data) {
     // add new one at the end
     day++;
     var newDate = new Date( firstDate );
-    newDate.setDate( newDate.getDate() + day );
+    newDate.setDate( newDate.getMilliseconds() + (day*100) );
     var visits = Math.round( Math.random() * 40 ) - 20;
     chart.dataProvider.push( {
         date: newDate,
