@@ -920,14 +920,14 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
 // generate some random data, quite different range
 function generateChartData() {
     var chartData = [];
-    for ( day = 0; day < 50; day++ ) {
+    for ( day = 0; day < 5; day++ ) {
         var newDate = new Date( firstDate );
         newDate.setDate( newDate + day );
 
         var visits = Math.round( Math.random() * 40 ) - 20;
 
         chartData.push( {
-            "date": newDate.getMilliseconds(),
+            "date": newDate,
             "visits": 0
         } );
     }
