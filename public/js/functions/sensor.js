@@ -828,7 +828,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
             height: 250,
             width: document.getElementById("divcontainer").offsetWidth - 20,
             renderer: 'line',
-            series: new Rickshaw.Series.FixedDuration([{color: 'steelblue', name: 'Breaking Bad'}], undefined, {
+            series: new Rickshaw.Series.FixedDuration([{color: 'steelblue', name: 'BHZ'}], undefined, {
                 timeInterval: 100,
                 maxDataPoints: 100,
                 timeBase: 0
@@ -844,7 +844,12 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
             element: document.getElementById('y_axis'),
         });
 
-
+        let hoverDetail = new Rickshaw.Graph.HoverDetail( {
+            graph: graph,
+            formatter: function(series, x, y) {
+                return series.name + ": " + parseInt(y);
+            }
+        } );
 
         document.getElementById("y_axis").setAttribute("style", "margin-left: -40px;");
 
@@ -856,15 +861,6 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
 
     graph.render();
 
-    var hoverDetail = new Rickshaw.Graph.HoverDetail( {
-        graph: graph,
-        formatter: function(series, x, y) {
-            var date = '<span class="date">' + new Date(x * 1000).toUTCString() + '</span>';
-            var swatch = '<span class="detail_swatch" style="background-color: ' + series.color + '"></span>';
-            var content = swatch + series.name + ": " + parseInt(y) + '<br>' + date;
-            return content;
-        }
-    } );
 });
 
 function clearGraphic(){
