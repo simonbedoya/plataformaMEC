@@ -37,7 +37,8 @@ socket.on("uploadFile",function (data) {
     $.Notification.autoHideNotify('info', 'top right', title, msg);
 });
 
-socket.on('dataGraph', function (data) {
+socket.on("dataGraph", function (data) {
+    console.log(data);
    let gData = {
        x: 10, y: 20
    };
