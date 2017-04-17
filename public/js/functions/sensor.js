@@ -866,7 +866,6 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
     graph.render();
 */
     chartData = [];
-    generateChartData();
 
     chart = AmCharts.makeChart("chartdiv", {
         type: "serial",
