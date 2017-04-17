@@ -696,7 +696,7 @@
                 var elementHeight = parseInt(style.getPropertyValue('height'), 10);
             }
 
-            this.width = args.width || elementWidth || 400;
+            this.width = '100%';
             this.height = args.height || elementHeight || 250;
 
             this.vis && this.vis
