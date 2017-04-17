@@ -875,7 +875,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
             "backgroundColor": '#000000',
             "backgroundAlpha": 0.15
         },
-        "dataProvider": chartData,
+        "dataProvider": generateChartData(),
         "categoryField": "date",
         "categoryAxis": {
             "parseDates": true,
@@ -914,23 +914,20 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
 
 // generate some random data, quite different range
 function generateChartData() {
-    var firstDate = new Date();
-    firstDate.setDate(firstDate.getDate() - 500);
+    var chartData = [];
+    for ( day = 0; day < 50; day++ ) {
+        var newDate = new Date( firstDate );
+        newDate.setDate( newDate.getDate() + day );
 
-    for (var i = 0; i < 500; i++) {
-        // we create date objects here. In your data, you can have date strings
-        // and then set format of your dates using chart.dataDateFormat property,
-        // however when possible, use date objects, as this will speed up chart rendering.
-        var newDate = new Date(firstDate);
-        newDate.setDate(newDate.getDate() + i);
+        var visits = Math.round( Math.random() * 40 ) - 20;
 
-        var visits = Math.round(Math.random() * 40) - 20;
-
-        chartData.push({
-            date: newDate,
-            visits: visits
-        });
+        chartData.push( {
+            "date": newDate,
+            "visits": 0
+        } );
     }
+
+    return chartData;
 }
 
 // this method is called when chart is first inited as we listen for "dataUpdated" event
