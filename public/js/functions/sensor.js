@@ -920,7 +920,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
 // generate some random data, quite different range
 function generateChartData() {
     var chartData = [];
-    for ( day = 0; day < 5; day++ ) {
+    for ( day = 0; day < 50; day++ ) {
         var newDate = new Date( firstDate );
         newDate.setDate( newDate + day );
 
