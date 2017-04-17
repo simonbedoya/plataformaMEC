@@ -40,7 +40,7 @@ socket.on("uploadFile",function (data) {
 socket.on("dataGraph", function (data) {
     console.log(data);
    let gData = {
-       x: 10, y: 20
+       x: 10
    };
     graph.series.addData(gData);
     graph.update();
