@@ -1,6 +1,3 @@
-/**
- * Created by sbv23 on 16/04/2017.
- */
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
         define(['d3'], function (d3) {
@@ -426,7 +423,7 @@
 
             this.vis = d3.select(this.element)
                 .append("svg:svg")
-                .attr('width', '100%')
+                .attr('width', this.width)
                 .attr('height', this.height);
 
             this.discoverRange();
@@ -1515,7 +1512,7 @@
 
                 this.vis = d3.select(args.element)
                     .append("svg:svg")
-                    .attr('height', '100%')
+                    .attr('height', this.height)
                     .attr('width', this.width)
                     .attr('class', 'rickshaw_graph x_axis_d3');
 
@@ -2663,7 +2660,7 @@
                     if (this.svg) {
                         var svgHeight = height + this.config.frameHandleThickness * 2;
                         var svgWidth = width + this.config.frameHandleThickness * 2;
-                        this.svg.style("width", svgWidth + "%");
+                        this.svg.style("width", svgWidth + "px");
                         this.svg.style("height", svgHeight + "px");
                     }
                 }, this);
@@ -2758,7 +2755,7 @@
                 .append("svg")
                 .classed("rickshaw_range_slider_preview", true)
                 .style("height", this.config.height + "px")
-                .style("width", this.config.width + "%")
+                .style("width", this.config.width + "px")
                 .style("position", "absolute")
                 .style("top", 0);
 

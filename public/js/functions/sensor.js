@@ -821,15 +821,13 @@ function showRealTime(pkSensor) {
 }
 
 $("#real_time_graphic").on('show.bs.modal', function () {
-    let dataNew = [];
-    for(let i = 0; i < 10000; i++){
-        dataNew.push(0);
-    }
+
     graph = new Rickshaw.Graph({
         element: document.querySelector("#realTimeGraphic"),
         height: 250,
+        width: 600,
         renderer: 'line',
-        series: new Rickshaw.Series.FixedDuration([{ color: 'steelblue', data: dataNew, name: 'Breaking Bad' }], undefined, {
+        series: new Rickshaw.Series.FixedDuration([{ color: 'steelblue', name: 'Breaking Bad' }], undefined, {
             timeInterval: 1000,
             maxDataPoints: 10,
             timeBase: new Date().getTime() / 1000
