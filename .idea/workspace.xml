@@ -4,10 +4,48 @@
     <bookmark url="file://$PROJECT_DIR$/routes/functions/network.js" line="6" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="16/04/2017 38">
+    <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Class.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Color.Palette.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Compat.ClassList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Fixtures.Color.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Fixtures.Number.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Fixtures.RandomData.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Fixtures.Time.Local.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Fixtures.Time.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Annotate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Axis.Time.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Axis.X.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Axis.Y.Scaled.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Axis.Y.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Behavior.Series.Highlight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Behavior.Series.Order.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Behavior.Series.Toggle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.HoverDetail.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.JSONP.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Legend.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.RangeSlider.Preview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.RangeSlider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Renderer.Area.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Renderer.Bar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Renderer.Line.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Renderer.LinePlot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Renderer.Multi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Renderer.ScatterPlot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Renderer.Stack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Renderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Smoother.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.Socketio.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Series.FixedDuration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Series.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/rickshaw.chart.init.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/rickshaw.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/rickshaw.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/sensor.js" afterPath="$PROJECT_DIR$/public/js/functions/sensor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/real_time_graphic.ejs" afterPath="$PROJECT_DIR$/views/real_time_graphic.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/rickshaw-chart/vendor/Rickshaw.js" afterPath="$PROJECT_DIR$/public/assets/rickshaw-chart/vendor/Rickshaw.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,8 +91,8 @@
       <file leaf-file-name="sensor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="827" column="0" lean-forward="false" selection-start-line="827" selection-start-column="0" selection-end-line="827" selection-end-column="0" />
+            <state relative-caret-position="199">
+              <caret line="824" column="27" lean-forward="true" selection-start-line="824" selection-start-column="27" selection-end-line="824" selection-end-column="27" />
               <folding>
                 <marker date="1492399522941" expanded="true" signature="3566:3601" ph="..." />
                 <marker date="1492399522941" expanded="true" signature="3784:3819" ph="..." />
@@ -70,7 +108,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="real_time_graphic.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Rickshaw.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/vendor/Rickshaw.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="425" column="36" lean-forward="false" selection-start-line="425" selection-start-column="36" selection-end-line="425" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="real_time_graphic.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/real_time_graphic.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
@@ -203,10 +251,10 @@
         <option value="$PROJECT_DIR$/views/graphic.ejs" />
         <option value="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.js" />
         <option value="$PROJECT_DIR$/public/js/functions/socket.js" />
-        <option value="$PROJECT_DIR$/public/assets/rickshaw-chart/vendor/Rickshaw.js" />
         <option value="$PROJECT_DIR$/views/sensor.ejs" />
         <option value="$PROJECT_DIR$/public/js/functions/sensor.js" />
         <option value="$PROJECT_DIR$/views/real_time_graphic.ejs" />
+        <option value="$PROJECT_DIR$/public/assets/rickshaw-chart/vendor/Rickshaw.js" />
       </list>
     </option>
   </component>
@@ -399,6 +447,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppAdminMEC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppAdminMEC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rickshaw-chart" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -679,14 +749,7 @@
       <workItem from="1492284822516" duration="7197000" />
       <workItem from="1492298363625" duration="114000" />
       <workItem from="1492298492996" duration="5439000" />
-      <workItem from="1492350569914" duration="19749000" />
-    </task>
-    <task id="LOCAL-00028" summary="15/04/2017 5">
-      <created>1492295980320</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1492295980320</updated>
+      <workItem from="1492350569914" duration="19926000" />
     </task>
     <task id="LOCAL-00029" summary="15/04/2017 6">
       <created>1492297279004</created>
@@ -1024,11 +1087,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492399431106</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="16/04/2017 39">
+      <created>1492399548014</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1492399548014</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="605112000" />
+    <option name="totallyTimeSpent" value="605289000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1088,7 +1158,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="16/04/2017 13" />
     <MESSAGE value="16/04/2017 14" />
     <MESSAGE value="16/04/2017 15" />
     <MESSAGE value="16/04/2017 16" />
@@ -1113,7 +1182,8 @@
     <MESSAGE value="16/04/2017 35" />
     <MESSAGE value="16/04/2017 36" />
     <MESSAGE value="16/04/2017 37" />
-    <option name="LAST_COMMIT_MESSAGE" value="16/04/2017 37" />
+    <MESSAGE value="16/04/2017 39" />
+    <option name="LAST_COMMIT_MESSAGE" value="16/04/2017 39" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1712,14 +1782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1727,14 +1789,6 @@
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/vendor/Rickshaw.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1436">
-          <caret line="4148" column="4" lean-forward="false" selection-start-line="4148" selection-start-column="4" selection-end-line="4148" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1756,10 +1810,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/real_time_graphic.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="73" lean-forward="false" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="827" column="0" lean-forward="false" selection-start-line="827" selection-start-column="0" selection-end-line="827" selection-end-column="0" />
+        <state relative-caret-position="199">
+          <caret line="824" column="27" lean-forward="true" selection-start-line="824" selection-start-column="27" selection-end-line="824" selection-end-column="27" />
           <folding>
             <marker date="1492399522941" expanded="true" signature="3566:3601" ph="..." />
             <marker date="1492399522941" expanded="true" signature="3784:3819" ph="..." />
@@ -1774,13 +1846,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/real_time_graphic.ejs">
+    <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/vendor/Rickshaw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="73" lean-forward="false" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="398">
+          <caret line="425" column="36" lean-forward="false" selection-start-line="425" selection-start-column="36" selection-end-line="425" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
