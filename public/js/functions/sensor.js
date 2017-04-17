@@ -835,11 +835,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
             })
         });
 
-        let graphHover = new Rickshaw.Graph.HoverDetail({
-            graph:graph
-        });
-
-
+        let x_axis = new Rickshaw.Graph.Axis.Time({graph: graph});
 
         let y_axis = new Rickshaw.Graph.Axis.Y({
             graph: graph,
@@ -860,8 +856,15 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
 
     graph.render();
 
-    let x_axis = new Rickshaw.Graph.Axis.Time({graph: graph});
-    x_axis.render();
+    var hoverDetail = new Rickshaw.Graph.HoverDetail( {
+        graph: graph,
+        formatter: function(series, x, y) {
+            var date = '<span class="date">' + new Date(x * 1000).toUTCString() + '</span>';
+            var swatch = '<span class="detail_swatch" style="background-color: ' + series.color + '"></span>';
+            var content = swatch + series.name + ": " + parseInt(y) + '<br>' + date;
+            return content;
+        }
+    } );
 });
 
 function clearGraphic(){
@@ -870,7 +873,6 @@ function clearGraphic(){
     document.getElementById("divcontainer").innerHTML = "<div id='chart_container'>"+
                                                             "<div id='y_axis'></div>"+
                                                             "<div id='realTimeGraphic' style='width: 100%;'></div>"+
-                                                            "<div id='preview'></div>"+
                                                         "</div>";
 }
 
