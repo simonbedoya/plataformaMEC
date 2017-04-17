@@ -37,7 +37,7 @@ Rickshaw.Graph = function(args) {
 
 		this.vis = d3.select(this.element)
 			.append("svg:svg")
-			.attr('width', this.width)
+			.attr('width', '100%')
 			.attr('height', this.height);
 
 		this.discoverRange();
