@@ -39,7 +39,7 @@ socket.on("uploadFile",function (data) {
 
 socket.on("dataGraph", function (data) {
     console.log(data);
-   let gData = 10;
+   let gData = { BHZ: 10};
 
     graph.series.addData(gData);
     graph.update();

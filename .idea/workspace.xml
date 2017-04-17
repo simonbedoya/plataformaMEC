@@ -98,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+              <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -713,14 +713,7 @@
       <workItem from="1492284822516" duration="7197000" />
       <workItem from="1492298363625" duration="114000" />
       <workItem from="1492298492996" duration="5439000" />
-      <workItem from="1492350569914" duration="23670000" />
-    </task>
-    <task id="LOCAL-00043" summary="16/04/2017 5">
-      <created>1492374782982</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1492374782982</updated>
+      <workItem from="1492350569914" duration="23738000" />
     </task>
     <task id="LOCAL-00044" summary="16/04/2017 6">
       <created>1492377123086</created>
@@ -1058,11 +1051,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492403503705</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="16/04/2017 54">
+      <created>1492403608078</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1492403608078</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="609033000" />
+    <option name="totallyTimeSpent" value="609101000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1122,7 +1122,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="16/04/2017 28" />
     <MESSAGE value="16/04/2017 29" />
     <MESSAGE value="16/04/2017 30" />
     <MESSAGE value="16/04/2017 31" />
@@ -1147,7 +1146,8 @@
     <MESSAGE value="16/04/2017 51" />
     <MESSAGE value="16/04/2017 52" />
     <MESSAGE value="16/04/2017 53" />
-    <option name="LAST_COMMIT_MESSAGE" value="16/04/2017 53" />
+    <MESSAGE value="16/04/2017 54" />
+    <option name="LAST_COMMIT_MESSAGE" value="16/04/2017 54" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1814,7 +1814,7 @@
     <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+          <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
