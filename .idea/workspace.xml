@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/sensor.js" afterPath="$PROJECT_DIR$/public/js/functions/sensor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/sensor.ejs" afterPath="$PROJECT_DIR$/views/sensor.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,20 +39,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sensor.ejs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sensor.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/sensor.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="163" column="44" lean-forward="true" selection-start-line="163" selection-start-column="44" selection-end-line="163" selection-end-column="44" />
+            <state relative-caret-position="271">
+              <caret line="171" column="42" lean-forward="false" selection-start-line="171" selection-start-column="42" selection-end-line="171" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sensor.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sensor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
+            <state relative-caret-position="1195">
               <caret line="910" column="0" lean-forward="true" selection-start-line="910" selection-start-column="0" selection-end-line="910" selection-end-column="0" />
               <folding>
                 <marker date="1492459513589" expanded="true" signature="3566:3601" ph="..." />
@@ -206,9 +206,9 @@
         <option value="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.js" />
         <option value="$PROJECT_DIR$/public/assets/rickshaw-chart/vendor/Rickshaw.js" />
         <option value="$PROJECT_DIR$/views/real_time_graphic.ejs" />
-        <option value="$PROJECT_DIR$/views/sensor.ejs" />
         <option value="$PROJECT_DIR$/public/js/functions/socket.js" />
         <option value="$PROJECT_DIR$/public/js/functions/sensor.js" />
+        <option value="$PROJECT_DIR$/views/sensor.ejs" />
       </list>
     </option>
   </component>
@@ -704,14 +704,7 @@
       <workItem from="1492298363625" duration="114000" />
       <workItem from="1492298492996" duration="5439000" />
       <workItem from="1492350569914" duration="25654000" />
-      <workItem from="1492439166390" duration="6716000" />
-    </task>
-    <task id="LOCAL-00061" summary="16/04/2017 23">
-      <created>1492388468118</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1492388468118</updated>
+      <workItem from="1492439166390" duration="6918000" />
     </task>
     <task id="LOCAL-00062" summary="16/04/2017 24">
       <created>1492388539393</created>
@@ -1049,11 +1042,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492459179326</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="17/04/2017 7">
+      <created>1492459523058</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1492459523059</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="617733000" />
+    <option name="totallyTimeSpent" value="617935000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1723,14 +1723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/sensor.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="163" column="44" lean-forward="true" selection-start-line="163" selection-start-column="44" selection-end-line="163" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/amcharts/amcharts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1751,7 +1743,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
+        <state relative-caret-position="1195">
           <caret line="910" column="0" lean-forward="true" selection-start-line="910" selection-start-column="0" selection-end-line="910" selection-end-column="0" />
           <folding>
             <marker date="1492459513589" expanded="true" signature="3566:3601" ph="..." />
@@ -1765,6 +1757,14 @@
             <marker date="1492459513589" expanded="true" signature="25823:25837" ph="..." />
             <marker date="1492459513589" expanded="true" signature="32470:32501" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/sensor.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="171" column="42" lean-forward="false" selection-start-line="171" selection-start-column="42" selection-end-line="171" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
