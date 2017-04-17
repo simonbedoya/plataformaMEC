@@ -871,6 +871,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
     chart = AmCharts.makeChart( "chartdiv", {
         "type": "serial",
         "theme": "light",
+        "language": "es",
         "zoomOutButton": {
             "backgroundColor": '#000000',
             "backgroundAlpha": 0.15
