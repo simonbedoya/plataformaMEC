@@ -822,7 +822,7 @@ function showRealTime(pkSensor) {
 
 $("#real_time_graphic").on('shown.bs.modal', function () {
     clearGraphic();
-    if(graph === undefined) {
+    if(graph === undefined || graph === null) {
         graph = new Rickshaw.Graph({
             element: document.querySelector("#realTimeGraphic"),
             height: 250,
