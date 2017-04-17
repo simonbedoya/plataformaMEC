@@ -826,8 +826,8 @@ $("#real_time_graphic").on('show.bs.modal', function () {
         height: 250,
         renderer: 'line',
         series: new Rickshaw.Series.FixedDuration([{ name: 'Breaking Bad' }], undefined, {
-            timeInterval: 100,
-            maxDataPoints: 10000,
+            timeInterval: 1000,
+            maxDataPoints: 10,
             timeBase: new Date().getTime() / 1000
         })
     });
