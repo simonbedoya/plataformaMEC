@@ -51,7 +51,7 @@ socket.on("dataGraph", function (data) {
     newDate.setDate( newDate.getDate() + day );
     var visits = Math.round( Math.random() * 40 ) - 20;
     chart.dataProvider.push( {
-        date: newDate.getMilliseconds(),
+        date: newDate,
         visits: visits
     } );
     chart.validateData();
