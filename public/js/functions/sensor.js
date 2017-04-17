@@ -903,6 +903,9 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
             "scrollbarHeight": 40,
             "color": "#FFFFFF",
             "autoGridCount": true
+        },
+        "export": {
+            "enabled": true
         }
     } );
 
