@@ -52,19 +52,19 @@
       <file leaf-file-name="sensor.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="922" column="27" lean-forward="false" selection-start-line="922" selection-start-column="27" selection-end-line="922" selection-end-column="27" />
+            <state relative-caret-position="17">
+              <caret line="886" column="300" lean-forward="false" selection-start-line="886" selection-start-column="300" selection-end-line="886" selection-end-column="300" />
               <folding>
-                <marker date="1492462989909" expanded="true" signature="3566:3601" ph="..." />
-                <marker date="1492462989909" expanded="true" signature="3784:3819" ph="..." />
-                <marker date="1492462989909" expanded="true" signature="3992:4027" ph="..." />
-                <marker date="1492462989909" expanded="true" signature="4229:4264" ph="..." />
-                <marker date="1492462989909" expanded="true" signature="4449:4484" ph="..." />
-                <marker date="1492462989909" expanded="true" signature="4661:4696" ph="..." />
-                <marker date="1492462989909" expanded="true" signature="4869:4883" ph="..." />
-                <marker date="1492462989909" expanded="true" signature="25687:25701" ph="..." />
-                <marker date="1492462989909" expanded="true" signature="25823:25837" ph="..." />
-                <marker date="1492462989909" expanded="true" signature="32789:32820" ph="..." />
+                <marker date="1492463140775" expanded="true" signature="3566:3601" ph="..." />
+                <marker date="1492463140775" expanded="true" signature="3784:3819" ph="..." />
+                <marker date="1492463140775" expanded="true" signature="3992:4027" ph="..." />
+                <marker date="1492463140775" expanded="true" signature="4229:4264" ph="..." />
+                <marker date="1492463140775" expanded="true" signature="4449:4484" ph="..." />
+                <marker date="1492463140775" expanded="true" signature="4661:4696" ph="..." />
+                <marker date="1492463140775" expanded="true" signature="4869:4883" ph="..." />
+                <marker date="1492463140775" expanded="true" signature="25687:25701" ph="..." />
+                <marker date="1492463140775" expanded="true" signature="25823:25837" ph="..." />
+                <marker date="1492463140775" expanded="true" signature="32799:32830" ph="..." />
               </folding>
             </state>
           </provider>
@@ -87,8 +87,8 @@
       <file leaf-file-name="socket.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="53" column="21" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+            <state relative-caret-position="515">
+              <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -752,14 +752,7 @@
       <workItem from="1492298363625" duration="114000" />
       <workItem from="1492298492996" duration="5439000" />
       <workItem from="1492350569914" duration="25654000" />
-      <workItem from="1492439166390" duration="10187000" />
-    </task>
-    <task id="LOCAL-00072" summary="16/04/2017 33">
-      <created>1492391598064</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1492391598064</updated>
+      <workItem from="1492439166390" duration="10332000" />
     </task>
     <task id="LOCAL-00073" summary="16/04/2017 34">
       <created>1492391912386</created>
@@ -1097,11 +1090,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492462927537</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="17/04/2017 15">
+      <created>1492463005576</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1492463005576</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="621204000" />
+    <option name="totallyTimeSpent" value="621349000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1121,7 +1121,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3715221" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3715221" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1768,24 +1768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/sensor.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="171" column="42" lean-forward="false" selection-start-line="171" selection-start-column="42" selection-end-line="171" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="53" column="21" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/real_time_graphic.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
@@ -1798,21 +1780,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/sensor.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="171" column="42" lean-forward="false" selection-start-line="171" selection-start-column="42" selection-end-line="171" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="922" column="27" lean-forward="false" selection-start-line="922" selection-start-column="27" selection-end-line="922" selection-end-column="27" />
+        <state relative-caret-position="17">
+          <caret line="886" column="300" lean-forward="false" selection-start-line="886" selection-start-column="300" selection-end-line="886" selection-end-column="300" />
           <folding>
-            <marker date="1492462989909" expanded="true" signature="3566:3601" ph="..." />
-            <marker date="1492462989909" expanded="true" signature="3784:3819" ph="..." />
-            <marker date="1492462989909" expanded="true" signature="3992:4027" ph="..." />
-            <marker date="1492462989909" expanded="true" signature="4229:4264" ph="..." />
-            <marker date="1492462989909" expanded="true" signature="4449:4484" ph="..." />
-            <marker date="1492462989909" expanded="true" signature="4661:4696" ph="..." />
-            <marker date="1492462989909" expanded="true" signature="4869:4883" ph="..." />
-            <marker date="1492462989909" expanded="true" signature="25687:25701" ph="..." />
-            <marker date="1492462989909" expanded="true" signature="25823:25837" ph="..." />
-            <marker date="1492462989909" expanded="true" signature="32789:32820" ph="..." />
+            <marker date="1492463140775" expanded="true" signature="3566:3601" ph="..." />
+            <marker date="1492463140775" expanded="true" signature="3784:3819" ph="..." />
+            <marker date="1492463140775" expanded="true" signature="3992:4027" ph="..." />
+            <marker date="1492463140775" expanded="true" signature="4229:4264" ph="..." />
+            <marker date="1492463140775" expanded="true" signature="4449:4484" ph="..." />
+            <marker date="1492463140775" expanded="true" signature="4661:4696" ph="..." />
+            <marker date="1492463140775" expanded="true" signature="4869:4883" ph="..." />
+            <marker date="1492463140775" expanded="true" signature="25687:25701" ph="..." />
+            <marker date="1492463140775" expanded="true" signature="25823:25837" ph="..." />
+            <marker date="1492463140775" expanded="true" signature="32799:32830" ph="..." />
           </folding>
         </state>
       </provider>

@@ -922,7 +922,7 @@ function generateChartData() {
     var chartData = [];
     for ( day = 0; day < 50; day++ ) {
         var newDate = new Date( firstDate );
-        newDate.setDate( newDate + day );
+        newDate.setDate( newDate.getDate() + day );
 
         var visits = Math.round( Math.random() * 40 ) - 20;
 
