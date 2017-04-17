@@ -927,7 +927,7 @@ function generateChartData() {
         var visits = Math.round( Math.random() * 40 ) - 20;
 
         chartData.push( {
-            "date": newDate,
+            "date": newDate.getMilliseconds(),
             "visits": 0
         } );
     }
