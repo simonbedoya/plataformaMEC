@@ -829,10 +829,14 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
             width: document.getElementById("divcontainer").offsetWidth - 20,
             renderer: 'line',
             series: new Rickshaw.Series.FixedDuration([{color: 'steelblue', name: 'Breaking Bad'}], undefined, {
-                timeInterval: 1000,
-                maxDataPoints: 10,
+                timeInterval: 100,
+                maxDataPoints: 100,
                 timeBase: 0
             })
+        });
+
+        let graphHover = new Rickshaw.Graph.HoverDetail({
+            graph:graph
         });
 
         let x_axis = new Rickshaw.Graph.Axis.Time({graph: graph});
