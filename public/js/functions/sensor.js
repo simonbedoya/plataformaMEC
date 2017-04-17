@@ -851,7 +851,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
             }
         } );
 
-        document.getElementById("y_axis").setAttribute("style", "margin-left: -40px;");
+        document.getElementById("y_axis").setAttribute("style", "margin-left: -20px;");
 
 
     }
