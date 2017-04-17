@@ -42,8 +42,8 @@
       <file leaf-file-name="sensor.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/sensor.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="186" column="50" lean-forward="false" selection-start-line="186" selection-start-column="50" selection-end-line="186" selection-end-column="50" />
+            <state relative-caret-position="203">
+              <caret line="155" column="78" lean-forward="false" selection-start-line="155" selection-start-column="78" selection-end-line="155" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -738,14 +738,7 @@
       <workItem from="1492284822516" duration="7197000" />
       <workItem from="1492298363625" duration="114000" />
       <workItem from="1492298492996" duration="5439000" />
-      <workItem from="1492350569914" duration="14004000" />
-    </task>
-    <task id="LOCAL-00009" summary="13/04/2017 5">
-      <created>1492187426148</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1492187426148</updated>
+      <workItem from="1492350569914" duration="14209000" />
     </task>
     <task id="LOCAL-00010" summary="13/04/2017 5">
       <created>1492187520072</created>
@@ -1083,11 +1076,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492387789907</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="16/04/2017 20">
+      <created>1492387983459</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1492387983460</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="599367000" />
+    <option name="totallyTimeSpent" value="599572000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1147,7 +1147,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="15/04/2017 12" />
     <MESSAGE value="15/04/2017 13" />
     <MESSAGE value="15/04/2017 14" />
     <MESSAGE value="15/04/2017 15" />
@@ -1172,7 +1171,8 @@
     <MESSAGE value="16/04/2017 17" />
     <MESSAGE value="16/04/2017 18" />
     <MESSAGE value="16/04/2017 19" />
-    <option name="LAST_COMMIT_MESSAGE" value="16/04/2017 19" />
+    <MESSAGE value="16/04/2017 20" />
+    <option name="LAST_COMMIT_MESSAGE" value="16/04/2017 20" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1832,8 +1832,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/sensor.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="186" column="50" lean-forward="false" selection-start-line="186" selection-start-column="50" selection-end-line="186" selection-end-column="50" />
+        <state relative-caret-position="203">
+          <caret line="155" column="78" lean-forward="false" selection-start-line="155" selection-start-column="78" selection-end-line="155" selection-end-column="78" />
           <folding />
         </state>
       </provider>
