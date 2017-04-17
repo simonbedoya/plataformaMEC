@@ -880,7 +880,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
         "categoryField": "date",
         "categoryAxis": {
             "parseDates": true,
-            "minPeriod": "DD",
+            "minPeriod": "fff",
             "dashLength": 1,
             "gridAlpha": 0.15,
             "axisColor": "#DADADA"
