@@ -823,6 +823,9 @@ function showRealTime(pkSensor, name) {
 
 var chartData = [];
 var chart;
+var day = 0;
+var firstDate = new Date();
+firstDate.setDate( firstDate.getDate() - 500 );
 
 $("#real_time_graphic").on('shown.bs.modal', function () {
     /*clearGraphic();
@@ -865,29 +868,43 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
 
     graph.render();
 */
-    chart = AmCharts.makeChart("chartdiv", {
-        type: "serial",
-        theme: "light",
-        dataDateFormat: "YYYY-MM-DD",
-        valueAxes: [{
-            id: "v1",
-            position: "left"
-        }],
-        graphs: [{
-            id: "g1",
-            bullet: "round",
-            valueField: "value",
-            balloonText: "[[category]]: [[value]]"
-        }],
-        categoryField: "date",
-        categoryAxis: {
-            parseDates: true,
-            equalSpacing: true,
-            dashLength: 1,
-            minorGridEnabled: true
+    chart = AmCharts.makeChart( "chartdiv", {
+        "type": "serial",
+        "theme": "light",
+        "zoomOutButton": {
+            "backgroundColor": '#000000',
+            "backgroundAlpha": 0.15
         },
-        dataProvider: chartData
-    });
+        "dataProvider": chartData,
+        "categoryField": "date",
+        "categoryAxis": {
+            "parseDates": true,
+            "minPeriod": "DD",
+            "dashLength": 1,
+            "gridAlpha": 0.15,
+            "axisColor": "#DADADA"
+        },
+        "graphs": [ {
+            "id": "g1",
+            "valueField": "visits",
+            "bullet": "round",
+            "bulletBorderColor": "#FFFFFF",
+            "bulletBorderThickness": 2,
+            "lineThickness": 2,
+            "lineColor": "#b5030d",
+            "negativeLineColor": "#0352b5",
+            "hideBulletsCount": 50
+        } ],
+        "chartCursor": {
+            "cursorPosition": "mouse"
+        },
+        "chartScrollbar": {
+            "graph": "g1",
+            "scrollbarHeight": 40,
+            "color": "#FFFFFF",
+            "autoGridCount": true
+        }
+    } );
 
     //chart.addListener("dataUpdated", zoomChart);
 

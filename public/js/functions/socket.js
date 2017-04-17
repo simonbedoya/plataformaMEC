@@ -43,10 +43,17 @@ socket.on("dataGraph", function (data) {
 
     graph.series.addData(gData);
     graph.update();*/
-   chartData.push.apply(chartData, {"date":"2017-05-31T16:12:51.442Z","value":48});
-    if (chartData.length > 50) {
-        chartData.splice(0, chartData.length - 50);
-    }
+    chart.dataProvider.shift();
+
+    // add new one at the end
+    day++;
+    var newDate = new Date( firstDate );
+    newDate.setDate( newDate.getDate() + day );
+    var visits = Math.round( Math.random() * 40 ) - 20;
+    chart.dataProvider.push( {
+        date: newDate,
+        visits: visits
+    } );
     chart.validateData();
 });
 
