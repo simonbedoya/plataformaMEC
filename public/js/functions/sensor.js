@@ -839,7 +839,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
             graph:graph
         });
 
-        let x_axis = new Rickshaw.Graph.Axis.Time({graph: graph});
+
 
         let y_axis = new Rickshaw.Graph.Axis.Y({
             graph: graph,
@@ -859,6 +859,9 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
     graph.min = 0;
 
     graph.render();
+
+    let x_axis = new Rickshaw.Graph.Axis.Time({graph: graph});
+    x_axis.render();
 });
 
 function clearGraphic(){
