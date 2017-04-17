@@ -820,7 +820,7 @@ function showRealTime(pkSensor) {
     $('#real_time_graphic').modal();
 }
 
-$("#real_time_graphic").on('show.bs.modal', function () {
+$("#real_time_graphic").on('shown.bs.modal', function () {
 
     graph = new Rickshaw.Graph({
         element: document.querySelector("#realTimeGraphic"),
