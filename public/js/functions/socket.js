@@ -39,9 +39,8 @@ socket.on("uploadFile",function (data) {
 
 socket.on("dataGraph", function (data) {
     console.log(data);
-   let gData = {
-       x: 10
-   };
+   let gData = 10;
+
     graph.series.addData(gData);
     graph.update();
 });
