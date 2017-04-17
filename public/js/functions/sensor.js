@@ -874,7 +874,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
         language: "es",
 
         dataProvider: chartData,
-        categoryField: "date",
+        dataDateFormat: "YYYY-MM-DD",
         categoryAxis: {
             parseDates: true,
             equalSpacing: true,
