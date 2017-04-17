@@ -884,9 +884,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
             "dashLength": 1,
             "gridAlpha": 0.15,
             "axisColor": "#DADADA",
-            "dateFormats": [{
-                "period":"fff","format":"JJ:NN:SS"
-            }]
+            "dateFormats": [{"period":"fff","format":"JJ:NN:SS"},{"period":"ss","format":"JJ:NN:SS"},{"period":"mm","format":"JJ:NN"},{"period":"hh","format":"JJ:NN"},{"period":"DD","format":"MMM DD"},{"period":"WW","format":"MMM DD"},{"period":"MM","format":"MMM"},{"period":"YYYY","format":"YYYY"}]
         },
         "graphs": [ {
             "id": "g1",
