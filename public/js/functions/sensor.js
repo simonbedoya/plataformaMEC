@@ -824,8 +824,10 @@ function showRealTime(pkSensor, name) {
 var chartData = [];
 var chart;
 var day = 0;
+var mili = 0;
 var firstDate = new Date();
-//firstDate.setDate( firstDate.getDate() - 500 );
+firstDate.setDate( firstDate.getDate());
+firstDate.setHours(0,0,0,0);
 
 $("#real_time_graphic").on('shown.bs.modal', function () {
     /*clearGraphic();
@@ -926,10 +928,10 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
 function generateChartData() {
     var chartData = [];
     let mili = 0;
-    for ( let i = 0; i < 6000; i++ ) {
-        mili = mili + 100;
+    for ( let i = 0; i < 3600; i++ ) {
+
         var newDate = new Date( firstDate );
-        newDate.setMilliseconds( newDate.getMilliseconds() + mili );
+        newDate.setHours(0,0,0,i);
 
         var visits = Math.round( Math.random() * 40 ) - 20;
 
