@@ -940,8 +940,8 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
                 "hideBulletsCount": 50
             }],
         "chartCursor": {
-            "cursorPosition": "mouse",
-            "enabled": false
+            "cursorAlpha": 0,
+            "zoomable": false
         },
         "chartScrollbar": {
             "graph": "g1",
