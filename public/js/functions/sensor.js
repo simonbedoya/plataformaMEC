@@ -904,7 +904,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
             "id": "g1",
             "valueField": "BH1",
             "bullet": "round",
-            "balloonText": "BH1 [[category]]: [[value]]",
+            "balloonText": "BH1: [[value]]",
             "title": "BH1",
             "bulletBorderColor": "#FFFFFF",
             "bulletBorderThickness": 2,
@@ -917,7 +917,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
                 "id": "g2",
                 "valueField": "BH2",
                 "bullet": "round",
-                "balloonText": "BH2 [[category]]: [[value]]",
+                "balloonText": "BH2: [[value]]",
                 "title": "BH2",
                 "bulletBorderColor": "#FFFFFF",
                 "bulletBorderThickness": 2,
@@ -930,7 +930,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
                 "id": "g3",
                 "valueField": "BHZ",
                 "bullet": "round",
-                "balloonText": "BHZ [[category]]: [[value]]",
+                "balloonText": "BHZ: [[value]]",
                 "title": "BHZ",
                 "bulletBorderColor": "#FFFFFF",
                 "bulletBorderThickness": 2,
@@ -940,7 +940,8 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
                 "hideBulletsCount": 50
             }],
         "chartCursor": {
-            "cursorPosition": "mouse"
+            "cursorPosition": "mouse",
+            "enabled": false
         },
         "chartScrollbar": {
             "graph": "g1",
