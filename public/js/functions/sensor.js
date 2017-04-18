@@ -827,7 +827,7 @@ var day = 0;
 var mili = 0;
 var firstDate = new Date();
 firstDate.setDate( firstDate.getDate());
-firstDate.setHours(0,0,0,0);
+//firstDate.setHours(0,0,0,0);
 
 $("#real_time_graphic").on('shown.bs.modal', function () {
     /*clearGraphic();
