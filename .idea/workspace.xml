@@ -85,8 +85,8 @@
       <file leaf-file-name="socket.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="49" column="46" lean-forward="false" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+            <state relative-caret-position="323">
+              <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -751,14 +751,7 @@
       <workItem from="1492298492996" duration="5439000" />
       <workItem from="1492350569914" duration="25654000" />
       <workItem from="1492439166390" duration="12817000" />
-      <workItem from="1492484798757" duration="2965000" />
-    </task>
-    <task id="LOCAL-00088" summary="16/04/2017 50">
-      <created>1492402395783</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1492402395783</updated>
+      <workItem from="1492484798757" duration="3092000" />
     </task>
     <task id="LOCAL-00089" summary="16/04/2017 51">
       <created>1492402940309</created>
@@ -1096,11 +1089,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492487541528</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="17/04/2017 20">
+      <created>1492487777944</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1492487777944</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="626799000" />
+    <option name="totallyTimeSpent" value="626926000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1805,8 +1805,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="49" column="46" lean-forward="false" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+        <state relative-caret-position="323">
+          <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
