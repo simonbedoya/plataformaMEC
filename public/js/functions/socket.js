@@ -59,7 +59,7 @@ socket.on("dataGraph", function (data) {
         date: newDate,
         BH1: BH1,
         BH2: BH2,
-        BHZ: BH1
+        BHZ: BHZ
     } );
     chart.validateData();
 });
