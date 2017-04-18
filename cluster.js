@@ -1,8 +1,8 @@
 /**
  * Created by sbv23 on 18/04/2017.
  */
-import cluster from 'cluster'
-import os from 'os'
+const cluster = require('cluster');
+const os = require('os');
 
 const workers = os.cpus().length;
 
@@ -14,7 +14,7 @@ function log(msg) {
 
 log(`Master with pid ${process.pid} starting...`);
 
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < workers; i++) {
     cluster.fork()
 }
 
