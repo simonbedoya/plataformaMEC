@@ -929,7 +929,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
 function generateChartData() {
     var chartData = [];
     let mili = 0;
-    for ( let i = 0; i < 600; i++ ) {
+    for ( let i = 0; i < 590; i++ ) {
 
         var newDate = new Date( firstDate );
         //newDate.setHours(0,0,0,(i*100));
