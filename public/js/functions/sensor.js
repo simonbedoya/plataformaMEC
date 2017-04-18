@@ -825,7 +825,7 @@ var chartData = [];
 var chart;
 var day = 0;
 var firstDate = new Date();
-firstDate.setDate( firstDate.getDate() - 500 );
+//firstDate.setDate( firstDate.getDate() - 500 );
 
 $("#real_time_graphic").on('shown.bs.modal', function () {
     /*clearGraphic();
