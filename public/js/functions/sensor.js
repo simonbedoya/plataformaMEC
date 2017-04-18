@@ -825,7 +825,7 @@ var chartData = [];
 var chart;
 var day = 0;
 var mili = 0;
-
+var firstDate;
 
 $("#real_time_graphic").on('shown.bs.modal', function () {
     /*clearGraphic();
@@ -869,7 +869,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
     graph.render();
 */  mili = 0;
     chartData = [];
-    var firstDate = new Date();
+    firstDate = new Date();
     firstDate.setDate( firstDate.getDate());
     chart = AmCharts.makeChart( "chartdiv", {
         "type": "serial",
