@@ -921,7 +921,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
 function generateChartData() {
     var chartData = [];
     let mili = 0;
-    for ( let i = 0; i < 60000; i++ ) {
+    for ( let i = 0; i < 6000; i++ ) {
         mili = mili + 100;
         var newDate = new Date( firstDate );
         newDate.setMilliseconds( newDate.getMilliseconds() + mili );
