@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cluster.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster.js" afterPath="$PROJECT_DIR$/cluster.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -82,8 +81,8 @@
       <file leaf-file-name="cluster.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cluster.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+            <state relative-caret-position="238">
+              <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="e#43#72#0" expanded="true" />
               </folding>
@@ -609,14 +608,7 @@
       <workItem from="1492484798757" duration="4642000" />
       <workItem from="1492489510667" duration="1595000" />
       <workItem from="1492491145363" duration="4737000" />
-      <workItem from="1492530091288" duration="2811000" />
-    </task>
-    <task id="LOCAL-00117" summary="17/04/2017 13">
-      <created>1492462509706</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1492462509706</updated>
+      <workItem from="1492530091288" duration="2929000" />
     </task>
     <task id="LOCAL-00118" summary="17/04/2017 13">
       <created>1492462633175</created>
@@ -954,11 +946,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492533912791</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="18/04/2017">
+      <created>1492534952692</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1492534952692</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="637619000" />
+    <option name="totallyTimeSpent" value="637737000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1614,8 +1613,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cluster.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        <state relative-caret-position="238">
+          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
             <element signature="e#43#72#0" expanded="true" />
           </folding>

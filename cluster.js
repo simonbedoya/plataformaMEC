@@ -14,7 +14,7 @@ function log(msg) {
 
 log(`Master with pid ${process.pid} starting...`);
 
-for (let i = 0; i < workers; i++) {
+for (let i = 0; i < 4; i++) {
     cluster.fork()
 }
 
