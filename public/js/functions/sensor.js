@@ -893,6 +893,12 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
         "valueAxes": [{
             "axisAlpha": 0.2,
             "id": "g1"
+        },{
+            "axisAlpha": 0.2,
+            "id": "g2"
+        },{
+            "axisAlpha": 0.2,
+            "id": "g3"
         }],
         "graphs": [ {
             "id": "g1",
@@ -906,7 +912,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
             "hideBulletsCount": 50
         },
             {
-                "id": "g1",
+                "id": "g2",
                 "valueField": "BH2",
                 "bullet": "round",
                 "bulletBorderColor": "#FFFFFF",
@@ -917,7 +923,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
                 "hideBulletsCount": 50
             },
             {
-                "id": "g1",
+                "id": "g3",
                 "valueField": "BHZ",
                 "bullet": "round",
                 "bulletBorderColor": "#FFFFFF",
