@@ -49,7 +49,7 @@ socket.on("dataGraph", function (data) {
     day = day + 1;
     var newDate = new Date( firstDate );
     console.log(newDate.getMilliseconds() + day);
-    newDate.setDate( newDate.getDate() + day );
+    newDate.setSeconds( newDate.getSeconds() + day );
     var visits = Math.round( Math.random() * 40 ) - 20;
     console.log(newDate.getTime());
 
