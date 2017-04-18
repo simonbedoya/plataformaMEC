@@ -51,8 +51,8 @@ socket.on("dataGraph", function (data) {
     console.log(newDate.getMilliseconds());
     newDate.setMilliseconds( newDate.getMilliseconds() + 60000 + mili);
     var BH1 = Math.round( Math.random() * 40 ) - 20;
-    var BH2 = Math.round( Math.random() * 40 ) - 10;
-    var BHZ = Math.round( Math.random() * 40 ) - 40;
+    var BH2 = Math.round( Math.random() * 20 ) - 10;
+    var BHZ = Math.round( Math.random() * 30 ) - 40;
     console.log(newDate.getTime());
 
     chart.dataProvider.push( {
