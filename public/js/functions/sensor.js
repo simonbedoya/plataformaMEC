@@ -941,7 +941,8 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
             }],
         "chartCursor": {
             "cursorAlpha": 0,
-            "zoomable": false
+            "zoomable": false,
+            "valueZoomable":true
         },
         "chartScrollbar": {
             "graph": "g1",
@@ -952,6 +953,9 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
         "export": {
             "enabled": true,
             "position": "bottom-left"
+        },
+        "valueScrollbar":{
+
         }
     } );
 
