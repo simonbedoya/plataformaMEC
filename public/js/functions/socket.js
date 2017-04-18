@@ -46,16 +46,16 @@ socket.on("dataGraph", function (data) {
     chart.dataProvider.shift();
 
     // add new one at the end
-    day = day + 100;
+    day = day + 1;
     var newDate = new Date( firstDate );
     console.log(newDate.getMilliseconds() + day);
-    newDate.setMilliseconds( newDate.getMilliseconds() + day );
+    newDate.setDate( newDate.getDate() + day );
     var visits = Math.round( Math.random() * 40 ) - 20;
     console.log(newDate.getTime());
 
     chart.dataProvider.push( {
         date: newDate,
-        visits: Math.abs(visits)
+        visits: visits
     } );
     chart.validateData();
 });
