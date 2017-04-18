@@ -47,7 +47,7 @@ socket.on("dataGraph", function (data) {
 
     // add new one at the end
     mili = mili + 100;
-    var newDate = new Date( firstDate );
+    var newDate = new Date( chartData[35].date );
     console.log(newDate.getMilliseconds());
     newDate.setHours(0,0,0,mili);
     var visits = Math.round( Math.random() * 40 ) - 20;
