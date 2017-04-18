@@ -888,7 +888,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
             "gridAlpha": 0.15,
             "minorGridEnabled": true,
             "axisColor": "#DADADA",
-            "dateFormats": [{"period":"fff","format":"JJ:NN:SS"},{"period":"ss","format":"JJ:NN:SS"}]
+            "dateFormats": [{"period":"fff","format":"JJ:NN:SS"},{"period":"ss","format":"JJ:NN:SS"},{period:'mm',format:'JJ:NN'}]
         },
         "valueAxes": [{
             "axisAlpha": 0.2,
