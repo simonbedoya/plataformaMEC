@@ -931,8 +931,8 @@ function generateChartData() {
     for ( let i = 0; i < 36; i++ ) {
 
         var newDate = new Date( firstDate );
-        newDate.setHours(0,0,0,(i*100));
-
+        //newDate.setHours(0,0,0,(i*100));
+        newDate.setMilliseconds(i*100);
         var visits = Math.round( Math.random() * 40 ) - 20;
         console.log(newDate.getTime());
         chartData.push( {
