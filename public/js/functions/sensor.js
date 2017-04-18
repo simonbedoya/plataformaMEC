@@ -955,7 +955,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
         }
     } );
 
-    //chart.addListener("dataUpdated", zoomChart);
+    chart.addListener("dataUpdated", zoomChart);
 
 
 
