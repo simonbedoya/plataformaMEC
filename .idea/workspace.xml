@@ -52,8 +52,8 @@
       <file leaf-file-name="sensor.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="890" column="64" lean-forward="false" selection-start-line="890" selection-start-column="64" selection-end-line="890" selection-end-column="64" />
+            <state relative-caret-position="510">
+              <caret line="919" column="8" lean-forward="true" selection-start-line="919" selection-start-column="8" selection-end-line="919" selection-end-column="8" />
               <folding>
                 <marker date="1492489339093" expanded="true" signature="3566:3601" ph="..." />
                 <marker date="1492489339093" expanded="true" signature="3784:3819" ph="..." />
@@ -752,7 +752,7 @@
       <workItem from="1492350569914" duration="25654000" />
       <workItem from="1492439166390" duration="12817000" />
       <workItem from="1492484798757" duration="4642000" />
-      <workItem from="1492489510667" duration="23000" />
+      <workItem from="1492489510667" duration="59000" />
     </task>
     <task id="LOCAL-00097" summary="16/04/2017 59">
       <created>1492404889474</created>
@@ -1101,7 +1101,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="628499000" />
+    <option name="totallyTimeSpent" value="628535000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1161,7 +1161,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="16/04/2017 62" />
     <MESSAGE value="16/04/2017 63" />
     <MESSAGE value="17/04/2017" />
     <MESSAGE value="17/04/2017 2" />
@@ -1186,7 +1185,8 @@
     <MESSAGE value="17/04/2017 22" />
     <MESSAGE value="17/04/2017 24" />
     <MESSAGE value="17/04/2017 26" />
-    <option name="LAST_COMMIT_MESSAGE" value="17/04/2017 26" />
+    <MESSAGE value="17/04/2017 27" />
+    <option name="LAST_COMMIT_MESSAGE" value="17/04/2017 27" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1794,8 +1794,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="890" column="64" lean-forward="false" selection-start-line="890" selection-start-column="64" selection-end-line="890" selection-end-column="64" />
+        <state relative-caret-position="510">
+          <caret line="919" column="8" lean-forward="true" selection-start-line="919" selection-start-column="8" selection-end-line="919" selection-end-column="8" />
           <folding>
             <marker date="1492489339093" expanded="true" signature="3566:3601" ph="..." />
             <marker date="1492489339093" expanded="true" signature="3784:3819" ph="..." />
