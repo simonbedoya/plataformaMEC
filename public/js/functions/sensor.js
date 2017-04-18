@@ -920,9 +920,11 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
 // generate some random data, quite different range
 function generateChartData() {
     var chartData = [];
-    for ( day = 0; day < 50; day++ ) {
+    let mili = 0;
+    for ( let i = 0; i < 60000; i++ ) {
+        mili = mili + 100;
         var newDate = new Date( firstDate );
-        newDate.setDate( newDate.getDate() + day );
+        newDate.setMilliseconds( newDate.getMilliseconds() + mili );
 
         var visits = Math.round( Math.random() * 40 ) - 20;
 
