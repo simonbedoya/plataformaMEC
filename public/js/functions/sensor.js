@@ -915,7 +915,8 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
             "autoGridCount": true
         },
         "export": {
-            "enabled": true
+            "enabled": true,
+            "position": "bottom-left"
         }
     } );
 
