@@ -50,12 +50,16 @@ socket.on("dataGraph", function (data) {
     var newDate = new Date( firstDate );
     console.log(newDate.getMilliseconds());
     newDate.setMilliseconds( newDate.getMilliseconds() + 60000 + mili);
-    var visits = Math.round( Math.random() * 40 ) - 20;
+    var BH1 = Math.round( Math.random() * 40 ) - 20;
+    var BH2 = Math.round( Math.random() * 40 ) - 20;
+    var BHZ = Math.round( Math.random() * 40 ) - 20;
     console.log(newDate.getTime());
 
     chart.dataProvider.push( {
         date: newDate,
-        visits: visits
+        BH1: BH1,
+        BH2: BH2,
+        BHZ: BH1
     } );
     chart.validateData();
 });

@@ -896,15 +896,37 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
         }],
         "graphs": [ {
             "id": "g1",
-            "valueField": "visits",
+            "valueField": "BH1",
             "bullet": "round",
             "bulletBorderColor": "#FFFFFF",
             "bulletBorderThickness": 2,
             "lineThickness": 2,
-            "lineColor": "#b5030d",
-            "negativeLineColor": "#0352b5",
+            "lineColor": "#b4f30d",
+            "negativeLineColor": "#5f4da5",
             "hideBulletsCount": 50
-        } ],
+        },
+            {
+                "id": "g1",
+                "valueField": "BH2",
+                "bullet": "round",
+                "bulletBorderColor": "#FFFFFF",
+                "bulletBorderThickness": 2,
+                "lineThickness": 2,
+                "lineColor": "#b5030d",
+                "negativeLineColor": "#0352b5",
+                "hideBulletsCount": 50
+            },
+            {
+                "id": "g1",
+                "valueField": "BHZ",
+                "bullet": "round",
+                "bulletBorderColor": "#FFFFFF",
+                "bulletBorderThickness": 2,
+                "lineThickness": 2,
+                "lineColor": "#b543fd",
+                "negativeLineColor": "#ff34b5",
+                "hideBulletsCount": 50
+            }],
         "chartCursor": {
             "cursorPosition": "mouse"
         },
@@ -939,7 +961,9 @@ function generateChartData() {
         console.log(newDate.getTime());
         chartData.push( {
             "date": newDate,
-            "visits": 0
+            "BH1": 0,
+            "BH2": 0,
+            "BHZ": 0,
         } );
     }
 
