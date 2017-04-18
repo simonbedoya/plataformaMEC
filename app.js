@@ -22,7 +22,6 @@ var historical = require('./routes/historical');
 var settings = require('./routes/settings');
 var profile = require('./routes/profile');
 var log_out = require('./routes/log-out');
-var api = require('./routes/api');
 var graphic = require('./routes/graphic');
 var data = require('./routes/data');
 
@@ -60,7 +59,7 @@ app.get('/',function (req, res) {
 
 app.use('/admin', login);
 app.use('/log-in', log_in);
-app.use('/api', api);
+
 
 
 app.get('/recoverpw', function (req,res) {

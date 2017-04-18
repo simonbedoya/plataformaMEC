@@ -7,7 +7,6 @@
 var app = require('../app');
 var debug = require('debug')('appadminmec:server');
 var http = require('http');
-let data_controller = require('../controller/data_controller');
 
 /**
  * Get port from environment and store in Express.
@@ -29,26 +28,6 @@ var server = http.createServer(app);
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
-
-let io = require("socket.io").listen(server);
-
-io.sockets.on('connection', function (socket) {
-    console.log('se ha establecido una nueva Conexion');
-
-    socket.on('sendPkFile',function(pk_file){
-      console.log(pk_file);
-      data_controller.getDataFileByPk(pk_file).then(function (data) {
-          if(data.code === "001"){
-              let path_file = data.data;
-              data_controller.getDataFilePath(path_file).then(function (data) {
-
-                  console.log(data.data);
-                  //res.status(data.hcode).send(data.data);
-              })
-          }
-      })
-    })
-});
 
 /**
  * Normalize a port into a number, string, or false.
