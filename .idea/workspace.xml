@@ -53,10 +53,10 @@
       <file leaf-file-name="graphic.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="693" column="32" lean-forward="false" selection-start-line="693" selection-start-column="32" selection-end-line="693" selection-end-column="32" />
+            <state relative-caret-position="420">
+              <caret line="695" column="5" lean-forward="true" selection-start-line="682" selection-start-column="4" selection-end-line="695" selection-end-column="5" />
               <folding>
-                <marker date="1492701818573" expanded="true" signature="2114:2131" ph="..." />
+                <marker date="1492702312290" expanded="true" signature="2114:2131" ph="..." />
               </folding>
             </state>
           </provider>
@@ -699,14 +699,7 @@
       <workItem from="1492530091288" duration="3675000" />
       <workItem from="1492555820954" duration="5000" />
       <workItem from="1492658788761" duration="13606000" />
-      <workItem from="1492695625809" duration="5087000" />
-    </task>
-    <task id="LOCAL-00150" summary="commit">
-      <created>1492492104851</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1492492104851</updated>
+      <workItem from="1492695625809" duration="5580000" />
     </task>
     <task id="LOCAL-00151" summary="commit">
       <created>1492492239664</created>
@@ -1044,11 +1037,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492701468382</updated>
     </task>
-    <option name="localTasksCounter" value="199" />
+    <task id="LOCAL-00199" summary="19/04/2017">
+      <created>1492701831362</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1492701831362</updated>
+    </task>
+    <option name="localTasksCounter" value="200" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="657181000" />
+    <option name="totallyTimeSpent" value="657674000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1602,10 +1602,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="693" column="32" lean-forward="false" selection-start-line="693" selection-start-column="32" selection-end-line="693" selection-end-column="32" />
+        <state relative-caret-position="420">
+          <caret line="695" column="5" lean-forward="true" selection-start-line="682" selection-start-column="4" selection-end-line="695" selection-end-column="5" />
           <folding>
-            <marker date="1492701818573" expanded="true" signature="2114:2131" ph="..." />
+            <marker date="1492702312290" expanded="true" signature="2114:2131" ph="..." />
           </folding>
         </state>
       </provider>

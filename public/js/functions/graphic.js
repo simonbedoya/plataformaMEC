@@ -676,7 +676,7 @@ let mili = 0;
 let firstDate;
 
 function drawGraphic(dataNew) {
-    charData = [];
+
     let i;
     let date = new Date();
     date.setHours(0,0,0,0);
