@@ -720,7 +720,7 @@ function drawGraphic(dataNew) {
         }];
 
         mili = 0;
-        chartData = [];
+
         firstDate = new Date();
         firstDate.setDate( firstDate.getDate());
         firstDate.setHours(0,0,0,0);
