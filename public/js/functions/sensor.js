@@ -841,7 +841,7 @@ function drawGraphic(){
     let axisSelect = $('#selectedAxis').val();
     let valueAxes, graphs = [];
     if(axisSelect !== "0"){
-        valueAxes = "[{'axisAlpha': 0.2,'id': 'g1'}]";
+        valueAxes = [{'axisAlpha': 0.2,'id': 'g1'}];
         graphs = [{
             "id": "g1",
             "valueField": axisSelect,
@@ -856,7 +856,7 @@ function drawGraphic(){
             "hideBulletsCount": 50
         }];
     }else{
-        valueAxes = "[{ 'axisAlpha': 0.2, 'id': 'g1'},{ 'axisAlpha': 0.2,'id': 'g2'},{'axisAlpha': 0.2,'id': 'g3'}]";
+        valueAxes = [{ 'axisAlpha': 0.2, 'id': 'g1'},{ 'axisAlpha': 0.2,'id': 'g2'},{'axisAlpha': 0.2,'id': 'g3'}];
         graphs = [{
             "id": "g1",
             "valueField": "BH1",
