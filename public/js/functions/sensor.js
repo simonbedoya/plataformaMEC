@@ -898,9 +898,9 @@ function drawGraphic(){
             }];
     }
 
+    loadChart(axisSelect,valueAxes,graphs);
 
-
-    socket.emit('requestTest',`{"pk_sensor": "${pk_sensor}", "component" : "REAL_TIME", "type" : "${axisSelect}" }`,function (data) {
+    /*socket.emit('requestTest',`{"pk_sensor": "${pk_sensor}", "component" : "REAL_TIME", "type" : "${axisSelect}" }`,function (data) {
         console.log("responde solicitud real time");
         console.log(data);
         if(data.code === "001"){
@@ -913,7 +913,7 @@ function drawGraphic(){
         }else{
             document.getElementById(`resultTest${component}`).innerHTML = "Ha ocurrido un error intenta nuevamente.";
         }
-    })
+    })*/
 }
 
 function changeButton() {
