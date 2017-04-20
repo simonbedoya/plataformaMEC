@@ -721,7 +721,7 @@ function drawGraphic(dataNew) {
                 "backgroundColor": '#000000',
                 "backgroundAlpha": 0.15
             },
-            "dataProvider": dataNew,
+            "dataProvider": charData,
             "categoryField": "date",
             "categoryAxis": {
                 "parseDates": true,
