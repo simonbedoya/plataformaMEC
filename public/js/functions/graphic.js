@@ -687,8 +687,8 @@ function drawGraphic(dataNew) {
         date.setSeconds(seconds);
 
         let dataFinale = {
-            date: date,
-            BH1: i.y,
+            "date": date,
+            "BH1": i.y,
         };
         chartData.push(dataFinale);
     });
@@ -719,11 +719,6 @@ function drawGraphic(dataNew) {
             "hideBulletsCount": 50
         }];
 
-        mili = 0;
-
-        firstDate = new Date();
-        firstDate.setDate( firstDate.getDate());
-        firstDate.setHours(0,0,0,0);
         chart = AmCharts.makeChart( "chartdiv", {
             "type": "serial",
             "theme": "light",
