@@ -851,8 +851,8 @@ function drawGraphic(){
             "bulletBorderColor": "#FFFFFF",
             "bulletBorderThickness": 2,
             "lineThickness": 2,
-            "lineColor": "#b4f30d",
-            "negativeLineColor": "#5f4da5",
+            "lineColor": "#08088A",
+            "negativeLineColor": "#08088A",
             "hideBulletsCount": 50
         }];
     }else{
@@ -866,8 +866,8 @@ function drawGraphic(){
             "bulletBorderColor": "#FFFFFF",
             "bulletBorderThickness": 2,
             "lineThickness": 2,
-            "lineColor": "#b4f30d",
-            "negativeLineColor": "#5f4da5",
+            "lineColor": "#08088A",
+            "negativeLineColor": "#08088A",
             "hideBulletsCount": 50
         },
             {
@@ -879,8 +879,8 @@ function drawGraphic(){
                 "bulletBorderColor": "#FFFFFF",
                 "bulletBorderThickness": 2,
                 "lineThickness": 2,
-                "lineColor": "#b5030d",
-                "negativeLineColor": "#0352b5",
+                "lineColor": "#8A0808",
+                "negativeLineColor": "#8A0808",
                 "hideBulletsCount": 50
             },
             {
@@ -892,12 +892,28 @@ function drawGraphic(){
                 "bulletBorderColor": "#FFFFFF",
                 "bulletBorderThickness": 2,
                 "lineThickness": 2,
-                "lineColor": "#b543fd",
-                "negativeLineColor": "#ff34b5",
+                "lineColor": "#0B3B0B",
+                "negativeLineColor": "#0B3B0B",
                 "hideBulletsCount": 50
             }];
     }
 
+
+
+    socket.emit('requestTest',`{"pk_sensor": "${pk_sensor}", "component" : "REAL_TIME", "type" : "${axisSelect}" }`,function (data) {
+        if(data.code === "001"){
+            loadChart(axisSelect,valueAxes,graphs);
+        }else if(data.code === "004"){
+            document.getElementById(`resultTest${component}`).innerHTML = "Ya se encuentra un test corriendo para este sensor.";
+        }else if(data.code === "003"){
+            document.getElementById(`resultTest${component}`).innerHTML = "El sensor no se encuentra conectado, intenta nuevamente.";
+        }else{
+            document.getElementById(`resultTest${component}`).innerHTML = "Ha ocurrido un error intenta nuevamente.";
+        }
+    })
+}
+
+function loadChart(axisSelect,valueAxes,graphs) {
     mili = 0;
     chartData = [];
     firstDate = new Date();
@@ -941,7 +957,7 @@ function drawGraphic(){
         "valueScrollbar":{
 
         }
-    } );
+    });
 }
 
 // generate some random data, quite different range
@@ -975,10 +991,6 @@ function generateChartData(axis) {
                         "BHZ": 0
                     };
                     break;
-            }
-            data = {
-                "date": newDate,
-                axis: 0
             }
         }else{
             data = {

@@ -37,7 +37,7 @@ socket.on("uploadFile",function (data) {
     $.Notification.autoHideNotify('info', 'top right', title, msg);
 });
 
-socket.on("dataGraph", function (data) {
+socket.on("responseRealTime", function (data) {
     console.log(data);
    /*let gData = { BHZ: 10};
 
@@ -46,7 +46,7 @@ socket.on("dataGraph", function (data) {
     chart.dataProvider.shift();
 
     // add new one at the end
-    mili = mili + 100;
+    /*mili = mili + 100;
     var newDate = new Date( firstDate );
     console.log(newDate.getMilliseconds());
     newDate.setMilliseconds( newDate.getMilliseconds() + 60000 + mili);
@@ -61,7 +61,7 @@ socket.on("dataGraph", function (data) {
         BH2: BH2,
         BHZ: BHZ
     } );
-    chart.validateData();
+    chart.validateData();*/
 });
 
 socket.on("testResponse", function (data) {
