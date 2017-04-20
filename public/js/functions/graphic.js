@@ -672,10 +672,12 @@ function generateGraphic() {
 function drawGraphic(dataNew) {
     let charData = [];
     let i;
-    let date = new Date(0);
+    let date = new Date();
+    date.setHours(0,0,0,0);
     for(i in dataNew){
+        date.setSeconds(data[i].x)
         charData.push({
-            date: date.setSeconds(data[i].x),
+            date: date,
             BH1: data[i].y,
         })
     }
