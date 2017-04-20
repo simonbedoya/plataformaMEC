@@ -678,10 +678,9 @@ let chartData = [];
 
 function drawGraphic(dataNew) {
 
-    let i;
-    let date = new Date();
-    date.setHours(0,0,0,0);
     dataNew.forEach((i)=>{
+        let date = new Date();
+        date.setHours(0,0,0,0);
         let minutes = parseInt(i.x / 60);
         let seconds = i.x % 60;
         date.setMinutes(minutes);
