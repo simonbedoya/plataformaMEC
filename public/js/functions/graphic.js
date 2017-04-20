@@ -674,9 +674,10 @@ let chart;
 let day = 0;
 let mili = 0;
 let firstDate;
+let chartData = [];
 
 function drawGraphic(dataNew) {
-    let chartData = [];
+
     let i;
     let date = new Date();
     date.setHours(0,0,0,0);
@@ -692,7 +693,7 @@ function drawGraphic(dataNew) {
             BH1: dataNew[i].y,
         };
         console.log(dataFinale);
-        charData.push(dataFinale);
+        chartData.push(dataFinale);
     }
     if(dataNew.length === 0){
         swal({
@@ -734,7 +735,7 @@ function drawGraphic(dataNew) {
                 "backgroundColor": '#000000',
                 "backgroundAlpha": 0.15
             },
-            "dataProvider": charData,
+            "dataProvider": chartData,
             "categoryField": "date",
             "categoryAxis": {
                 "parseDates": true,
