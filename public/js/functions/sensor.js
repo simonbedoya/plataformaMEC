@@ -856,7 +856,7 @@ function drawGraphic(){
             "hideBulletsCount": 50
         }];
     }else{
-        valueAxes = [{ 'axisAlpha': 0.2, 'id': 'g1'},{ 'axisAlpha': 0.2,'id': 'g2'},{'axisAlpha': 0.2,'id': 'g3'}];
+        valueAxes = [];
         graphs = [];
     }
 
@@ -883,7 +883,7 @@ function drawGraphic(){
             "axisColor": "#DADADA",
             "dateFormats": [{"period":"fff","format":"JJ:NN:SS"},{"period":"ss","format":"JJ:NN:SS"},{period:'mm',format:'JJ:NN'}]
         },
-        "valueAxes": valueAxes,
+        "valueAxes": [{ 'axisAlpha': 0.2, 'id': 'g1'},{ 'axisAlpha': 0.2,'id': 'g2'},{'axisAlpha': 0.2,'id': 'g3'}],
         "graphs": [{
             "id": "g1",
             "valueField": "BH1",
