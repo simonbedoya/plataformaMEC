@@ -903,12 +903,27 @@ function drawGraphic(){
     socket.emit('requestTest',`{"pk_sensor": "${pk_sensor}", "component" : "REAL_TIME", "type" : "${axisSelect}" }`,function (data) {
         if(data.code === "001"){
             loadChart(axisSelect,valueAxes,graphs);
+            changeButton();
         }else if(data.code === "004"){
             document.getElementById(`resultTest${component}`).innerHTML = "Ya se encuentra un test corriendo para este sensor.";
         }else if(data.code === "003"){
             document.getElementById(`resultTest${component}`).innerHTML = "El sensor no se encuentra conectado, intenta nuevamente.";
         }else{
             document.getElementById(`resultTest${component}`).innerHTML = "Ha ocurrido un error intenta nuevamente.";
+        }
+    })
+}
+
+function changeButton() {
+    document.getElementById("btnRealTime").innerHTML = "Detener";
+    document.getElementById("btnRealTime").setAttribute("onclick","stopRealTime()");
+}
+
+function stopRealTime() {
+    socket.emit('requestTest',`{"pk_sensor": "${pk_sensor}", "component" : "REAL_TIME", "type" : "STOP" }`,function (data) {
+        if(data.code === "001"){
+            document.getElementById("btnRealTime").innerHTML = "Conectar";
+            document.getElementById("btnRealTime").setAttribute("onclick","drawGraphic()");
         }
     })
 }
