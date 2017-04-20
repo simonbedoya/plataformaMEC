@@ -921,7 +921,7 @@ function drawGraphic(){
             "axisColor": "#DADADA",
             "dateFormats": [{"period":"fff","format":"JJ:NN:SS"},{"period":"ss","format":"JJ:NN:SS"},{period:'mm',format:'JJ:NN'}]
         },
-        "valueAxes": valueAxes,
+        "valueAxes": JSON.stringify(valueAxes),
         "graphs": graphs,
         "chartCursor": {
             "cursorAlpha": 0,
