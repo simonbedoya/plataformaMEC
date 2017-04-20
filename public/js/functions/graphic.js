@@ -681,11 +681,11 @@ function drawGraphic(dataNew) {
     let date = new Date();
     date.setHours(0,0,0,0);
     for(i in dataNew){
-        date.setSeconds(data[i].x);
+        date.setSeconds(dataNew[i].x);
         console.log(date.getTime());
         charData.push({
             date: date,
-            BH1: data[i].y,
+            BH1: dataNew[i].y,
         })
     }
     if(dataNew.length === 0){
