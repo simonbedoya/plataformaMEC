@@ -681,20 +681,20 @@ function drawGraphic(dataNew) {
     let i;
     let date = new Date();
     date.setHours(0,0,0,0);
-    for(i in dataNew){
-        let minutes = parseInt(dataNew[i].x / 60);
-        let seconds = dataNew[i].x % 60;
+    dataNew.forEach((i)=>{
+        let minutes = parseInt(i.x / 60);
+        let seconds = i.x % 60;
         date.setMinutes(minutes);
         date.setSeconds(seconds);
         console.log("posicion " +i);
         console.log(date.getTime());
         let dataFinale = {
             date: date,
-            BH1: dataNew[i].y,
+            BH1: i.y,
         };
         console.log(dataFinale);
         chartData.push(dataFinale);
-    }
+    });
     if(dataNew.length === 0){
         swal({
             title: "Información",
