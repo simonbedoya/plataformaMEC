@@ -901,6 +901,8 @@ function drawGraphic(){
 
 
     socket.emit('requestTest',`{"pk_sensor": "${pk_sensor}", "component" : "REAL_TIME", "type" : "${axisSelect}" }`,function (data) {
+        console.log("responde solicitud real time");
+        console.log(data);
         if(data.code === "001"){
             loadChart(axisSelect,valueAxes,graphs);
             changeButton();
@@ -921,6 +923,7 @@ function changeButton() {
 
 function stopRealTime() {
     socket.emit('requestTest',`{"pk_sensor": "${pk_sensor}", "component" : "REAL_TIME", "type" : "STOP" }`,function (data) {
+        console.log(data);
         if(data.code === "001"){
             document.getElementById("btnRealTime").innerHTML = "Conectar";
             document.getElementById("btnRealTime").setAttribute("onclick","drawGraphic()");
