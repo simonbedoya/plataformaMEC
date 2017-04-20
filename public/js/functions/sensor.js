@@ -839,7 +839,7 @@ $("#real_time_graphic").on('hidden.bs.modal', function () {
 function drawGraphic(){
     $('#divButtonGraphic').removeClass('hidden');
     let axisSelect = $('#selectedAxis').val();
-    let valueAxes, graphs;
+    let valueAxes = [], graphs = [];
     if(axisSelect !== 0){
         valueAxes = [{
             "axisAlpha": 0.2,
@@ -869,7 +869,7 @@ function drawGraphic(){
             "axisAlpha": 0.2,
             "id": "g3"
         }];
-        graphs = [ {
+        graphs = [{
             "id": "g1",
             "valueField": "BH1",
             "bullet": "round",
