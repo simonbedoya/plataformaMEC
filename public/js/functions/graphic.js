@@ -682,6 +682,7 @@ function drawGraphic(dataNew) {
     date.setHours(0,0,0,0);
     for(i in dataNew){
         date.setSeconds(dataNew[i].x);
+        console.log("posicion " +i);
         console.log(date.getTime());
         charData.push({
             date: date,
