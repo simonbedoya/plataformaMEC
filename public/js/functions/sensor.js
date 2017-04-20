@@ -828,46 +828,11 @@ var mili = 0;
 var firstDate;
 
 $("#real_time_graphic").on('shown.bs.modal', function () {
-    /*clearGraphic();
-    if(graph === undefined || graph === null) {
-        graph = new Rickshaw.Graph({
-            element: document.querySelector("#realTimeGraphic"),
-            height: 250,
-            width: document.getElementById("divcontainer").offsetWidth - 40,
-            renderer: 'line',
-            series: new Rickshaw.Series.FixedDuration([{color: 'steelblue', name: 'BHZ'}], undefined, {
-                timeInterval: 100,
-                maxDataPoints: 100,
-                timeBase: 0
-            })
-        });
 
-        let x_axis = new Rickshaw.Graph.Axis.Time({graph: graph});
+});
 
-        let y_axis = new Rickshaw.Graph.Axis.Y({
-            graph: graph,
-            orientation: 'left',
-            tickFormat: Rickshaw.Fixtures.Number.formatKMBT,
-            element: document.getElementById('y_axis'),
-        });
-
-        let hoverDetail = new Rickshaw.Graph.HoverDetail( {
-            graph: graph,
-            formatter: function(series, x, y) {
-                return series.name + ": " + parseInt(y);
-            }
-        } );
-
-        document.getElementById("y_axis").setAttribute("style", "margin-left: -20px;");
-
-
-    }
-
-    graph.max = 30;
-    graph.min = 0;
-
-    graph.render();
-*/  mili = 0;
+function drawGraphic(){
+    mili = 0;
     chartData = [];
     firstDate = new Date();
     firstDate.setDate( firstDate.getDate());
@@ -958,12 +923,7 @@ $("#real_time_graphic").on('shown.bs.modal', function () {
 
         }
     } );
-
-    //chart.addListener("dataUpdated", zoomChart);
-
-
-
-});
+}
 
 // generate some random data, quite different range
 function generateChartData() {
