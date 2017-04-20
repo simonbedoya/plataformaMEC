@@ -10,8 +10,7 @@
     <link href="assets/datatables/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/datatables/scroller.bootstrap.min.css" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" href="assets/rickshaw-chart/rickshaw.min.css">
-
+    <link  type="text/css" href="assets/amcharts/plugins/export/export.css" rel="stylesheet">
 </head>
 
 
@@ -354,10 +353,10 @@
                     </div>
                     <div class="portlet-body" style="height: 300px;">
                         <div class="col-lg-12">
-                            <div id="chart_container" class="col-lg-12">
-                                <div id="y_axis"></div>
-                                <div id="chartPcpal" class="col-lg-12"></div>
-                                <div id="preview"></div>
+                            <div id="chartdiv" style="width: 100%; height: 400px;"></div>
+                            <div style="margin-left:35px;" class="hidden" id="divButtonGraphic">
+                                <input type="radio" checked="true" name="group" id="rb1" onclick="setPanSelect()">Select
+                                <input type="radio" name="group" id="rb2" onclick="setPanSelect()">Pan
                             </div>
                         </div>
                     </div>
@@ -399,38 +398,10 @@
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.min.js"></script>
 
-<script src="assets/rickshaw-chart/vendor/d3.min.js"></script>
-<script src="assets/rickshaw-chart/vendor/d3.layout.min.js"></script>
-<script src="assets/rickshaw-chart/rickshaw.min.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Class.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Compat.ClassList.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.Renderer.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.Renderer.Area.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.Renderer.Line.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.Renderer.Bar.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.Renderer.ScatterPlot.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.Renderer.Stack.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.RangeSlider.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.RangeSlider.Preview.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.HoverDetail.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.Annotate.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.Legend.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.Axis.Time.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.Behavior.Series.Toggle.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.Behavior.Series.Order.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.Behavior.Series.Highlight.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.Smoother.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Fixtures.Time.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Fixtures.Time.Local.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Fixtures.Number.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Fixtures.RandomData.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Fixtures.Color.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Color.Palette.js"></script>
-<script src="assets/rickshaw-chart/Rickshaw.Graph.Axis.Y.js"></script>
-
-
+<script src="assets/amcharts/amcharts.js" type="text/javascript"></script>
+<script src="assets/amcharts/serial.js" type="text/javascript"></script>
+<script src="assets/amcharts/lang/de.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/amcharts/plugins/export/export.js"></script>
 
 <script src="js/functions/graphic.js"></script>
 

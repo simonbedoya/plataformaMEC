@@ -12,6 +12,7 @@ let durationFile;
 let timeGraphic;
 let durationFileFinal;
 let totalSamplesFile;
+let axis;
 
 
 
@@ -290,13 +291,14 @@ function readFile(pk_file,hour,axis) {
     });
 }
 
-function setDataFile(date,hour,axis,samplessec,sample,duration) {
+function setDataFile(date,hour,axis_i,samplessec,sample,duration) {
     maxSamples = samplessec;
     durationFile = duration;
     totalSamplesFile = sample;
+    axis = axis_i;
     document.getElementById("dfDate").innerHTML = date;
     document.getElementById("dfHour").innerHTML = hour;
-    document.getElementById("dfAxis").innerHTML = axis;
+    document.getElementById("dfAxis").innerHTML = axis_i;
     document.getElementById("dfSamSec").innerHTML = `${samplessec} sps`;
     document.getElementById("dfSam").innerHTML = `${sample} sam`;
     document.getElementById("dfDuration").innerHTML = `${duration} min` ;
@@ -668,6 +670,15 @@ function generateGraphic() {
 }
 
 function drawGraphic(dataNew) {
+    let charData = [];
+    let i;
+    let date = new Date(0);
+    for(i in dataNew){
+        charData.push({
+            date: date.setSeconds(data[i].x),
+            BH1: data[i].y,
+        })
+    }
     if(dataNew.length === 0){
         swal({
             title: "Información",
@@ -679,40 +690,103 @@ function drawGraphic(dataNew) {
         }).then(function () {
 
         });
-    }
-    console.log(dataNew.length);
-    if(graph === undefined) {
-        graph = new Rickshaw.Graph({
-            element: document.querySelector("#chartPcpal"),
-            height: 250,
-            renderer: 'line',
-            series: [{
-                color: 'steelblue',
-                data: dataNew,
-
-            }]
-        });
-
-        let x_axis = new Rickshaw.Graph.Axis.Time({graph: graph});
-
-        let y_axis = new Rickshaw.Graph.Axis.Y({
-            graph: graph,
-            orientation: 'left',
-            tickFormat: Rickshaw.Fixtures.Number.formatKMBT,
-            element: document.getElementById('y_axis'),
-        });
-
-
-
-        document.getElementById("y_axis").setAttribute("style", "margin-left: -40px;");
     }else{
-        graph.series[0].data = dataNew;
+        let valueAxes = [{'axisAlpha': 0.2,'id': 'g1'}];
+        let graphs = [{
+            "id": "g1",
+            "valueField": axis,
+            "bullet": "round",
+            "balloonText": `${axis} : [[value]]`,
+            "title": axis,
+            "bulletBorderColor": "#FFFFFF",
+            "bulletBorderThickness": 2,
+            "lineThickness": 2,
+            "lineColor": "#08088A",
+            "negativeLineColor": "#08088A",
+            "hideBulletsCount": 50
+        }];
 
+        mili = 0;
+        chartData = [];
+        firstDate = new Date();
+        firstDate.setDate( firstDate.getDate());
+        firstDate.setHours(0,0,0,0);
+        chart = AmCharts.makeChart( "chartdiv", {
+            "type": "serial",
+            "theme": "light",
+            "language": "es",
+            "zoomOutButton": {
+                "backgroundColor": '#000000',
+                "backgroundAlpha": 0.15
+            },
+            "dataProvider": dataNew,
+            "categoryField": "date",
+            "categoryAxis": {
+                "parseDates": true,
+                "minPeriod": "fff",
+                "dashLength": 1,
+                "gridAlpha": 0.15,
+                "minorGridEnabled": true,
+                "axisColor": "#DADADA",
+                "dateFormats": [{"period":"fff","format":"JJ:NN:SS"},{"period":"ss","format":"JJ:NN:SS"},{period:'mm',format:'JJ:NN'}]
+            },
+            "valueAxes": valueAxes,
+            "graphs": graphs,
+            "chartCursor": {
+                "cursorAlpha": 0,
+                "zoomable": false,
+                "valueZoomable":true
+            },
+            "chartScrollbar": {
+                "graph": "g1",
+                "scrollbarHeight": 40,
+                "color": "#FFFFFF",
+                "autoGridCount": true
+            },
+            "export": {
+                "enabled": true,
+                "position": "bottom-left"
+            },
+            "valueScrollbar":{
+
+            }
+        });
+
+
+        console.log(dataNew.length);
+        if(graph === undefined) {
+            graph = new Rickshaw.Graph({
+                element: document.querySelector("#chartPcpal"),
+                height: 250,
+                renderer: 'line',
+                series: [{
+                    color: 'steelblue',
+                    data: dataNew,
+
+                }]
+            });
+
+            let x_axis = new Rickshaw.Graph.Axis.Time({graph: graph});
+
+            let y_axis = new Rickshaw.Graph.Axis.Y({
+                graph: graph,
+                orientation: 'left',
+                tickFormat: Rickshaw.Fixtures.Number.formatKMBT,
+                element: document.getElementById('y_axis'),
+            });
+
+
+
+            document.getElementById("y_axis").setAttribute("style", "margin-left: -40px;");
+        }else{
+            graph.series[0].data = dataNew;
+
+        }
+        let max = parseFloat(ymax[1]);
+        let min = parseFloat(ymin[1]);
+        graph.max = max + (max * 0.05);
+        graph.min = min - (min * 0.05);
+        graph.render();
+        showPanelLoad('portletGraphic',false);
     }
-    let max = parseFloat(ymax[1]);
-    let min = parseFloat(ymin[1]);
-    graph.max = max + (max * 0.05);
-    graph.min = min - (min * 0.05);
-    graph.render();
-    showPanelLoad('portletGraphic',false);
 }
