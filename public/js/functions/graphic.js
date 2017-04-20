@@ -669,14 +669,14 @@ function generateGraphic() {
     drawGraphic(dataNew);
 }
 
-let chartData = [];
+
 let chart;
 let day = 0;
 let mili = 0;
 let firstDate;
 
 function drawGraphic(dataNew) {
-
+    let chartData = [];
     let i;
     let date = new Date();
     date.setHours(0,0,0,0);
