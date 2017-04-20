@@ -840,7 +840,7 @@ function drawGraphic(){
     $('#divButtonGraphic').removeClass('hidden');
     let axisSelect = $('#selectedAxis').val();
     let valueAxes, graphs = [];
-    if(axisSelect !== 0){
+    if(axisSelect !== "0"){
         valueAxes = "[{'axisAlpha': 0.2,'id': 'g1'}]";
         graphs = [{
             "id": "g1",
