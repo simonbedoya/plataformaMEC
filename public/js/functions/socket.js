@@ -43,7 +43,7 @@ socket.on("responseRealTime", function (data) {
 
     graph.series.addData(gData);
     graph.update();*/
-    chart.dataProvider.shift();
+    //chart.dataProvider.shift();
 
     // add new one at the end
     /*mili = mili + 100;
