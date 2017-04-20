@@ -723,7 +723,7 @@ function drawGraphic(dataNew) {
                 "gridAlpha": 0.15,
                 "minorGridEnabled": true,
                 "axisColor": "#DADADA",
-                "dateFormats": [{"period":"fff","format":"JJ:NN:SS"},{"period":"ss","format":"JJ:NN:SS"},{period:'mm',format:'JJ:NN'}]
+                "dateFormats": [{"period":"fff","format":"JJ:NN:SS"},{"period":"ss","format":"JJ:NN:SS"},{period:'mm',format:'JJ:NN'},{period:'hh',format:'JJ:NN'}]
             },
             "valueAxes": valueAxes,
             "graphs": graphs,
