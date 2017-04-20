@@ -856,35 +856,8 @@ function drawGraphic(){
             "hideBulletsCount": 50
         }];
     }else{
-        valueAxes = [];
-        graphs = [];
-    }
-
-    mili = 0;
-    chartData = [];
-    firstDate = new Date();
-    firstDate.setDate( firstDate.getDate());
-    chart = AmCharts.makeChart( "chartdiv", {
-        "type": "serial",
-        "theme": "light",
-        "language": "es",
-        "zoomOutButton": {
-            "backgroundColor": '#000000',
-            "backgroundAlpha": 0.15
-        },
-        "dataProvider": generateChartData(axisSelect),
-        "categoryField": "date",
-        "categoryAxis": {
-            "parseDates": true,
-            "minPeriod": "fff",
-            "dashLength": 1,
-            "gridAlpha": 0.15,
-            "minorGridEnabled": true,
-            "axisColor": "#DADADA",
-            "dateFormats": [{"period":"fff","format":"JJ:NN:SS"},{"period":"ss","format":"JJ:NN:SS"},{period:'mm',format:'JJ:NN'}]
-        },
-        "valueAxes": [{ 'axisAlpha': 0.2, 'id': 'g1'},{ 'axisAlpha': 0.2,'id': 'g2'},{'axisAlpha': 0.2,'id': 'g3'}],
-        "graphs": [{
+        valueAxes = [{ 'axisAlpha': 0.2, 'id': 'g1'},{ 'axisAlpha': 0.2,'id': 'g2'},{'axisAlpha': 0.2,'id': 'g3'}];
+        graphs = [{
             "id": "g1",
             "valueField": "BH1",
             "bullet": "round",
@@ -922,7 +895,34 @@ function drawGraphic(){
                 "lineColor": "#b543fd",
                 "negativeLineColor": "#ff34b5",
                 "hideBulletsCount": 50
-            }],
+            }];
+    }
+
+    mili = 0;
+    chartData = [];
+    firstDate = new Date();
+    firstDate.setDate( firstDate.getDate());
+    chart = AmCharts.makeChart( "chartdiv", {
+        "type": "serial",
+        "theme": "light",
+        "language": "es",
+        "zoomOutButton": {
+            "backgroundColor": '#000000',
+            "backgroundAlpha": 0.15
+        },
+        "dataProvider": generateChartData(axisSelect),
+        "categoryField": "date",
+        "categoryAxis": {
+            "parseDates": true,
+            "minPeriod": "fff",
+            "dashLength": 1,
+            "gridAlpha": 0.15,
+            "minorGridEnabled": true,
+            "axisColor": "#DADADA",
+            "dateFormats": [{"period":"fff","format":"JJ:NN:SS"},{"period":"ss","format":"JJ:NN:SS"},{period:'mm',format:'JJ:NN'}]
+        },
+        "valueAxes": valueAxes,
+        "graphs": graphs,
         "chartCursor": {
             "cursorAlpha": 0,
             "zoomable": false,
