@@ -755,7 +755,7 @@ function getdata(dataNew) {
     let chartData = [];
     dataNew.forEach((i) => {
         let date = new Date();
-        date.setHours(0, 0, 0, 0);
+        date.setHours(0, 0, 1, 0);
         let minutes = parseInt(i.x / 60);
         let seconds = i.x % 60;
         date.setMinutes(minutes);
