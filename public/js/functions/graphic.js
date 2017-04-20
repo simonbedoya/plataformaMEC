@@ -678,20 +678,7 @@ let chartData = [];
 
 function drawGraphic(dataNew) {
 
-    dataNew.forEach((i)=>{
-        let date = new Date();
-        date.setHours(0,0,0,0);
-        let minutes = parseInt(i.x / 60);
-        let seconds = i.x % 60;
-        date.setMinutes(minutes);
-        date.setSeconds(seconds);
 
-        let dataFinale = {
-            "date": date,
-            "BH1": i.y,
-        };
-        chartData.push(dataFinale);
-    });
     if(dataNew.length === 0){
         swal({
             title: "Información",
@@ -727,7 +714,7 @@ function drawGraphic(dataNew) {
                 "backgroundColor": '#000000',
                 "backgroundAlpha": 0.15
             },
-            "dataProvider": chartData,
+            "dataProvider": getdata(dataNew),
             "categoryField": "date",
             "categoryAxis": {
                 "parseDates": true,
@@ -762,4 +749,23 @@ function drawGraphic(dataNew) {
 
         showPanelLoad('portletGraphic',false);
     }
+}
+
+function getdata(dataNew) {
+    let chartData = [];
+    dataNew.forEach((i) => {
+        let date = new Date();
+        date.setHours(0, 0, 0, 0);
+        let minutes = parseInt(i.x / 60);
+        let seconds = i.x % 60;
+        date.setMinutes(minutes);
+        date.setSeconds(seconds);
+
+        let dataFinale = {
+            "date": date,
+            "BH1": i.y,
+        };
+        chartData.push(dataFinale);
+    });
+    return chartData;
 }
