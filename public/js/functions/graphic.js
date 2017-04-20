@@ -685,13 +685,11 @@ function drawGraphic(dataNew) {
         let seconds = i.x % 60;
         date.setMinutes(minutes);
         date.setSeconds(seconds);
-        console.log("posicion " +i);
-        console.log(date.getTime());
+
         let dataFinale = {
             date: date,
             BH1: i.y,
         };
-        console.log(dataFinale);
         chartData.push(dataFinale);
     });
     if(dataNew.length === 0){
