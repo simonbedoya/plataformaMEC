@@ -754,41 +754,6 @@ function drawGraphic(dataNew) {
             }
         });
 
-
-        console.log(dataNew.length);
-        if(graph === undefined) {
-            graph = new Rickshaw.Graph({
-                element: document.querySelector("#chartPcpal"),
-                height: 250,
-                renderer: 'line',
-                series: [{
-                    color: 'steelblue',
-                    data: dataNew,
-
-                }]
-            });
-
-            let x_axis = new Rickshaw.Graph.Axis.Time({graph: graph});
-
-            let y_axis = new Rickshaw.Graph.Axis.Y({
-                graph: graph,
-                orientation: 'left',
-                tickFormat: Rickshaw.Fixtures.Number.formatKMBT,
-                element: document.getElementById('y_axis'),
-            });
-
-
-
-            document.getElementById("y_axis").setAttribute("style", "margin-left: -40px;");
-        }else{
-            graph.series[0].data = dataNew;
-
-        }
-        let max = parseFloat(ymax[1]);
-        let min = parseFloat(ymin[1]);
-        graph.max = max + (max * 0.05);
-        graph.min = min - (min * 0.05);
-        graph.render();
         showPanelLoad('portletGraphic',false);
     }
 }
