@@ -956,6 +956,26 @@ function generateChartData(axis) {
 
         let data;
         if(axis !== "0"){
+            switch (axis){
+                case "BH1":
+                    data = {
+                        "date": newDate,
+                        "BH1": 0
+                    };
+                    break;
+                case "BH2":
+                    data = {
+                        "date": newDate,
+                        "BH2": 0
+                    };
+                    break;
+                case "BHZ":
+                    data = {
+                        "date": newDate,
+                        "BHZ": 0
+                    };
+                    break;
+            }
             data = {
                 "date": newDate,
                 axis: 0
