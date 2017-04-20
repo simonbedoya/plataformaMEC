@@ -821,13 +821,14 @@ function showRealTime(pkSensor, name) {
     $('#real_time_graphic').modal();
 }
 
-var chartData = [];
-var chart;
-var day = 0;
-var mili = 0;
-var firstDate;
+let chartData = [];
+let chart;
+let day = 0;
+let mili = 0;
+let firstDate;
 
 $("#real_time_graphic").on('hidden.bs.modal', function () {
+    $('#divButtonGraphic').addClass('hidden');
     document.getElementById("divcontainer").innerHTML = "<div id='chartdiv' style='width: 100%; height: 400px;'></div>"+
                                                             "<div style='margin-left:35px;'>"+
                                                             "<input type='radio' checked='true' name='group' id='rb1' onclick='setPanSelect()'>Select"+
@@ -836,30 +837,29 @@ $("#real_time_graphic").on('hidden.bs.modal', function () {
 });
 
 function drawGraphic(){
-    mili = 0;
-    chartData = [];
-    firstDate = new Date();
-    firstDate.setDate( firstDate.getDate());
-    chart = AmCharts.makeChart( "chartdiv", {
-        "type": "serial",
-        "theme": "light",
-        "language": "es",
-        "zoomOutButton": {
-            "backgroundColor": '#000000',
-            "backgroundAlpha": 0.15
-        },
-        "dataProvider": generateChartData(),
-        "categoryField": "date",
-        "categoryAxis": {
-            "parseDates": true,
-            "minPeriod": "fff",
-            "dashLength": 1,
-            "gridAlpha": 0.15,
-            "minorGridEnabled": true,
-            "axisColor": "#DADADA",
-            "dateFormats": [{"period":"fff","format":"JJ:NN:SS"},{"period":"ss","format":"JJ:NN:SS"},{period:'mm',format:'JJ:NN'}]
-        },
-        "valueAxes": [{
+    $('#divButtonGraphic').removeClass('hidden');
+    let axisSelect = $('#selectedAxis').val();
+    let valueAxes, graphs;
+    if(axisSelect !== 0){
+        valueAxes = [{
+            "axisAlpha": 0.2,
+            "id": "g1"
+        }];
+        graphs = [{
+            "id": "g1",
+            "valueField": axisSelect,
+            "bullet": "round",
+            "balloonText": `${axisSelect} : [[value]]`,
+            "title": axisSelect,
+            "bulletBorderColor": "#FFFFFF",
+            "bulletBorderThickness": 2,
+            "lineThickness": 2,
+            "lineColor": "#b4f30d",
+            "negativeLineColor": "#5f4da5",
+            "hideBulletsCount": 50
+        }];
+    }else{
+        valueAxes = [{
             "axisAlpha": 0.2,
             "id": "g1"
         },{
@@ -868,8 +868,8 @@ function drawGraphic(){
         },{
             "axisAlpha": 0.2,
             "id": "g3"
-        }],
-        "graphs": [ {
+        }];
+        graphs = [ {
             "id": "g1",
             "valueField": "BH1",
             "bullet": "round",
@@ -907,7 +907,34 @@ function drawGraphic(){
                 "lineColor": "#b543fd",
                 "negativeLineColor": "#ff34b5",
                 "hideBulletsCount": 50
-            }],
+            }];
+    }
+
+    mili = 0;
+    chartData = [];
+    firstDate = new Date();
+    firstDate.setDate( firstDate.getDate());
+    chart = AmCharts.makeChart( "chartdiv", {
+        "type": "serial",
+        "theme": "light",
+        "language": "es",
+        "zoomOutButton": {
+            "backgroundColor": '#000000',
+            "backgroundAlpha": 0.15
+        },
+        "dataProvider": generateChartData(axisSelect),
+        "categoryField": "date",
+        "categoryAxis": {
+            "parseDates": true,
+            "minPeriod": "fff",
+            "dashLength": 1,
+            "gridAlpha": 0.15,
+            "minorGridEnabled": true,
+            "axisColor": "#DADADA",
+            "dateFormats": [{"period":"fff","format":"JJ:NN:SS"},{"period":"ss","format":"JJ:NN:SS"},{period:'mm',format:'JJ:NN'}]
+        },
+        "valueAxes": valueAxes,
+        "graphs": graphs,
         "chartCursor": {
             "cursorAlpha": 0,
             "zoomable": false,
@@ -930,36 +957,38 @@ function drawGraphic(){
 }
 
 // generate some random data, quite different range
-function generateChartData() {
-    var chartData = [];
-    let mili = 0;
+function generateChartData(axis) {
+    let chartData = [];
+
     for ( let i = 0; i < 600; i++ ) {
 
-        var newDate = new Date( firstDate );
+        let newDate = new Date(firstDate);
         //newDate.setHours(0,0,0,(i*100));
         newDate.setMilliseconds(newDate.getMilliseconds() + i*100);
-        var visits = Math.round( Math.random() * 40 ) - 20;
-        console.log(newDate.getTime());
-        chartData.push( {
-            "date": newDate,
-            "BH1": 0,
-            "BH2": 0,
-            "BHZ": 0,
-        } );
+
+        let data;
+        if(axis !== 0){
+            data = {
+                "date": newDate,
+                axis: 0
+            }
+        }else{
+            data = {
+                "date": newDate,
+                "BH1": 0,
+                "BH2": 0,
+                "BHZ": 0,
+            }
+        }
+        chartData.push(data);
     }
 
     return chartData;
 }
 
-// this method is called when chart is first inited as we listen for "dataUpdated" event
-function zoomChart() {
-    // different zoom methods can be used - zoomToIndexes, zoomToDates, zoomToCategoryValues
-    chart.zoomToIndexes(chartData.length - 40, chartData.length - 1);
-}
-
 // changes cursor mode from pan to select
 function setPanSelect() {
-    var chartCursor = chart.chartCursor;
+    let chartCursor = chart.chartCursor;
 
     if (document.getElementById("rb1").checked) {
         chartCursor.pan = false;
@@ -970,20 +999,3 @@ function setPanSelect() {
     }
     chart.validateNow();
 }
-
-function clearGraphic(){
-    document.getElementById("divcontainer").innerHTML = "";
-    graph = null;
-    document.getElementById("divcontainer").innerHTML = "<div id='chart_container'>"+
-                                                            "<div id='y_axis'></div>"+
-                                                                "<div id='realTimeGraphic' style='width: 100%; margin-left: 20px;'></div>"+
-                                                                "<div id='legend_container'>"+
-                                                                "<div id='smoother' title='Smoothing'></div>"+
-                                                                "<div id='legend'></div>"+
-                                                                "</div>"+
-                                                                "<div id='slider'></div>"+
-                                                        "</div>";
-}
-
-
-
