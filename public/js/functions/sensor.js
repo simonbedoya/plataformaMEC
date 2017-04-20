@@ -955,7 +955,7 @@ function generateChartData(axis) {
         newDate.setMilliseconds(newDate.getMilliseconds() + i*100);
 
         let data;
-        if(axis !== 0){
+        if(axis !== "0"){
             data = {
                 "date": newDate,
                 axis: 0
