@@ -53,10 +53,10 @@
       <file leaf-file-name="graphic.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-648">
-              <caret line="678" column="12" lean-forward="false" selection-start-line="678" selection-start-column="4" selection-end-line="678" selection-end-column="12" />
+            <state relative-caret-position="284">
+              <caret line="693" column="32" lean-forward="false" selection-start-line="693" selection-start-column="32" selection-end-line="693" selection-end-column="32" />
               <folding>
-                <marker date="1492701460259" expanded="true" signature="2114:2131" ph="..." />
+                <marker date="1492701818573" expanded="true" signature="2114:2131" ph="..." />
               </folding>
             </state>
           </provider>
@@ -65,8 +65,8 @@
       <file leaf-file-name="sensor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="823" column="0" lean-forward="false" selection-start-line="823" selection-start-column="0" selection-end-line="827" selection-end-column="14" />
+            <state relative-caret-position="2635">
+              <caret line="988" column="31" lean-forward="false" selection-start-line="988" selection-start-column="16" selection-end-line="988" selection-end-column="31" />
               <folding>
                 <marker date="1492669613932" expanded="true" signature="3566:3601" ph="..." />
                 <marker date="1492669613932" expanded="true" signature="3784:3819" ph="..." />
@@ -699,14 +699,7 @@
       <workItem from="1492530091288" duration="3675000" />
       <workItem from="1492555820954" duration="5000" />
       <workItem from="1492658788761" duration="13606000" />
-      <workItem from="1492695625809" duration="4737000" />
-    </task>
-    <task id="LOCAL-00149" summary="commit">
-      <created>1492491978692</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1492491978692</updated>
+      <workItem from="1492695625809" duration="5087000" />
     </task>
     <task id="LOCAL-00150" summary="commit">
       <created>1492492104851</created>
@@ -1044,11 +1037,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492701292371</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="19/04/2017">
+      <created>1492701468381</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1492701468382</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="656831000" />
+    <option name="totallyTimeSpent" value="657181000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1582,8 +1582,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="823" column="0" lean-forward="false" selection-start-line="823" selection-start-column="0" selection-end-line="827" selection-end-column="14" />
+        <state relative-caret-position="2635">
+          <caret line="988" column="31" lean-forward="false" selection-start-line="988" selection-start-column="16" selection-end-line="988" selection-end-column="31" />
           <folding>
             <marker date="1492669613932" expanded="true" signature="3566:3601" ph="..." />
             <marker date="1492669613932" expanded="true" signature="3784:3819" ph="..." />
@@ -1602,10 +1602,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648">
-          <caret line="678" column="12" lean-forward="false" selection-start-line="678" selection-start-column="4" selection-end-line="678" selection-end-column="12" />
+        <state relative-caret-position="284">
+          <caret line="693" column="32" lean-forward="false" selection-start-line="693" selection-start-column="32" selection-end-line="693" selection-end-column="32" />
           <folding>
-            <marker date="1492701460259" expanded="true" signature="2114:2131" ph="..." />
+            <marker date="1492701818573" expanded="true" signature="2114:2131" ph="..." />
           </folding>
         </state>
       </provider>

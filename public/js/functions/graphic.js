@@ -687,10 +687,12 @@ function drawGraphic(dataNew) {
         date.setSeconds(seconds);
         console.log("posicion " +i);
         console.log(date.getTime());
-        charData.push({
+        let dataFinale = {
             date: date,
             BH1: dataNew[i].y,
-        })
+        };
+        console.log(dataFinale);
+        charData.push(dataFinale);
     }
     if(dataNew.length === 0){
         swal({
