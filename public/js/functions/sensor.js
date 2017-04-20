@@ -827,8 +827,12 @@ var day = 0;
 var mili = 0;
 var firstDate;
 
-$("#real_time_graphic").on('shown.bs.modal', function () {
-
+$("#real_time_graphic").on('hidden.bs.modal', function () {
+    document.getElementById("divcontainer").innerHTML = "<div id='chartdiv' style='width: 100%; height: 400px;'></div>"+
+                                                            "<div style='margin-left:35px;'>"+
+                                                            "<input type='radio' checked='true' name='group' id='rb1' onclick='setPanSelect()'>Select"+
+                                                            "<input type='radio' name='group' id='rb2' onclick='setPanSelect()'>Pan"+
+                                                        "</div>";
 });
 
 function drawGraphic(){
