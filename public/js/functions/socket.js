@@ -54,8 +54,9 @@ socket.on("responseRealTime", function (data) {
     }
     for(let i=0; i<size[0]; i++){
         if(ejes.length === 3){
+            let date = new Date();
             dataN = {
-                date: new Date(),
+                date: date,
                 BH1: dataIn[ejes[0]][i],
                 BH2: dataIn[ejes[1]][i],
                 BHZ: dataIn[ejes[2]][i]
