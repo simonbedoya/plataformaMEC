@@ -13,7 +13,8 @@ let timeGraphic;
 let durationFileFinal;
 let totalSamplesFile;
 let axis;
-
+let dateFile;
+let hourFile;
 
 
 
@@ -297,6 +298,8 @@ function setDataFile(date,hour,axis_i,samplessec,sample,duration) {
     durationFile = duration;
     totalSamplesFile = sample;
     axis = axis_i;
+    dateFile = date;
+    hourFile = hour;
     document.getElementById("dfDate").innerHTML = date;
     document.getElementById("dfHour").innerHTML = hour;
     document.getElementById("dfAxis").innerHTML = axis_i;
@@ -510,6 +513,7 @@ function loadParamGraphic(){
 function closePanelGraphic(){
     showPanel('panelGraphic',false);
     showPanel('btnShowParamGraphic',true);
+    showPanel('graphicGenerateFile',false);
     clearDataGenerateGraphic();
 }
 
@@ -752,9 +756,9 @@ function drawGraphic(dataNew) {
 
 function getdata(dataNew) {
     let chartData = [];
-
+    let arrayDate = dateFile.split("-");
     dataNew.forEach((i) => {
-        let date = new Date();
+        let date = new Date(arrayDate[0],arrayDate[1],arrayDate[2]);
         date.setHours(0, 0, 1, 0);
         let minutes = parseInt(i.x / 60);
         let seconds = parseInt(i.x % 60);
