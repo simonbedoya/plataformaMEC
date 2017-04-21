@@ -59,18 +59,20 @@ socket.on("responseRealTime", function (data) {
             date.setSeconds(date.getSeconds()+(0.02*i));
             console.log(date.getTime());
             dataN = {
-                date: date,
-                BH1: dataIn[ejes[0]][i],
-                BH2: dataIn[ejes[1]][i],
-                BHZ: dataIn[ejes[2]][i]
-            }
+                "date": date,
+                "BH1": dataIn[ejes[0]][i],
+                "BH2": dataIn[ejes[1]][i],
+                "BHZ": dataIn[ejes[2]][i]
+            };
+            chart.dataProvider.push(dataN);
+            chart.validateData();
         }
         dataNew.push(dataN);
     }
-    console.log(dataNew);
+    //console.log(dataNew);
 
-    chart.dataProvider.push(dataNew);
-    chart.validateData();
+    //chart.dataProvider.push(dataNew);
+    //chart.validateData();
     /*let gData = { BHZ: 10};
 
     graph.series.addData(gData);
