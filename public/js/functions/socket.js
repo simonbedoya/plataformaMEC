@@ -52,9 +52,11 @@ socket.on("responseRealTime", function (data) {
         size.push(dataIn[i].length);
         ejes.push(i);
     }
+    let date = new Date();
     for(let i=0; i<size[0]; i++){
         if(ejes.length === 3){
-            let date = new Date();
+            date.setSeconds(date.getSeconds()+0.02);
+            console.log(date.getTime());
             dataN = {
                 date: date,
                 BH1: dataIn[ejes[0]][i],
