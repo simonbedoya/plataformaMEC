@@ -38,7 +38,7 @@ socket.on("uploadFile",function (data) {
 });
 
 socket.on("responseRealTime", function (data) {
-    console.log(data);
+    //console.log(data);
     let dataJson = JSON.parse(data);
     chart.dataProvider.shift();
 
@@ -53,7 +53,7 @@ socket.on("responseRealTime", function (data) {
         ejes.push(i);
     }
 
-    for(let i=0; i<size[0]; i++){
+    /*for(let i=0; i<size[0]; i++){
         if(ejes.length === 3){
             let date = new Date();
             date.setSeconds(date.getSeconds()+(0.02*i));
@@ -66,7 +66,7 @@ socket.on("responseRealTime", function (data) {
             };
         }
         dataNew.push(dataN);
-    }
+    }*/
     //console.log(dataNew);
     let date = new Date();
     dataN = {
