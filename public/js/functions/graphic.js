@@ -751,6 +751,7 @@ function drawGraphic(dataNew) {
 
 function getdata(dataNew) {
     let chartData = [];
+
     dataNew.forEach((i) => {
         let date = new Date();
         date.setHours(0, 0, 1, 0);
@@ -760,11 +761,28 @@ function getdata(dataNew) {
         date.setMinutes(minutes);
         date.setSeconds(seconds);
         date.setMilliseconds(milisec);
+        let dataFinale;
+        switch (axis){
+            case "BH1":
+                dataFinale = {
+                    "date": date,
+                    "BH1": i.y,
+                };
+                break;
+            case "BH2":
+                dataFinale = {
+                    "date": date,
+                    "BH2": i.y,
+                };
+                break;
+            case "BHZ":
+                dataFinale = {
+                    "date": date,
+                    "BHZ": i.y,
+                };
+                break;
+        }
 
-        let dataFinale = {
-            "date": date,
-            "BH1": i.y,
-        };
         chartData.push(dataFinale);
     });
     return chartData;
