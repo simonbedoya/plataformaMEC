@@ -54,11 +54,11 @@ socket.on("responseRealTime", function (data) {
         ejes.push(i);
     }
 
-    for(let i=0; i<size[0]; i++){
+    for(let i=0; i<10; i++){
         if(ejes.length === 3){
             var date = new Date(firstDate);
             seconds++;
-            date.setMilliseconds( newDate.getMilliseconds() + 60000 + 20 * i);
+            date.setMilliseconds( newDate.getMilliseconds() + 60000 + 100 * i);
             console.log(date.getTime());
             dataN = {};
             chartRealTime.dataProvider.push({
