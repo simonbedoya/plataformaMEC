@@ -759,8 +759,10 @@ function getdata(dataNew) {
         let seconds = parseInt(i.x % 60);
         let milisec = parseInt(((i.x % 60) - parseInt(i.x %60)) * 1000);
         date.setMinutes(minutes);
-        date.setSeconds(seconds);
-        date.setMilliseconds(milisec);
+        if(i !== 0) {
+            date.setSeconds(seconds);
+            date.setMilliseconds(milisec);
+        }
         let dataFinale;
         switch (axis){
             case "BH1":

@@ -50,10 +50,10 @@
       <file leaf-file-name="graphic.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="758" column="71" lean-forward="false" selection-start-line="758" selection-start-column="71" selection-end-line="758" selection-end-column="71" />
+            <state relative-caret-position="311">
+              <caret line="764" column="9" lean-forward="false" selection-start-line="764" selection-start-column="9" selection-end-line="764" selection-end-column="9" />
               <folding>
-                <marker date="1492788187769" expanded="true" signature="2114:2131" ph="..." />
+                <marker date="1492788826215" expanded="true" signature="2114:2131" ph="..." />
               </folding>
             </state>
           </provider>
@@ -757,21 +757,7 @@
       <workItem from="1492728260904" duration="1746000" />
       <workItem from="1492742187561" duration="7737000" />
       <workItem from="1492753503244" duration="33000" />
-      <workItem from="1492784415315" duration="2820000" />
-    </task>
-    <task id="LOCAL-00186" summary="19/04/2017">
-      <created>1492668762322</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
-      <option name="project" value="LOCAL" />
-      <updated>1492668762322</updated>
-    </task>
-    <task id="LOCAL-00187" summary="19/04/2017">
-      <created>1492669670788</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1492669670788</updated>
+      <workItem from="1492784415315" duration="3446000" />
     </task>
     <task id="LOCAL-00188" summary="19/04/2017">
       <created>1492675627329</created>
@@ -1102,11 +1088,25 @@
       <option name="project" value="LOCAL" />
       <updated>1492787065168</updated>
     </task>
-    <option name="localTasksCounter" value="235" />
+    <task id="LOCAL-00235" summary="21/04/17">
+      <created>1492788212016</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1492788212018</updated>
+    </task>
+    <task id="LOCAL-00236" summary="21/04/17">
+      <created>1492788484510</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1492788484510</updated>
+    </task>
+    <option name="localTasksCounter" value="237" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="681359000" />
+    <option name="totallyTimeSpent" value="681985000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1662,10 +1662,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="758" column="71" lean-forward="false" selection-start-line="758" selection-start-column="71" selection-end-line="758" selection-end-column="71" />
+        <state relative-caret-position="311">
+          <caret line="764" column="9" lean-forward="false" selection-start-line="764" selection-start-column="9" selection-end-line="764" selection-end-column="9" />
           <folding>
-            <marker date="1492788187769" expanded="true" signature="2114:2131" ph="..." />
+            <marker date="1492788826215" expanded="true" signature="2114:2131" ph="..." />
           </folding>
         </state>
       </provider>
