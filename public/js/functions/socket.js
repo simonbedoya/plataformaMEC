@@ -69,17 +69,17 @@ socket.on("responseRealTime", function (data) {
         dataNew.push(dataN);
     }*/
     //console.log(dataNew);
-    let date = newDate;
+    var date = new Date(firstDate);
     seconds++;
-    date.setSeconds(date.getSeconds() + 1);
+    date.setMilliseconds( newDate.getMilliseconds() + 60000 + 1000 * seconds);
     console.log(date.getTime());
-    dataN = {
-        "date": date,
-        "BH1": 30,
-        "BH2": 40,
-        "BHZ": 50
-    };
-    chartRealTime.dataProvider.push(dataN);
+    dataN = {};
+    chartRealTime.dataProvider.push({
+        date: date,
+        BH1: 30,
+        BH2: 40,
+        BHZ: 50
+    });
     chartRealTime.validateData();
     /*let gData = { BHZ: 10};
 
