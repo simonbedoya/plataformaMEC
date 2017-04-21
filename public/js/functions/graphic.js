@@ -755,9 +755,11 @@ function getdata(dataNew) {
         let date = new Date();
         date.setHours(0, 0, 1, 0);
         let minutes = parseInt(i.x / 60);
-        let seconds = i.x % 60;
+        let seconds = parseInt(i.x % 60);
+        let mili = parseInt((i.x % 60) - parseInt(i.x %60));
         date.setMinutes(minutes);
         date.setSeconds(seconds);
+        date.setMilliseconds(mili);
 
         let dataFinale = {
             "date": date,
