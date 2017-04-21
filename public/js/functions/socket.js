@@ -75,9 +75,9 @@ socket.on("responseRealTime", function (data) {
     console.log(date.getTime());
     dataN = {
         "date": date,
-        "BH1": dataIn[ejes[0]][0],
-        "BH2": dataIn[ejes[1]][0],
-        "BHZ": dataIn[ejes[2]][0]
+        "BH1": 30,
+        "BH2": 40,
+        "BHZ": 50
     };
     chartRealTime.dataProvider.push(dataN);
     chartRealTime.validateData();
