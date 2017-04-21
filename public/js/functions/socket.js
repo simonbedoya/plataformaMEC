@@ -17,6 +17,20 @@ socket.on("connect", function (data) {
     });
 });
 
+socket.on("disconect", function (data) {
+    socket.socket.connect();
+    swal({
+        title: "Información",
+        text: "Ha ocurrido un error intenta de nuevo!",
+        type: "info",
+        showCancelButton: false,
+        confirmButtonColor: "#444a53",
+        confirmButtonText: "OK"
+    }).then(function () {
+
+    });
+});
+
 socket.on("showError", function (data) {
     console.log(data);
     let dataIn = JSON.parse(data);
