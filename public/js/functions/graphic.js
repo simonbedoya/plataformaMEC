@@ -757,9 +757,10 @@ function drawGraphic(dataNew) {
 function getdata(dataNew) {
     let chartData = [];
     let arrayDate = dateFile.split("-");
+    let hourarray = hourFile.split(":");
     dataNew.forEach((i) => {
         let date = new Date(arrayDate[0],arrayDate[1],arrayDate[2]);
-        date.setHours(0, 0, 1, 0);
+        date.setHours(parseInt(hourarray[0]), 0, 1, 0);
         let minutes = parseInt(i.x / 60);
         let seconds = parseInt(i.x % 60);
         let milisec = parseInt(((i.x % 60) - parseInt(i.x %60)) * 1000);
