@@ -822,7 +822,7 @@ function showRealTime(pkSensor, name) {
 }
 
 let chartData = [];
-let chart;
+let chartRealTime;
 let day = 0;
 let mili = 0;
 let firstDate;
@@ -939,7 +939,7 @@ function loadChart(axisSelect,valueAxes,graphs) {
     chartData = [];
     firstDate = new Date();
     firstDate.setDate( firstDate.getDate());
-    chart = AmCharts.makeChart( "chartdiv", {
+    chartRealTime = AmCharts.makeChart( "chartdiv", {
         "type": "serial",
         "theme": "light",
         "language": "es",
@@ -980,7 +980,7 @@ function loadChart(axisSelect,valueAxes,graphs) {
         }
     });
 
-    chart.dataProvider.shift();
+
 }
 
 let newDate;
@@ -1032,7 +1032,7 @@ function generateChartData(axis) {
 
 // changes cursor mode from pan to select
 function setPanSelect() {
-    let chartCursor = chart.chartCursor;
+    let chartCursor = chartRealTime.chartCursor;
 
     if (document.getElementById("rb1").checked) {
         chartCursor.pan = false;
@@ -1041,5 +1041,5 @@ function setPanSelect() {
     } else {
         chartCursor.pan = true;
     }
-    chart.validateNow();
+    chartRealTime.validateNow();
 }
