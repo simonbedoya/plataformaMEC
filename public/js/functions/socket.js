@@ -68,6 +68,7 @@ socket.on("responseRealTime", function (data) {
         dataNew.push(dataN);
     }
     //console.log(dataNew);
+    let date = new Date();
     dataN = {
         "date": date,
         "BH1": dataIn[ejes[0]][0],
