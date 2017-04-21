@@ -74,12 +74,35 @@ socket.on("responseRealTime", function (data) {
     date.setMilliseconds( newDate.getMilliseconds() + 60000 + 1000 * seconds);
     console.log(date.getTime());
     dataN = {};
-    chartRealTime.dataProvider.push({
-        date: date,
-        BH1: dataIn[ejes[0]][0],
-        BH2: dataIn[ejes[1]][0],
-        BHZ: dataIn[ejes[2]][0]
-    });
+    if(ejes.length === 3) {
+        chartRealTime.dataProvider.push({
+            date: date,
+            BH1: dataIn[ejes[0]][0],
+            BH2: dataIn[ejes[1]][0],
+            BHZ: dataIn[ejes[2]][0]
+        });
+    }else{
+        switch(ejes[0]){
+            case "x":
+                chartRealTime.dataProvider.push({
+                    date: date,
+                    BH1: dataIn[ejes[0]][0]
+                });
+                break;
+            case "y":
+                chartRealTime.dataProvider.push({
+                    date: date,
+                    BH2: dataIn[ejes[0]][0]
+                });
+                break;
+            case "z":
+                chartRealTime.dataProvider.push({
+                    date: date,
+                    BHZ: dataIn[ejes[0]][0]
+                });
+                break;
+        }
+    }
 
     chartRealTime.validateData();
     /*let gData = { BHZ: 10};
