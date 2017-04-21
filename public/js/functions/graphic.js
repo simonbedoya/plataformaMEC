@@ -212,6 +212,7 @@ function readFile(pk_file,hour,axis) {
     showPanel('panelFile',false);
     showPanel('btnShowParamGraphic',true);
     showPanel('panelGraphic',false);
+    showPanel('graphicGenerateFile',false);
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/getDataFileByPk",
