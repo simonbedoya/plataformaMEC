@@ -936,6 +936,7 @@ function stopRealTime() {
 }
 
 function loadChart(axisSelect,valueAxes,graphs) {
+    seconds = 0;
     mili = 0;
     chartData = [];
     firstDate = new Date();
