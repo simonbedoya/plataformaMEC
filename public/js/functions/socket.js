@@ -80,6 +80,7 @@ socket.on("responseRealTime", function (data) {
         BH2: dataIn[ejes[1]][0],
         BHZ: dataIn[ejes[2]][0]
     });
+    
     chartRealTime.validateData();
     /*let gData = { BHZ: 10};
 
