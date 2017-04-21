@@ -672,8 +672,6 @@ function generateGraphic() {
 
 let chart;
 let day = 0;
-let mili = 0;
-let firstDate;
 let chartData = [];
 
 function drawGraphic(dataNew) {

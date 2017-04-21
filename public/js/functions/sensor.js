@@ -827,6 +827,7 @@ let day = 0;
 let mili = 0;
 let firstDate;
 
+
 $("#real_time_graphic").on('hidden.bs.modal', function () {
     $('#divButtonGraphic').addClass('hidden');
     document.getElementById("divcontainer").innerHTML = "<div id='chartdiv' style='width: 100%; height: 400px;'></div>"+
@@ -987,7 +988,7 @@ let newDate;
 // generate some random data, quite different range
 function generateChartData(axis) {
     let chartData = [];
-
+    firstDate.setMilliseconds(firstDate.getMilliseconds() - 60000);
     for ( let i = 0; i < 600; i++ ) {
 
         newDate = new Date(firstDate);
