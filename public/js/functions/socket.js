@@ -71,7 +71,8 @@ socket.on("responseRealTime", function (data) {
     //console.log(dataNew);
     let date = newDate;
     seconds++;
-    date.setSeconds(date.getSeconds() + seconds);
+    date.setSeconds(date.getSeconds() + 1);
+    console.log(date.getTime());
     dataN = {
         "date": date,
         "BH1": dataIn[ejes[0]][0],
