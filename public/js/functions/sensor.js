@@ -979,6 +979,8 @@ function loadChart(axisSelect,valueAxes,graphs) {
 
         }
     });
+
+    chart.dataProvider.shift();
 }
 
 let newDate;
