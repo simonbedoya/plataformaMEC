@@ -981,13 +981,14 @@ function loadChart(axisSelect,valueAxes,graphs) {
     });
 }
 
+let newDate;
 // generate some random data, quite different range
 function generateChartData(axis) {
     let chartData = [];
 
     for ( let i = 0; i < 600; i++ ) {
 
-        let newDate = new Date(firstDate);
+        newDate = new Date(firstDate);
         //newDate.setHours(0,0,0,(i*100));
         newDate.setMilliseconds(newDate.getMilliseconds() + i*100);
 

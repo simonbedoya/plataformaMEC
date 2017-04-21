@@ -37,6 +37,7 @@ socket.on("uploadFile",function (data) {
     $.Notification.autoHideNotify('info', 'top right', title, msg);
 });
 
+let seconds = 0;
 socket.on("responseRealTime", function (data) {
     //console.log(data);
     let dataJson = JSON.parse(data);
@@ -68,7 +69,9 @@ socket.on("responseRealTime", function (data) {
         dataNew.push(dataN);
     }*/
     //console.log(dataNew);
-    let date = new Date();
+    let date = newDate;
+    seconds++;
+    date.setSeconds(date.getSeconds() + seconds);
     dataN = {
         "date": date,
         "BH1": dataIn[ejes[0]][0],
