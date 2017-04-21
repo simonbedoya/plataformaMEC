@@ -907,11 +907,14 @@ function drawGraphic(){
             loadChart(axisSelect,valueAxes,graphs);
             changeButton();
         }else if(data.code === "004"){
-            document.getElementById(`resultTest${component}`).innerHTML = "Ya se encuentra un test corriendo para este sensor.";
+            alert("Ya se encuentra un test corriendo para este sensor.");
+            //document.getElementById(`resultTest${component}`).innerHTML = "Ya se encuentra un test corriendo para este sensor.";
         }else if(data.code === "003"){
-            document.getElementById(`resultTest${component}`).innerHTML = "El sensor no se encuentra conectado, intenta nuevamente.";
+            alert("El sensor no se encuentra conectado, intenta nuevamente.");
+            //document.getElementById(`resultTest${component}`).innerHTML = "El sensor no se encuentra conectado, intenta nuevamente.";
         }else{
-            document.getElementById(`resultTest${component}`).innerHTML = "Ha ocurrido un error intenta nuevamente.";
+            alert("Ha ocurrido un error intenta nuevamente.");
+            //document.getElementById(`resultTest${component}`).innerHTML = "Ha ocurrido un error intenta nuevamente.";
         }
     })
 }
