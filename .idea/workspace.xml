@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/data_controller.js" afterPath="$PROJECT_DIR$/controller/data_controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/sql_data.js" afterPath="$PROJECT_DIR$/sql/sql_data.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -113,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data_controller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="data_controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/data_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="203" column="44" lean-forward="false" selection-start-line="203" selection-start-column="44" selection-end-line="203" selection-end-column="44" />
+            <state relative-caret-position="92">
+              <caret line="199" column="57" lean-forward="false" selection-start-line="199" selection-start-column="57" selection-end-line="199" selection-end-column="57" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -125,11 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sql_data.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sql_data.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sql/sql_data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="18" column="355" lean-forward="true" selection-start-line="18" selection-start-column="355" selection-end-line="18" selection-end-column="355" />
+            <state relative-caret-position="127">
+              <caret line="18" column="425" lean-forward="false" selection-start-line="18" selection-start-column="425" selection-end-line="18" selection-end-column="425" />
               <folding />
             </state>
           </provider>
@@ -225,7 +225,6 @@
         <option value="$PROJECT_DIR$/routes/data.js" />
         <option value="$PROJECT_DIR$/views/config_sensor.ejs" />
         <option value="$PROJECT_DIR$/sql/sql_graphic.js" />
-        <option value="$PROJECT_DIR$/sql/sql_data.js" />
         <option value="$PROJECT_DIR$/public/assets/notifications/notifications.js" />
         <option value="$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.js" />
         <option value="$PROJECT_DIR$/public/assets/rickshaw-chart/vendor/Rickshaw.js" />
@@ -240,6 +239,7 @@
         <option value="$PROJECT_DIR$/views/graphic.ejs" />
         <option value="$PROJECT_DIR$/public/js/functions/graphic.js" />
         <option value="$PROJECT_DIR$/controller/data_controller.js" />
+        <option value="$PROJECT_DIR$/sql/sql_data.js" />
       </list>
     </option>
   </component>
@@ -772,14 +772,7 @@
       <workItem from="1492742187561" duration="7737000" />
       <workItem from="1492753503244" duration="33000" />
       <workItem from="1492784415315" duration="6460000" />
-      <workItem from="1492834334653" duration="1794000" />
-    </task>
-    <task id="LOCAL-00195" summary="19/04/2017">
-      <created>1492700373366</created>
-      <option name="number" value="00195" />
-      <option name="presentableId" value="LOCAL-00195" />
-      <option name="project" value="LOCAL" />
-      <updated>1492700373367</updated>
+      <workItem from="1492834334653" duration="2390000" />
     </task>
     <task id="LOCAL-00196" summary="19/04/2017">
       <created>1492700708702</created>
@@ -1117,11 +1110,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492836011151</updated>
     </task>
-    <option name="localTasksCounter" value="244" />
+    <task id="LOCAL-00244" summary="21/04/17">
+      <created>1492836145486</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1492836145486</updated>
+    </task>
+    <option name="localTasksCounter" value="245" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="686793000" />
+    <option name="totallyTimeSpent" value="687389000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1639,14 +1639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/sql_data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="18" column="355" lean-forward="true" selection-start-line="18" selection-start-column="355" selection-end-line="18" selection-end-column="355" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -1677,11 +1669,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/data_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="203" column="44" lean-forward="false" selection-start-line="203" selection-start-column="44" selection-end-line="203" selection-end-column="44" />
+        <state relative-caret-position="92">
+          <caret line="199" column="57" lean-forward="false" selection-start-line="199" selection-start-column="57" selection-end-line="199" selection-end-column="57" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/sql_data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="18" column="425" lean-forward="false" selection-start-line="18" selection-start-column="425" selection-end-line="18" selection-end-column="425" />
+          <folding />
         </state>
       </provider>
     </entry>
