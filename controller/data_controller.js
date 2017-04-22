@@ -9,7 +9,7 @@ const functions = require('../functions');
 const mkdirp = require('mkdirp');
 const config = require('../config');
 const exec = require('child_process').exec;
-
+const coordinate = require('coordinate-parser');
 
 module.exports = {
     getLocations: function(email) {
@@ -201,6 +201,10 @@ module.exports = {
                     if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
 
                     if (result.length !== 0) {
+                        let position = new coordinate(result[0].LAT_LOCATION+result[0].LNG_LOCATION);
+                        let lat = position.getLatitude();
+                        let long = position.getLongitude();
+                        console.log('let '+lat + ' long '+long);
                         fullfill({hcode: 200, code: "001", msg: "Location", data: JSON.stringify(result)});
                     } else {
                         fullfill({hcode: 202, code: "002", msg: "Error", data: null});
