@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/data_controller.js" afterPath="$PROJECT_DIR$/controller/data_controller.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -477,6 +476,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppAdminMEC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppAdminMEC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -758,14 +771,7 @@
       <workItem from="1492742187561" duration="7737000" />
       <workItem from="1492753503244" duration="33000" />
       <workItem from="1492784415315" duration="6460000" />
-      <workItem from="1492834334653" duration="1165000" />
-    </task>
-    <task id="LOCAL-00193" summary="19/04/2017">
-      <created>1492699847444</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
-      <option name="project" value="LOCAL" />
-      <updated>1492699847444</updated>
+      <workItem from="1492834334653" duration="1355000" />
     </task>
     <task id="LOCAL-00194" summary="19/04/2017">
       <created>1492700071150</created>
@@ -1103,11 +1109,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492810984992</updated>
     </task>
-    <option name="localTasksCounter" value="242" />
+    <task id="LOCAL-00242" summary="21/04/17">
+      <created>1492835520239</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1492835520240</updated>
+    </task>
+    <option name="localTasksCounter" value="243" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="686164000" />
+    <option name="totallyTimeSpent" value="686354000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1120,10 +1133,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22768533" sideWeight="0.4942717" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22768533" sideWeight="0.4942717" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5181543" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
