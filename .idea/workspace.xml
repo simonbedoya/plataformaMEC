@@ -117,7 +117,7 @@
         <entry file="file://$PROJECT_DIR$/controller/data_controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
-              <caret line="203" column="106" lean-forward="false" selection-start-line="203" selection-start-column="106" selection-end-line="203" selection-end-column="106" />
+              <caret line="203" column="44" lean-forward="false" selection-start-line="203" selection-start-column="44" selection-end-line="203" selection-end-column="44" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -772,14 +772,7 @@
       <workItem from="1492742187561" duration="7737000" />
       <workItem from="1492753503244" duration="33000" />
       <workItem from="1492784415315" duration="6460000" />
-      <workItem from="1492834334653" duration="1659000" />
-    </task>
-    <task id="LOCAL-00194" summary="19/04/2017">
-      <created>1492700071150</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1492700071150</updated>
+      <workItem from="1492834334653" duration="1794000" />
     </task>
     <task id="LOCAL-00195" summary="19/04/2017">
       <created>1492700373366</created>
@@ -1117,11 +1110,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492835520240</updated>
     </task>
-    <option name="localTasksCounter" value="243" />
+    <task id="LOCAL-00243" summary="21/04/17">
+      <created>1492836011151</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1492836011151</updated>
+    </task>
+    <option name="localTasksCounter" value="244" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="686658000" />
+    <option name="totallyTimeSpent" value="686793000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1276,27 +1276,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/controller/data_controller.js</url>
-          <line>233</line>
+          <line>234</line>
           <option name="timeStamp" value="353" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/controller/data_controller.js</url>
-          <line>234</line>
+          <line>235</line>
           <option name="timeStamp" value="355" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/controller/data_controller.js</url>
-          <line>236</line>
+          <line>237</line>
           <option name="timeStamp" value="356" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/controller/data_controller.js</url>
-          <line>238</line>
+          <line>239</line>
           <option name="timeStamp" value="357" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/controller/data_controller.js</url>
-          <line>237</line>
+          <line>238</line>
           <option name="timeStamp" value="358" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -1346,7 +1346,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/controller/data_controller.js</url>
-          <line>341</line>
+          <line>342</line>
           <option name="timeStamp" value="492" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -1678,7 +1678,7 @@
     <entry file="file://$PROJECT_DIR$/controller/data_controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="203" column="106" lean-forward="false" selection-start-line="203" selection-start-column="106" selection-end-line="203" selection-end-column="106" />
+          <caret line="203" column="44" lean-forward="false" selection-start-line="203" selection-start-column="44" selection-end-line="203" selection-end-column="44" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
