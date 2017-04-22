@@ -201,7 +201,7 @@ module.exports = {
                     if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
 
                     if (result.length !== 0) {
-                        let position = new coordinate(result[0].LAT_LOCATION+result[0].LNG_LOCATION);
+                        let position = new coordinate("'"+result[0].LAT_LOCATION+result[0].LNG_LOCATION+"'");
                         let lat = position.getLatitude();
                         let long = position.getLongitude();
                         console.log('let '+lat + ' long '+long);
