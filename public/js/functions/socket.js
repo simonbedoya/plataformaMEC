@@ -55,6 +55,10 @@ let seconds = 0;
 socket.on("responseRealTime", function (data) {
     //console.log(data);
     let dataJson = JSON.parse(data);
+    if(!dataJson.available){
+        alert("no se puede inciar real time intenta de nuevo en un par de segundos");
+        return;
+    }
     chartRealTime.dataProvider.shift();
 
     //let data =  { "z":[4901021,4684524,4696664,4821436,4742526,4884834,4865275,4874043,4652151,4805250,4695314,4901695,4664291,4723642,4719596,4852461,4900346,4797831,4812668,4834251,4905742,4915858,4652151,4600893,4857856,3842143,4599544,4860554,4774900,4983978,4669687,4790411,4836274,4695990,5017025,4839646,4999489,4644057,4632591,4710828,4817390,4696664,4940812,4981280,4905067,4602242,4874718,4983978,4801877,4671035] };
@@ -91,8 +95,8 @@ socket.on("responseRealTime", function (data) {
     if(ejes.length === 3) {
         chartRealTime.dataProvider.push({
             date: date,
-            BH1: dataIn[ejes[0]][0],
-            BH2: dataIn[ejes[1]][0],
+            BH2: dataIn[ejes[0]][0],
+            BH1: dataIn[ejes[1]][0],
             BHZ: dataIn[ejes[2]][0]
         });
     }else{
@@ -100,13 +104,13 @@ socket.on("responseRealTime", function (data) {
             case "x":
                 chartRealTime.dataProvider.push({
                     date: date,
-                    BH1: dataIn[ejes[0]][0]
+                    BH2: dataIn[ejes[0]][0]
                 });
                 break;
             case "y":
                 chartRealTime.dataProvider.push({
                     date: date,
-                    BH2: dataIn[ejes[0]][0]
+                    BH1: dataIn[ejes[0]][0]
                 });
                 break;
             case "z":
