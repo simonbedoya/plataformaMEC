@@ -229,7 +229,7 @@ function readFile(pk_file,hour,axis) {
                 let time = parseFloat(delta[1]);
                 let samplesec = parseInt(1/time);
                 let samples = resultArray[3].split(" : ");
-                let duration = (time * parseInt(samples[1])) / 60;
+                let duration = parseInt((time * parseInt(samples[1])) / 60);
                 ymax = resultArray[1].split(" : ");
                 ymin = resultArray[2].split(" : ");
                 for (let i = 4; i < resultArray.length - 1; i++) {
