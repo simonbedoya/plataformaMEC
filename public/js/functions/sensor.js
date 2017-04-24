@@ -238,8 +238,14 @@ $("#location_sensor").on('shown.bs.modal', function () {
         data: {pk_sensor: pk_sensor},
         success: function (result) {
             if (result.code === "001"){
-                let lat = parseFloat(result.data[0].LAT_LOCATION);
-                let lng = parseFloat(result.data[0].LNG_LOCATION);
+                let lat = result.data[0].LAT_LOCATION;
+                let lng = result.data[0].LNG_LOCATION;
+                let oriLat = lat.pop();
+                let oriLong = lng.pop();
+                let minLat = parseInt(lat.slice(0,2));
+                let minLng = parseInt(lng.slice(0,2));
+                let segLat = parseFloat(lat.slice(2,lat.length-1));
+                let segLng = parseFloat(lng.slice(2,lng.length-1));
                 let locationSensor = {lat: lat, lng: lng};
                 markers = new google.maps.Marker({
                     position: locationSensor,
