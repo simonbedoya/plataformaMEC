@@ -162,6 +162,15 @@ socket.on("testResponse", function (data) {
    }
 });
 
+socket.on("saveADC", function (data) {
+   let dataIn = JSON.parse(data);
+   if(dataIn.data){
+       alert("se ha realizado el cambio");
+   }else{
+       alert("no se pudo hacer el cambio");
+   }
+});
+
 
 function terminateTest(component) {
     $.ajax({

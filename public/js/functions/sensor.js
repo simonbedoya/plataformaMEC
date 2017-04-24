@@ -920,6 +920,19 @@ function drawGraphic(){
     })
 }
 
+function saveConfigADC(){
+    let samplesADC = $('#samplesADC').val();
+    socket.emit('setSPS',`{"pk_sensor": "${pk_sensor}", "sps" : "${samplesADC}"}`,function (data) {
+        if(data.code === "001"){
+            alert("Se ha enviado configuracion");
+        }else if(data.code === "004"){
+            alert("no esta conectado el sensor");
+        }else{
+            alert("ha ocurrido  algun error");
+        }
+    })
+}
+
 function changeButton() {
     document.getElementById("btnRealTime").innerHTML = "Detener";
     document.getElementById("btnRealTime").setAttribute("onclick","stopRealTime()");
