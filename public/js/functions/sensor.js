@@ -240,8 +240,8 @@ $("#location_sensor").on('shown.bs.modal', function () {
             if (result.code === "001"){
                 let lat = result.data[0].LAT_LOCATION;
                 let lng = result.data[0].LNG_LOCATION;
-                let oriLat = lat.pop();
-                let oriLong = lng.pop();
+                let oriLat = lat.slice(lat.length);
+                let oriLong = lng.slice(lng.length);
                 let minLat = parseInt(lat.slice(0,2));
                 let minLng = parseInt(lng.slice(0,2));
                 let segLat = parseFloat(lat.slice(2,lat.length-1));
