@@ -924,11 +924,11 @@ function saveConfigADC(){
     let samplesADC = $('#samplesADC').val();
     socket.emit('setSPS',`{"pk_sensor": "${pk_sensor}", "sps" : "${samplesADC}"}`,function (data) {
         if(data.code === "001"){
-            alert("Se ha enviado configuracion");
+            document.getElementById("processConfigADC").innerHTML = "Enviando datos de configuración...";
         }else if(data.code === "004"){
-            alert("no esta conectado el sensor");
+            document.getElementById("processConfigADC").innerHTML = "El sensor no se encuentra conectado.";
         }else{
-            alert("ha ocurrido  algun error");
+            document.getElementById("processConfigADC").innerHTML = "Ha ocurrido un problema, intenta de nuevo.";
         }
     })
 }
