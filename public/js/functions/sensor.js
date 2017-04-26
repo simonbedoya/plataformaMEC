@@ -1232,7 +1232,7 @@ function loadSamplesADC(){
                     confirmButtonColor: "#444a53",
                     confirmButtonText: "OK"
                 }).then(function () {
-                    $("#config_sensor").modal('hide');
+
                 });
             }
         },
