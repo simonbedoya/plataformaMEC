@@ -1200,6 +1200,7 @@ function setPanSelect() {
 }
 
 $("#tabConfigADC").click(function () {
+    document.getElementById("processConfigADC").innerHTML = "";
    loadSamplesADC();
 });
 
