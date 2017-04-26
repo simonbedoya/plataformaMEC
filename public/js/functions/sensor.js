@@ -851,7 +851,7 @@ function showDetails(component) {
 }
 
 function setDetailComponent(data) {
-    
+
 }
 
 function clearInfoComponent() {
