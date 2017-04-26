@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/sensor.js" afterPath="$PROJECT_DIR$/public/js/functions/sensor.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/socket.js" afterPath="$PROJECT_DIR$/public/js/functions/socket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/real_time_graphic.ejs" afterPath="$PROJECT_DIR$/views/real_time_graphic.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -82,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="real_time_graphic.ejs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="real_time_graphic.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/real_time_graphic.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state relative-caret-position="340">
+              <caret line="23" column="80" lean-forward="false" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -114,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="socket.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="socket.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="382">
-              <caret line="68" column="12" lean-forward="true" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
+              <caret line="68" column="11" lean-forward="true" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -218,7 +218,6 @@
         <option value="$PROJECT_DIR$/bin/www" />
         <option value="$PROJECT_DIR$/public/js/functions/graphic.js" />
         <option value="$PROJECT_DIR$/views/graphic.ejs" />
-        <option value="$PROJECT_DIR$/views/real_time_graphic.ejs" />
         <option value="$PROJECT_DIR$/views/network.ejs" />
         <option value="$PROJECT_DIR$/public/js/functions/network.js" />
         <option value="$PROJECT_DIR$/views/sensor.ejs" />
@@ -229,6 +228,7 @@
         <option value="$PROJECT_DIR$/views/config_sensor.ejs" />
         <option value="$PROJECT_DIR$/public/js/functions/sensor.js" />
         <option value="$PROJECT_DIR$/public/js/functions/socket.js" />
+        <option value="$PROJECT_DIR$/views/real_time_graphic.ejs" />
       </list>
     </option>
   </component>
@@ -687,14 +687,7 @@
       <workItem from="1493064324366" duration="619000" />
       <workItem from="1493175522212" duration="12881000" />
       <workItem from="1493214321514" duration="1317000" />
-      <workItem from="1493216216532" duration="7002000" />
-    </task>
-    <task id="LOCAL-00249" summary="21/04/17">
-      <created>1492985795370</created>
-      <option name="number" value="00249" />
-      <option name="presentableId" value="LOCAL-00249" />
-      <option name="project" value="LOCAL" />
-      <updated>1492985795370</updated>
+      <workItem from="1493216216532" duration="7182000" />
     </task>
     <task id="LOCAL-00250" summary="23/04/17">
       <created>1493007635193</created>
@@ -1032,11 +1025,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493223913421</updated>
     </task>
-    <option name="localTasksCounter" value="298" />
+    <task id="LOCAL-00298" summary="26/04/17">
+      <created>1493224672263</created>
+      <option name="number" value="00298" />
+      <option name="presentableId" value="LOCAL-00298" />
+      <option name="project" value="LOCAL" />
+      <updated>1493224672263</updated>
+    </task>
+    <option name="localTasksCounter" value="299" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="725301000" />
+    <option name="totallyTimeSpent" value="725481000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1568,14 +1568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/real_time_graphic.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -1599,7 +1591,15 @@
     <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
-          <caret line="68" column="12" lean-forward="true" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
+          <caret line="68" column="11" lean-forward="true" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/real_time_graphic.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="80" lean-forward="false" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
           <folding />
         </state>
       </provider>
