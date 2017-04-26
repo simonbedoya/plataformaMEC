@@ -383,6 +383,8 @@ module.exports = {
                 let sql = template(sqlQuery.query_dataDetailComponent,{table: table, pk_sensor: pk_sensor});
                 console.log(sql);
                 db.query(sql, function (err, result) {
+                    console.log(err);
+                    console.log(result);
                     if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
 
                     if (result.length !== 0) {
