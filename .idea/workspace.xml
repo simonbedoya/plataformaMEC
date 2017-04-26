@@ -119,11 +119,9 @@
       <file leaf-file-name="info_sensor.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/info_sensor.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="183" column="105" lean-forward="false" selection-start-line="183" selection-start-column="105" selection-end-line="183" selection-end-column="105" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="370">
+              <caret line="191" column="74" lean-forward="true" selection-start-line="191" selection-start-column="74" selection-end-line="191" selection-end-column="74" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -689,14 +687,7 @@
       <workItem from="1492966754040" duration="13406000" />
       <workItem from="1493043489927" duration="1460000" />
       <workItem from="1493064324366" duration="619000" />
-      <workItem from="1493175522212" duration="5340000" />
-    </task>
-    <task id="LOCAL-00217" summary="19/04/2017 6">
-      <created>1492750451827</created>
-      <option name="number" value="00217" />
-      <option name="presentableId" value="LOCAL-00217" />
-      <option name="project" value="LOCAL" />
-      <updated>1492750451827</updated>
+      <workItem from="1493175522212" duration="6003000" />
     </task>
     <task id="LOCAL-00218" summary="19/04/2017 6">
       <created>1492751157226</created>
@@ -1034,11 +1025,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493180723499</updated>
     </task>
-    <option name="localTasksCounter" value="266" />
+    <task id="LOCAL-00266" summary="23/04/17">
+      <created>1493181475105</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1493181475105</updated>
+    </task>
+    <option name="localTasksCounter" value="267" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="709441000" />
+    <option name="totallyTimeSpent" value="710104000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1605,11 +1603,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/info_sensor.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="183" column="105" lean-forward="false" selection-start-line="183" selection-start-column="105" selection-end-line="183" selection-end-column="105" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="370">
+          <caret line="191" column="74" lean-forward="true" selection-start-line="191" selection-start-column="74" selection-end-line="191" selection-end-column="74" />
+          <folding />
         </state>
       </provider>
     </entry>
