@@ -257,7 +257,7 @@ $("#location_sensor").on('shown.bs.modal', function () {
             if (result.code === "001"){
                 let lat = result.data[0].LAT_LOCATION;
                 let lng = result.data[0].LNG_LOCATION;
-                let oriLat = lat.slice(lat.length-1);
+                /*let oriLat = lat.slice(lat.length-1);
                 let oriLong = lng.slice(lng.length-1);
                 let minLat = parseInt(lat.slice(0,2));
                 let minLng = parseInt(lng.slice(0,3));
@@ -270,8 +270,8 @@ $("#location_sensor").on('shown.bs.modal', function () {
                 }
                 if(oriLong === "W"){
                     lngFin = lngFin * -1
-                }
-                let locationSensor = {lat: latFin, lng: lngFin};
+                }*/
+                let locationSensor = {lat: getLatitude(lat), lng: getLongitude(lng)};
                 markers = new google.maps.Marker({
                     position: locationSensor,
                     icon: image,
@@ -313,6 +313,28 @@ $("#location_sensor").on('shown.bs.modal', function () {
         }
     });
 });
+
+function getLatitude(lat) {
+    let oriLat = lat.slice(lat.length-1);
+    let minLat = parseInt(lat.slice(0,2));
+    let segLat = parseFloat(lat.slice(2,lat.length-1));
+    let latFin = minLat + (segLat / 60);
+    if(oriLat !== "N"){
+        latFin = latFin * -1;
+    }
+    return latFin;
+}
+
+function getLongitude(lng) {
+    let oriLong = lng.slice(lng.length-1);
+    let minLng = parseInt(lng.slice(0,3));
+    let segLng = parseFloat(lng.slice(3,lng.length-1));
+    let lngFin = minLng + (segLng / 60);
+    if(oriLong === "W"){
+        lngFin = lngFin * -1
+    }
+    return lngFin;
+}
 
 function showLocation_sensor(pkSensor) {
     pk_sensor = pkSensor;
@@ -569,10 +591,11 @@ function loadInfoLocation() {
 function setInfoLocation(data) {
     aciveLoader("loadLocation",false);
     if(data !== null) {
-        document.getElementById("tislLat").innerHTML = data.LAT_LOCATION;
-        document.getElementById("tislLng").innerHTML = data.LNG_LOCATION;
+
+        document.getElementById("tislLat").innerHTML = getLatitude(data.LAT_LOCATION);
+        document.getElementById("tislLng").innerHTML = getLongitude(data.LNG_LOCATION);
         document.getElementById("tislAlt").innerHTML = data.ALT_LOCATION + " m.s.n.m";
-        document.getElementById("tislAddress").innerHTML = data.ADDRESS_LOCATION;
+        //document.getElementById("tislAddress").innerHTML = data.ADDRESS_LOCATION;
     }else{
         document.getElementById("tislLat").innerHTML = "No hay registro";
         document.getElementById("tislLng").innerHTML = "No hay registro";
