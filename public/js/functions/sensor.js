@@ -600,7 +600,7 @@ function setInfoLocation(data) {
         document.getElementById("tislLat").innerHTML = "No hay registro";
         document.getElementById("tislLng").innerHTML = "No hay registro";
         document.getElementById("tislAlt").innerHTML = "No hay registro";
-        document.getElementById("tislAddress").innerHTML = "No hay registro";
+        //document.getElementById("tislAddress").innerHTML = "No hay registro";
     }
 }
 
@@ -608,7 +608,7 @@ function clearInfoLocation() {
     document.getElementById("tislLat").innerHTML = "";
     document.getElementById("tislLng").innerHTML = "";
     document.getElementById("tislAlt").innerHTML = "";
-    document.getElementById("tislAddress").innerHTML = "";
+    //document.getElementById("tislAddress").innerHTML = "";
 }
 
 function reloadTabs() {
