@@ -29,5 +29,6 @@ module.exports = {
     query_getDataFileByPk: "SELECT PATH_FILE, DATE_FILE FROM TBL_FILE WHERE PK_FILE = ${pk_file}",
     query_login: "SELECT count(*) AS counter FROM TBL_USER WHERE EMAIL_USER = '${email}' AND PASSWORD_USER = '${pass}'",
     query_terminateTest: "DELETE FROM TBL_TEST WHERE PK_SENSOR = ${pk_sensor} AND TYPE_TEST = '${type}'",
-    query_dataDetailComponent: "SELECT * FROM ${table} WHERE PK_SENSOR = ${pk_sensor}"
+    query_dataDetailComponent: "SELECT * FROM ${table} WHERE PK_SENSOR = ${pk_sensor}",
+    query_getSamplesBysensor: "SELECT SAMPLES_ADC FROM TBL_ADC WHERE PK_SENSOR = ${pk_sensor}"
 };

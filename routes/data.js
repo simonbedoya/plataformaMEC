@@ -170,4 +170,9 @@ router.post('/getDataDetailComponent', function (req,res) {
     })
 });
 
+router.post('/getSamplesADCBySensor', function (req,res) {
+    data_controller.getSamplesADCBySensor(req.body.pk_sensor).then(function (data) {
+        res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, data.data)));
+    })
+});
 module.exports = router;

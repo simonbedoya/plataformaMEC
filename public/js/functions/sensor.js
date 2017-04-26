@@ -1197,3 +1197,51 @@ function setPanSelect() {
     }
     chartRealTime.validateNow();
 }
+
+function loadSamplesADC(){
+    $.ajax({
+        type: "post",
+        url: "https://plataformamec.com/data/getSamplesADCBySensor",
+        data: {pk_sensor: pk_sensor},
+        success: function (result) {
+            if (result.code === "001") {
+                $("#samplesADC").value(result.data.SAMPLES_ADC);
+            } else if (result.code === "003") {
+                swal({
+                    title: "Información",
+                    text: "Ha ocurrido un error intenta de nuevo!",
+                    type: "info",
+                    showCancelButton: false,
+                    confirmButtonColor: "#444a53",
+                    confirmButtonText: "OK"
+                }).then(function () {
+                    $("#config_sensor").modal('close');
+                });
+            } else if(result.code === "002"){
+                swal({
+                    title: "Información",
+                    text: "No se puede configurar por falta de información!",
+                    type: "info",
+                    showCancelButton: false,
+                    confirmButtonColor: "#444a53",
+                    confirmButtonText: "OK"
+                }).then(function () {
+                    $("#config_sensor").modal('close');
+                });
+            }
+        },
+        error: function (e) {
+            console.log(e);
+            swal({
+                title: "Información",
+                text: "Ha ocurrido un error intenta de nuevo!",
+                type: "info",
+                showCancelButton: false,
+                confirmButtonColor: "#444a53",
+                confirmButtonText: "OK"
+            }).then(function () {
+                $("#config_sensor").modal('close');
+            });
+        }
+    });
+}
