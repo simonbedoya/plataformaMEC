@@ -4,8 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/routes/functions/network.js" line="6" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
+    <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="23/04/17">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/network.js" afterPath="$PROJECT_DIR$/public/js/functions/network.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/network.ejs" afterPath="$PROJECT_DIR$/views/network.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,15 +40,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="network.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="network.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/functions/network.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="114" column="10" lean-forward="false" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
+            <state relative-caret-position="221">
+              <caret line="61" column="20" lean-forward="false" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="20" />
               <folding>
-                <marker date="1493178697475" expanded="true" signature="3504:3537" ph="..." />
-                <marker date="1493178697475" expanded="true" signature="3655:3669" ph="..." />
+                <marker date="1493178898295" expanded="true" signature="3504:3537" ph="..." />
+                <marker date="1493178898295" expanded="true" signature="3655:3669" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="network.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/network.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="68" column="40" lean-forward="false" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/sql/sql_data.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="163" lean-forward="false" selection-start-line="7" selection-start-column="163" selection-end-line="7" selection-end-column="163" />
+              <caret line="7" column="197" lean-forward="false" selection-start-line="7" selection-start-column="189" selection-end-line="7" selection-end-column="197" />
               <folding />
             </state>
           </provider>
@@ -157,7 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/assets/flot-chart/jquery.flot.init.js" />
         <option value="$PROJECT_DIR$/public/assets/chartjs/chartjs.init.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/routes/alert.js" />
@@ -208,6 +219,7 @@
         <option value="$PROJECT_DIR$/public/js/functions/sensor.js" />
         <option value="$PROJECT_DIR$/sql/sql_data.js" />
         <option value="$PROJECT_DIR$/public/js/functions/network.js" />
+        <option value="$PROJECT_DIR$/views/network.ejs" />
       </list>
     </option>
   </component>
@@ -664,14 +676,7 @@
       <workItem from="1492966754040" duration="13406000" />
       <workItem from="1493043489927" duration="1460000" />
       <workItem from="1493064324366" duration="619000" />
-      <workItem from="1493175522212" duration="2572000" />
-    </task>
-    <task id="LOCAL-00210" summary="19/04/2017 6">
-      <created>1492744063966</created>
-      <option name="number" value="00210" />
-      <option name="presentableId" value="LOCAL-00210" />
-      <option name="project" value="LOCAL" />
-      <updated>1492744063966</updated>
+      <workItem from="1493175522212" duration="2904000" />
     </task>
     <task id="LOCAL-00211" summary="19/04/2017 6">
       <created>1492744392378</created>
@@ -1009,11 +1014,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493178683460</updated>
     </task>
-    <option name="localTasksCounter" value="259" />
+    <task id="LOCAL-00259" summary="23/04/17">
+      <created>1493178707789</created>
+      <option name="number" value="00259" />
+      <option name="presentableId" value="LOCAL-00259" />
+      <option name="project" value="LOCAL" />
+      <updated>1493178707790</updated>
+    </task>
+    <option name="localTasksCounter" value="260" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="706673000" />
+    <option name="totallyTimeSpent" value="707005000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1520,14 +1532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/network.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1122">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12">
@@ -1567,19 +1571,27 @@
     <entry file="file://$PROJECT_DIR$/sql/sql_data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="163" lean-forward="false" selection-start-line="7" selection-start-column="163" selection-end-line="7" selection-end-column="163" />
+          <caret line="7" column="197" lean-forward="false" selection-start-line="7" selection-start-column="189" selection-end-line="7" selection-end-column="197" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/network.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="114" column="10" lean-forward="false" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
+        <state relative-caret-position="221">
+          <caret line="61" column="20" lean-forward="false" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="20" />
           <folding>
-            <marker date="1493178697475" expanded="true" signature="3504:3537" ph="..." />
-            <marker date="1493178697475" expanded="true" signature="3655:3669" ph="..." />
+            <marker date="1493178898295" expanded="true" signature="3504:3537" ph="..." />
+            <marker date="1493178898295" expanded="true" signature="3655:3669" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/network.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="68" column="40" lean-forward="false" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
