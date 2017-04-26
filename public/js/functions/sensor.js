@@ -858,7 +858,7 @@ function setDetailComponent(data) {
                                                                     "</tr>"+
                                                                    "<tr>"+
                                                                         "<td>Descripcion:</td>"+
-                                                                        "<td>data.DESCRIPCION_CPU</td>"+
+                                                                        "<td>"+data.DESCRIPCION_CPU+"</td>"+
                                                                     "</tr>"+
                                                                     "<tr>"+
                                                                         "<td>Error:</td>"+
@@ -866,7 +866,7 @@ function setDetailComponent(data) {
                                                                     "</tr>"+
                                                                     "<tr>"+
                                                                         "<td>Actualización:</td>"+
-                                                                        "<td>"+data.UPDATEDATE+"</td>"+
+                                                                        "<td>"+data.UPDATEDATE_CPU+"</td>"+
                                                                     "</tr>"+
                                                                 "</tbody>"+
                                                             "</table>"
