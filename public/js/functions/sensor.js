@@ -851,7 +851,25 @@ function showDetails(component) {
 }
 
 function setDetailComponent(data) {
-
+    document.getElementById("panelDatailsComp").innerHTML = "<table id='tableDescripComponents' class='col-lg-12' border='0'>"+
+                                                                "<tbody>"+
+                                                                    "<tr>"+
+                                                                        "<th colspan='2'>Detalles CPU</th>"+
+                                                                    "</tr>"+
+                                                                   "<tr>"+
+                                                                        "<td>Descripcion:</td>"+
+                                                                        "<td>data.DESCRIPCION_CPU</td>"+
+                                                                    "</tr>"+
+                                                                    "<tr>"+
+                                                                        "<td>Error:</td>"+
+                                                                        "<td>"+data.error_cpu+"</td>"+
+                                                                    "</tr>"+
+                                                                    "<tr>"+
+                                                                        "<td>Actualización:</td>"+
+                                                                        "<td>"+updatedata+"</td>"+
+                                                                    "</tr>"+
+                                                                "</tbody>"+
+                                                            "</table>"
 }
 
 function clearInfoComponent() {
