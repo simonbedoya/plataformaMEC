@@ -349,6 +349,7 @@ function showEdit_sensor(sensor) {
 }
 
 function showConfig_sensor(pkSensor) {
+    reloadTabsConfig();
     pk_sensor = pkSensor;
     $("#config_sensor").modal();
 }
@@ -1249,4 +1250,18 @@ function loadSamplesADC(){
             });
         }
     });
+}
+
+function reloadTabsConfig() {
+    let tabs = ["tabConfigCPU", "tabConfigGPS", "tabConfigADC", "tabConfigACC", "tabConfigWIFI", "tabConfigRTC","tabConfigBAT"];
+    let tabPanels = ["cpu", "gps", "adc", "acelerometro", "acelerometro", "rtc", "bateria"];
+    for(i in tabs){
+        $(`#${tabs[i]}`).removeClass("active");
+    }
+    for(i in tabPanels){
+        $(`#${tabPanels[i]}`).removeClass("active");
+    }
+    $(`#${tabs[0]}`).addClass("active");
+    $(`#${tabPanels[0]}`).addClass("active");
+
 }
