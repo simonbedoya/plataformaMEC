@@ -774,15 +774,16 @@ function loadInfoComponent() {
 
 function setInfoComponent(data) {
     aciveLoader("loadComponent",false);
+    let components = ["CPU", "GPS", "ADC", "ACC", "WIFI", "RTC", "BATT"];
     let fields = ["tiscCPU", "tiscGPS", "tiscADC", "tiscACC", "tiscWIFI", "tiscRTC", "tiscBATT"];
 
     if(data !== null) {
         let fieldsBD = [data.STA_CPU,data.STA_GPS,data.STA_ADC,data.STA_ACC,data.STA_WIFI,data.STA_RTC,data.STA_BATT];
         for(i in fieldsBD){
             if(fieldsBD[i] === "Error"){
-                document.getElementById(fields[i]).innerHTML = `<span style="color: #ac2925">${fieldsBD[i]}</span>`;
+                document.getElementById(fields[i]).innerHTML = `<a onclick="showDetails('${components[i]}')"><span style="color: #ac2925">${fieldsBD[i]}</span></a>`;
             }else{
-                document.getElementById(fields[i]).innerHTML = `<span style="color: #0B610B">${fieldsBD[i]}</span>`;
+                document.getElementById(fields[i]).innerHTML = `<a onclick="showDetails('${components[i]}')"><span style="color: #0B610B">${fieldsBD[i]}</span></a>`;
             }
         }
     }else{
@@ -794,6 +795,10 @@ function setInfoComponent(data) {
         document.getElementById("tiscRTC").innerHTML = "No hay registro";
         document.getElementById("tiscBATT").innerHTML = "No hay registro";
     }
+}
+
+function showDetails(component) {
+    
 }
 
 function clearInfoComponent() {
