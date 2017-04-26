@@ -164,8 +164,12 @@ socket.on("testResponse", function (data) {
 
 socket.on("saveADC", function (data) {
    let dataIn = JSON.parse(data);
-   if(dataIn.data){
-       document.getElementById("processConfigADC").innerHTML = "Se realizado el cambio satisfactoriamente.";
+   if(!dataIn.error) {
+       if (dataIn.data) {
+           document.getElementById("processConfigADC").innerHTML = "Se realizado el cambio satisfactoriamente.";
+       } else {
+           document.getElementById("processConfigADC").innerHTML = "No se realizaron los cambios.";
+       }
    }else{
        document.getElementById("processConfigADC").innerHTML = "No se realizaron los cambios.";
    }
