@@ -526,6 +526,7 @@ $("#tabLocation").click(function () {
     loadInfoLocation();
 });
 
+
 function loadInfoLocation() {
     $.ajax({
         type: "post",
@@ -731,6 +732,7 @@ $("#tabComponent").click(function () {
     clearInfoComponent();
     aciveLoader("loadComponent",true);
     loadInfoComponent();
+    document.getElementById("panelDatailsComp").innerHTML = "Seleccione un componente para ver los detalles."
 });
 
 function loadInfoComponent() {
@@ -876,6 +878,8 @@ function setDetailComponent(data,component) {
             break;
     }
 }
+
+
 
 function clearInfoComponent() {
     document.getElementById("tiscCPU").innerHTML = "";
