@@ -103,7 +103,7 @@ function loadTable(data) {
         $('#table_networks').find('> tbody').append(`<tr>` +
             `<td>${data[i].NAME_NETWORK}</td>` +
             `<td>${data[i].ADDRESS_NETWORK}</td>` +
-            `<td id='number_sensor_${i}'></td>` +
+            `<td>${data[i].N_SENSOR}</td>` +
             `<td>${data[i].STATUS_NETWORK}</td>` +
             `<td>${dateArrayC[0]}</td>` +
             `<td>${dateArrayU[0]}</td>` +
