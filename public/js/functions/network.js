@@ -112,7 +112,7 @@ function loadTable(data) {
             `<a onclick='delete_network(${data[i].PK_NETWORK})' class='' style='color: #B40404'><i class='fa fa-trash-o'></i></a>` +
             `</td>` +
             `</tr>`);
-        loadSensorsByNetowrk(data[i].PK_NETWORK, i);
+        //loadSensorsByNetowrk(data[i].PK_NETWORK, i);
     }
     loadDataTable();
 }
