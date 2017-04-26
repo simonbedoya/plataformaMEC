@@ -398,7 +398,7 @@ module.exports = {
     getSamplesADCBySensor: function (pk_sensor) {
         return new Promise(
             function (fullfill) {
-                let sql = template(sqlQuery.query_dataDetailComponent,{pk_sensor: pk_sensor});
+                let sql = template(sqlQuery.query_getSamplesBysensor,{pk_sensor: pk_sensor});
                 console.log(sql);
                 db.query(sql, function (err, result) {
                     if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
