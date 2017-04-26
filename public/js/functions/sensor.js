@@ -1211,6 +1211,7 @@ function loadSamplesADC(){
         success: function (result) {
             if (result.code === "001") {
                 document.getElementById("samplesADC").disabled = false;
+                document.getElementById("btnSaveConfigADC").disabled = false;
                 $("#samplesADC").val(result.data.SAMPLES_ADC);
             } else if (result.code === "003") {
                 swal({
