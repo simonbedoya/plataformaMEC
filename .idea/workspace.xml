@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/sql_data.js" afterPath="$PROJECT_DIR$/sql/sql_data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/sensor.ejs" afterPath="$PROJECT_DIR$/views/sensor.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,16 +48,6 @@
                 <marker date="1493179851435" expanded="true" signature="3509:3542" ph="..." />
                 <marker date="1493179851435" expanded="true" signature="3660:3674" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="network.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/network.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="67" column="53" lean-forward="false" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -104,11 +94,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sql_data.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sql_data.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sql/sql_data.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="7" column="76" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sensor.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/sensor.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="95" column="53" lean-forward="false" selection-start-line="95" selection-start-column="53" selection-end-line="95" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -208,7 +208,6 @@
         <option value="$PROJECT_DIR$/cluster.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/bin/www" />
-        <option value="$PROJECT_DIR$/views/sensor.ejs" />
         <option value="$PROJECT_DIR$/controller/data_controller.js" />
         <option value="$PROJECT_DIR$/public/js/functions/graphic.js" />
         <option value="$PROJECT_DIR$/views/graphic.ejs" />
@@ -219,6 +218,7 @@
         <option value="$PROJECT_DIR$/views/network.ejs" />
         <option value="$PROJECT_DIR$/public/js/functions/network.js" />
         <option value="$PROJECT_DIR$/sql/sql_data.js" />
+        <option value="$PROJECT_DIR$/views/sensor.ejs" />
       </list>
     </option>
   </component>
@@ -675,14 +675,7 @@
       <workItem from="1492966754040" duration="13406000" />
       <workItem from="1493043489927" duration="1460000" />
       <workItem from="1493064324366" duration="619000" />
-      <workItem from="1493175522212" duration="3767000" />
-    </task>
-    <task id="LOCAL-00214" summary="19/04/2017 6">
-      <created>1492749867905</created>
-      <option name="number" value="00214" />
-      <option name="presentableId" value="LOCAL-00214" />
-      <option name="project" value="LOCAL" />
-      <updated>1492749867906</updated>
+      <workItem from="1493175522212" duration="4087000" />
     </task>
     <task id="LOCAL-00215" summary="19/04/2017 6">
       <created>1492749905834</created>
@@ -1020,11 +1013,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493179858279</updated>
     </task>
-    <option name="localTasksCounter" value="263" />
+    <task id="LOCAL-00263" summary="23/04/17">
+      <created>1493179898483</created>
+      <option name="number" value="00263" />
+      <option name="presentableId" value="LOCAL-00263" />
+      <option name="project" value="LOCAL" />
+      <updated>1493179898483</updated>
+    </task>
+    <option name="localTasksCounter" value="264" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="707868000" />
+    <option name="totallyTimeSpent" value="708188000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1448,13 +1448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/sensor.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2771">
-          <caret line="163" column="36" lean-forward="false" selection-start-line="163" selection-start-column="36" selection-end-line="163" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/socket.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2873">
@@ -1591,6 +1584,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="7" column="76" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/sensor.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="95" column="53" lean-forward="false" selection-start-line="95" selection-start-column="53" selection-end-line="95" selection-end-column="53" />
           <folding />
         </state>
       </provider>
