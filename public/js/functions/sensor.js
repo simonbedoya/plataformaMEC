@@ -969,7 +969,6 @@ let firstDate;
 
 
 $("#real_time_graphic").on('hidden.bs.modal', function () {
-    $('#divButtonGraphic').addClass('hidden');
     clearRealtime();
 });
 
