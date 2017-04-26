@@ -1209,7 +1209,7 @@ function loadSamplesADC(){
         data: {pk_sensor: pk_sensor},
         success: function (result) {
             if (result.code === "001") {
-                $("#samplesADC").value(result.data.SAMPLES_ADC);
+                $("#samplesADC").val(result.data.SAMPLES_ADC);
             } else if (result.code === "003") {
                 swal({
                     title: "Información",
