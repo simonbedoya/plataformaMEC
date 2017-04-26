@@ -56,7 +56,17 @@ socket.on("responseRealTime", function (data) {
     //console.log(data);
     let dataJson = JSON.parse(data);
     if(!dataJson.available){
-        alert("no se puede inciar real time intenta de nuevo en un par de segundos");
+        swal({
+            title: "Error",
+            text: "No se puede inciar real time intenta de nuevo en un par de segundos!",
+            type: "error",
+            showCancelButton: false,
+            confirmButtonColor: "#444a53",
+            confirmButtonText: "OK"
+        }).then(function () {
+            changeButton(false);
+            clearRealtime();
+        });        
         return;
     }
     chartRealTime.dataProvider.shift();

@@ -970,12 +970,16 @@ let firstDate;
 
 $("#real_time_graphic").on('hidden.bs.modal', function () {
     $('#divButtonGraphic').addClass('hidden');
-    document.getElementById("divcontainer").innerHTML = "<div id='chartdiv' style='width: 100%; height: 400px;'></div>"+
-                                                            "<div style='margin-left:35px;'>"+
-                                                            "<input type='radio' checked='true' name='group' id='rb1' onclick='setPanSelect()'>Select"+
-                                                            "<input type='radio' name='group' id='rb2' onclick='setPanSelect()'>Pan"+
-                                                        "</div>";
+    clearRealtime();
 });
+
+function clearRealtime() {
+    document.getElementById("divcontainer").innerHTML = "<div id='chartdiv' style='width: 100%; height: 400px;'></div>"+
+        "<div style='margin-left:35px;'>"+
+        "<input type='radio' checked='true' name='group' id='rb1' onclick='setPanSelect()'>Select"+
+        "<input type='radio' name='group' id='rb2' onclick='setPanSelect()'>Pan"+
+        "</div>";
+}
 
 function drawGraphic(){
     $('#divButtonGraphic').removeClass('hidden');
@@ -1046,7 +1050,7 @@ function drawGraphic(){
         console.log(data);
         if(data.code === "001"){
             loadChart(axisSelect,valueAxes,graphs);
-            changeButton();
+            changeButton(true);
         }else if(data.code === "004"){
             alert("Ya se encuentra un test corriendo para este sensor.");
             //document.getElementById(`resultTest${component}`).innerHTML = "Ya se encuentra un test corriendo para este sensor.";
@@ -1073,17 +1077,21 @@ function saveConfigADC(){
     })
 }
 
-function changeButton() {
-    document.getElementById("btnRealTime").innerHTML = "Detener";
-    document.getElementById("btnRealTime").setAttribute("onclick","stopRealTime()");
+function changeButton(active) {
+    if(active) {
+        document.getElementById("btnRealTime").innerHTML = "Detener";
+        document.getElementById("btnRealTime").setAttribute("onclick", "stopRealTime()");
+    }else{
+        document.getElementById("btnRealTime").innerHTML = "Conectar";
+        document.getElementById("btnRealTime").setAttribute("onclick","drawGraphic()");
+    }
 }
 
 function stopRealTime() {
     socket.emit('requestTest',`{"pk_sensor": "${pk_sensor}", "component" : "REAL_TIME", "type" : "STOP" }`,function (data) {
         console.log(data);
         if(data.code === "001"){
-            document.getElementById("btnRealTime").innerHTML = "Conectar";
-            document.getElementById("btnRealTime").setAttribute("onclick","drawGraphic()");
+            changeButton(false);
         }
     })
 }
