@@ -164,4 +164,10 @@ router.post('/terminateTest', function (req,res) {
     })
 });
 
+router.post('/getDataDetailComponent', function (req,res) {
+    data_controller.getDataDetailComponent(req.body.pk_sensor,req.body.component).then(function (data) {
+        res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, data.data)));
+    })
+});
+
 module.exports = router;

@@ -375,6 +375,22 @@ module.exports = {
                     }
                 });
             })
+    },
+    getDataDetailComponent: function (pk_sensor, component) {
+        return new Promise(
+            function (fullfill) {
+                let table = `TBL_${component}`;
+                let sql = template(sqlQuery.query_dataDetailComponent,{table: table, pk_sensor: pk_sensor});
+                db.query(sql, function (err, result) {
+                    if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
+
+                    if (result.length !== 0) {
+                        fullfill({hcode: 200, code: "001", msg: "details", data: null});
+                    } else {
+                        fullfill({hcode: 202, code: "002", msg: "no hay datos", data: null});
+                    }
+                });
+            })
     }
 };
 

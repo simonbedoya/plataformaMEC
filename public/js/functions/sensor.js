@@ -774,14 +774,14 @@ function loadInfoComponent() {
 
 function setInfoComponent(data) {
     aciveLoader("loadComponent",false);
-    let components = ["CPU", "GPS", "ADC", "ACC", "WIFI", "RTC", "BATT"];
+    let components = ["CPU", "GPS", "ADC", "ACCELEROMETER", "WIFI", "RTC", "BATTERY"];
     let fields = ["tiscCPU", "tiscGPS", "tiscADC", "tiscACC", "tiscWIFI", "tiscRTC", "tiscBATT"];
 
     if(data !== null) {
         let fieldsBD = [data.STA_CPU,data.STA_GPS,data.STA_ADC,data.STA_ACC,data.STA_WIFI,data.STA_RTC,data.STA_BATT];
         for(i in fieldsBD){
             if(fieldsBD[i] === "Error"){
-                document.getElementById(fields[i]).innerHTML = `<a href="javascript:showDetails('${components[i]}')"><span style="color: #ac2925">${fieldsBD[i]}</span></a>`;
+                document.getElementById(fields[i]).innerHTML = `<a onclick="showDetails('${components[i]}')"><span style="color: #ac2925">${fieldsBD[i]}</span></a>`;
             }else{
                 document.getElementById(fields[i]).innerHTML = `<a onclick="showDetails('${components[i]}')"><span style="color: #0B610B">${fieldsBD[i]}</span></a>`;
             }
@@ -797,8 +797,61 @@ function setInfoComponent(data) {
     }
 }
 
-function showDetails(component) {
+function showPanelLoad(id,show) {
+    let portlet = $(`#${id}`);
+    if(show) {
+        portlet.append('<div class="panel-disabled"><div class="loader-1"></div></div>');
+    }else{
+        let pd = portlet.find('.panel-disabled');
+        pd.fadeOut('fast', function () {
+            pd.remove();
+        });
+    }
 
+}
+
+function showDetails(component) {
+    showPanelLoad('panelDatailsComp',true);
+    $.ajax({
+        type: "post",
+        url: "https://plataformamec.com/data/getDataDetailComponent",
+        data: {pk_sensor: pk_sensor, component: component},
+        success: function (result) {
+            if (result.code === "001") {
+                setDetailComponent(result.data);
+            } else if (result.code === "003") {
+                swal({
+                    title: "Información",
+                    text: "Ha ocurrido un error intenta de nuevo!",
+                    type: "info",
+                    showCancelButton: false,
+                    confirmButtonColor: "#444a53",
+                    confirmButtonText: "OK"
+                }).then(function () {
+
+                });
+            } else if(result.code === "002"){
+                setDetailComponent(null);
+            }
+        },
+        error: function (e) {
+            console.log(e);
+            swal({
+                title: "Información",
+                text: "Ha ocurrido un error intenta de nuevo!",
+                type: "info",
+                showCancelButton: false,
+                confirmButtonColor: "#444a53",
+                confirmButtonText: "OK"
+            }).then(function () {
+                loadInfoComponent()
+            });
+        }
+    });
+}
+
+function setDetailComponent(data) {
+    
 }
 
 function clearInfoComponent() {
