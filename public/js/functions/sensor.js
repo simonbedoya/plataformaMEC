@@ -974,7 +974,7 @@ $("#real_time_graphic").on('hidden.bs.modal', function () {
 
 function clearRealtime() {
     document.getElementById("divcontainer").innerHTML = "<div id='chartdiv' style='width: 100%; height: 400px;'></div>"+
-        "<div style='margin-left:35px;' class='hidden'>"+
+        "<div style='margin-left:35px;' class='hidden' id='divButtonGraphic'>"+
         "<input type='radio' checked='true' name='group' id='rb1' onclick='setPanSelect()'>Select"+
         "<input type='radio' name='group' id='rb2' onclick='setPanSelect()'>Pan"+
         "</div>";
