@@ -1198,6 +1198,10 @@ function setPanSelect() {
     chartRealTime.validateNow();
 }
 
+$("#tabConfigADC").click(function () {
+   loadSamplesADC();
+});
+
 function loadSamplesADC(){
     $.ajax({
         type: "post",
