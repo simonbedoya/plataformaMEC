@@ -103,6 +103,12 @@ function loadListSensors(data, load) {
     //language=JQuery-CSS
     $('#table_sensors').find('> tbody').empty();
 
+    if(data === null){
+        $('#table_sensors').find('> tbody').append(`<tr><td colspan="5">No hay sensores asociados</td></tr>`);
+        return;
+    }
+
+
     dataNetworksSensor = [];
 
     for (let i = 0; i < data.length; i++) {
@@ -169,7 +175,7 @@ function filterSensorByNetwork(email) {
                 //alert(result.msg);
                 if (result.code === "001") {
                     loadListSensors(result.data, true);
-                } else if (result.code === "002") {
+                } else if (result.code === "003") {
                     swal({
                         title: "Información",
                         text: "Ha ocurrido un error intenta de nuevo!",
@@ -179,6 +185,17 @@ function filterSensorByNetwork(email) {
                         confirmButtonText: "OK"
                     }).then(function () {
 
+                    });
+                } else if(result.code === "002"){
+                    swal({
+                        title: "Información",
+                        text: "Esta red no tiene sensores asociados!",
+                        type: "info",
+                        showCancelButton: false,
+                        confirmButtonColor: "#444a53",
+                        confirmButtonText: "OK"
+                    }).then(function () {
+                        loadListSensors(null, true);
                     });
                 }
             },
