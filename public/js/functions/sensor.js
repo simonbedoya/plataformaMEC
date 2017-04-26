@@ -982,6 +982,7 @@ function clearRealtime() {
 
 function drawGraphic(){
     $('#divButtonGraphic').removeClass('hidden');
+    document.getElementById("btnClearRealTime").disabled = true;
     let axisSelect = $('#selectedAxis').val();
     let valueAxes, graphs = [];
     if(axisSelect !== "0"){
@@ -1091,6 +1092,7 @@ function stopRealTime() {
         console.log(data);
         if(data.code === "001"){
             changeButton(false);
+            document.getElementById("btnClearRealTime").disabled = false;
         }
     })
 }
