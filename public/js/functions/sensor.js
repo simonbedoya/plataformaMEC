@@ -781,7 +781,7 @@ function setInfoComponent(data) {
         let fieldsBD = [data.STA_CPU,data.STA_GPS,data.STA_ADC,data.STA_ACC,data.STA_WIFI,data.STA_RTC,data.STA_BATT];
         for(i in fieldsBD){
             if(fieldsBD[i] === "Error"){
-                document.getElementById(fields[i]).innerHTML = `<a onclick="showDetails('${components[i]}')"><span style="color: #ac2925">${fieldsBD[i]}</span></a>`;
+                document.getElementById(fields[i]).innerHTML = `<a href="javascript:showDetails('${components[i]}')"><span style="color: #ac2925">${fieldsBD[i]}</span></a>`;
             }else{
                 document.getElementById(fields[i]).innerHTML = `<a onclick="showDetails('${components[i]}')"><span style="color: #0B610B">${fieldsBD[i]}</span></a>`;
             }
@@ -798,7 +798,7 @@ function setInfoComponent(data) {
 }
 
 function showDetails(component) {
-    
+
 }
 
 function clearInfoComponent() {
