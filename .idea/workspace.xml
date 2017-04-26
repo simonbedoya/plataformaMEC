@@ -75,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/sql/sql_data.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="246">
-              <caret line="20" column="282" lean-forward="false" selection-start-line="20" selection-start-column="282" selection-end-line="20" selection-end-column="282" />
+              <caret line="20" column="273" lean-forward="false" selection-start-line="20" selection-start-column="273" selection-end-line="20" selection-end-column="273" />
               <folding />
             </state>
           </provider>
@@ -676,14 +676,7 @@
       <workItem from="1493064324366" duration="619000" />
       <workItem from="1493175522212" duration="12881000" />
       <workItem from="1493214321514" duration="1317000" />
-      <workItem from="1493216216532" duration="2789000" />
-    </task>
-    <task id="LOCAL-00236" summary="21/04/17">
-      <created>1492788484510</created>
-      <option name="number" value="00236" />
-      <option name="presentableId" value="LOCAL-00236" />
-      <option name="project" value="LOCAL" />
-      <updated>1492788484510</updated>
+      <workItem from="1493216216532" duration="2920000" />
     </task>
     <task id="LOCAL-00237" summary="21/04/17">
       <created>1492788841665</created>
@@ -1021,11 +1014,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493220297007</updated>
     </task>
-    <option name="localTasksCounter" value="285" />
+    <task id="LOCAL-00285" summary="26/04/17">
+      <created>1493220456541</created>
+      <option name="number" value="00285" />
+      <option name="presentableId" value="LOCAL-00285" />
+      <option name="project" value="LOCAL" />
+      <updated>1493220456541</updated>
+    </task>
+    <option name="localTasksCounter" value="286" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="721088000" />
+    <option name="totallyTimeSpent" value="721219000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1586,7 +1586,7 @@
     <entry file="file://$PROJECT_DIR$/sql/sql_data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
-          <caret line="20" column="282" lean-forward="false" selection-start-line="20" selection-start-column="282" selection-end-line="20" selection-end-column="282" />
+          <caret line="20" column="273" lean-forward="false" selection-start-line="20" selection-start-column="273" selection-end-line="20" selection-end-column="273" />
           <folding />
         </state>
       </provider>
