@@ -854,25 +854,25 @@ function setDetailComponent(data,component) {
     let panel = document.getElementById("panelDatailsComp");
     switch (component){
         case "CPU":
-            panel.innerHTML = `<table id='tableDescripComponents' class='col-lg-12' border='0'><tbody><tr><th colspan='2'>Detalles CPU</th></tr><tr><td>Descripción:</td><td>${data.DESCRIPT_CPU}</td></tr><tr><td>Error:</td><td>${data.ERROR_CPU}</td></tr><tr><td>Actualización:</td><td>${data.UPDATEDATE_CPU}</td></tr></tbody></table>`;
+            panel.innerHTML = `<table id='tableDescripComponents' class='col-lg-12' border='0'><tbody><tr><th colspan='2'>Detalles CPU</th></tr><tr><td>Descripción:</td><td>${data.DESCRIPT_CPU}</td></tr><tr><td>Error:</td><td>${data.ERROR_CPU}</td></tr><tr><td>Actualización:</td><td>${datetime(data.UPDATEDATE_CPU)}</td></tr></tbody></table>`;
             break;
         case "GPS":
-            panel.innerHTML = `<table id='tableDescripComponents' class='col-lg-12' border='0'><tbody><tr><th colspan='2'>Detalles GPS</th></tr><tr><td>Descripción:</td><td>${data.DESCRIPT_GPS}</td></tr><tr><td>Tasa en baudios:</td><td>${data.BAUDRATE_GPS}</td></tr><tr><td>Mensajes NMEA:</td><td>${data.MSJNMEA}</td></tr><tr><td>Error:</td><td>${data.ERROR_GPS}</td></tr><tr><td>Actualización:</td><td>${data.UPDATEDATE_GPS}</td></tr></tbody></table>`;
+            panel.innerHTML = `<table id='tableDescripComponents' class='col-lg-12' border='0'><tbody><tr><th colspan='2'>Detalles GPS</th></tr><tr><td>Descripción:</td><td>${data.DESCRIPT_GPS}</td></tr><tr><td>Tasa en baudios:</td><td>${data.BAUDRATE_GPS}</td></tr><tr><td>Mensajes NMEA:</td><td>${data.MSJNMEA}</td></tr><tr><td>Error:</td><td>${data.ERROR_GPS}</td></tr><tr><td>Actualización:</td><td>${datetime(data.UPDATEDATE_GPS)}</td></tr></tbody></table>`;
             break;
         case "ADC":
-            panel.innerHTML = `<table id='tableDescripComponents' class='col-lg-12' border='0'><tbody><tr><th colspan='2'>Detalles ADC</th></tr><tr><td>Descripción:</td><td>${data.DESCRIPT_ADC}</td></tr><tr><td>Muestras por segundo:</td><td>${data.SAMPLES_ADC}</td></tr><tr><td>Error:</td><td>${data.ERROR_ADC}</td></tr><tr><td>Actualización:</td><td>${data.UPDATEDATE_ADC}</td></tr></tbody></table>`;
+            panel.innerHTML = `<table id='tableDescripComponents' class='col-lg-12' border='0'><tbody><tr><th colspan='2'>Detalles ADC</th></tr><tr><td>Descripción:</td><td>${data.DESCRIPT_ADC}</td></tr><tr><td>Muestras por segundo:</td><td>${data.SAMPLES_ADC}</td></tr><tr><td>Error:</td><td>${data.ERROR_ADC}</td></tr><tr><td>Actualización:</td><td>${datetime(data.UPDATEDATE_ADC)}</td></tr></tbody></table>`;
             break;
         case "ACCELEROMETER":
-            panel.innerHTML = `<table id='tableDescripComponents' class='col-lg-12' border='0'><tbody><tr><th colspan='2'>Detalles Acelerometro</th></tr><tr><td>Descripción:</td><td>${data.DESCRIPT_ACCELEROMETER}</td></tr><tr><td>Error:</td><td>${data.ERROR_ACCELEROMETER}</td></tr><tr><td>Actualización:</td><td>${data.UPDATEDATE_ACCELEROMETER}</td></tr></tbody></table>`;
+            panel.innerHTML = `<table id='tableDescripComponents' class='col-lg-12' border='0'><tbody><tr><th colspan='2'>Detalles Acelerometro</th></tr><tr><td>Descripción:</td><td>${data.DESCRIPT_ACCELEROMETER}</td></tr><tr><td>Error:</td><td>${data.ERROR_ACCELEROMETER}</td></tr><tr><td>Actualización:</td><td>${datetime(data.UPDATEDATE_ACCELEROMETER)}</td></tr></tbody></table>`;
             break;
         case "WIFI":
-            panel.innerHTML = `<table id='tableDescripComponents' class='col-lg-12' border='0'><tbody><tr><th colspan='2'>Detalles WIFI</th></tr><tr><td>Descripción:</td><td>${data.DESCRIPT_WIFI}</td></tr><tr><td>SSID:</td><td>${data.SSID_WIFI}</td></tr><tr><td>Dirección IP:</td><td>${data.IPADR_WIFI}</td></tr><tr><td>Direccion Fisica:</td><td>${data.MACADR_WIFI}</td></tr><tr><td>Error:</td><td>${data.ERROR_WIFI}</td></tr><tr><td>Actualización:</td><td>${data.UPDATEDATE_WIFI}</td></tr></tbody></table>`;
+            panel.innerHTML = `<table id='tableDescripComponents' class='col-lg-12' border='0'><tbody><tr><th colspan='2'>Detalles WIFI</th></tr><tr><td>Descripción:</td><td>${data.DESCRIPT_WIFI}</td></tr><tr><td>SSID:</td><td>${data.SSID_WIFI}</td></tr><tr><td>Dirección IP:</td><td>${data.IPADR_WIFI}</td></tr><tr><td>Direccion Fisica:</td><td>${data.MACADR_WIFI}</td></tr><tr><td>Error:</td><td>${data.ERROR_WIFI}</td></tr><tr><td>Actualización:</td><td>${datetime(datetime(data.UPDATEDATE_WIFI)}</td></tr></tbody></table>`;
             break;
         case "RTC":
-            panel.innerHTML = `<table id='tableDescripComponents' class='col-lg-12' border='0'><tbody><tr><th colspan='2'>Detalles RTC</th></tr><tr><td>Descripción:</td><td>${data.DESCRIPT_RTC}</td></tr><tr><td>Fecha y hora:</td><td>${data.DATEHOUR_RTC}</td></tr><tr><td>Error:</td><td>${data.ERROR_RTC}</td></tr><tr><td>Actualización:</td><td>${data.UPDATEDATE_RTC}</td></tr></tbody></table>`;
+            panel.innerHTML = `<table id='tableDescripComponents' class='col-lg-12' border='0'><tbody><tr><th colspan='2'>Detalles RTC</th></tr><tr><td>Descripción:</td><td>${data.DESCRIPT_RTC}</td></tr><tr><td>Fecha y hora:</td><td>${data.DATEHOUR_RTC}</td></tr><tr><td>Error:</td><td>${data.ERROR_RTC}</td></tr><tr><td>Actualización:</td><td>${datetime(data.UPDATEDATE_RTC)}</td></tr></tbody></table>`;
             break;
         case "BATTERY":
-            panel.innerHTML = `<table id='tableDescripComponents' class='col-lg-12' border='0'><tbody><tr><th colspan='2'>Detalles bateria</th></tr><tr><td>Descripción:</td><td>${data.DESCRIPT_BATTERY}</td></tr><tr><td>Carga:</td><td>${data.CHARGE_BATTERY}</td></tr><tr><td>Error:</td><td>${data.ERROR_BATTERY}</td></tr><tr><td>Actualización:</td><td>${data.UPDATEDATE_BATTERY}</td></tr></tbody></table>`;
+            panel.innerHTML = `<table id='tableDescripComponents' class='col-lg-12' border='0'><tbody><tr><th colspan='2'>Detalles bateria</th></tr><tr><td>Descripción:</td><td>${data.DESCRIPT_BATTERY}</td></tr><tr><td>Carga:</td><td>${data.CHARGE_BATTERY}</td></tr><tr><td>Error:</td><td>${data.ERROR_BATTERY}</td></tr><tr><td>Actualización:</td><td>${datetime(data.UPDATEDATE_BATTERY)}</td></tr></tbody></table>`;
             break;
     }
 }
