@@ -103,7 +103,7 @@ function loadTable(data) {
         $('#table_networks').find('> tbody').append(`<tr>` +
             `<td>${data[i].NAME_NETWORK}</td>` +
             `<td>${data[i].ADDRESS_NETWORK}</td>` +
-            `<td>${data[i].N_SENSOR}</td>` +
+            `<td id='number_sensor_${i}'></td>` +
             `<td>${data[i].STATUS_NETWORK}</td>` +
             `<td>${dateArrayC[0]}</td>` +
             `<td>${dateArrayU[0]}</td>` +
@@ -112,12 +112,51 @@ function loadTable(data) {
             `<a onclick='delete_network(${data[i].PK_NETWORK})' class='' style='color: #B40404'><i class='fa fa-trash-o'></i></a>` +
             `</td>` +
             `</tr>`);
+        loadSensorsByNetowrk(data[i].PK_NETWORK, i);
     }
     loadDataTable();
 }
 
 function loadDataTable() {
     TableManageButtons.table_network();
+}
+
+function loadSensorsByNetowrk(network, i) {
+    $.ajax({
+        type: "post",
+        async: true,
+        url: "https://plataformamec.com/data/sensors_networks",
+        data: {network: network},
+        success: function (result) {
+            if (result.code === "001"){
+                document.getElementById("number_sensor_"+i).innerHTML = result.data[0].SENSORS;
+            }else if(result.code === "002"){
+                swal({
+                    title: "Información",
+                    text: "Ha ocurrido un error intenta de nuevo!",
+                    type: "info",
+                    showCancelButton: false,
+                    confirmButtonColor: "#444a53",
+                    confirmButtonText: "OK"
+                }).then(function () {
+                    loadSensorsByNetowrk(network, i);
+                });
+            }
+        },
+        error: function (e) {
+            console.log(e);
+            swal({
+                title: "Información",
+                text: "Ha ocurrido un error intenta de nuevo!",
+                type: "info",
+                showCancelButton: false,
+                confirmButtonColor: "#444a53",
+                confirmButtonText: "OK"
+            }).then(function () {
+                loadSensorsByNetowrk(network, i);
+            });
+        }
+    });
 }
 
 function edit_network(network) {
