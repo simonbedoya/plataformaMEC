@@ -862,11 +862,11 @@ function setDetailComponent(data) {
                                                                     "</tr>"+
                                                                     "<tr>"+
                                                                         "<td>Error:</td>"+
-                                                                        "<td>"+data.error_cpu+"</td>"+
+                                                                        "<td>"+data.ERROR_CPU+"</td>"+
                                                                     "</tr>"+
                                                                     "<tr>"+
                                                                         "<td>Actualización:</td>"+
-                                                                        "<td>"+updatedata+"</td>"+
+                                                                        "<td>"+data.UPDATEDATE+"</td>"+
                                                                     "</tr>"+
                                                                 "</tbody>"+
                                                             "</table>"
