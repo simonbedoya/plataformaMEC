@@ -1209,6 +1209,7 @@ function loadSamplesADC(){
         data: {pk_sensor: pk_sensor},
         success: function (result) {
             if (result.code === "001") {
+                document.getElementById("samplesADC").disabled = false;
                 $("#samplesADC").val(result.data.SAMPLES_ADC);
             } else if (result.code === "003") {
                 swal({
@@ -1219,7 +1220,7 @@ function loadSamplesADC(){
                     confirmButtonColor: "#444a53",
                     confirmButtonText: "OK"
                 }).then(function () {
-                    $("#config_sensor").modal('close');
+                    $("#config_sensor").modal('hide');
                 });
             } else if(result.code === "002"){
                 swal({
@@ -1230,7 +1231,7 @@ function loadSamplesADC(){
                     confirmButtonColor: "#444a53",
                     confirmButtonText: "OK"
                 }).then(function () {
-                    $("#config_sensor").modal('close');
+                    $("#config_sensor").modal('hide');
                 });
             }
         },
