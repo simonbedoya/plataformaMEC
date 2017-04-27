@@ -7,7 +7,6 @@
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/notification.ejs" afterPath="$PROJECT_DIR$/views/notification.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,8 +52,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="1425" column="27" lean-forward="false" selection-start-line="1425" selection-start-column="27" selection-end-line="1425" selection-end-column="27" />
+            <state relative-caret-position="244">
+              <caret line="1424" column="20" lean-forward="false" selection-start-line="1424" selection-start-column="20" selection-end-line="1424" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -646,14 +645,7 @@
       <workItem from="1493264521657" duration="3846000" />
       <workItem from="1493268460880" duration="4000" />
       <workItem from="1493298424038" duration="351000" />
-      <workItem from="1493299266191" duration="4675000" />
-    </task>
-    <task id="LOCAL-00265" summary="23/04/17">
-      <created>1493180723498</created>
-      <option name="number" value="00265" />
-      <option name="presentableId" value="LOCAL-00265" />
-      <option name="project" value="LOCAL" />
-      <updated>1493180723499</updated>
+      <workItem from="1493299266191" duration="4881000" />
     </task>
     <task id="LOCAL-00266" summary="23/04/17">
       <created>1493181475105</created>
@@ -991,11 +983,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493303830702</updated>
     </task>
-    <option name="localTasksCounter" value="314" />
+    <task id="LOCAL-00314" summary="27/04/17">
+      <created>1493304997719</created>
+      <option name="number" value="00314" />
+      <option name="presentableId" value="LOCAL-00314" />
+      <option name="project" value="LOCAL" />
+      <updated>1493304997719</updated>
+    </task>
+    <option name="localTasksCounter" value="315" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="737725000" />
+    <option name="totallyTimeSpent" value="737931000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1610,8 +1609,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="1425" column="27" lean-forward="false" selection-start-line="1425" selection-start-column="27" selection-end-line="1425" selection-end-column="27" />
+        <state relative-caret-position="244">
+          <caret line="1424" column="20" lean-forward="false" selection-start-line="1424" selection-start-column="20" selection-end-line="1424" selection-end-column="20" />
           <folding />
         </state>
       </provider>

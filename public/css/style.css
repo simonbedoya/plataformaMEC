@@ -1422,7 +1422,7 @@ tr.shown td.details-control {
   width: 1%;
 }
 
-.table > thead > tr > td.selectedItem{
+.table > thead > tr.selectedItem{
   background-color: #7D7D7D;
 }
 
