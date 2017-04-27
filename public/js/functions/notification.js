@@ -63,6 +63,24 @@ function setDataNotification(data) {
             }else{
                 fecha = date.toLocaleDateString("es-CO",{month: "short", day: "2-digit"});
             }
+            let type;
+            switch (data[d].TYPE_NOTIFICATION){
+                case "FILE":
+                    type = "text-success";
+                    break;
+                case "EVENT":
+                    type = "text-danger";
+                    break;
+                case "ERROR":
+                    type = "text-warning";
+                    break;
+                case "ALERT":
+                    type = "text-info";
+                    break;
+                case "STATUS":
+                    type = "text-purple";
+                    break;
+            }
             $('#tableNotification').find('> tbody').append(
                 `<tr class="" id="noti_${data[d].PK_NOTIFICATION}">`+
                     `<td class="mail-select">`+
@@ -74,7 +92,7 @@ function setDataNotification(data) {
                         `<p href="">${data[d].NAME_SENSOR}</p>`+
                     `</td>`+
                     `<td>`+
-                        `<a href=""><i class="fa fa-circle text-info m-r-15"></i>${data[d].TITLE_NOTIFICATION}</a>`+
+                        `<a href=""><i class="fa fa-circle ${type} m-r-15"></i>${data[d].TITLE_NOTIFICATION}</a>`+
                     `</td>`+
                     `<td class="text-right">${fecha}</td>`+
                 `</tr>`
