@@ -82,7 +82,7 @@ function setDataNotification(data) {
                     break;
             }
             let read = "mail-select active";
-            if(!data[d].READ_NOTIFICATION){
+            if(data[d].READ_NOTIFICATION){
                 read = "mail-select";
             }
             $('#tableNotification').find('> tbody').append(
