@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/graphic.ejs" afterPath="$PROJECT_DIR$/views/graphic.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/network.ejs" afterPath="$PROJECT_DIR$/views/network.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/profile.ejs" afterPath="$PROJECT_DIR$/views/profile.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/notification.ejs" afterPath="$PROJECT_DIR$/views/notification.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -100,21 +97,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/settings.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="80" lean-forward="false" selection-start-line="27" selection-start-column="80" selection-end-line="27" selection-end-column="80" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notification.ejs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="notification.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/notification.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="493">
+              <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -184,7 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/routes/profile.js" />
         <option value="$PROJECT_DIR$/routes/sensor.js" />
         <option value="$PROJECT_DIR$/routes/settings.js" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
@@ -235,6 +231,7 @@
         <option value="$PROJECT_DIR$/views/network.ejs" />
         <option value="$PROJECT_DIR$/views/graphic.ejs" />
         <option value="$PROJECT_DIR$/views/profile.ejs" />
+        <option value="$PROJECT_DIR$/views/notification.ejs" />
       </list>
     </option>
   </component>
@@ -695,14 +692,7 @@
       <workItem from="1493214321514" duration="1317000" />
       <workItem from="1493216216532" duration="8770000" />
       <workItem from="1493243992005" duration="1780000" />
-      <workItem from="1493264521657" duration="3043000" />
-    </task>
-    <task id="LOCAL-00260" summary="23/04/17">
-      <created>1493179040153</created>
-      <option name="number" value="00260" />
-      <option name="presentableId" value="LOCAL-00260" />
-      <option name="project" value="LOCAL" />
-      <updated>1493179040153</updated>
+      <workItem from="1493264521657" duration="3381000" />
     </task>
     <task id="LOCAL-00261" summary="23/04/17">
       <created>1493179124699</created>
@@ -1040,11 +1030,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493267340886</updated>
     </task>
-    <option name="localTasksCounter" value="309" />
+    <task id="LOCAL-00309" summary="26/04/17">
+      <created>1493267627239</created>
+      <option name="number" value="00309" />
+      <option name="presentableId" value="LOCAL-00309" />
+      <option name="project" value="LOCAL" />
+      <updated>1493267627240</updated>
+    </task>
+    <option name="localTasksCounter" value="310" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="731892000" />
+    <option name="totallyTimeSpent" value="732230000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1610,14 +1607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/notification.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/alerts.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -1668,8 +1657,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/settings.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="80" lean-forward="false" selection-start-line="27" selection-start-column="80" selection-end-line="27" selection-end-column="80" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/notification.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
           <folding />
         </state>
       </provider>
