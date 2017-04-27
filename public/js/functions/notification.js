@@ -81,9 +81,13 @@ function setDataNotification(data) {
                     type = "text-purple";
                     break;
             }
+            let read = "mail-select active";
+            if(!data[d].READ_NOTIFICATION){
+                read = "mail-select";
+            }
             $('#tableNotification').find('> tbody').append(
                 `<tr class="" id="noti_${data[d].PK_NOTIFICATION}">`+
-                    `<td class="mail-select">`+
+                    `<td class="${read}">`+
                         `<label class="cr-styled">`+
                             `<input type="checkbox" id="chck_noti_${data[d].PK_NOTIFICATION}" onchange="selectedItemNoti('${data[d].PK_NOTIFICATION}')"><i class="fa"></i>`+
                         `</label>`+
