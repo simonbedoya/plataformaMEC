@@ -58,8 +58,9 @@ function setDataNotification(data) {
             let date = data[d].REGISTER_NOTIFICATION.split("T");
             let hour = date[1].split(".");
             let dateA = new Date();
+            let dateArray = dateA.toISOString().split("T");
             let fecha;
-            if(date[0] === dateA.toISOString()){
+            if(date[0] === dateArray[0]){
                 fecha = date[1];
             }else{
                 fecha = date[0];
