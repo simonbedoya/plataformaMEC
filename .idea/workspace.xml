@@ -30,8 +30,8 @@
       <file leaf-file-name="notification.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/notification.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="281" column="32" lean-forward="true" selection-start-line="281" selection-start-column="32" selection-end-line="281" selection-end-column="32" />
+            <state relative-caret-position="119">
+              <caret line="221" column="37" lean-forward="false" selection-start-line="221" selection-start-column="37" selection-end-line="221" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -607,14 +607,7 @@
       <workItem from="1493264521657" duration="3846000" />
       <workItem from="1493268460880" duration="4000" />
       <workItem from="1493298424038" duration="351000" />
-      <workItem from="1493299266191" duration="3535000" />
-    </task>
-    <task id="LOCAL-00263" summary="23/04/17">
-      <created>1493179898483</created>
-      <option name="number" value="00263" />
-      <option name="presentableId" value="LOCAL-00263" />
-      <option name="project" value="LOCAL" />
-      <updated>1493179898483</updated>
+      <workItem from="1493299266191" duration="3625000" />
     </task>
     <task id="LOCAL-00264" summary="23/04/17">
       <created>1493180220529</created>
@@ -952,11 +945,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493300750934</updated>
     </task>
-    <option name="localTasksCounter" value="312" />
+    <task id="LOCAL-00312" summary="27/04/17">
+      <created>1493303736370</created>
+      <option name="number" value="00312" />
+      <option name="presentableId" value="LOCAL-00312" />
+      <option name="project" value="LOCAL" />
+      <updated>1493303736370</updated>
+    </task>
+    <option name="localTasksCounter" value="313" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="736585000" />
+    <option name="totallyTimeSpent" value="736675000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1555,8 +1555,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/notification.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="281" column="32" lean-forward="true" selection-start-line="281" selection-start-column="32" selection-end-line="281" selection-end-column="32" />
+        <state relative-caret-position="119">
+          <caret line="221" column="37" lean-forward="false" selection-start-line="221" selection-start-column="37" selection-end-line="221" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
