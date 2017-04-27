@@ -55,13 +55,14 @@ function setDataNotification(data) {
     if(data !== null){
         let d;
         for(d in data){
-            let date = data[d].REGISTER_NOTIFICATION.split(" ");
+            let date = data[d].REGISTER_NOTIFICATION.split("T");
+            let hour = date[1].split(".");
             let dateA = new Date();
             let fecha;
             if(date[0] === dateA.getDate()){
                 fecha = date[1];
             }else{
-                fecha = data[d].REGISTER_NOTIFICATION;
+                fecha = date[0] + " " + hour[0];
             }
             $('#tableNotification').find('> tbody').append(
                 `<tr class="" id="noti_${data[d].PK_NOTIFICATION}">`+
