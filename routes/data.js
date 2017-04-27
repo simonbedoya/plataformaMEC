@@ -175,4 +175,11 @@ router.post('/getSamplesADCBySensor', function (req,res) {
         res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, data.data)));
     })
 });
+
+router.post('/getNotificationByUser', function (req,res) {
+    data_controller.getNotificationByUser(req.body.email).then(function (data) {
+        res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, data.data)));
+    })
+});
+
 module.exports = router;

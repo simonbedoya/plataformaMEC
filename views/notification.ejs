@@ -5,7 +5,7 @@
 </head>
 
 
-<body>
+<body  onload="load('<%= user%>')">
 <!-- Aside Start-->
 <aside class="left-panel">
 
@@ -104,7 +104,7 @@
                 <div class="panel panel-default m-t-20">
                     <div class="panel-body">
 
-                        <table class="table table-hover mails hidden-table">
+                        <table class="table table-hover mails hidden-table" id="tableNotification">
                             <tbody>
                             <tr class="" id="noti_1">
                                 <td class="mail-select">
@@ -312,5 +312,5 @@
 
 <script src="js/functions/notification.js"></script>
 
-</body>
+</>
 </html>
