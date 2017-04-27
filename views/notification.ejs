@@ -106,10 +106,10 @@
 
                         <table class="table table-hover mails">
                             <tbody>
-                            <tr>
+                            <tr class="selectedItem" id="noti_1">
                                 <td class="mail-select">
                                     <label class="cr-styled">
-                                        <input type="checkbox"><i class="fa"></i>
+                                        <input type="checkbox" id="chck_noti_1" onchange="selectedItemNoti('1')"><i class="fa"></i>
                                     </label>
                                 </td>
                                 <td>
@@ -310,6 +310,7 @@
 
 <% include ./partials/scripts %>
 
+<script src="js/functions/notification.js"></script>
 
 </body>
 </html>
