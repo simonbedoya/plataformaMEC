@@ -657,7 +657,7 @@
       <workItem from="1493264521657" duration="3846000" />
       <workItem from="1493268460880" duration="4000" />
       <workItem from="1493298424038" duration="351000" />
-      <workItem from="1493299266191" duration="8019000" />
+      <workItem from="1493299266191" duration="8034000" />
     </task>
     <task id="LOCAL-00269" summary="23/04/17">
       <created>1493183194319</created>
@@ -1006,7 +1006,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="741069000" />
+    <option name="totallyTimeSpent" value="741084000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1074,7 +1074,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="17/04/2017 10" />
     <MESSAGE value="17/04/2017 11" />
     <MESSAGE value="17/04/2017 12" />
     <MESSAGE value="17/04/2017 13" />
@@ -1099,7 +1098,8 @@
     <MESSAGE value="23/04/17" />
     <MESSAGE value="26/04/17" />
     <MESSAGE value="27/04/17" />
-    <option name="LAST_COMMIT_MESSAGE" value="27/04/17" />
+    <MESSAGE value="27/04/17 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="27/04/17 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
