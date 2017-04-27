@@ -51,16 +51,16 @@
         <entry file="file://$PROJECT_DIR$/public/js/functions/notification.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="63" column="78" lean-forward="false" selection-start-line="63" selection-start-column="78" selection-end-line="63" selection-end-column="78" />
+              <caret line="63" column="45" lean-forward="false" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
               <folding>
                 <element signature="n#!!doc;n#selectedItemNoti#0" expanded="false" />
-                <marker date="1493324484906" expanded="true" signature="2133:2853" ph="..." />
-                <marker date="1493324484906" expanded="true" signature="2181:2472" ph="..." />
-                <marker date="1493324484906" expanded="true" signature="2234:2443" ph="..." />
-                <marker date="1493324484906" expanded="true" signature="2500:2594" ph="..." />
-                <marker date="1493324484906" expanded="true" signature="2622:2768" ph="..." />
-                <marker date="1493324484906" expanded="true" signature="2815:2816" ph="..." />
-                <marker date="1493324484906" expanded="true" signature="2815:2828" ph="..." />
+                <marker date="1493325394264" expanded="true" signature="2099:2819" ph="..." />
+                <marker date="1493325394264" expanded="true" signature="2147:2438" ph="..." />
+                <marker date="1493325394264" expanded="true" signature="2200:2409" ph="..." />
+                <marker date="1493325394264" expanded="true" signature="2466:2560" ph="..." />
+                <marker date="1493325394264" expanded="true" signature="2588:2734" ph="..." />
+                <marker date="1493325394264" expanded="true" signature="2781:2782" ph="..." />
+                <marker date="1493325394264" expanded="true" signature="2781:2794" ph="..." />
               </folding>
             </state>
           </provider>
@@ -685,14 +685,7 @@
       <workItem from="1493268460880" duration="4000" />
       <workItem from="1493298424038" duration="351000" />
       <workItem from="1493299266191" duration="8055000" />
-      <workItem from="1493310538735" duration="5733000" />
-    </task>
-    <task id="LOCAL-00285" summary="26/04/17">
-      <created>1493220456541</created>
-      <option name="number" value="00285" />
-      <option name="presentableId" value="LOCAL-00285" />
-      <option name="project" value="LOCAL" />
-      <updated>1493220456541</updated>
+      <workItem from="1493310538735" duration="6375000" />
     </task>
     <task id="LOCAL-00286" summary="26/04/17">
       <created>1493220587186</created>
@@ -1030,11 +1023,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493324456680</updated>
     </task>
-    <option name="localTasksCounter" value="334" />
+    <task id="LOCAL-00334" summary="27/04/17 3">
+      <created>1493324491361</created>
+      <option name="number" value="00334" />
+      <option name="presentableId" value="LOCAL-00334" />
+      <option name="project" value="LOCAL" />
+      <updated>1493324491361</updated>
+    </task>
+    <option name="localTasksCounter" value="335" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="746838000" />
+    <option name="totallyTimeSpent" value="747480000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1673,16 +1673,16 @@
     <entry file="file://$PROJECT_DIR$/public/js/functions/notification.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="63" column="78" lean-forward="false" selection-start-line="63" selection-start-column="78" selection-end-line="63" selection-end-column="78" />
+          <caret line="63" column="45" lean-forward="false" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
           <folding>
             <element signature="n#!!doc;n#selectedItemNoti#0" expanded="false" />
-            <marker date="1493324484906" expanded="true" signature="2133:2853" ph="..." />
-            <marker date="1493324484906" expanded="true" signature="2181:2472" ph="..." />
-            <marker date="1493324484906" expanded="true" signature="2234:2443" ph="..." />
-            <marker date="1493324484906" expanded="true" signature="2500:2594" ph="..." />
-            <marker date="1493324484906" expanded="true" signature="2622:2768" ph="..." />
-            <marker date="1493324484906" expanded="true" signature="2815:2816" ph="..." />
-            <marker date="1493324484906" expanded="true" signature="2815:2828" ph="..." />
+            <marker date="1493325394264" expanded="true" signature="2099:2819" ph="..." />
+            <marker date="1493325394264" expanded="true" signature="2147:2438" ph="..." />
+            <marker date="1493325394264" expanded="true" signature="2200:2409" ph="..." />
+            <marker date="1493325394264" expanded="true" signature="2466:2560" ph="..." />
+            <marker date="1493325394264" expanded="true" signature="2588:2734" ph="..." />
+            <marker date="1493325394264" expanded="true" signature="2781:2782" ph="..." />
+            <marker date="1493325394264" expanded="true" signature="2781:2794" ph="..." />
           </folding>
         </state>
       </provider>
