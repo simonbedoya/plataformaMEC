@@ -1425,6 +1425,9 @@ tr.shown td.details-control {
 .selectedItem{
   background-color: #DCDCDC;
 }
+.hidden-table:hover{
+  background-color: white !important;
+}
 
 .mails .label {
   margin-right: 10px;
