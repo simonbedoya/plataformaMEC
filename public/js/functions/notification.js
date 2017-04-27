@@ -98,9 +98,6 @@ function setDataNotification(data) {
                 `<td>` +
                 `<a href=""><i class="fa fa-circle ${type} m-r-15"></i>${data[d].TITLE_NOTIFICATION}</a>` +
                 `</td>` +
-                `<td>`+
-                `<i class="fa fa-envelope-open"></i>`+
-                `</td>`+
                 `<td class="text-right">${fecha}</td>` +
                 `</tr>`
             );
