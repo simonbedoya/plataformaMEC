@@ -58,7 +58,7 @@ function setDataNotification(data) {
             let date = new Date(data[d].REGISTER_NOTIFICATION);
             let hour = date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: true});
             let fecha;
-            if(date.toLocaleDateString() ===  new Date().toLocaleTimeString()){
+            if(date.toLocaleDateString() ===  new Date().toLocaleDateString()){
                 fecha = hour;
             }else{
                 fecha = date.toLocaleDateString();
