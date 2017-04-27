@@ -59,7 +59,7 @@ function setDataNotification(data) {
             let hour = date[1].split(".");
             let dateA = new Date();
             let fecha;
-            if(date[0] === dateA.toLocaleDateString()){
+            if(date[0] === dateA.toLocaleDateString([],{year:"2-digit",month:"2-digit", day:"2-digit"})){
                 fecha = date[1];
             }else{
                 fecha = date[0];
