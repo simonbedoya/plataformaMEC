@@ -1422,6 +1422,10 @@ tr.shown td.details-control {
   width: 1%;
 }
 
+.table > thead > tr > td.selectedItem{
+  background-color: #7D7D7D;
+}
+
 .mails .label {
   margin-right: 10px;
 }
