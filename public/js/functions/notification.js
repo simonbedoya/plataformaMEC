@@ -62,7 +62,7 @@ function setDataNotification(data) {
             if(date[0] === dateA.toLocaleDateString()){
                 fecha = date[1];
             }else{
-                fecha = date[0] + " " + hour[0];
+                fecha = date[0];
             }
             $('#tableNotification').find('> tbody').append(
                 `<tr class="" id="noti_${data[d].PK_NOTIFICATION}">`+
