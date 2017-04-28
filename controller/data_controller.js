@@ -429,7 +429,7 @@ module.exports = {
     getNumberNotification: function (email) {
         return new Promise(
             function (fullfill) {
-                let sql = template(sqlQuery.query_getNotificationByUser,{email: email});
+                let sql = template(sqlQuery.query_getNumberNotificationByUser,{email: email});
                 db.query(sql, function (err, result) {
                     if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
 
