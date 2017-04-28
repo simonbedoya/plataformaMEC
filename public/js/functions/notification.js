@@ -156,10 +156,10 @@ function setDataNotification(data) {
                 `</label>` +
                 `</td>` +
                 `<td>` +
-                `<p href="">${data[d].NAME_SENSOR}</p>` +
+                `<a onclick="openShowNotification(${data[d].PK_NOTIFICATION})">${data[d].NAME_SENSOR}</a>` +
                 `</td>` +
                 `<td>` +
-                `<a href=""><i class="fa fa-circle ${type} m-r-15"></i>${data[d].TITLE_NOTIFICATION}</a>` +
+                `<a onclick="openShowNotification(${data[d].PK_NOTIFICATION})"><i class="fa fa-circle ${type} m-r-15"></i>${data[d].TITLE_NOTIFICATION}</a>` +
                 `</td>` +
                 `<td class="text-right">${fecha}</td>` +
                 `</tr>`
@@ -459,6 +459,10 @@ function markNotification(email,read){
             });
         }
     });
+}
+
+function openShowNotification(id) {
+    $('#show_notification').modal();
 }
 
 function showPanelLoad(id,show) {
