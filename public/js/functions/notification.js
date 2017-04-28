@@ -265,13 +265,15 @@ function lastPage(page) {
 }
 
 function loadDataNotificationByTag(email,type) {
-    loadNumberNotificationByTag(email,type);
+    let page = 1;
+    loadNumberNotificationByTag(email,type,page);
     showLoadNotification(true);
     notificationArray = [];
+
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/getNotificationByTag",
-        data: {email: email, type: type},
+        data: {email: email, type: type, page: page},
         success: function (result) {
             if (result.code === "001") {
                 setDataNotification(result.data);
@@ -306,14 +308,14 @@ function loadDataNotificationByTag(email,type) {
     });
 }
 
-function loadNumberNotificationByTag(email,type) {
+function loadNumberNotificationByTag(email,type,page) {
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/getNumberNotificationByTag",
         data: {email: email, type: type},
         success: function (result) {
             if (result.code === "001") {
-                setNumberNotification(result.data);
+                setNumberNotification(result.data,page);
             } else if (result.code === "003") {
                 swal({
                     title: "Información",
@@ -326,7 +328,7 @@ function loadNumberNotificationByTag(email,type) {
 
                 });
             } else if(result.code === "002"){
-                setNumberNotification(null);
+                setNumberNotification(null,page);
             }
         },
         error: function (e) {

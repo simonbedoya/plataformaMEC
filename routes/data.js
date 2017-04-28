@@ -189,7 +189,7 @@ router.post('/getNumberNotification', function (req,res) {
 });
 
 router.post('/getNotificationByTag', function (req,res) {
-    data_controller.getNotificationByTag(req.body.email,req.body.type).then(function (data) {
+    data_controller.getNotificationByTag(req.body.email,req.body.type,req.body.page).then(function (data) {
         res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, data.data)));
     })
 });
