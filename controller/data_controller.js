@@ -421,6 +421,7 @@ module.exports = {
                 }
                 let rPage = `${min},${max}`;
                 let sql = template(sqlQuery.query_getNotificationByUser,{email: email, page: rPage});
+                console.log(sql);
                 db.query(sql, function (err, result) {
                     if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
 
