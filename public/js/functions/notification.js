@@ -316,11 +316,11 @@ function deleteNotification(email){
     let id;
     let arrayDelete = "";
     for(id in notificationArray){
-        if($(`#chck_noti_${id}`).prop('checked')) {
+        if($(`#chck_noti_${notificationArray[id]}`).prop('checked')) {
             if(arrayDelete === ""){
-                arrayDelete = id;
+                arrayDelete = notificationArray[id];
             }else {
-                arrayDelete += `,${id}`;
+                arrayDelete += `,${notificationArray[id]}`;
             }
         }
     }
