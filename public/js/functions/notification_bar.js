@@ -48,5 +48,5 @@ function reloadNumberNoReadNotification(email){
 
 $(document).ready(function()
 {
-    setInterval(function(){ loadNumberNoReadNotification(emailP); }, 10000);
+    setInterval(function(){ reloadNumberNoReadNotification(emailP); }, 10000);
 });
