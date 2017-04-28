@@ -50,17 +50,17 @@
       <file leaf-file-name="notification.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/notification.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="243" column="28" lean-forward="false" selection-start-line="243" selection-start-column="28" selection-end-line="243" selection-end-column="28" />
+            <state relative-caret-position="330">
+              <caret line="221" column="13" lean-forward="false" selection-start-line="221" selection-start-column="13" selection-end-line="221" selection-end-column="13" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
-                <marker date="1493358357581" expanded="true" signature="4964:5565" ph="..." />
-                <marker date="1493358357581" expanded="true" signature="5009:5214" ph="..." />
-                <marker date="1493358357581" expanded="true" signature="5055:5188" ph="..." />
-                <marker date="1493358357581" expanded="true" signature="5239:5323" ph="..." />
-                <marker date="1493358357581" expanded="true" signature="5348:5482" ph="..." />
-                <marker date="1493358357581" expanded="true" signature="5526:5527" ph="..." />
-                <marker date="1493358357581" expanded="true" signature="5526:5539" ph="..." />
+                <marker date="1493358780253" expanded="true" signature="4964:5565" ph="..." />
+                <marker date="1493358780253" expanded="true" signature="5009:5214" ph="..." />
+                <marker date="1493358780253" expanded="true" signature="5055:5188" ph="..." />
+                <marker date="1493358780253" expanded="true" signature="5239:5323" ph="..." />
+                <marker date="1493358780253" expanded="true" signature="5348:5482" ph="..." />
+                <marker date="1493358780253" expanded="true" signature="5526:5527" ph="..." />
+                <marker date="1493358780253" expanded="true" signature="5526:5539" ph="..." />
               </folding>
             </state>
           </provider>
@@ -696,14 +696,7 @@
       <workItem from="1493298424038" duration="351000" />
       <workItem from="1493299266191" duration="8055000" />
       <workItem from="1493310538735" duration="9522000" />
-      <workItem from="1493341366737" duration="12996000" />
-    </task>
-    <task id="LOCAL-00333" summary="27/04/17 3">
-      <created>1493324456680</created>
-      <option name="number" value="00333" />
-      <option name="presentableId" value="LOCAL-00333" />
-      <option name="project" value="LOCAL" />
-      <updated>1493324456680</updated>
+      <workItem from="1493341366737" duration="13419000" />
     </task>
     <task id="LOCAL-00334" summary="27/04/17 3">
       <created>1493324491361</created>
@@ -1041,11 +1034,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493358246504</updated>
     </task>
-    <option name="localTasksCounter" value="382" />
+    <task id="LOCAL-00382" summary="27/04/17 3">
+      <created>1493358364536</created>
+      <option name="number" value="00382" />
+      <option name="presentableId" value="LOCAL-00382" />
+      <option name="project" value="LOCAL" />
+      <updated>1493358364537</updated>
+    </task>
+    <option name="localTasksCounter" value="383" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="763623000" />
+    <option name="totallyTimeSpent" value="764046000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1597,6 +1597,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="815" column="19" lean-forward="false" selection-start-line="815" selection-start-column="19" selection-end-line="815" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1680,17 +1681,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/notification.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="243" column="28" lean-forward="false" selection-start-line="243" selection-start-column="28" selection-end-line="243" selection-end-column="28" />
+        <state relative-caret-position="330">
+          <caret line="221" column="13" lean-forward="false" selection-start-line="221" selection-start-column="13" selection-end-line="221" selection-end-column="13" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
-            <marker date="1493358357581" expanded="true" signature="4964:5565" ph="..." />
-            <marker date="1493358357581" expanded="true" signature="5009:5214" ph="..." />
-            <marker date="1493358357581" expanded="true" signature="5055:5188" ph="..." />
-            <marker date="1493358357581" expanded="true" signature="5239:5323" ph="..." />
-            <marker date="1493358357581" expanded="true" signature="5348:5482" ph="..." />
-            <marker date="1493358357581" expanded="true" signature="5526:5527" ph="..." />
-            <marker date="1493358357581" expanded="true" signature="5526:5539" ph="..." />
+            <marker date="1493358780253" expanded="true" signature="4964:5565" ph="..." />
+            <marker date="1493358780253" expanded="true" signature="5009:5214" ph="..." />
+            <marker date="1493358780253" expanded="true" signature="5055:5188" ph="..." />
+            <marker date="1493358780253" expanded="true" signature="5239:5323" ph="..." />
+            <marker date="1493358780253" expanded="true" signature="5348:5482" ph="..." />
+            <marker date="1493358780253" expanded="true" signature="5526:5527" ph="..." />
+            <marker date="1493358780253" expanded="true" signature="5526:5539" ph="..." />
           </folding>
         </state>
       </provider>
