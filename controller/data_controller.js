@@ -411,10 +411,16 @@ module.exports = {
                 });
             })
     },
-    getNotificationByUser: function (email) {
+    getNotificationByUser: function (email,page) {
         return new Promise(
             function (fullfill) {
-                let sql = template(sqlQuery.query_getNotificationByUser,{email: email});
+                let min = 0,max = 10;
+                if(page > 1){
+                    min = min + ((page - 1) * 10);
+                    max = max + ((page - 1) * 10);
+                }
+                let rPage = `${min},${max}`;
+                let sql = template(sqlQuery.query_getNotificationByUser,{email: email, page: rPage});
                 db.query(sql, function (err, result) {
                     if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
 

@@ -13,17 +13,17 @@ function selectedItemNoti(id) {
 
 function load(email) {
     showLoadNotification(true);
-    loadNotification(email);
+    loadNotification(email,1);
     loadNumberNotification(email);
     loadNumberNoReadNotification(email);
 }
 
-function loadNotification(email) {
+function loadNotification(email,page) {
     notificationArray = [];
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/getNotificationByUser",
-        data: {email: email},
+        data: {email: email,page: page},
         success: function (result) {
             if (result.code === "001") {
                 setDataNotification(result.data);
@@ -216,7 +216,17 @@ function setNumberNotification(data) {
         number.innerHTML = `Mostrando 1 - ${data.N_NOTI} de ${data.N_NOTI}`;
     }else {
         number.innerHTML = `Mostrando 1 - 10 de ${data.N_NOTI}`;
+        document.getElementById("btnNext").disabled = false;
+        document.getElementById("btnNext").setAttribute("onclick","nextPage(2)");
     }
+}
+
+function nextPage(page) {
+    document.getElementById("btnLast").disabled = false;
+    document.getElementById("btnNext").setAttribute("onclick",`lastPage(${page-1})`);
+    document.getElementById("btnNext").disabled = false;
+    document.getElementById("btnNext").setAttribute("onclick",`nextPage(${page+1})`);
+
 }
 
 function loadDataNotificationByTag(email,type) {
