@@ -209,11 +209,14 @@ function loadNumberNotification(email,page) {
 
 function setNumberNotification(data,page) {
     let number = document.getElementById('numberNotification');
+    let rMax = 10, rMin = 1;
     document.getElementById("labelPage").innerHTML = `Pagina ${page}`;
     if(data === null){
         number.innerHTML = `Mostrando 0 - 0 de 0`;
         return;
     }
+
+    number.innerHTML = `Mostrando ${rMin + ((page - 1) + 10)} - ${rMax + ((page - 1) + 10)} de ${data.N_NOTI}`;
 
     if(page === Math.ceil(data.N_NOTI / 10)){
         document.getElementById("btnNext").disabled = true;
@@ -229,8 +232,8 @@ function setNumberNotification(data,page) {
             document.getElementById("btnLast").setAttribute("onclick",`lastPage(${page-1})`);
         }
     }else {
-        number.innerHTML = `Mostrando 1 - 10 de ${data.N_NOTI}`;
-        document.getElementById("btnNext").disabled = false;
+
+        //document.getElementById("btnNext").disabled = false;
         document.getElementById("btnNext").setAttribute("onclick",`nextPage(${page+1})`);
     }
 
