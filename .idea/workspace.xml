@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/notification.js" afterPath="$PROJECT_DIR$/public/js/functions/notification.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/data_controller.js" afterPath="$PROJECT_DIR$/controller/data_controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/data.js" afterPath="$PROJECT_DIR$/routes/data.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -103,21 +103,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="data.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="224" column="35" lean-forward="true" selection-start-line="224" selection-start-column="35" selection-end-line="224" selection-end-column="35" />
+            <state relative-caret-position="233">
+              <caret line="221" column="26" lean-forward="false" selection-start-line="221" selection-start-column="26" selection-end-line="221" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data_controller.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="data_controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/data_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="544" column="50" lean-forward="false" selection-start-line="544" selection-start-column="46" selection-end-line="544" selection-end-column="50" />
+            <state relative-caret-position="296">
+              <caret line="541" column="40" lean-forward="false" selection-start-line="541" selection-start-column="40" selection-end-line="541" selection-end-column="40" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -185,8 +185,8 @@
       <find>show</find>
       <find>getNotificationByTag</find>
       <find>shown</find>
-      <find>getDetailNotificationById</find>
       <find>setNumberNotification</find>
+      <find>getDetailNotificationById</find>
     </findStrings>
     <dirStrings>
       <dir>D:\Documentos\Info\Trabajo de grado\Apps\AppAdminMEC\public\js</dir>
@@ -247,9 +247,9 @@
         <option value="$PROJECT_DIR$/views/notification.ejs" />
         <option value="$PROJECT_DIR$/sql/sql_data.js" />
         <option value="$PROJECT_DIR$/views/show_notification.ejs" />
-        <option value="$PROJECT_DIR$/controller/data_controller.js" />
         <option value="$PROJECT_DIR$/public/js/functions/notification.js" />
         <option value="$PROJECT_DIR$/routes/data.js" />
+        <option value="$PROJECT_DIR$/controller/data_controller.js" />
       </list>
     </option>
   </component>
@@ -733,14 +733,7 @@
       <workItem from="1493298424038" duration="351000" />
       <workItem from="1493299266191" duration="8055000" />
       <workItem from="1493310538735" duration="9522000" />
-      <workItem from="1493341366737" duration="18834000" />
-    </task>
-    <task id="LOCAL-00348" summary="27/04/17 3">
-      <created>1493346340551</created>
-      <option name="number" value="00348" />
-      <option name="presentableId" value="LOCAL-00348" />
-      <option name="project" value="LOCAL" />
-      <updated>1493346340551</updated>
+      <workItem from="1493341366737" duration="19018000" />
     </task>
     <task id="LOCAL-00349" summary="27/04/17 3">
       <created>1493346558286</created>
@@ -1078,11 +1071,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493363953482</updated>
     </task>
-    <option name="localTasksCounter" value="397" />
+    <task id="LOCAL-00397" summary="27/04/17 3">
+      <created>1493364210586</created>
+      <option name="number" value="00397" />
+      <option name="presentableId" value="LOCAL-00397" />
+      <option name="project" value="LOCAL" />
+      <updated>1493364210588</updated>
+    </task>
+    <option name="localTasksCounter" value="398" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="769461000" />
+    <option name="totallyTimeSpent" value="769645000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1727,21 +1727,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/data_controller.js">
+    <entry file="file://$PROJECT_DIR$/routes/data.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="544" column="50" lean-forward="false" selection-start-line="544" selection-start-column="46" selection-end-line="544" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="233">
+          <caret line="221" column="26" lean-forward="false" selection-start-line="221" selection-start-column="26" selection-end-line="221" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/data.js">
+    <entry file="file://$PROJECT_DIR$/controller/data_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="224" column="35" lean-forward="true" selection-start-line="224" selection-start-column="35" selection-end-line="224" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="296">
+          <caret line="541" column="40" lean-forward="false" selection-start-line="541" selection-start-column="40" selection-end-line="541" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -539,6 +539,7 @@ module.exports = {
                 let sql = template(sqlQuery.query_getDetailsNotification,{id: id});
                 db.query(sql, function (err, result) {
                     console.log(err);
+                    console.log(result);
                     if (err) return fullfill({hcode: 202, code: "002", msg: "Error", data: null});
 
                     if (result.length !== 0) {
