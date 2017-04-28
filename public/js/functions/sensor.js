@@ -114,28 +114,33 @@ function loadListSensors(data, load) {
 
     for (let i = 0; i < data.length; i++) {
 
-    dataNetworksSensor[data[i].PK_SENSOR] = data[i];
+        dataNetworksSensor[data[i].PK_SENSOR] = data[i];
+        let read = "Inactivo", event = "Inactivo";
+        if(data[i].STATUS_READ === "Active"){
+            read =  "Activo";
+        }
+        if(data[i].STATUS_EVENT === "Active"){
+            event = "Activo";
+        }
 
-
-
-    //language=HTML
-    $('#table_sensors').find('> tbody').append(`<tr><td>${data[i].SERIAL_SENSOR}</td>` +
-        `<td>${data[i].NAME_SENSOR}</td>` +
-        `<td>${data[i].STATUS_SENSOR}</td>` +
-        `<td><a><u>${data[i].STATUS_READ}</u></a></td>` +
-        `<td><a><u>${data[i].STATUS_EVENT}</u></a></td>` +
-        `<td>${data[i].NAME_NETWORK}</td>` +
-        //`<td>${dateArrayC[0]}</td>` +
-        `<td class='actions'>` +
-        `<a onclick='showInfo_sensor(${data[i].PK_SENSOR})' class='' data-toggle='tooltip' data-placement='bottom' title='Detalles' style='color: #0101DF; margin-right: 10px;'><i class='ion-clipboard'></i></a>` +
-        `<a onclick='showLocation_sensor(${data[i].PK_SENSOR})' class='' data-toggle='tooltip' data-placement='bottom' title='Ubicación' style='color: #424242; margin-right: 10px;'><i class='ion-location'></i></a>` +
-        `<a href='/graphic?id=${data[i].SERIAL_SENSOR}' class='' data-toggle='tooltip' data-placement='bottom' title='Graficas' style='color: #0B610B; margin-right: 10px;'><i class='ion-stats-bars'></i></a>` +
-        `<a onclick='showRealTime(${data[i].PK_SENSOR},"${data[i].NAME_SENSOR}")' class='' data-toggle='tooltip' data-placement='bottom' title='Real Time' style='color: #240B3B; margin-right: 10px;'><i class='ion-ios7-timer-outline'></i></a>` +
-        `<a onclick='showEdit_sensor(${data[i].PK_SENSOR})' class='' data-toggle='tooltip' data-placement='bottom' title='Editar' style='color: #DBA901; margin-right: 10px;'><i class='ion-edit'></i></a>` +
-        `<a onclick='showConfig_sensor(${data[i].PK_SENSOR})' class='' data-toggle='tooltip' data-placement='bottom' title='Configurar' style='color: #DF7401; margin-right: 10px;'><i class='ion-wrench'></i></a>` +
-        `<a onclick='delete_sensor(${data[i].PK_SENSOR})' class='' data-toggle='tooltip' data-placement='bottom' title='Eliminar' style='color: #B40404'><i class='ion-trash-a'></i></a>` +
-        `</td></tr>`);
-}
+        //language=HTML
+        $('#table_sensors').find('> tbody').append(`<tr><td>${data[i].SERIAL_SENSOR}</td>` +
+            `<td>${data[i].NAME_SENSOR}</td>` +
+            `<td>${data[i].STATUS_SENSOR}</td>` +
+            `<td><a><u>${read}</u></a></td>` +
+            `<td><a><u>${event}</u></a></td>` +
+            `<td>${data[i].NAME_NETWORK}</td>` +
+            //`<td>${dateArrayC[0]}</td>` +
+            `<td class='actions'>` +
+            `<a onclick='showInfo_sensor(${data[i].PK_SENSOR})' class='' data-toggle='tooltip' data-placement='bottom' title='Detalles' style='color: #0101DF; margin-right: 10px;'><i class='ion-clipboard'></i></a>` +
+            `<a onclick='showLocation_sensor(${data[i].PK_SENSOR})' class='' data-toggle='tooltip' data-placement='bottom' title='Ubicación' style='color: #424242; margin-right: 10px;'><i class='ion-location'></i></a>` +
+            `<a href='/graphic?id=${data[i].SERIAL_SENSOR}' class='' data-toggle='tooltip' data-placement='bottom' title='Graficas' style='color: #0B610B; margin-right: 10px;'><i class='ion-stats-bars'></i></a>` +
+            `<a onclick='showRealTime(${data[i].PK_SENSOR},"${data[i].NAME_SENSOR}")' class='' data-toggle='tooltip' data-placement='bottom' title='Real Time' style='color: #240B3B; margin-right: 10px;'><i class='ion-ios7-timer-outline'></i></a>` +
+            `<a onclick='showEdit_sensor(${data[i].PK_SENSOR})' class='' data-toggle='tooltip' data-placement='bottom' title='Editar' style='color: #DBA901; margin-right: 10px;'><i class='ion-edit'></i></a>` +
+            `<a onclick='showConfig_sensor(${data[i].PK_SENSOR})' class='' data-toggle='tooltip' data-placement='bottom' title='Configurar' style='color: #DF7401; margin-right: 10px;'><i class='ion-wrench'></i></a>` +
+            `<a onclick='delete_sensor(${data[i].PK_SENSOR})' class='' data-toggle='tooltip' data-placement='bottom' title='Eliminar' style='color: #B40404'><i class='ion-trash-a'></i></a>` +
+            `</td></tr>`);
+    }
     if (load) {
         loadDataTable(load);
     }
