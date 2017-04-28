@@ -16,7 +16,7 @@ function load(email) {
     emailUser = email;
     showLoadNotification(true);
     loadNotification(email,1);
-    loadNumberNotification(email);
+    loadNumberNotification(email,1);
     loadNumberNoReadNotification(email);
 }
 
@@ -168,14 +168,14 @@ function setDataNotification(data) {
     showLoadNotification(false);
 }
 
-function loadNumberNotification(email) {
+function loadNumberNotification(email,page) {
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/getNumberNotification",
         data: {email: email},
         success: function (result) {
             if (result.code === "001") {
-                setNumberNotification(result.data);
+                setNumberNotification(result.data,page);
             } else if (result.code === "003") {
                 swal({
                     title: "Información",
@@ -188,7 +188,7 @@ function loadNumberNotification(email) {
 
                 });
             } else if(result.code === "002"){
-                setNumberNotification(null);
+                setNumberNotification(null,page);
             }
         },
         error: function (e) {
@@ -207,7 +207,7 @@ function loadNumberNotification(email) {
     });
 }
 
-function setNumberNotification(data) {
+function setNumberNotification(data,page) {
     let number = document.getElementById('numberNotification');
     if(data === null){
         number.innerHTML = `Mostrando 0 - 0 de 0`;
@@ -216,16 +216,21 @@ function setNumberNotification(data) {
 
     if(data.N_NOTI < 10){
         number.innerHTML = `Mostrando 1 - ${data.N_NOTI} de ${data.N_NOTI}`;
+        if(page > 1){
+            document.getElementById("btnNext").disabled = true;
+            document.getElementById("btnLast").disabled = false;
+            document.getElementById("btnLast").setAttribute("onclick",`lastPage(${page-1})`);
+        }
     }else {
         number.innerHTML = `Mostrando 1 - 10 de ${data.N_NOTI}`;
         document.getElementById("btnNext").disabled = false;
-        document.getElementById("btnNext").setAttribute("onclick","nextPage(2)");
+        document.getElementById("btnNext").setAttribute("onclick",`nextPage(${page+1})`);
     }
 }
 
 function nextPage(page) {
     document.getElementById("btnLast").disabled = false;
-    document.getElementById("btnNext").setAttribute("onclick",`lastPage(${page-1})`);
+    document.getElementById("btnLast").setAttribute("onclick",`lastPage(${page-1})`);
     document.getElementById("btnNext").disabled = false;
     document.getElementById("btnNext").setAttribute("onclick",`nextPage(${page+1})`);
     loadNotification(emailUser,page);
@@ -235,7 +240,7 @@ function nextPage(page) {
 
 function lastPage(page) {
     document.getElementById("btnLast").disabled = false;
-    document.getElementById("btnNext").setAttribute("onclick",`lastPage(${page-1})`);
+    document.getElementById("btnLast").setAttribute("onclick",`lastPage(${page-1})`);
     document.getElementById("btnNext").disabled = false;
     document.getElementById("btnNext").setAttribute("onclick",`nextPage(${page+1})`);
 }
