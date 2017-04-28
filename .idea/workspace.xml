@@ -7,8 +7,6 @@
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/sensor.js" afterPath="$PROJECT_DIR$/public/js/functions/sensor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/sql_data.js" afterPath="$PROJECT_DIR$/sql/sql_data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/sensor.ejs" afterPath="$PROJECT_DIR$/views/sensor.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,23 +37,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sensor.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sensor.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="125" column="17" lean-forward="true" selection-start-line="125" selection-start-column="17" selection-end-line="125" selection-end-column="17" />
               <folding>
-                <marker date="1493408405410" expanded="true" signature="3781:3816" ph="..." />
-                <marker date="1493408405410" expanded="true" signature="3999:4034" ph="..." />
-                <marker date="1493408405410" expanded="true" signature="4207:4242" ph="..." />
-                <marker date="1493408405410" expanded="true" signature="4444:4479" ph="..." />
-                <marker date="1493408405410" expanded="true" signature="4664:4699" ph="..." />
-                <marker date="1493408405410" expanded="true" signature="4876:4911" ph="..." />
-                <marker date="1493408405410" expanded="true" signature="5084:5098" ph="..." />
-                <marker date="1493408405410" expanded="true" signature="27952:27966" ph="..." />
-                <marker date="1493408405410" expanded="true" signature="28137:28151" ph="..." />
-                <marker date="1493408405410" expanded="true" signature="36120:36147" ph="..." />
-                <marker date="1493408405410" expanded="true" signature="36179:36196" ph="..." />
+                <marker date="1493408698397" expanded="true" signature="3795:3830" ph="..." />
+                <marker date="1493408698397" expanded="true" signature="4013:4048" ph="..." />
+                <marker date="1493408698397" expanded="true" signature="4221:4256" ph="..." />
+                <marker date="1493408698397" expanded="true" signature="4458:4493" ph="..." />
+                <marker date="1493408698397" expanded="true" signature="4678:4713" ph="..." />
+                <marker date="1493408698397" expanded="true" signature="4890:4925" ph="..." />
+                <marker date="1493408698397" expanded="true" signature="5098:5112" ph="..." />
+                <marker date="1493408698397" expanded="true" signature="27966:27980" ph="..." />
+                <marker date="1493408698397" expanded="true" signature="28151:28165" ph="..." />
+                <marker date="1493408698397" expanded="true" signature="36134:36161" ph="..." />
+                <marker date="1493408698397" expanded="true" signature="36193:36210" ph="..." />
               </folding>
             </state>
           </provider>
@@ -83,7 +81,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sql_data.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sql_data.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sql/sql_data.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -196,8 +194,8 @@
         <option value="$PROJECT_DIR$/public/js/functions/graphic.js" />
         <option value="$PROJECT_DIR$/views/notification.ejs" />
         <option value="$PROJECT_DIR$/views/sensor.ejs" />
-        <option value="$PROJECT_DIR$/public/js/functions/sensor.js" />
         <option value="$PROJECT_DIR$/sql/sql_data.js" />
+        <option value="$PROJECT_DIR$/public/js/functions/sensor.js" />
       </list>
     </option>
   </component>
@@ -683,14 +681,7 @@
       <workItem from="1493310538735" duration="9522000" />
       <workItem from="1493341366737" duration="28785000" />
       <workItem from="1493389364245" duration="1270000" />
-      <workItem from="1493407626749" duration="797000" />
-    </task>
-    <task id="LOCAL-00385" summary="27/04/17 3">
-      <created>1493359820474</created>
-      <option name="number" value="00385" />
-      <option name="presentableId" value="LOCAL-00385" />
-      <option name="project" value="LOCAL" />
-      <updated>1493359820474</updated>
+      <workItem from="1493407626749" duration="1067000" />
     </task>
     <task id="LOCAL-00386" summary="27/04/17 3">
       <created>1493360107499</created>
@@ -1028,11 +1019,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493392591665</updated>
     </task>
-    <option name="localTasksCounter" value="434" />
+    <task id="LOCAL-00434" summary="27/04/17 3">
+      <created>1493408431129</created>
+      <option name="number" value="00434" />
+      <option name="presentableId" value="LOCAL-00434" />
+      <option name="project" value="LOCAL" />
+      <updated>1493408431141</updated>
+    </task>
+    <option name="localTasksCounter" value="435" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="781479000" />
+    <option name="totallyTimeSpent" value="781749000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1675,31 +1673,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding>
-            <marker date="1493408405410" expanded="true" signature="3781:3816" ph="..." />
-            <marker date="1493408405410" expanded="true" signature="3999:4034" ph="..." />
-            <marker date="1493408405410" expanded="true" signature="4207:4242" ph="..." />
-            <marker date="1493408405410" expanded="true" signature="4444:4479" ph="..." />
-            <marker date="1493408405410" expanded="true" signature="4664:4699" ph="..." />
-            <marker date="1493408405410" expanded="true" signature="4876:4911" ph="..." />
-            <marker date="1493408405410" expanded="true" signature="5084:5098" ph="..." />
-            <marker date="1493408405410" expanded="true" signature="27952:27966" ph="..." />
-            <marker date="1493408405410" expanded="true" signature="28137:28151" ph="..." />
-            <marker date="1493408405410" expanded="true" signature="36120:36147" ph="..." />
-            <marker date="1493408405410" expanded="true" signature="36179:36196" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sql/sql_data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="148" lean-forward="false" selection-start-line="10" selection-start-column="148" selection-end-line="10" selection-end-column="148" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="125" column="17" lean-forward="true" selection-start-line="125" selection-start-column="17" selection-end-line="125" selection-end-column="17" />
+          <folding>
+            <marker date="1493408698397" expanded="true" signature="3795:3830" ph="..." />
+            <marker date="1493408698397" expanded="true" signature="4013:4048" ph="..." />
+            <marker date="1493408698397" expanded="true" signature="4221:4256" ph="..." />
+            <marker date="1493408698397" expanded="true" signature="4458:4493" ph="..." />
+            <marker date="1493408698397" expanded="true" signature="4678:4713" ph="..." />
+            <marker date="1493408698397" expanded="true" signature="4890:4925" ph="..." />
+            <marker date="1493408698397" expanded="true" signature="5098:5112" ph="..." />
+            <marker date="1493408698397" expanded="true" signature="27966:27980" ph="..." />
+            <marker date="1493408698397" expanded="true" signature="28151:28165" ph="..." />
+            <marker date="1493408698397" expanded="true" signature="36134:36161" ph="..." />
+            <marker date="1493408698397" expanded="true" signature="36193:36210" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -122,9 +122,9 @@ function loadListSensors(data, load) {
     $('#table_sensors').find('> tbody').append(`<tr><td>${data[i].SERIAL_SENSOR}</td>` +
         `<td>${data[i].NAME_SENSOR}</td>` +
         `<td>${data[i].STATUS_SENSOR}</td>` +
-        `<td>${data[i].STATUS_READ}</td>` +
-        `<td><a>${data[i].STATUS_EVENT}</a></td>` +
-        `<td><a>${data[i].NAME_NETWORK}</a></td>` +
+        `<td><a><u>${data[i].STATUS_READ}</u></a></td>` +
+        `<td><a><u>${data[i].STATUS_EVENT}</u></a></td>` +
+        `<td>${data[i].NAME_NETWORK}</td>` +
         //`<td>${dateArrayC[0]}</td>` +
         `<td class='actions'>` +
         `<a onclick='showInfo_sensor(${data[i].PK_SENSOR})' class='' data-toggle='tooltip' data-placement='bottom' title='Detalles' style='color: #0101DF; margin-right: 10px;'><i class='ion-clipboard'></i></a>` +
