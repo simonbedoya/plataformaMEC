@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/notification.js" afterPath="$PROJECT_DIR$/public/js/functions/notification.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/notification.ejs" afterPath="$PROJECT_DIR$/views/notification.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -38,17 +37,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notification.ejs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="notification.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/notification.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="81" column="51" lean-forward="false" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="51" />
-              <folding />
+            <state relative-caret-position="153">
+              <caret line="117" column="28" lean-forward="false" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notification.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="notification.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/functions/notification.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -212,8 +213,8 @@
         <option value="$PROJECT_DIR$/routes/data.js" />
         <option value="$PROJECT_DIR$/sql/sql_data.js" />
         <option value="$PROJECT_DIR$/controller/data_controller.js" />
-        <option value="$PROJECT_DIR$/views/notification.ejs" />
         <option value="$PROJECT_DIR$/public/js/functions/notification.js" />
+        <option value="$PROJECT_DIR$/views/notification.ejs" />
       </list>
     </option>
   </component>
@@ -697,14 +698,7 @@
       <workItem from="1493298424038" duration="351000" />
       <workItem from="1493299266191" duration="8055000" />
       <workItem from="1493310538735" duration="9522000" />
-      <workItem from="1493341366737" duration="2961000" />
-    </task>
-    <task id="LOCAL-00301" summary="26/04/17">
-      <created>1493225068086</created>
-      <option name="number" value="00301" />
-      <option name="presentableId" value="LOCAL-00301" />
-      <option name="project" value="LOCAL" />
-      <updated>1493225068086</updated>
+      <workItem from="1493341366737" duration="3706000" />
     </task>
     <task id="LOCAL-00302" summary="26/04/17">
       <created>1493225306930</created>
@@ -1042,11 +1036,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493346558286</updated>
     </task>
-    <option name="localTasksCounter" value="350" />
+    <task id="LOCAL-00350" summary="27/04/17 3">
+      <created>1493347289744</created>
+      <option name="number" value="00350" />
+      <option name="presentableId" value="LOCAL-00350" />
+      <option name="project" value="LOCAL" />
+      <updated>1493347289744</updated>
+    </task>
+    <option name="localTasksCounter" value="351" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="753588000" />
+    <option name="totallyTimeSpent" value="754333000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1568,6 +1569,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="4142" column="29" lean-forward="false" selection-start-line="4142" selection-start-column="23" selection-end-line="4142" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1670,14 +1672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/notification.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="81" column="51" lean-forward="false" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/notification.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1691,6 +1685,16 @@
             <marker date="1493347280785" expanded="true" signature="3721:3855" ph="..." />
             <marker date="1493347280785" expanded="true" signature="3899:3900" ph="..." />
             <marker date="1493347280785" expanded="true" signature="3899:3912" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/notification.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="117" column="28" lean-forward="false" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
