@@ -252,6 +252,7 @@ function setNumberNotification(data,page) {
 }
 
 function nextPage(page) {
+    showLoadNotification(true);
     document.getElementById("btnLast").disabled = false;
     document.getElementById("btnLast").setAttribute("onclick",`lastPage(${page-1})`);
     document.getElementById("btnNext").disabled = false;
@@ -262,6 +263,7 @@ function nextPage(page) {
 }
 
 function lastPage(page) {
+    showLoadNotification(true);
     document.getElementById("btnLast").disabled = false;
     document.getElementById("btnLast").setAttribute("onclick",`lastPage(${page-1})`);
     document.getElementById("btnNext").disabled = false;
@@ -316,6 +318,7 @@ function loadDataNotificationByTag(email,type) {
 }
 
 function loadNumberNotificationByTag(email,type,page) {
+    showLoadNotification(true);
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/getNumberNotificationByTag",
@@ -367,6 +370,7 @@ function showLoadNotification(show) {
 }
 
 function deleteNotification(email){
+    showLoadNotification(true);
     let id;
     let arrayDelete = "";
     for(id in notificationArray){
@@ -422,6 +426,7 @@ function deleteNotifications(arrayDelete,email) {
 }
 
 function markNotification(email,read){
+    showLoadNotification(true);
     let id;
     let arrayMark = "";
     for(id in notificationArray){
