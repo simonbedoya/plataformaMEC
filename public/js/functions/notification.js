@@ -220,9 +220,13 @@ function setNumberNotification(data,page) {
 
     if(page === Math.ceil(data.N_NOTI / 10)){
         document.getElementById("btnNext").disabled = true;
+    }else{
+        document.getElementById("btnNext").disabled = false;
     }
     if(page === 1){
         document.getElementById("btnLast").disabled = true;
+    }else{
+        document.getElementById("btnLast").disabled = false;
     }
 
     if(data.N_NOTI < 10){
@@ -232,8 +236,6 @@ function setNumberNotification(data,page) {
             document.getElementById("btnLast").setAttribute("onclick",`lastPage(${page-1})`);
         }
     }else {
-
-        //document.getElementById("btnNext").disabled = false;
         document.getElementById("btnNext").setAttribute("onclick",`nextPage(${page+1})`);
     }
 
