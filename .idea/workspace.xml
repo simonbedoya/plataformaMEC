@@ -50,17 +50,17 @@
       <file leaf-file-name="notification.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/notification.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="219" column="12" lean-forward="false" selection-start-line="219" selection-start-column="12" selection-end-line="219" selection-end-column="12" />
+            <state relative-caret-position="235">
+              <caret line="65" column="86" lean-forward="false" selection-start-line="65" selection-start-column="79" selection-end-line="65" selection-end-column="86" />
               <folding>
                 <element signature="n#!!doc;n#selectedItemNoti#0" expanded="false" />
-                <marker date="1493350155218" expanded="true" signature="3252:3911" ph="..." />
-                <marker date="1493350155218" expanded="true" signature="3297:3560" ph="..." />
-                <marker date="1493350155218" expanded="true" signature="3343:3534" ph="..." />
-                <marker date="1493350155218" expanded="true" signature="3585:3669" ph="..." />
-                <marker date="1493350155218" expanded="true" signature="3694:3828" ph="..." />
-                <marker date="1493350155218" expanded="true" signature="3872:3873" ph="..." />
-                <marker date="1493350155218" expanded="true" signature="3872:3885" ph="..." />
+                <marker date="1493350226312" expanded="true" signature="3289:3948" ph="..." />
+                <marker date="1493350226312" expanded="true" signature="3334:3597" ph="..." />
+                <marker date="1493350226312" expanded="true" signature="3380:3571" ph="..." />
+                <marker date="1493350226312" expanded="true" signature="3622:3706" ph="..." />
+                <marker date="1493350226312" expanded="true" signature="3731:3865" ph="..." />
+                <marker date="1493350226312" expanded="true" signature="3909:3910" ph="..." />
+                <marker date="1493350226312" expanded="true" signature="3909:3922" ph="..." />
               </folding>
             </state>
           </provider>
@@ -120,7 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getLocationSensor</find>
       <find>tabLocation</find>
       <find>loadSamplesADC</find>
       <find>hidden</find>
@@ -150,6 +149,7 @@
       <find>num</find>
       <find>format</find>
       <find>load</find>
+      <find>existen</find>
     </findStrings>
     <dirStrings>
       <dir>D:\Documentos\Info\Trabajo de grado\Apps\AppAdminMEC\public\js</dir>
@@ -696,14 +696,7 @@
       <workItem from="1493298424038" duration="351000" />
       <workItem from="1493299266191" duration="8055000" />
       <workItem from="1493310538735" duration="9522000" />
-      <workItem from="1493341366737" duration="5832000" />
-    </task>
-    <task id="LOCAL-00311" summary="27/04/17">
-      <created>1493300750933</created>
-      <option name="number" value="00311" />
-      <option name="presentableId" value="LOCAL-00311" />
-      <option name="project" value="LOCAL" />
-      <updated>1493300750934</updated>
+      <workItem from="1493341366737" duration="5903000" />
     </task>
     <task id="LOCAL-00312" summary="27/04/17">
       <created>1493303736370</created>
@@ -1041,11 +1034,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493350069013</updated>
     </task>
-    <option name="localTasksCounter" value="360" />
+    <task id="LOCAL-00360" summary="27/04/17 3">
+      <created>1493350162305</created>
+      <option name="number" value="00360" />
+      <option name="presentableId" value="LOCAL-00360" />
+      <option name="project" value="LOCAL" />
+      <updated>1493350162306</updated>
+    </task>
+    <option name="localTasksCounter" value="361" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="756459000" />
+    <option name="totallyTimeSpent" value="756530000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1680,17 +1680,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/notification.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="219" column="12" lean-forward="false" selection-start-line="219" selection-start-column="12" selection-end-line="219" selection-end-column="12" />
+        <state relative-caret-position="235">
+          <caret line="65" column="86" lean-forward="false" selection-start-line="65" selection-start-column="79" selection-end-line="65" selection-end-column="86" />
           <folding>
             <element signature="n#!!doc;n#selectedItemNoti#0" expanded="false" />
-            <marker date="1493350155218" expanded="true" signature="3252:3911" ph="..." />
-            <marker date="1493350155218" expanded="true" signature="3297:3560" ph="..." />
-            <marker date="1493350155218" expanded="true" signature="3343:3534" ph="..." />
-            <marker date="1493350155218" expanded="true" signature="3585:3669" ph="..." />
-            <marker date="1493350155218" expanded="true" signature="3694:3828" ph="..." />
-            <marker date="1493350155218" expanded="true" signature="3872:3873" ph="..." />
-            <marker date="1493350155218" expanded="true" signature="3872:3885" ph="..." />
+            <marker date="1493350226312" expanded="true" signature="3289:3948" ph="..." />
+            <marker date="1493350226312" expanded="true" signature="3334:3597" ph="..." />
+            <marker date="1493350226312" expanded="true" signature="3380:3571" ph="..." />
+            <marker date="1493350226312" expanded="true" signature="3622:3706" ph="..." />
+            <marker date="1493350226312" expanded="true" signature="3731:3865" ph="..." />
+            <marker date="1493350226312" expanded="true" signature="3909:3910" ph="..." />
+            <marker date="1493350226312" expanded="true" signature="3909:3922" ph="..." />
           </folding>
         </state>
       </provider>
