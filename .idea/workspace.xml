@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/functions/notification_bar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/graphic.js" afterPath="$PROJECT_DIR$/public/js/functions/graphic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/index.js" afterPath="$PROJECT_DIR$/public/js/functions/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/network.js" afterPath="$PROJECT_DIR$/public/js/functions/network.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/notification.js" afterPath="$PROJECT_DIR$/public/js/functions/notification.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/sensor.js" afterPath="$PROJECT_DIR$/public/js/functions/sensor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/alerts.ejs" afterPath="$PROJECT_DIR$/views/alerts.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/graphic.ejs" afterPath="$PROJECT_DIR$/views/graphic.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/historical.ejs" afterPath="$PROJECT_DIR$/views/historical.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/header.ejs" afterPath="$PROJECT_DIR$/views/partials/header.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/scripts.ejs" afterPath="$PROJECT_DIR$/views/partials/scripts.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/profile.ejs" afterPath="$PROJECT_DIR$/views/profile.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/settings.ejs" afterPath="$PROJECT_DIR$/views/settings.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -100,28 +88,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sensor.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/functions/sensor.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-              <folding>
-                <marker date="1493369472177" expanded="true" signature="3765:3800" ph="..." />
-                <marker date="1493369472177" expanded="true" signature="3983:4018" ph="..." />
-                <marker date="1493369472177" expanded="true" signature="4191:4226" ph="..." />
-                <marker date="1493369472177" expanded="true" signature="4428:4463" ph="..." />
-                <marker date="1493369472177" expanded="true" signature="4648:4683" ph="..." />
-                <marker date="1493369472177" expanded="true" signature="4860:4895" ph="..." />
-                <marker date="1493369472177" expanded="true" signature="5068:5082" ph="..." />
-                <marker date="1493369472177" expanded="true" signature="27936:27950" ph="..." />
-                <marker date="1493369472177" expanded="true" signature="28121:28135" ph="..." />
-                <marker date="1493369472177" expanded="true" signature="36104:36131" ph="..." />
-                <marker date="1493369472177" expanded="true" signature="36163:36180" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="alerts.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/alerts.ejs">
           <provider selected="true" editor-type-id="text-editor">
@@ -152,11 +118,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/profile.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="7" column="59" lean-forward="false" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scripts.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/partials/scripts.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -255,7 +231,6 @@
         <option value="$PROJECT_DIR$/views/show_notification.ejs" />
         <option value="$PROJECT_DIR$/views/notification.ejs" />
         <option value="$PROJECT_DIR$/views/partials/header.ejs" />
-        <option value="$PROJECT_DIR$/views/partials/scripts.ejs" />
         <option value="$PROJECT_DIR$/public/js/functions/notification_bar.js" />
         <option value="$PROJECT_DIR$/public/js/functions/index.js" />
         <option value="$PROJECT_DIR$/public/js/functions/network.js" />
@@ -267,6 +242,7 @@
         <option value="$PROJECT_DIR$/views/historical.ejs" />
         <option value="$PROJECT_DIR$/views/settings.ejs" />
         <option value="$PROJECT_DIR$/views/profile.ejs" />
+        <option value="$PROJECT_DIR$/views/partials/scripts.ejs" />
       </list>
     </option>
   </component>
@@ -750,14 +726,7 @@
       <workItem from="1493298424038" duration="351000" />
       <workItem from="1493299266191" duration="8055000" />
       <workItem from="1493310538735" duration="9522000" />
-      <workItem from="1493341366737" duration="24141000" />
-    </task>
-    <task id="LOCAL-00366" summary="27/04/17 3">
-      <created>1493351694605</created>
-      <option name="number" value="00366" />
-      <option name="presentableId" value="LOCAL-00366" />
-      <option name="project" value="LOCAL" />
-      <updated>1493351694605</updated>
+      <workItem from="1493341366737" duration="24243000" />
     </task>
     <task id="LOCAL-00367" summary="27/04/17 3">
       <created>1493352597279</created>
@@ -1095,11 +1064,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493369016566</updated>
     </task>
-    <option name="localTasksCounter" value="415" />
+    <task id="LOCAL-00415" summary="27/04/17 3">
+      <created>1493369672773</created>
+      <option name="number" value="00415" />
+      <option name="presentableId" value="LOCAL-00415" />
+      <option name="project" value="LOCAL" />
+      <updated>1493369672773</updated>
+    </task>
+    <option name="localTasksCounter" value="416" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="774768000" />
+    <option name="totallyTimeSpent" value="774870000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1617,14 +1593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/scripts.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="34" column="67" lean-forward="false" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/notification_bar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1777,6 +1745,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="59" lean-forward="false" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/scripts.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
           <folding />
         </state>
       </provider>
