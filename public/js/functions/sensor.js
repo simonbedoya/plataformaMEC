@@ -127,8 +127,8 @@ function loadListSensors(data, load) {
         $('#table_sensors').find('> tbody').append(`<tr><td>${data[i].SERIAL_SENSOR}</td>` +
             `<td>${data[i].NAME_SENSOR}</td>` +
             `<td>${data[i].STATUS_SENSOR}</td>` +
-            `<td><a onclick="showConfigStatus(${data[i].PK_SENSOR},'${data[i].STATUS_READ}')"><u>${read}</u></a></td>` +
-            `<td><a onclick="showConfigStatus(${data[i].PK_SENSOR},'${data[i].STATUS_EVENT}')"><u>${event}</u></a></td>` +
+            `<td><a onclick="showConfigStatus(${data[i].PK_SENSOR},'${data[i].STATUS_READ}','READ')"><u>${read}</u></a></td>` +
+            `<td><a onclick="showConfigStatus(${data[i].PK_SENSOR},'${data[i].STATUS_EVENT}','EVENT')"><u>${event}</u></a></td>` +
             `<td>${data[i].NAME_NETWORK}</td>` +
             //`<td>${dateArrayC[0]}</td>` +
             `<td class='actions'>` +
@@ -146,7 +146,7 @@ function loadListSensors(data, load) {
     }
 }
 
-function showConfigStatus(pk_sensor,type) {
+function showConfigStatus(pk_sensor,type,option) {
     $('#configReadEventModal').modal();
 
     let elements = document.getElementsByName('radiosConfig');
@@ -154,6 +154,11 @@ function showConfigStatus(pk_sensor,type) {
         if(elements[i].value === type) {
             elements[i].checked = true;
         }
+    }
+    if(option === "EVENT"){
+        document.getElementById("textConfig").innerHTML = "Desea iniciar la detección de eventos en el sensor.";
+    }else{
+        document.getElementById("textConfig").innerHTML = "Desea iniciar la captura de datos en el sensor.";
     }
 }
 
