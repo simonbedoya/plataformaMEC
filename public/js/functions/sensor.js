@@ -115,15 +115,17 @@ function loadListSensors(data, load) {
     for (let i = 0; i < data.length; i++) {
 
     dataNetworksSensor[data[i].PK_SENSOR] = data[i];
-    let date = data[i].REGISTERDATE_SENSOR.toString();
-    let dateArrayC = date.split("T");
+
+
 
     //language=HTML
     $('#table_sensors').find('> tbody').append(`<tr><td>${data[i].SERIAL_SENSOR}</td>` +
         `<td>${data[i].NAME_SENSOR}</td>` +
         `<td>${data[i].STATUS_SENSOR}</td>` +
-        `<td>${data[i].NAME_NETWORK}</td>` +
-        `<td>${dateArrayC[0]}</td>` +
+        `<td>${data[i].STATUS_READ}</td>` +
+        `<td><a>${data[i].STATUS_EVENT}</a></td>` +
+        `<td><a>${data[i].NAME_NETWORK}</a></td>` +
+        //`<td>${dateArrayC[0]}</td>` +
         `<td class='actions'>` +
         `<a onclick='showInfo_sensor(${data[i].PK_SENSOR})' class='' data-toggle='tooltip' data-placement='bottom' title='Detalles' style='color: #0101DF; margin-right: 10px;'><i class='ion-clipboard'></i></a>` +
         `<a onclick='showLocation_sensor(${data[i].PK_SENSOR})' class='' data-toggle='tooltip' data-placement='bottom' title='Ubicación' style='color: #424242; margin-right: 10px;'><i class='ion-location'></i></a>` +
