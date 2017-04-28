@@ -511,7 +511,7 @@ function setDataShowNotification(data) {
         document.getElementById("showNotiTitle").innerHTML = data.TITLE_NOTIFICATION;
         document.getElementById("showNotiType").innerHTML = data.TYPE_NOTIFICATION;
         document.getElementById("showNotiMsg").innerHTML = data.MSG_NOTIFICATION;
-        document.getElementById("showNotiDate").innerHTML = data.REGISTER_NOTIFICAION;
+        document.getElementById("showNotiDate").innerHTML = data.REGISTER_NOTIFICATION.toLocaleString();
     }
 }
 
