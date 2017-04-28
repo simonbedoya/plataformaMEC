@@ -217,7 +217,7 @@ function showLoadNotification(show) {
             $('#loadingNotification').addClass('hidden');
         }
     }else{
-        if($('#loadingNotification').hasClass('hidden')){
+        if(!$('#loadingNotification').hasClass('hidden')){
             $('#loadingNotification').removeClass('hidden');
         }
     }

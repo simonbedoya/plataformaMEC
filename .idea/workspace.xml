@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/notification.js" afterPath="$PROJECT_DIR$/public/js/functions/notification.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/notification.ejs" afterPath="$PROJECT_DIR$/views/notification.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -37,30 +38,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notification.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="notification.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/notification.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="-238">
               <caret line="83" column="40" lean-forward="false" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notification.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="notification.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/notification.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="174" column="31" lean-forward="false" selection-start-line="174" selection-start-column="31" selection-end-line="174" selection-end-column="31" />
+            <state relative-caret-position="279">
+              <caret line="219" column="12" lean-forward="false" selection-start-line="219" selection-start-column="12" selection-end-line="219" selection-end-column="12" />
               <folding>
                 <element signature="n#!!doc;n#selectedItemNoti#0" expanded="false" />
-                <marker date="1493349836922" expanded="true" signature="3252:3911" ph="..." />
-                <marker date="1493349836922" expanded="true" signature="3297:3560" ph="..." />
-                <marker date="1493349836922" expanded="true" signature="3343:3534" ph="..." />
-                <marker date="1493349836922" expanded="true" signature="3585:3669" ph="..." />
-                <marker date="1493349836922" expanded="true" signature="3694:3828" ph="..." />
-                <marker date="1493349836922" expanded="true" signature="3872:3873" ph="..." />
-                <marker date="1493349836922" expanded="true" signature="3872:3885" ph="..." />
+                <marker date="1493349992127" expanded="true" signature="3252:3911" ph="..." />
+                <marker date="1493349992127" expanded="true" signature="3297:3560" ph="..." />
+                <marker date="1493349992127" expanded="true" signature="3343:3534" ph="..." />
+                <marker date="1493349992127" expanded="true" signature="3585:3669" ph="..." />
+                <marker date="1493349992127" expanded="true" signature="3694:3828" ph="..." />
+                <marker date="1493349992127" expanded="true" signature="3872:3873" ph="..." />
+                <marker date="1493349992127" expanded="true" signature="3872:3885" ph="..." />
               </folding>
             </state>
           </provider>
@@ -211,8 +212,8 @@
         <option value="$PROJECT_DIR$/routes/data.js" />
         <option value="$PROJECT_DIR$/sql/sql_data.js" />
         <option value="$PROJECT_DIR$/controller/data_controller.js" />
-        <option value="$PROJECT_DIR$/public/js/functions/notification.js" />
         <option value="$PROJECT_DIR$/views/notification.ejs" />
+        <option value="$PROJECT_DIR$/public/js/functions/notification.js" />
       </list>
     </option>
   </component>
@@ -696,14 +697,7 @@
       <workItem from="1493298424038" duration="351000" />
       <workItem from="1493299266191" duration="8055000" />
       <workItem from="1493310538735" duration="9522000" />
-      <workItem from="1493341366737" duration="5593000" />
-    </task>
-    <task id="LOCAL-00308" summary="26/04/17">
-      <created>1493267340886</created>
-      <option name="number" value="00308" />
-      <option name="presentableId" value="LOCAL-00308" />
-      <option name="project" value="LOCAL" />
-      <updated>1493267340886</updated>
+      <workItem from="1493341366737" duration="5669000" />
     </task>
     <task id="LOCAL-00309" summary="26/04/17">
       <created>1493267627239</created>
@@ -1041,11 +1035,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493349844087</updated>
     </task>
-    <option name="localTasksCounter" value="357" />
+    <task id="LOCAL-00357" summary="27/04/17 3">
+      <created>1493349922394</created>
+      <option name="number" value="00357" />
+      <option name="presentableId" value="LOCAL-00357" />
+      <option name="project" value="LOCAL" />
+      <updated>1493349922394</updated>
+    </task>
+    <option name="localTasksCounter" value="358" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="756220000" />
+    <option name="totallyTimeSpent" value="756296000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1670,28 +1671,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/functions/notification.js">
+    <entry file="file://$PROJECT_DIR$/views/notification.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="174" column="31" lean-forward="false" selection-start-line="174" selection-start-column="31" selection-end-line="174" selection-end-column="31" />
-          <folding>
-            <element signature="n#!!doc;n#selectedItemNoti#0" expanded="false" />
-            <marker date="1493349836922" expanded="true" signature="3252:3911" ph="..." />
-            <marker date="1493349836922" expanded="true" signature="3297:3560" ph="..." />
-            <marker date="1493349836922" expanded="true" signature="3343:3534" ph="..." />
-            <marker date="1493349836922" expanded="true" signature="3585:3669" ph="..." />
-            <marker date="1493349836922" expanded="true" signature="3694:3828" ph="..." />
-            <marker date="1493349836922" expanded="true" signature="3872:3873" ph="..." />
-            <marker date="1493349836922" expanded="true" signature="3872:3885" ph="..." />
-          </folding>
+        <state relative-caret-position="-238">
+          <caret line="83" column="40" lean-forward="false" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/notification.ejs">
+    <entry file="file://$PROJECT_DIR$/public/js/functions/notification.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="83" column="40" lean-forward="false" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="279">
+          <caret line="219" column="12" lean-forward="false" selection-start-line="219" selection-start-column="12" selection-end-line="219" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc;n#selectedItemNoti#0" expanded="false" />
+            <marker date="1493349992127" expanded="true" signature="3252:3911" ph="..." />
+            <marker date="1493349992127" expanded="true" signature="3297:3560" ph="..." />
+            <marker date="1493349992127" expanded="true" signature="3343:3534" ph="..." />
+            <marker date="1493349992127" expanded="true" signature="3585:3669" ph="..." />
+            <marker date="1493349992127" expanded="true" signature="3694:3828" ph="..." />
+            <marker date="1493349992127" expanded="true" signature="3872:3873" ph="..." />
+            <marker date="1493349992127" expanded="true" signature="3872:3885" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
