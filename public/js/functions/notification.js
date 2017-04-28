@@ -209,6 +209,7 @@ function loadNumberNotification(email,page) {
 
 function setNumberNotification(data,page) {
     let number = document.getElementById('numberNotification');
+    document.getElementById("labelPage").innerHTML = `Pagina ${page}`;
     if(data === null){
         number.innerHTML = `Mostrando 0 - 0 de 0`;
         return;
