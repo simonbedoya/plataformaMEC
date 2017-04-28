@@ -471,7 +471,7 @@ $('#show_notification').on('show.bs.modal', function () {
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/getDetailNotificationById",
-        data: {id: id_notification},
+        data: {ids: id_notification},
         success: function (result) {
             if (result.code === "001") {
                 setDataShowNotification(result.data);

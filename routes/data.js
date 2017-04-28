@@ -219,11 +219,11 @@ router.post('/markNotification', function (req,res) {
 });
 
 router.post('/getDetailNotificationById', function (req,res) {
-    data_controller.getDetailNotificationById(req.body.id).then(function (data) {
+    data_controller.getDetailNotificationById(req.body.ids).then(function (data) {
         if(data.code === "001"){
             let dataFinal = data;
             console.log(dataFinal);
-            data_controller.markNotification(req.body.id,true).then(function (data) {
+            data_controller.markNotification(req.body.ids,true).then(function (data) {
                 res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, dataFinal)));
             })
         }else {
