@@ -29,7 +29,7 @@ $('#close_grt').click(function () {
 });
 
 function load(dateList,serial,email) {
-    loadNumberNoReadNotification(email);
+    reloadNumberNoReadNotification(email);
 
     let dateListFull = [];
     let i;

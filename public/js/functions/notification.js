@@ -15,7 +15,7 @@ function selectedItemNoti(id) {
 
 function loadNoti(email,loadPage) {
     emailUser = email;
-    loadNumberNoReadNotification(email);
+    reloadNumberNoReadNotification(email);
     showLoadNotification(true);
     if(loadPage){
         loadNotification(email, savePage);

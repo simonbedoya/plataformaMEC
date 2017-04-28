@@ -60,7 +60,7 @@ function delete_network(network) {
 }
 
 function loadNetwork(email) {
-    loadNumberNoReadNotification(email);
+    reloadNumberNoReadNotification(email);
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/networks",

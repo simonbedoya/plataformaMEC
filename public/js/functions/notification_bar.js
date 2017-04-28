@@ -2,7 +2,7 @@
  * Created by sbv23 on 28/04/2017.
  */
 let emailP;
-function loadNumberNoReadNotification(email){
+function reloadNumberNoReadNotification(email){
     emailP = email;
     $.ajax({
         type: "post",
