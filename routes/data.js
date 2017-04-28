@@ -225,7 +225,7 @@ router.post('/getDetailNotificationById', function (req,res) {
             let dataFinal = data;
             console.log(dataFinal);
             data_controller.markNotification(req.body.ids,true).then(function (data) {
-                res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, dataFinal)));
+                res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, JSON.stringify(dataFinal))));
             })
         }else {
             res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, data.data)));

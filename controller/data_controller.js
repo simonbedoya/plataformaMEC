@@ -543,7 +543,7 @@ module.exports = {
                     if (err) return fullfill({hcode: 202, code: "002", msg: "Error", data: null});
 
                     if (result.length !== 0) {
-                        fullfill({hcode: 200, code: "001", msg: "terminate test", data: JSON.stringify(result[0])});
+                        fullfill({hcode: 200, code: "001", msg: "terminate test", data: result[0]});
                     } else {
                         fullfill({hcode: 202, code: "002", msg: "Error", data: null});
                     }
