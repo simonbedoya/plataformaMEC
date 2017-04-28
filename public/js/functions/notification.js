@@ -216,7 +216,7 @@ function setNumberNotification(data,page) {
         return;
     }
 
-    number.innerHTML = `Mostrando ${rMin + ((page - 1) + 10)} - ${rMax + ((page - 1) + 10)} de ${data.N_NOTI}`;
+    number.innerHTML = `Mostrando ${rMin + ((page - 1) * 10)} - ${rMax + ((page - 1) * 10)} de ${data.N_NOTI}`;
 
     if(page === Math.ceil(data.N_NOTI / 10)){
         document.getElementById("btnNext").disabled = true;
