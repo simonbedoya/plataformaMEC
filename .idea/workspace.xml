@@ -4,10 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/routes/functions/network.js" line="6" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="27/04/17 3">
+    <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/data_controller.js" afterPath="$PROJECT_DIR$/controller/data_controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/graphic.js" afterPath="$PROJECT_DIR$/public/js/functions/graphic.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -33,9 +31,9 @@
         <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="105" column="47" lean-forward="false" selection-start-line="105" selection-start-column="47" selection-end-line="105" selection-end-column="47" />
+              <caret line="105" column="39" lean-forward="false" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
               <folding>
-                <marker date="1493373930676" expanded="true" signature="2189:2206" ph="..." />
+                <marker date="1493374090365" expanded="true" signature="2189:2206" ph="..." />
               </folding>
             </state>
           </provider>
@@ -681,14 +679,7 @@
       <workItem from="1493298424038" duration="351000" />
       <workItem from="1493299266191" duration="8055000" />
       <workItem from="1493310538735" duration="9522000" />
-      <workItem from="1493341366737" duration="28412000" />
-    </task>
-    <task id="LOCAL-00382" summary="27/04/17 3">
-      <created>1493358364536</created>
-      <option name="number" value="00382" />
-      <option name="presentableId" value="LOCAL-00382" />
-      <option name="project" value="LOCAL" />
-      <updated>1493358364537</updated>
+      <workItem from="1493341366737" duration="28571000" />
     </task>
     <task id="LOCAL-00383" summary="27/04/17 3">
       <created>1493358787820</created>
@@ -1026,11 +1017,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493373714225</updated>
     </task>
-    <option name="localTasksCounter" value="431" />
+    <task id="LOCAL-00431" summary="27/04/17 3">
+      <created>1493374009255</created>
+      <option name="number" value="00431" />
+      <option name="presentableId" value="LOCAL-00431" />
+      <option name="project" value="LOCAL" />
+      <updated>1493374009255</updated>
+    </task>
+    <option name="localTasksCounter" value="432" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="779039000" />
+    <option name="totallyTimeSpent" value="779198000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1733,9 +1731,9 @@
     <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="105" column="47" lean-forward="false" selection-start-line="105" selection-start-column="47" selection-end-line="105" selection-end-column="47" />
+          <caret line="105" column="39" lean-forward="false" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
           <folding>
-            <marker date="1493373930676" expanded="true" signature="2189:2206" ph="..." />
+            <marker date="1493374090365" expanded="true" signature="2189:2206" ph="..." />
           </folding>
         </state>
       </provider>
