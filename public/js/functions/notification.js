@@ -585,5 +585,5 @@ function showPanelLoad(id,show) {
 
 $(document).ready(function()
 {
-    setInterval( load(emailUser,false), 10000);
+    setInterval( alert("hola"), 1000);
 });
