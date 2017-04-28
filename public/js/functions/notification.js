@@ -59,6 +59,7 @@ function clearDataNotification() {
 }
 
 function setDataNotification(data) {
+    clearDataNotification();
     if(data === null){
         $('#tableNotification').find('> tbody').append(`<tr><td colspan="4">No existen notificaciones..</td></tr>`);
         return;
