@@ -10,6 +10,7 @@ function selectedItemNoti(id) {
 }
 
 function load(email) {
+    showLoadNotification(true);
     loadNotification(email);
     loadNumberNotification(email);
 }
@@ -114,6 +115,7 @@ function setDataNotification(data) {
                 `</tr>`
             );
         }
+    showLoadNotification(false);
 }
 
 function loadNumberNotification(email) {
@@ -170,6 +172,7 @@ function setNumberNotification(data) {
 }
 
 function loadDataNotificationByTag(email,type) {
+    showLoadNotification(true);
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/getNotificationByTag",
@@ -206,6 +209,18 @@ function loadDataNotificationByTag(email,type) {
             });
         }
     });
+}
+
+function showLoadNotification(show) {
+    if(show){
+        if(!$('#loadingNotification').hasClass('hidden')){
+            $('#loadingNotification').addClass('hidden');
+        }
+    }else{
+        if($('#loadingNotification').hasClass('hidden')){
+            $('#loadingNotification').removeClass('hidden');
+        }
+    }
 }
 
 function showPanelLoad(id,show) {
