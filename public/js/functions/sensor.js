@@ -156,9 +156,9 @@ function showConfigStatus(pk_sensor,type,option) {
         }
     }
     if(option === "EVENT"){
-        document.getElementById("textConfig").innerHTML = "Desea iniciar la detección de eventos en el sensor.";
+        document.getElementById("textConfig").innerHTML = "Desea modificar la detección de eventos en el sensor.";
     }else{
-        document.getElementById("textConfig").innerHTML = "Desea iniciar la captura de datos en el sensor.";
+        document.getElementById("textConfig").innerHTML = "Desea modificar la captura de datos en el sensor.";
     }
 }
 
