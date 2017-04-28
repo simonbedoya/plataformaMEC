@@ -10,6 +10,7 @@ function selectedItemNoti(id) {
 }
 
 function load(email) {
+    showPanelLoad('blockMessages', true);
     loadNotification(email);
     loadNumberNotification(email);
 }
@@ -63,6 +64,7 @@ function setDataNotification(data) {
         $('#tableNotification').find('> tbody').append(`<tr><td colspan="4">No existen notificaciones..</td></tr>`);
         return;
     }
+        showPanelLoad('blockMessages', false);
         let d;
         for(d in data) {
             let date = new Date(data[d].REGISTER_NOTIFICATION);
@@ -165,5 +167,18 @@ function setNumberNotification(data) {
     }else {
         number.innerHTML = `Mostrando 1 - 10 de ${data.N_NOTI}`;
     }
+}
+
+function showPanelLoad(id,show) {
+    let portlet = $(`#${id}`);
+    if(show) {
+        portlet.append('<div class="panel-disabled"><div class="loader-1"></div></div>');
+    }else{
+        let pd = portlet.find('.panel-disabled');
+        pd.fadeOut('fast', function () {
+            pd.remove();
+        });
+    }
+
 }
 
