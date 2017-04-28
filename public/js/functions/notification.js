@@ -62,7 +62,11 @@ function loadNumberNoReadNotification(email){
         data: {email: email},
         success: function (result) {
             if (result.code === "001") {
-                document.getElementById("numberNoRead").innerHTML = `(${result.data.N_NOTI})`;
+                if(result.data.N_NOTI === 0){
+                    document.getElementById("numberNoRead").innerHTML = "";
+                }else {
+                    document.getElementById("numberNoRead").innerHTML = `(${result.data.N_NOTI})`;
+                }
             } else if (result.code === "003") {
                 swal({
                     title: "Información",
@@ -75,7 +79,7 @@ function loadNumberNoReadNotification(email){
 
                 });
             } else if(result.code === "002"){
-                document.getElementById("numberNoRead").innerHTML = `(0)`;
+                document.getElementById("numberNoRead").innerHTML = "";
             }
         },
         error: function (e) {
