@@ -396,7 +396,7 @@ function deleteNotifications(arrayDelete,email) {
         data: {ids: arrayDelete},
         success: function (result) {
             if (result.code === "001") {
-                load(email,true);
+                loadNoti(email,true);
             } else{
                 swal({
                     title: "Información",
@@ -406,7 +406,7 @@ function deleteNotifications(arrayDelete,email) {
                     confirmButtonColor: "#444a53",
                     confirmButtonText: "OK"
                 }).then(function () {
-                    load(email,false);
+                    loadNoti(email,false);
                 });
             }
         },
@@ -420,7 +420,7 @@ function deleteNotifications(arrayDelete,email) {
                 confirmButtonColor: "#444a53",
                 confirmButtonText: "OK"
             }).then(function () {
-                load(email,false);
+                loadNoti(email,false);
             });
         }
     });
@@ -452,7 +452,7 @@ function sendUpdateMark(arrayMark,read,email) {
         data: {ids: arrayMark, mark: read},
         success: function (result) {
             if (result.code === "001") {
-                load(email,true);
+                loadNoti(email,true);
             } else{
                 swal({
                     title: "Información",
@@ -462,7 +462,7 @@ function sendUpdateMark(arrayMark,read,email) {
                     confirmButtonColor: "#444a53",
                     confirmButtonText: "OK"
                 }).then(function () {
-                    load(email,false);
+                    loadNoti(email,false);
                 });
             }
         },
@@ -476,7 +476,7 @@ function sendUpdateMark(arrayMark,read,email) {
                 confirmButtonColor: "#444a53",
                 confirmButtonText: "OK"
             }).then(function () {
-                load(email,false);
+                loadNoti(email,false);
             });
         }
     });
@@ -569,7 +569,7 @@ function setDataShowNotification(data) {
 }
 
 $('#show_notification').on('hide.bs.modal', function () {
-    load(emailUser,true);
+    loadNoti(emailUser,true);
 });
 
 function showPanelLoad(id,show) {
@@ -586,5 +586,5 @@ function showPanelLoad(id,show) {
 
 $(document).ready(function()
 {
-    setInterval(function(){ load(emailUser,true); }, 10000);
+    setInterval(function(){ loadNoti(emailUser,true); }, 10000);
 });
