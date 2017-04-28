@@ -3,6 +3,7 @@
  */
 let notificationArray = [];
 let emailUser;
+let savePage;
 
 function selectedItemNoti(id) {
    if($(`#noti_${id}`).hasClass("selectedItem")){
@@ -12,11 +13,16 @@ function selectedItemNoti(id) {
    }
 }
 
-function load(email) {
+function load(email,loadPage) {
     emailUser = email;
     showLoadNotification(true);
-    loadNotification(email,1);
-    loadNumberNotification(email,1);
+    if(loadPage){
+        loadNotification(email, savePage);
+        loadNumberNotification(email, savePage);
+    }else {
+        loadNotification(email, 1);
+        loadNumberNotification(email, 1);
+    }
     loadNumberNoReadNotification(email);
 }
 
@@ -211,6 +217,7 @@ function setNumberNotification(data,page) {
     let number = document.getElementById('numberNotification');
     let rMax = 10, rMin = 1;
     document.getElementById("labelPage").innerHTML = `Pagina ${page}`;
+    savePage = page;
     if(data === null){
         number.innerHTML = `Mostrando 0 - 0 de 0`;
         return;
@@ -384,7 +391,7 @@ function deleteNotifications(arrayDelete,email) {
         data: {ids: arrayDelete},
         success: function (result) {
             if (result.code === "001") {
-                load(email);
+                load(email,true);
             } else{
                 swal({
                     title: "Información",
@@ -394,7 +401,7 @@ function deleteNotifications(arrayDelete,email) {
                     confirmButtonColor: "#444a53",
                     confirmButtonText: "OK"
                 }).then(function () {
-                    load(email);
+                    load(email,false);
                 });
             }
         },
@@ -408,7 +415,7 @@ function deleteNotifications(arrayDelete,email) {
                 confirmButtonColor: "#444a53",
                 confirmButtonText: "OK"
             }).then(function () {
-
+                load(email,false);
             });
         }
     });
@@ -439,7 +446,7 @@ function sendUpdateMark(arrayMark,read,email) {
         data: {ids: arrayMark, mark: read},
         success: function (result) {
             if (result.code === "001") {
-                load(email);
+                load(email,true);
             } else{
                 swal({
                     title: "Información",
@@ -449,7 +456,7 @@ function sendUpdateMark(arrayMark,read,email) {
                     confirmButtonColor: "#444a53",
                     confirmButtonText: "OK"
                 }).then(function () {
-                    load(email);
+                    load(email,false);
                 });
             }
         },
@@ -463,7 +470,7 @@ function sendUpdateMark(arrayMark,read,email) {
                 confirmButtonColor: "#444a53",
                 confirmButtonText: "OK"
             }).then(function () {
-
+                load(email,false);
             });
         }
     });
@@ -556,7 +563,7 @@ function setDataShowNotification(data) {
 }
 
 $('#show_notification').on('hide.bs.modal', function () {
-    load(emailUser);
+    load(emailUser,true);
 });
 
 function showPanelLoad(id,show) {
