@@ -2,6 +2,7 @@
  * Created by sbv23 on 27/04/2017.
  */
 let notificationArray = [];
+let emailUser;
 
 function selectedItemNoti(id) {
    if($(`#noti_${id}`).hasClass("selectedItem")){
@@ -12,6 +13,7 @@ function selectedItemNoti(id) {
 }
 
 function load(email) {
+    emailUser = email;
     showLoadNotification(true);
     loadNotification(email,1);
     loadNumberNotification(email);
@@ -226,7 +228,16 @@ function nextPage(page) {
     document.getElementById("btnNext").setAttribute("onclick",`lastPage(${page-1})`);
     document.getElementById("btnNext").disabled = false;
     document.getElementById("btnNext").setAttribute("onclick",`nextPage(${page+1})`);
+    loadNotification(emailUser,page);
+    loadNumberNotification(emailUser);
+    loadNumberNoReadNotification(emailUser);
+}
 
+function lastPage(page) {
+    document.getElementById("btnLast").disabled = false;
+    document.getElementById("btnNext").setAttribute("onclick",`lastPage(${page-1})`);
+    document.getElementById("btnNext").disabled = false;
+    document.getElementById("btnNext").setAttribute("onclick",`nextPage(${page+1})`);
 }
 
 function loadDataNotificationByTag(email,type) {
