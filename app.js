@@ -62,7 +62,10 @@ app.get('/',function (req, res) {
 app.use('/admin', login);
 app.use('/log-in', log_in);
 
-
+app.get('/download', function(req, res){
+    var file = '/opt/serverMEC/plataformaMEC/uploads/A3FYT/LQM85/010417_05.sac';
+    res.download(file); // Set disposition and send it.
+});
 
 app.get('/recoverpw', function (req,res) {
     res.render('recoverpw');
