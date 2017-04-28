@@ -4,10 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/routes/functions/network.js" line="6" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="27/04/17 3">
+    <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/graphic.js" afterPath="$PROJECT_DIR$/public/js/functions/graphic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,9 +31,9 @@
         <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="105" column="136" lean-forward="false" selection-start-line="105" selection-start-column="136" selection-end-line="105" selection-end-column="136" />
+              <caret line="105" column="52" lean-forward="false" selection-start-line="105" selection-start-column="52" selection-end-line="105" selection-end-column="52" />
               <folding>
-                <marker date="1493372206712" expanded="true" signature="2189:2206" ph="..." />
+                <marker date="1493372316572" expanded="true" signature="2189:2206" ph="..." />
               </folding>
             </state>
           </provider>
@@ -638,14 +637,7 @@
       <workItem from="1493298424038" duration="351000" />
       <workItem from="1493299266191" duration="8055000" />
       <workItem from="1493310538735" duration="9522000" />
-      <workItem from="1493341366737" duration="26690000" />
-    </task>
-    <task id="LOCAL-00377" summary="27/04/17 3">
-      <created>1493357267440</created>
-      <option name="number" value="00377" />
-      <option name="presentableId" value="LOCAL-00377" />
-      <option name="project" value="LOCAL" />
-      <updated>1493357267440</updated>
+      <workItem from="1493341366737" duration="26800000" />
     </task>
     <task id="LOCAL-00378" summary="27/04/17 3">
       <created>1493357562573</created>
@@ -983,11 +975,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493372007490</updated>
     </task>
-    <option name="localTasksCounter" value="426" />
+    <task id="LOCAL-00426" summary="27/04/17 3">
+      <created>1493372215043</created>
+      <option name="number" value="00426" />
+      <option name="presentableId" value="LOCAL-00426" />
+      <option name="project" value="LOCAL" />
+      <updated>1493372215043</updated>
+    </task>
+    <option name="localTasksCounter" value="427" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="777317000" />
+    <option name="totallyTimeSpent" value="777427000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1690,9 +1689,9 @@
     <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="105" column="136" lean-forward="false" selection-start-line="105" selection-start-column="136" selection-end-line="105" selection-end-column="136" />
+          <caret line="105" column="52" lean-forward="false" selection-start-line="105" selection-start-column="52" selection-end-line="105" selection-end-column="52" />
           <folding>
-            <marker date="1493372206712" expanded="true" signature="2189:2206" ph="..." />
+            <marker date="1493372316572" expanded="true" signature="2189:2206" ph="..." />
           </folding>
         </state>
       </provider>

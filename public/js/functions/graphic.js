@@ -103,7 +103,7 @@ function format (data) {
                     `<td>${regDate}</td>`+
                     `<td>`+
                         `<a onclick="readFile(${data[i].PK_FILE},'${data[i].HOUR_FILE}','${data[i].AXIS_FILE}')" data-toggle='tooltip' data-placement='bottom' title='Ver'><i class="ion-eye"></i></a>`+
-                        `<a onclick="" data-toggle='tooltip' data-placement='bottom' title='Descargar'><i class="ion-ios7-cloud-download"></i></a>`+
+                        `<a onclick="" class="m-l-15" data-toggle='tooltip' data-placement='bottom' title='Descargar'><i class="ion-ios7-cloud-download"></i></a>`+
                     `</td>`+
                 `</tr>`;
     }
