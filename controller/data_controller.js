@@ -503,6 +503,24 @@ module.exports = {
                     }
                 });
             })
+    },
+    markNotification: function (arrayId,mark) {
+        return new Promise(
+            function (fullfill) {
+                console.log(arrayId);
+                let sql = template(sqlQuery.query_markNotification,{ids: arrayId, mark: mark});
+                console.log(sql);
+                db.query(sql, function (err, result) {
+                    console.log(err);
+                    if (err) return fullfill({hcode: 202, code: "002", msg: "Error", data: null});
+
+                    if (result.affectedRows !== 0) {
+                        fullfill({hcode: 200, code: "001", msg: "terminate test", data: null});
+                    } else {
+                        fullfill({hcode: 202, code: "002", msg: "Error", data: null});
+                    }
+                });
+            })
     }
 };
 

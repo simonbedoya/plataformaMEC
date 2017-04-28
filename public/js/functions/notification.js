@@ -324,10 +324,64 @@ function deleteNotification(email){
             }
         }
     }
+    if(arrayDelete === ""){
+        return;
+    }
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/deleteNotification",
         data: {ids: arrayDelete},
+        success: function (result) {
+            if (result.code === "001") {
+                load(email);
+            } else{
+                swal({
+                    title: "Información",
+                    text: "Ha ocurrido un error intenta de nuevo!",
+                    type: "info",
+                    showCancelButton: false,
+                    confirmButtonColor: "#444a53",
+                    confirmButtonText: "OK"
+                }).then(function () {
+                    load(email);
+                });
+            }
+        },
+        error: function (e) {
+            console.log(e);
+            swal({
+                title: "Información",
+                text: "Ha ocurrido un error intenta de nuevo!",
+                type: "info",
+                showCancelButton: false,
+                confirmButtonColor: "#444a53",
+                confirmButtonText: "OK"
+            }).then(function () {
+
+            });
+        }
+    });
+}
+
+function markNotification(email,read){
+    let id;
+    let arrayMark = "";
+    for(id in notificationArray){
+        if($(`#chck_noti_${notificationArray[id]}`).prop('checked')) {
+            if(arrayMark === ""){
+                arrayMark = notificationArray[id];
+            }else {
+                arrayMark += `,${notificationArray[id]}`;
+            }
+        }
+    }
+    if(arrayMark === ""){
+        return;
+    }
+    $.ajax({
+        type: "post",
+        url: "https://plataformamec.com/data/markNotification",
+        data: {ids: arrayMark, mark: read},
         success: function (result) {
             if (result.code === "001") {
                 load(email);

@@ -212,4 +212,10 @@ router.post('/deleteNotification', function (req,res) {
     })
 });
 
+router.post('/markNotification', function (req,res) {
+    data_controller.markNotification(req.body.ids, req.body.mark).then(function (data) {
+        res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, data.data)));
+    })
+});
+
 module.exports = router;
