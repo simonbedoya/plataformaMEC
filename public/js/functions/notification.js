@@ -14,6 +14,7 @@ function load(email) {
 }
 
 function loadNotification(email) {
+    clearDataNotification();
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/getNotificationByUser",
@@ -51,6 +52,11 @@ function loadNotification(email) {
         }
     });
 }
+
+function clearDataNotification() {
+    $('#tableNotification').find('> tbody').remove();
+}
+
 function setDataNotification(data) {
     if(data !== null){
         let d;
@@ -102,6 +108,10 @@ function setDataNotification(data) {
                 `</tr>`
             );
         }
+    }else{
+        $('#tableNotification').find('> tbody').append(
+            `<tr><td>No existen notificaciones..</td></tr>`
+        );
     }
 }
 
