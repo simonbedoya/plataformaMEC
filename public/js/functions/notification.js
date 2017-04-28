@@ -213,11 +213,11 @@ function loadDataNotificationByTag(email,type) {
 
 function showLoadNotification(show) {
     if(show){
-        if(!$('#loadingNotification').hasClass('hidden')){
+        if($('#loadingNotification').hasClass('hidden')){
             $('#loadingNotification').removeClass('hidden');
         }
     }else{
-        if($('#loadingNotification').hasClass('hidden')){
+        if(!$('#loadingNotification').hasClass('hidden')){
             $('#loadingNotification').addClass('hidden');
         }
     }
