@@ -215,12 +215,16 @@ function setNumberNotification(data,page) {
         return;
     }
 
+    if(page === Math.ceil(data.N_NOTI / 10)){
+        document.getElementById("btnNext").disabled = true;
+    }
+    if(page === 1){
+        document.getElementById("btnLast").disabled = true;
+    }
+
     if(data.N_NOTI < 10){
         number.innerHTML = `Mostrando 1 - ${data.N_NOTI} de ${data.N_NOTI}`;
         if(page > 1){
-            if(page > parseInt(data.N_NOTI/10)){
-                document.getElementById("btnNext").disabled = true;
-            }
             document.getElementById("btnLast").disabled = false;
             document.getElementById("btnLast").setAttribute("onclick",`lastPage(${page-1})`);
         }
