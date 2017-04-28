@@ -374,6 +374,10 @@ function deleteNotification(email){
     if(arrayDelete === ""){
         return;
     }
+    deleteNotifications(arrayDelete,email);
+}
+
+function deleteNotifications(arrayDelete,email) {
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/deleteNotification",
@@ -425,6 +429,10 @@ function markNotification(email,read){
     if(arrayMark === ""){
         return;
     }
+    sendUpdateMark(arrayMark,read,email);
+}
+
+function sendUpdateMark(arrayMark,read,email) {
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/markNotification",
@@ -460,6 +468,7 @@ function markNotification(email,read){
         }
     });
 }
+
 let id_notification;
 function openShowNotification(id) {
     id_notification = id;
@@ -506,10 +515,40 @@ $('#show_notification').on('show.bs.modal', function () {
     });
 });
 
+function markByDetails(id) {
+    sendUpdateMark(id,false,emailUser);
+    $("#show_notification").modal('hide');
+}
+
+function deleteByDetail(id) {
+    deleteNotifications(id,emailUser);
+    $("#show_notification").modal('hide');
+}
+
 function setDataShowNotification(data) {
     if(data !== null) {
+        document.getElementById("markNoReadShowNotification").setAttribute("onclick",`markByDetails(${id_notification})`);
+        document.getElementById("deleteShowNotification").setAttribute("onclick",`deleteByDetail(${id_notification})`);
         document.getElementById("showNotiTitle").innerHTML = data.TITLE_NOTIFICATION;
-        document.getElementById("showNotiType").innerHTML = data.TYPE_NOTIFICATION;
+        let type = "";
+        switch (data.TYPE_NOTIFICATION){
+            case "EVENT":
+                type = "Evento";
+                break;
+            case "FILE":
+                type = "Archivo";
+                break;
+            case "STATUS":
+                type = "Estado";
+                break;
+            case "ALARM":
+                type = "Alarma";
+                break;
+            case "ERROR":
+                type = "Error";
+                break;
+        }
+        document.getElementById("showNotiType").innerHTML = type;
         document.getElementById("showNotiMsg").innerHTML = data.MSG_NOTIFICATION;
         let date = new Date(data.REGISTER_NOTIFICATION);
         document.getElementById("showNotiDate").innerHTML = `${date.toLocaleDateString("es-CO", {year: "2-digit", month: "2-digit", day: "2-digit"})} ${date.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit', hour12: true})}`;
