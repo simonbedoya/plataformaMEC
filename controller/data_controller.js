@@ -489,7 +489,8 @@ module.exports = {
     deleteNotification: function (arrayId) {
         return new Promise(
             function (fullfill) {
-                let sql = template(sqlQuery.query_deleteNotifications,{ids: arrayId});
+                console.log(arrayId);
+                let sql = template(sqlQuery.query_deleteNotifications,{ids: arrayId.toString()});
                 console.log(sql);
                 db.query(sql, function (err, result) {
                     console.log(err);

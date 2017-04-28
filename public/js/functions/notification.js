@@ -19,6 +19,7 @@ function load(email) {
 }
 
 function loadNotification(email) {
+    notificationArray = [];
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/getNotificationByUser",
@@ -221,6 +222,7 @@ function setNumberNotification(data) {
 function loadDataNotificationByTag(email,type) {
     loadNumberNotificationByTag(email,type);
     showLoadNotification(true);
+    notificationArray = [];
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/getNotificationByTag",
