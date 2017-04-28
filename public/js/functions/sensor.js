@@ -21,6 +21,7 @@ function initMap() {
 function loadData(email) {
     loadDataNetworks(email);
     loadDataSensors(email);
+    loadNumberNoReadNotification(email);
 }
 
 function loadDataNetworks(email) {

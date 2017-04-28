@@ -13,6 +13,7 @@ function initMap() {
 }
 
 function getLocations(email) {
+   loadNumberNoReadNotification(email);
    let image = "img/sensor.png";
    let marker;
    $.ajax({

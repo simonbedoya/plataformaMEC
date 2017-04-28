@@ -28,8 +28,8 @@ $('#close_grt').click(function () {
     document.getElementById('btndrt').style.display = 'block';
 });
 
-function load(dateList,serial) {
-
+function load(dateList,serial,email) {
+    loadNumberNoReadNotification(email);
 
     let dateListFull = [];
     let i;
