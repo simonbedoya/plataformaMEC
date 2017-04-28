@@ -496,7 +496,7 @@ module.exports = {
                     console.log(err);
                     if (err) return fullfill({hcode: 202, code: "002", msg: "Error", data: null});
 
-                    if (result.affectedRows === arrayId.length) {
+                    if (result.affectedRows !== 0) {
                         fullfill({hcode: 200, code: "001", msg: "terminate test", data: null});
                     } else {
                         fullfill({hcode: 202, code: "002", msg: "Error", data: null});
