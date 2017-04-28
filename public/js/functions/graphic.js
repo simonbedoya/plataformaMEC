@@ -795,3 +795,15 @@ function getdata(dataNew) {
     });
     return chartData;
 }
+
+function hiddenDetailsGraphic(){
+    if(!$('#panelFile').hasClass('hidden')){
+        $('#panelFile').addClass('hidden');
+    }
+}
+
+function hiddenPanelGrahic() {
+    if(!$('#graphicGenerateFile').hasClass('hidden')){
+        $('#graphicGenerateFile').addClass('hidden');
+    }
+}
