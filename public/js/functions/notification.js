@@ -16,7 +16,7 @@ function load(email) {
 }
 
 function loadNotification(email) {
-    clearDataNotification();
+    
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/getNotificationByUser",
