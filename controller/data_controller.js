@@ -417,7 +417,6 @@ module.exports = {
                 let min = 0,max = 10;
                 if(page > 1){
                     min = min + ((page - 1) * 10);
-                    max = max + ((page - 1) * 10);
                 }
                 let rPage = `${min},${max}`;
                 let sql = template(sqlQuery.query_getNotificationByUser,{email: email, page: rPage});

@@ -50,8 +50,8 @@
       <file leaf-file-name="notification.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/functions/notification.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="26" column="66" lean-forward="false" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="66" />
+            <state relative-caret-position="296">
+              <caret line="118" column="21" lean-forward="false" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="21" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
                 <marker date="1493357259833" expanded="true" signature="4962:5563" ph="..." />
@@ -79,8 +79,8 @@
       <file leaf-file-name="data_controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/data_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="423" column="33" lean-forward="false" selection-start-line="423" selection-start-column="33" selection-end-line="423" selection-end-column="33" />
+            <state relative-caret-position="279">
+              <caret line="418" column="50" lean-forward="false" selection-start-line="418" selection-start-column="50" selection-end-line="418" selection-end-column="50" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -91,7 +91,7 @@
       <file leaf-file-name="sql_data.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sql/sql_data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
+            <state relative-caret-position="345">
               <caret line="33" column="494" lean-forward="false" selection-start-line="33" selection-start-column="494" selection-end-line="33" selection-end-column="494" />
               <folding />
             </state>
@@ -696,14 +696,7 @@
       <workItem from="1493298424038" duration="351000" />
       <workItem from="1493299266191" duration="8055000" />
       <workItem from="1493310538735" duration="9522000" />
-      <workItem from="1493341366737" duration="12194000" />
-    </task>
-    <task id="LOCAL-00329" summary="27/04/17 3">
-      <created>1493323831716</created>
-      <option name="number" value="00329" />
-      <option name="presentableId" value="LOCAL-00329" />
-      <option name="project" value="LOCAL" />
-      <updated>1493323831716</updated>
+      <workItem from="1493341366737" duration="12517000" />
     </task>
     <task id="LOCAL-00330" summary="27/04/17 3">
       <created>1493323969355</created>
@@ -1041,11 +1034,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493357267440</updated>
     </task>
-    <option name="localTasksCounter" value="378" />
+    <task id="LOCAL-00378" summary="27/04/17 3">
+      <created>1493357562573</created>
+      <option name="number" value="00378" />
+      <option name="presentableId" value="LOCAL-00378" />
+      <option name="project" value="LOCAL" />
+      <updated>1493357562573</updated>
+    </task>
+    <option name="localTasksCounter" value="379" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="762821000" />
+    <option name="totallyTimeSpent" value="763144000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1652,14 +1652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/sql_data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="33" column="494" lean-forward="false" selection-start-line="33" selection-start-column="494" selection-end-line="33" selection-end-column="494" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/notification.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
@@ -1670,8 +1662,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/notification.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="66" lean-forward="false" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="66" />
+        <state relative-caret-position="296">
+          <caret line="118" column="21" lean-forward="false" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="21" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
             <marker date="1493357259833" expanded="true" signature="4962:5563" ph="..." />
@@ -1685,10 +1677,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sql/sql_data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="33" column="494" lean-forward="false" selection-start-line="33" selection-start-column="494" selection-end-line="33" selection-end-column="494" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controller/data_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="423" column="33" lean-forward="false" selection-start-line="423" selection-start-column="33" selection-end-line="423" selection-end-column="33" />
+        <state relative-caret-position="279">
+          <caret line="418" column="50" lean-forward="false" selection-start-line="418" selection-start-column="50" selection-end-line="418" selection-end-column="50" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
