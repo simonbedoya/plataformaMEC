@@ -16,7 +16,6 @@ function load(email) {
 }
 
 function loadNotification(email) {
-    
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/getNotificationByUser",
@@ -173,6 +172,7 @@ function setNumberNotification(data) {
 }
 
 function loadDataNotificationByTag(email,type) {
+    loadNumberNotificationByTag(email,type);
     showLoadNotification(true);
     $.ajax({
         type: "post",
@@ -194,6 +194,45 @@ function loadDataNotificationByTag(email,type) {
                 });
             } else if(result.code === "002"){
                 setDataNotification(null);
+            }
+        },
+        error: function (e) {
+            console.log(e);
+            swal({
+                title: "Información",
+                text: "Ha ocurrido un error intenta de nuevo!",
+                type: "info",
+                showCancelButton: false,
+                confirmButtonColor: "#444a53",
+                confirmButtonText: "OK"
+            }).then(function () {
+
+            });
+        }
+    });
+}
+
+function loadNumberNotificationByTag(email,type) {
+    $.ajax({
+        type: "post",
+        url: "https://plataformamec.com/data/getNumberNotificationByTag",
+        data: {email: email, type: type},
+        success: function (result) {
+            if (result.code === "001") {
+                setNumberNotification(result.data);
+            } else if (result.code === "003") {
+                swal({
+                    title: "Información",
+                    text: "Ha ocurrido un error intenta de nuevo!",
+                    type: "info",
+                    showCancelButton: false,
+                    confirmButtonColor: "#444a53",
+                    confirmButtonText: "OK"
+                }).then(function () {
+
+                });
+            } else if(result.code === "002"){
+                setNumberNotification(null);
             }
         },
         error: function (e) {

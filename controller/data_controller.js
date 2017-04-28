@@ -455,6 +455,21 @@ module.exports = {
                     }
                 });
             })
+    },
+    getNumberNotificationByTag: function (email,type) {
+        return new Promise(
+            function (fullfill) {
+                let sql = template(sqlQuery.query_getNumberNotificationByTag,{email: email, type: type});
+                db.query(sql, function (err, result) {
+                    if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
+
+                    if (result.length !== 0) {
+                        fullfill({hcode: 200, code: "001", msg: "number notifications", data: JSON.stringify(result[0])});
+                    } else {
+                        fullfill({hcode: 202, code: "002", msg: "no hay datos", data: null});
+                    }
+                });
+            })
     }
 };
 
