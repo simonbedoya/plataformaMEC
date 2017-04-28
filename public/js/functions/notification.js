@@ -511,7 +511,8 @@ function setDataShowNotification(data) {
         document.getElementById("showNotiTitle").innerHTML = data.TITLE_NOTIFICATION;
         document.getElementById("showNotiType").innerHTML = data.TYPE_NOTIFICATION;
         document.getElementById("showNotiMsg").innerHTML = data.MSG_NOTIFICATION;
-        document.getElementById("showNotiDate").innerHTML = data.REGISTER_NOTIFICATION.toLocaleDateString("es-CO", {year: "2-digit", month: "2-digit", day: "2-digit"}) +" "+data.REGISTER_NOTIFICATION.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit', hour12: true});
+        let date = new Date(data.REGISTER_NOTIFICATION);
+        document.getElementById("showNotiDate").innerHTML = `${date.toLocaleDateString("es-CO", {year: "2-digit", month: "2-digit", day: "2-digit"})} ${date.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit', hour12: true})}`;
     }
 }
 
