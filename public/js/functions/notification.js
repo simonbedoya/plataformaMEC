@@ -215,8 +215,11 @@ function setNumberNotification(data,page) {
         number.innerHTML = `Mostrando 0 - 0 de 0`;
         return;
     }
-
-    number.innerHTML = `Mostrando ${rMin + ((page - 1) * 10)} - ${rMax + ((page - 1) * 10)} de ${data.N_NOTI}`;
+    if(rMax + ((page - 1) * 10) > data.N_NOTI){
+        number.innerHTML = `Mostrando ${rMin + ((page - 1) * 10)} - ${data.N_NOTI} de ${data.N_NOTI}`;
+    }else {
+        number.innerHTML = `Mostrando ${rMin + ((page - 1) * 10)} - ${rMax + ((page - 1) * 10)} de ${data.N_NOTI}`;
+    }
 
     if(page === Math.ceil(data.N_NOTI / 10)){
         document.getElementById("btnNext").disabled = true;
