@@ -148,6 +148,13 @@ function loadListSensors(data, load) {
 
 function showConfigStatus(pk_sensor,type) {
     $('#configReadEventModal').modal();
+
+    let elements = document.getElementsByName('radiosConfig');
+    for (i=0;i<elements.length;i++) {
+        if(elements[i].value === type) {
+            elements[i].checked = true;
+        }
+    }
 }
 
 function loadSelectorNetwork(data) {
