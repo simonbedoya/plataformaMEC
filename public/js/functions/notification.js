@@ -54,11 +54,14 @@ function loadNotification(email) {
 }
 
 function clearDataNotification() {
-    $('#tableNotification').find('> tbody').remove();
+    $('#tableNotification').find('> tbody').empty();
 }
 
 function setDataNotification(data) {
     if(data !== null){
+        $('#tableNotification').find('> tbody').append(`<tr><td colspan="4">No existen notificaciones..</td></tr>`);
+        return;
+    }
         let d;
         for(d in data) {
             let date = new Date(data[d].REGISTER_NOTIFICATION);
@@ -108,10 +111,6 @@ function setDataNotification(data) {
                 `</tr>`
             );
         }
-    }else{
-        $('#tableNotification').find('> tbody').append(
-            `<tr><td>No existen notificaciones..</td></tr>`
-        );
-    }
+
 }
 
