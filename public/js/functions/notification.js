@@ -226,6 +226,7 @@ function setNumberNotification(data,page) {
         document.getElementById("btnNext").disabled = false;
         document.getElementById("btnNext").setAttribute("onclick",`nextPage(${page+1})`);
     }
+
 }
 
 function nextPage(page) {
@@ -243,6 +244,9 @@ function lastPage(page) {
     document.getElementById("btnLast").setAttribute("onclick",`lastPage(${page-1})`);
     document.getElementById("btnNext").disabled = false;
     document.getElementById("btnNext").setAttribute("onclick",`nextPage(${page+1})`);
+    loadNotification(emailUser,page);
+    loadNumberNotification(emailUser);
+    loadNumberNoReadNotification(emailUser);
 }
 
 function loadDataNotificationByTag(email,type) {
