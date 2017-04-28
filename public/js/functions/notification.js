@@ -10,7 +10,6 @@ function selectedItemNoti(id) {
 }
 
 function load(email) {
-    showPanelLoad('blockMessages', true);
     loadNotification(email);
     loadNumberNotification(email);
 }
@@ -64,7 +63,7 @@ function setDataNotification(data) {
         $('#tableNotification').find('> tbody').append(`<tr><td colspan="4">No existen notificaciones..</td></tr>`);
         return;
     }
-        showPanelLoad('blockMessages', false);
+
         let d;
         for(d in data) {
             let date = new Date(data[d].REGISTER_NOTIFICATION);
@@ -167,6 +166,45 @@ function setNumberNotification(data) {
     }else {
         number.innerHTML = `Mostrando 1 - 10 de ${data.N_NOTI}`;
     }
+}
+
+function loadDataNotificationByTag(email,type) {
+    $.ajax({
+        type: "post",
+        url: "https://plataformamec.com/data/getNotificationByTag",
+        data: {email: email, type: type},
+        success: function (result) {
+            if (result.code === "001") {
+                setDataNotification(result.data);
+            } else if (result.code === "003") {
+                swal({
+                    title: "Información",
+                    text: "Ha ocurrido un error intenta de nuevo!",
+                    type: "info",
+                    showCancelButton: false,
+                    confirmButtonColor: "#444a53",
+                    confirmButtonText: "OK"
+                }).then(function () {
+
+                });
+            } else if(result.code === "002"){
+                setDataNotification(null);
+            }
+        },
+        error: function (e) {
+            console.log(e);
+            swal({
+                title: "Información",
+                text: "Ha ocurrido un error intenta de nuevo!",
+                type: "info",
+                showCancelButton: false,
+                confirmButtonColor: "#444a53",
+                confirmButtonText: "OK"
+            }).then(function () {
+
+            });
+        }
+    });
 }
 
 function showPanelLoad(id,show) {

@@ -65,11 +65,11 @@
                 <div class="panel panel-default p-0  m-t-20">
                     <div class="panel-body p-0">
                         <div class="list-group no-border">
-                            <a href="#" class="list-group-item"><span class="fa fa-circle text-success pull-right"></span>Archivos</a>
-                            <a href="#" class="list-group-item"><span class="fa fa-circle text-danger pull-right"></span>Event</a>
-                            <a href="#" class="list-group-item"><span class="fa fa-circle text-info pull-right"></span>Alertas</a>
-                            <a href="#" class="list-group-item"><span class="fa fa-circle text-warning pull-right"></span>Errores</a>
-                            <a href="#" class="list-group-item"><span class="fa fa-circle text-purple pull-right"></span>Estados</a>
+                            <a onclick="loadDataNotificationByTag('<%= user%>','FILE')" class="list-group-item"><span class="fa fa-circle text-success pull-right"></span>Archivos</a>
+                            <a onclick="loadDataNotificationByTag('<%= user%>','EVENT')" class="list-group-item"><span class="fa fa-circle text-danger pull-right"></span>Eventos</a>
+                            <a onclick="loadDataNotificationByTag('<%= user%>','ALERT')" class="list-group-item"><span class="fa fa-circle text-info pull-right"></span>Alertas</a>
+                            <a onclick="loadDataNotificationByTag('<%= user%>','ERROR')" class="list-group-item"><span class="fa fa-circle text-warning pull-right"></span>Errores</a>
+                            <a onclick="loadDataNotificationByTag('<%= user%>','STATUS')" class="list-group-item"><span class="fa fa-circle text-purple pull-right"></span>Estados</a>
                         </div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
 
                         <div class="row">
                             <div class="col-xs-7" id="numberNotification">
-                                Mostrando 1 - 10 of 289
+                                Mostrando 0 - 0 de 0
                             </div>
                             <div class="col-xs-5">
                                 <div class="btn-group pull-right">
