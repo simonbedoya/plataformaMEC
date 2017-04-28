@@ -235,7 +235,7 @@ function nextPage(page) {
     document.getElementById("btnNext").disabled = false;
     document.getElementById("btnNext").setAttribute("onclick",`nextPage(${page+1})`);
     loadNotification(emailUser,page);
-    loadNumberNotification(emailUser);
+    loadNumberNotification(emailUser,page);
     loadNumberNoReadNotification(emailUser);
 }
 
@@ -245,7 +245,7 @@ function lastPage(page) {
     document.getElementById("btnNext").disabled = false;
     document.getElementById("btnNext").setAttribute("onclick",`nextPage(${page+1})`);
     loadNotification(emailUser,page);
-    loadNumberNotification(emailUser);
+    loadNumberNotification(emailUser,page);
     loadNumberNoReadNotification(emailUser);
 }
 
