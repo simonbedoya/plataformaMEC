@@ -127,8 +127,8 @@ function loadListSensors(data, load) {
         $('#table_sensors').find('> tbody').append(`<tr><td>${data[i].SERIAL_SENSOR}</td>` +
             `<td>${data[i].NAME_SENSOR}</td>` +
             `<td>${data[i].STATUS_SENSOR}</td>` +
-            `<td><a><u>${read}</u></a></td>` +
-            `<td><a><u>${event}</u></a></td>` +
+            `<td><a onclick="showConfigStatus(${data[i].PK_SENSOR},'${data[i].STATUS_READ}')"><u>${read}</u></a></td>` +
+            `<td><a onclick="showConfigStatus(${data[i].PK_SENSOR},'${data[i].STATUS_EVENT}')"><u>${event}</u></a></td>` +
             `<td>${data[i].NAME_NETWORK}</td>` +
             //`<td>${dateArrayC[0]}</td>` +
             `<td class='actions'>` +
@@ -144,6 +144,10 @@ function loadListSensors(data, load) {
     if (load) {
         loadDataTable(load);
     }
+}
+
+function showConfigStatus(pk_sensor,type) {
+    $('#configReadEventModal').modal();
 }
 
 function loadSelectorNetwork(data) {
