@@ -231,6 +231,7 @@ router.post('/getDetailNotificationById', function (req,res) {
 });
 
 router.get('/downloadFile', function (req,res) {
+    console.log(req.param('id'));
     data_controller.getDownloadFile(req.param('id')).then(function (data) {
         if(data.code === "001"){
             res.download(data.data.PATH_FILE);
