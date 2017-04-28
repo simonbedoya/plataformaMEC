@@ -1,6 +1,8 @@
 /**
  * Created by sbv23 on 27/04/2017.
  */
+let notificationArray = [];
+
 function selectedItemNoti(id) {
    if($(`#noti_${id}`).hasClass("selectedItem")){
        $(`#noti_${id}`).removeClass("selectedItem");
@@ -112,6 +114,7 @@ function setDataNotification(data) {
 
         let d;
         for(d in data) {
+            notificationArray.push(data[d].PK_NOTIFICATION);
             let date = new Date(data[d].REGISTER_NOTIFICATION);
             let hour = date.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit', hour12: true});
             let fecha;
@@ -146,7 +149,7 @@ function setDataNotification(data) {
                 `<tr class="${read}" id="noti_${data[d].PK_NOTIFICATION}">` +
                 `<td class="mail-select">` +
                 `<label class="cr-styled">` +
-                `<input type="checkbox" id="chck_noti_${data[d].PK_NOTIFICATION}" onchange="selectedItemNoti('${data[d].PK_NOTIFICATION}')"><i class="fa"></i>` +
+                `<input type="checkbox" id="chck_noti_${data[d].PK_NOTIFICATION}"><i class="fa"></i>` +
                 `</label>` +
                 `</td>` +
                 `<td>` +
@@ -307,6 +310,50 @@ function showLoadNotification(show) {
     }
 }
 
+function deleteNotification(email){
+    let id;
+    let arrayDelete = [];
+    for(id in notificationArray){
+        if($(`#chck_noti_${id}`).prop('checked')) {
+            arrayDelete.push(id);
+        }
+    }
+    $.ajax({
+        type: "post",
+        url: "https://plataformamec.com/data/deleteNotification",
+        data: {ids: arrayDelete},
+        success: function (result) {
+            if (result.code === "001") {
+                load(email);
+            } else{
+                swal({
+                    title: "Información",
+                    text: "Ha ocurrido un error intenta de nuevo!",
+                    type: "info",
+                    showCancelButton: false,
+                    confirmButtonColor: "#444a53",
+                    confirmButtonText: "OK"
+                }).then(function () {
+                    load(email);
+                });
+            }
+        },
+        error: function (e) {
+            console.log(e);
+            swal({
+                title: "Información",
+                text: "Ha ocurrido un error intenta de nuevo!",
+                type: "info",
+                showCancelButton: false,
+                confirmButtonColor: "#444a53",
+                confirmButtonText: "OK"
+            }).then(function () {
+
+            });
+        }
+    });
+}
+
 function showPanelLoad(id,show) {
     let portlet = $(`#${id}`);
     if(show) {
@@ -317,6 +364,5 @@ function showPanelLoad(id,show) {
             pd.remove();
         });
     }
-
 }
 

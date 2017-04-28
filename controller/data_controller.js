@@ -485,6 +485,21 @@ module.exports = {
                     }
                 });
             })
+    },
+    deleteNotification: function (arrayId) {
+        return new Promise(
+            function (fullfill) {
+                let sql = template(sqlQuery.query_deleteNotifications,{ids: arrayId});
+                db.query(sql, function (err, result) {
+                    if (err) return fullfill({hcode: 202, code: "002", msg: "Error", data: null});
+
+                    if (result.affectedRows === arrayId.length) {
+                        fullfill({hcode: 200, code: "001", msg: "terminate test", data: null});
+                    } else {
+                        fullfill({hcode: 202, code: "002", msg: "Error", data: null});
+                    }
+                });
+            })
     }
 };
 
