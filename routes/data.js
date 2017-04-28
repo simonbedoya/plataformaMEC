@@ -207,7 +207,7 @@ router.post('/getNotificationNoRead', function (req,res) {
 });
 
 router.post('/deleteNotification', function (req,res) {
-    data_controller.deleteNotification(req.body.email).then(function (data) {
+    data_controller.deleteNotification(req.body.ids).then(function (data) {
         res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, data.data)));
     })
 });
