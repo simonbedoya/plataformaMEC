@@ -463,7 +463,56 @@ function markNotification(email,read){
 
 function openShowNotification(id) {
     $('#show_notification').modal();
+    $.ajax({
+        type: "post",
+        url: "https://plataformamec.com/data/getDetailNotificationById",
+        data: {id: id},
+        success: function (result) {
+            if (result.code === "001") {
+                setDataShowNotification(result.data);
+            } else if (result.code === "003") {
+                swal({
+                    title: "Información",
+                    text: "Ha ocurrido un error intenta de nuevo!",
+                    type: "info",
+                    showCancelButton: false,
+                    confirmButtonColor: "#444a53",
+                    confirmButtonText: "OK"
+                }).then(function () {
+
+                });
+            } else if(result.code === "002"){
+                setDataShowNotification(null);
+            }
+        },
+        error: function (e) {
+            console.log(e);
+            swal({
+                title: "Información",
+                text: "Ha ocurrido un error intenta de nuevo!",
+                type: "info",
+                showCancelButton: false,
+                confirmButtonColor: "#444a53",
+                confirmButtonText: "OK"
+            }).then(function () {
+
+            });
+        }
+    });
 }
+
+function setDataShowNotification(data) {
+    if(data !== null) {
+        document.getElementById("showNotiTitle").innerHTML = data.TITLE_NOTIFICATION;
+        document.getElementById("showNotiType").innerHTML = data.TYPE_NOTIFICATION;
+        document.getElementById("showNotiMsg").innerHTML = data.MSG_NOTIFICATION;
+        document.getElementById("showNotiDate").innerHTML = data.REGISTER_NOTIFICAION;
+    }
+}
+
+$('#show_notification').on('hide.bs.modal', function () {
+    load(emailUser);
+});
 
 function showPanelLoad(id,show) {
     let portlet = $(`#${id}`);
