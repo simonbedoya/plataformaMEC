@@ -13,7 +13,7 @@ function selectedItemNoti(id) {
    }
 }
 
-function load(email,loadPage) {
+function loadNoti(email,loadPage) {
     emailUser = email;
     loadNumberNoReadNotification(email);
     showLoadNotification(true);
