@@ -13,7 +13,7 @@ function loadNumberNoReadNotification(email){
                 if(result.data.N_NOTI === 0){
                     document.getElementById("numberNotificationsNoRead").innerHTML = "0";
                 }else {
-                    document.getElementById("numberNotificationsNoRead").innerHTML = `(${result.data.N_NOTI})`;
+                    document.getElementById("numberNotificationsNoRead").innerHTML = `${result.data.N_NOTI}`;
                 }
             } else if (result.code === "003") {
                 swal({
