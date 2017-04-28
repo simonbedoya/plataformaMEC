@@ -11,6 +11,7 @@ function selectedItemNoti(id) {
 
 function load(email) {
     loadNotification(email);
+    loadNumberNotification(email);
 }
 
 function loadNotification(email) {
@@ -34,7 +35,7 @@ function loadNotification(email) {
 
                 });
             } else if(result.code === "002"){
-
+                setDataNotification(null);
             }
         },
         error: function (e) {
@@ -111,6 +112,58 @@ function setDataNotification(data) {
                 `</tr>`
             );
         }
+}
 
+function loadNumberNotification(email) {
+    $.ajax({
+        type: "post",
+        url: "https://plataformamec.com/data/getNumberNotification",
+        data: {email: email},
+        success: function (result) {
+            if (result.code === "001") {
+                setNumberNotification(result.data);
+            } else if (result.code === "003") {
+                swal({
+                    title: "Información",
+                    text: "Ha ocurrido un error intenta de nuevo!",
+                    type: "info",
+                    showCancelButton: false,
+                    confirmButtonColor: "#444a53",
+                    confirmButtonText: "OK"
+                }).then(function () {
+
+                });
+            } else if(result.code === "002"){
+                setNumberNotification(null);
+            }
+        },
+        error: function (e) {
+            console.log(e);
+            swal({
+                title: "Información",
+                text: "Ha ocurrido un error intenta de nuevo!",
+                type: "info",
+                showCancelButton: false,
+                confirmButtonColor: "#444a53",
+                confirmButtonText: "OK"
+            }).then(function () {
+
+            });
+        }
+    });
+}
+
+function setNumberNotification(data) {
+    let number = document.getElementById('numberNotification');
+    if(data === null){
+        number.innerHTML = `Mostrando 0 - 0 de 0`;
+        return;
+    }
+
+    if(data.N_NOTI < 10){
+        number.innerHTML = `Mostrando 1 - ${data.N_NOTI} de ${data.N_NOTI}`;
+    }else {
+        number.innerHTML = `Mostrando 1 - 10 de ${data.N_NOTI}`;
+    }
 }
 

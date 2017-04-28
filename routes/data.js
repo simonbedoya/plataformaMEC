@@ -182,4 +182,10 @@ router.post('/getNotificationByUser', function (req,res) {
     })
 });
 
+router.post('/getNumberNotification', function (req,res) {
+    data_controller.getNumberNotification(req.body.email).then(function (data) {
+        res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, data.data)));
+    })
+});
+
 module.exports = router;
