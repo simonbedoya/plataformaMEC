@@ -460,13 +460,18 @@ function markNotification(email,read){
         }
     });
 }
-
+let id_notification;
 function openShowNotification(id) {
+    id_notification = id;
     $('#show_notification').modal();
+
+}
+
+$('#show_notification').on('show.bs.modal', function () {
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/getDetailNotificationById",
-        data: {id: id},
+        data: {id: id_notification},
         success: function (result) {
             if (result.code === "001") {
                 setDataShowNotification(result.data);
@@ -499,7 +504,7 @@ function openShowNotification(id) {
             });
         }
     });
-}
+});
 
 function setDataShowNotification(data) {
     if(data !== null) {
@@ -510,7 +515,7 @@ function setDataShowNotification(data) {
     }
 }
 
-$('#show_notification').on('hide.bs.modal', function () {
+$('#show_notification').on('show.bs.modal', function () {
     load(emailUser);
 });
 
