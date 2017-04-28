@@ -515,7 +515,7 @@ function setDataShowNotification(data) {
     }
 }
 
-$('#show_notification').on('show.bs.modal', function () {
+$('#show_notification').on('hide.bs.modal', function () {
     load(emailUser);
 });
 
