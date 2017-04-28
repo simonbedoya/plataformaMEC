@@ -314,10 +314,14 @@ function showLoadNotification(show) {
 
 function deleteNotification(email){
     let id;
-    let arrayDelete = [];
+    let arrayDelete = "";
     for(id in notificationArray){
         if($(`#chck_noti_${id}`).prop('checked')) {
-            arrayDelete.push(id);
+            if(arrayDelete === ""){
+                arrayDelete = id;
+            }else {
+                arrayDelete += `,${id}`;
+            }
         }
     }
     $.ajax({
