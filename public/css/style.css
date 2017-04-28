@@ -1423,7 +1423,7 @@ tr.shown td.details-control {
 }
 
 .selectedItem{
-  background-color: #DCDCDC;
+  background-color: #DCDCDC !important;
 }
 .hidden-table:hover{
   background-color: white !important;
