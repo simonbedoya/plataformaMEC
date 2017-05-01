@@ -1397,6 +1397,7 @@ function verifyParamsEvents() {
         return false;
     }
 
+    showErrorConfigEvent("",false);
 
 }
 
