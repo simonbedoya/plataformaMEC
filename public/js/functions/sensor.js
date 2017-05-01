@@ -1334,3 +1334,58 @@ function reloadTabsConfig() {
     $(`#${tabPanels[0]}`).addClass("active");
 
 }
+
+function verifyParamsEvents() {
+    let d_w_sta = parseFloat(document.getElementById("d_w_sta").value);
+    let d_w_lta = parseFloat(document.getElementById("d_w_lta").value);
+    let t_on = parseFloat(document.getElementById("t_on").value);
+    let t_off = parseFloat(document.getElementById("t_off").value);
+    let d_pre = parseInt(document.getElementById("d_pre").value);
+    let d_pos = parseInt(document.getElementById("d_pos").value);
+    let d_min = parseFloat(document.getElementById("d_min").value);
+
+    if((d_w_sta > 0) || (d_w_lta > 0) || (t_on > 0) || (t_off > 0) || (d_pre > 0) || (d_pos > 0) || (d_min > 0)){
+        showErrorConfigEvent("Todos los valores introducidos deben ser positivos y mayores que cero.",true);
+        return false;
+    }
+    if(d_w_sta < d_w_lta){
+        showErrorConfigEvent("La ventana STA debe ser menor a la ventana LTA",true);
+        return false;
+    }
+    if(d_w_sta <= 60){
+        showErrorConfigEvent("La ventana STA debe ser menor o igual a un minuto (60 seg).",true);
+        return false;
+    }
+    if(d_w_lta <= 120){
+        showErrorConfigEvent("La ventana LTA debe ser menor o igual a 2 minutos (120 seg).",true);
+        return false;
+    }
+    if(t_off < t_on){
+        showErrorConfigEvent("Trigger off debe ser menor que trigger on.",true);
+        return false;
+    }
+    if(d_pre <= 60 && d_pos <= 60){
+        showErrorConfigEvent("La duracion pre y post evento deben ser menores o iguales a 1 minuto (60 seg).",true);
+        return false;
+    }
+    if(d_min <= 60){
+        showErrorConfigEvent("La duración minima debe ser menor a 1 minuto (60 seg).",true);
+        return false;
+    }
+
+
+}
+
+function showErrorConfigEvent(msg, show) {
+    if(show) {
+        document.getElementById('mesaageError').innerHTML = msg;
+        if ($('#mesaageError').hasClass("hidden")) {
+            $('#mesaageError').removeClass("hidden");
+        }
+    }else{
+        document.getElementById('mesaageError').innerHTML = "";
+        if(!$('#mesaageError').hasClass("hidden")){
+            $('#mesaageError').addClass("hidden");
+        }
+    }
+}
