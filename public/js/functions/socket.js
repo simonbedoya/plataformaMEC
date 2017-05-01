@@ -175,6 +175,7 @@ socket.on("testResponse", function (data) {
 socket.on("responseStatus", function (data) {
    console.log(data);
    let dataIn = JSON.parse(data);
+    document.getElementById("btnSaveConfigStatus").disabled = false;
    if(dataIn.confirm){
        document.getElementById("textProgresConfig").innerHTML = "Se han realizado satisfactoriamente los cambios.";
    }else{

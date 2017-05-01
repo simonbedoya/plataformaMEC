@@ -163,6 +163,11 @@ function showConfigStatus(pk_sensor,type,option) {
     document.getElementById("btnSaveConfigStatus").setAttribute("onclick",`saveConfigStatus(${pk_sensor},'${option}')`);
 }
 
+$('#configReadEventModal').on('hide.bs.modal', function () {
+    document.getElementById("btnSaveConfigStatus").disabled = false;
+    document.getElementById("textProgresConfig").innerHTML = "";
+});
+
 function saveConfigStatus(pk_sensor,option) {
     document.getElementById("btnSaveConfigStatus").disabled = true;
     let elem = document.getElementsByName('radiosConfig');
