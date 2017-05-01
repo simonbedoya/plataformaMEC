@@ -1344,7 +1344,31 @@ function verifyParamsEvents() {
     let d_pos = parseInt(document.getElementById("d_pos").value);
     let d_min = parseFloat(document.getElementById("d_min").value);
 
-    if((d_w_sta > 0) || (d_w_lta > 0) || (t_on > 0) || (t_off > 0) || (d_pre > 0) || (d_pos > 0) || (d_min > 0)){
+    if(d_w_sta > 0){
+        showErrorConfigEvent("Todos los valores introducidos deben ser positivos y mayores que cero.",true);
+        return false;
+    }
+    if(d_w_lta > 0){
+        showErrorConfigEvent("Todos los valores introducidos deben ser positivos y mayores que cero.",true);
+        return false;
+    }
+    if(t_on > 0){
+        showErrorConfigEvent("Todos los valores introducidos deben ser positivos y mayores que cero.",true);
+        return false;
+    }
+    if(t_off > 0){
+        showErrorConfigEvent("Todos los valores introducidos deben ser positivos y mayores que cero.",true);
+        return false;
+    }
+    if(d_pre > 0){
+        showErrorConfigEvent("Todos los valores introducidos deben ser positivos y mayores que cero.",true);
+        return false;
+    }
+    if(d_pos > 0){
+        showErrorConfigEvent("Todos los valores introducidos deben ser positivos y mayores que cero.",true);
+        return false;
+    }
+    if(d_min > 0){
         showErrorConfigEvent("Todos los valores introducidos deben ser positivos y mayores que cero.",true);
         return false;
     }
