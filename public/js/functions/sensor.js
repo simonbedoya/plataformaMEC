@@ -170,7 +170,7 @@ function saveConfigStatus(pk_sensor,option) {
     for(i=0;i < elem.length;i++)
         if (elem[i].checked) {
             status = elem[i].value;
-            return;
+            break;
         }
     socket.emit('requestStatus',`{"pk_sensor": "${pk_sensor}", "option" : "${option}", "status" : "${status}"}`,function (data) {
         document.getElementById("btnSaveConfigStatus").disabled = false;
