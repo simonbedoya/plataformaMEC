@@ -166,6 +166,7 @@ function showConfigStatus(pk_sensor,type,option) {
 $('#configReadEventModal').on('hide.bs.modal', function () {
     document.getElementById("btnSaveConfigStatus").disabled = false;
     document.getElementById("textProgresConfig").innerHTML = "";
+    location.reload(true);
 });
 
 function saveConfigStatus(pk_sensor,option) {
