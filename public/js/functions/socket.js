@@ -172,7 +172,7 @@ socket.on("testResponse", function (data) {
    }
 });
 
-socket.on("requestStatus", function (data) {
+socket.on("responseStatus", function (data) {
    console.log(data);
    let dataIn = JSON.parse(data);
    if(dataIn.confirm){
