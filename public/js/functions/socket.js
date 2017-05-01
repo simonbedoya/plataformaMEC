@@ -172,6 +172,16 @@ socket.on("testResponse", function (data) {
    }
 });
 
+socket.on("requestStatus", function (data) {
+   console.log(data);
+   let dataIn = JSON.parse(data);
+   if(dataIn.confirm){
+       document.getElementById("textProgresConfig").innerHTML = "Se han realizado satisfactoriamente los cambios.";
+   }else{
+       document.getElementById("textProgresConfig").innerHTML = `Error: ${dataIn.msg}.`;
+   }
+});
+
 socket.on("saveADC", function (data) {
    let dataIn = JSON.parse(data);
    if(!dataIn.error) {
@@ -201,6 +211,8 @@ function terminateTest(component) {
         }
     });
 }
+
+
 
 
 

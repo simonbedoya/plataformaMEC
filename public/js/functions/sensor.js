@@ -160,6 +160,31 @@ function showConfigStatus(pk_sensor,type,option) {
     }else{
         document.getElementById("textConfig").innerHTML = "Desea modificar la captura de datos en el sensor.";
     }
+    document.getElementById("btnSaveConfigStatus").setAttribute("onclick",`saveConfigStatus(${pk_sensor},${option})`);
+}
+
+function saveConfigStatus(pk_sensor,option) {
+    document.getElementById("btnSaveConfigStatus").disabled = true;
+    let elem = document.getElementsByName('radiosConfig');
+    let status;
+    for(i=0;i < elem.length;i++)
+        if (elem[i].checked) {
+            status = elem[i].value;
+            return;
+        }
+    socket.emit('requestStatus',`{"pk_sensor": "${pk_sensor}", "option" : "${option}", "status" : "${status}"}`,function (data) {
+        document.getElementById("btnSaveConfigStatus").disabled = false;
+        if(data.code === "001"){
+            document.getElementById("textProgresConfig").innerHTML = "Se ha enviado la solicitud al sensor";
+            document.getElementById("btnSaveConfigStatus").disabled = true;
+        }else if(data.code === "004"){
+            document.getElementById("textProgresConfig").innerHTML = "Ya se encuentra un test corriendo para este sensor.";
+        }else if(data.code === "003"){
+            document.getElementById("textProgresConfig").innerHTML = "El sensor no se encuentra conectado, intenta nuevamente.";
+        }else{
+            document.getElementById("textProgresConfig").innerHTML = "Ha ocurrido un error intenta nuevamente.";
+        }
+    })
 }
 
 function loadSelectorNetwork(data) {
