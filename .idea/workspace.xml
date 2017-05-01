@@ -40,8 +40,8 @@
       <file leaf-file-name="config_sensor.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/config_sensor.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="286" column="144" lean-forward="false" selection-start-line="286" selection-start-column="144" selection-end-line="286" selection-end-column="144" />
+            <state relative-caret-position="288">
+              <caret line="244" column="132" lean-forward="false" selection-start-line="244" selection-start-column="132" selection-end-line="244" selection-end-column="132" />
               <folding>
                 <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -720,14 +720,7 @@
       <workItem from="1493590035738" duration="589000" />
       <workItem from="1493609619224" duration="583000" />
       <workItem from="1493615136555" duration="796000" />
-      <workItem from="1493644293820" duration="7530000" />
-    </task>
-    <task id="LOCAL-00402" summary="27/04/17 3">
-      <created>1493366037780</created>
-      <option name="number" value="00402" />
-      <option name="presentableId" value="LOCAL-00402" />
-      <option name="project" value="LOCAL" />
-      <updated>1493366037781</updated>
+      <workItem from="1493644293820" duration="7599000" />
     </task>
     <task id="LOCAL-00403" summary="27/04/17 3">
       <created>1493366364714</created>
@@ -1065,11 +1058,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493657685040</updated>
     </task>
-    <option name="localTasksCounter" value="451" />
+    <task id="LOCAL-00451" summary="01/05/17">
+      <created>1493657864024</created>
+      <option name="number" value="00451" />
+      <option name="presentableId" value="LOCAL-00451" />
+      <option name="project" value="LOCAL" />
+      <updated>1493657864024</updated>
+    </task>
+    <option name="localTasksCounter" value="452" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="798936000" />
+    <option name="totallyTimeSpent" value="799005000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1731,8 +1731,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/config_sensor.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="286" column="144" lean-forward="false" selection-start-line="286" selection-start-column="144" selection-end-line="286" selection-end-column="144" />
+        <state relative-caret-position="288">
+          <caret line="244" column="132" lean-forward="false" selection-start-line="244" selection-start-column="132" selection-end-line="244" selection-end-column="132" />
           <folding>
             <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
