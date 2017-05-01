@@ -1335,14 +1335,16 @@ function reloadTabsConfig() {
 
 }
 
+let d_w_sta, d_w_lta, t_on, t_off, d_pre, d_pos, d_min;
+
 function verifyParamsEvents() {
-    let d_w_sta = parseFloat(document.getElementById("d_w_sta").value);
-    let d_w_lta = parseFloat(document.getElementById("d_w_lta").value);
-    let t_on = parseFloat(document.getElementById("t_on").value);
-    let t_off = parseFloat(document.getElementById("t_off").value);
-    let d_pre = parseInt(document.getElementById("d_pre").value);
-    let d_pos = parseInt(document.getElementById("d_pos").value);
-    let d_min = parseFloat(document.getElementById("d_min").value);
+    d_w_sta = parseFloat(document.getElementById("d_w_sta").value);
+    d_w_lta = parseFloat(document.getElementById("d_w_lta").value);
+    t_on = parseFloat(document.getElementById("t_on").value);
+    t_off = parseFloat(document.getElementById("t_off").value);
+    d_pre = parseInt(document.getElementById("d_pre").value);
+    d_pos = parseInt(document.getElementById("d_pos").value);
+    d_min = parseFloat(document.getElementById("d_min").value);
 
     if(!d_w_sta > 0){
         showErrorConfigEvent("Todos los valores introducidos deben ser positivos y mayores que cero.",true);
@@ -1422,6 +1424,18 @@ function showErrorConfigEvent(msg, show) {
 
 function saveConfigEvent() {
     if(verifyParamsEvents()){
-        alert("good");
+        socket.emit('requestEvents',`{"pk_sensor": "${pk_sensor}", "data": {"d_w_sta" : "${d_w_sta}", "d_w_lta" : "${d_w_lta}", "t_on": "${t_on}", "t_off": "${t_off}", "d_pre": "${d_pre}", "d_pos": "${d_pos}", "d_min": "${d_min}"}}`,function (data) {
+            document.getElementById("saveConfigEvent").disabled = false;
+            if(data.code === "001"){
+                document.getElementById("messageProgress").innerHTML = "Se ha enviado la solicitud al sensor";
+                document.getElementById("saveConfigEvent").disabled = true;
+            }else if(data.code === "004"){
+                document.getElementById("messageProgress").innerHTML = "Ya se encuentra un test corriendo para este sensor.";
+            }else if(data.code === "003"){
+                document.getElementById("messageProgress").innerHTML = "El sensor no se encuentra conectado, intenta nuevamente.";
+            }else{
+                document.getElementById("messageProgress").innerHTML = "Ha ocurrido un error intenta nuevamente.";
+            }
+        })
     }
 }

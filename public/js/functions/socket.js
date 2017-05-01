@@ -183,6 +183,18 @@ socket.on("responseStatus", function (data) {
    }
 });
 
+socket.on("responseEvents", function (data) {
+    console.log(data);
+    let dataIn = JSON.parse(data);
+    document.getElementById("saveConfigEvent").disabled = false;
+    $('#messageProgress').removeClass("hidden");
+    if(dataIn.confirm){
+        document.getElementById("messageProgress").innerHTML = "Se han realizado satisfactoriamente los cambios.";
+    }else{
+        document.getElementById("messageProgress").innerHTML = `Error.`;
+    }
+});
+
 socket.on("saveADC", function (data) {
    let dataIn = JSON.parse(data);
    if(!dataIn.error) {
