@@ -40,8 +40,8 @@
       <file leaf-file-name="config_sensor.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/config_sensor.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-647">
-              <caret line="239" column="59" lean-forward="true" selection-start-line="239" selection-start-column="59" selection-end-line="239" selection-end-column="59" />
+            <state relative-caret-position="203">
+              <caret line="286" column="144" lean-forward="false" selection-start-line="286" selection-start-column="144" selection-end-line="286" selection-end-column="144" />
               <folding>
                 <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -720,21 +720,7 @@
       <workItem from="1493590035738" duration="589000" />
       <workItem from="1493609619224" duration="583000" />
       <workItem from="1493615136555" duration="796000" />
-      <workItem from="1493644293820" duration="6759000" />
-    </task>
-    <task id="LOCAL-00400" summary="27/04/17 3">
-      <created>1493364885057</created>
-      <option name="number" value="00400" />
-      <option name="presentableId" value="LOCAL-00400" />
-      <option name="project" value="LOCAL" />
-      <updated>1493364885057</updated>
-    </task>
-    <task id="LOCAL-00401" summary="27/04/17 3">
-      <created>1493365956863</created>
-      <option name="number" value="00401" />
-      <option name="presentableId" value="LOCAL-00401" />
-      <option name="project" value="LOCAL" />
-      <updated>1493365956863</updated>
+      <workItem from="1493644293820" duration="7530000" />
     </task>
     <task id="LOCAL-00402" summary="27/04/17 3">
       <created>1493366037780</created>
@@ -1065,11 +1051,25 @@
       <option name="project" value="LOCAL" />
       <updated>1493654628831</updated>
     </task>
-    <option name="localTasksCounter" value="449" />
+    <task id="LOCAL-00449" summary="01/05/17">
+      <created>1493657086320</created>
+      <option name="number" value="00449" />
+      <option name="presentableId" value="LOCAL-00449" />
+      <option name="project" value="LOCAL" />
+      <updated>1493657086320</updated>
+    </task>
+    <task id="LOCAL-00450" summary="01/05/17">
+      <created>1493657685040</created>
+      <option name="number" value="00450" />
+      <option name="presentableId" value="LOCAL-00450" />
+      <option name="project" value="LOCAL" />
+      <updated>1493657685040</updated>
+    </task>
+    <option name="localTasksCounter" value="451" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="798165000" />
+    <option name="totallyTimeSpent" value="798936000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1731,8 +1731,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/config_sensor.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-647">
-          <caret line="239" column="59" lean-forward="true" selection-start-line="239" selection-start-column="59" selection-end-line="239" selection-end-column="59" />
+        <state relative-caret-position="203">
+          <caret line="286" column="144" lean-forward="false" selection-start-line="286" selection-start-column="144" selection-end-line="286" selection-end-column="144" />
           <folding>
             <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
