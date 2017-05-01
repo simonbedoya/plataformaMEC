@@ -1398,19 +1398,32 @@ function verifyParamsEvents() {
     }
 
     showErrorConfigEvent("",false);
+    return true;
+}
 
+function validarSiNumero(numero){
+    if (!/^([0-9])*$/.test(numero))
+        showErrorConfigEvent(`El valor ${numero} introducido no es numero.`,true);
 }
 
 function showErrorConfigEvent(msg, show) {
     if(show) {
+        document.getElementById("saveConfigEvent").disabled = true;
         document.getElementById('mesaageError').innerHTML = msg;
         if ($('#mesaageError').hasClass("hidden")) {
             $('#mesaageError').removeClass("hidden");
         }
     }else{
+        document.getElementById("saveConfigEvent").disabled = false;
         document.getElementById('mesaageError').innerHTML = "";
         if(!$('#mesaageError').hasClass("hidden")){
             $('#mesaageError').addClass("hidden");
         }
+    }
+}
+
+function saveConfigEvent() {
+    if(verifyParamsEvents()){
+        alert("good");
     }
 }
