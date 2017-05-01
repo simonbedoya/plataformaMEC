@@ -52,6 +52,12 @@
                                     <span class="hidden-xs">Bateria</span>
                                 </a>
                             </li>
+                            <li class="" id="tabConfigEVENT">
+                                <a href="#event" data-toggle="tab" aria-expanded="false">
+                                    <span class="visible-xs"><i class="fa fa-cog"></i></span>
+                                    <span class="hidden-xs">Eventos</span>
+                                </a>
+                            </li>
                         </ul>
                         <div class="tab-content">
                             <!---------------------------------------- CPU --------------------------------------------------------->
@@ -208,6 +214,28 @@
                             <!---------------------------------------- BAT --------------------------------------------------------->
                             <div class="tab-pane" id="bateria">
                                 <!---------------------------------------- BAT TEST --------------------------------------------------------->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="row m-b-10 m-t-20">
+                                            <div class="col-lg-1 col-lg-offset-1">
+                                                <button class="btn btn-inverse" id="btnTestConfigBAT" onclick="requestTest('BAT')">Test</button>
+                                            </div>
+                                            <div class="col-lg-1">
+                                                <button class="btn btn-inverse" id="btnClearConfigBAT" onclick="clearTextAreaTest('resultTestBAT','BAT')">Limpiar</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-10 col-lg-offset-1" align="center">
+                                               <textarea rows="8" cols="105" id="resultTestBAT">
+                                                   Resultado funcionamiento y recepcion del BAT
+                                               </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------- EVENT --------------------------------------------------------->
+                            <div class="tab-pane" id="event">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="row m-b-10 m-t-20">
