@@ -122,6 +122,9 @@ function loadListSensors(data, load) {
         if(data[i].STATUS_EVENT === "Active"){
             event = "Activo";
         }
+        if(read === "Inactivo"){
+            event = "Inactivo";
+        }
 
         //language=HTML
         $('#table_sensors').find('> tbody').append(`<tr><td>${data[i].SERIAL_SENSOR}</td>` +
@@ -1319,8 +1322,8 @@ function loadSamplesADC(){
 }
 
 function reloadTabsConfig() {
-    let tabs = ["tabConfigCPU", "tabConfigGPS", "tabConfigADC", "tabConfigACC", "tabConfigWIFI", "tabConfigRTC","tabConfigBAT"];
-    let tabPanels = ["cpu", "gps", "adc", "acelerometro", "acelerometro", "rtc", "bateria"];
+    let tabs = ["tabConfigCPU", "tabConfigGPS", "tabConfigADC", "tabConfigACC", "tabConfigWIFI", "tabConfigRTC","tabConfigBAT","tabConfigEVENT"];
+    let tabPanels = ["cpu", "gps", "adc", "acelerometro", "acelerometro", "rtc", "bateria","event"];
     for(i in tabs){
         $(`#${tabs[i]}`).removeClass("active");
     }
