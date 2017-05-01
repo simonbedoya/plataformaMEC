@@ -160,7 +160,7 @@ function showConfigStatus(pk_sensor,type,option) {
     }else{
         document.getElementById("textConfig").innerHTML = "Desea modificar la captura de datos en el sensor.";
     }
-    document.getElementById("btnSaveConfigStatus").setAttribute("onclick",`saveConfigStatus(${pk_sensor},${option})`);
+    document.getElementById("btnSaveConfigStatus").setAttribute("onclick",`saveConfigStatus(${pk_sensor},'${option}')`);
 }
 
 function saveConfigStatus(pk_sensor,option) {
