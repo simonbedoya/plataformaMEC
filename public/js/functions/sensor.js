@@ -1372,27 +1372,27 @@ function verifyParamsEvents() {
         showErrorConfigEvent("Todos los valores introducidos deben ser positivos y mayores que cero.",true);
         return false;
     }
-    if(!d_w_sta < d_w_lta){
+    if(d_w_sta > d_w_lta){
         showErrorConfigEvent("La ventana STA debe ser menor a la ventana LTA",true);
         return false;
     }
-    if(!d_w_sta <= 60){
+    if(d_w_sta > 60){
         showErrorConfigEvent("La ventana STA debe ser menor o igual a un minuto (60 seg).",true);
         return false;
     }
-    if(!d_w_lta <= 120){
+    if(d_w_lta > 120){
         showErrorConfigEvent("La ventana LTA debe ser menor o igual a 2 minutos (120 seg).",true);
         return false;
     }
-    if(!t_off < t_on){
+    if(t_off > t_on){
         showErrorConfigEvent("Trigger off debe ser menor que trigger on.",true);
         return false;
     }
-    if(!d_pre <= 60 && d_pos <= 60){
+    if(d_pre > 60 && d_pos > 60){
         showErrorConfigEvent("La duracion pre y post evento deben ser menores o iguales a 1 minuto (60 seg).",true);
         return false;
     }
-    if(!d_min <= 60){
+    if(d_min > 60){
         showErrorConfigEvent("La duración minima debe ser menor a 1 minuto (60 seg).",true);
         return false;
     }
