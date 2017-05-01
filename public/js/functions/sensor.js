@@ -1408,13 +1408,11 @@ function validarSiNumero(numero){
 
 function showErrorConfigEvent(msg, show) {
     if(show) {
-        document.getElementById("saveConfigEvent").disabled = true;
         document.getElementById('mesaageError').innerHTML = msg;
         if ($('#mesaageError').hasClass("hidden")) {
             $('#mesaageError').removeClass("hidden");
         }
     }else{
-        document.getElementById("saveConfigEvent").disabled = false;
         document.getElementById('mesaageError').innerHTML = "";
         if(!$('#mesaageError').hasClass("hidden")){
             $('#mesaageError').addClass("hidden");
