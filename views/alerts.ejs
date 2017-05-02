@@ -102,10 +102,10 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label class="control-label col-md-4 m-t-5" for="datepicker">Fecha inicial:</label>
+                                    <label class="control-label col-md-4 m-t-5" for="startDate">Fecha inicial:</label>
                                     <div class="col-md-8">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="datepicker">
+                                            <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="startDate">
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                                         </div><!-- input-group -->
                                     </div>
@@ -113,17 +113,17 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label class="control-label col-md-4 m-t-5" for="datepicker">Fecha inicial:</label>
+                                    <label class="control-label col-md-4 m-t-5" for="finalDate">Fecha fin:</label>
                                     <div class="col-md-8">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="datepicker">
+                                            <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="finalDate">
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                                         </div><!-- input-group -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row m-t-20">
                             <div class="col-lg-6">
                                 <table id="tableDateList" class="table table-responsive">
                                     <thead>
@@ -181,7 +181,8 @@
 <script>
     jQuery(document).ready(function() {
         // Date Picker
-        jQuery('#datepicker').datepicker();
+        jQuery('#startDate').datepicker();
+        jQuery('#finalDate').datepicker();
     });
 </script>
 
