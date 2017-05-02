@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/routes/functions/network.js" line="6" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="01/05/17 2">
+    <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/alerts.ejs" afterPath="$PROJECT_DIR$/views/alerts.ejs" />
     </list>
@@ -30,8 +30,8 @@
       <file leaf-file-name="historical.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/historical.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="64" column="22" lean-forward="true" selection-start-line="53" selection-start-column="16" selection-end-line="64" selection-end-column="22" />
+            <state relative-caret-position="102">
+              <caret line="6" column="83" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="83" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -42,8 +42,8 @@
       <file leaf-file-name="alerts.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/alerts.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="128" column="34" lean-forward="false" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
+            <state relative-caret-position="85">
+              <caret line="5" column="83" lean-forward="false" selection-start-line="5" selection-start-column="83" selection-end-line="5" selection-end-column="83" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -64,7 +64,7 @@
       <file leaf-file-name="graphic.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="404">
               <caret line="402" column="0" lean-forward="false" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="47" />
               <folding />
             </state>
@@ -667,14 +667,7 @@
       <workItem from="1493609619224" duration="583000" />
       <workItem from="1493615136555" duration="796000" />
       <workItem from="1493644293820" duration="21112000" />
-      <workItem from="1493687149625" duration="3475000" />
-    </task>
-    <task id="LOCAL-00422" summary="27/04/17 3">
-      <created>1493371117225</created>
-      <option name="number" value="00422" />
-      <option name="presentableId" value="LOCAL-00422" />
-      <option name="project" value="LOCAL" />
-      <updated>1493371117225</updated>
+      <workItem from="1493687149625" duration="3767000" />
     </task>
     <task id="LOCAL-00423" summary="27/04/17 3">
       <created>1493371378708</created>
@@ -1012,11 +1005,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493692092422</updated>
     </task>
-    <option name="localTasksCounter" value="471" />
+    <task id="LOCAL-00471" summary="01/05/17 2">
+      <created>1493692181124</created>
+      <option name="number" value="00471" />
+      <option name="presentableId" value="LOCAL-00471" />
+      <option name="project" value="LOCAL" />
+      <updated>1493692181124</updated>
+    </task>
+    <option name="localTasksCounter" value="472" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="815993000" />
+    <option name="totallyTimeSpent" value="816285000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1663,14 +1663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="402" column="0" lean-forward="false" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/alert.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1679,10 +1671,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/graphic.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="402" column="0" lean-forward="false" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/historical.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="64" column="22" lean-forward="true" selection-start-line="53" selection-start-column="16" selection-end-line="64" selection-end-column="22" />
+        <state relative-caret-position="102">
+          <caret line="6" column="83" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="83" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1691,8 +1691,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/alerts.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="128" column="34" lean-forward="false" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
+        <state relative-caret-position="85">
+          <caret line="5" column="83" lean-forward="false" selection-start-line="5" selection-start-column="83" selection-end-line="5" selection-end-column="83" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

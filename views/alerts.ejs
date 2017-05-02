@@ -3,6 +3,7 @@
 <head>
     <% include ./partials/head %>
 
+    <link href="assets/timepicker/bootstrap-datepicker.min.css" rel="stylesheet" />
 </head>
 
 
@@ -76,7 +77,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label class="col-md-5 control-label" style="margin-top: 10px">Seleccione una red:</label>
-                                    <div class="col-md-7">
+                                    <div class="col-md-8">
                                         <select id="edit-status-netowrk" class="form-control">
                                             <option value="active">-</option>
                                             <option value="active">Universidad del Cauca</option>
@@ -87,14 +88,34 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label class="col-md-5 control-label" style="margin-top: 10px">Seleccione un sensor:</label>
-                                    <div class="col-md-7">
+                                    <label class="col-md-4 control-label" style="margin-top: 10px">Seleccione un sensor:</label>
+                                    <div class="col-md-8">
                                         <select id="edit-status-netowrk" class="form-control">
                                             <option value="active">-</option>
                                             <option value="active">Universidad del Cauca</option>
                                             <option value="inactive">Puente peatonal liceo</option>
                                         </select>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="datepicker">Fecha inicial:</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="datepicker">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                    </div><!-- input-group -->
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="datepicker">Fecha fin:</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="datepicker">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                    </div><!-- input-group -->
                                 </div>
                             </div>
                         </div>
@@ -145,6 +166,9 @@
 <!-- Main Content Ends -->
 
 <% include ./partials/scripts %>
+
+<script src="assets/timepicker/bootstrap-datepicker.js"></script>
+
 <script src="js/functions/alert.js"></script>
 
 </body>
