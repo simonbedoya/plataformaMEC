@@ -1493,7 +1493,7 @@ function setDataConfigEvent(data) {
         document.getElementById("t_on").value = data.TRIGGER_ON;
         document.getElementById("t_off").value = data.TRIGGER_OFF;
         document.getElementById("d_pre").value = data.DURATION_PRE;
-        document.getElementById("d_pos").value = data.DURATION_POS;
+        document.getElementById("d_pos").value = data.DURATION_POST;
         document.getElementById("d_min").value = data.DURATION_MIN;
     }
 }
