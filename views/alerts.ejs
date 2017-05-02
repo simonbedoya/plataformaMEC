@@ -49,40 +49,44 @@
             <h3 class="title">Alertas</h3>
         </div>
         <div class="row">
-            <div class="col-lg-5">
-                <div class="portlet">
+            <div class="col-lg-12">
+                <div class="portlet" style="height: 755px;" id="portListDates">
                     <div class="portlet-heading">
                         <h3 class="portlet-title text-dark">
-                            Listado de alertas
+                            Listado de archivos
                         </h3>
                         <div class="portlet-widgets">
-                            <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                            <div style="float:left; margin-top: -10px;">
+                                <h5 style="color: #797979; margin-right: 10px;">Filtrar por ejes:</h5>
+                            </div>
+                            <div style="float:left; margin-top: -10px; margin-right: 50px;">
+                                <select class="form-control" id="filterAxis" onchange="reloadDataTable('<%=serial%>')">
+                                    <option value="BH1, BH2, BHZ">Todos</option>
+                                    <option value="BH2">BH2 (X)</option>
+                                    <option value="BH1">BH1 (Y)</option>
+                                    <option value="BHZ">BHZ (Z)</option>
+                                </select>
+                            </div>
                             <span class="divider"></span>
+                            <a onclick="reloadDataTable('<%=serial%>');" data-toggle="reload"><i class="ion-refresh"></i></a>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                     <div class="portlet-body">
+                        <table id="tableDateList" class="table table-responsive">
+                            <thead>
+                            <tr>
+                                <th class="col-lg-1"></th>
+                                <th class="col-lg-8">Fecha</th>
+                                <th class="col-lg-3"># archivos</th>
+                            </tr>
+                            </thead>
+                            <tbody>
 
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-            </div>
-            <!--  Grafica -->
-            <div class="col-lg-7">
-                <div class="portlet"><!-- /primary heading -->
-                    <div class="portlet-heading">
-                        <h3 class="portlet-title text-dark">
-                            Grafica
-                        </h3>
-                        <div class="portlet-widgets">
-                            <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
-                            <span class="divider"></span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="portlet-body">
-                        <div id="linetoggle"></div>
-                    </div>
-                </div> <!-- /Portlet -->
             </div>
         </div><!--row-->
     </div>
