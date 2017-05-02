@@ -567,6 +567,22 @@ module.exports = {
                     }
                 });
             })
+    },
+    getDataConfigEvent: function (pk_sensor) {
+        return new Promise(
+            function (fullfill) {
+                let sql = template(sqlQuery.query_getDataConfigEvent,{pk_sensor: pk_sensor});
+                db.query(sql, function (err, result) {
+
+                    if (err) return fullfill({hcode: 202, code: "002", msg: "Error", data: null});
+
+                    if (result.length !== 0) {
+                        fullfill({hcode: 200, code: "001", msg: "terminate test", data: JSON.stringify(result[0])});
+                    } else {
+                        fullfill({hcode: 202, code: "002", msg: "Error", data: null});
+                    }
+                });
+            })
     }
 };
 

@@ -1315,7 +1315,7 @@ function loadSamplesADC(){
                 confirmButtonColor: "#444a53",
                 confirmButtonText: "OK"
             }).then(function () {
-                $("#config_sensor").modal('close');
+                $("#config_sensor").modal('hide');
             });
         }
     });
@@ -1426,6 +1426,7 @@ function saveConfigEvent() {
     if(verifyParamsEvents()){
         socket.emit('requestEvents',`{"pk_sensor": "${pk_sensor}", "data": {"d_w_sta" : "${d_w_sta}", "d_w_lta" : "${d_w_lta}", "t_on": "${t_on}", "t_off": "${t_off}", "d_pre": "${d_pre}", "d_pos": "${d_pos}", "d_min": "${d_min}"}}`,function (data) {
             document.getElementById("saveConfigEvent").disabled = false;
+            $('#messageProgress').removeClass("hidden");
             if(data.code === "001"){
                 document.getElementById("messageProgress").innerHTML = "Se ha enviado la solicitud al sensor";
                 document.getElementById("saveConfigEvent").disabled = true;
@@ -1437,5 +1438,62 @@ function saveConfigEvent() {
                 document.getElementById("messageProgress").innerHTML = "Ha ocurrido un error intenta nuevamente.";
             }
         })
+    }
+}
+
+$("#tabConfigEVENT").click(function () {
+    $('#messageProgress').addClass("hidden");
+    $('#mesaageError').addClass("hidden");
+    loadDataEvent();
+});
+
+function loadDataEvent() {
+    $.ajax({
+        type: "post",
+        url: "https://plataformamec.com/data/getDataConfigEvent",
+        data: {pk_sensor: pk_sensor},
+        success: function (result) {
+            if (result.code === "001") {
+                setDataConfigEvent(result.data);
+            } else if (result.code === "003") {
+                swal({
+                    title: "Información",
+                    text: "Ha ocurrido un error intenta de nuevo!",
+                    type: "info",
+                    showCancelButton: false,
+                    confirmButtonColor: "#444a53",
+                    confirmButtonText: "OK"
+                }).then(function () {
+                    $("#config_sensor").modal('hide');
+                });
+            } else if(result.code === "002"){
+                setDataConfigEvent(null);
+            }
+        },
+        error: function (e) {
+            console.log(e);
+            swal({
+                title: "Información",
+                text: "Ha ocurrido un error intenta de nuevo!",
+                type: "info",
+                showCancelButton: false,
+                confirmButtonColor: "#444a53",
+                confirmButtonText: "OK"
+            }).then(function () {
+                $("#config_sensor").modal('hide');
+            });
+        }
+    });
+}
+
+function setDataConfigEvent(data) {
+    if(data !== null){
+        document.getElementById("d_w_sta").value = data.DURATION_W_STA;
+        document.getElementById("d_w_lta").value = data.DURATION_W_LTA;
+        document.getElementById("t_on").value = data.TRIGGER_ON;
+        document.getElementById("t_off").value = data.TRIGGER_OFF;
+        document.getElementById("d_pre").value = data.DURATION_PRE;
+        document.getElementById("d_pos").value = data.DURATION_POS;
+        document.getElementById("d_min").value = data.DURATION_MIN;
     }
 }

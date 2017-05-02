@@ -239,4 +239,10 @@ router.get('/downloadFile', function (req,res) {
     })
 });
 
+router.post('/getDataConfigEvent', function (req,res) {
+    data_controller.getDataConfigEvent(req.body.pk_sensor).then(function (data) {
+        res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, data.data)));
+    })
+});
+
 module.exports = router;
