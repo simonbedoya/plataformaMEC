@@ -59,27 +59,30 @@
                 <div class="portlet" style="height: 755px;" id="portListDates">
                     <div class="portlet-heading">
                         <h3 class="portlet-title text-dark">
-                            Listado de archivos
+                            Filtros:
                         </h3>
                         <div class="portlet-widgets">
-                            <div style="float:left; margin-top: -10px;">
-                                <h5 style="color: #797979; margin-right: 10px;">Filtrar por ejes:</h5>
-                            </div>
-                            <div style="float:left; margin-top: -10px; margin-right: 50px;">
-                                <select class="form-control" id="filterAxis" onchange="reloadDataTable('')">
-                                    <option value="BH1, BH2, BHZ">Todos</option>
-                                    <option value="BH2">BH2 (X)</option>
-                                    <option value="BH1">BH1 (Y)</option>
-                                    <option value="BHZ">BHZ (Z)</option>
-                                </select>
-                            </div>
-                            <span class="divider"></span>
                             <a onclick="reloadDataTable('');" data-toggle="reload"><i class="ion-refresh"></i></a>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                     <div class="portlet-body">
-                        <div class="row" style="margin-bottom: 20px;">
+                        <div class="row m-b-30">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label m-t-5">Seleccion de ejes:</label>
+                                    <div class="col-md-8">
+                                        <select class="form-control" id="filterAxis" onchange="reloadDataTable('')">
+                                            <option value="BH1, BH2, BHZ">Todos</option>
+                                            <option value="BH2">BH2 (X)</option>
+                                            <option value="BH1">BH1 (Y)</option>
+                                            <option value="BHZ">BHZ (Z)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-b-30">
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <label class="col-md-4 control-label m-t-5">Seleccione una red:</label>
@@ -93,7 +96,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom: 20px;">
+                        <div class="row m-b-30">
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <label class="col-md-4 control-label m-t-5">Seleccione un sensor:</label>
@@ -107,7 +110,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row m-b-30">
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <label class="control-label col-md-4 m-t-5" for="startDate">Fecha inicial:</label>
@@ -120,7 +123,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row m-b-30">
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <label class="control-label col-md-4 m-t-5" for="finalDate">Fecha fin:</label>
