@@ -4,6 +4,12 @@
     <% include ./partials/head %>
 
     <link href="assets/timepicker/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <!-- DataTables -->
+    <link href="assets/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/datatables/fixedHeader.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/datatables/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/datatables/scroller.bootstrap.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 
@@ -49,7 +55,7 @@
             <h3 class="title">Alertas</h3>
         </div>
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-6">
                 <div class="portlet" style="height: 755px;" id="portListDates">
                     <div class="portlet-heading">
                         <h3 class="portlet-title text-dark">
@@ -123,39 +129,48 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row m-t-20">
-                            <div class="col-lg-6">
-                                <table id="tableDateList" class="table table-responsive">
-                                    <thead>
-                                    <tr>
-                                        <th class="col-lg-2">Fecha</th>
-                                        <th class="col-lg-2">Hora</th>
-                                        <th class="col-lg-2">Eje</th>
-                                        <th class="col-lg-4">Fecha registro</th>
-                                        <th class="col-lg-2">Acciones</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-
-                                    </tbody>
-                                </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="portlet" style="height: 755px;" id="portListDates">
+                    <div class="portlet-heading">
+                        <h3 class="portlet-title text-dark">
+                            Listado de archivos
+                        </h3>
+                        <div class="portlet-widgets">
+                            <div style="float:left; margin-top: -10px;">
+                                <h5 style="color: #797979; margin-right: 10px;">Filtrar por ejes:</h5>
                             </div>
-                            <div class="col-lg-6">
-                                <table id="tableDateList" class="table table-responsive">
-                                    <thead>
-                                    <tr>
-                                        <th class="col-lg-2">Fecha</th>
-                                        <th class="col-lg-2">Hora</th>
-                                        <th class="col-lg-2">Eje</th>
-                                        <th class="col-lg-4">Fecha registro</th>
-                                        <th class="col-lg-2">Acciones</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-
-                                    </tbody>
-                                </table>
+                            <div style="float:left; margin-top: -10px; margin-right: 50px;">
+                                <select class="form-control" id="filterAxis" onchange="reloadDataTable('')">
+                                    <option value="BH1, BH2, BHZ">Todos</option>
+                                    <option value="BH2">BH2 (X)</option>
+                                    <option value="BH1">BH1 (Y)</option>
+                                    <option value="BHZ">BHZ (Z)</option>
+                                </select>
                             </div>
+                            <span class="divider"></span>
+                            <a onclick="reloadDataTable('');" data-toggle="reload"><i class="ion-refresh"></i></a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="portlet-body">
+                        <div class="col-lg-12">
+                            <table id="tableEventList1" class="table table-responsive">
+                                <thead>
+                                <tr>
+                                    <th class="col-lg-2">Fecha</th>
+                                    <th class="col-lg-2">Hora</th>
+                                    <th class="col-lg-2">Eje</th>
+                                    <th class="col-lg-4">Fecha registro</th>
+                                    <th class="col-lg-2">Acciones</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -174,6 +189,22 @@
 <!-- Main Content Ends -->
 
 <% include ./partials/scripts %>
+
+<!-- Datatables-->
+<script src="assets/datatables/jquery.dataTables.min.js"></script>
+<script src="assets/datatables/dataTables.bootstrap.js"></script>
+<script src="assets/datatables/dataTables.buttons.min.js"></script>
+<script src="assets/datatables/buttons.bootstrap.min.js"></script>
+<script src="assets/datatables/jszip.min.js"></script>
+<script src="assets/datatables/pdfmake.min.js"></script>
+<script src="assets/datatables/vfs_fonts.js"></script>
+<script src="assets/datatables/buttons.html5.min.js"></script>
+<script src="assets/datatables/buttons.print.min.js"></script>
+<script src="assets/datatables/dataTables.fixedHeader.min.js"></script>
+<script src="assets/datatables/dataTables.keyTable.min.js"></script>
+<script src="assets/datatables/dataTables.responsive.min.js"></script>
+<script src="assets/datatables/responsive.bootstrap.min.js"></script>
+<script src="assets/datatables/dataTables.scroller.min.js"></script>
 
 <script src="assets/timepicker/bootstrap-datepicker.js"></script>
 
