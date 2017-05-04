@@ -40,10 +40,10 @@
       <file leaf-file-name="alerts.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/alerts.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="140" column="91" lean-forward="true" selection-start-line="140" selection-start-column="91" selection-end-line="140" selection-end-column="91" />
+            <state relative-caret-position="260">
+              <caret line="58" column="55" lean-forward="false" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -678,14 +678,7 @@
       <workItem from="1493615136555" duration="796000" />
       <workItem from="1493644293820" duration="21112000" />
       <workItem from="1493687149625" duration="5500000" />
-      <workItem from="1493912681039" duration="2654000" />
-    </task>
-    <task id="LOCAL-00434" summary="27/04/17 3">
-      <created>1493408431129</created>
-      <option name="number" value="00434" />
-      <option name="presentableId" value="LOCAL-00434" />
-      <option name="project" value="LOCAL" />
-      <updated>1493408431141</updated>
+      <workItem from="1493912681039" duration="4210000" />
     </task>
     <task id="LOCAL-00435" summary="28/04/17 3">
       <created>1493408723032</created>
@@ -1023,11 +1016,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493933826653</updated>
     </task>
-    <option name="localTasksCounter" value="483" />
+    <task id="LOCAL-00483" summary="04/05/17">
+      <created>1493934106920</created>
+      <option name="number" value="00483" />
+      <option name="presentableId" value="LOCAL-00483" />
+      <option name="project" value="LOCAL" />
+      <updated>1493934106920</updated>
+    </task>
+    <option name="localTasksCounter" value="484" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="820672000" />
+    <option name="totallyTimeSpent" value="822228000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1671,10 +1671,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/alerts.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="140" column="91" lean-forward="true" selection-start-line="140" selection-start-column="91" selection-end-line="140" selection-end-column="91" />
+        <state relative-caret-position="260">
+          <caret line="58" column="55" lean-forward="false" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

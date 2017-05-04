@@ -56,7 +56,7 @@
         </div>
         <div class="row">
             <div class="col-lg-6">
-                <div class="portlet" style="height: 755px;" id="portListDates">
+                <div class="portlet" style="height: 440px;" id="portListDates">
                     <div class="portlet-heading">
                         <h3 class="portlet-title text-dark">
                             Filtros:
@@ -73,7 +73,7 @@
                                     <label class="col-md-4 control-label m-t-5">Seleccion de ejes:</label>
                                     <div class="col-md-8">
                                         <select class="form-control" id="filterAxis" onchange="reloadDataTable('')">
-                                            <option value="BH1, BH2, BHZ">Todos</option>
+                                            <option value="0">Todos</option>
                                             <option value="BH2">BH2 (X)</option>
                                             <option value="BH1">BH1 (Y)</option>
                                             <option value="BHZ">BHZ (Z)</option>
@@ -87,10 +87,8 @@
                                 <div class="form-group">
                                     <label class="col-md-4 control-label m-t-5">Seleccione una red:</label>
                                     <div class="col-md-8">
-                                        <select id="edit-status-netowrk" class="form-control">
+                                        <select id="filterNetwork" class="form-control">
                                             <option value="active">-</option>
-                                            <option value="active">Universidad del Cauca</option>
-                                            <option value="inactive">Puente peatonal liceo</option>
                                         </select>
                                     </div>
                                 </div>
@@ -101,7 +99,7 @@
                                 <div class="form-group">
                                     <label class="col-md-4 control-label m-t-5">Seleccione un sensor:</label>
                                     <div class="col-md-8">
-                                        <select id="edit-status-netowrk" class="form-control">
+                                        <select id="filterSensor" class="form-control">
                                             <option value="active">-</option>
                                             <option value="active">Universidad del Cauca</option>
                                             <option value="inactive">Puente peatonal liceo</option>
@@ -136,33 +134,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row m-b-30">
+                        <div class="m-r-5">
                             <div class="col-lg-12">
-                                <button class="btn btn-inverse pull-right">Filtrar</button>
+                                <button class="btn btn-inverse pull-right" id="btnFilter">Filtrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="portlet" style="height: 755px;" id="portListDates">
+                <div class="portlet" style="height: 655px;" id="portListEvents">
                     <div class="portlet-heading">
                         <h3 class="portlet-title text-dark">
                             Listado de archivos
                         </h3>
                         <div class="portlet-widgets">
-                            <div style="float:left; margin-top: -10px;">
-                                <h5 style="color: #797979; margin-right: 10px;">Filtrar por ejes:</h5>
-                            </div>
-                            <div style="float:left; margin-top: -10px; margin-right: 50px;">
-                                <select class="form-control" id="filterAxis" onchange="reloadDataTable('')">
-                                    <option value="BH1, BH2, BHZ">Todos</option>
-                                    <option value="BH2">BH2 (X)</option>
-                                    <option value="BH1">BH1 (Y)</option>
-                                    <option value="BHZ">BHZ (Z)</option>
-                                </select>
-                            </div>
-                            <span class="divider"></span>
                             <a onclick="reloadDataTable('');" data-toggle="reload"><i class="ion-refresh"></i></a>
                         </div>
                         <div class="clearfix"></div>
@@ -175,7 +161,7 @@
                                     <th class="col-lg-2">Fecha</th>
                                     <th class="col-lg-2">Hora</th>
                                     <th class="col-lg-2">Eje</th>
-                                    <th class="col-lg-4">Fecha registro</th>
+                                    <th class="col-lg-4">Sensor</th>
                                     <th class="col-lg-2">Acciones</th>
                                 </tr>
                                 </thead>
