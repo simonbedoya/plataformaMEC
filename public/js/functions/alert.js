@@ -49,7 +49,7 @@ function loadEvents(dataList) {
     for(i in dataList){
         if(i !== "empty"){
 
-            let dateA = {DATE: dataList[i].DATE_FILE, HOUR: dataList[i].HOUR_FILE, AXIS: dataList[i].AXIS_FILE, NAME: dataList[i].NAME_SENSOR};
+            let dateA = {DATE: dataList[i].DATE_FILE, HOUR: dataList[i].HOUR_FILE, AXIS: dataList[i].AXIS_FILE, NAME: dataList[i].NAME_SENSOR, OPTION: "<a>Hola</a>"};
             dateListFull.push(dateA);
         }
     }
@@ -65,6 +65,6 @@ function loadEvents(dataList) {
         "paging":         false,
         "pagingType": "numbers",
         "dom": 'frtip',
-        "columns" : [{"data": "DATE"},{"data": "HOUR"},{"data": "AXIS"},{"data": "NAME"},{"data": "NAME"}]
+        "columns" : [{"data": "DATE"},{"data": "HOUR"},{"data": "AXIS"},{"data": "NAME"},{"data": "OPTION"}]
     });
 }
