@@ -62,11 +62,9 @@ function loadEvents(dataList) {
         "info": false,
         "searching": true,
         "pageLength": true,
-        "scrollY":        "575px",
-        "scrollCollapse": true,
-        "paging":         false,
+        "scrollCollapse": false,
+        "paging":         true,
         "pagingType": "numbers",
-        "dom": 'frtip',
         "columns" : [{"data": "DATE"},{"data": "HOUR"},{"data": "AXIS"},{"data": "NAME"},{"data": "OPTION"}]
     });
 }
