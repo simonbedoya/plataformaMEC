@@ -49,7 +49,7 @@ function loadEvents(dataList) {
     for(i in dataList){
         if(i !== "empty"){
             let date = dataList[i].DATE_FILE.split("T");
-            let option = `<a onclick="readFile(${dataList[i].PK_FILE},'${dataList[i].HOUR_FILE}','${dataList[i].AXIS_FILE}')" data-toggle='tooltip' data-placement='bottom' title='Ver'><i class="ion-eye"></i></a>`+
+            let option = `<a onclick="readFile(${dataList[i].PK_FILE},'${dataList[i].AXIS_FILE}')" data-toggle='tooltip' data-placement='bottom' title='Ver'><i class="ion-eye"></i></a>`+
                          `<a href="/data/downloadFile?id=${dataList[i].PK_FILE}" class="m-l-15" data-toggle='tooltip' data-placement='bottom' title='Descargar'><i class="ion-ios7-cloud-download"></i></a>`;
             let dateA = {DATE: date[0], HOUR: dataList[i].HOUR_FILE, AXIS: dataList[i].AXIS_FILE, NAME: dataList[i].NAME_SENSOR, OPTION: option};
             dateListFull.push(dateA);
@@ -67,8 +67,9 @@ function loadEvents(dataList) {
     });
 }
 
-function readFile(pk_file,hour,axis) {
+function readFile(pk_file,axis) {
     let data = [];
+
     showPanelLoad('portListEvents',true);
     $.ajax({
         type: "post",
@@ -91,7 +92,7 @@ function readFile(pk_file,hour,axis) {
                     let arrCom = {x: time * (i - 4), y: parseFloat(arrAux[1])};
                     data.push(arrCom);
                 }
-                loadSamplesDialog(samplesec, data);
+                loadSamplesDialog(samplesec, data, axis);
             }
 
         },
@@ -111,7 +112,7 @@ function readFile(pk_file,hour,axis) {
     });
 }
 
-function loadSamplesDialog(samples, data) {
+function loadSamplesDialog(samples, data, axis) {
     let arraySamples;
     if(samples === 40){
         arraySamples =  {'1': '1','2': '2','4': '4','5': '5','8': '8','10': '10','20': '20','40': '40'};
@@ -132,13 +133,13 @@ function loadSamplesDialog(samples, data) {
         showCancelButton: true
     }).then(function (result) {
         //alert(result);
-        generateGraphic(result, samples, data);
+        generateGraphic(result, samples, data, axis);
     },function (dismiss) {
         
     })
 }
 
-function generateGraphic(samples, maxSamples, data) {
+function generateGraphic(samples, maxSamples, data, axis) {
 
     let dataNew = [];
     //let samples = parseInt($('#samInp').val());
@@ -160,12 +161,12 @@ function generateGraphic(samples, maxSamples, data) {
     for (let i = 0; i < data.length; i = i + interJump) {
         dataNew.push(data[i]);
     }
-    drawGraphic(dataNew);
+    drawGraphic(dataNew, axis);
 }
 
 let chart;
 
-function drawGraphic(dataNew) {
+function drawGraphic(dataNew, axis) {
 
     if(dataNew.length === 0){
         swal({
