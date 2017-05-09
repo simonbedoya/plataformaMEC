@@ -166,7 +166,6 @@ function showPanelLoad(id,show) {
             pd.remove();
         });
     }
-
 }
 
 

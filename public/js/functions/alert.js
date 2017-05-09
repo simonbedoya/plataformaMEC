@@ -69,6 +69,7 @@ function loadEvents(dataList) {
 
 function readFile(pk_file,hour,axis) {
     let data = [];
+    showPanelLoad('portListEvents',true);
     $.ajax({
         type: "post",
         url: "https://plataformamec.com/data/getDataFileByPk",
@@ -121,6 +122,7 @@ function loadSamplesDialog(samples) {
     }else if(samples === 200){
         arraySamples =  {'1': '1','2': '2','4': '4','5': '5','10': '10','20': '20','25': '25','50': '50','100': '100','200': '200'};
     }
+    showPanelLoad('portListEvents',false);
     swal({
         title: 'Seleccione',
         text: 'Tasa de muestreo para generar la grafica.',
@@ -129,16 +131,17 @@ function loadSamplesDialog(samples) {
         inputPlaceholder: 'Muestras por segundo',
         showCancelButton: true
     }).then(function (result) {
-        alert(result);
+        //alert(result);
+        generateGraphic(result);
     },function (dismiss) {
         
     })
 }
 
-function generateGraphic() {
+function generateGraphic(samples) {
 
     let dataNew = [];
-    let samples = parseInt($('#samInp').val());
+    //let samples = parseInt($('#samInp').val());
     let interJump = parseInt(maxSamples / samples);
 
     if((maxSamples % samples) !== 0){
@@ -231,8 +234,7 @@ function drawGraphic(dataNew) {
 
             }
         });
-
-        showPanelLoad('portletGraphic',false);
+        showPanel('graphicGenerateFile',true);
     }
 }
 
@@ -276,4 +278,24 @@ function getdata(dataNew) {
         chartData.push(dataFinale);
     });
     return chartData;
+}
+
+function showPanelLoad(id,show) {
+    let portlet = $(`#${id}`);
+    if(show) {
+        portlet.append('<div class="panel-disabled"><div class="loader-1"></div></div>');
+    }else{
+        let pd = portlet.find('.panel-disabled');
+        pd.fadeOut('fast', function () {
+            pd.remove();
+        });
+    }
+}
+
+function showPanel(id,show) {
+    if(show){
+        $(`#${id}`).removeClass("hidden");
+    }else{
+        $(`#${id}`).addClass("hidden");
+    }
 }
