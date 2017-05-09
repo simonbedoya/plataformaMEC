@@ -132,13 +132,13 @@ function loadSamplesDialog(samples) {
         showCancelButton: true
     }).then(function (result) {
         //alert(result);
-        generateGraphic(result);
+        generateGraphic(result, samples);
     },function (dismiss) {
         
     })
 }
 
-function generateGraphic(samples) {
+function generateGraphic(samples, maxSamples) {
 
     let dataNew = [];
     //let samples = parseInt($('#samInp').val());
