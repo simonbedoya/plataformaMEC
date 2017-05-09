@@ -28,14 +28,20 @@ router.get('/', function(req, res) {
            let networks = data.data;
            alerController.getSensorByUser(sess.user).then(function (data) {
                if(data.code === "001"){
-                   console.log(networks);
-                   res.render('alerts', { user: sess.user, networks: networks, sensors: data.data });
+                   let sensors = data.data;
+                    alerController.getListEvents(sess.user).then(function (data) {
+                        if(data.code === "001"){
+                            res.render('alerts', { user: sess.user, networks: networks, sensors: sensors, events: data.data });
+                        }else{
+                            res.render('alerts', { user: sess.user, networks: networks, sensors: sensors, events: null });
+                        }
+                    })
                }else{
-                   res.render('alerts', { user: sess.user, networks: networks, sensors: null });
+                   res.render('alerts', { user: sess.user, networks: networks, sensors: null, events: null });
                }
            })
        }else{
-           res.render('alerts', { user: sess.user, networks: null, sensors: null });
+           res.render('alerts', { user: sess.user, networks: null, sensors: null, events: null });
        }
     });
 

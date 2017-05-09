@@ -2,12 +2,14 @@
  * Created by sbv23 on 01/05/2017.
  */
 let sensors;
+let tableEventsList;
 
-function load(email,networks,sensorsList) {
+function load(email,networks,sensorsList,events) {
     sensors = sensorsList;
     reloadNumberNoReadNotification(email);
     loadNetwork(networks);
     loadSensor(sensorsList);
+    loadEvents(events);
 }
 
 function loadNetwork(data) {
@@ -39,4 +41,35 @@ function selectNetwork() {
         }
         loadSensor(sensorAux);
     }
+}
+
+function loadEvents(dataList) {
+    let dateListFull = [];
+    let i;
+    for(i in dataList){
+        if(i !== "empty"){
+
+            let dateA = {DATE: dataList[i].DATE_FILE, HOUR: dataList[i].HOUR_FILE, AXIS: dataList[i].AXIS_FILE, NAME: dataList[i].NAME_SENSOR};
+            dateListFull.push(dateA);
+        }
+    }
+
+    tableEventsList = $('#tableEventList').DataTable({
+        "data": dateListFull,
+        "ordering": false,
+        "info": false,
+        "searching": true,
+        "pageLength": true,
+        "scrollY":        "575px",
+        "scrollCollapse": true,
+        "paging":         false,
+        "pagingType": "numbers",
+        "dom": 'frtip',
+        "columns" : [{
+            "className": 'details-control',
+            "orderable": false,
+            "data": null,
+            "defaultContent": ''
+        }, {"data": "DATE"},{"data": "HOUR"},{"data": "AXIS"},{"data": "NAME"},{"data": null}]
+    });
 }

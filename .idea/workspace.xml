@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/alert_controller.js" afterPath="$PROJECT_DIR$/controller/alert_controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/alert.js" afterPath="$PROJECT_DIR$/public/js/functions/alert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/alert.js" afterPath="$PROJECT_DIR$/routes/alert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/sql_alert.js" afterPath="$PROJECT_DIR$/sql/sql_alert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/alerts.ejs" afterPath="$PROJECT_DIR$/views/alerts.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,8 +44,8 @@
       <file leaf-file-name="alerts.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/alerts.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="89" column="112" lean-forward="true" selection-start-line="89" selection-start-column="112" selection-end-line="89" selection-end-column="112" />
+            <state relative-caret-position="799">
+              <caret line="155" column="53" lean-forward="false" selection-start-line="155" selection-start-column="39" selection-end-line="155" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -52,10 +56,22 @@
       <file leaf-file-name="alert.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/alert.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+            <state relative-caret-position="473">
+              <caret line="72" column="94" lean-forward="false" selection-start-line="72" selection-start-column="94" selection-end-line="72" selection-end-column="94" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="graphic.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="41" column="5" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
+              <folding>
+                <marker date="1493374090000" expanded="true" signature="2189:2206" ph="..." />
               </folding>
             </state>
           </provider>
@@ -64,8 +80,8 @@
       <file leaf-file-name="alert.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/alert.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+            <state relative-caret-position="473">
+              <caret line="43" column="94" lean-forward="false" selection-start-line="43" selection-start-column="94" selection-end-line="43" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -74,8 +90,8 @@
       <file leaf-file-name="alert_controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/alert_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="31" column="47" lean-forward="false" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+            <state relative-caret-position="286">
+              <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="17" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -86,22 +102,10 @@
       <file leaf-file-name="sql_alert.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sql/sql_alert.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="75" lean-forward="false" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
+            <state relative-caret-position="68">
+              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="22" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="graphic.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="31" lean-forward="false" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
-              <folding>
-                <marker date="1493374090000" expanded="true" signature="2189:2206" ph="..." />
               </folding>
             </state>
           </provider>
@@ -217,10 +221,10 @@
         <option value="$PROJECT_DIR$/controller/data_controller.js" />
         <option value="$PROJECT_DIR$/routes/data.js" />
         <option value="$PROJECT_DIR$/public/js/functions/sensor.js" />
+        <option value="$PROJECT_DIR$/sql/sql_alert.js" />
         <option value="$PROJECT_DIR$/controller/alert_controller.js" />
         <option value="$PROJECT_DIR$/routes/alert.js" />
         <option value="$PROJECT_DIR$/views/alerts.ejs" />
-        <option value="$PROJECT_DIR$/sql/sql_alert.js" />
         <option value="$PROJECT_DIR$/public/js/functions/alert.js" />
       </list>
     </option>
@@ -716,14 +720,7 @@
       <workItem from="1493687149625" duration="5500000" />
       <workItem from="1493912681039" duration="5020000" />
       <workItem from="1494209728019" duration="2418000" />
-      <workItem from="1494323756790" duration="3672000" />
-    </task>
-    <task id="LOCAL-00450" summary="01/05/17">
-      <created>1493657685040</created>
-      <option name="number" value="00450" />
-      <option name="presentableId" value="LOCAL-00450" />
-      <option name="project" value="LOCAL" />
-      <updated>1493657685040</updated>
+      <workItem from="1494323756790" duration="5123000" />
     </task>
     <task id="LOCAL-00451" summary="01/05/17">
       <created>1493657864024</created>
@@ -1061,11 +1058,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494327350088</updated>
     </task>
-    <option name="localTasksCounter" value="499" />
+    <task id="LOCAL-00499" summary="09/05/17">
+      <created>1494327435846</created>
+      <option name="number" value="00499" />
+      <option name="presentableId" value="LOCAL-00499" />
+      <option name="project" value="LOCAL" />
+      <updated>1494327435846</updated>
+    </task>
+    <option name="localTasksCounter" value="500" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="829128000" />
+    <option name="totallyTimeSpent" value="830579000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1652,16 +1656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="31" lean-forward="false" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
-          <folding>
-            <marker date="1493374090000" expanded="true" signature="2189:2206" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/graphic_controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1686,48 +1680,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/alert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/alert_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="31" column="47" lean-forward="false" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+        <state relative-caret-position="286">
+          <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="17" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/sql_alert.js">
+    <entry file="file://$PROJECT_DIR$/routes/alert.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="75" lean-forward="false" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="473">
+          <caret line="43" column="94" lean-forward="false" selection-start-line="43" selection-start-column="94" selection-end-line="43" selection-end-column="94" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/alerts.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="89" column="112" lean-forward="true" selection-start-line="89" selection-start-column="112" selection-end-line="89" selection-end-column="112" />
+        <state relative-caret-position="799">
+          <caret line="155" column="53" lean-forward="false" selection-start-line="155" selection-start-column="39" selection-end-line="155" selection-end-column="53" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/functions/graphic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <marker date="1493374090000" expanded="true" signature="2189:2206" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/sql_alert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/alert.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        <state relative-caret-position="473">
+          <caret line="72" column="94" lean-forward="false" selection-start-line="72" selection-start-column="94" selection-end-line="72" selection-end-column="94" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
