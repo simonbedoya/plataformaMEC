@@ -49,7 +49,7 @@ function loadEvents(dataList) {
     for(i in dataList){
         if(i !== "empty"){
             let date = dataList[i].DATE_FILE.split("T");
-            let option = `<a onclick="readFile(${dataList[i].PK_FILE},'${dataList[i].AXIS_FILE}')" data-toggle='tooltip' data-placement='bottom' title='Ver'><i class="ion-eye"></i></a>`+
+            let option = `<a onclick="readFile(${dataList[i].PK_FILE},'${dataList[i].AXIS_FILE}','${dataList[i].HOUR_FILE}')" data-toggle='tooltip' data-placement='bottom' title='Ver'><i class="ion-eye"></i></a>`+
                          `<a href="/data/downloadFile?id=${dataList[i].PK_FILE}" class="m-l-15" data-toggle='tooltip' data-placement='bottom' title='Descargar'><i class="ion-ios7-cloud-download"></i></a>`;
             let dateA = {DATE: date[0], HOUR: dataList[i].HOUR_FILE, AXIS: dataList[i].AXIS_FILE, NAME: dataList[i].NAME_SENSOR, OPTION: option};
             dateListFull.push(dateA);
@@ -67,7 +67,7 @@ function loadEvents(dataList) {
     });
 }
 
-function readFile(pk_file,axis) {
+function readFile(pk_file,axis, hourFile) {
     let data = [];
 
     showPanelLoad('portListEvents',true);
@@ -92,7 +92,7 @@ function readFile(pk_file,axis) {
                     let arrCom = {x: time * (i - 4), y: parseFloat(arrAux[1])};
                     data.push(arrCom);
                 }
-                loadSamplesDialog(samplesec, data, axis);
+                loadSamplesDialog(samplesec, data, axis, date_file, hourFile);
             }
 
         },
@@ -112,7 +112,7 @@ function readFile(pk_file,axis) {
     });
 }
 
-function loadSamplesDialog(samples, data, axis) {
+function loadSamplesDialog(samples, data, axis, date_file, hourFile) {
     let arraySamples;
     if(samples === 40){
         arraySamples =  {'1': '1','2': '2','4': '4','5': '5','8': '8','10': '10','20': '20','40': '40'};
@@ -133,13 +133,13 @@ function loadSamplesDialog(samples, data, axis) {
         showCancelButton: true
     }).then(function (result) {
         //alert(result);
-        generateGraphic(result, samples, data, axis);
+        generateGraphic(result, samples, data, axis, date_file, hourFile);
     },function (dismiss) {
         
     })
 }
 
-function generateGraphic(samples, maxSamples, data, axis) {
+function generateGraphic(samples, maxSamples, data, axis, date_file, hourFile) {
 
     let dataNew = [];
     //let samples = parseInt($('#samInp').val());
@@ -161,12 +161,12 @@ function generateGraphic(samples, maxSamples, data, axis) {
     for (let i = 0; i < data.length; i = i + interJump) {
         dataNew.push(data[i]);
     }
-    drawGraphic(dataNew, axis);
+    drawGraphic(dataNew, axis, date_file, hourFile);
 }
 
 let chart;
 
-function drawGraphic(dataNew, axis) {
+function drawGraphic(dataNew, axis, date_file, hourFile) {
 
     if(dataNew.length === 0){
         swal({
@@ -203,7 +203,7 @@ function drawGraphic(dataNew, axis) {
                 "backgroundColor": '#000000',
                 "backgroundAlpha": 0.15
             },
-            "dataProvider": getdata(dataNew),
+            "dataProvider": getdata(dataNew, date_file, hourFile),
             "categoryField": "date",
             "categoryAxis": {
                 "parseDates": true,
@@ -239,7 +239,7 @@ function drawGraphic(dataNew, axis) {
     }
 }
 
-function getdata(dataNew) {
+function getdata(dataNew, dateFile, hourFile) {
     let chartData = [];
     let arrayDate = dateFile.split("-");
     let hourarray = hourFile.split(":");
