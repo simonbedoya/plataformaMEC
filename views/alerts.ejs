@@ -72,7 +72,7 @@
                                 <div class="form-group">
                                     <label class="col-md-4 control-label m-t-5">Seleccion de ejes:</label>
                                     <div class="col-md-8">
-                                        <select class="form-control" id="filterAxis" onchange="reloadDataTable('')">
+                                        <select class="form-control" id="filterAxis">
                                             <option value="0">Todos</option>
                                             <option value="BH2">BH2 (X)</option>
                                             <option value="BH1">BH1 (Y)</option>
@@ -87,7 +87,7 @@
                                 <div class="form-group">
                                     <label class="col-md-4 control-label m-t-5">Seleccione una red:</label>
                                     <div class="col-md-8">
-                                        <select id="filterNetwork" class="form-control">
+                                        <select id="filterNetwork" class="form-control" onchange="selectNetwork()">
                                             <option value="0">-</option>
                                         </select>
                                     </div>
