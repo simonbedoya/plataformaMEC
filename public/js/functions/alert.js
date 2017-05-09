@@ -62,6 +62,7 @@ function loadEvents(dataList) {
         "info": false,
         "searching": true,
         "pageLength": true,
+        "lengthMenu": [[10, 20], [10, 25]],
         "scrollCollapse": false,
         "paging":         true,
         "pagingType": "numbers",
