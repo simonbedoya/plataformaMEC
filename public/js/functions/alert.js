@@ -300,3 +300,5 @@ function showPanel(id,show) {
         $(`#${id}`).addClass("hidden");
     }
 }
+
+
