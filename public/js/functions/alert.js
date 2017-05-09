@@ -61,11 +61,7 @@ function loadEvents(dataList) {
         "ordering": false,
         "info": false,
         "searching": true,
-        "pageLength": true,
         "lengthMenu": [[10, 20], [10, 25]],
-        "scrollCollapse": false,
-        "paging":         true,
-        "pagingType": "numbers",
         "columns" : [{"data": "DATE"},{"data": "HOUR"},{"data": "AXIS"},{"data": "NAME"},{"data": "OPTION"}]
     });
 }
