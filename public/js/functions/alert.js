@@ -19,8 +19,9 @@ function loadNetwork(data) {
 
 function loadSensor(data){
     let i;
+    document.getElementById("filterSensor").innerHTML = "<option value='0'>-</option>";
     for(i = 0; i < data.length; i++) {
-        document.getElementById("filterSensor").innerHTML += "<option value='" + data[i].PK_SENSOR + "'>"+data[i].NAME_SENSOR+"</option>";
+        document.getElementById("filterSensor").innerHTML += `<option value='${data[i].PK_SENSOR}'>${data[i].NAME_SENSOR}</option>`;
     }
 }
 
@@ -32,7 +33,7 @@ function selectNetwork() {
         let sensorAux = [];
         let i;
         for(i = 0; i < sensors.length; i++) {
-            if(sensors[i].PK_NETWORK = selectNet){
+            if(sensors[i].PK_NETWORK === selectNet){
                 sensorAux.push(sensors[i]);
             }
         }
