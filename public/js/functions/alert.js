@@ -203,7 +203,7 @@ function drawGraphic(dataNew, axis, date_file, hourFile) {
                 "backgroundColor": '#000000',
                 "backgroundAlpha": 0.15
             },
-            "dataProvider": getdata(dataNew, date_file, hourFile),
+            "dataProvider": getdata(dataNew, date_file, hourFile, axis),
             "categoryField": "date",
             "categoryAxis": {
                 "parseDates": true,
@@ -239,7 +239,7 @@ function drawGraphic(dataNew, axis, date_file, hourFile) {
     }
 }
 
-function getdata(dataNew, dateFile, hourFile) {
+function getdata(dataNew, dateFile, hourFile, axis) {
     let chartData = [];
     let arrayDate = dateFile.split("-");
     let hourarray = hourFile.split(":");
