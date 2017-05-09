@@ -4,5 +4,12 @@
 
 function load(email,networks) {
     reloadNumberNoReadNotification(email);
-    alert(networks.lenght);
+    loadNetwork(networks);
+}
+
+function loadNetwork(data) {
+    let i;
+    for(i = 0; i < data.length; i++) {
+        document.getElementById("filterNetwork").innerHTML += "<option value='" + data[i].PK_NETWORK + "'>"+data[i].NAME_NETWORK+"</option>";
+    }
 }
