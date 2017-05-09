@@ -48,8 +48,10 @@ function loadEvents(dataList) {
     let i;
     for(i in dataList){
         if(i !== "empty"){
-
-            let dateA = {DATE: dataList[i].DATE_FILE, HOUR: dataList[i].HOUR_FILE, AXIS: dataList[i].AXIS_FILE, NAME: dataList[i].NAME_SENSOR, OPTION: "<a>Hola</a>"};
+            let date = dataList[i].DATE_FILE.split("T");
+            let option = `<a onclick="readFile(${dataList[i].PK_FILE},'${dataList[i].HOUR_FILE}','${dataList[i].AXIS_FILE}')" data-toggle='tooltip' data-placement='bottom' title='Ver'><i class="ion-eye"></i></a>`+
+                         `<a href="/data/downloadFile?id=${dataList[i].PK_FILE}" class="m-l-15" data-toggle='tooltip' data-placement='bottom' title='Descargar'><i class="ion-ios7-cloud-download"></i></a>`;
+            let dateA = {DATE: date[0], HOUR: dataList[i].HOUR_FILE, AXIS: dataList[i].AXIS_FILE, NAME: dataList[i].NAME_SENSOR, OPTION: option};
             dateListFull.push(dateA);
         }
     }
