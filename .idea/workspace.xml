@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/alert_controller.js" afterPath="$PROJECT_DIR$/controller/alert_controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/alert.js" afterPath="$PROJECT_DIR$/public/js/functions/alert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/alert.js" afterPath="$PROJECT_DIR$/routes/alert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/sql_alert.js" afterPath="$PROJECT_DIR$/sql/sql_alert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/alerts.ejs" afterPath="$PROJECT_DIR$/views/alerts.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -57,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/public/js/functions/alert.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="473">
-              <caret line="72" column="94" lean-forward="false" selection-start-line="72" selection-start-column="94" selection-end-line="72" selection-end-column="94" />
+              <caret line="72" column="93" lean-forward="false" selection-start-line="72" selection-start-column="93" selection-end-line="72" selection-end-column="93" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -720,14 +716,7 @@
       <workItem from="1493687149625" duration="5500000" />
       <workItem from="1493912681039" duration="5020000" />
       <workItem from="1494209728019" duration="2418000" />
-      <workItem from="1494323756790" duration="5123000" />
-    </task>
-    <task id="LOCAL-00451" summary="01/05/17">
-      <created>1493657864024</created>
-      <option name="number" value="00451" />
-      <option name="presentableId" value="LOCAL-00451" />
-      <option name="project" value="LOCAL" />
-      <updated>1493657864024</updated>
+      <workItem from="1494323756790" duration="5211000" />
     </task>
     <task id="LOCAL-00452" summary="01/05/17">
       <created>1493657932214</created>
@@ -1065,11 +1054,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494327435846</updated>
     </task>
-    <option name="localTasksCounter" value="500" />
+    <task id="LOCAL-00500" summary="09/05/17">
+      <created>1494328891026</created>
+      <option name="number" value="00500" />
+      <option name="presentableId" value="LOCAL-00500" />
+      <option name="project" value="LOCAL" />
+      <updated>1494328891026</updated>
+    </task>
+    <option name="localTasksCounter" value="501" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="830579000" />
+    <option name="totallyTimeSpent" value="830667000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1731,7 +1727,7 @@
     <entry file="file://$PROJECT_DIR$/public/js/functions/alert.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
-          <caret line="72" column="94" lean-forward="false" selection-start-line="72" selection-start-column="94" selection-end-line="72" selection-end-column="94" />
+          <caret line="72" column="93" lean-forward="false" selection-start-line="72" selection-start-column="93" selection-end-line="72" selection-end-column="93" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>

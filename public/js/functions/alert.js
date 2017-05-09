@@ -70,6 +70,6 @@ function loadEvents(dataList) {
             "orderable": false,
             "data": null,
             "defaultContent": ''
-        }, {"data": "DATE"},{"data": "HOUR"},{"data": "AXIS"},{"data": "NAME"},{"data": null}]
+        }, {"data": "DATE"},{"data": "HOUR"},{"data": "AXIS"},{"data": "NAME"},{"data": "NAMkE"}]
     });
 }
