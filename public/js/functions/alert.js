@@ -62,6 +62,7 @@ function loadEvents(dataList) {
         "info": false,
         "searching": true,
         "lengthMenu": [[10, 20], [10, 25]],
+        "pagingType": "numbers",
         "columns" : [{"data": "DATE"},{"data": "HOUR"},{"data": "AXIS"},{"data": "NAME"},{"data": "OPTION"}]
     });
 }
