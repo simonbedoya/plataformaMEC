@@ -28,6 +28,7 @@ router.get('/', function(req, res) {
            let networks = data.data;
            alerController.getSensorByUser(sess.user).then(function (data) {
                if(data.code === "001"){
+                   console.log(networks);
                    res.render('alerts', { user: sess.user, networks: networks, sensors: data.data });
                }else{
                    res.render('alerts', { user: sess.user, networks: networks, sensors: null });
