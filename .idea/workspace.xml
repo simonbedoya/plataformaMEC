@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/alert_controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/sql_alert.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/alert.js" afterPath="$PROJECT_DIR$/routes/alert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/alerts.ejs" afterPath="$PROJECT_DIR$/views/alerts.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,9 +43,45 @@
       <file leaf-file-name="alerts.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/alerts.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1360">
-              <caret line="58" column="55" lean-forward="false" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
+            <state relative-caret-position="238">
+              <caret line="92" column="120" lean-forward="false" selection-start-line="92" selection-start-column="120" selection-end-line="92" selection-end-column="120" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alert.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/alert.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alert_controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/alert_controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="35" column="70" lean-forward="false" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sql_alert.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/sql_alert.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,9 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/assets/ion-rangeslider/ui-sliders.js" />
-        <option value="$PROJECT_DIR$/views/graphicModal.ejs" />
-        <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/views/error.ejs" />
         <option value="$PROJECT_DIR$/views/recoverpw.ejs" />
         <option value="$PROJECT_DIR$/views/register.ejs" />
@@ -182,6 +219,9 @@
         <option value="$PROJECT_DIR$/routes/data.js" />
         <option value="$PROJECT_DIR$/public/js/functions/sensor.js" />
         <option value="$PROJECT_DIR$/public/js/functions/alert.js" />
+        <option value="$PROJECT_DIR$/sql/sql_alert.js" />
+        <option value="$PROJECT_DIR$/controller/alert_controller.js" />
+        <option value="$PROJECT_DIR$/routes/alert.js" />
         <option value="$PROJECT_DIR$/views/alerts.ejs" />
       </list>
     </option>
@@ -677,14 +717,7 @@
       <workItem from="1493687149625" duration="5500000" />
       <workItem from="1493912681039" duration="5020000" />
       <workItem from="1494209728019" duration="2418000" />
-      <workItem from="1494323756790" duration="237000" />
-    </task>
-    <task id="LOCAL-00436" summary="28/04/17 3">
-      <created>1493410687717</created>
-      <option name="number" value="00436" />
-      <option name="presentableId" value="LOCAL-00436" />
-      <option name="project" value="LOCAL" />
-      <updated>1493410687717</updated>
+      <workItem from="1494323756790" duration="1649000" />
     </task>
     <task id="LOCAL-00437" summary="28/04/17 3">
       <created>1493410889549</created>
@@ -1022,11 +1055,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493935800655</updated>
     </task>
-    <option name="localTasksCounter" value="485" />
+    <task id="LOCAL-00485" summary="09/05/17">
+      <created>1494324010049</created>
+      <option name="number" value="00485" />
+      <option name="presentableId" value="LOCAL-00485" />
+      <option name="project" value="LOCAL" />
+      <updated>1494324010051</updated>
+    </task>
+    <option name="localTasksCounter" value="486" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="825693000" />
+    <option name="totallyTimeSpent" value="827105000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1106,7 +1146,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="17/04/2017 16" />
     <MESSAGE value="17/04/2017 17" />
     <MESSAGE value="17/04/2017 18" />
     <MESSAGE value="17/04/2017 19" />
@@ -1131,7 +1170,8 @@
     <MESSAGE value="01/05/17" />
     <MESSAGE value="01/05/17 2" />
     <MESSAGE value="04/05/17" />
-    <option name="LAST_COMMIT_MESSAGE" value="04/05/17" />
+    <MESSAGE value="09/05/17" />
+    <option name="LAST_COMMIT_MESSAGE" value="09/05/17" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1330,14 +1370,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/Rickshaw.Graph.js" />
-    <entry file="file://$PROJECT_DIR$/public/assets/rickshaw-chart/vendor/Rickshaw.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="423" column="2" lean-forward="false" selection-start-line="423" selection-start-column="2" selection-end-line="423" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Descargas/rickshaw-master/rickshaw-master/examples/formatter.html" />
     <entry file="file://$PROJECT_DIR$/public/assets/amcharts/amcharts.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1380,20 +1412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/graphic_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/sql_graphic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="340" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="340" />
         </state>
       </provider>
     </entry>
@@ -1627,13 +1645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/alert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/alert.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1668,11 +1679,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controller/graphic_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="19" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="24" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/sql_graphic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/sql_alert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/alert_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="35" column="70" lean-forward="false" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/alert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/alerts.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1360">
-          <caret line="58" column="55" lean-forward="false" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="238">
+          <caret line="92" column="120" lean-forward="false" selection-start-line="92" selection-start-column="120" selection-end-line="92" selection-end-column="120" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

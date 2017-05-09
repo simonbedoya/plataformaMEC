@@ -88,7 +88,10 @@
                                     <label class="col-md-4 control-label m-t-5">Seleccione una red:</label>
                                     <div class="col-md-8">
                                         <select id="filterNetwork" class="form-control">
-                                            <option value="active">-</option>
+                                            <option value="0">-</option>
+                                            <% for(let i=0; i<networks.length; i++){ %>
+                                              <option value="<%= networks[i].PK_NETWORK %>"><%= networks[i].NAME_NETWORK %></option>
+                                            <%} %>
                                         </select>
                                     </div>
                                 </div>

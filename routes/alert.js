@@ -3,6 +3,7 @@
  */
 const express = require('express');
 const router = express.Router();
+const alerController = require('../controller/alert_controller');
 
 //verificar session iniciada
 router.use(function (req,res,next) {
@@ -22,7 +23,21 @@ router.use(function (req,res,next) {
 /* GET home page. */
 router.get('/', function(req, res) {
     let sess = req.session;
-    res.render('alerts', { user: sess.user });
+    alerController.getNetworksByUser(sess.user).then(function (data) {
+       if(data.code === "001"){
+           let networks = data.data;
+           alerController.getSensorByUser(sess.user).then(function (data) {
+               if(data.code === "001"){
+                   res.render('alerts', { user: sess.user, networks: networks, sensors: data.data });
+               }else{
+                   res.render('alerts', { user: sess.user, networks: networks, sensors: null });
+               }
+           })
+       }else{
+           res.render('alerts', { user: sess.user, networks: null, sensors: null });
+       }
+    });
+
 });
 
 module.exports = router;
