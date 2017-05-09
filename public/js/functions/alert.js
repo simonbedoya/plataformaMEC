@@ -33,7 +33,7 @@ function selectNetwork() {
         let sensorAux = [];
         let i;
         for(i = 0; i < sensors.length; i++) {
-            if(sensors[i].PK_NETWORK === selectNet){
+            if(sensors[i].PK_NETWORK.toString() === selectNet){
                 sensorAux.push(sensors[i]);
             }
         }
