@@ -61,7 +61,7 @@ function loadEvents(dataList) {
         "ordering": false,
         "info": false,
         "searching": true,
-        "pageLength": true,
+        "pageLength": false,
         "scrollCollapse": false,
         "paging":         true,
         "pagingType": "numbers",
