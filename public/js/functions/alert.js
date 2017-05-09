@@ -27,7 +27,7 @@ function loadSensor(data){
 
 function selectNetwork() {
     let selectNet = $('#filterNetwork').val();
-    if(selectNet === 0){
+    if(selectNet === '0'){
         loadSensor(sensors);
     }else{
         let sensorAux = [];
