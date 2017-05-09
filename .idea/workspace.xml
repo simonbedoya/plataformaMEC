@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/alert.js" afterPath="$PROJECT_DIR$/public/js/functions/alert.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/alerts.ejs" afterPath="$PROJECT_DIR$/views/alerts.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -40,8 +41,8 @@
       <file leaf-file-name="alerts.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/alerts.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="95" column="50" lean-forward="true" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
+            <state relative-caret-position="255">
+              <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -98,9 +99,11 @@
       <file leaf-file-name="alert.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/functions/alert.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="34">
+              <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+              <folding>
+                <element signature="n#!!doc;n#load#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -215,10 +218,10 @@
         <option value="$PROJECT_DIR$/controller/data_controller.js" />
         <option value="$PROJECT_DIR$/routes/data.js" />
         <option value="$PROJECT_DIR$/public/js/functions/sensor.js" />
-        <option value="$PROJECT_DIR$/public/js/functions/alert.js" />
         <option value="$PROJECT_DIR$/sql/sql_alert.js" />
         <option value="$PROJECT_DIR$/controller/alert_controller.js" />
         <option value="$PROJECT_DIR$/routes/alert.js" />
+        <option value="$PROJECT_DIR$/public/js/functions/alert.js" />
         <option value="$PROJECT_DIR$/views/alerts.ejs" />
       </list>
     </option>
@@ -714,14 +717,7 @@
       <workItem from="1493687149625" duration="5500000" />
       <workItem from="1493912681039" duration="5020000" />
       <workItem from="1494209728019" duration="2418000" />
-      <workItem from="1494323756790" duration="1998000" />
-    </task>
-    <task id="LOCAL-00441" summary="28/04/17 3">
-      <created>1493412853490</created>
-      <option name="number" value="00441" />
-      <option name="presentableId" value="LOCAL-00441" />
-      <option name="project" value="LOCAL" />
-      <updated>1493412853490</updated>
+      <workItem from="1494323756790" duration="2153000" />
     </task>
     <task id="LOCAL-00442" summary="01/05/17">
       <created>1493650121559</created>
@@ -1059,11 +1055,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494325673648</updated>
     </task>
-    <option name="localTasksCounter" value="490" />
+    <task id="LOCAL-00490" summary="09/05/17">
+      <created>1494325763409</created>
+      <option name="number" value="00490" />
+      <option name="presentableId" value="LOCAL-00490" />
+      <option name="project" value="LOCAL" />
+      <updated>1494325763409</updated>
+    </task>
+    <option name="localTasksCounter" value="491" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="827454000" />
+    <option name="totallyTimeSpent" value="827609000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1433,14 +1436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/network.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="28" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1642,14 +1637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/functions/alert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/historical.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2652">
@@ -1720,10 +1707,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/alerts.ejs">
+    <entry file="file://$PROJECT_DIR$/routes/network.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="95" column="50" lean-forward="true" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
+          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/functions/alert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc;n#load#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/alerts.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
