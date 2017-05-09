@@ -92,7 +92,7 @@ function readFile(pk_file,axis, hourFile) {
                     let arrCom = {x: time * (i - 4), y: parseFloat(arrAux[1])};
                     data.push(arrCom);
                 }
-                loadSamplesDialog(samplesec, data, axis, date_file, hourFile);
+                loadSamplesDialog(samplesec, data, axis, date_file[0], hourFile);
             }
 
         },
