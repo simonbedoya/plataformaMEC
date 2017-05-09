@@ -91,7 +91,7 @@ function readFile(pk_file,hour,axis) {
                     let arrCom = {x: time * (i - 4), y: parseFloat(arrAux[1])};
                     data.push(arrCom);
                 }
-                loadSamplesDialog(samplesec);
+                loadSamplesDialog(samplesec, data);
             }
 
         },
@@ -111,7 +111,7 @@ function readFile(pk_file,hour,axis) {
     });
 }
 
-function loadSamplesDialog(samples) {
+function loadSamplesDialog(samples, data) {
     let arraySamples;
     if(samples === 40){
         arraySamples =  {'1': '1','2': '2','4': '4','5': '5','8': '8','10': '10','20': '20','40': '40'};
@@ -132,13 +132,13 @@ function loadSamplesDialog(samples) {
         showCancelButton: true
     }).then(function (result) {
         //alert(result);
-        generateGraphic(result, samples);
+        generateGraphic(result, samples, data);
     },function (dismiss) {
         
     })
 }
 
-function generateGraphic(samples, maxSamples) {
+function generateGraphic(samples, maxSamples, data) {
 
     let dataNew = [];
     //let samples = parseInt($('#samInp').val());
