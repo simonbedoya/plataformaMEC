@@ -65,11 +65,6 @@ function loadEvents(dataList) {
         "paging":         false,
         "pagingType": "numbers",
         "dom": 'frtip',
-        "columns" : [{
-            "className": 'details-control',
-            "orderable": false,
-            "data": null,
-            "defaultContent": ''
-        }, {"data": "DATE"},{"data": "HOUR"},{"data": "AXIS"},{"data": "NAME"},{"data": "NAME"}]
+        "columns" : [{"data": "DATE"},{"data": "HOUR"},{"data": "AXIS"},{"data": "NAME"},{"data": "NAME"}]
     });
 }
