@@ -130,6 +130,8 @@ function loadSamplesDialog(samples) {
         showCancelButton: true
     }).then(function (result) {
         alert(result);
+    },function (dismiss) {
+        
     })
 }
 
