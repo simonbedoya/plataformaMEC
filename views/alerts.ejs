@@ -89,7 +89,9 @@
                                     <div class="col-md-8">
                                         <select id="filterNetwork" class="form-control">
                                             <option value="0">-</option>
-                                            <% for(let i=0; i<networks.length(); i++){ %>
+                                            <%
+                                            var i;
+                                            for(i=0; i<networks.length; i++){ %>
                                               <option value="<%= networks[i].PK_NETWORK %>"><%= networks[i].NAME_NETWORK %></option>
                                             <%} %>
                                         </select>
