@@ -52,8 +52,8 @@
       <file leaf-file-name="alert.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/alert.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="247" column="90" lean-forward="false" selection-start-line="247" selection-start-column="90" selection-end-line="247" selection-end-column="90" />
+            <state relative-caret-position="210">
+              <caret line="250" column="38" lean-forward="false" selection-start-line="250" selection-start-column="38" selection-end-line="250" selection-end-column="38" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -105,7 +105,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>digi</find>
       <find>dig</find>
       <find>di</find>
       <find>d</find>
@@ -135,6 +134,7 @@
       <find>valueAxes</find>
       <find>data</find>
       <find>graphs</find>
+      <find>parseInt(i.x % 60)</find>
     </findStrings>
     <dirStrings>
       <dir>D:\Documentos\Info\Trabajo de grado\Apps\AppAdminMEC\public\js</dir>
@@ -734,14 +734,7 @@
       <workItem from="1494209728019" duration="2418000" />
       <workItem from="1494323756790" duration="7490000" />
       <workItem from="1494336033328" duration="714000" />
-      <workItem from="1494346853665" duration="6659000" />
-    </task>
-    <task id="LOCAL-00476" summary="01/05/17 2">
-      <created>1493693285656</created>
-      <option name="number" value="00476" />
-      <option name="presentableId" value="LOCAL-00476" />
-      <option name="project" value="LOCAL" />
-      <updated>1493693285656</updated>
+      <workItem from="1494346853665" duration="6919000" />
     </task>
     <task id="LOCAL-00477" summary="01/05/17 2">
       <created>1493693546164</created>
@@ -1079,11 +1072,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494360192887</updated>
     </task>
-    <option name="localTasksCounter" value="525" />
+    <task id="LOCAL-00525" summary="09/05/17">
+      <created>1494360332384</created>
+      <option name="number" value="00525" />
+      <option name="presentableId" value="LOCAL-00525" />
+      <option name="project" value="LOCAL" />
+      <updated>1494360332392</updated>
+    </task>
+    <option name="localTasksCounter" value="526" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="840319000" />
+    <option name="totallyTimeSpent" value="840579000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1749,8 +1749,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/functions/alert.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="247" column="90" lean-forward="false" selection-start-line="247" selection-start-column="90" selection-end-line="247" selection-end-column="90" />
+        <state relative-caret-position="210">
+          <caret line="250" column="38" lean-forward="false" selection-start-line="250" selection-start-column="38" selection-end-line="250" selection-end-column="38" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>

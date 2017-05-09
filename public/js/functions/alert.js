@@ -245,10 +245,10 @@ function getdata(dataNew, dateFile, hourFile, axis) {
     let hourarray = hourFile.split(":");
     dataNew.forEach((i) => {
         let date = new Date(arrayDate[0],arrayDate[1],arrayDate[2]);
-        date.setHours(parseInt(hourarray[0]), parseInt(hourarray[1]), parseInt(hourarray[2]), 0);
-        let minutes = parseInt(i.x / 60);
-        let seconds = parseInt(i.x % 60);
-        let milisec = parseInt(((i.x % 60) - parseInt(i.x %60)) * 1000);
+        date.setHours(parseInt(hourarray[0]), 0, 1, 0);
+        let minutes = parseInt(i.x / 60) + parseInt(hourarray[1]);
+        let seconds = parseInt(i.x % 60) + parseInt(hourarray[2]);
+        let milisec = parseInt(((i.x % 60) - seconds) * 1000);
         date.setMinutes(minutes);
         if(i.x !== 0) {
             date.setSeconds(seconds);
