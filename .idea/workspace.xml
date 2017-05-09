@@ -53,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/public/js/functions/alert.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="473">
-              <caret line="72" column="93" lean-forward="false" selection-start-line="72" selection-start-column="93" selection-end-line="72" selection-end-column="93" />
+              <caret line="72" column="92" lean-forward="false" selection-start-line="72" selection-start-column="92" selection-end-line="72" selection-end-column="92" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -716,14 +716,7 @@
       <workItem from="1493687149625" duration="5500000" />
       <workItem from="1493912681039" duration="5020000" />
       <workItem from="1494209728019" duration="2418000" />
-      <workItem from="1494323756790" duration="5211000" />
-    </task>
-    <task id="LOCAL-00452" summary="01/05/17">
-      <created>1493657932214</created>
-      <option name="number" value="00452" />
-      <option name="presentableId" value="LOCAL-00452" />
-      <option name="project" value="LOCAL" />
-      <updated>1493657932214</updated>
+      <workItem from="1494323756790" duration="5241000" />
     </task>
     <task id="LOCAL-00453" summary="01/05/17">
       <created>1493658638082</created>
@@ -1061,11 +1054,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494328891026</updated>
     </task>
-    <option name="localTasksCounter" value="501" />
+    <task id="LOCAL-00501" summary="09/05/17">
+      <created>1494328977547</created>
+      <option name="number" value="00501" />
+      <option name="presentableId" value="LOCAL-00501" />
+      <option name="project" value="LOCAL" />
+      <updated>1494328977547</updated>
+    </task>
+    <option name="localTasksCounter" value="502" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="830667000" />
+    <option name="totallyTimeSpent" value="830697000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1727,7 +1727,7 @@
     <entry file="file://$PROJECT_DIR$/public/js/functions/alert.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
-          <caret line="72" column="93" lean-forward="false" selection-start-line="72" selection-start-column="93" selection-end-line="72" selection-end-column="93" />
+          <caret line="72" column="92" lean-forward="false" selection-start-line="72" selection-start-column="92" selection-end-line="72" selection-end-column="92" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
