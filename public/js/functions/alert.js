@@ -122,7 +122,8 @@ function loadSamplesDialog(samples) {
         arraySamples =  {'1': '1','2': '2','4': '4','5': '5','10': '10','20': '20','25': '25','50': '50','100': '100','200': '200'};
     }
     swal({
-        title: 'Seleccione una tasa de muestreo para generar la grafica:',
+        title: 'Seleccione',
+        text: 'Tasa de muestreo para generar la grafica.',
         input: 'select',
         inputOptions: arraySamples,
         inputPlaceholder: 'Muestras por segundo',
