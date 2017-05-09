@@ -13,7 +13,7 @@
 </head>
 
 
-<body onload="load('<%= user %>',<%= networks %>);">
+<body onload="load('<%= user %>',<%= networks %>, <%= sensors %>);">
 <!-- Aside Start-->
 <aside class="left-panel">
 
@@ -100,9 +100,7 @@
                                     <label class="col-md-4 control-label m-t-5">Seleccione un sensor:</label>
                                     <div class="col-md-8">
                                         <select id="filterSensor" class="form-control">
-                                            <option value="active">-</option>
-                                            <option value="active">Universidad del Cauca</option>
-                                            <option value="inactive">Puente peatonal liceo</option>
+                                            <option value="0">-</option>
                                         </select>
                                     </div>
                                 </div>
