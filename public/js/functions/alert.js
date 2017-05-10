@@ -71,7 +71,7 @@ function loadEvents(dataList,n) {
             "columns": [{"data": "DATE"}, {"data": "HOUR"}, {"data": "AXIS"}, {"data": "NAME"}, {"data": "OPTION"}]
         });
     }else{
-        tableEventsList.rows.add(dateListFull);
+        tableEventsList.rows.add(dateListFull).draw();
     }
 }
 
