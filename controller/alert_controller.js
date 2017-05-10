@@ -53,7 +53,8 @@ module.exports = {
                         console.log(JSON.stringify(result));
                         fullfill({hcode: 200 ,code: "001", msg:"Sensor List", data: JSON.stringify(result)});
                     }else{
-                        fullfill({hcode: 202 ,code: "002", msg: "Error", data: {}});
+                        console.log("vacio");
+                        fullfill({hcode: 202 ,code: "002", msg: "Error", data: null});
                     }
                 });
             }
