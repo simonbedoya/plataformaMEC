@@ -583,6 +583,43 @@ module.exports = {
                     }
                 });
             })
+    },
+    getEventsByFilter: function (email,axis,idNet,idSen,sDate,fDate) {
+        return new Promise(
+            function (fullfill) {
+                let sql = template(sqlQuery.query_getEventsByFilter,{email: email});
+                if(axis !== "0"){
+                    sql += template(sqlQuery.query_getEventsByFilterAxis,{axis: axis});
+                }
+                if(idNet !== "0"){
+                    sql += template(sqlQuery.query_getEventsByFilterNetwork,{idNet: idNet});
+                }
+                if(idSen !== "0"){
+                    sql += template(sqlQuery.query_getEventsByFilterSensor,{idSen: idSen});
+                }
+                if((sDate !== "") && (fDate !== "")){
+                    sql += template(sqlQuery.query_getEventsByFilterBetDate,{sDate: sDate, fDate: fDate});
+                }else{
+                    if(sDate !== ""){
+                        sql += template(sqlQuery.query_getEventsByFilterSDate,{sDate: sDate});
+                    }
+                    if(fDate !== ""){
+                        sql += template(sqlQuery.query_getEventsByFilterFDate,{fDate: fDate});
+                    }
+                }
+                sql += template(sqlQuery.query_getEventsByFilterOrder,{});
+                console.log(sql);
+                db.query(sql, function (err, result) {
+
+                    if (err) return fullfill({hcode: 202, code: "002", msg: "Error", data: null});
+
+                    if (result.length !== 0) {
+                        fullfill({hcode: 200, code: "001", msg: "Event filter", data: JSON.stringify(result)});
+                    } else {
+                        fullfill({hcode: 202, code: "002", msg: "Error", data: null});
+                    }
+                });
+            })
     }
 };
 

@@ -40,5 +40,13 @@ module.exports = {
     query_markNotification: "UPDATE TBL_NOTIFICATION SET READ_NOTIFICATION = ${mark} WHERE PK_NOTIFICATION IN(${ids})",
     query_getDetailsNotification: "SELECT TYPE_NOTIFICATION, TITLE_NOTIFICATION, MSG_NOTIFICATION, REGISTER_NOTIFICATION FROM TBL_NOTIFICATION WHERE PK_NOTIFICATION = ${id}",
     query_getPathFileByPk: "SELECT PATH_FILE FROM TBL_FILE WHERE PK_FILE = ${pk_file}",
-    query_getDataConfigEvent: "SELECT DURATION_W_STA, DURATION_W_LTA, TRIGGER_ON, TRIGGER_OFF, DURATION_PRE, DURATION_POST, DURATION_MIN FROM TBL_EVENTS WHERE PK_SENSOR = ${pk_sensor}"
+    query_getDataConfigEvent: "SELECT DURATION_W_STA, DURATION_W_LTA, TRIGGER_ON, TRIGGER_OFF, DURATION_PRE, DURATION_POST, DURATION_MIN FROM TBL_EVENTS WHERE PK_SENSOR = ${pk_sensor}",
+    query_getEventsByFilter: "SELECT tbf.DATE_FILE, tbf.HOUR_FILE, tbf.AXIS_FILE, tbf.PK_FILE, tbs.NAME_SENSOR FROM TBL_FILE tbf INNER JOIN TBL_LOCATION tbl ON tbf.PK_LOCATION = tbl.PK_LOCATION AND tbl.STATUS_LOCATION = 'Activa' INNER JOIN TBL_SENSOR tbs ON tbl.PK_SENSOR = tbs.PK_SENSOR INNER JOIN TBL_NETWORK tbn ON tbs.PK_NETWORK = tbn.PK_NETWORK WHERE tbn.EMAIL_USER = '${email}'  AND tbf.TYPE_FILE = 'EVENT'",
+    query_getEventsByFilterOrder: " ORDER BY tbf.HOUR_FILE DESC",
+    query_getEventsByFilterAxis: " AND tbf.AXIS_FILE = '${axis}'",
+    query_getEventsByFilterNetwork: " AND tbn.PK_NETWORK = ${idNet}",
+    query_getEventsByFilterSensor: " AND tbs.PK_SENSOR = ${idSen}",
+    query_getEventsByFilterSDate: " AND tbf.DATE_FILE = '${sDate}'",
+    query_getEventsByFilterFDate: " AND tbf.DATE_FILE = '${fDate}",
+    query_getEventsByFilterBetDate: " tbf.DATE_FILE BETWEEN '${sDate}' AND '${fDate}'"
 };

@@ -311,7 +311,34 @@ function filter() {
     let idSensor = $('#filterSensor').val();
     let startDate = $('#startDate').val();
     let finalDate = $('#finalDate').val();
-    
+
+    showPanelLoad('portListEvents',true);
+    $.ajax({
+        type: "post",
+        url: "https://plataformamec.com/data/getEventsByFilter",
+        data: {axis: axis, idNetwork: idNetwork, idSensor: idSensor, startDate: startDate, finalDate: finalDate},
+        success: function (result) {
+            if(result.code === "001") {
+                loadEvents(result.data);
+            }
+
+        },
+        error: function (e) {
+            console.log(e);
+            swal({
+                title: "Información",
+                text: "Ha ocurrido un error intenta de nuevo!",
+                type: "info",
+                showCancelButton: false,
+                confirmButtonColor: "#444a53",
+                confirmButtonText: "OK"
+            }).then(function () {
+                filter();
+            });
+        }
+    });
+
 }
+
 
 
