@@ -136,7 +136,7 @@
                         </div>
                         <div class="m-r-5">
                             <div class="col-lg-12">
-                                <button class="btn btn-inverse pull-right" id="btnFilter">Filtrar</button>
+                                <button class="btn btn-inverse pull-right" onclick="filter()" id="btnFilter">Filtrar</button>
                             </div>
                         </div>
                     </div>
@@ -240,8 +240,12 @@
 <script>
     jQuery(document).ready(function() {
         // Date Picker
-        jQuery('#startDate').datepicker();
-        jQuery('#finalDate').datepicker();
+        jQuery('#startDate').datepicker({
+            format: 'YYYY-mm-dd'
+        });
+        jQuery('#finalDate').datepicker({
+            format: 'YYYY-mm-dd'
+        });
     });
 </script>
 
