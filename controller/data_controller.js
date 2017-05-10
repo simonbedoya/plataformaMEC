@@ -587,27 +587,32 @@ module.exports = {
     getEventsByFilter: function (email,axis,idNet,idSen,sDate,fDate) {
         return new Promise(
             function (fullfill) {
-                let sql = template(sqlQuery.query_getEventsByFilter,{email: email});
-                if(axis !== "0"){
-                    sql += template(sqlQuery.query_getEventsByFilterAxis,{axis: axis});
-                }
-                if(idNet !== "0"){
-                    sql += template(sqlQuery.query_getEventsByFilterNetwork,{idNet: idNet});
-                }
-                if(idSen !== "0"){
-                    sql += template(sqlQuery.query_getEventsByFilterSensor,{idSen: idSen});
-                }
-                if((sDate !== "") && (fDate !== "")){
-                    sql += template(sqlQuery.query_getEventsByFilterBetDate,{sDate: sDate, fDate: fDate});
-                    sql += template(sqlQuery.query_getEventsByFilterOrderDates,{});
+                let sql;
+                if((axis !== "0") || (idNet !== "0") || (idSen !== "0") || (sDate !== "") || (fDate !== "")) {
+                    sql = template(sqlQuery.query_getEventsByFilter, {email: email});
+                    if (axis !== "0") {
+                        sql += template(sqlQuery.query_getEventsByFilterAxis, {axis: axis});
+                    }
+                    if (idNet !== "0") {
+                        sql += template(sqlQuery.query_getEventsByFilterNetwork, {idNet: idNet});
+                    }
+                    if (idSen !== "0") {
+                        sql += template(sqlQuery.query_getEventsByFilterSensor, {idSen: idSen});
+                    }
+                    if ((sDate !== "") && (fDate !== "")) {
+                        sql += template(sqlQuery.query_getEventsByFilterBetDate, {sDate: sDate, fDate: fDate});
+                        sql += template(sqlQuery.query_getEventsByFilterOrderDates, {});
+                    } else {
+                        if (sDate !== "") {
+                            sql += template(sqlQuery.query_getEventsByFilterSDate, {sDate: sDate});
+                        }
+                        if (fDate !== "") {
+                            sql += template(sqlQuery.query_getEventsByFilterFDate, {fDate: fDate});
+                        }
+                        sql += template(sqlQuery.query_getEventsByFilterOrder, {});
+                    }
                 }else{
-                    if(sDate !== ""){
-                        sql += template(sqlQuery.query_getEventsByFilterSDate,{sDate: sDate});
-                    }
-                    if(fDate !== ""){
-                        sql += template(sqlQuery.query_getEventsByFilterFDate,{fDate: fDate});
-                    }
-                    sql += template(sqlQuery.query_getEventsByFilterOrder,{});
+                    sql = template(sqlQuery.getListEventByUser, {email: email});
                 }
 
                 console.log(sql);

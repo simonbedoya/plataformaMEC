@@ -49,5 +49,6 @@ module.exports = {
     query_getEventsByFilterSDate: " AND tbf.DATE_FILE = '${sDate}'",
     query_getEventsByFilterFDate: " AND tbf.DATE_FILE = '${fDate}",
     query_getEventsByFilterBetDate: " AND tbf.DATE_FILE BETWEEN '${sDate}' AND '${fDate}'",
-    query_getEventsByFilterOrderDates: " ORDER BY tbf.DATE_FILE ASC, tbf.HOUR_FILE ASC"
+    query_getEventsByFilterOrderDates: " ORDER BY tbf.DATE_FILE ASC, tbf.HOUR_FILE ASC",
+    getListEventByUser: "SELECT tbf.DATE_FILE, tbf.HOUR_FILE, tbf.AXIS_FILE, tbf.PK_FILE, tbs.NAME_SENSOR FROM TBL_FILE tbf INNER JOIN TBL_LOCATION tbl ON tbf.PK_LOCATION = tbl.PK_LOCATION AND tbl.STATUS_LOCATION = 'Activa' INNER JOIN TBL_SENSOR tbs ON tbl.PK_SENSOR = tbs.PK_SENSOR INNER JOIN TBL_NETWORK tbn ON tbs.PK_NETWORK = tbn.PK_NETWORK WHERE tbn.EMAIL_USER = '${email}' AND tbf.DATE_FILE = CURDATE() AND tbf.TYPE_FILE = 'EVENT' ORDER BY tbf.HOUR_FILE DESC"
 };
