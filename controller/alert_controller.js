@@ -18,6 +18,7 @@ module.exports = {
                     if (err) return fullfill({hcode: 202, code: "002", msg: "Error", data: null});
 
                     if(result.length !== 0){
+                        console.log(JSON.stringify(result));
                         fullfill({hcode: 200 ,code: "001", msg:"Network List", data: JSON.stringify(result)});
                     }else{
                         fullfill({hcode: 202 ,code: "002", msg: "Error", data: {}});
@@ -33,6 +34,7 @@ module.exports = {
                     if (err) return fullfill({hcode: 202, code: "002", msg: "Error", data: null});
 
                     if(result.length !== 0){
+                        console.log(JSON.stringify(result));
                         fullfill({hcode: 200 ,code: "001", msg:"Sensor List", data: JSON.stringify(result)});
                     }else{
                         fullfill({hcode: 202 ,code: "002", msg: "Error", data: {}});
@@ -48,6 +50,7 @@ module.exports = {
                     if (err) return fullfill({hcode: 202, code: "002", msg: "Error", data: null});
 
                     if(result.length !== 0){
+                        console.log(JSON.stringify(result));
                         fullfill({hcode: 200 ,code: "001", msg:"Sensor List", data: JSON.stringify(result)});
                     }else{
                         fullfill({hcode: 202 ,code: "002", msg: "Error", data: {}});
