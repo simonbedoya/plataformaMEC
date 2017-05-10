@@ -306,7 +306,12 @@ function showPanel(id,show) {
 }
 
 function filter() {
-
+    let axis = $('#filterAxis').val();
+    let idNetwork = $('#filterNetwork').val();
+    let idSensor = $('#filterSensor').val();
+    let startDate = $('#startDate').val();
+    let finalDate = $('#finalDate').val();
+    
 }
 
 

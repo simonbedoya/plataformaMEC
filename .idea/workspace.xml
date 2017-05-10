@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/alert.js" afterPath="$PROJECT_DIR$/public/js/functions/alert.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/alerts.ejs" afterPath="$PROJECT_DIR$/views/alerts.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -37,21 +38,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alerts.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="alerts.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/alerts.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="246" column="25" lean-forward="false" selection-start-line="246" selection-start-column="25" selection-end-line="246" selection-end-column="25" />
+            <state relative-caret-position="141">
+              <caret line="116" column="107" lean-forward="false" selection-start-line="116" selection-start-column="107" selection-end-line="116" selection-end-column="107" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alert.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="alert.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/functions/alert.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="308" column="0" lean-forward="true" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
+            <state relative-caret-position="476">
+              <caret line="313" column="4" lean-forward="false" selection-start-line="313" selection-start-column="4" selection-end-line="313" selection-end-column="4" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -206,8 +207,8 @@
         <option value="$PROJECT_DIR$/public/js/functions/graphic.js" />
         <option value="$PROJECT_DIR$/controller/alert_controller.js" />
         <option value="$PROJECT_DIR$/routes/alert.js" />
-        <option value="$PROJECT_DIR$/public/js/functions/alert.js" />
         <option value="$PROJECT_DIR$/views/alerts.ejs" />
+        <option value="$PROJECT_DIR$/public/js/functions/alert.js" />
       </list>
     </option>
   </component>
@@ -745,14 +746,7 @@
       <workItem from="1494323756790" duration="7490000" />
       <workItem from="1494336033328" duration="714000" />
       <workItem from="1494346853665" duration="7816000" />
-      <workItem from="1494407595245" duration="1988000" />
-    </task>
-    <task id="LOCAL-00488" summary="09/05/17">
-      <created>1494325615363</created>
-      <option name="number" value="00488" />
-      <option name="presentableId" value="LOCAL-00488" />
-      <option name="project" value="LOCAL" />
-      <updated>1494325615363</updated>
+      <workItem from="1494407595245" duration="2203000" />
     </task>
     <task id="LOCAL-00489" summary="09/05/17">
       <created>1494325673648</created>
@@ -1090,11 +1084,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494409644046</updated>
     </task>
-    <option name="localTasksCounter" value="537" />
+    <task id="LOCAL-00537" summary="09/05/17">
+      <created>1494409692662</created>
+      <option name="number" value="00537" />
+      <option name="presentableId" value="LOCAL-00537" />
+      <option name="project" value="LOCAL" />
+      <updated>1494409692662</updated>
+    </task>
+    <option name="localTasksCounter" value="538" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="843464000" />
+    <option name="totallyTimeSpent" value="843679000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1740,16 +1741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/functions/alert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="308" column="0" lean-forward="true" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/timepicker/bootstrap-datepicker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6919">
@@ -1764,9 +1755,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/alerts.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="246" column="25" lean-forward="false" selection-start-line="246" selection-start-column="25" selection-end-line="246" selection-end-column="25" />
+        <state relative-caret-position="141">
+          <caret line="116" column="107" lean-forward="false" selection-start-line="116" selection-start-column="107" selection-end-line="116" selection-end-column="107" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/functions/alert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="313" column="4" lean-forward="false" selection-start-line="313" selection-start-column="4" selection-end-line="313" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
