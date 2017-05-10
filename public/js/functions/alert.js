@@ -71,6 +71,7 @@ function loadEvents(dataList,n) {
             "columns": [{"data": "DATE"}, {"data": "HOUR"}, {"data": "AXIS"}, {"data": "NAME"}, {"data": "OPTION"}]
         });
     }else{
+        showPanelLoad('portListEvents',false);
         tableEventsList.rows.add(dateListFull).draw();
     }
 }
