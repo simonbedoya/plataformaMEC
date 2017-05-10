@@ -48,5 +48,5 @@ module.exports = {
     query_getEventsByFilterSensor: " AND tbs.PK_SENSOR = ${idSen}",
     query_getEventsByFilterSDate: " AND tbf.DATE_FILE = '${sDate}'",
     query_getEventsByFilterFDate: " AND tbf.DATE_FILE = '${fDate}",
-    query_getEventsByFilterBetDate: " tbf.DATE_FILE BETWEEN '${sDate}' AND '${fDate}'"
+    query_getEventsByFilterBetDate: " AND tbf.DATE_FILE BETWEEN '${sDate}' AND '${fDate}'"
 };
