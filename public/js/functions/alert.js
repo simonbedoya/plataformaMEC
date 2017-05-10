@@ -9,7 +9,7 @@ function load(email,networks,sensorsList,events) {
     reloadNumberNoReadNotification(email);
     loadNetwork(networks);
     loadSensor(sensorsList);
-    loadEvents(events);
+    loadEvents(events, false);
 }
 
 function loadNetwork(data) {
@@ -47,7 +47,7 @@ function selectNetwork() {
     }
 }
 
-function loadEvents(dataList) {
+function loadEvents(dataList,n) {
     let dateListFull = [];
     let i;
     for(i in dataList){
@@ -60,15 +60,19 @@ function loadEvents(dataList) {
         }
     }
 
-    tableEventsList = $('#tableEventList').DataTable({
-        "data": dateListFull,
-        "ordering": false,
-        "info": false,
-        "searching": true,
-        "lengthMenu": [[10, 20], [10, 25]],
-        "pagingType": "numbers",
-        "columns" : [{"data": "DATE"},{"data": "HOUR"},{"data": "AXIS"},{"data": "NAME"},{"data": "OPTION"}]
-    });
+    if(!n) {
+        tableEventsList = $('#tableEventList').DataTable({
+            "data": dateListFull,
+            "ordering": false,
+            "info": false,
+            "searching": true,
+            "lengthMenu": [[10, 20], [10, 25]],
+            "pagingType": "numbers",
+            "columns": [{"data": "DATE"}, {"data": "HOUR"}, {"data": "AXIS"}, {"data": "NAME"}, {"data": "OPTION"}]
+        });
+    }else{
+        tableEventsList.rows.add(dataList);
+    }
 }
 
 function readFile(pk_file,axis, hourFile) {
@@ -319,7 +323,7 @@ function filter() {
         data: {axis: axis, idNetwork: idNetwork, idSensor: idSensor, startDate: startDate, finalDate: finalDate},
         success: function (result) {
             if(result.code === "001") {
-                loadEvents(result.data);
+                loadEvents(result.data, true);
             }
 
         },
