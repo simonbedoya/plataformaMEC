@@ -72,6 +72,7 @@ function loadEvents(dataList,n) {
         });
     }else{
         showPanelLoad('portListEvents',false);
+        tableEventsList.clear();
         tableEventsList.rows.add(dateListFull).draw();
     }
 }
