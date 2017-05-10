@@ -599,6 +599,7 @@ module.exports = {
                 }
                 if((sDate !== "") && (fDate !== "")){
                     sql += template(sqlQuery.query_getEventsByFilterBetDate,{sDate: sDate, fDate: fDate});
+                    sql += template(sqlQuery.query_getEventsByFilterOrderDates,{});
                 }else{
                     if(sDate !== ""){
                         sql += template(sqlQuery.query_getEventsByFilterSDate,{sDate: sDate});
@@ -606,8 +607,9 @@ module.exports = {
                     if(fDate !== ""){
                         sql += template(sqlQuery.query_getEventsByFilterFDate,{fDate: fDate});
                     }
+                    sql += template(sqlQuery.query_getEventsByFilterOrder,{});
                 }
-                sql += template(sqlQuery.query_getEventsByFilterOrder,{});
+
                 console.log(sql);
                 db.query(sql, function (err, result) {
 
