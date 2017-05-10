@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e05a2f6c-9e13-43cc-80cb-2920840e5729" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/functions/alert.js" afterPath="$PROJECT_DIR$/public/js/functions/alert.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/alerts.ejs" afterPath="$PROJECT_DIR$/views/alerts.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -42,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/views/alerts.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="413">
-              <caret line="246" column="32" lean-forward="false" selection-start-line="246" selection-start-column="32" selection-end-line="246" selection-end-column="32" />
+              <caret line="246" column="25" lean-forward="false" selection-start-line="246" selection-start-column="25" selection-end-line="246" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -746,14 +745,7 @@
       <workItem from="1494323756790" duration="7490000" />
       <workItem from="1494336033328" duration="714000" />
       <workItem from="1494346853665" duration="7816000" />
-      <workItem from="1494407595245" duration="1938000" />
-    </task>
-    <task id="LOCAL-00487" summary="09/05/17">
-      <created>1494325523331</created>
-      <option name="number" value="00487" />
-      <option name="presentableId" value="LOCAL-00487" />
-      <option name="project" value="LOCAL" />
-      <updated>1494325523331</updated>
+      <workItem from="1494407595245" duration="1988000" />
     </task>
     <task id="LOCAL-00488" summary="09/05/17">
       <created>1494325615363</created>
@@ -1091,11 +1083,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494409268048</updated>
     </task>
-    <option name="localTasksCounter" value="536" />
+    <task id="LOCAL-00536" summary="09/05/17">
+      <created>1494409644046</created>
+      <option name="number" value="00536" />
+      <option name="presentableId" value="LOCAL-00536" />
+      <option name="project" value="LOCAL" />
+      <updated>1494409644046</updated>
+    </task>
+    <option name="localTasksCounter" value="537" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="843414000" />
+    <option name="totallyTimeSpent" value="843464000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1766,7 +1765,7 @@
     <entry file="file://$PROJECT_DIR$/views/alerts.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
-          <caret line="246" column="32" lean-forward="false" selection-start-line="246" selection-start-column="32" selection-end-line="246" selection-end-column="32" />
+          <caret line="246" column="25" lean-forward="false" selection-start-line="246" selection-start-column="25" selection-end-line="246" selection-end-column="25" />
           <folding />
         </state>
       </provider>
