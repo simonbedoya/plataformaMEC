@@ -33,15 +33,15 @@ router.get('/', function(req, res) {
                         if(data.code === "001"){
                             res.render('alerts', { user: sess.user, networks: networks, sensors: sensors, events: data.data });
                         }else{
-                            res.render('alerts', { user: sess.user, networks: networks, sensors: sensors, events: null });
+                            res.render('alerts', { user: sess.user, networks: networks, sensors: sensors, events: [] });
                         }
                     })
                }else{
-                   res.render('alerts', { user: sess.user, networks: networks, sensors: null, events: null });
+                   res.render('alerts', { user: sess.user, networks: networks, sensors: [], events: [] });
                }
            })
        }else{
-           res.render('alerts', { user: sess.user, networks: null, sensors: null, events: null });
+           res.render('alerts', { user: sess.user, networks: [], sensors: [], events: [] });
        }
     });
 
