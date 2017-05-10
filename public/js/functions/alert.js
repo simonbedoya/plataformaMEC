@@ -325,6 +325,8 @@ function filter() {
         success: function (result) {
             if(result.code === "001") {
                 loadEvents(result.data, true);
+            }else if(result.code === "002"){
+                loadEvents(result.data, true);
             }
 
         },

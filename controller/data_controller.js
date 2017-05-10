@@ -613,12 +613,12 @@ module.exports = {
                 console.log(sql);
                 db.query(sql, function (err, result) {
 
-                    if (err) return fullfill({hcode: 202, code: "002", msg: "Error", data: null});
+                    if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
 
                     if (result.length !== 0) {
                         fullfill({hcode: 200, code: "001", msg: "Event filter", data: JSON.stringify(result)});
                     } else {
-                        fullfill({hcode: 202, code: "002", msg: "Error", data: null});
+                        fullfill({hcode: 202, code: "002", msg: "Null", data: null});
                     }
                 });
             })
