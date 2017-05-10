@@ -37,11 +37,11 @@ router.get('/', function(req, res) {
                         }
                     })
                }else{
-                   res.render('alerts', { user: sess.user, networks: networks, sensors: [], events: [] });
+                   res.render('alerts', { user: sess.user, networks: networks, sensors: 0, events: 0 });
                }
            })
        }else{
-           res.render('alerts', { user: sess.user, networks: [], sensors: [], events: [] });
+           res.render('alerts', { user: sess.user, networks: 0, sensors: 0, events: 0 });
        }
     });
 

@@ -13,17 +13,21 @@ function load(email,networks,sensorsList,events) {
 }
 
 function loadNetwork(data) {
-    let i;
-    for(i = 0; i < data.length; i++) {
-        document.getElementById("filterNetwork").innerHTML += "<option value='" + data[i].PK_NETWORK + "'>"+data[i].NAME_NETWORK+"</option>";
+    if(data !== 0) {
+        let i;
+        for (i = 0; i < data.length; i++) {
+            document.getElementById("filterNetwork").innerHTML += "<option value='" + data[i].PK_NETWORK + "'>" + data[i].NAME_NETWORK + "</option>";
+        }
     }
 }
 
 function loadSensor(data){
-    let i;
-    document.getElementById("filterSensor").innerHTML = "<option value='0'>-</option>";
-    for(i = 0; i < data.length; i++) {
-        document.getElementById("filterSensor").innerHTML += `<option value='${data[i].PK_SENSOR}'>${data[i].NAME_SENSOR}</option>`;
+    if(data !== 0) {
+        let i;
+        document.getElementById("filterSensor").innerHTML = "<option value='0'>-</option>";
+        for (i = 0; i < data.length; i++) {
+            document.getElementById("filterSensor").innerHTML += `<option value='${data[i].PK_SENSOR}'>${data[i].NAME_SENSOR}</option>`;
+        }
     }
 }
 
