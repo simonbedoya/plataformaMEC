@@ -33,7 +33,7 @@ router.get('/', function(req, res) {
                         if(data.code === "001"){
                             res.render('alerts', { user: sess.user, networks: networks, sensors: sensors, events: data.data });
                         }else{
-                            res.render('alerts', { user: sess.user, networks: networks, sensors: sensors, events: "vacio"});
+                            res.render('alerts', { user: sess.user, networks: networks, sensors: sensors, events: 0});
                         }
                     })
                }else{
