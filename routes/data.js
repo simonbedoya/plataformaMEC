@@ -247,7 +247,7 @@ router.post('/getDataConfigEvent', function (req,res) {
 
 router.post('/getEventsByFilter', function (req,res) {
     let sess = req.session;
-    data_controller.getEventsByFilter(sess.user,req.body.axis,req.body.idNetwork,req.body.idSensor,req.body.startData,req.body.finalDate).then(function (data) {
+    data_controller.getEventsByFilter(sess.user,req.body.axis,req.body.idNetwork,req.body.idSensor,req.body.startDate,req.body.finalDate).then(function (data) {
         res.status(data.hcode).send(JSON.parse(response.msg(data.code, data.msg, data.data)));
     })
 });
