@@ -66,6 +66,7 @@ socket.on("responseRealTime", function (data) {
         }).then(function () {
             changeButton(false);
             clearRealtime();
+            terminateTest("REAL_TIME");
         });
         return;
     }
