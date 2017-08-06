@@ -51,29 +51,29 @@
             <h3 class="text-center m-t-10"> Crear nueva cuenta </h3>
         </div>
 
-        <form class="form-horizontal m-t-40" action="">
+        <form class="form-horizontal m-t-40" action="/sign-in" method="post">
             <div class="form-group">
                 <div class="col-xs-12">
-                    <input class="form-control" type="email" required="" placeholder="Correo electrónico">
+                    <input id="email" name="email" class="form-control" type="email" required="" placeholder="Correo electrónico" onfocus="closeAlert()">
                 </div>
             </div>
 
             <div class="form-group ">
                 <div class="col-xs-12">
-                    <input class="form-control " type="text" required="" placeholder="Usuario">
+                    <input id="user" name="user" class="form-control " type="text" required="" placeholder="Usuario" onfocus="closeAlert()">
                 </div>
             </div>
 
             <div class="form-group">
                 <div class="col-xs-12">
-                    <input class="form-control " type="password" required="" placeholder="Contraseña">
+                    <input id="pass" name="pass" class="form-control " type="password" required="" placeholder="Contraseña" onfocus="closeAlert()">
                 </div>
             </div>
 
             <div class="form-group ">
                 <div class="col-xs-12">
                     <label class="cr-styled">
-                        <input type="checkbox" checked>
+                        <input name="term" id="term" type="checkbox" onchange="closeAlert()">
                         <i class="fa"></i>
                         Acepta <strong><a href="#">Terminos y condiciones</a></strong>
                     </label>
@@ -91,6 +91,11 @@
                     <a href="/admin">Ya te encuentras registrado?</a>
                 </div>
             </div>
+            <% if (msgError != '') {%>
+            <div id="alertError" class="alert alert-danger">
+                <%= msgError %>
+            </div>
+            <%}%>
         </form>
 
     </div>
@@ -108,6 +113,7 @@
 
 <!--common script for all pages-->
 <script src="js/jquery.app.js"></script>
+<script src="js/functions/login.js"></script>
 
 
 </body>

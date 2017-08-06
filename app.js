@@ -25,6 +25,7 @@ var profile = require('./routes/profile');
 var log_out = require('./routes/log-out');
 var graphic = require('./routes/graphic');
 var data = require('./routes/data');
+let sing_in = require('./routes/sign-in');
 let notification = require('./routes/notification');
 
 
@@ -61,6 +62,7 @@ app.get('/',function (req, res) {
 
 app.use('/admin', login);
 app.use('/log-in', log_in);
+app.use('/sign-in', sing_in);
 
 app.get('/download', function(req, res){
     var file = '/opt/serverMEC/plataformaMEC/uploads/A3FYT/LQM85/010417_05.sac';
@@ -74,7 +76,11 @@ app.get('/recoverpw', function (req,res) {
 });
 
 app.get('/register', function (req,res) {
-    res.render('register');
+    if (req.query.error !== undefined){
+        res.render('register',{msgError: req.query.error});
+    }else {
+        res.render('register', {msgError: ''});
+    }
 });
 
 
@@ -91,6 +97,7 @@ app.use('/graphic', graphic);
 app.use('/data', data);
 app.use('/network',net);
 app.use('/notification',notification);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

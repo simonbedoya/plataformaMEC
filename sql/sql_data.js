@@ -28,6 +28,8 @@ module.exports = {
     query_datesfilter: "SELECT tbf.DATE_FILE, count(tbf.PATH_FILE) AS N_FILES FROM TBL_SENSOR tbs INNER JOIN TBL_LOCATION tbl ON tbl.PK_SENSOR = tbs.PK_SENSOR AND tbl.STATUS_LOCATION = 'Activa' INNER JOIN TBL_FILE tbf ON tbl.PK_LOCATION = tbf.PK_LOCATION WHERE tbs.SERIAL_SENSOR = '${serial}' AND tbf.AXIS_FILE = '${axis}' AND tbf.TYPE_FILE = 'FILE' GROUP BY tbf.DATE_FILE",
     query_getDataFileByPk: "SELECT PATH_FILE, DATE_FILE FROM TBL_FILE WHERE PK_FILE = ${pk_file}",
     query_login: "SELECT count(*) AS counter FROM TBL_USER WHERE EMAIL_USER = '${email}' AND PASSWORD_USER = '${pass}'",
+    query_exist_email: "SELECT count(*) AS counter FROM TBL_USER WHERE EMAIL_USER = '${email}'",
+    query_signin: "INSERT INTO TBL_USER (NAME_USER, EMAIL_USER, PK_ROL, PASSWORD_USER, REGISTERDATE_USER) VALUES ('${name}', '${email}', 1, '${pass}', '${date}')",
     query_terminateTest: "DELETE FROM TBL_TEST WHERE PK_SENSOR = ${pk_sensor} AND TYPE_TEST = '${type}'",
     query_dataDetailComponent: "SELECT * FROM ${table} WHERE PK_SENSOR = ${pk_sensor}",
     query_getSamplesBysensor: "SELECT SAMPLES_ADC FROM TBL_ADC WHERE PK_SENSOR = ${pk_sensor}",

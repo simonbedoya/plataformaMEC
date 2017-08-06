@@ -6,5 +6,4 @@ function closeAlert() {
     if(alert.is(':visible')){
         document.getElementById('alertError').style.display = 'none';
     }
-
 }

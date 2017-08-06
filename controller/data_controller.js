@@ -627,6 +627,22 @@ module.exports = {
                     }
                 });
             })
+    },
+    existEmail: function (email) {
+        return new Promise(
+            function (fullfill) {
+                let sql = template(sqlQuery.query_exist_email,{email: email});
+                db.query(sql, function (err, result) {
+
+                    if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
+
+                    if (result[0].counter === 0) {
+                        fullfill({hcode: 200, code: "001", msg: "no existe", data: JSON.stringify(result[0])});
+                    } else {
+                        fullfill({hcode: 200, code: "002", msg: "Existe", data: null});
+                    }
+                });
+            })
     }
 };
 
