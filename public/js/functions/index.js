@@ -38,7 +38,7 @@ function getLocations(email) {
                         }
                     })(marker,i));
                 }
-            }else if(result.code === "002"){
+            }else if(result.code === "003"){
                 swal({
                     title: "Información",
                     text: "Ha ocurrido un error intenta de nuevo!",

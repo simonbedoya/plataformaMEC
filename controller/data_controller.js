@@ -16,7 +16,7 @@ module.exports = {
         return new Promise(
             function (fullfill) {
                 db.query(template(sqlQuery.query_location,{email: email}), function (err, result) {
-                    if (err) return fullfill({hcode: 202, code: "002", msg: "Error", data: null});
+                    if (err) return fullfill({hcode: 202, code: "003", msg: "Error", data: null});
 
                     if(result.length !== 0){
                         fullfill({hcode: 200 ,code: "001", msg:"Locations", data: JSON.stringify(result)});
